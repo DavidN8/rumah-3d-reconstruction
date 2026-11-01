@@ -1,0 +1,11 @@
+{
+  "inputFaces": 1596593,
+  "outputFaces": 499987,
+  "vertices": 250496,
+  "meshoptRelativeError": 0.0003280909440945834,
+  "maximumAllowedRelativeError": 0.0005,
+  "lockedBoundary": true,
+  "heightCut": false,
+  "sourceModified": false,
+  "status": "local geometry preparation, requires visual acceptance"
+}

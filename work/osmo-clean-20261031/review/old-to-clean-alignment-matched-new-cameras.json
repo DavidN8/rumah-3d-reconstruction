@@ -1,0 +1,156 @@
+{
+  "purpose": "Matched old/new evaluation cameras only; do not use for fresh website defaults.",
+  "alignmentReport": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\old-to-clean-alignment.json",
+  "presets": [
+    {
+      "name": "cam0/frame_000003.jpg",
+      "label": "Capture ~1s \u00b7 reprojected source",
+      "sourceFile": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\lite-v1\\review\\photos\\osmo-upright-01-frame_000003.jpg",
+      "position": [
+        -0.08487133560694503,
+        1.5721502869657948,
+        0.22584986596315032
+      ],
+      "quaternion": [
+        -0.004626278599485559,
+        0.9399533697389917,
+        0.0008541430199838051,
+        -0.3412704656168412
+      ],
+      "imageWidth": 1200,
+      "imageHeight": 1200,
+      "intrinsics": [
+        600.0,
+        600.0,
+        600.0,
+        600.0
+      ],
+      "poseProvenance": "Old review pose transformed by measured global trajectory similarity; alignment residuals apply."
+    },
+    {
+      "name": "cam0/frame_000025.jpg",
+      "label": "Capture ~12s \u00b7 reprojected source",
+      "sourceFile": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\lite-v1\\review\\photos\\osmo-upright-02-frame_000025.jpg",
+      "position": [
+        -0.34222369932803487,
+        1.6167167153625306,
+        -0.7143670974320239
+      ],
+      "quaternion": [
+        -0.0010170866713376738,
+        0.6807243705842799,
+        0.004593206797176957,
+        0.7325245383457524
+      ],
+      "imageWidth": 1200,
+      "imageHeight": 1200,
+      "intrinsics": [
+        600.0,
+        600.0,
+        600.0,
+        600.0
+      ],
+      "poseProvenance": "Old review pose transformed by measured global trajectory similarity; alignment residuals apply."
+    },
+    {
+      "name": "cam0/frame_000041.jpg",
+      "label": "Capture ~20s \u00b7 reprojected source",
+      "sourceFile": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\lite-v1\\review\\photos\\osmo-upright-03-frame_000041.jpg",
+      "position": [
+        -0.02511305218677631,
+        1.599862939332422,
+        -2.820496703196913
+      ],
+      "quaternion": [
+        -0.0023598417571882445,
+        0.8705369195116466,
+        0.004069786340789332,
+        0.4920806232246848
+      ],
+      "imageWidth": 1200,
+      "imageHeight": 1200,
+      "intrinsics": [
+        600.0,
+        600.0,
+        600.0,
+        600.0
+      ],
+      "poseProvenance": "Old review pose transformed by measured global trajectory similarity; alignment residuals apply."
+    },
+    {
+      "name": "cam0/frame_000061.jpg",
+      "label": "Capture ~30s \u00b7 reprojected source",
+      "sourceFile": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\lite-v1\\review\\photos\\osmo-upright-04-frame_000061.jpg",
+      "position": [
+        -0.014473612617085463,
+        1.5609681249154301,
+        0.5452919276199654
+      ],
+      "quaternion": [
+        -0.0031636968186027187,
+        0.9546179364773952,
+        0.0034818151040237433,
+        0.29779600961339475
+      ],
+      "imageWidth": 1200,
+      "imageHeight": 1200,
+      "intrinsics": [
+        600.0,
+        600.0,
+        600.0,
+        600.0
+      ],
+      "poseProvenance": "Old review pose transformed by measured global trajectory similarity; alignment residuals apply."
+    },
+    {
+      "name": "cam0/frame_000081.jpg",
+      "label": "Capture ~40s \u00b7 reprojected source",
+      "sourceFile": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\lite-v1\\review\\photos\\osmo-upright-05-frame_000081.jpg",
+      "position": [
+        0.9088847008822023,
+        0.6468553002023838,
+        1.0111641990156512
+      ],
+      "quaternion": [
+        0.0019002819006740097,
+        0.11477961071141048,
+        0.004303596481620434,
+        0.993379841224372
+      ],
+      "imageWidth": 1200,
+      "imageHeight": 1200,
+      "intrinsics": [
+        600.0,
+        600.0,
+        600.0,
+        600.0
+      ],
+      "poseProvenance": "Old review pose transformed by measured global trajectory similarity; alignment residuals apply."
+    },
+    {
+      "name": "cam0/frame_000111.jpg",
+      "label": "Capture ~55s \u00b7 reprojected source",
+      "sourceFile": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\lite-v1\\review\\photos\\osmo-upright-06-frame_000111.jpg",
+      "position": [
+        0.3328136169801452,
+        0.46224934228408676,
+        -1.7431135202222188
+      ],
+      "quaternion": [
+        -0.004643353035237221,
+        0.9325041577522521,
+        0.0007558350142712465,
+        -0.3611285972625047
+      ],
+      "imageWidth": 1200,
+      "imageHeight": 1200,
+      "intrinsics": [
+        600.0,
+        600.0,
+        600.0,
+        600.0
+      ],
+      "poseProvenance": "Old review pose transformed by measured global trajectory similarity; alignment residuals apply."
+    }
+  ]
+}

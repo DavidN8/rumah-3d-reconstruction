@@ -1,0 +1,14 @@
+{
+  "build": "20261029-fullheight-v1",
+  "manifestName": "room-feac888fed.json",
+  "bundleName": "room-viewer-800d6e5291.js",
+  "overviewName": "overview-8516540657.jpg",
+  "phoneBytes": 21144604,
+  "phoneGzipBytes": 17853120,
+  "manifestBytes": 5262,
+  "previewBytes": 79837,
+  "bundleBytes": 695673,
+  "indexSha256": "591b33b450ad0272a9af88e8c42b66bc71bdc6c05aa66a4d5f0683a845cb1006",
+  "bundleSha256": "800d6e5291074ee5d84f203104a2f3481f259ac559c7fe4b0091db1370c9f09f",
+  "phoneModelSha256": "2b811d124120e70dcecc25d06e5dc397e2a28f310403a21fdfa1e290c41c9d2b"
+}

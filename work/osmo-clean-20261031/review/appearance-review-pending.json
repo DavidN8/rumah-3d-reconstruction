@@ -1,0 +1,33 @@
+{
+  "status": "pending_final_checkpoint",
+  "checkpointReviewed": "checkpoints/step-30000.ply",
+  "passedSoFar": [
+    "Dining-area wide view has complete wall/ceiling/door/floor appearance and good source alignment",
+    "Neighboring 52.4524s training view reconstructs sink, doorway, floor and toilet clearly"
+  ],
+  "unresolved": [
+    {
+      "source": "cam0/frame_001557_eval.jpg",
+      "timeSeconds": 51.9519,
+      "issue": "Hazy foreground obstruction over toilet/right tiled wall; not acceptable as a clean final view",
+      "alsoPresentAtNearbyTrainingFrame": "cam0/frame_001551_train.jpg",
+      "eliminatedExplanations": [
+        "Resetting and freshly sorting the camera did not clear it",
+        "Radial versus planar depth sorting did not clear it",
+        "Disabling SH2 colour did not clear it",
+        "No Gaussian cores intruded into two distinct training camera positions under the diagnostic proxy"
+      ]
+    }
+  ],
+  "evidence": [
+    "renders/clean-preview30-pose-5.png",
+    "renders/clean-preview30-pose-6.png",
+    "renders/clean-preview30-radial-sh0-pose-6.png",
+    "renders/clean-preview30-nearby-pose-1.png",
+    "renders/clean-preview30-nearby-pose-2.png",
+    "gaussian-free-space-30k.json"
+  ],
+  "next": "Finish the current 50k clean run, inspect its native evaluation images and original PLY at this exact source pose. If obstruction persists, test targeted geometric refinement with validated depth/visibility constraints before approving deployment.",
+  "publicDeploymentApproved": false,
+  "modelEditedOrCulled": false
+}

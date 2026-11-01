@@ -1,0 +1,47 @@
+{
+ "M0": {
+  "dir": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\colmap-gpu\\ws\\sparse\\1",
+  "n_images": 325,
+  "role": "living+corridor+bedroom"
+ },
+ "M1": {
+  "dir": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\colmap-gpu\\ws\\sparse\\0",
+  "n_images": 176,
+  "role": "kitchen"
+ },
+ "method": "trajectory anchor (junction pose + speed-continuity scale) -> ICP on full sparse clouds -> global 7-DOF reprojection refinement over cross-model SIFT matches",
+ "similarity": {
+  "scale": 0.6605517812033708,
+  "R": [
+   [
+    -0.7930775180111002,
+    -0.6089568747897338,
+    0.014127104150292304
+   ],
+   [
+    0.6066547988728681,
+    -0.7917392095270033,
+    -0.07154704118323643
+   ],
+   [
+    0.05475404487225411,
+    -0.04817207431568747,
+    0.9973371776015624
+   ]
+  ],
+  "t": [
+   -0.6356912383858438,
+   -0.9544614895556714,
+   -0.00269373415995966
+  ]
+ },
+ "structure_agreement": {
+  "points_within_0.01": 1139,
+  "median_nn_units": 0.14101291870442229
+ },
+ "refined_reproj_px": {
+  "median": 0.0,
+  "p90": 0.0
+ },
+ "n_points_merged": 75213
+}

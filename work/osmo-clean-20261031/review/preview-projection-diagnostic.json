@@ -1,0 +1,50 @@
+{
+  "purpose": "CPU-only diagnostic: project seed and intermediate Gaussian centres at fresh poses.\n\nThis is not a Gaussian renderer or quality metric. It checks coordinate alignment\nwithout competing for the training GPU or changing any reconstruction files.\n",
+  "rows": [
+    {
+      "pose": "cam0/frame_000027_train.jpg",
+      "statistics": [
+        {
+          "kind": "Fresh sparse seed",
+          "visibleCentres": 90361,
+          "medianVisibleDepth": 1.7048919615764109
+        },
+        {
+          "kind": "5k Gaussian centres (no footprint)",
+          "visibleCentres": 112347,
+          "medianVisibleDepth": 1.5625729115341713
+        }
+      ]
+    },
+    {
+      "pose": "cam1/frame_000600_train.jpg",
+      "statistics": [
+        {
+          "kind": "Fresh sparse seed",
+          "visibleCentres": 20992,
+          "medianVisibleDepth": 1.0875920108645287
+        },
+        {
+          "kind": "5k Gaussian centres (no footprint)",
+          "visibleCentres": 36909,
+          "medianVisibleDepth": 1.1679940957587527
+        }
+      ]
+    },
+    {
+      "pose": "cam0/frame_001557_eval.jpg",
+      "statistics": [
+        {
+          "kind": "Fresh sparse seed",
+          "visibleCentres": 90596,
+          "medianVisibleDepth": 3.561078168058301
+        },
+        {
+          "kind": "5k Gaussian centres (no footprint)",
+          "visibleCentres": 120952,
+          "medianVisibleDepth": 3.480448748436611
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "purpose": "Local-only unlit versus PBR QA; no production deployment",
+  "source": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\lite-v1\\exports\\osmo-lite-source.glb",
+  "source_sha256": "0ea8d6a93550e5677133886e3999a505a33b3743a5148c15614112741d354036",
+  "output": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-web-20261031\\public\\qa-source-v1-unlit.glb",
+  "output_sha256": "e1914e859344c7391dfac92d2bacf0267231841eb17448c2e1294dee87e3735e",
+  "binary_tail_sha256": "b7a10f06fac98ea0cdd5329c0fb65712b30241a2fd4111b9de9cfeb67250a035",
+  "binary_chunks_identical": true,
+  "only_json_material_extension_changed": true,
+  "materials_changed": 1,
+  "bytes": 25843180
+}

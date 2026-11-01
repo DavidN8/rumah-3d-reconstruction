@@ -1,0 +1,22 @@
+HTTP/1.1 200 OK
+Date: Tue, 27 Oct 2026 11:26:07 GMT
+Content-Type: model/gltf-binary
+Content-Length: 302564257
+Connection: keep-alive
+Accept-Ranges: bytes
+Cache-Control: public, max-age=31536000, immutable
+Content-Encoding: gzip
+etag: "6ae08878-1208c3a1"
+last-modified: Tue, 27 Oct 2026 11:18:16 GMT
+Server: cloudflare
+vary: Accept-Encoding
+vary: Accept-Encoding
+x-content-type-options: nosniff
+x-robots-tag: noindex, nofollow
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=i3RWuetRF4YfpV%2BqV%2But3y5Nl5OK%2Fjk3XUHcB64bGj6qurDM5ucfS%2FDDAwWJfPqJKmgEJWAgXF9DBQSemtW1c8XuAMHXqTp24rOITXMhBO469Vv4FK%2BOcLPxkBt7R3LUoy9zvxA%3D"}]}
+CF-RAY: a511581098566a1b-MRS
+alt-svc: h3=":443"; ma=86400
+

@@ -1,0 +1,55 @@
+{
+  "input": ".\\outputs\\iPhone_Wide_Full_Native.glb",
+  "output": ".\\work\\mobile-20261029\\phone-simplified.glb",
+  "originalTriangles": 11891853,
+  "triangles": 1603164,
+  "bytes": 96324304,
+  "primitives": [
+    {
+      "mesh": "zone-kitchen",
+      "sourceTriangles": 5406238,
+      "triangles": 563447,
+      "requestedTriangles": 545540,
+      "estimatedAbsoluteError": 0.003961510956287384,
+      "attributeWeights": [
+        0.01,
+        0.01,
+        0.01,
+        0.05,
+        0.05
+      ],
+      "protectedVertices": 0,
+      "flags": [
+        "LockBorder",
+        "ErrorAbsolute"
+      ],
+      "positionsNormalsUvsUnchangedForRetainedVertices": true
+    },
+    {
+      "mesh": "zone-living-bedroom",
+      "sourceTriangles": 6485615,
+      "triangles": 1039717,
+      "requestedTriangles": 654459,
+      "estimatedAbsoluteError": 0.003998136147856712,
+      "attributeWeights": [
+        0.01,
+        0.01,
+        0.01,
+        0.05,
+        0.05
+      ],
+      "protectedVertices": 0,
+      "flags": [
+        "LockBorder",
+        "ErrorAbsolute"
+      ],
+      "positionsNormalsUvsUnchangedForRetainedVertices": true
+    }
+  ],
+  "textureSha256": [
+    "5c89f0f5a1660cf4ecdc846512284520da66f57b0ddb648cf5106ac5d4679760",
+    "85af68c0026adf507b7f290a3200293fa513e5ee0777dca234745747d8e8fc85"
+  ],
+  "sourceSurfacesDeletedByOwnershipFilter": 0,
+  "requiresMatchedCameraHoleRegressionGate": true
+}

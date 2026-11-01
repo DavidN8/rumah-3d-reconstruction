@@ -1,0 +1,115 @@
+# SYSTEM ROLE & HANDOFF BRIEF: FIXING ZCODE'S `20261027_IPHONE_WIDE` RECONSTRUCTION
+
+You are taking over as Lead 3D Computer Vision & WebGL Systems Engineer on the `Ruang Kamare` repository.
+A previous AI agent (ZCode / GLM) just finished running an end-to-end reconstruction pipeline on an iPhone 17 wide-angle walkthrough video (`IMG_0180.MOV`, 1080×1920 portrait, 156.9s), documented in `IPHONE_RECONSTRUCTION_REPORT.md` at the repo root.
+
+The raw Gaussian Splatting training quality per room zone actually converged well (40,000 steps per zone on RTX 5080, PSNR 32–42 dB, SSIM 0.96–0.99, ~12 mins per zone), **BUT ZCode completely botched the coordinate frame, the Kitchen-to-Living-Room scale/registration, the mesh size, and the web viewer controls.**
+
+The user rejected the output with these exact complaints:
+1. **"The model is flipped (upside down)."**
+2. **"Kitchen scaling is wrong"** (and doorway alignment is skewed).
+3. **"Web control is shit"** (laggy 539 MB / 11.6M triangle mesh, inverted/broken WASD & orbit navigation, bad speed/orientation).
+4. **"It's shit... fix what ZCode did."**
+
+---
+
+# 1. WORKSPACE & PROTECTED ISOLATION RULES
+
+- **Repo Root:** `C:\Users\bombe\OneDrive\Documents\ChatGPT\Ruang Kamare`
+- **Active Project Workspace (`WORK_DIR`):** `C:\Users\bombe\OneDrive\Documents\ChatGPT\Ruang Kamare\roomscan-reconstruction\data\20261027_IPHONE_WIDE`
+- **Python Environment (`HOST_PYTHON`):** `C:\Users\bombe\OneDrive\Documents\ChatGPT\Ruang Kamare\roomscan-reconstruction\data\20261019_095800\runtime\host-model-venv\Scripts\python.exe`
+- **Engine Binary (`SPIRULA`):** `C:\Users\bombe\OneDrive\Documents\ChatGPT\Ruang Kamare\roomscan-reconstruction\data\20261019_095800\runtime\spirula\bin\spirula.exe`
+
+## STRICT RULES:
+1. **Stay inside `20261027_IPHONE_WIDE`.** Do NOT touch `20261019_VID_2445` (archived Nikon scan). Only read from `20261019_095800` and `room-models/` (the user's older accepted Bedroom/Bathroom release) as reference for how the working viewer and cleanup scripts were built.
+2. **Use Full GPU Speed (RTX 5080):** Never set `CUDA_VISIBLE_DEVICES=-1`, never use `gpu_memory_guard.py`, and use all CPU threads (`OMP_NUM_THREADS=12+`).
+3. **No "3/10,000 Toothpicks" Laziness:** Do not stop after analyzing. Fix the scripts, regenerate the corrected assets, verify them visually by rendering upright perspective + top-down views, and verify the web viewer controls end-to-end.
+
+---
+
+# 2. FIRST STEP: READ THESE EXACT FILES TO GROUND YOURSELF
+
+Read these files first before writing code:
+1. `IPHONE_RECONSTRUCTION_REPORT.md` (at Repo Root — explains everything ZCode built in `20261027_IPHONE_WIDE`).
+2. `20261027_IPHONE_WIDE/scripts/12_merge_models.py` (where ZCode broke the Kitchen scale and doorway alignment).
+3. `20261027_IPHONE_WIDE/scripts/06_zone_split.py`, `07_train_zone.py`, `08_mesh_zone.py`, and `09_merge_export.py` (where ZCode flipped the model upside down and exported a 539 MB / 11.6M triangle bloat file).
+4. `20261027_IPHONE_WIDE/review/index.html` and Compare it against the working viewers in `room-models/` / `roomscan-web/` and `20261019_095800` / `20261019_VID_2445/review/mesh-controls.js` & `mesh-viewer.html`.
+
+---
+
+# 3. THE 4 EXACT BUGS YOU MUST FIX
+
+## BUG 1: The Model Is Upside Down (`09_merge_export.py` Gravity & Up-Vector Bug)
+**What ZCode did wrong:**
+- In `09_merge_export.py`, ZCode assumed the native COLMAP world frame was `+Z up` and applied a wrapper node flipping "native Z-up to glTF Y-up".
+- In reality, `IMG_0180.MOV` was extracted as upright portrait frames (`1080×1920`). In COLMAP/OpenCV camera convention, camera `+X` is right, **`+Y` is DOWN**, and `+Z` is forward! Therefore, in the COLMAP world frame, the average camera `-Y` axis points UP toward the ceiling, while `+Y` points DOWN into the floor!
+**How to fix it mathematically (and verify it visually!):**
+1. Compute the true **World Up Vector ($\vec{u}_{\text{up}}$)** directly from the 501 registered cameras in `colmap-gpu/merged/sparse/0`:
+   - For each camera $i$ with world-to-camera rotation $R_i$, the camera's local "up" direction (toward the top of the portrait 1080×1920 frame) in world coordinates is $\vec{u}_i = R_i^T \begin{bmatrix} 0 & -1 & 0 \end{bmatrix}^T$.
+   - Average $\vec{u}_i$ across the upright walking frames and normalize to get $\vec{u}_{\text{up}}$, and cross-check it against the floor-to-ceiling normal vector from the floor/ceiling planes in the mesh (RANSAC plane fit on the lowest/highest vertices along $\vec{u}_{\text{up}}$: floor normals must point in $+\vec{u}_{\text{up}}$, and camera centers must sit ~1.3m–1.6m ABOVE the floor plane, NOT below it!).
+2. Construct a clean, proper rotation matrix $R_{\text{gltf}} \in SO(3)$ (`det(R) = +1`, NEVER a reflection `det = -1` that turns triangles inside-out!) that maps $\vec{u}_{\text{up}} \mapsto \begin{bmatrix} 0 & +1 & 0 \end{bmatrix}^T$ (glTF standard `+Y up`), levels the floor plane horizontally ($Y = 0$ at the floor), and centers the apartment at $(X=0, Z=0)$.
+3. **Bake this rigid transform directly into the vertex positions and vertex normals** of the exported GLB (or apply it consistently to both mesh vertices and exported camera poses in `cameras.json` / `detail-models.json`), rather than relying on a broken wrapper node!
+4. **Mandatory Verification:** Render a front/isometric PNG and a side-elevation PNG (`Y` axis vertical) of the transformed mesh showing the floor at $Y = 0$, walls going up to $Y \approx +2.5\text{ m}$, and the kitchen counter / bed / furniture sitting **right-side up on the floor**!
+
+## BUG 2: Wrong Kitchen Scale & Doorway Alignment (`12_merge_models.py`)
+**What ZCode did wrong:**
+- In `02_run_sfm.py`, COLMAP split the walk into two components at the kitchen doorway (`src frames 1290–1510`): Component A (Kitchen, 176 frames, `src <= 1388`) and Component B (Living Room + Corridor + Bedroom, 325 frames, `src >= 1389`).
+- Instead of registering the doorway with real 3D geometry, ZCode's `12_merge_models.py` guessed the scale ratio by dividing average frame-to-frame camera movement speed (`0.0756 / 0.1142 = 0.6605`) and forced the last frame of Kitchen and first frame of Living Room to be at the exact same point!
+- Because the user walked slower inside the smaller kitchen than in the long living-room corridor, multiplying the Kitchen by `0.6605` **shrunk the Kitchen to ~66% of its real physical size**!
+**How to fix the Kitchen Scale & Alignment properly:**
+1. **True Metric Scale Per Component Using MoGe-2 Metric Depth + Floor-to-Camera / Doorway Height:**
+   - Look at `20261027_IPHONE_WIDE/scripts/04_geometry.py` & `05_seed_cloud.py`: `moge2-vitl-normal.onnx` outputs **metric-proportioned depth maps**, and both Kitchen (`zone-0`) and Living Room (`zone-1`) see:
+     1. **The exact same Kitchen Doorway frame / wall opening** (`src frames 1290–1510`) from both sides and during the walkthrough!
+     2. **Camera-to-Floor height ($h_{\text{cam}}$)** while the user holds the iPhone at chest/eye level walking from the Kitchen (`frames 1200–1388`) through the doorway into the Living Room (`frames 1389–1600`)!
+   - Measure the floor-to-camera height $h_{\text{cam}}$ and doorway height/width in **Zone 0 (Kitchen)** vs **Zone 1 (Living Room)**! In `09_merge_export.py` / `12_merge_models.py`, compare the floor-to-ceiling height and camera-to-floor height in Kitchen vs Living Room — you will immediately see the scale discrepancy caused by ZCode's `s = 0.6605` walking-speed hack!
+2. **Bridge & Re-Align Kitchen (`zone-0`) to Living Room (`zone-1`) at True 1:1 Physical Scale:**
+   - **Fast Path (Direct Mesh/Splat `Sim3` Correction — Takes < 2 Minutes!):**
+     Since `zone-0` (`Kitchen`), `zone-1` (`Living Room`), and `zone-2` (`Bedroom`) were trained with `--orientation-method none --center-method none --auto-scale-poses 0` (so `zone-0`'s mesh `exports/zone-0/zone-0_textured.glb` is simply a rigid transform of the Kitchen COLMAP component!), you can compute the exact correcting `Sim3` transform $\Delta T_{\text{kitchen}} = (\Delta s, \Delta R, \Delta t)$ on `zone-0`!
+   - How to lock $\Delta T_{\text{kitchen}} = (\Delta s, \Delta R, \Delta t)$ with high precision:
+     1. First, match the doorway transition frames (`src 1250–1550`, bridging the 4-frame gap between `zone-0` and `zone-1`) using dense GPU feature matching (`XFeat` / `LOFTR` / `SIFT` + backprojected `MoGe-2` 3D depth points in the doorway frames!). Even across a 4-frame (0.13s) doorway step, `MoGe-2` depth maps on the last 10 frames of `zone-0` and first 10 frames of `zone-1` see the **exact same doorway frame, floor tiles, and adjacent wall**!
+     2. Align the 3D backprojected doorway point clouds + matched 2D-3D keypoints between `zone-0`'s last 10 frames and `zone-1`'s first 10 frames, constrained so that:
+        - The **floor plane** of `zone-0` (Kitchen) and the **floor plane** of `zone-1` (Living Room) are **coplanar ($Y_{\text{floor, kitchen}} = Y_{\text{floor, living}} = 0$)**!
+        - The **ceiling height / doorway frame height / camera height above the floor** in Kitchen (`frames 1350–1388`) and Living Room (`frames 1389–1430`, 0.13 seconds later!) match continuously! (A human's height above the floor does NOT change by 34% in 0.13 seconds!).
+     3. Apply this corrected rigid `Sim3` transform directly to `zone-0`'s mesh (and `colmap-gpu/merged/sparse/0` camera poses for `zone-0`), and verify on a top-down floorplan + side-elevation cross-section plot that the Kitchen floor, ceiling, doorway walls, and scale match the Living Room seamlessly!
+     *(Note: If applying $\Delta T_{\text{kitchen}}$ directly to `zone-0`'s already-trained mesh leaves any doorway gap, you can either run doorway seam repair OR re-train/re-mesh `zone-0` in 12 minutes on the RTX 5080 in the corrected coordinate frame).*
+
+## BUG 3: Massive 539 MB / 11.6M Triangle Bloat & Decimation (`09_merge_export.py`)
+**What ZCode did wrong:**
+- `exports/iphone-full-room.glb` has **11,641,867 triangles** and weighs **539 MB**!
+- Browser WebGL viewers grind to a halt trying to orbit/walk a 12-million-triangle mesh, and a 539 MB file cannot be embedded in a standalone offline HTML viewer or downloaded easily.
+**How to fix it:**
+1. Inspect how `room-models/cleanup-report.json` or UV-preserving mesh simplification / decimation is handled, OR check `spirula mesh` flags (`--max-grid-res`, `--grid-cell-factor`, `--merge-factor` — e.g., `--merge-factor 0.7` or `0.8` in `spirula mesh` merges coplanar wall triangles during extraction while baking the 8192×8192 texture cleanly onto the simplified mesh!).
+2. **Key Insight:** If you re-run `spirula mesh` on the 3 existing trained checkpoints (`training/zone-0`, `zone-1`, `zone-2` — takes only ~60 seconds per zone on RTX 5080!) with a slightly higher `--merge-factor` (or reasonable `--max-grid-res`) and JPEG/WebP-compressed or optimized PNG textures inside the GLB, you get **~500k to 1.5M total triangles** (instead of 11.6M!) and a **~40–90 MB GLB** (instead of 539 MB!) with **zero UV seam destruction** because `spirula mesh` bakes the 8K textures *after* triangle merging!
+
+## BUG 4: Fix the Web Viewer & Controls (`review/index.html`)
+**What ZCode did wrong:**
+- The viewer in `20261027_IPHONE_WIDE/review/index.html` has terrible controls because the mesh was upside down, the scale was wrong, the 11.6M triangle count caused massive input lag, and the control script was poorly tuned.
+**How to fix the Web Viewer:**
+1. Compare `20261027_IPHONE_WIDE/review/index.html` with the polished viewer in `20261019_VID_2445/review/mesh-viewer.html` + `mesh-controls.js` (and `roomscan-web/`).
+2. Fix the viewer so that:
+   - **Right-Side Up & Floor-Aligned:** The apartment loads **right-side up** (`+Y` is up, floor is horizontal at $Y=0$), starting at a natural eye-level camera position inside the Living Room looking toward the Kitchen/Corridor.
+   - **Smooth, Intuitive First-Person (Walk) & Orbit Controls:**
+     - **Walk Mode (Default or 1-click toggle):** Pointer-lock or smooth left-drag mouse look (yaw around world `+Y` so the horizon NEVER rolls/tilts sideways!), `WASD` movement along the horizontal XZ plane (or view direction), `Q/E` (or Space/C) for vertical height (`+Y / -Y`), `Shift` for faster walk, `Scroll wheel` for smooth step/zoom, and `R` to reset view.
+     - **Orbit Mode:** Clean turntable orbit around a target point on the floor/room center, keeping world `+Y` strictly vertical (no gimbal roll flips!).
+   - **Camera View Presets & Source Frame Comparison:**
+     - Populate the dropdown with **accurate, upright recorded camera views** in Kitchen, Doorway, Living Room, Corridor, and Bedroom (transformed by the exact same $R_{\text{gltf}}, s, t$ as the mesh so clicking a preset places the viewer at that exact camera pose!) with a working **"Compare source frame"** toggle!
+   - **Provide BOTH:**
+     1. A fast local HTTP server launcher (`review/open_viewer.bat` or `serve.py`) AND
+     2. A self-contained standalone HTML (`review/iPhone-Full-Room-preview.html`) once the GLB is optimized down from 539 MB to ~50–90 MB!
+
+---
+
+# 4. MANDATORY VERIFICATION GATES BEFORE YOU FINISH
+
+Do NOT declare success until you have verified all 4 of these with actual rendered images:
+1. **Upright & Scale Elevation Check (`analysis/fixed-elevation-and-floorplan.png`):**
+   - Render a **Top-Down Floorplan (XZ)** AND a **Side Elevation (XY / ZY)** of the merged mesh + camera trajectory showing:
+     - The floor is flat and horizontal at $Y \approx 0$ across ALL 3 zones (Kitchen, Living Room, Bedroom).
+     - The ceiling/walls extend upward to $Y > 0$ (model is 100% right-side up!).
+     - The Kitchen floor-to-ceiling height and camera height above the floor match the Living Room at 1:1 scale (no 0.66x shrunken kitchen!).
+2. **8-View Upright Perspective Renders (`analysis/fixed-renders/`):**
+   - Render 8 upright perspective views from eye level inside the Kitchen, Doorway, Living Room, Corridor, and Bedroom and visually inspect them to confirm right-side-up geometry, seamless doorway transition, and recognizable furniture/appliances.
+3. **Triangle Count & File Size Check:**
+   - Total merged GLB triangle count is between `600,000` and `2,000,000` triangles (down from `11.64M`) and file size is `< 120 MB` (down from `539 MB`) so it renders at a locked **60 FPS** in the browser.
+4. **Web Control Verification:**
+   - Verify that `WASD`, `Q/E`, mouse look, Orbit mode, `Rotate 90°` / `Top view` / `Reset view`, and the recorded view dropdown all move in the correct world directions (`W` = forward, `A/D` = strafe left/right, `Q/E` = down/up along `+Y`, mouse yaw rotates strictly around world `+Y` without rolling the camera upside down).

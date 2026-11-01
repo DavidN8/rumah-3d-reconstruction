@@ -1,0 +1,17 @@
+{
+  "surface": "Validated depth TSDF, no Gaussian mesh extraction",
+  "textureMethod": "Chart-consistent source-view assignment with ranked visibility fallback; explicit original binary masks; no colour averaging or sharpening",
+  "views": 414,
+  "evalImagesExcluded": true,
+  "charts": 24656,
+  "occupiedTexels": 8357661,
+  "supportedTexels": 7139806,
+  "supportedFraction": 0.8542827951504613,
+  "textureSize": 4096,
+  "jpegBytes": 6492541,
+  "sourceMeshSha256": "2827e16ffaeaebf97167205397872a5aa3d27c8cfcb6c040d81418c6b506d324",
+  "sourceMeshModified": false,
+  "seconds": 79.42200000002049,
+  "status": "pilot_requires_visual_review",
+  "fallbackToOtherVerifiedVisiblePhotoTexels": 1209472
+}

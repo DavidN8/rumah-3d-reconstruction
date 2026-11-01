@@ -1,0 +1,13 @@
+{
+  "status": "midpoint_full_rebuild_passed_continue_training",
+  "iterations": 20000,
+  "heldoutSourceTimeSeconds": 51.9519,
+  "sourceSplats": 2999972,
+  "rmse255": 12.034503632745237,
+  "psnrDb": 26.522239961585342,
+  "renderSha256": "c3a1b0f06bb59f292189ddbbc1c77c39a64e7a2d570deff335ee09745d3059e8",
+  "checkpointSha256": "91abfddaea4b2cce3acebdfc6ccf6c619a59a6d0a6f254e0cd849e764fb45082",
+  "visualFindings": "Same 51.9519s held-out original camera remains unobstructed. Tile lines and toilet edges improved over the 5k full-scene checkpoint.",
+  "releaseApproved": false,
+  "scope": "Single matched camera appearance diagnostic; final seven-view and compressed-model QA still required."
+}

@@ -1,0 +1,13 @@
+{
+  "observations": 4711,
+  "images": 243,
+  "sample_seed": 20261031,
+  "per_image_cap": 20,
+  "minimum_track_length": 5,
+  "maximum_reprojection_pixels": 2,
+  "maximum_fisheye_theta_degrees": 85,
+  "source_masks_required": true,
+  "model": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\lite-v1\\dataset\\sparse\\0",
+  "cache_sha256": "c9ef56d4868fcdec8498f29bb336f08ff7e884fc42dd3b806d29ff77216bc4f5",
+  "note": "Identical observations reused for baseline and candidates. These points participated in SfM/training; this is consistency, not held-out geometry accuracy."
+}

@@ -1,0 +1,40 @@
+{
+  "status": "intermediate_full_rebuild_passed_continue_training",
+  "checkpoint": "checkpoints/explicit-full-step5000.ply",
+  "checkpointSha256": "0fce51ad7870f4889531bc9bada5857a9fa7139e947f7c755ac9b570131bfb95",
+  "iterations": 5000,
+  "fullCapture": true,
+  "sourceSplats": 2999876,
+  "views": [
+    {
+      "pose": 3,
+      "sourceTimestampSeconds": 20.02,
+      "split": "train",
+      "rmse255": 17.450247106390044,
+      "psnrDb": 23.294771984285966,
+      "render": "renders\\clean-explicit5-pose-3.png",
+      "renderSha256": "35a7035ecd1c419db993725de76021b02489b14dc4e92a3c8180ba5ad508a7eb"
+    },
+    {
+      "pose": 5,
+      "sourceTimestampSeconds": 39.9399,
+      "split": "train",
+      "rmse255": 17.1178330231197,
+      "psnrDb": 23.461827894458235,
+      "render": "renders\\clean-explicit5-pose-5.png",
+      "renderSha256": "483a8349e7ec32d231101405b4f2ca75a218653ea0f6a7be38081c30f8f00ce9"
+    },
+    {
+      "pose": 6,
+      "sourceTimestampSeconds": 51.9519,
+      "split": "eval",
+      "rmse255": 15.200806864493938,
+      "psnrDb": 24.49347078728751,
+      "render": "renders\\clean-explicit5-pose-6.png",
+      "renderSha256": "1775e2e0a879b89c5607a44a6d49ab6802d2598ea2845866ae4c805e42332b57"
+    }
+  ],
+  "visualFindings": "Both bathroom visits and dining view inspected in Chrome. No opaque foreground obstruction at original held-out 51.9519-second camera. Fine detail still soft at this early checkpoint.",
+  "releaseApproved": false,
+  "scope": "Train and held-out appearance diagnostic at exact original source cameras; SfM still uses the same capture. Not independent geometric ground truth."
+}

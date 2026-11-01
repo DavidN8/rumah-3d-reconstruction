@@ -1,0 +1,11 @@
+{
+  "version": "2026.10.30",
+  "reported_version": "2026.10.30 (6ad73ef)",
+  "source": "https://github.com/harry7557558/spirula-studio/releases/tag/v2026.10.30",
+  "download": "https://github.com/harry7557558/spirula-studio/releases/download/v2026.10.30/spirula-2026.10.30-windows-vulkan-x86_64.zip",
+  "archive_sha256": "dfaf1376ab78acf4bfbaaeb7a3f12b7c06ab30bf1d9eee6082100dbc1e7b71dd",
+  "checksum_verified": true,
+  "executable_relative_path": "runtime/spirula-2026.10.30/spirula.exe",
+  "old_runtime_preserved": true,
+  "segmentation_runtime": "Existing 2026.10.16, independently tested SAM2.1 and GroundingDINO masks"
+}

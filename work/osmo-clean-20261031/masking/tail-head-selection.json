@@ -1,0 +1,172 @@
+{
+  "selected": [
+    {
+      "source_frame": 1770,
+      "time_seconds": 59.059000000000005,
+      "filename": "frame_001770_train.jpg",
+      "sharpness": [
+        631.3416137695312,
+        532.862548828125
+      ],
+      "image_motion_px_320": [
+        6.2097063064575195,
+        2.5258705615997314
+      ],
+      "split": "train"
+    },
+    {
+      "source_frame": 1776,
+      "time_seconds": 59.2592,
+      "filename": "frame_001776_train.jpg",
+      "sharpness": [
+        567.3548583984375,
+        529.525390625
+      ],
+      "image_motion_px_320": [
+        5.243170261383057,
+        2.965444803237915
+      ],
+      "split": "train"
+    },
+    {
+      "source_frame": 1800,
+      "time_seconds": 60.06,
+      "filename": "frame_001800_train.jpg",
+      "sharpness": [
+        692.1776123046875,
+        524.7672729492188
+      ],
+      "image_motion_px_320": [
+        3.239650249481201,
+        4.447991847991943
+      ],
+      "split": "train"
+    },
+    {
+      "source_frame": 1809,
+      "time_seconds": 60.3603,
+      "filename": "frame_001809_train.jpg",
+      "sharpness": [
+        794.4280395507812,
+        695.8130493164062
+      ],
+      "image_motion_px_320": [
+        3.39558482170105,
+        6.451498508453369
+      ],
+      "split": "train"
+    },
+    {
+      "source_frame": 1815,
+      "time_seconds": 60.5605,
+      "filename": "frame_001815_train.jpg",
+      "sharpness": [
+        719.1923217773438,
+        864.212646484375
+      ],
+      "image_motion_px_320": [
+        3.7978341579437256,
+        4.058928966522217
+      ],
+      "split": "train"
+    },
+    {
+      "source_frame": 1833,
+      "time_seconds": 61.1611,
+      "filename": "frame_001833_train.jpg",
+      "sharpness": [
+        670.9580078125,
+        839.68896484375
+      ],
+      "image_motion_px_320": [
+        5.055676460266113,
+        9.612089157104492
+      ],
+      "split": "train"
+    },
+    {
+      "source_frame": 1842,
+      "time_seconds": 61.4614,
+      "filename": "frame_001842_eval.jpg",
+      "sharpness": [
+        439.1082763671875,
+        712.7794189453125
+      ],
+      "image_motion_px_320": [
+        8.022096633911133,
+        8.221162796020508
+      ],
+      "split": "eval"
+    },
+    {
+      "source_frame": 1848,
+      "time_seconds": 61.6616,
+      "filename": "frame_001848_train.jpg",
+      "sharpness": [
+        272.13385009765625,
+        613.3926391601562
+      ],
+      "image_motion_px_320": [
+        7.752601146697998,
+        6.670140743255615
+      ],
+      "split": "train"
+    },
+    {
+      "source_frame": 1881,
+      "time_seconds": 62.7627,
+      "filename": "frame_001881_train.jpg",
+      "sharpness": [
+        302.19232177734375,
+        455.4476623535156
+      ],
+      "image_motion_px_320": [
+        0.9395735263824463,
+        7.483609199523926
+      ],
+      "split": "train"
+    },
+    {
+      "source_frame": 1890,
+      "time_seconds": 63.063,
+      "filename": "frame_001890_train.jpg",
+      "sharpness": [
+        257.5860595703125,
+        320.6487121582031
+      ],
+      "image_motion_px_320": [
+        3.655268669128418,
+        7.626224517822266
+      ],
+      "split": "train"
+    },
+    {
+      "source_frame": 1902,
+      "time_seconds": 63.4634,
+      "filename": "frame_001902_train.jpg",
+      "sharpness": [
+        245.09486389160156,
+        239.66351318359375
+      ],
+      "image_motion_px_320": [
+        10.928730010986328,
+        9.557575225830078
+      ],
+      "split": "train"
+    },
+    {
+      "source_frame": 1908,
+      "time_seconds": 63.6636,
+      "filename": "frame_001908_train.jpg",
+      "sharpness": [
+        270.9495544433594,
+        262.72509765625
+      ],
+      "image_motion_px_320": [
+        13.50960636138916,
+        10.843923568725586
+      ],
+      "split": "train"
+    }
+  ]
+}

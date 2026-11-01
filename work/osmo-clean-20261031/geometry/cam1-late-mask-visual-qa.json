@@ -1,0 +1,25 @@
+{
+  "reviewer": "rebuild_calibration",
+  "date": "2026-10-31",
+  "scope": "Read-only broad first-pass mask QA, cam1 contact sheets0120-0216. No mask edited.",
+  "source_sheets": ["raw-cam1-0120.jpg", "raw-cam1-0144.jpg", "raw-cam1-0168.jpg", "raw-cam1-0192.jpg", "raw-cam1-0216.jpg"],
+  "source_sheet_directory": "work/osmo-clean-20261031/masking/review",
+  "substantial_blue_trouser_misses_source_frames": [1356, 1359, 1467, 1524, 1575, 1689],
+  "body_miss_native_confirmation": {"source_frame": 1356, "finding": "Actual operator blue trousers fill much of the left side and remain unmasked in broad overlay; not repairable by small boundary dilation alone."},
+  "true_moving_shadows": [
+    {"source_frames": [1272, 1374], "strongest_range": [1284, 1365], "surface": "central white wall", "native_confirmed_source_frame": 1356},
+    {"source_frames": [1551, 1575], "surface": "bathroom tiled floor", "native_confirmed_source_frame": 1551, "finding": "Real operator torso and arm shadow; broad mask catches fragments only. Do not call this static floor false positive."},
+    {"source_frames": [1212, 1266], "surface": "floor", "evidence": "Contact-sheet candidate only; needs native confirmation before applying ROI"}
+  ],
+  "native_confirmed_static_false_positives": [
+    {"source_frame": 1608, "objects": "washbasin, faucet region, pink bucket"},
+    {"source_frame": 1704, "objects": "brown door"},
+    {"source_frame": 1896, "objects": "folded clothes on bed"}
+  ],
+  "contact_sheet_only_false_positive_candidates": [
+    {"source_frames": [1467, 1473], "objects": "bathroom mat"},
+    {"source_frames": [1833, 1836], "objects": "clothes and bed"}
+  ],
+  "recommendation": "Compare specific body-miss frames under narrow person;hand;arm inference. Retain broad shadow data only inside visually verified moving-shadow ROIs. Do not union all broad masks back into narrow masks.",
+  "limitations": "Contact sheets cannot prove pixel-perfect boundaries or every frame in an interval. Narrow second-pass masks were not available during this review."
+}

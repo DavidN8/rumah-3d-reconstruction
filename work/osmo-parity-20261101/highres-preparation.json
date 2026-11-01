@@ -1,0 +1,15 @@
+{
+  "outputDataset": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\parity-20261101\\explicit-1600\\dataset",
+  "originalDataset": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\clean-v3\\explicit-full-v1\\dataset",
+  "size": 1600,
+  "interpolation": "Lanczos4 RGB; nearest-neighbour binary masks",
+  "views": 2219,
+  "sources": 452,
+  "train": 2031,
+  "eval": 188,
+  "sameViewIdentity": true,
+  "oldCheckpointInitialization": false,
+  "guidancePolicy": "Reuse exact independently cross-time-validated depth/normal rays and dense train-only seed. Geometry map resolution stays 768; explicit RGB and K increase to 1600. No eval geometry reused.",
+  "seedSha256": "0e405c89fefc6a9de46ba2ae2db141ef0a1a832bd44bd2c8dd58bd0984eb68e5",
+  "oldFilesModified": false
+}

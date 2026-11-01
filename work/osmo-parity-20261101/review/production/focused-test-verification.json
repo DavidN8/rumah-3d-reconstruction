@@ -1,0 +1,32 @@
+{
+  "dateLocal": "2026-10-31",
+  "passed": 26,
+  "failed": 0,
+  "runs": [
+    {
+      "files": [
+        "native-delivery.test.mjs",
+        "loader-core.test.mjs"
+      ],
+      "passed": 15
+    },
+    {
+      "files": [
+        "choice-gate.test.mjs",
+        "model-selection.test.mjs"
+      ],
+      "passed": 11
+    }
+  ],
+  "sdk": "Spark 2.4.0",
+  "newRegression": "SOG extension maps to the installed SDK PCSOGSZIP enum (pcsogszip); passing sog explicitly bypasses auto-detection.",
+  "sourceSha256": {
+    "native-delivery.js": "85a419a301c77e1e3a236f0e39de09c198c1d391727c570426fefef7dde68fa0",
+    "room-viewer.js": "35b8e275baa7e40193d2a75810bb78b4a99df1a0d62af95f708b01cda8a11d64",
+    "native-delivery.test.mjs": "d7dc0d8ef49aa5a1ba11a335dcc432d9bf6f5f817925e4252ea833e7948bc0ec",
+    "loader-core.test.mjs": "1442f62ef9529d4cd4e7b5813bbad16a2a9a947f4deff837778969b854266fec",
+    "choice-gate.test.mjs": "afd97a44186cb7e7cee7c26493537b3894d3ecd5e1bb69c0fca98ee0a190d19d",
+    "model-selection.test.mjs": "b231e58e86e63a22881e86b33eedd60680d0ead818b6d0f08ca2af26da6248b1"
+  },
+  "scope": "Focused non-browser checks. Actual final SOG, final build, physical phones and public deployment have separate evidence."
+}

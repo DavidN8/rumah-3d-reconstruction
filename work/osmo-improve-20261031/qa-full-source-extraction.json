@@ -1,0 +1,390 @@
+{
+  "command": [
+    "C:\\Program Files\\ffmpeg\\bin\\ffmpeg.exe",
+    "-hide_banner",
+    "-nostdin",
+    "-n",
+    "-threads",
+    "8",
+    "-i",
+    "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\originals\\CAM_20261031005909_0004_D.OSV",
+    "-filter_complex",
+    "[0:v:0]fps=2,format=yuvj420p[c0];[0:v:1]fps=2,format=yuvj420p[c1]",
+    "-map",
+    "[c0]",
+    "-q:v",
+    "2",
+    "-fps_mode",
+    "passthrough",
+    "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\recovery-v2\\source-full\\images\\cam0\\frame_%06d.jpg",
+    "-map",
+    "[c1]",
+    "-q:v",
+    "2",
+    "-fps_mode",
+    "passthrough",
+    "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\recovery-v2\\source-full\\images\\cam1\\frame_%06d.jpg"
+  ],
+  "original_command": [
+    "C:\\Program Files\\ffmpeg\\bin\\ffmpeg.exe",
+    "-hide_banner",
+    "-nostdin",
+    "-n",
+    "-threads",
+    "8",
+    "-i",
+    "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\originals\\CAM_20261031005909_0004_D.OSV",
+    "-filter_complex",
+    "[0:v:0]fps=2,scale=1920:1920:flags=lanczos,format=yuvj420p[c0];[0:v:1]fps=2,scale=1920:1920:flags=lanczos,format=yuvj420p[c1]",
+    "-map",
+    "[c0]",
+    "-q:v",
+    "2",
+    "-fps_mode",
+    "passthrough",
+    "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\lite-v1\\dataset\\images\\cam0\\frame_%06d.jpg",
+    "-map",
+    "[c1]",
+    "-q:v",
+    "2",
+    "-fps_mode",
+    "passthrough",
+    "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\lite-v1\\dataset\\images\\cam1\\frame_%06d.jpg"
+  ],
+  "exact_fps_filter_preserved": true,
+  "only_extraction_filter_change": "Removed equal1920x1920 Lanczos scale; retained native3840x3840 lens pixels",
+  "output": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\recovery-v2\\source-full",
+  "source": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\originals\\CAM_20261031005909_0004_D.OSV",
+  "started_unix": 1793387951.7290885,
+  "exit_code": 0,
+  "elapsed_seconds": 29.40728119999403,
+  "frames_per_lens": 130,
+  "total_full_resolution_images": 260,
+  "resolution": [
+    3840,
+    3840
+  ],
+  "total_rgb_bytes": 269297403,
+  "mask_resize": "Exactly2x nearest-neighbor from frozen1920 masks; original masks untouched",
+  "intrinsics_change": "Multiply fx,fy,cx,cy by2; retain all fisheye distortion coefficients and poses",
+  "source_comparisons": [
+    {
+      "camera": 0,
+      "frame": 1,
+      "same_index_is_closest": true,
+      "same_index_rmse": 2.224421262741089,
+      "same_index_mae": 1.3373949527740479,
+      "neighbor_comparison": [
+        {
+          "frame": 1,
+          "rgb_rmse": 2.224421262741089,
+          "rgb_mae": 1.3373949527740479
+        },
+        {
+          "frame": 2,
+          "rgb_rmse": 31.855274200439453,
+          "rgb_mae": 15.774354934692383
+        }
+      ]
+    },
+    {
+      "camera": 0,
+      "frame": 25,
+      "same_index_is_closest": true,
+      "same_index_rmse": 1.627644658088684,
+      "same_index_mae": 1.0352152585983276,
+      "neighbor_comparison": [
+        {
+          "frame": 24,
+          "rgb_rmse": 41.1413459777832,
+          "rgb_mae": 19.34311294555664
+        },
+        {
+          "frame": 25,
+          "rgb_rmse": 1.627644658088684,
+          "rgb_mae": 1.0352152585983276
+        },
+        {
+          "frame": 26,
+          "rgb_rmse": 43.37823486328125,
+          "rgb_mae": 22.573226928710938
+        }
+      ]
+    },
+    {
+      "camera": 0,
+      "frame": 41,
+      "same_index_is_closest": true,
+      "same_index_rmse": 2.627100706100464,
+      "same_index_mae": 1.653746247291565,
+      "neighbor_comparison": [
+        {
+          "frame": 40,
+          "rgb_rmse": 43.25751495361328,
+          "rgb_mae": 28.172077178955078
+        },
+        {
+          "frame": 41,
+          "rgb_rmse": 2.627100706100464,
+          "rgb_mae": 1.653746247291565
+        },
+        {
+          "frame": 42,
+          "rgb_rmse": 48.50567626953125,
+          "rgb_mae": 31.30545425415039
+        }
+      ]
+    },
+    {
+      "camera": 0,
+      "frame": 62,
+      "same_index_is_closest": true,
+      "same_index_rmse": 2.5449438095092773,
+      "same_index_mae": 1.6153584718704224,
+      "neighbor_comparison": [
+        {
+          "frame": 61,
+          "rgb_rmse": 38.78899383544922,
+          "rgb_mae": 21.931367874145508
+        },
+        {
+          "frame": 62,
+          "rgb_rmse": 2.5449438095092773,
+          "rgb_mae": 1.6153584718704224
+        },
+        {
+          "frame": 63,
+          "rgb_rmse": 47.859657287597656,
+          "rgb_mae": 29.158979415893555
+        }
+      ]
+    },
+    {
+      "camera": 0,
+      "frame": 87,
+      "same_index_is_closest": true,
+      "same_index_rmse": 2.185563802719116,
+      "same_index_mae": 1.4522546529769897,
+      "neighbor_comparison": [
+        {
+          "frame": 86,
+          "rgb_rmse": 38.59721374511719,
+          "rgb_mae": 21.867477416992188
+        },
+        {
+          "frame": 87,
+          "rgb_rmse": 2.185563802719116,
+          "rgb_mae": 1.4522546529769897
+        },
+        {
+          "frame": 88,
+          "rgb_rmse": 46.072998046875,
+          "rgb_mae": 26.902963638305664
+        }
+      ]
+    },
+    {
+      "camera": 0,
+      "frame": 100,
+      "same_index_is_closest": true,
+      "same_index_rmse": 1.8999426364898682,
+      "same_index_mae": 1.2732257843017578,
+      "neighbor_comparison": [
+        {
+          "frame": 99,
+          "rgb_rmse": 59.551719665527344,
+          "rgb_mae": 39.58099365234375
+        },
+        {
+          "frame": 100,
+          "rgb_rmse": 1.8999426364898682,
+          "rgb_mae": 1.2732257843017578
+        },
+        {
+          "frame": 101,
+          "rgb_rmse": 49.88869094848633,
+          "rgb_mae": 33.056766510009766
+        }
+      ]
+    },
+    {
+      "camera": 0,
+      "frame": 130,
+      "same_index_is_closest": true,
+      "same_index_rmse": 1.9974628686904907,
+      "same_index_mae": 1.3004357814788818,
+      "neighbor_comparison": [
+        {
+          "frame": 129,
+          "rgb_rmse": 66.03948974609375,
+          "rgb_mae": 44.98398208618164
+        },
+        {
+          "frame": 130,
+          "rgb_rmse": 1.9974628686904907,
+          "rgb_mae": 1.3004357814788818
+        }
+      ]
+    },
+    {
+      "camera": 1,
+      "frame": 1,
+      "same_index_is_closest": true,
+      "same_index_rmse": 2.055812120437622,
+      "same_index_mae": 1.2224303483963013,
+      "neighbor_comparison": [
+        {
+          "frame": 1,
+          "rgb_rmse": 2.055812120437622,
+          "rgb_mae": 1.2224303483963013
+        },
+        {
+          "frame": 2,
+          "rgb_rmse": 38.8921012878418,
+          "rgb_mae": 17.955745697021484
+        }
+      ]
+    },
+    {
+      "camera": 1,
+      "frame": 25,
+      "same_index_is_closest": true,
+      "same_index_rmse": 2.089667558670044,
+      "same_index_mae": 1.3014153242111206,
+      "neighbor_comparison": [
+        {
+          "frame": 24,
+          "rgb_rmse": 29.402790069580078,
+          "rgb_mae": 13.058774948120117
+        },
+        {
+          "frame": 25,
+          "rgb_rmse": 2.089667558670044,
+          "rgb_mae": 1.3014153242111206
+        },
+        {
+          "frame": 26,
+          "rgb_rmse": 39.9644889831543,
+          "rgb_mae": 19.801496505737305
+        }
+      ]
+    },
+    {
+      "camera": 1,
+      "frame": 41,
+      "same_index_is_closest": true,
+      "same_index_rmse": 2.421511650085449,
+      "same_index_mae": 1.600899577140808,
+      "neighbor_comparison": [
+        {
+          "frame": 40,
+          "rgb_rmse": 50.44760513305664,
+          "rgb_mae": 29.48626136779785
+        },
+        {
+          "frame": 41,
+          "rgb_rmse": 2.421511650085449,
+          "rgb_mae": 1.600899577140808
+        },
+        {
+          "frame": 42,
+          "rgb_rmse": 62.3096809387207,
+          "rgb_mae": 42.10176086425781
+        }
+      ]
+    },
+    {
+      "camera": 1,
+      "frame": 62,
+      "same_index_is_closest": true,
+      "same_index_rmse": 2.653738021850586,
+      "same_index_mae": 1.7369625568389893,
+      "neighbor_comparison": [
+        {
+          "frame": 61,
+          "rgb_rmse": 53.189334869384766,
+          "rgb_mae": 34.744384765625
+        },
+        {
+          "frame": 62,
+          "rgb_rmse": 2.653738021850586,
+          "rgb_mae": 1.7369625568389893
+        },
+        {
+          "frame": 63,
+          "rgb_rmse": 56.1610107421875,
+          "rgb_mae": 36.94331741333008
+        }
+      ]
+    },
+    {
+      "camera": 1,
+      "frame": 87,
+      "same_index_is_closest": true,
+      "same_index_rmse": 1.5760642290115356,
+      "same_index_mae": 1.0278899669647217,
+      "neighbor_comparison": [
+        {
+          "frame": 86,
+          "rgb_rmse": 31.156614303588867,
+          "rgb_mae": 16.098793029785156
+        },
+        {
+          "frame": 87,
+          "rgb_rmse": 1.5760642290115356,
+          "rgb_mae": 1.0278899669647217
+        },
+        {
+          "frame": 88,
+          "rgb_rmse": 33.1668701171875,
+          "rgb_mae": 17.94316864013672
+        }
+      ]
+    },
+    {
+      "camera": 1,
+      "frame": 100,
+      "same_index_is_closest": true,
+      "same_index_rmse": 1.890681505203247,
+      "same_index_mae": 1.2620302438735962,
+      "neighbor_comparison": [
+        {
+          "frame": 99,
+          "rgb_rmse": 46.524925231933594,
+          "rgb_mae": 28.443721771240234
+        },
+        {
+          "frame": 100,
+          "rgb_rmse": 1.890681505203247,
+          "rgb_mae": 1.2620302438735962
+        },
+        {
+          "frame": 101,
+          "rgb_rmse": 38.51407241821289,
+          "rgb_mae": 20.74144744873047
+        }
+      ]
+    },
+    {
+      "camera": 1,
+      "frame": 130,
+      "same_index_is_closest": true,
+      "same_index_rmse": 1.7625771760940552,
+      "same_index_mae": 1.130181074142456,
+      "neighbor_comparison": [
+        {
+          "frame": 129,
+          "rgb_rmse": 60.59397506713867,
+          "rgb_mae": 40.85895919799805
+        },
+        {
+          "frame": 130,
+          "rgb_rmse": 1.7625771760940552,
+          "rgb_mae": 1.130181074142456
+        }
+      ]
+    }
+  ],
+  "all_sampled_matches_closest": true,
+  "sampling_note": "JPEG downsample comparisons include JPEG quantization and different FFmpeg/OpenCV Lanczos kernels, so bit identity is not expected."
+}

@@ -1,0 +1,243 @@
+{
+  "files": 30,
+  "nodes": 212,
+  "edges": 385,
+  "communities": {
+    "0": [
+      "room-viewer.js",
+      "benchmark()",
+      "camera",
+      "canvas",
+      "data()",
+      "deviceSignals",
+      "euler",
+      "forward",
+      "frames",
+      "framingPoints"
+    ],
+    "1": [
+      "build_explicit_pinhole.py",
+      "process()",
+      "Materialize calibrated pinhole RGB/mask views with independently checked poses.",
+      "selected()",
+      "build_masks.py",
+      "digest()",
+      "finalize()",
+      "infer()",
+      "main()",
+      "optical_keep()"
+    ],
+    "2": [
+      "build.mjs",
+      "asset",
+      "assetPath",
+      "{build}",
+      "bundle",
+      "bundleName",
+      "carried",
+      "chooser",
+      "hardlink()",
+      "hash()"
+    ],
+    "3": [
+      "normalize_fresh_sfm.py",
+      "coverage()",
+      "digest()",
+      "fresh_path()",
+      "main()",
+      "model_paths()",
+      "Gate fresh SfM, apply one +Y-up similarity, and build a train-only sparse seed.",
+      "Report direct geometric links between camera paths revisiting the same room.",
+      "Reproject actual XYZ independently; ignore native point.error placeholder.",
+      "Rebuild tracks from mutually linked, visible train observations only."
+    ],
+    "4": [
+      "delivery-policy.js",
+      "compressionTarget()",
+      "OSMO_LIMITS",
+      "loader-core.js",
+      "chooseQuality()",
+      "pinchRatio()",
+      "readModel()",
+      "selectModel()",
+      "withDeadline()",
+      "native-delivery.js"
+    ],
+    "5": [
+      "$()",
+      "applyCameraData()",
+      "chooseAnotherModel()",
+      "controlsEnabled()",
+      "disposeModel()",
+      "inspectModel()",
+      "loadAsset()",
+      "loadMetadata()",
+      "loop()",
+      "setPhase()"
+    ],
+    "6": [
+      "calibratedProjection()",
+      "clearRecorded()",
+      "componentVisibility()",
+      "fittedOrbitRadius()",
+      "focus()",
+      "invalidate()",
+      "orbitCamera()",
+      "pan()",
+      "resize()",
+      "rotate()"
+    ],
+    "7": [
+      "operator_pinhole.py",
+      "camera_from_manifest()",
+      "main()",
+      "output_guard()",
+      "pinhole_map()",
+      "Calibrated CPU native-fisheye <-> virtual-pinhole masks for SAM diagnostics.  Th",
+      "Columns map CV virtual rays to native CV rays; phi=0 right,90 bottom.",
+      "unwarp_mask()",
+      "virtual_basis()",
+      "approve_pinhole.py"
+    ],
+    "8": [
+      "$()",
+      "choice-core.js",
+      "canonicalChoice()",
+      "createChoiceGate()",
+      "createLoadLifecycle()",
+      "chooser.js",
+      "choices",
+      "fail()",
+      "gate",
+      "initial"
+    ],
+    "9": [
+      "angles()",
+      "home()",
+      "orient()",
+      "preset()",
+      "release()",
+      "setMode()",
+      "updateMode()",
+      "updateSurface()"
+    ],
+    "10": [
+      "continue_explicit_full.py",
+      "option()",
+      "Continue the verified explicit-pinhole workflow; stop before visual release QA.",
+      "run()",
+      "save()",
+      "sha()"
+    ],
+    "11": [
+      "score-native-eval.py",
+      "Score every native held-out render on its real binary keep-mask.  Match saved GT",
+      "rgb()",
+      "sha()"
+    ],
+    "12": [
+      "validate_explicit_depth.py",
+      "process()",
+      "Validate scale-only pinhole depths across distinct training timestamps.  Only pi",
+      "sample_image()"
+    ],
+    "13": [
+      "mirror_annotations.py",
+      "main()",
+      "Explicit per-selected-frame mirror glass contours, manually traced at 640 px.  T"
+    ],
+    "14": [
+      "run_logged_job.py",
+      "Run one explicit argv job, recording its exact command, PID, log and result.",
+      "save()"
+    ],
+    "15": [
+      "select_frames.py",
+      "Select synchronized, sharper native-resolution frames; never alter the source.",
+      "run_decode()"
+    ],
+    "16": [
+      "fit_explicit_depth.py",
+      "Fit positive, zero-offset depth scales against qualified training SfM anchors."
+    ],
+    "17": [
+      "preview_sources.py",
+      "Contact sheets from root-selected source thumbnails; no GPU or model writes."
+    ],
+    "18": [
+      "pack-sog.py",
+      "Reproducible official SOG packing with an explicit Mip tag; CPU by default."
+    ],
+    "19": [
+      "assign_split.py"
+    ],
+    "20": [
+      "diagnose_blue.py"
+    ],
+    "21": [
+      "diagnostic_fill.py"
+    ],
+    "22": [
+      "final_qa_sheets.py"
+    ],
+    "23": [
+      "pinhole_sheets.py"
+    ],
+    "24": [
+      "update_final_candidates.py"
+    ]
+  },
+  "cohesion": {
+    "0": 0.06050420168067227,
+    "1": 0.16666666666666666,
+    "2": 0.09090909090909091,
+    "3": 0.18947368421052632,
+    "4": 0.18095238095238095,
+    "5": 0.2857142857142857,
+    "6": 0.26373626373626374,
+    "7": 0.2692307692307692,
+    "8": 0.22727272727272727,
+    "9": 0.5357142857142857,
+    "10": 0.4,
+    "11": 0.5,
+    "12": 0.6666666666666666,
+    "13": 0.6666666666666666,
+    "14": 0.6666666666666666,
+    "15": 0.6666666666666666,
+    "16": 1.0,
+    "17": 1.0,
+    "18": 1.0,
+    "19": 1.0,
+    "20": 1.0,
+    "21": 1.0,
+    "22": 1.0,
+    "23": 1.0,
+    "24": 1.0
+  },
+  "healthCounters": {
+    "node_count": 212,
+    "raw_edge_count": 553,
+    "non_object_edges": 0,
+    "missing_endpoint_edges": 0,
+    "dangling_endpoint_edges": 166,
+    "self_loop_edges": 0,
+    "valid_candidate_edges": 387,
+    "exact_duplicate_edges": 0,
+    "directed_unique_endpoint_pairs": 378,
+    "directed_same_endpoint_collapsed_edges": 9,
+    "undirected_unique_endpoint_pairs": 378,
+    "undirected_same_endpoint_collapsed_edges": 9,
+    "same_endpoint_group_count": 9,
+    "relation_variant_groups": 9,
+    "source_file_variant_groups": 0,
+    "source_location_variant_groups": 0,
+    "context_variant_groups": 0,
+    "post_build_graph_type": "Graph",
+    "post_build_node_count": 212,
+    "post_build_edge_count": 385,
+    "post_build_error": ""
+  },
+  "LLMInputTokens": 0,
+  "LLMOutputTokens": 0,
+  "extraction": "serial AST; initial Windows stdin multiprocessing failure superseded"
+}

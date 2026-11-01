@@ -1,0 +1,16 @@
+{
+  "file": "../final-sharp.sog",
+  "format": "sog",
+  "sha256": "db0e94c2fab729fa218a34064971a948448a856e02a06c56e6b2b5daf09f29f1",
+  "bytes": 44904208,
+  "splats": 2960980,
+  "shDegree": 2,
+  "description": "Fresh 1600px Lanczos4, 50k-step architect recipe. LOCAL REVIEW ONLY: visual sharpness gate failed.",
+  "cameras": "../calibrated-occupied-cameras.json",
+  "packingReport": "../final-sharp.sog.json",
+  "newTraining": true,
+  "provisional": false,
+  "releaseId": "20261101-osmo-parity-review",
+  "acceptancePassed": false,
+  "deploymentAuthorized": false
+}

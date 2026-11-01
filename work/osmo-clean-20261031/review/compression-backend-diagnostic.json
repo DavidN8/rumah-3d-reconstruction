@@ -1,0 +1,18 @@
+{
+  "dateLocal": "2026-10-31",
+  "source": "15,000-step compatibility checkpoint, not a release candidate",
+  "cpuConverterPid": 55664,
+  "gpuAttempt": {
+    "adapterIndex": 1,
+    "adapter": "AMD Radeon(TM) Graphics",
+    "backend": "d3d12",
+    "status": "failed",
+    "error": "DXGI_ERROR_DEVICE_HUNG; converter aborted without writing an output file"
+  },
+  "vulkanEnumeration": {
+    "status": "unavailable",
+    "error": "Dawn could not load vulkan-1.dll (Windows Error 87); system loader file exists"
+  },
+  "mainTraining": "Continued normally on RTX 5080. No training restart.",
+  "next": "CPU compatibility conversion continues. Final Nvidia conversion may be tried only after training releases that GPU; retain CPU fallback."
+}

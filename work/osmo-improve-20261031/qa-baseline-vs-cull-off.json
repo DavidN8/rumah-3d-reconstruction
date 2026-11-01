@@ -1,0 +1,29 @@
+{
+  "transition_counts": {
+    "near": {
+      "near": 2839,
+      "early": 24,
+      "behind": 22,
+      "missing": 0
+    },
+    "early": {
+      "near": 14,
+      "early": 903,
+      "behind": 0,
+      "missing": 0
+    },
+    "behind": {
+      "near": 31,
+      "early": 1,
+      "behind": 782,
+      "missing": 0
+    },
+    "missing": {
+      "near": 30,
+      "early": 9,
+      "behind": 56,
+      "missing": 0
+    }
+  },
+  "note": "Same4711 masked low-reprojection observations. No-hit gains are not automatically correct surfaces."
+}

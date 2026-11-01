@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-31",
+  "bundle": "room-viewer-PCBGGOPT.js",
+  "model": "preserved old native SPZ baseline, not the pending fresh reconstruction",
+  "scope": "Local Chrome on RTX 5080 while SfM runs; functional check, not a phone or network benchmark",
+  "source_splats": 2997515,
+  "active_draw_splats_when_ready": 1548775,
+  "reported_prepared_seconds": 6.5261,
+  "visible_room_verified": true,
+  "loading_screen_hidden_after_nonzero_draw": true,
+  "height_clipping": false,
+  "chooser_restored_then_test_tab_closed": true,
+  "viewer_unit_tests_passed": 25,
+  "new_behavior": [
+    "Renderer module import has a 60-second deadline",
+    "Native readiness waits for the first nonempty sorted draw",
+    "A stalled or empty first draw fails within 30 seconds",
+    "Cancelled or timed-out first draw cannot later mark itself ready",
+    "Failure disposes the loaded scene's graphics resources"
+  ],
+  "physical_fold7_and_iphone17_verified": false
+}

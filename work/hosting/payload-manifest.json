@@ -1,0 +1,76 @@
+{
+  "site": "rumah.shizuku.rest",
+  "native_model_file": "iphone-full-room-16f8963b.glb",
+  "native_model_sha256": "16f8963b043a766317497ee4281f4cf39c6b2190fafaaed51334734723c8b207",
+  "native_model_bytes": 435614584,
+  "triangles": 11891853,
+  "public_assets": [
+    {
+      "path": "cameras.json",
+      "bytes": 782387,
+      "sha256": "b4ee124d0f0438d892e9cedd46bb342a9f96897713d0b39b783fb281776f5491"
+    },
+    {
+      "path": "index.html",
+      "bytes": 3654,
+      "sha256": "735f7855c6c9b9a7167b0ba5fe37b11a43988b1986d2855cc4ba5282936fa570"
+    },
+    {
+      "path": "models/iphone-full-room-16f8963b.glb.gz",
+      "bytes": 302564257,
+      "sha256": "14b797adcb38b4bd082b6fb9e24499b19917e95f6f7ca6ba64f091221b132709"
+    },
+    {
+      "path": "robots.txt",
+      "bytes": 28,
+      "sha256": "a8f31103361fca68bef71fc69cff844b7c23bd3d64d2b872d74690cbda656bfc"
+    },
+    {
+      "path": "room-viewer.bundle.js",
+      "bytes": 685400,
+      "sha256": "2b4f9bab1bcc63a3760910f1cb2be62cb1c5ac26db7a112730871b4a7d7d1d64"
+    },
+    {
+      "path": "sources/frame_0000903.jpg",
+      "bytes": 218338,
+      "sha256": "544835ade72c22594fbfad011d60e2358579b71922407f7abdf24509439853a0"
+    },
+    {
+      "path": "sources/frame_0000999.jpg",
+      "bytes": 287839,
+      "sha256": "3af470bb2687de65bb8f574f06348a7ebda7dc6302bce7aa8f5c49515d1854eb"
+    },
+    {
+      "path": "sources/frame_0001398.jpg",
+      "bytes": 209011,
+      "sha256": "a468d1455616eca37fd99c60cfe22bff7b02eca88b601a60642cb3cfde16aa41"
+    },
+    {
+      "path": "sources/frame_0001612.jpg",
+      "bytes": 263857,
+      "sha256": "43a803084c79304cdc3abef83f42f73c3207bf39d590c7474d752fbbdb233a55"
+    },
+    {
+      "path": "sources/frame_0002402.jpg",
+      "bytes": 274875,
+      "sha256": "8a4cbada269b96b02bca186868eb6c5583565386ebb5352b09e9073c4b48f5dd"
+    },
+    {
+      "path": "sources/frame_0003606.jpg",
+      "bytes": 259433,
+      "sha256": "9aafb22ee5af6a806f432622cdbbb405b5551ad1df69773922c2382cacf94f8a"
+    },
+    {
+      "path": "sources/frame_0004297.jpg",
+      "bytes": 223728,
+      "sha256": "bff0d428b383a592fca70bc5e7de18109fd3c86e1ca7531f1d53f897354bca36"
+    },
+    {
+      "path": "sources/frame_0004400.jpg",
+      "bytes": 248068,
+      "sha256": "e5923f2cef8f1d571329a9767bce8c0e501fefea8926d375a9c58f0d227a9648"
+    }
+  ],
+  "internal_reports_published": false,
+  "password_required": false
+}

@@ -1,0 +1,46 @@
+{
+  "folder_url": "https://drive.google.com/drive/folders/1u7ZwV0nF8rmDDA65JdDhY2Xqhwmdhnvx",
+  "reports": [
+    {
+      "name": "Osmo_Architect_Mandate_Execution_and_Acceptance_2026-11-01.pdf",
+      "bytes": 10833280,
+      "local_sha256": "a20de66841ed9b71358e498c177810c3906a1fc9c0cec61979d20f779ba365c2",
+      "drive_id": "1AGE8yTfA7c8nbbJ5sTJRks9fm-a5GfAU",
+      "drive_url": "https://drive.google.com/file/d/1AGE8yTfA7c8nbbJ5sTJRks9fm-a5GfAU/view?usp=drivesdk",
+      "verified": true
+    },
+    {
+      "name": "Osmo_Quality_Controls_and_Pipeline_Review_2026-10-31.pdf",
+      "bytes": 11302794,
+      "local_sha256": "08be07baafb0a05a0087b1e408df8169fc62a77ef01ecbcbbfa910ee5eae4381",
+      "drive_id": "1jWLciViLxL1l0XcsEHi5ZmwfW8aj8L6W",
+      "drive_url": "https://drive.google.com/file/d/1jWLciViLxL1l0XcsEHi5ZmwfW8aj8L6W/view?usp=drivesdk",
+      "verified": true
+    },
+    {
+      "name": "Gemini_Argon_iPhone_Recovery_Verification_2026-10-27.pdf",
+      "bytes": 35992418,
+      "local_sha256": "7a85b743cd49a418417f0c8dd55bd17f84669e8950f5cdf626a0da0cfa38252b",
+      "drive_id": "1hJmjKhzxDaCF8luLEvCTwfTWYCkZUj_n",
+      "drive_url": "https://drive.google.com/file/d/1hJmjKhzxDaCF8luLEvCTwfTWYCkZUj_n/view?usp=drivesdk",
+      "verified": true
+    },
+    {
+      "name": "Gemini_Argon_Reconstruction_Architecture_Report_2026-10-27.pdf",
+      "bytes": 20362304,
+      "local_sha256": "cf1a44f3d8211ba83b218a9765175a6f82aba1fdcd2314ada96f6df4875f1843",
+      "drive_id": "1xh6eXCqqmGIH8ZC4UxRlPacA9PXBoiAp",
+      "drive_url": "https://drive.google.com/file/d/1xh6eXCqqmGIH8ZC4UxRlPacA9PXBoiAp/view?usp=drivesdk",
+      "verified": true
+    },
+    {
+      "name": "Osmo_Video_to_Mesh_Processing_Audit_2026-10-31.pdf",
+      "bytes": 7158399,
+      "local_sha256": "1b84bbc5c94717cb8c0a4b942c7883305d0995214abea8ac9696e07513c856da",
+      "drive_id": "1h_HBELpEqjDbPdipNB4qpV2t5FYkTwSy",
+      "drive_url": "https://drive.google.com/file/d/1h_HBELpEqjDbPdipNB4qpV2t5FYkTwSy/view?usp=drivesdk",
+      "verified": true
+    }
+  ],
+  "verification": "Drive exact filename, bytes and parent readback; full local SHA-256 recorded."
+}

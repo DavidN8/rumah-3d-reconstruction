@@ -1,0 +1,456 @@
+[
+  {
+    "aggregate": {
+      "alphaZeroFraction": 0.019628125,
+      "alphaZeroPixels": 18843,
+      "comparedPixels": 941157,
+      "coveredFraction": 0.980371875,
+      "coveredPixels": 941157,
+      "enclosedAlphaZeroFraction": 0.010621875,
+      "enclosedAlphaZeroPixels": 10197,
+      "pixels": 960000,
+      "rgbRMSE": 61.51276039807275,
+      "rgbSquaredError": 10683505169
+    },
+    "alphaZeroThreshold": 0,
+    "completed": true,
+    "completedAt": "2026-10-30T18:53:06.572Z",
+    "height": 400,
+    "heightClipping": false,
+    "interpretation": "Viewport transparency includes unseen areas and openings; not ground-truth hole or independent accuracy measurement. RGB error is in-sample on covered pixels.",
+    "label": "Osmo v1",
+    "manifestBuild": "20261031-osmo-v1",
+    "manifestURL": "http://127.0.0.1:55266/room-36dc251e5a.json",
+    "materialSides": "DoubleSide",
+    "modelStats": {
+      "meshes": 1,
+      "triangles": 571580
+    },
+    "modelURL": "http://127.0.0.1:55266/models/osmo-lite-f3b66c9fdb.glb",
+    "presetCount": 6,
+    "rgbComparison": true,
+    "startedAt": "2026-10-30T18:53:06.231Z",
+    "views": [
+      {
+        "alphaZeroFraction": 0.01109375,
+        "alphaZeroPixels": 1775,
+        "comparedPixels": 158225,
+        "coveredFraction": 0.98890625,
+        "coveredPixels": 158225,
+        "enclosedAlphaZeroFraction": 0.01109375,
+        "enclosedAlphaZeroPixels": 1775,
+        "intrinsics": [
+          600,
+          600,
+          600,
+          600
+        ],
+        "label": "Capture ~1s · reprojected source",
+        "name": "cam0/frame_000003.jpg",
+        "pixels": 160000,
+        "position": [
+          0.36702162862946286,
+          1.541369844480851,
+          -0.35076081614372406
+        ],
+        "quaternion": [
+          0,
+          -0.8605465092957088,
+          0,
+          0.5093718733292706
+        ],
+        "rgbRMSE": 75.39103134531497,
+        "rgbSquaredError": 2697961376,
+        "source": "sources/osmo-9139502aa8.jpg"
+      },
+      {
+        "alphaZeroFraction": 0.04080625,
+        "alphaZeroPixels": 6529,
+        "comparedPixels": 153471,
+        "coveredFraction": 0.95919375,
+        "coveredPixels": 153471,
+        "enclosedAlphaZeroFraction": 0.0260375,
+        "enclosedAlphaZeroPixels": 4166,
+        "intrinsics": [
+          600,
+          600,
+          600,
+          600
+        ],
+        "label": "Capture ~12s · reprojected source",
+        "name": "cam0/frame_000025.jpg",
+        "pixels": 160000,
+        "position": [
+          -0.19639896747464888,
+          1.5822303752058904,
+          -1.10886475847726
+        ],
+        "quaternion": [
+          0,
+          0.8045657254040841,
+          0,
+          0.5938636152392232
+        ],
+        "rgbRMSE": 51.23066297167162,
+        "rgbSquaredError": 1208391133,
+        "source": "sources/osmo-3d64e5602c.jpg"
+      },
+      {
+        "alphaZeroFraction": 0.0578875,
+        "alphaZeroPixels": 9262,
+        "comparedPixels": 150738,
+        "coveredFraction": 0.9421125,
+        "coveredPixels": 150738,
+        "enclosedAlphaZeroFraction": 0.01906875,
+        "enclosedAlphaZeroPixels": 3051,
+        "intrinsics": [
+          600,
+          600,
+          600,
+          600
+        ],
+        "label": "Capture ~20s · reprojected source",
+        "name": "cam0/frame_000041.jpg",
+        "pixels": 160000,
+        "position": [
+          -0.6527362857465422,
+          1.5536895938488104,
+          -3.1211721182317356
+        ],
+        "quaternion": [
+          0,
+          0.946591241175324,
+          0,
+          0.3224360744863381
+        ],
+        "rgbRMSE": 77.73140224358087,
+        "rgbSquaredError": 2732354269,
+        "source": "sources/osmo-61ab23e280.jpg"
+      },
+      {
+        "alphaZeroFraction": 0.001525,
+        "alphaZeroPixels": 244,
+        "comparedPixels": 159756,
+        "coveredFraction": 0.998475,
+        "coveredPixels": 159756,
+        "enclosedAlphaZeroFraction": 0.00151875,
+        "enclosedAlphaZeroPixels": 243,
+        "intrinsics": [
+          600,
+          600,
+          600,
+          600
+        ],
+        "label": "Capture ~30s · reprojected source",
+        "name": "cam0/frame_000061.jpg",
+        "pixels": 160000,
+        "position": [
+          0.5430918288353827,
+          1.5314572333156735,
+          -0.08721521441854906
+        ],
+        "quaternion": [
+          0,
+          0.9932559081346726,
+          0,
+          0.11594266236190512
+        ],
+        "rgbRMSE": 55.80377578209886,
+        "rgbSquaredError": 1492469975,
+        "source": "sources/osmo-b802ccf4ce.jpg"
+      },
+      {
+        "alphaZeroFraction": 0.00235625,
+        "alphaZeroPixels": 377,
+        "comparedPixels": 159623,
+        "coveredFraction": 0.99764375,
+        "coveredPixels": 159623,
+        "enclosedAlphaZeroFraction": 0.0019125,
+        "enclosedAlphaZeroPixels": 306,
+        "intrinsics": [
+          600,
+          600,
+          600,
+          600
+        ],
+        "label": "Capture ~40s · reprojected source",
+        "name": "cam0/frame_000081.jpg",
+        "pixels": 160000,
+        "position": [
+          1.5354255457283734,
+          0.6407448819297455,
+          0.014305212581831636
+        ],
+        "quaternion": [
+          0,
+          0.2966825774484644,
+          0,
+          0.9549761506124308
+        ],
+        "rgbRMSE": 47.489072774017586,
+        "rgbSquaredError": 1079951131,
+        "source": "sources/osmo-82b159052c.jpg"
+      },
+      {
+        "alphaZeroFraction": 0.0041,
+        "alphaZeroPixels": 656,
+        "comparedPixels": 159344,
+        "coveredFraction": 0.9959,
+        "coveredPixels": 159344,
+        "enclosedAlphaZeroFraction": 0.0041,
+        "enclosedAlphaZeroPixels": 656,
+        "intrinsics": [
+          600,
+          600,
+          600,
+          600
+        ],
+        "label": "Capture ~55s · reprojected source",
+        "name": "cam0/frame_000111.jpg",
+        "pixels": 160000,
+        "position": [
+          0.0436288755542224,
+          0.4537141127664982,
+          -2.2669070800059528
+        ],
+        "quaternion": [
+          0,
+          -0.8495499986738988,
+          0,
+          0.5275081039691982
+        ],
+        "rgbRMSE": 55.49847753966896,
+        "rgbSquaredError": 1472377285,
+        "source": "sources/osmo-e2eaa1aa3b.jpg"
+      }
+    ],
+    "width": 400
+  },
+  {
+    "aggregate": {
+      "alphaZeroFraction": 0.019623958333333337,
+      "alphaZeroPixels": 18839,
+      "comparedPixels": 941161,
+      "coveredFraction": 0.9803760416666668,
+      "coveredPixels": 941161,
+      "enclosedAlphaZeroFraction": 0.01061875,
+      "enclosedAlphaZeroPixels": 10194,
+      "pixels": 960000,
+      "rgbRMSE": 61.501160411455096,
+      "rgbSquaredError": 10679521578
+    },
+    "alphaZeroThreshold": 0,
+    "completed": true,
+    "completedAt": "2026-10-30T18:54:38.989Z",
+    "height": 400,
+    "heightClipping": false,
+    "interpretation": "Viewport transparency includes unseen areas and openings; not ground-truth hole or independent accuracy measurement. RGB error is in-sample on covered pixels.",
+    "label": "Osmo v1 uncompressed",
+    "manifestBuild": "20261031-osmo-v1",
+    "manifestURL": "http://127.0.0.1:55266/room-36dc251e5a.json",
+    "materialSides": "DoubleSide",
+    "modelStats": {
+      "meshes": 1,
+      "triangles": 571580
+    },
+    "modelURL": "http://127.0.0.1:55266/qa-source-v1.glb",
+    "presetCount": 6,
+    "rgbComparison": true,
+    "startedAt": "2026-10-30T18:54:35.989Z",
+    "views": [
+      {
+        "alphaZeroFraction": 0.01109375,
+        "alphaZeroPixels": 1775,
+        "comparedPixels": 158225,
+        "coveredFraction": 0.98890625,
+        "coveredPixels": 158225,
+        "enclosedAlphaZeroFraction": 0.01109375,
+        "enclosedAlphaZeroPixels": 1775,
+        "intrinsics": [
+          600,
+          600,
+          600,
+          600
+        ],
+        "label": "Capture ~1s · reprojected source",
+        "name": "cam0/frame_000003.jpg",
+        "pixels": 160000,
+        "position": [
+          0.36702162862946286,
+          1.541369844480851,
+          -0.35076081614372406
+        ],
+        "quaternion": [
+          0,
+          -0.8605465092957088,
+          0,
+          0.5093718733292706
+        ],
+        "rgbRMSE": 75.37948498931897,
+        "rgbSquaredError": 2697135038,
+        "source": "sources/osmo-9139502aa8.jpg"
+      },
+      {
+        "alphaZeroFraction": 0.0407875,
+        "alphaZeroPixels": 6526,
+        "comparedPixels": 153474,
+        "coveredFraction": 0.9592125,
+        "coveredPixels": 153474,
+        "enclosedAlphaZeroFraction": 0.026025,
+        "enclosedAlphaZeroPixels": 4164,
+        "intrinsics": [
+          600,
+          600,
+          600,
+          600
+        ],
+        "label": "Capture ~12s · reprojected source",
+        "name": "cam0/frame_000025.jpg",
+        "pixels": 160000,
+        "position": [
+          -0.19639896747464888,
+          1.5822303752058904,
+          -1.10886475847726
+        ],
+        "quaternion": [
+          0,
+          0.8045657254040841,
+          0,
+          0.5938636152392232
+        ],
+        "rgbRMSE": 51.21786070465623,
+        "rgbSquaredError": 1207810877,
+        "source": "sources/osmo-3d64e5602c.jpg"
+      },
+      {
+        "alphaZeroFraction": 0.05786875,
+        "alphaZeroPixels": 9259,
+        "comparedPixels": 150741,
+        "coveredFraction": 0.94213125,
+        "coveredPixels": 150741,
+        "enclosedAlphaZeroFraction": 0.01905,
+        "enclosedAlphaZeroPixels": 3048,
+        "intrinsics": [
+          600,
+          600,
+          600,
+          600
+        ],
+        "label": "Capture ~20s · reprojected source",
+        "name": "cam0/frame_000041.jpg",
+        "pixels": 160000,
+        "position": [
+          -0.6527362857465422,
+          1.5536895938488104,
+          -3.1211721182317356
+        ],
+        "quaternion": [
+          0,
+          0.946591241175324,
+          0,
+          0.3224360744863381
+        ],
+        "rgbRMSE": 77.72038938552559,
+        "rgbSquaredError": 2731634457,
+        "source": "sources/osmo-61ab23e280.jpg"
+      },
+      {
+        "alphaZeroFraction": 0.001525,
+        "alphaZeroPixels": 244,
+        "comparedPixels": 159756,
+        "coveredFraction": 0.998475,
+        "coveredPixels": 159756,
+        "enclosedAlphaZeroFraction": 0.00151875,
+        "enclosedAlphaZeroPixels": 243,
+        "intrinsics": [
+          600,
+          600,
+          600,
+          600
+        ],
+        "label": "Capture ~30s · reprojected source",
+        "name": "cam0/frame_000061.jpg",
+        "pixels": 160000,
+        "position": [
+          0.5430918288353827,
+          1.5314572333156735,
+          -0.08721521441854906
+        ],
+        "quaternion": [
+          0,
+          0.9932559081346726,
+          0,
+          0.11594266236190512
+        ],
+        "rgbRMSE": 55.8002237106333,
+        "rgbSquaredError": 1492279981,
+        "source": "sources/osmo-b802ccf4ce.jpg"
+      },
+      {
+        "alphaZeroFraction": 0.00236875,
+        "alphaZeroPixels": 379,
+        "comparedPixels": 159621,
+        "coveredFraction": 0.99763125,
+        "coveredPixels": 159621,
+        "enclosedAlphaZeroFraction": 0.001925,
+        "enclosedAlphaZeroPixels": 308,
+        "intrinsics": [
+          600,
+          600,
+          600,
+          600
+        ],
+        "label": "Capture ~40s · reprojected source",
+        "name": "cam0/frame_000081.jpg",
+        "pixels": 160000,
+        "position": [
+          1.5354255457283734,
+          0.6407448819297455,
+          0.014305212581831636
+        ],
+        "quaternion": [
+          0,
+          0.2966825774484644,
+          0,
+          0.9549761506124308
+        ],
+        "rgbRMSE": 47.46286167279019,
+        "rgbSquaredError": 1078745808,
+        "source": "sources/osmo-82b159052c.jpg"
+      },
+      {
+        "alphaZeroFraction": 0.0041,
+        "alphaZeroPixels": 656,
+        "comparedPixels": 159344,
+        "coveredFraction": 0.9959,
+        "coveredPixels": 159344,
+        "enclosedAlphaZeroFraction": 0.0041,
+        "enclosedAlphaZeroPixels": 656,
+        "intrinsics": [
+          600,
+          600,
+          600,
+          600
+        ],
+        "label": "Capture ~55s · reprojected source",
+        "name": "cam0/frame_000111.jpg",
+        "pixels": 160000,
+        "position": [
+          0.0436288755542224,
+          0.4537141127664982,
+          -2.2669070800059528
+        ],
+        "quaternion": [
+          0,
+          -0.8495499986738988,
+          0,
+          0.5275081039691982
+        ],
+        "rgbRMSE": 55.48977223648559,
+        "rgbSquaredError": 1471915417,
+        "source": "sources/osmo-e2eaa1aa3b.jpg"
+      }
+    ],
+    "width": 400
+  }
+]

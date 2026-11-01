@@ -1,0 +1,8 @@
+{
+  "status": "stopped after >30 minutes; bounded-chart retry",
+  "pid": 47832,
+  "start": "2026-11-01T04:16:01",
+  "end": "2026-11-01T04:45:54",
+  "cpuSeconds": 3556.6875,
+  "geometryModified": false
+}

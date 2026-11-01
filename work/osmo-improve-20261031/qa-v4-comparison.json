@@ -1,0 +1,41 @@
+[
+  {
+    "label": "baseline-trusted-v3",
+    "faces": 1523311,
+    "area": 125.97754305567094,
+    "underfloor_area": 4.912883705787843,
+    "underfloor_fraction": 0.038998091140869315,
+    "near": 2885,
+    "early": 917,
+    "behind": 814,
+    "no_hit": 95,
+    "median_abs_hit_range_error": 0.03811312306913406,
+    "p90_abs_hit_range_error": 0.21095210593510538
+  },
+  {
+    "label": "dense-supported-05cm",
+    "faces": 4428334,
+    "area": 182.77887825060878,
+    "underfloor_area": 7.146177376787524,
+    "underfloor_fraction": 0.039097391586950074,
+    "near": 2928,
+    "early": 932,
+    "behind": 827,
+    "no_hit": 24,
+    "median_abs_hit_range_error": 0.038138902399097674,
+    "p90_abs_hit_range_error": 0.20806602387512474
+  },
+  {
+    "label": "v4-probe",
+    "faces": 1683387,
+    "area": 120.13415931548599,
+    "underfloor_area": 1.9319082600660353,
+    "underfloor_fraction": 0.01608125674723893,
+    "near": 3030,
+    "early": 886,
+    "behind": 726,
+    "no_hit": 69,
+    "median_abs_hit_range_error": 0.03429473342190226,
+    "p90_abs_hit_range_error": 0.20457255269582506
+  }
+]

@@ -1,0 +1,576 @@
+{
+  "frames": [
+    {
+      "camera": "cam0",
+      "source_frame": 1221,
+      "filename": "frame_001221_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 87556,
+      "component_count": 1,
+      "approved": false
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1230,
+      "filename": "frame_001230_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 117666,
+      "component_count": 2,
+      "approved": false
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1287,
+      "filename": "frame_001287_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 195944,
+      "component_count": 3,
+      "approved": false
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1299,
+      "filename": "frame_001299_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 204309,
+      "component_count": 3,
+      "approved": false
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1308,
+      "filename": "frame_001308_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 186183,
+      "component_count": 1,
+      "approved": false
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1344,
+      "filename": "frame_001344_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 155184,
+      "component_count": 2,
+      "approved": false
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1356,
+      "filename": "frame_001356_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 167398,
+      "component_count": 3,
+      "approved": false
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1374,
+      "filename": "frame_001374_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 86316,
+      "component_count": 2,
+      "approved": false
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1377,
+      "filename": "frame_001377_eval.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 68607,
+      "component_count": 3,
+      "approved": false
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1386,
+      "filename": "frame_001386_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 121665,
+      "component_count": 3,
+      "approved": false
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1392,
+      "filename": "frame_001392_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 177981,
+      "component_count": 2,
+      "approved": false
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1401,
+      "filename": "frame_001401_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 185518,
+      "component_count": 2,
+      "approved": false
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1407,
+      "filename": "frame_001407_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 201729,
+      "component_count": 1,
+      "approved": false
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1473,
+      "filename": "frame_001473_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 88242,
+      "component_count": 1,
+      "approved": false
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1482,
+      "filename": "frame_001482_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 97684,
+      "component_count": 1,
+      "approved": false
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1485,
+      "filename": "frame_001485_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 150825,
+      "component_count": 2,
+      "approved": false
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1491,
+      "filename": "frame_001491_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 123632,
+      "component_count": 76,
+      "approved": false
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1497,
+      "filename": "frame_001497_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 115318,
+      "component_count": 1,
+      "approved": false
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1506,
+      "filename": "frame_001506_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 166268,
+      "component_count": 1,
+      "approved": false
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1584,
+      "filename": "frame_001584_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 62700,
+      "component_count": 1,
+      "approved": false
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1626,
+      "filename": "frame_001626_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 55490,
+      "component_count": 21,
+      "approved": false
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1629,
+      "filename": "frame_001629_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 46082,
+      "component_count": 58,
+      "approved": false
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1659,
+      "filename": "frame_001659_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 43886,
+      "component_count": 2,
+      "approved": false
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1668,
+      "filename": "frame_001668_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 70112,
+      "component_count": 1,
+      "approved": false
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1677,
+      "filename": "frame_001677_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 67263,
+      "component_count": 2,
+      "approved": false
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1695,
+      "filename": "frame_001695_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 126924,
+      "component_count": 1,
+      "approved": false
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1704,
+      "filename": "frame_001704_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 67871,
+      "component_count": 1,
+      "approved": false
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1716,
+      "filename": "frame_001716_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 133409,
+      "component_count": 3,
+      "approved": false
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1722,
+      "filename": "frame_001722_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 94496,
+      "component_count": 1,
+      "approved": false
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1731,
+      "filename": "frame_001731_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 81338,
+      "component_count": 1,
+      "approved": false
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1737,
+      "filename": "frame_001737_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 148386,
+      "component_count": 3,
+      "approved": false
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1749,
+      "filename": "frame_001749_eval.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 122759,
+      "component_count": 7,
+      "approved": false
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1755,
+      "filename": "frame_001755_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 5300,
+      "component_count": 2,
+      "approved": false
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1761,
+      "filename": "frame_001761_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 23145,
+      "component_count": 7,
+      "approved": false
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1770,
+      "filename": "frame_001770_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 3846,
+      "component_count": 2,
+      "approved": false
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1776,
+      "filename": "frame_001776_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 3012,
+      "component_count": 3,
+      "approved": false
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1785,
+      "filename": "frame_001785_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 11604,
+      "component_count": 2,
+      "approved": false
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1800,
+      "filename": "frame_001800_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 1069,
+      "component_count": 1,
+      "approved": false
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1809,
+      "filename": "frame_001809_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 20101,
+      "component_count": 5,
+      "approved": false
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1815,
+      "filename": "frame_001815_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 37566,
+      "component_count": 2,
+      "approved": false
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1824,
+      "filename": "frame_001824_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 68154,
+      "component_count": 5,
+      "approved": false
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1860,
+      "filename": "frame_001860_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 166780,
+      "component_count": 7,
+      "approved": false
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1869,
+      "filename": "frame_001869_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 74884,
+      "component_count": 9,
+      "approved": false
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1872,
+      "filename": "frame_001872_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 6917,
+      "component_count": 3,
+      "approved": false
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1881,
+      "filename": "frame_001881_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 71714,
+      "component_count": 128,
+      "approved": false
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1890,
+      "filename": "frame_001890_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 5370,
+      "component_count": 1,
+      "approved": false
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1896,
+      "filename": "frame_001896_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 8513,
+      "component_count": 1,
+      "approved": false
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1926,
+      "filename": "frame_001926_eval.jpg",
+      "phi": 65,
+      "roll": 180,
+      "selected_component_px": 124644,
+      "component_count": 22,
+      "approved": false
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1938,
+      "filename": "frame_001938_train.jpg",
+      "phi": 65,
+      "roll": 180,
+      "selected_component_px": 194901,
+      "component_count": 39,
+      "approved": false
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1944,
+      "filename": "frame_001944_train.jpg",
+      "phi": 65,
+      "roll": 180,
+      "selected_component_px": 110822,
+      "component_count": 40,
+      "approved": false
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1950,
+      "filename": "frame_001950_train.jpg",
+      "phi": 65,
+      "roll": 180,
+      "selected_component_px": 155901,
+      "component_count": 29,
+      "approved": false
+    },
+    {
+      "camera": "cam1",
+      "source_frame": 1254,
+      "filename": "frame_001254_train.jpg",
+      "phi": 180,
+      "roll": 0,
+      "selected_component_px": 70849,
+      "component_count": 2,
+      "approved": false
+    },
+    {
+      "camera": "cam1",
+      "source_frame": 1266,
+      "filename": "frame_001266_train.jpg",
+      "phi": 180,
+      "roll": 0,
+      "selected_component_px": 80527,
+      "component_count": 2,
+      "approved": false
+    },
+    {
+      "camera": "cam1",
+      "source_frame": 1386,
+      "filename": "frame_001386_train.jpg",
+      "phi": 180,
+      "roll": 0,
+      "selected_component_px": 289111,
+      "component_count": 1,
+      "approved": false
+    },
+    {
+      "camera": "cam1",
+      "source_frame": 1497,
+      "filename": "frame_001497_train.jpg",
+      "phi": 180,
+      "roll": 0,
+      "selected_component_px": 268399,
+      "component_count": 1,
+      "approved": false
+    },
+    {
+      "camera": "cam1",
+      "source_frame": 1737,
+      "filename": "frame_001737_train.jpg",
+      "phi": 180,
+      "roll": 0,
+      "selected_component_px": 364877,
+      "component_count": 1,
+      "approved": false
+    },
+    {
+      "camera": "cam1",
+      "source_frame": 1515,
+      "filename": "frame_001515_train.jpg",
+      "phi": 105,
+      "roll": 0,
+      "selected_component_px": 155408,
+      "component_count": 8,
+      "approved": false
+    }
+  ],
+  "stage": "candidate; manual visual approval required",
+  "native_addition_semantics": "WHITE exclude, zero no opinion"
+}

@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "exactProductionShader": true,
+  "checks": [
+    "Euclidean ray range under translated/rotated cameras",
+    "Five independent timestamps carve a false closure",
+    "Four virtual faces per timestamp count once",
+    "Observed surface protected",
+    "Behind-surface and behind-camera faces retained",
+    "Invalid depth contributes zero observations"
+  ],
+  "counts": [
+    5,
+    0,
+    0,
+    0,
+    0
+  ],
+  "support": [
+    false,
+    true,
+    false,
+    true,
+    false
+  ]
+}

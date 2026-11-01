@@ -1,0 +1,6 @@
+# Observed CPython 3.12.14 PDF/audit environment, 2026-11-01.
+numpy==2.3.5
+Pillow==12.3.0
+reportlab==4.4.9
+pypdf==6.10.0
+pdfplumber==0.11.9

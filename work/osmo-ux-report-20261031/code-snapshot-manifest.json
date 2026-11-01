@@ -1,0 +1,182 @@
+[
+  {
+    "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\select_frames.py",
+    "snapshot": "code/select_frames.py",
+    "bytes": 5233,
+    "sha256": "36dda82a9ab3646bddd5032354fe181b7c1fb3218b7f9950f41981e163f54e76"
+  },
+  {
+    "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\assign_split.py",
+    "snapshot": "code/assign_split.py",
+    "bytes": 1480,
+    "sha256": "041abd4cd6dd411c008fa07d6b89346ba82b01ee23d3cc19858d6281833f432c"
+  },
+  {
+    "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\build_explicit_pinhole.py",
+    "snapshot": "code/build_explicit_pinhole.py",
+    "bytes": 9053,
+    "sha256": "9c610a58a0fe75156cfdb4c9e2d74e4f896c9528ab4a49906bb0b8ec4d07bd5c"
+  },
+  {
+    "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\fit_explicit_depth.py",
+    "snapshot": "code/fit_explicit_depth.py",
+    "bytes": 5257,
+    "sha256": "dd52bb5d91e29bef42a91e55c220ffe67ef48cd49ac65fa63bc8324d524f7924"
+  },
+  {
+    "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\validate_explicit_depth.py",
+    "snapshot": "code/validate_explicit_depth.py",
+    "bytes": 9823,
+    "sha256": "38025d8d850bc56247c09f3699dfda430828229d95dd3e609ea2b953a7b3bbf6"
+  },
+  {
+    "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\continue_explicit_full.py",
+    "snapshot": "code/continue_explicit_full.py",
+    "bytes": 6057,
+    "sha256": "f75e8dae7b45e2ba29e0107fc7b117af63d9babfd2b1a3accc9f98532cb1c67a"
+  },
+  {
+    "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\run_logged_job.py",
+    "snapshot": "code/run_logged_job.py",
+    "bytes": 1527,
+    "sha256": "381209541095b189fc8759f0e76c6bd42584c12b4bdf23dee4046ae03131706e"
+  },
+  {
+    "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\geometry\\normalize_fresh_sfm.py",
+    "snapshot": "code/geometry/normalize_fresh_sfm.py",
+    "bytes": 33697,
+    "sha256": "a25865cfcd353d67584a0b186621ff71a209cc2b20ba95d8db96499e381a816a"
+  },
+  {
+    "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\geometry\\operator_pinhole.py",
+    "snapshot": "code/geometry/operator_pinhole.py",
+    "bytes": 9820,
+    "sha256": "402fa533868c1458abfb3b4740bd949c1c334ce6a602cc5f93bc73224f1d9519"
+  },
+  {
+    "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\pack-sog.py",
+    "snapshot": "code/review/pack-sog.py",
+    "bytes": 4398,
+    "sha256": "e25b39c70fa08ab3c32530e3c632899addf09a9767c6beec7828e55faba1898a"
+  },
+  {
+    "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\score-native-eval.py",
+    "snapshot": "code/review/score-native-eval.py",
+    "bytes": 4481,
+    "sha256": "4aae4ba1627bae2dc1e2343e4b76280b81b35c1e7ed88f60804e76c2b974aca3"
+  },
+  {
+    "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\production\\room-viewer.js",
+    "snapshot": "code/review/production/room-viewer.js",
+    "bytes": 32801,
+    "sha256": "35b8e275baa7e40193d2a75810bb78b4a99df1a0d62af95f708b01cda8a11d64"
+  },
+  {
+    "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\production\\native-delivery.js",
+    "snapshot": "code/review/production/native-delivery.js",
+    "bytes": 2802,
+    "sha256": "85a419a301c77e1e3a236f0e39de09c198c1d391727c570426fefef7dde68fa0"
+  },
+  {
+    "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\production\\choice-core.js",
+    "snapshot": "code/review/production/choice-core.js",
+    "bytes": 1179,
+    "sha256": "17594a4bb57b6d9e2922b6cee372ea21459944811f66aba9f5ad531e19019d6f"
+  },
+  {
+    "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\production\\chooser.js",
+    "snapshot": "code/review/production/chooser.js",
+    "bytes": 2354,
+    "sha256": "aaad9e4e20359e2a1d7223e284f772f8c6f57fcf4d6ad585a04bcca02340673d"
+  },
+  {
+    "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\production\\loader-core.js",
+    "snapshot": "code/review/production/loader-core.js",
+    "bytes": 3921,
+    "sha256": "8ad39f7ac2bb235d1326688a410754d6261c92de933da0644c8270ffb06312cb"
+  },
+  {
+    "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\production\\delivery-policy.js",
+    "snapshot": "code/review/production/delivery-policy.js",
+    "bytes": 837,
+    "sha256": "8f1fbed684114cee43764fff514c4d7fd17e6cd9e14f3767e1f9dacb0dbf752f"
+  },
+  {
+    "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\production\\build.mjs",
+    "snapshot": "code/review/production/build.mjs",
+    "bytes": 8015,
+    "sha256": "317314f1cb4a6495ae4e27b7e2c38757ea745d8e5326b05a326fbd73f87b4a6b"
+  },
+  {
+    "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\masking\\approve_pinhole.py",
+    "snapshot": "code/masking/approve_pinhole.py",
+    "bytes": 3477,
+    "sha256": "3faaf54b682edafaa6a7899b3dc2577a234397035c761f28028f19fc91ea3e65"
+  },
+  {
+    "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\masking\\build_masks.py",
+    "snapshot": "code/masking/build_masks.py",
+    "bytes": 14381,
+    "sha256": "668650fbdff04025f9abd29078a5770318bfa805519a1a56ccee7f409e321cf4"
+  },
+  {
+    "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\masking\\compose_reviewed.py",
+    "snapshot": "code/masking/compose_reviewed.py",
+    "bytes": 6986,
+    "sha256": "75880a86ab25c3b56e01a67e661162d9489e8631c5021d6cf8a9982e5cce9f33"
+  },
+  {
+    "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\masking\\diagnose_blue.py",
+    "snapshot": "code/masking/diagnose_blue.py",
+    "bytes": 1019,
+    "sha256": "6493db405dff2aca100ec841fc0a53b2ffbd7d2a2cdef659de07305af6711ea7"
+  },
+  {
+    "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\masking\\diagnostic_fill.py",
+    "snapshot": "code/masking/diagnostic_fill.py",
+    "bytes": 1425,
+    "sha256": "6fa2f969203970ccb95a79b8218a35a83e18e4737ace8569b581f4b124690bfe"
+  },
+  {
+    "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\masking\\final_qa_sheets.py",
+    "snapshot": "code/masking/final_qa_sheets.py",
+    "bytes": 940,
+    "sha256": "6d26d99f7f90c78564b06d444e9b782d90c502ad97b7ea2844bc49fa5ef85797"
+  },
+  {
+    "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\masking\\mirror_annotations.py",
+    "snapshot": "code/masking/mirror_annotations.py",
+    "bytes": 5394,
+    "sha256": "2643a769a9b8ad0d6fd1389b82ce94bf9241f56c33879588e324c5b2d41d8603"
+  },
+  {
+    "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\masking\\pinhole_sheets.py",
+    "snapshot": "code/masking/pinhole_sheets.py",
+    "bytes": 608,
+    "sha256": "68653e5c17c51c0251f6dafe5df4ffdcee0b75bed7b384d88366e24df0440439"
+  },
+  {
+    "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\masking\\preview_sources.py",
+    "snapshot": "code/masking/preview_sources.py",
+    "bytes": 1496,
+    "sha256": "f3429188a35c9ac751d7379cbd4c455f766d22d00093359ac50de59134c8cd5c"
+  },
+  {
+    "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\masking\\publish_masks.py",
+    "snapshot": "code/masking/publish_masks.py",
+    "bytes": 4626,
+    "sha256": "870811d6fc9d4d13bfd55bf93af37bd4472dacc0c919798fb65cb0cc6d5ceac8"
+  },
+  {
+    "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\masking\\repair_pinhole.py",
+    "snapshot": "code/masking/repair_pinhole.py",
+    "bytes": 5365,
+    "sha256": "c5c6c47686180a7fae984d2daa42a57ccba1cb6781fc20dfde1c00dd87d5d22f"
+  },
+  {
+    "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\masking\\update_final_candidates.py",
+    "snapshot": "code/masking/update_final_candidates.py",
+    "bytes": 992,
+    "sha256": "7e137ca6ce9e6137cb374f93c93fb80e99208e1a0b6d96485035b4f802e0032b"
+  }
+]

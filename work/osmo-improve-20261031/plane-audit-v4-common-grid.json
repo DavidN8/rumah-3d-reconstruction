@@ -1,0 +1,396 @@
+{
+  "baseline_source": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\lite-v1\\exports\\osmo-lite-trusted-source.glb",
+  "baseline_sha256": "4c09c9b60acedb9d455db34881f6e77987b26520d70325b1698b10e12a32d1d5",
+  "v4_source": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\recovery-v2\\exports\\v4-probe.glb",
+  "v4_sha256": "e0c63a9ceba7720dbb53cb5a86866165d7f729ad27d4094fc751b4fc274eb5c5",
+  "same_plane_equations_and_grid": true,
+  "units": "Approximate scene units; centimetre displays multiply by100 using assumed1.5m camera-height normalization.",
+  "selection": "Identical inside-hull5cm grid cells, excluding cells crossed by>=2 trusted background feature rays; both meshes hit within20cm of plane.",
+  "method": "Closest normal-ray surface from either side of the plane. Centered spread subtracts each mesh signed median, separating offset from waviness. Neighbor differences use identical valid5cm grid edges.",
+  "limitations": [
+    "Same-SfM evidence, not independent measured geometry.",
+    "The20cm slab may still include nearby furniture or parallel wall layers.",
+    "Common cells measure shape only; added/missing coverage is reported separately."
+  ],
+  "geometry_mutated": false,
+  "gpu_used": false,
+  "rows": [
+    {
+      "plane": 0,
+      "kind": "horizontal",
+      "support_points": 3270,
+      "distinct_images": 232,
+      "grid_cell_size": 0.05,
+      "eligible_cells_excluding_negative_witnesses": 10415,
+      "common_hit_cells_within20cm": 5732,
+      "baseline": {
+        "signed_median": 0.02195871739565103,
+        "absolute_median": 0.024649019467321717,
+        "absolute_p90": 0.07580870749624748,
+        "centered_absolute_median": 0.014232199540359314,
+        "centered_absolute_p90": 0.06197751067054469,
+        "adjacent_5cm_step_median_difference": 0.0062644564619609155,
+        "adjacent_5cm_step_p90_difference": 0.027283466576425695,
+        "adjacent_pairs": 10755
+      },
+      "v4": {
+        "signed_median": 0.017956594822465213,
+        "absolute_median": 0.019041741187402025,
+        "absolute_p90": 0.06603333897921597,
+        "centered_absolute_median": 0.013055741746860569,
+        "centered_absolute_p90": 0.051004293449218314,
+        "adjacent_5cm_step_median_difference": 0.00515078659806395,
+        "adjacent_5cm_step_p90_difference": 0.020067131093495227,
+        "adjacent_pairs": 10755
+      }
+    },
+    {
+      "plane": 1,
+      "kind": "horizontal",
+      "support_points": 1889,
+      "distinct_images": 227,
+      "grid_cell_size": 0.05,
+      "eligible_cells_excluding_negative_witnesses": 10713,
+      "common_hit_cells_within20cm": 5538,
+      "baseline": {
+        "signed_median": -0.017214108939092282,
+        "absolute_median": 0.02387181710201139,
+        "absolute_p90": 0.06213021510752517,
+        "centered_absolute_median": 0.014654144678073744,
+        "centered_absolute_p90": 0.06741671795575875,
+        "adjacent_5cm_step_median_difference": 0.006445504516480988,
+        "adjacent_5cm_step_p90_difference": 0.029826919387258885,
+        "adjacent_pairs": 10056
+      },
+      "v4": {
+        "signed_median": -0.021435671847073484,
+        "absolute_median": 0.026867865138008207,
+        "absolute_p90": 0.051092428912382463,
+        "centered_absolute_median": 0.013752156171690899,
+        "centered_absolute_p90": 0.05782104142371492,
+        "adjacent_5cm_step_median_difference": 0.005360952995493301,
+        "adjacent_5cm_step_p90_difference": 0.02363815739743809,
+        "adjacent_pairs": 10056
+      }
+    },
+    {
+      "plane": 2,
+      "kind": "horizontal",
+      "support_points": 1429,
+      "distinct_images": 203,
+      "grid_cell_size": 0.05,
+      "eligible_cells_excluding_negative_witnesses": 5329,
+      "common_hit_cells_within20cm": 879,
+      "baseline": {
+        "signed_median": -0.007143948412077605,
+        "absolute_median": 0.06345564321914554,
+        "absolute_p90": 0.16729401359962273,
+        "centered_absolute_median": 0.06320292158779584,
+        "centered_absolute_p90": 0.16385470978786182,
+        "adjacent_5cm_step_median_difference": 0.0212911955495277,
+        "adjacent_5cm_step_p90_difference": 0.1503155079447622,
+        "adjacent_pairs": 996
+      },
+      "v4": {
+        "signed_median": -0.006932399033020453,
+        "absolute_median": 0.05893757518856935,
+        "absolute_p90": 0.16799568355752156,
+        "centered_absolute_median": 0.060287393764013986,
+        "centered_absolute_p90": 0.16511389314144018,
+        "adjacent_5cm_step_median_difference": 0.021941010954226584,
+        "adjacent_5cm_step_p90_difference": 0.1357631359242811,
+        "adjacent_pairs": 996
+      }
+    },
+    {
+      "plane": 3,
+      "kind": "horizontal",
+      "support_points": 697,
+      "distinct_images": 223,
+      "grid_cell_size": 0.05,
+      "eligible_cells_excluding_negative_witnesses": 9559,
+      "common_hit_cells_within20cm": 4901,
+      "baseline": {
+        "signed_median": -0.005145126753910878,
+        "absolute_median": 0.012568080327047648,
+        "absolute_p90": 0.07907838071107953,
+        "centered_absolute_median": 0.012855163506793332,
+        "centered_absolute_p90": 0.07452457501059079,
+        "adjacent_5cm_step_median_difference": 0.002460907012081043,
+        "adjacent_5cm_step_p90_difference": 0.015087989932398118,
+        "adjacent_pairs": 9155
+      },
+      "v4": {
+        "signed_median": -0.0006483216027739491,
+        "absolute_median": 0.011847610701420375,
+        "absolute_p90": 0.07352868751854785,
+        "centered_absolute_median": 0.011968747874287589,
+        "centered_absolute_p90": 0.07304652406679235,
+        "adjacent_5cm_step_median_difference": 0.0021208338854175335,
+        "adjacent_5cm_step_p90_difference": 0.01352011563910161,
+        "adjacent_pairs": 9155
+      }
+    },
+    {
+      "plane": 4,
+      "kind": "vertical",
+      "support_points": 1131,
+      "distinct_images": 139,
+      "grid_cell_size": 0.05,
+      "eligible_cells_excluding_negative_witnesses": 2049,
+      "common_hit_cells_within20cm": 1620,
+      "baseline": {
+        "signed_median": -0.022558571531097707,
+        "absolute_median": 0.027435806889534675,
+        "absolute_p90": 0.0696801763860504,
+        "centered_absolute_median": 0.014218826375528376,
+        "centered_absolute_p90": 0.07813006757513052,
+        "adjacent_5cm_step_median_difference": 0.007427612133785844,
+        "adjacent_5cm_step_p90_difference": 0.036497456134214186,
+        "adjacent_pairs": 2913
+      },
+      "v4": {
+        "signed_median": -0.01906878889180233,
+        "absolute_median": 0.022174301639222654,
+        "absolute_p90": 0.06465212487099779,
+        "centered_absolute_median": 0.014030873363874305,
+        "centered_absolute_p90": 0.05170069043393866,
+        "adjacent_5cm_step_median_difference": 0.0062342297175804195,
+        "adjacent_5cm_step_p90_difference": 0.02689177461714911,
+        "adjacent_pairs": 2913
+      }
+    },
+    {
+      "plane": 5,
+      "kind": "vertical",
+      "support_points": 1254,
+      "distinct_images": 147,
+      "grid_cell_size": 0.05,
+      "eligible_cells_excluding_negative_witnesses": 2453,
+      "common_hit_cells_within20cm": 616,
+      "baseline": {
+        "signed_median": 0.001708534236196102,
+        "absolute_median": 0.03750024881962266,
+        "absolute_p90": 0.14263936235637673,
+        "centered_absolute_median": 0.036501397603937114,
+        "centered_absolute_p90": 0.14347750236761406,
+        "adjacent_5cm_step_median_difference": 0.014415328873388589,
+        "adjacent_5cm_step_p90_difference": 0.08401429234511797,
+        "adjacent_pairs": 912
+      },
+      "v4": {
+        "signed_median": 0.0033209045216141125,
+        "absolute_median": 0.036739975279976425,
+        "absolute_p90": 0.14219677475207093,
+        "centered_absolute_median": 0.03537336404856317,
+        "centered_absolute_p90": 0.142335661336313,
+        "adjacent_5cm_step_median_difference": 0.014311126753653036,
+        "adjacent_5cm_step_p90_difference": 0.08246331376723867,
+        "adjacent_pairs": 912
+      }
+    },
+    {
+      "plane": 6,
+      "kind": "vertical",
+      "support_points": 1228,
+      "distinct_images": 142,
+      "grid_cell_size": 0.05,
+      "eligible_cells_excluding_negative_witnesses": 2930,
+      "common_hit_cells_within20cm": 1134,
+      "baseline": {
+        "signed_median": -0.0378816225027398,
+        "absolute_median": 0.0584569380167797,
+        "absolute_p90": 0.14046046251660704,
+        "centered_absolute_median": 0.04054789870604292,
+        "centered_absolute_p90": 0.12103149074240391,
+        "adjacent_5cm_step_median_difference": 0.007615774655256674,
+        "adjacent_5cm_step_p90_difference": 0.05492271599898621,
+        "adjacent_pairs": 1939
+      },
+      "v4": {
+        "signed_median": -0.03725964943438752,
+        "absolute_median": 0.05813795550963986,
+        "absolute_p90": 0.13649083341084328,
+        "centered_absolute_median": 0.038647104451836764,
+        "centered_absolute_p90": 0.12037497245588404,
+        "adjacent_5cm_step_median_difference": 0.006903572658192025,
+        "adjacent_5cm_step_p90_difference": 0.05288866761521028,
+        "adjacent_pairs": 1939
+      }
+    },
+    {
+      "plane": 7,
+      "kind": "vertical",
+      "support_points": 644,
+      "distinct_images": 138,
+      "grid_cell_size": 0.05,
+      "eligible_cells_excluding_negative_witnesses": 1821,
+      "common_hit_cells_within20cm": 1505,
+      "baseline": {
+        "signed_median": 0.030209969958691435,
+        "absolute_median": 0.033018919755637505,
+        "absolute_p90": 0.08095816304390491,
+        "centered_absolute_median": 0.016838073096859946,
+        "centered_absolute_p90": 0.06751567407938978,
+        "adjacent_5cm_step_median_difference": 0.007495864219137879,
+        "adjacent_5cm_step_p90_difference": 0.03278239907918607,
+        "adjacent_pairs": 2654
+      },
+      "v4": {
+        "signed_median": 0.03425340262811574,
+        "absolute_median": 0.03600262413779154,
+        "absolute_p90": 0.07538736192702336,
+        "centered_absolute_median": 0.014553685120829135,
+        "centered_absolute_p90": 0.048563909832581596,
+        "adjacent_5cm_step_median_difference": 0.0061968666418047436,
+        "adjacent_5cm_step_p90_difference": 0.024294853420420367,
+        "adjacent_pairs": 2654
+      }
+    },
+    {
+      "plane": 8,
+      "kind": "vertical",
+      "support_points": 576,
+      "distinct_images": 157,
+      "grid_cell_size": 0.05,
+      "eligible_cells_excluding_negative_witnesses": 2344,
+      "common_hit_cells_within20cm": 967,
+      "baseline": {
+        "signed_median": -0.02476452522371217,
+        "absolute_median": 0.04766364196108197,
+        "absolute_p90": 0.14533841218058421,
+        "centered_absolute_median": 0.03880700324328254,
+        "centered_absolute_p90": 0.14811836906437742,
+        "adjacent_5cm_step_median_difference": 0.009669298460262654,
+        "adjacent_5cm_step_p90_difference": 0.07850326007956954,
+        "adjacent_pairs": 1488
+      },
+      "v4": {
+        "signed_median": -0.022406699599292895,
+        "absolute_median": 0.04345619739990342,
+        "absolute_p90": 0.14181953285075105,
+        "centered_absolute_median": 0.034360145175407836,
+        "centered_absolute_p90": 0.15015567280887548,
+        "adjacent_5cm_step_median_difference": 0.008696044458914087,
+        "adjacent_5cm_step_p90_difference": 0.08111402787934135,
+        "adjacent_pairs": 1488
+      }
+    },
+    {
+      "plane": 9,
+      "kind": "vertical",
+      "support_points": 593,
+      "distinct_images": 140,
+      "grid_cell_size": 0.05,
+      "eligible_cells_excluding_negative_witnesses": 1019,
+      "common_hit_cells_within20cm": 450,
+      "baseline": {
+        "signed_median": -0.01672565477566848,
+        "absolute_median": 0.039904063140913326,
+        "absolute_p90": 0.12923685021206216,
+        "centered_absolute_median": 0.041357930982186236,
+        "centered_absolute_p90": 0.12186669045372067,
+        "adjacent_5cm_step_median_difference": 0.011534636364583337,
+        "adjacent_5cm_step_p90_difference": 0.08846587895971468,
+        "adjacent_pairs": 700
+      },
+      "v4": {
+        "signed_median": -0.014436428099160764,
+        "absolute_median": 0.03720617162089901,
+        "absolute_p90": 0.13100187417185946,
+        "centered_absolute_median": 0.03983221453463759,
+        "centered_absolute_p90": 0.1279740400876758,
+        "adjacent_5cm_step_median_difference": 0.009579918989596592,
+        "adjacent_5cm_step_p90_difference": 0.07894187696124756,
+        "adjacent_pairs": 700
+      }
+    },
+    {
+      "plane": 10,
+      "kind": "vertical",
+      "support_points": 269,
+      "distinct_images": 144,
+      "grid_cell_size": 0.05,
+      "eligible_cells_excluding_negative_witnesses": 3877,
+      "common_hit_cells_within20cm": 2850,
+      "baseline": {
+        "signed_median": -0.014041448408442958,
+        "absolute_median": 0.05653699577527646,
+        "absolute_p90": 0.1096261100965194,
+        "centered_absolute_median": 0.057361433962715536,
+        "centered_absolute_p90": 0.11249409171832712,
+        "adjacent_5cm_step_median_difference": 0.005735162249291936,
+        "adjacent_5cm_step_p90_difference": 0.03009490389526054,
+        "adjacent_pairs": 5155
+      },
+      "v4": {
+        "signed_median": -0.014068717219215515,
+        "absolute_median": 0.055965692851734306,
+        "absolute_p90": 0.1074424947836267,
+        "centered_absolute_median": 0.05654710765672444,
+        "centered_absolute_p90": 0.10931814136505306,
+        "adjacent_5cm_step_median_difference": 0.004765623279654296,
+        "adjacent_5cm_step_p90_difference": 0.02802113989323923,
+        "adjacent_pairs": 5155
+      }
+    },
+    {
+      "plane": 11,
+      "kind": "vertical",
+      "support_points": 1020,
+      "distinct_images": 139,
+      "grid_cell_size": 0.05,
+      "eligible_cells_excluding_negative_witnesses": 2316,
+      "common_hit_cells_within20cm": 974,
+      "baseline": {
+        "signed_median": 0.018358772248301597,
+        "absolute_median": 0.05891406806382492,
+        "absolute_p90": 0.1394171656632394,
+        "centered_absolute_median": 0.053400808415774714,
+        "centered_absolute_p90": 0.14367197567991583,
+        "adjacent_5cm_step_median_difference": 0.007543148298283009,
+        "adjacent_5cm_step_p90_difference": 0.05416645503362586,
+        "adjacent_pairs": 1623
+      },
+      "v4": {
+        "signed_median": 0.02043457286395811,
+        "absolute_median": 0.05830187319534305,
+        "absolute_p90": 0.13558101046299417,
+        "centered_absolute_median": 0.052040380798176106,
+        "centered_absolute_p90": 0.13847396739889753,
+        "adjacent_5cm_step_median_difference": 0.00719654633474065,
+        "adjacent_5cm_step_p90_difference": 0.05355608886283399,
+        "adjacent_pairs": 1623
+      }
+    },
+    {
+      "plane": 12,
+      "kind": "horizontal",
+      "support_points": 307,
+      "distinct_images": 122,
+      "grid_cell_size": 0.05,
+      "eligible_cells_excluding_negative_witnesses": 2868,
+      "common_hit_cells_within20cm": 2395,
+      "baseline": {
+        "signed_median": 0.013138891677115072,
+        "absolute_median": 0.016545106083273753,
+        "absolute_p90": 0.03833206391899495,
+        "centered_absolute_median": 0.008533459149945744,
+        "centered_absolute_p90": 0.03589288696995093,
+        "adjacent_5cm_step_median_difference": 0.0028395078744194308,
+        "adjacent_5cm_step_p90_difference": 0.018454305225860484,
+        "adjacent_pairs": 4628
+      },
+      "v4": {
+        "signed_median": 0.021434625976427202,
+        "absolute_median": 0.023615448248772847,
+        "absolute_p90": 0.03994518633745647,
+        "centered_absolute_median": 0.008358606228694582,
+        "centered_absolute_p90": 0.03527683019950188,
+        "adjacent_5cm_step_median_difference": 0.0025358839371201897,
+        "adjacent_5cm_step_p90_difference": 0.01721211346437218,
+        "adjacent_pairs": 4628
+      }
+    }
+  ]
+}

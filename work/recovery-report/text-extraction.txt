@@ -1,0 +1,495 @@
+GEMINI ARGON / ARCHITECT | IPHONE WIDE RECOVERY | 27 OCT 2026
+iPhone reconstruction recovery
+Execution record, actual browser comparisons, remaining defects and decisions requested. Companion to the original three-model architecture report.
+Local reconstruction evidence. Approximate scale; visible defects and failed gates are disclosed.
+1
+FULL NATIVE DELIVERED - size and triangle caps removed; visible reconstruction
+defects remain
+The full native reconstruction is now the primary export: 11,891,853 triangles /
+435.61 MB, with every native position, normal, UV and triangle preserved. The user
+explicitly chose full native geometry and removed the delivery size/count caps. The
+actual native viewer passed all 33 browser/offline checks at 240.0 FPS. Its 584.63 MB
+standalone viewer decodes to the same native GLB hash. Living-room and bedroom
+coverage are substantially improved; doorway-wall tearing and small-object
+distortion remain.
+What was rebuilt
+Fresh metric-depth inputs and corrected dense seeds; a 40k-step kitchen pilot; one
+50k-step living/corridor/bedroom component. One proper similarity per
+independent COLMAP component. No separate bedroom floor tilt.
+An additional full-coverage living run restores all 311 usable views after the first run
+unnecessarily withheld fixed comparison photos and interval-evaluation frames.
+Both runs and their source datasets remain preserved.
+Primary full native delivery: 11,891,853 triangles / 435.6 MB. Two embedded 8K JPEG textures.
+Every native triangle is retained; no post-extraction simplification.
+Read the eight source comparisons and the gate table before interpreting any headline triangle count, training metric or screenshot as acceptance.
+
+
+GEMINI ARGON / ARCHITECT | IPHONE WIDE RECOVERY | 27 OCT 2026
+Execution against the architectural mandate
+Completion of computation is separate from acceptance of the resulting geometry.
+Local reconstruction evidence. Approximate scale; visible defects and failed gates are disclosed.
+2
+Stage
+What was actually done
+Outcome / limit
+1. Audit and components
+Reviewed registered doorway windows; excluded 22 blurred frames. Replaced three
+temporal zones with two original SfM components.
+No confirmed active door swing in the registered contacts. The discarded wider join
+estimate did not satisfy three-plane constraints.
+2. Geometry and seeds
+Fresh 501-view metric-depth inference; depth-grid intrinsics and RGB sampling
+matched. Observed sparse tracks align depth in the shared scene frame.
+150k kitchen / 300k living seeds; projections checked. Learned depth and scale
+remain approximate.
+3. Kitchen pilot
+High quality, 40k steps, cap 2.5M; native 0.5 merge, default 512 grid, 8K JPEG90.
+Visible counter/appliance improvement passed the pilot continuation gate. Narrow
+wall perforations and soft small objects remain.
+4. Unified living
+component
+High quality, 50k steps, cap 3M. No internal temporal seam or bedroom tilt. Repeated
+once with all 311 usable views after correcting the evaluation split.
+See the fixed views. A remaining defect is not declared resolved merely because the
+split was removed.
+5. Delivery and
+verification
+HTTP and embedded offline review; all eight source views, dollhouse, depth layers,
+compaction ablation, actual browser controls.
+Primary delivery state: Published full native GLB, corrected camera model, HTTP
+viewer and self-contained offline viewer. Delivery size and triangle caps removed by
+explicit user choice.
+The original checkpoints, raw meshes, older deliverable and protected Nikon/Samsung assets were preserved. Historical temporal exporters now reject accidental reuse.
+
+
+GEMINI ARGON / ARCHITECT | IPHONE WIDE RECOVERY | 27 OCT 2026
+The three models: correct provenance retained
+Historical reference images are reused byte-for-byte. No new Nikon or Samsung reconstruction or rendering was run.
+Local reconstruction evidence. Approximate scale; visible defects and failed gates are disclosed.
+3
+iPhone - full native rebuild
+11,891,853 triangles / 435.6 MB. Two original components,
+apartment scope. Native geometry selected by the user;
+remaining surface defects are disclosed.
+Nikon Z8 - Codex 034
+Historical native-camera-kitchen-034: 84 frames, 24k steps,
+576,595 triangles / 42.0 MB raw. Quality rejected; a small kitchen
+test, not a complete apartment.
+Samsung - accepted release
+Accepted bedroom/bathroom release: 9,080,740 full triangles;
+roofless overview 8,569,710 / 419.8 MB. Preserved geometry with
+known occlusion gaps and uncalibrated physical scale.
+These are different scenes, capture scopes, source resolutions and processing histories. This comparison supports a processing-quality discussion, not a camera-brand ranking. The Nikon raw hash begins
+fc123e86 and its display wrapper hash begins b87af585, as pinned in the original evidence pack.
+The complete original 28-page report, provenance JSON and historical image references are included with the new evidence pack.
+
+
+GEMINI ARGON / ARCHITECT | IPHONE WIDE RECOVERY | 27 OCT 2026
+Input corrections and what they establish
+The pilot changes several coupled factors; its improvement does not isolate a single cause.
+Local reconstruction evidence. Approximate scale; visible defects and failed gates are disclosed.
+4
+Depth, camera and seed contract
+The fresh MoGe maps use a 598 x 1064 grid. Focal lengths and principal point are
+scaled from the original 1080 x 1920 calibration separately in x and y. Seed RGB is
+sampled on the same grid.
+Depth is explicit millimetre z-depth. Each reliable map is robustly aligned to this
+image's associated, observed sparse tracks in the transformed component frame.
+Unreliable or non-positive fits are omitted from depth supervision and seeding; RGB
+and normals remain available.
+Proper rotations have determinant +1. Geometry and all 501 camera poses share
+the same component-level similarity. The final matrices and projected sparse tracks
+are checked independently of screenshots.
+The legacy single-K seed entry point rejects a merged, two-calibration model. The
+retired zone-0/1/2 commands cannot silently overwrite the component
+reconstruction.
+Native recipe: merge 0.5, default grid 512, four bisection iterations, carve-k 3, hole ratio 0, hole
+edge limit 64, floater minimum 50 faces, 8192 texture and JPEG90. The edge rule still fills small
+holes even when the ratio is zero; no manual wall patch was added.
+Four source/seed overlays: kitchen 903/999 and unified component 3606/4297. This is a projection
+sanity check, not an independent measurement of true surfaces.
+
+
+GEMINI ARGON / ARCHITECT | IPHONE WIDE RECOVERY | 27 OCT 2026
+Coverage correction and training record
+The initial recovery accidentally introduced two layers of holdouts. This is documented as an implementation issue.
+Local reconstruction evidence. Approximate scale; visible defects and failed gates are disclosed.
+5
+Run
+Loaded views / contributing train views
+Settings and elapsed training
+Kitchen pilot
+166 loaded; 152 train / 14 engine eval. Eight blur exclusions plus two external
+fixed-view holdouts.
+High; 40k; cap 2.5M; full-resolution phase after 30%. 13.72 min.
+First unified living run
+305 loaded; 279 train / 26 engine eval. Fourteen blur exclusions plus six external
+fixed-view holdouts.
+High; 50k; cap 3M. 16.00 min.
+Full-coverage living run
+311 usable views all train; 14 audited blur exclusions. No fixed-view or interval
+holdout.
+High; 50k; cap 3M; fresh corrected 300k seed. 15.42 min.
+Why repeat the living run: frame 1398 is near the component boundary. Withholding it, together with the engine's interval split, weakened coverage exactly where the first
+recovery retained a severe foreground sheet. The repeat tests that concrete hypothesis; improvement is judged from the new mesh, not assumed.
+All-coverage living comparisons are in-sample delivery checks. The SfM poses also use the original full registered image set. Neither the initial holdouts nor this repeat
+constitute independent capture or surveyed validation.
+Shared training settings: resolution divisor 1; progressive full resolution at 30%; SH degree 3 / regularization 0.001; maximum world size 0.12 approximate metres; depth weight 0.05 and normal weight 0.02;
+z-depth rather than ray depth. Orientation, centering and automatic pose scaling are disabled. Refinement stops 10k steps before the run ends.
+GPU pacing was disabled and 16 CPU threads were configured. No new capture was requested. The raw training and native extraction records preserve exact commands and elapsed times.
+
+
+GEMINI ARGON / ARCHITECT | IPHONE WIDE RECOVERY | 27 OCT 2026
+Dollhouse comparison
+Before: restored pre-rebuild export. After: the reviewed new derivative. Full geometry remains available; roof cutaway uses an exact horizontal clipping plane.
+Local reconstruction evidence. Approximate scale; visible defects and failed gates are disclosed.
+6
+BEFORE - previous restored export, 1,082,185 triangles / 60.8 MB.
+AFTER - The living floor and corridor are broadly continuous, and the bed/bedroom sit in one
+coherent component. A large unfilled kitchen-front floor area, perforated wall strips and damaged
+furniture details remain.
+Visible room coverage and furniture coherence must be assessed together with the interior comparisons. A dollhouse can conceal a foreground sheet or holes behind the
+bed. Cutaway is a viewing operation; source geometry is retained in the full model.
+
+
+GEMINI ARGON / ARCHITECT | IPHONE WIDE RECOVERY | 27 OCT 2026
+01 / Kitchen / counter - source frame 999
+Shelves, bottles, bowl and counter are more coherent than the prior export. Sink depth and small tools remain softened; a folded/perforated strip persists below the shelf on the right.
+Local reconstruction evidence. Approximate scale; visible defects and failed gates are disclosed.
+7
+BEFORE - previous export
+AFTER - reviewed rebuild
+SOURCE - original frame
+Actual WebGL screenshot regions, with the original photo once at right. Full uncropped screenshots are attached. Before/after use the same source-frame identity and each model's consistent transformed pose; raw/compact
+ablations use identical cameras.
+
+
+GEMINI ARGON / ARCHITECT | IPHONE WIDE RECOVERY | 27 OCT 2026
+02 / Kitchen / appliances - source frame 903
+The wall behind the green air fryer is flatter and the appliance is recognizable. The cabinet-left strip and lower counter edge remain perforated, and handles/cables are distorted.
+Local reconstruction evidence. Approximate scale; visible defects and failed gates are disclosed.
+8
+BEFORE - previous export
+AFTER - reviewed rebuild
+SOURCE - original frame
+Actual WebGL screenshot regions, with the original photo once at right. Full uncropped screenshots are attached. Before/after use the same source-frame identity and each model's consistent transformed pose; raw/compact
+ablations use identical cameras.
+
+
+GEMINI ARGON / ARCHITECT | IPHONE WIDE RECOVERY | 27 OCT 2026
+03 / Doorway / transition - source frame 1398
+The door is more coherent after restoring all usable views. The adjacent wall remains a torn foreground structure already present in the native extraction. Delivery preserves it unchanged; this view still fails
+full visual fidelity.
+Local reconstruction evidence. Approximate scale; visible defects and failed gates are disclosed.
+9
+BEFORE - previous export
+AFTER - reviewed rebuild
+SOURCE - original frame
+Actual WebGL screenshot regions, with the original photo once at right. Full uncropped screenshots are attached. Before/after use the same source-frame identity and each model's consistent transformed pose; raw/compact
+ablations use identical cameras.
+
+
+GEMINI ARGON / ARCHITECT | IPHONE WIDE RECOVERY | 27 OCT 2026
+04 / Living room - source frame 1612
+The broad floor, wall and ceiling recess are coherent and upright. Bags, shoes, water containers and distant small objects remain smeared or incomplete.
+Local reconstruction evidence. Approximate scale; visible defects and failed gates are disclosed.
+10
+BEFORE - previous export
+AFTER - reviewed rebuild
+SOURCE - original frame
+Actual WebGL screenshot regions, with the original photo once at right. Full uncropped screenshots are attached. Before/after use the same source-frame identity and each model's consistent transformed pose; raw/compact
+ablations use identical cameras.
+
+
+GEMINI ARGON / ARCHITECT | IPHONE WIDE RECOVERY | 27 OCT 2026
+05 / Living room / windows - source frame 2402
+Curtains, window frame, wall and floor read as continuous surfaces. Curtain transmission, clothing and the beanbag remain simplified or warped.
+Local reconstruction evidence. Approximate scale; visible defects and failed gates are disclosed.
+11
+BEFORE - previous export
+AFTER - reviewed rebuild
+SOURCE - original frame
+Actual WebGL screenshot regions, with the original photo once at right. Full uncropped screenshots are attached. Before/after use the same source-frame identity and each model's consistent transformed pose; raw/compact
+ablations use identical cameras.
+
+
+GEMINI ARGON / ARCHITECT | IPHONE WIDE RECOVERY | 27 OCT 2026
+06 / Corridor / bed - source frame 3606
+The bed and surrounding floor are substantially more continuous than the first held-out-view rebuild. The previous artificial living/bedroom split is gone; the door jamb and ceiling light remain rough.
+Local reconstruction evidence. Approximate scale; visible defects and failed gates are disclosed.
+12
+BEFORE - previous export
+AFTER - reviewed rebuild
+SOURCE - original frame
+Actual WebGL screenshot regions, with the original photo once at right. Full uncropped screenshots are attached. Before/after use the same source-frame identity and each model's consistent transformed pose; raw/compact
+ablations use identical cameras.
+
+
+GEMINI ARGON / ARCHITECT | IPHONE WIDE RECOVERY | 27 OCT 2026
+07 / Bedroom / desk - source frame 4297
+The main wall and ceiling are continuous, with a recognizable monitor, desk and drawers. Desk clutter, chair/table edges and small hardware remain distorted or incomplete.
+Local reconstruction evidence. Approximate scale; visible defects and failed gates are disclosed.
+13
+BEFORE - previous export
+AFTER - reviewed rebuild
+SOURCE - original frame
+Actual WebGL screenshot regions, with the original photo once at right. Full uncropped screenshots are attached. Before/after use the same source-frame identity and each model's consistent transformed pose; raw/compact
+ablations use identical cameras.
+
+
+GEMINI ARGON / ARCHITECT | IPHONE WIDE RECOVERY | 27 OCT 2026
+08 / Bedroom / entrance - source frame 4400
+The door, corridor and floor form one component without a separate bedroom tilt. A torn patch behind the door and rough jamb/air-conditioner edges remain visible.
+Local reconstruction evidence. Approximate scale; visible defects and failed gates are disclosed.
+14
+BEFORE - previous export
+AFTER - reviewed rebuild
+SOURCE - original frame
+Actual WebGL screenshot regions, with the original photo once at right. Full uncropped screenshots are attached. Before/after use the same source-frame identity and each model's consistent transformed pose; raw/compact
+ablations use identical cameras.
+
+
+GEMINI ARGON / ARCHITECT | IPHONE WIDE RECOVERY | 27 OCT 2026
+Kitchen join: wider matching did not establish precision
+A rejected candidate is retained as evidence, not silently promoted.
+Local reconstruction evidence. Approximate scale; visible defects and failed gates are disclosed.
+15
+The known switch-plate pair served as a positive control. The initial
+higher-resolution confidence threshold rejected even this control, so wider
+matching was rerun at a calibrated resolution and threshold.
+Across 32 unique wider pairs, only 32 geometrically filtered matches remained: no
+horizontal-floor matches, three wall-x matches spanning about 6.4 cm, and 29 wall-z
+matches spanning about 15.7 cm. This does not provide three orthogonal, spatially
+distributed constraints.
+The candidate fit had a small matched-point residual but a held-out 90th-percentile
+residual near 18.8 cm. Its rotation/translation update was rejected. The previous
+approximate kitchen join is retained, and exact scale or lever-arm alignment is not
+claimed.
+Normal groups derive from learned-depth neighbourhoods. They are diagnostic labels, not surveyed
+wall planes. A single global similarity is still applied per original component.
+
+
+GEMINI ARGON / ARCHITECT | IPHONE WIDE RECOVERY | 27 OCT 2026
+Doorway defect: component ablation
+This check distinguishes internal reconstruction error from an overlap between the two independent components.
+Local reconstruction evidence. Approximate scale; visible defects and failed gates are disclosed.
+16
+All-usable-view training removes much of the first recovery's blocking foreground
+sheet at frame 1398 and makes the door recognizable. The switch-side wall still
+tears. Hiding the kitchen in the new component ablation leaves that tearing present,
+confirming that kitchen ownership clipping alone will not fix this view.
+In the first recovery, hiding the kitchen left the foreground sheet at frame 1398
+unchanged. The kitchen-only render showed mostly background there. Therefore
+the main defect at this view belonged to the living mesh itself; clipping kitchen
+triangles would not repair it.
+A global nearest-camera ownership crop was not reused. It previously deleted valid
+floors and walls. A precise doorway-plane/occlusion cleanup still requires a
+defensible plane and a matched-camera ablation proving that no valid structure is
+lost.
+FIRST RECOVERY, LIVING ONLY - the defect survived hiding the kitchen. The new full-coverage result
+is shown in fixed view 03.
+
+
+GEMINI ARGON / ARCHITECT | IPHONE WIDE RECOVERY | 27 OCT 2026
+Geometric frame and floor evidence
+One shared living/bedroom similarity removes the artificial local tilt; residual reconstruction error is still possible.
+Local reconstruction evidence. Approximate scale; visible defects and failed gates are disclosed.
+17
+All 501 original poses checked. Maximum source-projection invariance residual: 1.51e-11 pixels. Quaternion/matrix residual: 7.77e-16. Both embedded texture byte streams match their native source
+textures.
+Plot coordinates are approximate metres from learned depth and the existing component alignment. Flat display axes and a low fitted inlier residual do not establish surveyed dimensions or a globally
+perfect floor.
+
+
+GEMINI ARGON / ARCHITECT | IPHONE WIDE RECOVERY | 27 OCT 2026
+Full native selected: delivery caps removed
+The user chose the full native model. The smaller simplification experiments remain archived and are not the primary delivery.
+Local reconstruction evidence. Approximate scale; visible defects and failed gates are disclosed.
+18
+Representation
+Triangles / bytes
+Surface and delivery interpretation
+PRIMARY - full native
+11,891,853 / 435.6 MB
+Every native position, normal, UV and triangle index retained exactly. No post-extraction simplification,
+ownership crop or geometry height cut.
+Archived small review
+1,999,872 / 81.7 MB
+Met its old size/count targets but failed the sampled 2 mm error gate. Not selected for primary delivery.
+Current policy
+No delivery size or triangle cap
+Explicit user choice: Full native; bigger size is acceptable; remove limitations. The native extraction is the
+geometry baseline.
+Native preservation check
+Nine identical cameras / fixed masks
+Native array identity: PASS. Worst newly empty fraction 0.0000%. The delivered GLB and offline decoded
+payload match the native reference SHA-256.
+Archived small-candidate measurements explain the delivery decision: the living mesh reached 24.23 mm native-to-fast distance and 7.40 mm in reverse, with 99th
+percentiles 3.46 / 3.32 mm and about 8% of samples above 2 mm. The user selected the full native extraction instead. Its primary GLB and decoded offline payload are
+byte-identical to the merged native reference, so no simplification displacement is introduced. This is an export-preservation result, not a claim of 2 mm physical accuracy.
+Independent surface check: deterministic area-weighted samples in both directions, exact nearest triangle search for each sample. These are approximate scene metres, not survey units. A finite sample
+pass is not a certified global Hausdorff bound; a sample above 2 mm is sufficient to reject that sampled gate.
+An early sampler mistakenly reused one mutable vector for every point. That report is quarantined as invalid. The corrected sampler creates independent vectors; its distributions, outliers and scripts are
+attached. No invalid result is used as acceptance evidence.
+
+
+GEMINI ARGON / ARCHITECT | IPHONE WIDE RECOVERY | 27 OCT 2026
+Alternative extraction pilot: tested and archived
+Argon's optional merge 0.65 / grid 640 recipe was checked on the same corrected kitchen checkpoint; it is not the selected full native output.
+Local reconstruction evidence. Approximate scale; visible defects and failed gates are disclosed.
+19
+The alternative kitchen extraction produced 3,714,448 triangles, versus 5,406,238
+for the selected 0.5 / default-grid baseline. It reduced count by about 31% while
+retaining the same training checkpoint and source cameras.
+Its nine-view ablation against the selected native baseline reached 0.0911% newly
+empty pixels. This passes the 0.5% regression bound; it does not establish literally
+zero new floor/wall holes.
+A 1 mm-estimator simplification requested 950k kitchen triangles but stopped at
+1,008,499. The independent check found three native-to-simplified samples above 2
+mm (maximum 2.110 mm); the reverse maximum was 1.658 mm. It did not pass the
+strict sampled gate.
+The user then selected full native geometry and removed the delivery caps. The coarser pilot and its
+measurements remain archived; no additional living-room alternative extraction was launched.
+Actual browser/source comparison for the alternate kitchen. The final primary uses the finer 0.5
+native extraction instead.
+
+
+GEMINI ARGON / ARCHITECT | IPHONE WIDE RECOVERY | 27 OCT 2026
+Depth layers and native preservation
+Red = background inside the diagnostic mask. Orange = two front-facing layers 3-40 cm apart. Flags require review.
+Local reconstruction evidence. Approximate scale; visible defects and failed gates are disclosed.
+20
+View
+Raw background %
+Delivered background %
+Newly empty after delivery %
+3-40 cm double layers %
+0999.jpg
+0.000
+0.000
+0.0000
+12.63
+0903.jpg
+0.013
+0.013
+0.0000
+2.95
+1398.jpg
+1.956
+1.956
+0.0000
+12.69
+1612.jpg
+0.019
+0.019
+0.0000
+2.76
+2402.jpg
+0.034
+0.034
+0.0000
+0.35
+3606.jpg
+0.014
+0.014
+0.0000
+4.00
+4297.jpg
+0.502
+0.502
+0.0000
+7.81
+4400.jpg
+0.136
+0.136
+0.0000
+7.90
+dollhouse
+15.734
+15.734
+0.0000
+4.90
+Interior masks cover the indoor source photo; windows and genuinely unseen regions need manual interpretation. The dollhouse mask is a coarse convex floor envelope, fixed from the raw mesh. It includes
+spaces that may be unobserved, so its absolute hole percentage is not a room-completeness score.
+
+
+GEMINI ARGON / ARCHITECT | IPHONE WIDE RECOVERY | 27 OCT 2026
+Why a low hole score is not sufficient
+Foreground ghost sheets can cover background rays while representing the wrong physical surface.
+Local reconstruction evidence. Approximate scale; visible defects and failed gates are disclosed.
+21
+DOORWAY - depth-layer diagnostic at fixed view 03.
+DOLLHOUSE - the fixed floor-envelope mask used for raw/compact regression.
+Two nearby legitimate surfaces can trigger orange; it does not by itself prove self-intersection. A zero background ray can still hit a wrong sheet. The source-photo
+comparison, depth diagnostic and raw/compact invariant are complementary checks.
+
+
+GEMINI ARGON / ARCHITECT | IPHONE WIDE RECOVERY | 27 OCT 2026
+Actual browser controls and offline delivery
+The final review asset is loaded in Chrome with the hardware RTX 5080 renderer; logic-only checks are not substituted.
+Local reconstruction evidence. Approximate scale; visible defects and failed gates are disclosed.
+22
+33 / 33 checks passed. Walk: 240.0 FPS, 95th-percentile frame 4.20 ms. Orbit: 240.0
+FPS, P95 4.20 ms.
+Checked WASD directions, Q/E and Space/C height, Shift speed, both key-overlap
+release orders, yaw/pitch without roll, wheel, top view, 90-degree rotation, reset, all
+eight recorded presets and source comparison.
+The actual 584.6 MB standalone file loaded from disk with zero HTTP requests. The
+model is embedded in 18 bounded pieces; decoding their combined bytes
+reproduces the native GLB hash exactly. Source photos are embedded. Key-release
+state was captured before reset/cleanup could hide a stuck key.
+Performance is measured for this desktop, viewport and session. It is not a guarantee for other
+GPUs, mobile browsers or a larger native mesh.
+ANGLE (NVIDIA, NVIDIA GeForce RTX 5080 (0x00002C02) Direct3D11 vs_5_0 ps_5_0, D3D11)
+
+
+GEMINI ARGON / ARCHITECT | IPHONE WIDE RECOVERY | 27 OCT 2026
+Remaining issues, recommendation and architect questions
+A bounded next experiment should resolve a specific uncertainty, with the current baselines retained.
+Local reconstruction evidence. Approximate scale; visible defects and failed gates are disclosed.
+23
+Issues and struggles
+- Frame 1398 still contains torn wall geometry inside the unified living component.
+Restoring all usable views improves the door but does not fully solve the wall.
+- Kitchen-front floor gaps, cabinet-side perforations, softened small objects and a
+few bedroom wall patches remain in the native extraction.
+- The kitchen join remains approximate: the wider bridge did not provide three
+orthogonal distributed constraints, and the candidate transform was rejected.
+- Native geometry preservation and zero newly empty pixels prove delivery integrity,
+not full source fidelity, independent generalization or surveyed dimensional
+accuracy.
+Recommended next direction
+- Keep the published full native reconstruction as the primary baseline. Do not
+reintroduce count/byte-driven decimation unless the user later requests it.
+- Target the remaining doorway defect with a bounded extraction/occupancy or
+depth/normal-supervision ablation, judged from the same source cameras. Preserve
+the current native reference.
+- Do not reuse the temporal bedroom split, local bedroom tilt, nearest-camera crop
+or an unsupported wall patch. Any inferred geometric repair should be explicit and
+separately reviewable.
+- If precise kitchen registration is required, use the existing unused doorway footage
+and line/plane constraints. The weak wall-only bridge should remain rejected.
+Questions for Gemini Argon
+- The user has resolved the size/geometry tradeoff in favor of full native delivery. For the remaining same-component doorway tearing, should the next controlled experiment vary extraction/occupancy
+settings or depth/normal supervision?
+- Is the retained approximate kitchen join sufficient for visual review, or should a camera/line/plane registration pass on the existing footage become the next hard quality gate?
+- If blank-wall evidence stays weak, should an explicitly labelled plane-inference derivative be explored while the full native reconstruction remains unchanged?
+
+
+GEMINI ARGON / ARCHITECT | IPHONE WIDE RECOVERY | 27 OCT 2026
+Evidence and reproducibility
+The attached pack contains unchanged screenshots and machine-readable records, with source paths and SHA-256 hashes.
+Local reconstruction evidence. Approximate scale; visible defects and failed gates are disclosed.
+24
+Primary review model SHA-256:
+16f8963b043a766317497ee4281f4cf39c6b2190fafaaed51334734723c8b207
+Native reference SHA-256:
+16f8963b043a766317497ee4281f4cf39c6b2190fafaaed51334734723c8b207
+Included: architectural mandate; explicit full-native delivery decision; exclusion and depth-alignment audit; component transforms; seed/projection records; exact
+training/meshing commands; all eight before/after WebGL screenshots and overview; layer maps; archived compaction samples; native GLB and offline byte-identity checks;
+corrected two-calibration COLMAP readback; actual control/offline results; updated implementation sources.
+The original three-model architecture PDF and historical Nikon/Samsung image/provenance snapshots are included for context. Large training checkpoints and native GLBs
+stay in the local scan folder; their verified absolute paths and hashes identify them without duplicating gigabytes into the pack.
+Reproduction entry points: scripts 20/21 prepare, seed, train and mesh component datasets; 26 runs the all-usable-view living correction; 22 stages component meshes; 25 verifies a candidate and prevents
+promotion without its acceptance gates. Viewer compression, rendering and input checks are preserved under viewer-src.
+This report records what was observed. It does not turn learned depth into surveyed accuracy, training-image agreement into independent validation, or failed surface/error gates into a complete release.

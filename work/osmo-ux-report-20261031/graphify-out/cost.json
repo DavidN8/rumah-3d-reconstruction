@@ -1,0 +1,12 @@
+{
+  "runs": [
+    {
+      "purpose": "Code-only report audit",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "files": 30
+    }
+  ],
+  "total_input_tokens": 0,
+  "total_output_tokens": 0
+}

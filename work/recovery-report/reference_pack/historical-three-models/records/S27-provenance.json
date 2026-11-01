@@ -1,0 +1,25 @@
+{
+  "command": [
+    "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261019_095800\\runtime\\spirula\\bin\\spirula.exe",
+    "geometry",
+    "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\analysis\\metric-bridge",
+    "--model",
+    "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261019_095800\\runtime\\spirula\\models\\moge2-vitl-normal.onnx",
+    "--depth",
+    "--depth-units",
+    "mm",
+    "--ray-depth",
+    "no",
+    "--max-size",
+    "1064",
+    "--num-tokens",
+    "3600",
+    "--normal-format",
+    "png",
+    "--device",
+    "auto"
+  ],
+  "images": 76,
+  "depth_units": "millimetres",
+  "exit_code": 0
+}

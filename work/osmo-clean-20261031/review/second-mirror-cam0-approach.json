@@ -1,0 +1,23 @@
+{
+  "camera": "cam0",
+  "coordinate_size": [640, 640],
+  "basis": "Manual tracing of the visible mirror glass beside the washbasin, verified against native-image crops at frames 1386 and 1440. Actual bathroom ceiling and open doorway are excluded from the mirror polygons.",
+  "earliest_confirmed_visible_source_frame": 1386,
+  "checked_no_visible_glass_source_frames": [1203,1272,1326,1344,1356,1359,1374,1377],
+  "review_note": "Small distant and rim-clipped polygons are approximate manual contours; combine with optical keep mask and final mirror dilation. These are exclusions, not invented surface geometry.",
+  "frames": {
+    "1386": [[296,337],[310,343],[278,400],[264,387]],
+    "1392": [[330,375],[346,383],[307,445],[290,428]],
+    "1401": [[366,414],[389,424],[343,481],[319,461]],
+    "1407": [[361,423],[384,433],[341,489],[316,468]],
+    "1416": [[317,397],[342,410],[302,476],[277,455]],
+    "1422": [[264,371],[289,383],[251,445],[224,423]],
+    "1431": [[164,325],[202,343],[164,411],[132,391]],
+    "1437": [[101,296],[134,308],[104,406],[73,385]],
+    "1440": [[75,281],[111,294],[87,404],[55,384]],
+    "1449": [[19,268],[41,277],[39,401],[19,383]],
+    "1455": [[6,258],[22,269],[25,407],[10,391]],
+    "1467": [[0,248],[15,257],[14,407],[0,397]],
+    "1473": [[13,270],[30,278],[42,417],[20,397]]
+  }
+}

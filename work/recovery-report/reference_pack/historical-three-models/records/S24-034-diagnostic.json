@@ -1,0 +1,96 @@
+{
+  "glbuild": "exports-native-camera-kitchen-034\\native-camera-kitchen.glb",
+  "transform_note": "Umeyama sparse->splat similarity",
+  "splat_stats": {
+    "splats": 594571,
+    "opacity_raw_p10_p50_p90": [
+      -4.3238444328308105,
+      -1.9336004257202148,
+      1.6706957817077637
+    ],
+    "opacity_sigmoid_below_0p1": 0.44784727139399666,
+    "scale_norm_glb_p50_p90_p99": [
+      0.01719826395922111,
+      0.09493606015183136,
+      0.32402851211782335
+    ],
+    "scale_norm_world_p50_p90_p99": [
+      0.011477732283524725,
+      0.06335817877077571,
+      0.21624929836730208
+    ],
+    "frusta": {
+      "2890": {
+        "splats_in_frustum": 11245,
+        "splat_fraction": 0.024925743671587532,
+        "z_p5_p50_p95_splats": [
+          4.523267785557884,
+          4.99401571225071,
+          5.880701979118912
+        ],
+        "z_p5_p50_p95_sparse": [
+          0.26663685523948477,
+          3.6535086301723396,
+          6.922153460601561
+        ],
+        "splats_closer_than_half_sparse_median": 0.0
+      },
+      "2920": {
+        "splats_in_frustum": 102314,
+        "splat_fraction": 0.17218926446705207,
+        "z_p5_p50_p95_splats": [
+          4.038217512070558,
+          4.842737119737263,
+          6.003587844518672
+        ],
+        "z_p5_p50_p95_sparse": [
+          3.312220799309259,
+          4.7381186873338565,
+          6.435119250355885
+        ],
+        "splats_closer_than_half_sparse_median": 0.0
+      },
+      "2950": {
+        "splats_in_frustum": 12581,
+        "splat_fraction": 0.021849752342843646,
+        "z_p5_p50_p95_splats": [
+          3.5640777131676726,
+          5.152540041354684,
+          6.02949476111186
+        ],
+        "z_p5_p50_p95_sparse": [
+          0.6627892400753831,
+          3.1302683879209443,
+          4.947090263744774
+        ],
+        "splats_closer_than_half_sparse_median": 0.0
+      }
+    }
+  },
+  "comparisons": [
+    {
+      "frame": 2890,
+      "tile": 0,
+      "surface_coverage_fraction": 0.566534179574994,
+      "mean_absolute_rgb_error_on_hits": 49.27029327442272,
+      "mean_absolute_rgb_error_including_holes": 43.84751809260481
+    },
+    {
+      "frame": 2920,
+      "tile": 0,
+      "surface_coverage_fraction": 0.9176603198542118,
+      "mean_absolute_rgb_error_on_hits": 25.802780405153175,
+      "mean_absolute_rgb_error_including_holes": 28.842725036045564
+    },
+    {
+      "frame": 2950,
+      "tile": 0,
+      "surface_coverage_fraction": 0.5591269467223846,
+      "mean_absolute_rgb_error_on_hits": 29.064826608723884,
+      "mean_absolute_rgb_error_including_holes": 31.977395590047582
+    }
+  ],
+  "gpu_compute": false,
+  "full_room_quality_verified": false,
+  "note": "CPU sampled diagnostics for the quality_rejected 034 model; not proof of quality."
+}

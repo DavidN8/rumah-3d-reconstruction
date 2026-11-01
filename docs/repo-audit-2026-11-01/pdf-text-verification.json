@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "pages": 784,
+  "registeredFiles": 19959,
+  "fileIdsOnExpectedPages": true,
+  "csvAttachmentExactByteMatch": true,
+  "allGlyphBoundsWithinPage": true,
+  "glyphsChecked": 1902344,
+  "outOfPageGlyphs": [],
+  "pdfSha256": "2fe3dc06dc99f48a7283527d3eedbf59b1718a65a1762cccf7e5424a34f5f307",
+  "method": "Independent pypdf extraction of every page and exact embedded CSV comparison, plus pdfplumber glyph bounding-box checks on every page."
+}

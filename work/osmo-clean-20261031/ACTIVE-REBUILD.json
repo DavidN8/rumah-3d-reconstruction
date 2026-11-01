@@ -1,0 +1,64 @@
+{
+  "currentDirection": "Full explicit calibrated pinhole workflow with scale-only, multi-view-validated geometry; no old Gaussian initialization",
+  "publicDeployment": "/var/www/rumah/releases/20261031-osmo-clean-v1",
+  "rejectedFullRun": {
+    "path": "clean-v3/training/osmo-clean-normals-v1",
+    "steps": 50000,
+    "reason": "Foreground obstruction at original source camera cam0/frame_001557_eval.jpg, independently confirmed in native evaluation face00120",
+    "oldCheckpointReused": false
+  },
+  "rejectedVisibilityExperiment": "319 candidate removals did not improve the bathroom; never approved/deployed",
+  "successfulPilot": {
+    "root": "clean-v3/explicit-bath-v3",
+    "review": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\bath-pilot-review.json",
+    "scope": "Both bathroom visits; not full scene",
+    "sourceImages": 94,
+    "virtualViews": 460,
+    "freshDenseSeed": 431064,
+    "trustedDepthPixels": 19300751,
+    "crossVisitSupportedPixels": 7570769,
+    "steps": 12000,
+    "sourceSplats": 797875,
+    "sogBytes": 12946912,
+    "compressionPsnrDb": [
+      41.72661501557589,
+      42.1714718250992
+    ],
+    "heldoutAppearanceGainDb": 11.013514454174661,
+    "combinedChanges": "Materialized pinhole RGB/masks and independently validated camera projections; positive scale-only depths; three-timestamp pixel consistency; dense seed; normal guidance restricted to validated pixels; conservative surface/position optimization. No single-factor causal ablation claimed."
+  },
+  "activeFullRoot": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\clean-v3\\explicit-full-v1",
+  "controllerState": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\clean-v3\\explicit-full-v1\\analysis\\continuation.json",
+  "controllerPid": 56364,
+  "controllerUnifiedSession": 46757,
+  "fullSourceImages": 452,
+  "fullVirtualViews": 2219,
+  "fullTrainViews": 2031,
+  "fullEvalViews": 188,
+  "fullSize": 1200,
+  "fullSeedBudget": 1500000,
+  "fullSplatCap": 3000000,
+  "fullIterations": 50000,
+  "next": "No pending compute or deployment. Physical Fold7/iPhone17 tests remain deferred to the user; documented soft/rough floor and oblique-edge regions are retained as follow-up quality work.",
+  "iphoneFastAndFull": "Preserve exact existing models/metadata and explicit no-download chooser",
+  "physicalPhones": "Fold7/iPhone17 unverified; user will test later, do not ask again",
+  "updatedUnix": 1793409000.2775452,
+  "currentStage": "Complete: full fresh Osmo reconstruction published and public Chrome verified",
+  "fullGeometry": {
+    "scaleQualifiedViews": 440,
+    "trustedDepthFrames": 439,
+    "trustedPixels": 119266081,
+    "fullSeedPoints": 1381699,
+    "seedSha256": "0e405c89fefc6a9de46ba2ae2db141ef0a1a832bd44bd2c8dd58bd0984eb68e5",
+    "evalUsedForGuidance": false,
+    "depthOffset": 0,
+    "bathroomTrustedViews": {
+      "firstVisit": 42,
+      "returnVisit": 48
+    }
+  },
+  "fullIntermediateReview": "review/full-intermediate-review.json",
+  "fullTrainingInputVerification": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\clean-v3\\explicit-full-v1/analysis/input-verification.json",
+  "completedUtc": "2026-10-31T01:55:42.800769+00:00",
+  "releaseOutcome": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\clean-v3\\explicit-full-v1\\analysis\\release-outcome.json"
+}

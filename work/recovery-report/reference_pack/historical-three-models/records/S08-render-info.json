@@ -1,0 +1,17 @@
+[
+  {
+    "name": "01-original-untrimmed",
+    "triangles": 11641867,
+    "calls": 3
+  },
+  {
+    "name": "02-compact-untrimmed",
+    "triangles": 1082185,
+    "calls": 3
+  },
+  {
+    "name": "03-final-no-display-floor-clip",
+    "triangles": 957841,
+    "calls": 4
+  }
+]

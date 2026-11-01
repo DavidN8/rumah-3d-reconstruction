@@ -1,0 +1,48 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {chooseQuality,selectModel} from './loader-core.js';
+import {OSMO_LIMITS,compressionTarget} from './delivery-policy.js';
+const iphone={bounds:[[-1,0,-2],[1,3,2]],presets:[{name:'iphone-camera'}]};
+const osmo={bounds:[[-5,0,-6],[5,3,6]],presets:[]};
+const manifest={cameraSets:{iphone,osmo},models:{
+  phone:{cameraSet:'iphone',fileBytes:21144604,maxTextureSize:2048},
+  native:{cameraSet:'iphone',fileBytes:435614584,maxTextureSize:8192},
+  osmo:{cameraSet:'osmo',fileBytes:20000000,maxTextureSize:2048}
+}};
+test('all public model choices and query aliases override device defaults',()=>{
+  for(const [requested,key] of [['phone','phone'],['native','native'],['osmo','osmo'],['iphone-fast','phone'],['iphone-full','native'],['osmo-lite','osmo']]){
+    assert.equal(chooseQuality({requested,width:402,coarse:true,touchPoints:5}),key);
+    assert.equal(chooseQuality({requested,width:1800,coarse:false,touchPoints:0}),key);
+  }
+  assert.equal(chooseQuality({width:1800,touchPoints:5}),'phone');
+});
+test('Osmo selection receives its own bounds and cameras, never retained iPhone metadata',()=>{
+  const selected=selectModel(manifest,'osmo');
+  assert.equal(selected.cameraData,osmo);assert.notEqual(selected.cameraData,iphone);
+  assert.equal(selectModel(manifest,'phone').cameraData,iphone);
+  assert.equal(selectModel(manifest,'native').cameraData,iphone);
+  assert.equal(selected.downloadTimeout,180000);assert.equal(selected.prepareTimeout,60000);
+  assert.equal(selectModel(manifest,'phone').prepareTimeout,30000);
+  assert.equal(selectModel(manifest,'native').downloadTimeout,600000);
+});
+test('each model keeps its own budget; Osmo permits 50 decimal MB and a 4K atlas',()=>{
+  for(const [key,bytes,texture] of [['phone',24*1024*1024,2048],['osmo',50000000,4096]]){
+    const withAsset=changes=>({...manifest,models:{...manifest.models,[key]:{...manifest.models[key],...changes}}});
+    assert.throws(()=>selectModel(withAsset({fileBytes:bytes+1}),key),/larger/);
+    assert.throws(()=>selectModel(withAsset({maxTextureSize:texture*2}),key),/texture budget/);
+    assert.equal(selectModel(withAsset({fileBytes:bytes,maxTextureSize:texture}),key).asset.fileBytes,bytes);
+  }
+  assert.equal(selectModel(manifest,'osmo').geometryLimit,192);
+  assert.equal(selectModel(manifest,'phone').geometryLimit,64);
+  assert.equal(selectModel(manifest,'native').asset.fileBytes,435614584);
+  assert.throws(()=>selectModel(manifest,'missing'),/unavailable/);
+  assert.throws(()=>selectModel({...manifest,cameraSets:{iphone}},'osmo'),/unavailable/);
+});
+test('compression costs decide simplification, with no fixed triangle cap',()=>{
+  assert.equal(compressionTarget({triangles:6000000,bytes:49000000,decodedGeometryBytes:180*1024*1024}),null);
+  assert.equal(compressionTarget({triangles:6000000,bytes:40000000,decodedGeometryBytes:128*1024*1024}),null);
+  const target=compressionTarget({triangles:6000000,bytes:60000000,decodedGeometryBytes:210*1024*1024});
+  assert.ok(target>4000000&&target<6000000);
+  assert.equal(OSMO_LIMITS.textureSize,4096);assert.equal(OSMO_LIMITS.fileBytes,50000000);
+  assert.throws(()=>compressionTarget({triangles:NaN,bytes:1,decodedGeometryBytes:1}),/invalid/);
+});

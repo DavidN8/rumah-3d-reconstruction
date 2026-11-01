@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-31",
+  "status": "moved_and_verified",
+  "sourceRoot": "E:\\DCIM\\CAM_001",
+  "captureRoot": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360",
+  "totalBytes": 1260894060.0,
+  "files": [
+    {
+      "name": "CAM_20261031005909_0004_D.OSV",
+      "source": "E:\\DCIM\\CAM_001\\CAM_20261031005909_0004_D.OSV",
+      "destination": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\originals\\CAM_20261031005909_0004_D.OSV",
+      "bytes": 1162988987,
+      "sourceModifiedUtc": "2026-10-30T18:00:15.8000000Z",
+      "sha256": "c88ff8b64ed453e6bb4da61bafaad51bbe1b477c97d7efc66360f053d52aeaa0",
+      "sourceRemoved": true
+    },
+    {
+      "name": "CAM_20261031005909_0004_D.LRF",
+      "source": "E:\\DCIM\\CAM_001\\CAM_20261031005909_0004_D.LRF",
+      "destination": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\originals\\CAM_20261031005909_0004_D.LRF",
+      "bytes": 97905073,
+      "sourceModifiedUtc": "2026-10-30T18:00:16.1500000Z",
+      "sha256": "ec50a19f6a3b412134a18c75c2b4109c94e11a646893a83d1670da396c5f663c",
+      "sourceRemoved": true
+    }
+  ],
+  "formatReference": "https://repair.dji.com/help/content?customId=01700006849&lang=en&paperDocType=ARTICLE&re=US&spaceId=17",
+  "originalFormat": "OSV",
+  "proxyFormat": "LRF"
+}

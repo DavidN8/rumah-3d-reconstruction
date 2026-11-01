@@ -1,0 +1,18 @@
+{
+  "approvedForDeployment": false,
+  "releaseId": "20261031-osmo-clean-v1",
+  "modelSha256": "FILL_FROM_FINAL_PACKING_REPORT",
+  "manifestSha256": "FILL_FROM_FINAL_PUBLIC_MANIFEST",
+  "freshCameraExportSha256": "FILL_FROM_FRESH_CAMERA_EXPORT",
+  "qualityChecks": {
+    "sevenSourceViewsReviewed": false,
+    "returnBathroomContinuityAccepted": false,
+    "heldoutAppearanceAccepted": false,
+    "compressionComparedAtMatchedPoses": false,
+    "viewerQuotaAndErrorsPassed": false
+  },
+  "physicalPhones": "unverified",
+  "transientLodMemoryLimitationAcknowledged": false,
+  "evidence": [],
+  "note": "Root agent completes this record after checking this exact new model/build. This is a local release checklist, not a new user approval request. Each evidence row has path (relative to production/ or absolute) and sha256."
+}

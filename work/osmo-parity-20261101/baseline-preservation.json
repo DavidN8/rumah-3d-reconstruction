@@ -1,0 +1,180 @@
+{
+  "liveRelease": "20261031-osmo-clean-v1",
+  "sourceFiles": [
+    {
+      "path": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\production\\audit-deploy-native.py",
+      "sha256": "ac27adaac3b7da9b6dc4568d98ec9a80938657f32c39115b5f5b3967e879bb23",
+      "bytes": 5564
+    },
+    {
+      "path": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\production\\browser-verification.json",
+      "sha256": "48410aba07ba762f42e139bda209d0ade1cd0ef0b63be703a3cd16dc4005814c",
+      "bytes": 2590
+    },
+    {
+      "path": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\production\\build-entry.js",
+      "sha256": "d8520a1fe1033302691993106ad010491ec5b06fff9723cd652901f9e02a5ef7",
+      "bytes": 32799
+    },
+    {
+      "path": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\production\\build-report.json",
+      "sha256": "9ed9b4dfdb7540de0d2889da088e884aef759fab33f36468b8b4f282cc5ce850",
+      "bytes": 16925
+    },
+    {
+      "path": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\production\\build.mesh-reference.mjs",
+      "sha256": "6da3442cfcb6074957cec72e0e13ec2e8b987f2ad85199801d35bf537053d7e6",
+      "bytes": 11487
+    },
+    {
+      "path": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\production\\build.mjs",
+      "sha256": "317314f1cb4a6495ae4e27b7e2c38757ea745d8e5326b05a326fbd73f87b4a6b",
+      "bytes": 8015
+    },
+    {
+      "path": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\production\\candidate.before-explicit-full.json",
+      "sha256": "5a4faac8e7841572e2f7e64f91bf60a0688d75f16234173cba5e71d18982a342",
+      "bytes": 275
+    },
+    {
+      "path": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\production\\candidate.json",
+      "sha256": "4141509c2af29ee94fcf543f060e92fa659e1ac85fba26c658b3f5af28d4a0ea",
+      "bytes": 549
+    },
+    {
+      "path": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\production\\choice-core.js",
+      "sha256": "17594a4bb57b6d9e2922b6cee372ea21459944811f66aba9f5ad531e19019d6f",
+      "bytes": 1179
+    },
+    {
+      "path": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\production\\choice-gate.test.mjs",
+      "sha256": "afd97a44186cb7e7cee7c26493537b3894d3ecd5e1bb69c0fca98ee0a190d19d",
+      "bytes": 5539
+    },
+    {
+      "path": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\production\\chooser.js",
+      "sha256": "aaad9e4e20359e2a1d7223e284f772f8c6f57fcf4d6ad585a04bcca02340673d",
+      "bytes": 2354
+    },
+    {
+      "path": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\production\\delivery-policy.js",
+      "sha256": "8f1fbed684114cee43764fff514c4d7fd17e6cd9e14f3767e1f9dacb0dbf752f",
+      "bytes": 837
+    },
+    {
+      "path": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\production\\deploy-native.ps1",
+      "sha256": "b29c35115e91c6553b3e65895d934ce9e62645be4002ba082cf80d5f7ccab403",
+      "bytes": 3992
+    },
+    {
+      "path": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\production\\deploy-native.template.sh",
+      "sha256": "2a1b2464805556045c1a4ff8bb05abe0b92dbbf3cdfcaf7caa690922f58554c4",
+      "bytes": 3862
+    },
+    {
+      "path": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\production\\final-browser-network.json",
+      "sha256": "860bc9ae46e4c2f4483085e6d2472cd779064432f8c089c19d4c14e90b3aceaa",
+      "bytes": 6798
+    },
+    {
+      "path": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\production\\final-browser-verification.json",
+      "sha256": "1c082ec198676bca5633ca66ff6891e519c019e15dc38b60f0b65b5b7bcce505",
+      "bytes": 2668
+    },
+    {
+      "path": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\production\\final-focused-test-verification.json",
+      "sha256": "819ee3a7a0e1c1bed639de85cac7a0ff0a03a7c6af9299019cdb2a2525aca40b",
+      "bytes": 353
+    },
+    {
+      "path": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\production\\first-draw-verification.json",
+      "sha256": "c1e8899d7930af6647ed031761c526976eef374e38feedebcac16d35307e97d8",
+      "bytes": 953
+    },
+    {
+      "path": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\production\\focused-test-verification.json",
+      "sha256": "49309574e268c0d797269d5e92660dfde306d49026be091c2260d0e0670d99ae",
+      "bytes": 1256
+    },
+    {
+      "path": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\production\\loader-core.js",
+      "sha256": "8ad39f7ac2bb235d1326688a410754d6261c92de933da0644c8270ffb06312cb",
+      "bytes": 3921
+    },
+    {
+      "path": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\production\\loader-core.test.mjs",
+      "sha256": "1442f62ef9529d4cd4e7b5813bbad16a2a9a947f4deff837778969b854266fec",
+      "bytes": 2600
+    },
+    {
+      "path": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\production\\model-selection.test.mjs",
+      "sha256": "b231e58e86e63a22881e86b33eedd60680d0ead818b6d0f08ca2af26da6248b1",
+      "bytes": 3267
+    },
+    {
+      "path": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\production\\native-delivery.js",
+      "sha256": "85a419a301c77e1e3a236f0e39de09c198c1d391727c570426fefef7dde68fa0",
+      "bytes": 2802
+    },
+    {
+      "path": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\production\\native-delivery.test.mjs",
+      "sha256": "d7dc0d8ef49aa5a1ba11a335dcc432d9bf6f5f817925e4252ea833e7948bc0ec",
+      "bytes": 3356
+    },
+    {
+      "path": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\production\\osmo-cameras.json",
+      "sha256": "4198a4f3010d9acdebe4a2fe3275d5405dc4555e42b82b3c2bee289bf6d78cc9",
+      "bytes": 4738
+    },
+    {
+      "path": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\production\\package.json",
+      "sha256": "b8b058a65c6e30612570e52f6dc9c6764d4c5dc4f21c552e7a148bb7498cccab",
+      "bytes": 222
+    },
+    {
+      "path": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\production\\prepare-deploy.py",
+      "sha256": "840dbcff8d8b904034c7bd7813813a5c0d0387c58e4657cabaa6ad381a36624b",
+      "bytes": 15682
+    },
+    {
+      "path": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\production\\release-approval.example.json",
+      "sha256": "d9361c988eff62e1093fc57a531f12f8fb4171a5a2dcbfa1393dd3e6c5a9211d",
+      "bytes": 825
+    },
+    {
+      "path": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\production\\release-approval.json",
+      "sha256": "b5759a9ec8a0dd36dd304c3d069d14078f3f1b21e957cdba0147edfcebaa2a93",
+      "bytes": 3075
+    },
+    {
+      "path": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\production\\repromote-native.ps1",
+      "sha256": "b725bc68e7e7ef7e03b805963a4686b88a5d169f2579f51b5fd85a5b1eeeb537",
+      "bytes": 2187
+    },
+    {
+      "path": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\production\\rollback-native.template.sh",
+      "sha256": "3c414b8466b59dca1f1be46ad8362f36df9052ec483d809ac4e5baf83905706d",
+      "bytes": 535
+    },
+    {
+      "path": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\production\\room-shell.html",
+      "sha256": "d6b72223b4d263e614c9ea50fbc617755994e43a954acb0e041cbcd3f7bda318",
+      "bytes": 13961
+    },
+    {
+      "path": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\production\\room-viewer.js",
+      "sha256": "35b8e275baa7e40193d2a75810bb78b4a99df1a0d62af95f708b01cda8a11d64",
+      "bytes": 32801
+    },
+    {
+      "path": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\production\\verify-public-native.py",
+      "sha256": "10775c9a891bfd52c8bde4774f75f77c195210bd2ae10dfed4559f495aa79a2a",
+      "bytes": 7060
+    }
+  ],
+  "iphoneHashes": {
+    "fast": "2b811d124120e70dcecc25d06e5dc397e2a28f310403a21fdfa1e290c41c9d2b",
+    "full": "16f8963b043a766317497ee4281f4cf39c6b2190fafaaed51334734723c8b207"
+  },
+  "oldFilesModified": false
+}

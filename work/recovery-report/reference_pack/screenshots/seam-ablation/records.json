@@ -1,0 +1,41 @@
+[
+  {
+    "label": "both",
+    "components": [
+      {
+        "name": "zone-kitchen",
+        "visible": true
+      },
+      {
+        "name": "zone-living-bedroom",
+        "visible": true
+      }
+    ]
+  },
+  {
+    "label": "kitchen-only",
+    "components": [
+      {
+        "name": "zone-kitchen",
+        "visible": true
+      },
+      {
+        "name": "zone-living-bedroom",
+        "visible": false
+      }
+    ]
+  },
+  {
+    "label": "living-only",
+    "components": [
+      {
+        "name": "zone-kitchen",
+        "visible": false
+      },
+      {
+        "name": "zone-living-bedroom",
+        "visible": true
+      }
+    ]
+  }
+]

@@ -1,0 +1,102 @@
+{
+  "date": "2026-11-01",
+  "geometryPython": "3.14.3",
+  "surfaceAndAuditPython": "3.12.14",
+  "geometryGlobalVersions": {
+    "numpy": "2.4.2",
+    "scipy": "1.17.0",
+    "Pillow": "12.2.0",
+    "opencv-python-headless": "4.13.0.92"
+  },
+  "localWheelEvidence": [
+    {
+      "folder": "work/osmo-improve-20261031/pydeps",
+      "name": "glcontext",
+      "version": "3.1.0",
+      "wheelTags": [
+        "cp312-cp312-win_amd64"
+      ]
+    },
+    {
+      "folder": "work/osmo-improve-20261031/pydeps",
+      "name": "moderngl",
+      "version": "5.13.0",
+      "wheelTags": [
+        "cp312-cp312-win_amd64"
+      ]
+    },
+    {
+      "folder": "work/osmo-improve-20261031/pydeps",
+      "name": "opencv-python-headless",
+      "version": "5.0.0.93",
+      "wheelTags": [
+        "cp37-abi3-win_amd64"
+      ]
+    },
+    {
+      "folder": "work/osmo-improve-20261031/qa-deps",
+      "name": "embreex",
+      "version": "4.4.0.post1",
+      "wheelTags": [
+        "cp314-cp314-win_amd64"
+      ]
+    },
+    {
+      "folder": "work/osmo-improve-20261031/qa-deps",
+      "name": "rtree",
+      "version": "1.4.1",
+      "wheelTags": [
+        "py3-none-win_amd64"
+      ]
+    },
+    {
+      "folder": "work/osmo-improve-20261031/qa-deps",
+      "name": "trimesh",
+      "version": "5.2.0",
+      "wheelTags": [
+        "py3-none-any"
+      ]
+    },
+    {
+      "folder": "work/osmo-parity-20261101/tsdfdeps",
+      "name": "lazy-loader",
+      "version": "0.6",
+      "wheelTags": [
+        "py3-none-any"
+      ]
+    },
+    {
+      "folder": "work/osmo-parity-20261101/tsdfdeps",
+      "name": "pymeshlab",
+      "version": "2025.7.post1",
+      "wheelTags": [
+        "cp312-cp312-win_amd64"
+      ]
+    },
+    {
+      "folder": "work/osmo-parity-20261101/tsdfdeps",
+      "name": "scikit-image",
+      "version": "0.26.0",
+      "wheelTags": [
+        "cp312-cp312-win_amd64"
+      ]
+    },
+    {
+      "folder": "work/osmo-parity-20261101/tsdfdeps",
+      "name": "scipy",
+      "version": "1.18.1",
+      "wheelTags": [
+        "cp312-cp312-win_amd64"
+      ]
+    },
+    {
+      "folder": "work/osmo-parity-20261101/tsdfdeps",
+      "name": "xatlas",
+      "version": "0.0.11",
+      "wheelTags": [
+        "cp312-cp312-win_amd64"
+      ]
+    }
+  ],
+  "rule": "Keep cp314 QA ray modules and cp312 GPU/surface modules in separate interpreter environments; do not combine all local dependency directories on global PYTHONPATH."
+}

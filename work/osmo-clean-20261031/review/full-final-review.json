@@ -1,0 +1,37 @@
+{
+  "status": "full_rebuild_accepted_for_release_with_documented_limits",
+  "reviewedUtc": "2026-10-31T01:46:51.135659+00:00",
+  "trainingIterations": 50000,
+  "sourceCheckpointSha256": "fd4816886cf15a96f2595fa529114af02f57c25897851e9657857f58c94fbeb6",
+  "deliveredModelSha256": "cbb33c91b5b481460b2c75e2125f3efa1458e6634abc3da1ce051a0989fd315c",
+  "bytes": 45177102,
+  "sourceSplats": 2997908,
+  "shDegree": 2,
+  "fullSourceCountRetained": true,
+  "transport": "Quantized SOG; compression fidelity checked at identical poses, all-source rendering and SH2.",
+  "sevenSourceViewsReviewed": true,
+  "bothBathroomVisitsAccepted": true,
+  "heldoutCameraAppearanceAccepted": true,
+  "nativeAll188HeldoutViewsScored": true,
+  "sixLowestValidPixelScoresVisuallyReviewed": true,
+  "all188ValidPixelMeanPsnrDb": 24.10164517087478,
+  "all188ValidPixelWeightedPsnrDb": 23.218787116540636,
+  "packingMinimumPsnrDb": 40.06487776997268,
+  "packingMeanRmse255": 2.3754678585169553,
+  "returnBathroomSourceRmse255": 10.334032378745203,
+  "findings": "Walls, ceiling, floor, furniture and both bathroom visits are coherent at the seven original source cameras. The previous return-bathroom opaque foreground obstruction is absent in the original checkpoint, compressed file and final website viewer.",
+  "remainingQualityLimits": [
+    "Some floor patches remain soft or uneven at extreme downward/oblique views.",
+    "Some oblique door-frame edges and fringe regions remain rough.",
+    "Fine text and small objects are softer than source photographs."
+  ],
+  "scope": "Combined camera/data/guidance/optimization intervention; no single-factor causal ablation. Same-capture SfM is not independent geometric ground truth. Scene units are not measured metres.",
+  "evidence": [
+    "clean-matched-review.json",
+    "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\clean-v3\\explicit-full-v1\\analysis\\valid-native-evaluation.json",
+    "renders/clean-seven-source-native-sog.jpg",
+    "renders/full-eval-six-worst-valid.jpg",
+    "renders/full-rebuild-bathroom-before-after.jpg",
+    "production/final-browser-verification.json"
+  ]
+}

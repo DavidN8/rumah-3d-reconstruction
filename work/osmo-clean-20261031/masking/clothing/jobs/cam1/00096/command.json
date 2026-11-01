@@ -1,0 +1,29 @@
+{
+  "command": [
+    "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261019_095800\\runtime\\spirula\\bin\\spirula.exe",
+    "sam",
+    "track",
+    "--model",
+    "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261019_095800\\runtime\\spirula\\models\\sam2.1_hiera_small_f16.ggml",
+    "--detector",
+    "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261019_095800\\runtime\\spirula\\models\\gdino-tiny.safetensors",
+    "--frames",
+    "work\\osmo-clean-20261031\\masking\\clothing\\jobs\\cam1\\00096\\images",
+    "--text",
+    "jeans;pants;bare feet;person",
+    "--detector-threshold",
+    "0.28",
+    "--max-size",
+    "0",
+    "--detect-every",
+    "1",
+    "--dilate-ratio",
+    "0",
+    "--remove-prompted",
+    "--device",
+    "auto",
+    "--out",
+    "work\\osmo-clean-20261031\\masking\\clothing\\jobs\\cam1\\00096\\masks"
+  ],
+  "signature": "614fafe16a9ad9025772efc1ef7fc45d0871fc51d65e05d74f1b6e3dcd8aa2f2"
+}

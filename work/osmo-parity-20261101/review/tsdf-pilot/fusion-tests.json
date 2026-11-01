@@ -1,0 +1,10 @@
+{
+  "tests": "Known plane Z=3 reconstructed from three translated/rotated cameras using independently computed Euclidean ray ranges. Fully invalid depth must leave all weights and values unchanged.",
+  "cameraPoses": 3,
+  "maximumPlaneZError": 0.002194696664810092,
+  "meanPlaneZError": 0.00042494687878962727,
+  "voxelSceneUnits": 0.025,
+  "maskedDepthHasZeroInfluence": true,
+  "pass": true,
+  "renderer": "NVIDIA GeForce RTX 5080/PCIe/SSE2"
+}

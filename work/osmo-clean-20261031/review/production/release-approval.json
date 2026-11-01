@@ -1,0 +1,51 @@
+{
+  "approvedForDeployment": true,
+  "releaseId": "20261031-osmo-clean-v1",
+  "modelSha256": "cbb33c91b5b481460b2c75e2125f3efa1458e6634abc3da1ce051a0989fd315c",
+  "manifestSha256": "be410c75b8e4506e77bc936a8be542f66d85d38cfa0051abaf71d3754245738f",
+  "freshCameraExportSha256": "6c6c525abecb5b4cc63790686c274a895e84b9348117bf3b4a68b76fc21a6051",
+  "qualityChecks": {
+    "sevenSourceViewsReviewed": true,
+    "returnBathroomContinuityAccepted": true,
+    "heldoutAppearanceAccepted": true,
+    "compressionComparedAtMatchedPoses": true,
+    "viewerQuotaAndErrorsPassed": true
+  },
+  "physicalPhones": "unverified",
+  "transientLodMemoryLimitationAcknowledged": true,
+  "evidence": [
+    {
+      "path": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\full-final-review.json",
+      "sha256": "26b4800f9c28fd02464d3609b61fe0362472109598589568e044390f9d5cb26c"
+    },
+    {
+      "path": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\clean-matched-review.json",
+      "sha256": "bb75e4c7341b52569f20fc16b36e7ac32e9316dea2691ce7540fd9f2f95da283"
+    },
+    {
+      "path": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\clean-final.sog.json",
+      "sha256": "731ad1685cfc7d8d895d8aa14511e6a9e600a3d498f31351d50682f838fccbf4"
+    },
+    {
+      "path": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\production\\final-browser-verification.json",
+      "sha256": "1c082ec198676bca5633ca66ff6891e519c019e15dc38b60f0b65b5b7bcce505"
+    },
+    {
+      "path": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\production\\final-browser-network.json",
+      "sha256": "860bc9ae46e4c2f4483085e6d2472cd779064432f8c089c19d4c14e90b3aceaa"
+    },
+    {
+      "path": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\production\\final-focused-test-verification.json",
+      "sha256": "819ee3a7a0e1c1bed639de85cac7a0ff0a03a7c6af9299019cdb2a2525aca40b"
+    },
+    {
+      "path": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\clean-v3\\explicit-full-v1\\analysis\\input-verification.json",
+      "sha256": "46d05448522140290822986785d2e74ff113ca17fa8338cb21e7f0555309f65f"
+    },
+    {
+      "path": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\clean-v3\\explicit-full-v1\\analysis\\valid-native-evaluation.json",
+      "sha256": "dfa32376aee74318cbf9845dbe7955fb8a2144af449d037b70a6c07da65d28e4"
+    }
+  ],
+  "note": "Root sign-off after actual final-source/compressed/browser reviews. The user already authorized the rebuild and publication; this is the local technical release checklist."
+}

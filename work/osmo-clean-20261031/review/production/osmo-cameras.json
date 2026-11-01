@@ -1,0 +1,178 @@
+{
+  "bounds": [
+    [
+      -2.2971443517107617,
+      -0.8978758557362614,
+      -4.423658847808838
+    ],
+    [
+      3.0885040147204053,
+      2.4720380409283695,
+      2.8481204509735107
+    ]
+  ],
+  "startCamera": {
+    "position": [
+      0.36702162862946286,
+      1.541369844480851,
+      -0.35076081614372406
+    ],
+    "quaternion": [
+      -0.0,
+      -0.8605465092957088,
+      -0.0,
+      0.5093718733292706
+    ]
+  },
+  "homeTarget": [
+    2.120374378737142,
+    1.541369844480851,
+    0.6114003625003941
+  ],
+  "presets": [
+    {
+      "name": "cam0/frame_000003.jpg",
+      "label": "Capture ~1s \u00b7 reprojected source",
+      "sourceFile": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\lite-v1\\review\\photos\\osmo-upright-01-frame_000003.jpg",
+      "position": [
+        0.36702162862946286,
+        1.541369844480851,
+        -0.35076081614372406
+      ],
+      "quaternion": [
+        -0.0,
+        -0.8605465092957088,
+        -0.0,
+        0.5093718733292706
+      ],
+      "imageWidth": 1200,
+      "imageHeight": 1200,
+      "intrinsics": [
+        600.0,
+        600.0,
+        600.0,
+        600.0
+      ]
+    },
+    {
+      "name": "cam0/frame_000025.jpg",
+      "label": "Capture ~12s \u00b7 reprojected source",
+      "sourceFile": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\lite-v1\\review\\photos\\osmo-upright-02-frame_000025.jpg",
+      "position": [
+        -0.19639896747464888,
+        1.5822303752058904,
+        -1.10886475847726
+      ],
+      "quaternion": [
+        0.0,
+        0.8045657254040841,
+        0.0,
+        0.5938636152392232
+      ],
+      "imageWidth": 1200,
+      "imageHeight": 1200,
+      "intrinsics": [
+        600.0,
+        600.0,
+        600.0,
+        600.0
+      ]
+    },
+    {
+      "name": "cam0/frame_000041.jpg",
+      "label": "Capture ~20s \u00b7 reprojected source",
+      "sourceFile": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\lite-v1\\review\\photos\\osmo-upright-03-frame_000041.jpg",
+      "position": [
+        -0.6527362857465422,
+        1.5536895938488104,
+        -3.1211721182317356
+      ],
+      "quaternion": [
+        0.0,
+        0.9465912411753241,
+        0.0,
+        0.3224360744863381
+      ],
+      "imageWidth": 1200,
+      "imageHeight": 1200,
+      "intrinsics": [
+        600.0,
+        600.0,
+        600.0,
+        600.0
+      ]
+    },
+    {
+      "name": "cam0/frame_000061.jpg",
+      "label": "Capture ~30s \u00b7 reprojected source",
+      "sourceFile": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\lite-v1\\review\\photos\\osmo-upright-04-frame_000061.jpg",
+      "position": [
+        0.5430918288353827,
+        1.5314572333156735,
+        -0.08721521441854906
+      ],
+      "quaternion": [
+        0.0,
+        0.9932559081346726,
+        0.0,
+        0.11594266236190512
+      ],
+      "imageWidth": 1200,
+      "imageHeight": 1200,
+      "intrinsics": [
+        600.0,
+        600.0,
+        600.0,
+        600.0
+      ]
+    },
+    {
+      "name": "cam0/frame_000081.jpg",
+      "label": "Capture ~40s \u00b7 reprojected source",
+      "sourceFile": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\lite-v1\\review\\photos\\osmo-upright-05-frame_000081.jpg",
+      "position": [
+        1.5354255457283734,
+        0.6407448819297455,
+        0.014305212581831636
+      ],
+      "quaternion": [
+        0.0,
+        0.2966825774484644,
+        0.0,
+        0.9549761506124307
+      ],
+      "imageWidth": 1200,
+      "imageHeight": 1200,
+      "intrinsics": [
+        600.0,
+        600.0,
+        600.0,
+        600.0
+      ]
+    },
+    {
+      "name": "cam0/frame_000111.jpg",
+      "label": "Capture ~55s \u00b7 reprojected source",
+      "sourceFile": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\lite-v1\\review\\photos\\osmo-upright-06-frame_000111.jpg",
+      "position": [
+        0.0436288755542224,
+        0.4537141127664982,
+        -2.2669070800059528
+      ],
+      "quaternion": [
+        -0.0,
+        -0.8495499986738988,
+        -0.0,
+        0.5275081039691982
+      ],
+      "imageWidth": 1200,
+      "imageHeight": 1200,
+      "intrinsics": [
+        600.0,
+        600.0,
+        600.0,
+        600.0
+      ]
+    }
+  ]
+}

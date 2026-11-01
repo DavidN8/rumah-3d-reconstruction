@@ -1,0 +1,198 @@
+{
+  "description": "Exact iPhone reference photographs/preview and calibrated Osmo source crops required by both local web builds. Models remain in assets-manifest.json.",
+  "archive_name": "viewer-reference-resources-2026-11-01.zip",
+  "archive_bytes": 5809917,
+  "archive_sha256": "030fe667d9627fc4b97a812c2bb6c1a74abe09bf6eee4f86cdd874b45dd34e79",
+  "files": [
+    {
+      "path": "work/mobile-20261029/iphone-baseline/overview-8516540657.jpg",
+      "bytes": 79837,
+      "sha256": "8516540657f307fcf60a29e2f6eba34186f9f75421139e643fb560f2cc8d6c5c"
+    },
+    {
+      "path": "work/mobile-20261029/iphone-baseline/sources/frame_0000903.jpg",
+      "bytes": 218338,
+      "sha256": "544835ade72c22594fbfad011d60e2358579b71922407f7abdf24509439853a0"
+    },
+    {
+      "path": "work/mobile-20261029/iphone-baseline/sources/frame_0000999.jpg",
+      "bytes": 287839,
+      "sha256": "3af470bb2687de65bb8f574f06348a7ebda7dc6302bce7aa8f5c49515d1854eb"
+    },
+    {
+      "path": "work/mobile-20261029/iphone-baseline/sources/frame_0001398.jpg",
+      "bytes": 209011,
+      "sha256": "a468d1455616eca37fd99c60cfe22bff7b02eca88b601a60642cb3cfde16aa41"
+    },
+    {
+      "path": "work/mobile-20261029/iphone-baseline/sources/frame_0001612.jpg",
+      "bytes": 263857,
+      "sha256": "43a803084c79304cdc3abef83f42f73c3207bf39d590c7474d752fbbdb233a55"
+    },
+    {
+      "path": "work/mobile-20261029/iphone-baseline/sources/frame_0002402.jpg",
+      "bytes": 274875,
+      "sha256": "8a4cbada269b96b02bca186868eb6c5583565386ebb5352b09e9073c4b48f5dd"
+    },
+    {
+      "path": "work/mobile-20261029/iphone-baseline/sources/frame_0003606.jpg",
+      "bytes": 259433,
+      "sha256": "9aafb22ee5af6a806f432622cdbbb405b5551ad1df69773922c2382cacf94f8a"
+    },
+    {
+      "path": "work/mobile-20261029/iphone-baseline/sources/frame_0004297.jpg",
+      "bytes": 223728,
+      "sha256": "bff0d428b383a592fca70bc5e7de18109fd3c86e1ca7531f1d53f897354bca36"
+    },
+    {
+      "path": "work/mobile-20261029/iphone-baseline/sources/frame_0004400.jpg",
+      "bytes": 248068,
+      "sha256": "e5923f2cef8f1d571329a9767bce8c0e501fefea8926d375a9c58f0d227a9648"
+    },
+    {
+      "path": "work/osmo-clean-20261031/review/clean-cameras-photos/fresh-01-cam0-frame_000027_train-valid.png",
+      "bytes": 4129,
+      "sha256": "3b252db6ddda4c92fc411a6cb87dae1d47b2b2efcd0ecda3f73a01e90a675fed"
+    },
+    {
+      "path": "work/osmo-clean-20261031/review/clean-cameras-photos/fresh-01-cam0-frame_000027_train.jpg",
+      "bytes": 229008,
+      "sha256": "9e81f90b1ecf0a1df6ef9db87526c5caafafea7d1b0d7c1efcc283c95ff72e50"
+    },
+    {
+      "path": "work/osmo-clean-20261031/review/clean-cameras-photos/fresh-02-cam0-frame_000357_train-valid.png",
+      "bytes": 4129,
+      "sha256": "3b252db6ddda4c92fc411a6cb87dae1d47b2b2efcd0ecda3f73a01e90a675fed"
+    },
+    {
+      "path": "work/osmo-clean-20261031/review/clean-cameras-photos/fresh-02-cam0-frame_000357_train.jpg",
+      "bytes": 150097,
+      "sha256": "7ba9efc2de120c0ee802b34f475f6e8ffa8c562832e3a26012da935f3eaec136"
+    },
+    {
+      "path": "work/osmo-clean-20261031/review/clean-cameras-photos/fresh-03-cam1-frame_000600_train-valid.png",
+      "bytes": 4129,
+      "sha256": "3b252db6ddda4c92fc411a6cb87dae1d47b2b2efcd0ecda3f73a01e90a675fed"
+    },
+    {
+      "path": "work/osmo-clean-20261031/review/clean-cameras-photos/fresh-03-cam1-frame_000600_train.jpg",
+      "bytes": 201368,
+      "sha256": "ac531ed57965e2e98da36cea69c27c541854471e99ee5e2919fe26d7f351b7d0"
+    },
+    {
+      "path": "work/osmo-clean-20261031/review/clean-cameras-photos/fresh-04-cam0-frame_000750_eval-valid.png",
+      "bytes": 4434,
+      "sha256": "09653b8ff32f86c4f3549c971c15a297f142dd2e2e97a64b72013725d14f8c76"
+    },
+    {
+      "path": "work/osmo-clean-20261031/review/clean-cameras-photos/fresh-04-cam0-frame_000750_eval.jpg",
+      "bytes": 204651,
+      "sha256": "7fd2d87684d829d07fa14ea36e767a151626260a5fc60ba454bdb0bbc7a30d40"
+    },
+    {
+      "path": "work/osmo-clean-20261031/review/clean-cameras-photos/fresh-05-cam0-frame_001197_train-valid.png",
+      "bytes": 4129,
+      "sha256": "3b252db6ddda4c92fc411a6cb87dae1d47b2b2efcd0ecda3f73a01e90a675fed"
+    },
+    {
+      "path": "work/osmo-clean-20261031/review/clean-cameras-photos/fresh-05-cam0-frame_001197_train.jpg",
+      "bytes": 216164,
+      "sha256": "6b6a89da28a0c164aea8c5892f085db604a1b8eacc44e6c8023c898b4eab1e6f"
+    },
+    {
+      "path": "work/osmo-clean-20261031/review/clean-cameras-photos/fresh-06-cam0-frame_001557_eval-valid.png",
+      "bytes": 4569,
+      "sha256": "639253aff9a930def45a83a8369485291a01d34733dfba485fc1fe7e21d7bba1"
+    },
+    {
+      "path": "work/osmo-clean-20261031/review/clean-cameras-photos/fresh-06-cam0-frame_001557_eval.jpg",
+      "bytes": 217098,
+      "sha256": "961d8b109cc151d9f64cd45eb56bc553d39d21a98185abb9c8dcc7a70df69c2b"
+    },
+    {
+      "path": "work/osmo-clean-20261031/review/clean-cameras-photos/fresh-07-cam0-frame_001800_train-valid.png",
+      "bytes": 4129,
+      "sha256": "3b252db6ddda4c92fc411a6cb87dae1d47b2b2efcd0ecda3f73a01e90a675fed"
+    },
+    {
+      "path": "work/osmo-clean-20261031/review/clean-cameras-photos/fresh-07-cam0-frame_001800_train.jpg",
+      "bytes": 239869,
+      "sha256": "006bb010285d48fc68e20065dcd969cdabb07e07d298a71efd5691caab8bbeb4"
+    },
+    {
+      "path": "work/osmo-parity-20261101/review/calibrated-occupied-cameras-photos/fresh-01-cam0-frame_000027_train-valid.png",
+      "bytes": 5879,
+      "sha256": "744e2321f3506eb41d37de7b089a54cd43181b7229df90c5910463644609a9bb"
+    },
+    {
+      "path": "work/osmo-parity-20261101/review/calibrated-occupied-cameras-photos/fresh-01-cam0-frame_000027_train.jpg",
+      "bytes": 350583,
+      "sha256": "7c9a5947661f0768364214eec26c5b9f347f2e25d7b5b797abc971455e4917eb"
+    },
+    {
+      "path": "work/osmo-parity-20261101/review/calibrated-occupied-cameras-photos/fresh-02-cam0-frame_000357_train-valid.png",
+      "bytes": 5879,
+      "sha256": "744e2321f3506eb41d37de7b089a54cd43181b7229df90c5910463644609a9bb"
+    },
+    {
+      "path": "work/osmo-parity-20261101/review/calibrated-occupied-cameras-photos/fresh-02-cam0-frame_000357_train.jpg",
+      "bytes": 233112,
+      "sha256": "ceceedb4a02acaac21f4e2dc554afe1f408bab7d2c4f3501e5cf77de1c7a5493"
+    },
+    {
+      "path": "work/osmo-parity-20261101/review/calibrated-occupied-cameras-photos/fresh-03-cam1-frame_000600_train-valid.png",
+      "bytes": 5879,
+      "sha256": "744e2321f3506eb41d37de7b089a54cd43181b7229df90c5910463644609a9bb"
+    },
+    {
+      "path": "work/osmo-parity-20261101/review/calibrated-occupied-cameras-photos/fresh-03-cam1-frame_000600_train.jpg",
+      "bytes": 319365,
+      "sha256": "2c9f66c327e710c8653773e2b398e14ff88f082e71d9ad80459050a8dc4f1ced"
+    },
+    {
+      "path": "work/osmo-parity-20261101/review/calibrated-occupied-cameras-photos/fresh-04-cam0-frame_000750_eval-valid.png",
+      "bytes": 6323,
+      "sha256": "95f8edb20de285da79c851950920400f0f9e28f53f4db1064c824adad983cf3d"
+    },
+    {
+      "path": "work/osmo-parity-20261101/review/calibrated-occupied-cameras-photos/fresh-04-cam0-frame_000750_eval.jpg",
+      "bytes": 346106,
+      "sha256": "4b88f2a3e779fb1f6aa12d4654090d1234c77a979dddbe0ba5301bdc0bd5bc4c"
+    },
+    {
+      "path": "work/osmo-parity-20261101/review/calibrated-occupied-cameras-photos/fresh-05-cam0-frame_001197_train-valid.png",
+      "bytes": 5879,
+      "sha256": "744e2321f3506eb41d37de7b089a54cd43181b7229df90c5910463644609a9bb"
+    },
+    {
+      "path": "work/osmo-parity-20261101/review/calibrated-occupied-cameras-photos/fresh-05-cam0-frame_001197_train.jpg",
+      "bytes": 338110,
+      "sha256": "003d31bbb26a70cb0a850ad04ff984ba3c6005b3a8ffcb415a468e934c26ac5c"
+    },
+    {
+      "path": "work/osmo-parity-20261101/review/calibrated-occupied-cameras-photos/fresh-06-cam0-frame_001557_eval-valid.png",
+      "bytes": 6591,
+      "sha256": "2bcd892109e67a333c6f15ad8cea99dd81344fc335bf3088b5761e39c5591ee4"
+    },
+    {
+      "path": "work/osmo-parity-20261101/review/calibrated-occupied-cameras-photos/fresh-06-cam0-frame_001557_eval.jpg",
+      "bytes": 337365,
+      "sha256": "bee05cfe351fb225b3c07a145d5e56061530699e12a793654c4e3d797e8d0216"
+    },
+    {
+      "path": "work/osmo-parity-20261101/review/calibrated-occupied-cameras-photos/fresh-07-cam0-frame_001800_train-valid.png",
+      "bytes": 5879,
+      "sha256": "744e2321f3506eb41d37de7b089a54cd43181b7229df90c5910463644609a9bb"
+    },
+    {
+      "path": "work/osmo-parity-20261101/review/calibrated-occupied-cameras-photos/fresh-07-cam0-frame_001800_train.jpg",
+      "bytes": 370280,
+      "sha256": "bee75552a3c329a16c70774a5440f9832515172dba2d98138f1990fff2980532"
+    }
+  ],
+  "drive_id": "1gDz-2TAD_6KDGnEfozxzJ5He9wQyA0Dj",
+  "drive_url": "https://drive.google.com/file/d/1gDz-2TAD_6KDGnEfozxzJ5He9wQyA0Dj/view?usp=drivesdk",
+  "parent_id": "1JKHs_AMs6C7fhZOGtlzbyR3mhke6sblL",
+  "verified_remote_bytes": 5809917,
+  "verification": "Exact filename, byte count and target parent readback; full archive SHA-256 is local"
+}

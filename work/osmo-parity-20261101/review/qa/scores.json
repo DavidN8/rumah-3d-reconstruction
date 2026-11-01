@@ -1,0 +1,966 @@
+{
+  "rows": [
+    {
+      "model": "old-full",
+      "view": "fridge",
+      "validFraction": 0.9996320408950617,
+      "psnrDb": 22.428447421812127,
+      "rmse255": 19.280478561620452,
+      "cropPSNR": 22.69485678489666,
+      "cropRMSE255": 18.69809410469816,
+      "cropBox": [
+        950,
+        480,
+        1550,
+        1080
+      ],
+      "GT": "Native photograph remapped by camera only; source keep-mask; no image registration or error-based masking"
+    },
+    {
+      "model": "pilot-base",
+      "view": "fridge",
+      "validFraction": 0.9996320408950617,
+      "psnrDb": 24.702347912884818,
+      "rmse255": 14.83962016187039,
+      "cropPSNR": 23.301692040518944,
+      "cropRMSE255": 17.43635001517955,
+      "cropBox": [
+        950,
+        480,
+        1550,
+        1080
+      ],
+      "GT": "Native photograph remapped by camera only; source keep-mask; no image registration or error-based masking"
+    },
+    {
+      "model": "pilot-sharp",
+      "view": "fridge",
+      "validFraction": 0.9996320408950617,
+      "psnrDb": 24.583513428665565,
+      "rmse255": 15.044041022593605,
+      "cropPSNR": 23.887085120655964,
+      "cropRMSE255": 16.299936946026644,
+      "cropBox": [
+        950,
+        480,
+        1550,
+        1080
+      ],
+      "GT": "Native photograph remapped by camera only; source keep-mask; no image registration or error-based masking"
+    },
+    {
+      "model": "mesh-texture",
+      "view": "fridge",
+      "validFraction": 0.9996320408950617,
+      "psnrDb": 20.899869897581823,
+      "rmse255": 22.9904083703757,
+      "cropPSNR": 18.956348191746628,
+      "cropRMSE255": 28.755622316597755,
+      "cropBox": [
+        950,
+        480,
+        1550,
+        1080
+      ],
+      "GT": "Native photograph remapped by camera only; source keep-mask; no image registration or error-based masking"
+    },
+    {
+      "model": "mesh-photo",
+      "view": "fridge",
+      "validFraction": 0.9996320408950617,
+      "psnrDb": 20.356031839936225,
+      "rmse255": 24.475895394711053,
+      "cropPSNR": 18.26920814466369,
+      "cropRMSE255": 31.122879639214574,
+      "cropBox": [
+        950,
+        480,
+        1550,
+        1080
+      ],
+      "GT": "Native photograph remapped by camera only; source keep-mask; no image registration or error-based masking"
+    },
+    {
+      "model": "new-full-20000",
+      "view": "fridge",
+      "validFraction": 0.9996320408950617,
+      "psnrDb": 22.206145769968707,
+      "rmse255": 19.78030081306039,
+      "cropPSNR": 22.327130782018987,
+      "cropRMSE255": 19.506692654915476,
+      "cropBox": [
+        950,
+        480,
+        1550,
+        1080
+      ],
+      "GT": "Native photograph remapped by camera only; source keep-mask; no image registration or error-based masking"
+    },
+    {
+      "model": "fusion-photo",
+      "view": "fridge",
+      "validFraction": 0.9996320408950617,
+      "psnrDb": 19.05770797326898,
+      "rmse255": 28.42200959795784,
+      "cropPSNR": 17.9091186468208,
+      "cropRMSE255": 32.44025415767908,
+      "cropBox": [
+        950,
+        480,
+        1550,
+        1080
+      ],
+      "GT": "Native photograph remapped by camera only; source keep-mask; no image registration or error-based masking"
+    },
+    {
+      "model": "new-full-50000",
+      "view": "fridge",
+      "validFraction": 0.9996320408950617,
+      "psnrDb": 22.294363041757993,
+      "rmse255": 19.580421134469976,
+      "cropPSNR": 22.773165578768722,
+      "cropRMSE255": 18.530276576457243,
+      "cropBox": [
+        950,
+        480,
+        1550,
+        1080
+      ],
+      "GT": "Native photograph remapped by camera only; source keep-mask; no image registration or error-based masking"
+    },
+    {
+      "model": "fusion-coherent",
+      "view": "fridge",
+      "validFraction": 0.9996320408950617,
+      "psnrDb": 17.104897658706886,
+      "rmse255": 35.58732114649688,
+      "cropPSNR": 15.553723143817527,
+      "cropRMSE255": 42.54553833726173,
+      "cropBox": [
+        950,
+        480,
+        1550,
+        1080
+      ],
+      "GT": "Native photograph remapped by camera only; source keep-mask; no image registration or error-based masking"
+    },
+    {
+      "model": "fusion-filled",
+      "view": "fridge",
+      "validFraction": 0.9996320408950617,
+      "psnrDb": 17.129364334119384,
+      "rmse255": 35.48721876086628,
+      "cropPSNR": 15.623108108793222,
+      "cropRMSE255": 42.20702824570019,
+      "cropBox": [
+        950,
+        480,
+        1550,
+        1080
+      ],
+      "GT": "Native photograph remapped by camera only; source keep-mask; no image registration or error-based masking"
+    },
+    {
+      "model": "rgb-only-mip",
+      "view": "fridge",
+      "validFraction": 0.9996320408950617,
+      "psnrDb": 24.543327398763818,
+      "rmse255": 15.113804857099737,
+      "cropPSNR": 23.663377504365002,
+      "cropRMSE255": 16.725199439656805,
+      "cropBox": [
+        950,
+        480,
+        1550,
+        1080
+      ],
+      "GT": "Native photograph remapped by camera only; source keep-mask; no image registration or error-based masking"
+    },
+    {
+      "model": "rgb-only-3dgs",
+      "view": "fridge",
+      "validFraction": 0.9996320408950617,
+      "psnrDb": 24.617715475165785,
+      "rmse255": 14.984919239392111,
+      "cropPSNR": 23.47320224398695,
+      "cropRMSE255": 17.095431542655763,
+      "cropBox": [
+        950,
+        480,
+        1550,
+        1080
+      ],
+      "GT": "Native photograph remapped by camera only; source keep-mask; no image registration or error-based masking"
+    },
+    {
+      "model": "no-appearance-correction",
+      "view": "fridge",
+      "validFraction": 0.9996320408950617,
+      "psnrDb": 24.75231244122506,
+      "rmse255": 14.754502094267577,
+      "cropPSNR": 23.466254737851475,
+      "cropRMSE255": 17.10911098519452,
+      "cropBox": [
+        950,
+        480,
+        1550,
+        1080
+      ],
+      "GT": "Native photograph remapped by camera only; source keep-mask; no image registration or error-based masking"
+    },
+    {
+      "model": "sparse-rgb-only",
+      "view": "fridge",
+      "validFraction": 0.9996320408950617,
+      "psnrDb": 24.5360285840426,
+      "rmse255": 15.126510432154042,
+      "cropPSNR": 23.735729564149235,
+      "cropRMSE255": 16.586459867190644,
+      "cropBox": [
+        950,
+        480,
+        1550,
+        1080
+      ],
+      "GT": "Native photograph remapped by camera only; source keep-mask; no image registration or error-based masking"
+    },
+    {
+      "model": "poisson-photo",
+      "view": "fridge",
+      "validFraction": 0.9996320408950617,
+      "psnrDb": 17.41828256292125,
+      "rmse255": 34.32622558767598,
+      "cropPSNR": 14.562556699986374,
+      "cropRMSE255": 47.688355399832574,
+      "cropBox": [
+        950,
+        480,
+        1550,
+        1080
+      ],
+      "GT": "Native photograph remapped by camera only; source keep-mask; no image registration or error-based masking"
+    },
+    {
+      "model": "old-full",
+      "view": "fan",
+      "validFraction": 1.0,
+      "psnrDb": 24.854615268196547,
+      "rmse255": 14.581742241245504,
+      "cropPSNR": 24.225442284358692,
+      "cropRMSE255": 15.67718438321069,
+      "cropBox": [
+        400,
+        300,
+        1000,
+        900
+      ],
+      "GT": "Native photograph remapped by camera only; source keep-mask; no image registration or error-based masking"
+    },
+    {
+      "model": "pilot-base",
+      "view": "fan",
+      "validFraction": 1.0,
+      "psnrDb": 25.469520141286146,
+      "rmse255": 13.585141721201651,
+      "cropPSNR": 23.6153308902483,
+      "cropRMSE255": 16.817972419298833,
+      "cropBox": [
+        400,
+        300,
+        1000,
+        900
+      ],
+      "GT": "Native photograph remapped by camera only; source keep-mask; no image registration or error-based masking"
+    },
+    {
+      "model": "pilot-sharp",
+      "view": "fan",
+      "validFraction": 1.0,
+      "psnrDb": 25.200583890360345,
+      "rmse255": 14.012350301418039,
+      "cropPSNR": 23.78216849773012,
+      "cropRMSE255": 16.498017333180552,
+      "cropBox": [
+        400,
+        300,
+        1000,
+        900
+      ],
+      "GT": "Native photograph remapped by camera only; source keep-mask; no image registration or error-based masking"
+    },
+    {
+      "model": "mesh-texture",
+      "view": "fan",
+      "validFraction": 1.0,
+      "psnrDb": 20.086379677453987,
+      "rmse255": 25.247663689254285,
+      "cropPSNR": 18.839612637947948,
+      "cropRMSE255": 29.144697265603973,
+      "cropBox": [
+        400,
+        300,
+        1000,
+        900
+      ],
+      "GT": "Native photograph remapped by camera only; source keep-mask; no image registration or error-based masking"
+    },
+    {
+      "model": "mesh-photo",
+      "view": "fan",
+      "validFraction": 1.0,
+      "psnrDb": 19.747581570201664,
+      "rmse255": 26.251921801589095,
+      "cropPSNR": 18.54369004386704,
+      "cropRMSE255": 30.15474624824915,
+      "cropBox": [
+        400,
+        300,
+        1000,
+        900
+      ],
+      "GT": "Native photograph remapped by camera only; source keep-mask; no image registration or error-based masking"
+    },
+    {
+      "model": "new-full-20000",
+      "view": "fan",
+      "validFraction": 1.0,
+      "psnrDb": 24.255815324762175,
+      "rmse255": 15.622459742066539,
+      "cropPSNR": 23.442021963853982,
+      "cropRMSE255": 17.156910361371832,
+      "cropBox": [
+        400,
+        300,
+        1000,
+        900
+      ],
+      "GT": "Native photograph remapped by camera only; source keep-mask; no image registration or error-based masking"
+    },
+    {
+      "model": "fusion-photo",
+      "view": "fan",
+      "validFraction": 1.0,
+      "psnrDb": 16.58909974603536,
+      "rmse255": 37.76462644264294,
+      "cropPSNR": 15.350792524508037,
+      "cropRMSE255": 43.55124294480052,
+      "cropBox": [
+        400,
+        300,
+        1000,
+        900
+      ],
+      "GT": "Native photograph remapped by camera only; source keep-mask; no image registration or error-based masking"
+    },
+    {
+      "model": "new-full-50000",
+      "view": "fan",
+      "validFraction": 1.0,
+      "psnrDb": 24.995556463092594,
+      "rmse255": 14.34704159046057,
+      "cropPSNR": 24.458880369571794,
+      "cropRMSE255": 15.26146278363566,
+      "cropBox": [
+        400,
+        300,
+        1000,
+        900
+      ],
+      "GT": "Native photograph remapped by camera only; source keep-mask; no image registration or error-based masking"
+    },
+    {
+      "model": "fusion-coherent",
+      "view": "fan",
+      "validFraction": 1.0,
+      "psnrDb": 15.142765600666442,
+      "rmse255": 44.606885397419745,
+      "cropPSNR": 14.977839536431945,
+      "cropRMSE255": 45.46196503468383,
+      "cropBox": [
+        400,
+        300,
+        1000,
+        900
+      ],
+      "GT": "Native photograph remapped by camera only; source keep-mask; no image registration or error-based masking"
+    },
+    {
+      "model": "fusion-filled",
+      "view": "fan",
+      "validFraction": 1.0,
+      "psnrDb": 15.219050004852718,
+      "rmse255": 44.21683777256638,
+      "cropPSNR": 15.204333143129997,
+      "cropRMSE255": 44.291819692429286,
+      "cropBox": [
+        400,
+        300,
+        1000,
+        900
+      ],
+      "GT": "Native photograph remapped by camera only; source keep-mask; no image registration or error-based masking"
+    },
+    {
+      "model": "rgb-only-mip",
+      "view": "fan",
+      "validFraction": 1.0,
+      "psnrDb": 25.913488254216016,
+      "rmse255": 12.908202436292859,
+      "cropPSNR": 24.28319563166939,
+      "cropRMSE255": 15.573291000703499,
+      "cropBox": [
+        400,
+        300,
+        1000,
+        900
+      ],
+      "GT": "Native photograph remapped by camera only; source keep-mask; no image registration or error-based masking"
+    },
+    {
+      "model": "rgb-only-3dgs",
+      "view": "fan",
+      "validFraction": 1.0,
+      "psnrDb": 25.849900825817468,
+      "rmse255": 13.003047204150425,
+      "cropPSNR": 24.03820781447581,
+      "cropRMSE255": 16.018793014132793,
+      "cropBox": [
+        400,
+        300,
+        1000,
+        900
+      ],
+      "GT": "Native photograph remapped by camera only; source keep-mask; no image registration or error-based masking"
+    },
+    {
+      "model": "no-appearance-correction",
+      "view": "fan",
+      "validFraction": 1.0,
+      "psnrDb": 25.770809707178284,
+      "rmse255": 13.121989777034218,
+      "cropPSNR": 23.926323287079477,
+      "cropRMSE255": 16.22646868887717,
+      "cropBox": [
+        400,
+        300,
+        1000,
+        900
+      ],
+      "GT": "Native photograph remapped by camera only; source keep-mask; no image registration or error-based masking"
+    },
+    {
+      "model": "sparse-rgb-only",
+      "view": "fan",
+      "validFraction": 1.0,
+      "psnrDb": 25.311122828835803,
+      "rmse255": 13.835155316574689,
+      "cropPSNR": 23.774898335035797,
+      "cropRMSE255": 16.51183209320135,
+      "cropBox": [
+        400,
+        300,
+        1000,
+        900
+      ],
+      "GT": "Native photograph remapped by camera only; source keep-mask; no image registration or error-based masking"
+    },
+    {
+      "model": "poisson-photo",
+      "view": "fan",
+      "validFraction": 1.0,
+      "psnrDb": 16.860534226522578,
+      "rmse255": 36.6027292267139,
+      "cropPSNR": 15.95101792326835,
+      "cropRMSE255": 40.64333007554413,
+      "cropBox": [
+        400,
+        300,
+        1000,
+        900
+      ],
+      "GT": "Native photograph remapped by camera only; source keep-mask; no image registration or error-based masking"
+    },
+    {
+      "model": "old-full",
+      "view": "dining",
+      "validFraction": 1.0,
+      "psnrDb": 24.089863006943546,
+      "rmse255": 15.923811579071177,
+      "cropPSNR": 22.954826929678656,
+      "cropRMSE255": 18.14674907116566,
+      "cropBox": [
+        200,
+        400,
+        800,
+        1000
+      ],
+      "GT": "Native photograph remapped by camera only; source keep-mask; no image registration or error-based masking"
+    },
+    {
+      "model": "pilot-base",
+      "view": "dining",
+      "validFraction": 1.0,
+      "psnrDb": 23.84347254443898,
+      "rmse255": 16.381986104189252,
+      "cropPSNR": 25.045667602437106,
+      "cropRMSE255": 14.264508111626796,
+      "cropBox": [
+        200,
+        400,
+        800,
+        1000
+      ],
+      "GT": "Native photograph remapped by camera only; source keep-mask; no image registration or error-based masking"
+    },
+    {
+      "model": "pilot-sharp",
+      "view": "dining",
+      "validFraction": 1.0,
+      "psnrDb": 23.853282616665993,
+      "rmse255": 16.363494302707878,
+      "cropPSNR": 25.03738387606873,
+      "cropRMSE255": 14.278118651356776,
+      "cropBox": [
+        200,
+        400,
+        800,
+        1000
+      ],
+      "GT": "Native photograph remapped by camera only; source keep-mask; no image registration or error-based masking"
+    },
+    {
+      "model": "mesh-texture",
+      "view": "dining",
+      "validFraction": 1.0,
+      "psnrDb": 21.775886327871973,
+      "rmse255": 20.78480067673998,
+      "cropPSNR": 22.203789977952884,
+      "cropRMSE255": 19.78566636528875,
+      "cropBox": [
+        200,
+        400,
+        800,
+        1000
+      ],
+      "GT": "Native photograph remapped by camera only; source keep-mask; no image registration or error-based masking"
+    },
+    {
+      "model": "mesh-photo",
+      "view": "dining",
+      "validFraction": 1.0,
+      "psnrDb": 21.154134005843908,
+      "rmse255": 22.327159770114196,
+      "cropPSNR": 21.302539715020327,
+      "cropRMSE255": 21.94892197639615,
+      "cropBox": [
+        200,
+        400,
+        800,
+        1000
+      ],
+      "GT": "Native photograph remapped by camera only; source keep-mask; no image registration or error-based masking"
+    },
+    {
+      "model": "new-full-20000",
+      "view": "dining",
+      "validFraction": 1.0,
+      "psnrDb": 23.172086626489378,
+      "rmse255": 17.69847509727979,
+      "cropPSNR": 22.0445913424876,
+      "cropRMSE255": 20.15165007948297,
+      "cropBox": [
+        200,
+        400,
+        800,
+        1000
+      ],
+      "GT": "Native photograph remapped by camera only; source keep-mask; no image registration or error-based masking"
+    },
+    {
+      "model": "fusion-photo",
+      "view": "dining",
+      "validFraction": 1.0,
+      "psnrDb": 19.053024181483035,
+      "rmse255": 28.437340056869434,
+      "cropPSNR": 18.249134218964883,
+      "cropRMSE255": 31.194890785369182,
+      "cropBox": [
+        200,
+        400,
+        800,
+        1000
+      ],
+      "GT": "Native photograph remapped by camera only; source keep-mask; no image registration or error-based masking"
+    },
+    {
+      "model": "new-full-50000",
+      "view": "dining",
+      "validFraction": 1.0,
+      "psnrDb": 23.898814553702078,
+      "rmse255": 16.277940352217154,
+      "cropPSNR": 22.78377881576771,
+      "cropRMSE255": 18.507648368935158,
+      "cropBox": [
+        200,
+        400,
+        800,
+        1000
+      ],
+      "GT": "Native photograph remapped by camera only; source keep-mask; no image registration or error-based masking"
+    },
+    {
+      "model": "fusion-coherent",
+      "view": "dining",
+      "validFraction": 1.0,
+      "psnrDb": 17.70978848178944,
+      "rmse255": 33.193324859083,
+      "cropPSNR": 17.538478786696995,
+      "cropRMSE255": 33.85448729762696,
+      "cropBox": [
+        200,
+        400,
+        800,
+        1000
+      ],
+      "GT": "Native photograph remapped by camera only; source keep-mask; no image registration or error-based masking"
+    },
+    {
+      "model": "fusion-filled",
+      "view": "dining",
+      "validFraction": 1.0,
+      "psnrDb": 17.858157208287817,
+      "rmse255": 32.631145520592916,
+      "cropPSNR": 17.59476667643975,
+      "cropRMSE255": 33.63580659334907,
+      "cropBox": [
+        200,
+        400,
+        800,
+        1000
+      ],
+      "GT": "Native photograph remapped by camera only; source keep-mask; no image registration or error-based masking"
+    },
+    {
+      "model": "rgb-only-mip",
+      "view": "dining",
+      "validFraction": 1.0,
+      "psnrDb": 24.052346562722825,
+      "rmse255": 15.992739097237363,
+      "cropPSNR": 25.5226575615561,
+      "cropRMSE255": 13.502285986152561,
+      "cropBox": [
+        200,
+        400,
+        800,
+        1000
+      ],
+      "GT": "Native photograph remapped by camera only; source keep-mask; no image registration or error-based masking"
+    },
+    {
+      "model": "rgb-only-3dgs",
+      "view": "dining",
+      "validFraction": 1.0,
+      "psnrDb": 23.821801236493645,
+      "rmse255": 16.422910216232133,
+      "cropPSNR": 25.41688183540436,
+      "cropRMSE255": 13.667720487825807,
+      "cropBox": [
+        200,
+        400,
+        800,
+        1000
+      ],
+      "GT": "Native photograph remapped by camera only; source keep-mask; no image registration or error-based masking"
+    },
+    {
+      "model": "no-appearance-correction",
+      "view": "dining",
+      "validFraction": 1.0,
+      "psnrDb": 23.88929356839497,
+      "rmse255": 16.29579310072498,
+      "cropPSNR": 25.322440561782493,
+      "cropRMSE255": 13.817139818999365,
+      "cropBox": [
+        200,
+        400,
+        800,
+        1000
+      ],
+      "GT": "Native photograph remapped by camera only; source keep-mask; no image registration or error-based masking"
+    },
+    {
+      "model": "sparse-rgb-only",
+      "view": "dining",
+      "validFraction": 1.0,
+      "psnrDb": 22.517666176247047,
+      "rmse255": 19.083449132688177,
+      "cropPSNR": 23.53107149723513,
+      "cropRMSE255": 16.981912763617387,
+      "cropBox": [
+        200,
+        400,
+        800,
+        1000
+      ],
+      "GT": "Native photograph remapped by camera only; source keep-mask; no image registration or error-based masking"
+    },
+    {
+      "model": "poisson-photo",
+      "view": "dining",
+      "validFraction": 1.0,
+      "psnrDb": 17.397913730278578,
+      "rmse255": 34.40681671030948,
+      "cropPSNR": 18.53877449699725,
+      "cropRMSE255": 30.171816349896005,
+      "cropBox": [
+        200,
+        400,
+        800,
+        1000
+      ],
+      "GT": "Native photograph remapped by camera only; source keep-mask; no image registration or error-based masking"
+    },
+    {
+      "model": "old-full",
+      "view": "bathroom",
+      "validFraction": 0.9714187885802469,
+      "psnrDb": 27.613983795313807,
+      "rmse255": 10.61306907085249,
+      "cropPSNR": 26.714096348854113,
+      "cropRMSE255": 11.771596386280049,
+      "cropBox": [
+        660,
+        180,
+        1260,
+        780
+      ],
+      "GT": "Native photograph remapped by camera only; source keep-mask; no image registration or error-based masking"
+    },
+    {
+      "model": "pilot-base",
+      "view": "bathroom",
+      "validFraction": 0.9714187885802469,
+      "psnrDb": 26.000163905964815,
+      "rmse255": 12.780033291243226,
+      "cropPSNR": 24.701457483629024,
+      "cropRMSE255": 14.841141515445551,
+      "cropBox": [
+        660,
+        180,
+        1260,
+        780
+      ],
+      "GT": "Native photograph remapped by camera only; source keep-mask; no image registration or error-based masking"
+    },
+    {
+      "model": "pilot-sharp",
+      "view": "bathroom",
+      "validFraction": 0.9714187885802469,
+      "psnrDb": 26.31839506905546,
+      "rmse255": 12.320275714537111,
+      "cropPSNR": 25.28908264866276,
+      "cropRMSE255": 13.870306179696197,
+      "cropBox": [
+        660,
+        180,
+        1260,
+        780
+      ],
+      "GT": "Native photograph remapped by camera only; source keep-mask; no image registration or error-based masking"
+    },
+    {
+      "model": "mesh-texture",
+      "view": "bathroom",
+      "validFraction": 0.9714187885802469,
+      "psnrDb": 19.313863825036098,
+      "rmse255": 27.596054195625403,
+      "cropPSNR": 17.034202512732858,
+      "cropRMSE255": 35.87815111983584,
+      "cropBox": [
+        660,
+        180,
+        1260,
+        780
+      ],
+      "GT": "Native photograph remapped by camera only; source keep-mask; no image registration or error-based masking"
+    },
+    {
+      "model": "mesh-photo",
+      "view": "bathroom",
+      "validFraction": 0.9714187885802469,
+      "psnrDb": 20.46799632051226,
+      "rmse255": 24.162416399599326,
+      "cropPSNR": 17.853427762230684,
+      "cropRMSE255": 32.64891793907713,
+      "cropBox": [
+        660,
+        180,
+        1260,
+        780
+      ],
+      "GT": "Native photograph remapped by camera only; source keep-mask; no image registration or error-based masking"
+    },
+    {
+      "model": "new-full-20000",
+      "view": "bathroom",
+      "validFraction": 0.9714187885802469,
+      "psnrDb": 26.377951737398945,
+      "rmse255": 12.236088052496429,
+      "cropPSNR": 25.350161927202542,
+      "cropRMSE255": 13.773112158060664,
+      "cropBox": [
+        660,
+        180,
+        1260,
+        780
+      ],
+      "GT": "Native photograph remapped by camera only; source keep-mask; no image registration or error-based masking"
+    },
+    {
+      "model": "fusion-photo",
+      "view": "bathroom",
+      "validFraction": 0.9714187885802469,
+      "psnrDb": 12.450028163965758,
+      "rmse255": 60.81892957888113,
+      "cropPSNR": 11.761227124544432,
+      "cropRMSE255": 65.83833270047,
+      "cropBox": [
+        660,
+        180,
+        1260,
+        780
+      ],
+      "GT": "Native photograph remapped by camera only; source keep-mask; no image registration or error-based masking"
+    },
+    {
+      "model": "new-full-50000",
+      "view": "bathroom",
+      "validFraction": 0.9714187885802469,
+      "psnrDb": 27.68692795596121,
+      "rmse255": 10.524313650083592,
+      "cropPSNR": 27.070336194094153,
+      "cropRMSE255": 11.298567141210626,
+      "cropBox": [
+        660,
+        180,
+        1260,
+        780
+      ],
+      "GT": "Native photograph remapped by camera only; source keep-mask; no image registration or error-based masking"
+    },
+    {
+      "model": "fusion-coherent",
+      "view": "bathroom",
+      "validFraction": 0.9714187885802469,
+      "psnrDb": 12.29692561337717,
+      "rmse255": 61.90046333047194,
+      "cropPSNR": 11.418493710673879,
+      "cropRMSE255": 68.48815941189856,
+      "cropBox": [
+        660,
+        180,
+        1260,
+        780
+      ],
+      "GT": "Native photograph remapped by camera only; source keep-mask; no image registration or error-based masking"
+    },
+    {
+      "model": "fusion-filled",
+      "view": "bathroom",
+      "validFraction": 0.9714187885802469,
+      "psnrDb": 12.298740300672772,
+      "rmse255": 61.88753221394814,
+      "cropPSNR": 11.432574583363957,
+      "cropRMSE255": 68.37722180695145,
+      "cropBox": [
+        660,
+        180,
+        1260,
+        780
+      ],
+      "GT": "Native photograph remapped by camera only; source keep-mask; no image registration or error-based masking"
+    },
+    {
+      "model": "rgb-only-mip",
+      "view": "bathroom",
+      "validFraction": 0.9714187885802469,
+      "psnrDb": 25.694149107347144,
+      "rmse255": 13.238315437160782,
+      "cropPSNR": 24.660765051340316,
+      "cropRMSE255": 14.910833744729466,
+      "cropBox": [
+        660,
+        180,
+        1260,
+        780
+      ],
+      "GT": "Native photograph remapped by camera only; source keep-mask; no image registration or error-based masking"
+    },
+    {
+      "model": "rgb-only-3dgs",
+      "view": "bathroom",
+      "validFraction": 0.9714187885802469,
+      "psnrDb": 26.588457198360736,
+      "rmse255": 11.943106925433344,
+      "cropPSNR": 24.880183259296537,
+      "cropRMSE255": 14.538882191226751,
+      "cropBox": [
+        660,
+        180,
+        1260,
+        780
+      ],
+      "GT": "Native photograph remapped by camera only; source keep-mask; no image registration or error-based masking"
+    },
+    {
+      "model": "no-appearance-correction",
+      "view": "bathroom",
+      "validFraction": 0.9714187885802469,
+      "psnrDb": 26.95382301766605,
+      "rmse255": 11.451148047997048,
+      "cropPSNR": 25.675838971463833,
+      "cropRMSE255": 13.266251668551043,
+      "cropBox": [
+        660,
+        180,
+        1260,
+        780
+      ],
+      "GT": "Native photograph remapped by camera only; source keep-mask; no image registration or error-based masking"
+    },
+    {
+      "model": "sparse-rgb-only",
+      "view": "bathroom",
+      "validFraction": 0.9714187885802469,
+      "psnrDb": 26.7442462868921,
+      "rmse255": 11.730806363340882,
+      "cropPSNR": 25.90474644600231,
+      "cropRMSE255": 12.921200279643786,
+      "cropBox": [
+        660,
+        180,
+        1260,
+        780
+      ],
+      "GT": "Native photograph remapped by camera only; source keep-mask; no image registration or error-based masking"
+    },
+    {
+      "model": "poisson-photo",
+      "view": "bathroom",
+      "validFraction": 0.9714187885802469,
+      "psnrDb": 18.710187418906724,
+      "rmse255": 29.58222319745444,
+      "cropPSNR": 16.987671490554465,
+      "cropRMSE255": 36.07086905585232,
+      "cropBox": [
+        660,
+        180,
+        1260,
+        780
+      ],
+      "GT": "Native photograph remapped by camera only; source keep-mask; no image registration or error-based masking"
+    }
+  ],
+  "scope": "Four fixed full-viewport 1920x1080 camera views, no per-image alignment. Three are source training timestamps and bathroom is appearance-held-out. Same-capture SfM is not independent geometry truth. Pilot steps and budgets match each other; original full uses a larger budget and more steps.",
+  "physicalPhoneTests": false
+}

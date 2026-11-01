@@ -1,0 +1,190 @@
+{
+  "models": {
+    "old-full": {
+      "url": "/review/qa/old-full.ply",
+      "format": "ply",
+      "bytes": 491657919
+    },
+    "pilot-base": {
+      "url": "/review/qa/pilot-base.ply",
+      "format": "ply",
+      "bytes": 245536559
+    },
+    "pilot-sharp": {
+      "url": "/review/qa/pilot-sharp.ply",
+      "format": "ply",
+      "bytes": 245777967
+    },
+    "mesh-texture": {
+      "url": "/review/qa/mesh-texture.glb",
+      "format": "glb",
+      "bytes": 42015904
+    },
+    "mesh-photo": {
+      "url": "/review/qa/mesh-photo.glb",
+      "format": "glb",
+      "bytes": 43284464
+    },
+    "new-full-20000": {
+      "url": "/review/qa/new-full-20000.ply",
+      "format": "ply",
+      "bytes": 492000679
+    },
+    "fusion-photo": {
+      "url": "/review/qa/fusion-photo.glb",
+      "format": "glb",
+      "bytes": 10925876
+    },
+    "new-full-50000": {
+      "url": "/review/qa/new-full-50000.ply",
+      "format": "ply",
+      "bytes": 485601727
+    },
+    "fusion-coherent": {
+      "url": "/review/qa/fusion-coherent.glb",
+      "format": "glb",
+      "bytes": 9903148
+    },
+    "fusion-filled": {
+      "url": "/review/qa/fusion-filled.glb",
+      "format": "glb",
+      "bytes": 10301516
+    },
+    "rgb-only-mip": {
+      "url": "/review/qa/rgb-only-mip.ply",
+      "format": "ply",
+      "bytes": 245980835
+    },
+    "rgb-only-3dgs": {
+      "url": "/review/qa/rgb-only-3dgs.ply",
+      "format": "ply",
+      "bytes": 245974603
+    },
+    "no-appearance-correction": {
+      "url": "/review/qa/no-appearance-correction.ply",
+      "format": "ply",
+      "bytes": 245851439
+    },
+    "sparse-rgb-only": {
+      "url": "/review/qa/sparse-rgb-only.ply",
+      "format": "ply",
+      "bytes": 245944263
+    },
+    "poisson-photo": {
+      "url": "/review/qa/poisson-photo.glb",
+      "format": "glb",
+      "bytes": 30150832
+    }
+  },
+  "poses": [
+    {
+      "label": "fridge",
+      "source": "cam0/frame_000027_train.jpg",
+      "sourceFrame": 27,
+      "split": "train",
+      "position": [
+        -0.04734322054037422,
+        1.5427764395823702,
+        0.16500877423918853
+      ],
+      "quaternion": [
+        -0.02772637025938751,
+        -0.947378660256456,
+        -0.08549504078119761,
+        0.30723854003810014
+      ],
+      "fov": 75,
+      "width": 1920,
+      "height": 1080,
+      "intrinsics": [
+        703.741701334251,
+        703.741701334251,
+        960.0,
+        540.0
+      ],
+      "mask": "fridge-keep.png"
+    },
+    {
+      "label": "fan",
+      "source": "cam0/frame_001800_train.jpg",
+      "sourceFrame": 1800,
+      "split": "train",
+      "position": [
+        -0.8176386469064271,
+        0.4255116593924649,
+        0.8534996480900683
+      ],
+      "quaternion": [
+        -0.0036111427560121846,
+        -0.9961398662994274,
+        -0.049848540690604154,
+        0.07216265937430248
+      ],
+      "fov": 75,
+      "width": 1920,
+      "height": 1080,
+      "intrinsics": [
+        703.741701334251,
+        703.741701334251,
+        960.0,
+        540.0
+      ],
+      "mask": "fan-keep.png"
+    },
+    {
+      "label": "dining",
+      "source": "cam0/frame_001197_train.jpg",
+      "sourceFrame": 1197,
+      "split": "train",
+      "position": [
+        0.7616677170986236,
+        0.7530471853609798,
+        1.059430921517134
+      ],
+      "quaternion": [
+        -0.049835155377638655,
+        0.07576462952175617,
+        0.0037913914957084585,
+        0.9958723831658571
+      ],
+      "fov": 75,
+      "width": 1920,
+      "height": 1080,
+      "intrinsics": [
+        703.741701334251,
+        703.741701334251,
+        960.0,
+        540.0
+      ],
+      "mask": "dining-keep.png"
+    },
+    {
+      "label": "bathroom",
+      "source": "cam0/frame_001557_eval.jpg",
+      "sourceFrame": 1557,
+      "split": "eval",
+      "position": [
+        -0.11036735204714103,
+        0.4616502046204495,
+        -3.4100854048200673
+      ],
+      "quaternion": [
+        0.0,
+        0.8397103441859145,
+        0.0,
+        0.5430345641551493
+      ],
+      "fov": 75,
+      "width": 1920,
+      "height": 1080,
+      "intrinsics": [
+        703.741701334251,
+        703.741701334251,
+        960.0,
+        540.0
+      ],
+      "mask": "bathroom-keep.png"
+    }
+  ],
+  "sourcePhotographs": "Direct 3840 native RGB remap using audited calibration and exact camera pose; binary masks unchanged; no learned image generation"
+}

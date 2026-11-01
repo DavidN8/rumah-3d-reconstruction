@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bedroom + bathroom · dollhouse and walkthrough</title>
+<link rel="icon" href="data:,">
+<style>
+body{margin:0;background:#11151b;color:#e8edf3;font:14px system-ui}header{padding:14px 22px 10px;border-bottom:1px solid #35404d}h1{font-size:22px;margin:0 0 4px}p{margin:4px 0;color:#b4c2d1}
+nav{display:flex;gap:10px;align-items:center;flex-wrap:wrap;padding:11px 22px}button,select{font:inherit;padding:8px 10px;border:1px solid #4b5d71;border-radius:7px;background:#1c2835;color:#e8edf3}button{cursor:pointer}button:hover{background:#27475b}button:disabled{opacity:.4;cursor:default}label{display:flex;gap:7px;align-items:center}a{color:#8bceff}
+#note{padding:0 22px 10px;font-size:13px}#scene-wrap{position:relative}iframe{display:block;width:100%;height:calc(100vh - 183px);min-height:450px;border:0}#photo{width:220px;max-width:30vw;position:absolute;right:16px;bottom:65px;border:1px solid #7293b0;display:none;pointer-events:none}
+details{padding:15px 22px;max-width:1000px}details p{margin:10px 0}#asset{max-width:min(380px,85vw)}#view{max-width:240px}
+@media(max-width:800px){iframe{height:65vh}nav{gap:8px;padding:10px}header{padding:12px}#note{padding:0 12px 10px}}
+</style>
+<header><h1>Bedroom + bathroom</h1><p id="status">Loading models…</p></header>
+<nav>
+ <label for="asset">Model <select id="asset"></select></label>
+ <button id="ceiling">Show ceiling</button>
+ <label for="view">View <select id="view"></select></label>
+ <button id="jump">Go to view</button><button id="reference">Show source frame</button>
+ <a id="download" download>Download model</a>
+</nav>
+<p id="note"></p>
+<div id="scene-wrap"><iframe id="scene" title="Interactive reconstruction"></iframe><img id="photo" alt="Original frame for comparison"></div>
+<details><summary>Models and reconstruction limits</summary>
+ <p>The cleaned model removes detached fragments and doorway debris. Both original 8192 × 8192 texture images are preserved. The roofless version cuts wall tops on an exact plane; the original models remain available for comparison.</p>
+ <p>The doorway surround and threshold are an inferred repair, stored as a separate mesh. They bridge missing coverage without closing the passage. Mirrors, occluded surfaces, and some reconstruction gaps remain incomplete. Dimensions are not calibrated.</p>
+ <p><a href="../exports/cleaned/bedroom-bathroom-cleaned.json">Cleanup and repair report</a> · <a href="../exports/cleaned/bedroom-bathroom-cleaned-dollhouse.json">Dollhouse export details</a></p>
+ <p>Controls use <a href="https://modelviewer.dev/docs/index.html">model-viewer’s camera API</a>. Reconstruction references: <a href="https://superspl.at/scene/9d09ab82">house scan creator</a> · <a href="https://www.reddit.com/r/GaussianSplatting/comments/1vyvyv4/gaussian_splat_from_eyes_wide_shut_from_x/">film example</a>.</p>
+</details>
+<script type="module">
+const $=id=>document.getElementById(id);let assets=[],cameras={},current=null,ready=false;
+const mesh=()=>current?.url.endsWith('.glb');
+function fillViews(){
+ const list=cameras[current.cameraSet]||[],indices=new Set();$('view').replaceChildren();
+ if(mesh())$('view').add(new Option(current.preset==='dollhouse'?'Dollhouse · angled':'Overview · angled','overview'));
+ for(let i=0;i<list.length;i+=Math.max(1,Math.floor(list.length/20)))indices.add(i);
+ for(const time of [18.83,105.7,111,125]){if(!list.length)continue;let i=0;list.forEach((c,j)=>{if(Math.abs(c.seconds-time)<Math.abs(list[i].seconds-time))i=j;});if(Math.abs(list[i].seconds-time)<1)indices.add(i);}
+ for(const i of [...indices].sort((a,b)=>a-b)){const c=list[i];$('view').add(new Option(`${c.room?c.room[0].toUpperCase()+c.room.slice(1)+' · ':''}${c.seconds.toFixed(2)} s`,String(i)));}
+ if(current.preset==='dollhouse'){$('view').value='overview';return;}
+ const preferred=current.cameraSet==='bathroom'?125:18.83;
+ const candidates=[...$('view').options].filter(o=>o.value!=='overview');
+ candidates.sort((a,b)=>Math.abs(list[a.value].seconds-preferred)-Math.abs(list[b.value].seconds-preferred));
+ if(candidates.length)$('view').value=candidates[0].value;
+}
+function jump(){
+ const w=$('scene').contentWindow;if(!w)return;
+ if($('view').value==='overview'){if(w.__meshAPI?.loaded){w.__meshAPI.home();w.__meshAPI.focus();}$('photo').style.display='none';$('reference').disabled=true;return;}
+ const c=(cameras[current.cameraSet]||[])[$('view').value];if(!c)return;
+ $('reference').disabled=current.sourceFrames===false;if(current.sourceFrames!==false)$('photo').src=`../${c.room||current.cameraSet}/images/${c.name}`;
+ if(w.__meshAPI?.loaded){w.__meshAPI.jump(c);return;}
+ const v=w.__viewer;if(!v?.model)return;
+ v.setOpt('upAxis',current.axis||'z');v.setOpt('showGrid',false);v.setOpt('shade',false);v.camera.lookAt(c.position,c.target,c.up);v.camera.fov=80*Math.PI/180;v.nav.mode='fly';v.nav._sceneScale=.3;
+ const mode=w.document.getElementById('nav-mode');if(mode){mode.value='fly';mode.dispatchEvent(new w.Event('change'));}v.nav.onChange();
+}
+function load(){
+ $('scene').contentWindow?.__meshAPI?.release();current=assets[Number($('asset').value)];if(!current)return;
+ $('status').textContent=mesh()?'Click the model, then use WASD to move. Drag to turn; Q/E changes height. Scroll zoom is gentle.':'Drag to look around. Use W/A/S/D to move inside the splat viewer.';
+ ready=false;fillViews();$('photo').style.display='none';$('reference').disabled=$('view').value==='overview';
+ $('reference').hidden=current.sourceFrames===false;
+ $('scene').src=`${mesh()?'mesh-viewer.html?v=2&':'viewer/index.html?'}model=${encodeURIComponent(current.url)}`;
+ $('download').href=current.url;$('note').textContent=current.note;
+ $('ceiling').hidden=!mesh()||!assets.some(a=>a!==current&&a.cameraSet===current.cameraSet&&a.url.endsWith('.glb')&&(a.pair||'original')===(current.pair||'original')&&(a.preset==='dollhouse')!==(current.preset==='dollhouse'));$('ceiling').textContent=current.preset==='dollhouse'?'Show ceiling':'Hide ceiling';
+}
+$('ceiling').onclick=()=>{const index=assets.findIndex(a=>a.cameraSet==='combined'&&a.url.endsWith('.glb')&&(a.pair||'original')===(current.pair||'original')&&(current.preset==='dollhouse'?a.preset!=='dollhouse':a.preset==='dollhouse'));if(index>=0){$('asset').value=String(index);load();}};
+$('asset').onchange=load;$('jump').onclick=jump;$('view').onchange=jump;
+$('reference').onclick=()=>{$('photo').style.display=$('photo').style.display==='block'?'none':'block';};
+window.addEventListener('keydown',e=>{if(!e.target.closest?.('input,select,textarea,button,a'))$('scene').contentWindow?.__meshAPI?.keyDown(e);});
+window.addEventListener('keyup',e=>$('scene').contentWindow?.__meshAPI?.keyUp(e));
+window.addEventListener('blur',()=>$('scene').contentWindow?.__meshAPI?.release());
+document.addEventListener('visibilitychange',()=>{if(document.hidden)$('scene').contentWindow?.__meshAPI?.release();});
+setInterval(()=>{const w=$('scene').contentWindow;if(!ready&&((w?.__viewer?.model&&w.__viewer.camera)||w?.__meshAPI?.loaded)){ready=true;jump();}},200);
+try{[assets,cameras]=await Promise.all([fetch('models.json',{cache:'no-store'}).then(r=>r.json()),fetch('cameras.json').then(r=>r.json())]);assets.forEach((a,i)=>$('asset').add(new Option(a.label,String(i))));load();}catch(e){$('status').textContent='Could not load the model list. '+e.message;}
+</script></html>

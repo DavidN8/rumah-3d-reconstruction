@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "gpu_used": false,
+  "capture_files_read": false,
+  "views": [
+    {
+      "phi": 0.0,
+      "round_trip_iou": 1.0,
+      "native_coverage_fraction": 0.1837836371527778,
+      "native_excluded_fraction": 0.028923882378472224
+    },
+    {
+      "phi": 90.0,
+      "round_trip_iou": 1.0,
+      "native_coverage_fraction": 0.1837836371527778,
+      "native_excluded_fraction": 0.028923882378472224
+    },
+    {
+      "phi": 180.0,
+      "round_trip_iou": 1.0,
+      "native_coverage_fraction": 0.1837836371527778,
+      "native_excluded_fraction": 0.028923882378472224
+    },
+    {
+      "phi": 270.0,
+      "round_trip_iou": 1.0,
+      "native_coverage_fraction": 0.1837836371527778,
+      "native_excluded_fraction": 0.028923882378472224
+    }
+  ],
+  "semantics_verified": [
+    "four native rim orientations",
+    "proper rotation, no reflection",
+    "inverse exclusion stays inside validity coverage",
+    "keep/exclude polarity equivalence",
+    "an all-keep view excludes no native pixels",
+    "binary mask round trip IoU above0.90"
+  ]
+}

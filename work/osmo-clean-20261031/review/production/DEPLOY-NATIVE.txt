@@ -1,0 +1,96 @@
+Native Osmo deployment preparation — 2026-10-31
+
+Current status: local preparation only. No server connections or changes occurred.
+The current candidate remains the OLD v4 baseline and is deliberately blocked from
+final packaging. This runner must not publish it as the new clean reconstruction.
+
+Target remains existing Proxmox LXC 710 and https://rumah.shizuku.rest/.
+Expected retained release: /var/www/rumah/releases/20261031-osmo-v3.
+No new container, authentication, DNS, Cloudflare setting or nginx configuration is
+changed. The existing anonymous site and its three-choice gate remain in place.
+If the real current release differs, the runner stops before uploading. Review the
+actual state and regenerate the package with the exact --previous path.
+
+Before final packaging:
+1. Check fresh SfM continuity for BOTH bathroom visits, fresh training/held-out views,
+   and seven source views at approximately 1,12,20,25,40,52,60 seconds. Record the
+   actual source timestamps. Old/new comparisons require measured pose alignment.
+2. Pack the new native checkpoint without spatial point thinning. Model <=50 MB,
+   <=3.1M source splats, preserved SH degree/count; compare original/compressed at
+   the same poses. pack-sog.py records the checkpoint and output hashes.
+3. Export fresh cameras using export-clean-cameras.py. Its normalization and source
+   identifiers must match this checkpoint. No old camera transform substitution.
+4. Update candidate.json: file, format, sha256, bytes, splats, shDegree, cameras,
+   packingReport, newTraining:true, provisional:false and a unique dated releaseId
+   such as 20261031-osmo-clean-v1. Packing/source/camera paths stay private.
+5. Run node build.mjs, then focused tests and local Chrome checks for the final build.
+   Check no model, photo, metadata or viewer library before Open; radios/deep links
+   only preselect; cancel/retry/switch require a fresh explicit Open. iPhone Fast and
+   Full must never request Spark. Check touch release and native Orbit from inside.
+6. The displayed phone LoD target is 750k, desktop 2M. This limits rendering, not the
+   transient decode/LoD-tree allocation. Record this limit and actual loading/errors.
+   Physical Fold 7/iPhone 17 remain unverified unless tested on those actual devices.
+7. Copy release-approval.example.json to release-approval.json and complete the exact
+   model, manifest and camera hashes, evidence paths+SHA256, and review results. The
+   root agent owns this release gate. It does not ask the user for a new permission.
+
+Local commands from the chat workspace (no server contact):
+  node work/osmo-clean-20261031/review/production/build.mjs
+  python work/osmo-clean-20261031/review/production/prepare-deploy.py --audit-only
+  python work/osmo-clean-20261031/review/production/audit-deploy-native.py
+  python work/osmo-clean-20261031/review/production/prepare-deploy.py --approval work/osmo-clean-20261031/review/production/release-approval.json
+
+Use the known Python executable at:
+C:/Users/bombe/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe
+
+The final command creates production/deployment/native-site.tar, deploy-native.sh,
+rollback-native.sh and deployment-manifest.json. It refuses an existing package
+directory so a reviewed release cannot silently change. The archive contains only
+explicit index/robots, hashed manifest, native model, fresh photos and esbuild JS
+chunks. iPhone files are inherited rather than uploaded. QA pages, private reports,
+source code, node_modules and checkpoint paths are excluded.
+
+Only when root requests actual deployment:
+  & work/osmo-clean-20261031/review/production/deploy-native.ps1 -Execute
+
+Without -Execute, this runner prints preparation status and makes zero remote calls.
+It uses the existing work/hosting/remote.py SSH/SFTP configuration; credentials are
+neither embedded in these files nor printed. It verifies the package hashes before
+uploading. It uses --command with a bounded 180-second remote run, avoiding the old
+helper's hardcoded 35-second --script timeout. Monitor the task rather than killing
+unrelated SSH sessions. Upload/deployment receipts live in the release's private
+/var/lib/vz/rumah-deploy directory.
+
+Release mechanics:
+- Guard the exact previous symlink; acquire a deployment lock.
+- Verify archive SHA, nginx syntax and nginx/cloudflared service state.
+- Make a separate release using cp -al. Detach EVERY replacement path before tar
+  extraction, protecting every retained inode, including matching hashed photos.
+- SHA-check all new assets and inherited iPhone assets. Preserve raw/gzip iPhone
+  inode identity. Keep the previous release untouched for rollback.
+- Atomically replace current via a new symlink and mv -Tf.
+- Verify origin HTML/manifest SHA; native Content-Length; JS MIME; landing no-cache;
+  iPhone identity and static-gzip HEAD lengths. No model GET occurs here.
+- On post-promotion failure, restore the exact previous release atomically, only if
+  current still points to this new release. Never overwrite a concurrent release.
+- Verify public HTTPS with small authored files plus HEAD for models/photos. If a
+  model HEAD lacks length, request ONLY bytes 0–11 and refuse a 200 response before
+  reading its body. Public model files are never downloaded in full. Check anonymous
+  access and keep physical-device verification separate.
+- Public-check failure invokes the same guarded rollback. Inspect receipts after a
+  timeout or failure; do not blindly rerun, remove releases or reset deployed.done.
+
+Caching:
+index.html must revalidate (no-cache/no-store/max-age=0). The JSON manifest, native
+model, photos, JS entry and all lazy chunks have content-addressed filenames. Old
+release files remain inherited, so an already-open old viewer can finish loading.
+Existing nginx serves GLB gzip; SPZ/SOG are already compressed and no redundant .gz
+copy is added. Existing generic no-cache for new extensions is correct, although
+less efficient than immutable caching; this release does not rewrite nginx merely
+to change caching policy. Verify actual HEAD headers during rollout.
+
+After HTTP checks, run an explicit Chrome network capture on the public landing:
+bare URL and model preselection must fetch no model or viewer library. Check the new
+Osmo interior and a source preset, both iPhone choices, cancellation/error recovery,
+and the seven reviewed views. A browser viewport emulation is not a physical phone.
+No old releases or project originals are deleted by any deployment step.

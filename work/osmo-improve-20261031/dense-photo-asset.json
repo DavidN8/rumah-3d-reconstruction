@@ -1,0 +1,168 @@
+{
+  "file": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\recovery-v2\\exports\\dense-photo-consensus-4k-packed.glb",
+  "sha256": "b901b2f64d2bfdcb2e4af4653de41eb2f93119a6c1e30735e7ffa7e13ac0cc4b",
+  "bytes": 47375092,
+  "triangles": 4428334,
+  "maxTextureSize": 4096,
+  "bounds": [
+    [
+      -2.2424579107477975,
+      -1.352192372355611,
+      -4.471297264099121
+    ],
+    [
+      3.1582217657282663,
+      2.433897227320821,
+      2.8573179244995117
+    ]
+  ],
+  "sourceBounds": [
+    [
+      -2.2424373626708984,
+      -1.3521637916564941,
+      -4.471297264099121
+    ],
+    [
+      3.158201217651367,
+      2.433868646621704,
+      2.8573179244995117
+    ]
+  ],
+  "preCompressionBounds": [
+    [
+      -2.2424373626708984,
+      -1.3521637916564941,
+      -4.471297264099121
+    ],
+    [
+      3.158201217651367,
+      2.433868646621704,
+      2.8573179244995117
+    ]
+  ],
+  "maximumCompressionBoundsChange": 0.000028580699116931285,
+  "quantizationBoundsTolerance": 0.0006017846835052082,
+  "decodedGeometryBytes": 125891832,
+  "accessorGeometryBytes": 112250865,
+  "textures": [
+    {
+      "width": 4096,
+      "height": 4096,
+      "bytes": 7021346,
+      "mimeType": "image/jpeg"
+    }
+  ],
+  "estimatedTextureGpuBytesWithMipmaps": 89478485.33333333,
+  "sourceFile": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\recovery-v2\\exports\\dense-photo-consensus-4k.glb",
+  "sourceSha256": "2b1d28701275d764ce85252f94af7a2938d4cc6684281bd6c63cd3a1f814d740",
+  "sourceBytes": 220380792,
+  "sourceGeometryBytes": 198643656,
+  "sourceTriangles": 4428334,
+  "sourcePrimitives": [
+    {
+      "mesh": 0,
+      "name": "mesh-0",
+      "primitive": 0,
+      "triangles": 4428334,
+      "vertices": 4546989,
+      "semantics": [
+        "NORMAL",
+        "POSITION",
+        "TEXCOORD_0"
+      ],
+      "indexedComponents": 359322
+    }
+  ],
+  "packedPrimitives": [
+    {
+      "mesh": 0,
+      "name": "mesh-0",
+      "primitive": 0,
+      "triangles": 4428334,
+      "vertices": 4546989,
+      "semantics": [
+        "NORMAL",
+        "POSITION",
+        "TEXCOORD_0"
+      ],
+      "indexedComponents": 359322
+    }
+  ],
+  "simplification": [],
+  "firstCompressionAttempt": {
+    "profile": "medium-p16-n8-uv12-j86",
+    "simplified": false,
+    "bytes": 51858900,
+    "decodedGeometryBytes": 125891832,
+    "triangles": 4428334,
+    "vertices": 4546989,
+    "withinFileBudget": false,
+    "withinGeometryBudget": true
+  },
+  "compressionAttempts": [
+    {
+      "profile": "medium-p16-n8-uv12-j86",
+      "simplified": false,
+      "bytes": 51858900,
+      "decodedGeometryBytes": 125891832,
+      "triangles": 4428334,
+      "vertices": 4546989,
+      "withinFileBudget": false,
+      "withinGeometryBudget": true
+    },
+    {
+      "profile": "high-p16-n8-uv12-j86",
+      "simplified": false,
+      "bytes": 47375092,
+      "decodedGeometryBytes": 125891832,
+      "triangles": 4428334,
+      "vertices": 4546989,
+      "withinFileBudget": true,
+      "withinGeometryBudget": true
+    }
+  ],
+  "compressionProfile": {
+    "name": "high-p16-n8-uv12-j86",
+    "level": "high",
+    "positionBits": 16,
+    "normalBits": 8,
+    "uvBits": 12,
+    "jpegQuality": 86
+  },
+  "compressionAttemptLog": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-improve-20261031\\dense-photo-asset.json.attempts.json",
+  "deliveryBudget": {
+    "fileBytes": 50000000,
+    "textureSize": 4096,
+    "preferredGeometryBytes": 134217728,
+    "maximumGeometryBytes": 201326592,
+    "simplificationWorldError": 0.003
+  },
+  "withinPreferredGeometryBudget": true,
+  "simplificationNecessaryForFinalBudget": false,
+  "unlit": true,
+  "unlitReason": "Baked camera-photo atlas already contains scene lighting; KHR_materials_unlit avoids a second PBR lighting pass and matches the iPhone versions",
+  "compressionTopologyPreserved": true,
+  "allIndexedComponentsPreserved": true,
+  "sourceUnchanged": true,
+  "iphoneAssetsUnchanged": true,
+  "ownershipCrop": false,
+  "heightCrop": false,
+  "axisRotation": false,
+  "coordinateFrame": "Unchanged source glTF world, including complete node world matrices",
+  "simplificationErrorLimitWorldUnits": 0,
+  "simplificationErrorDescription": "No simplification; complete source geometry retained before attribute quantization.",
+  "independent2mmAccuracyClaim": false,
+  "independentDeviationMeasurement": false,
+  "quantization": {
+    "positions": 16,
+    "normals": 8,
+    "uvs": 12,
+    "normalStorageFilterBits": 8,
+    "normalPreRounded": false,
+    "positionWorldGridUpperBound": 0.00015044617087630206
+  },
+  "libraries": {
+    "gltfTransform": "4.5.1",
+    "meshoptimizer": "0.25.0"
+  }
+}

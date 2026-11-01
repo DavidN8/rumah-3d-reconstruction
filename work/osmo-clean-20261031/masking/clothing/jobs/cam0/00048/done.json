@@ -1,0 +1,159 @@
+{
+  "signature": "82a6ab3e82d22df77e2dfb22419332d303861439c502d8374661629b7b383a2c",
+  "seconds": 9.854422092437744,
+  "options": {
+    "runtime": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261019_095800\\runtime\\spirula",
+    "text": "jeans;pants;bare feet;person",
+    "detector_threshold": 0.28,
+    "max_size": 0,
+    "dilate_ratio": 0,
+    "mask_semantics": "white_keep_black_exclude",
+    "source": "SAM2.1 small + GroundingDINO tiny, per image detection"
+  },
+  "mapping": [
+    {
+      "input": "frame_001308_train.jpg",
+      "source_frame": 1308,
+      "cli_output": "frame_00000.png",
+      "excluded_fraction": 0.11298502604166667
+    },
+    {
+      "input": "frame_001320_train.jpg",
+      "source_frame": 1320,
+      "cli_output": "frame_00001.png",
+      "excluded_fraction": 0.17558397081163193
+    },
+    {
+      "input": "frame_001326_train.jpg",
+      "source_frame": 1326,
+      "cli_output": "frame_00002.png",
+      "excluded_fraction": 0.15467902289496527
+    },
+    {
+      "input": "frame_001332_train.jpg",
+      "source_frame": 1332,
+      "cli_output": "frame_00003.png",
+      "excluded_fraction": 0.15037177191840279
+    },
+    {
+      "input": "frame_001344_train.jpg",
+      "source_frame": 1344,
+      "cli_output": "frame_00004.png",
+      "excluded_fraction": 0.09828701443142361
+    },
+    {
+      "input": "frame_001356_train.jpg",
+      "source_frame": 1356,
+      "cli_output": "frame_00005.png",
+      "excluded_fraction": 0.10898457845052083
+    },
+    {
+      "input": "frame_001359_train.jpg",
+      "source_frame": 1359,
+      "cli_output": "frame_00006.png",
+      "excluded_fraction": 0.11478827582465277
+    },
+    {
+      "input": "frame_001365_train.jpg",
+      "source_frame": 1365,
+      "cli_output": "frame_00007.png",
+      "excluded_fraction": 0.11616326226128472
+    },
+    {
+      "input": "frame_001374_train.jpg",
+      "source_frame": 1374,
+      "cli_output": "frame_00008.png",
+      "excluded_fraction": 0.05003838433159722
+    },
+    {
+      "input": "frame_001377_eval.jpg",
+      "source_frame": 1377,
+      "cli_output": "frame_00009.png",
+      "excluded_fraction": 0.05673916286892361
+    },
+    {
+      "input": "frame_001386_train.jpg",
+      "source_frame": 1386,
+      "cli_output": "frame_00010.png",
+      "excluded_fraction": 0.08865946451822916
+    },
+    {
+      "input": "frame_001392_train.jpg",
+      "source_frame": 1392,
+      "cli_output": "frame_00011.png",
+      "excluded_fraction": 0.11894049750434028
+    },
+    {
+      "input": "frame_001401_train.jpg",
+      "source_frame": 1401,
+      "cli_output": "frame_00012.png",
+      "excluded_fraction": 0.1150018310546875
+    },
+    {
+      "input": "frame_001407_train.jpg",
+      "source_frame": 1407,
+      "cli_output": "frame_00013.png",
+      "excluded_fraction": 0.12547932942708334
+    },
+    {
+      "input": "frame_001416_train.jpg",
+      "source_frame": 1416,
+      "cli_output": "frame_00014.png",
+      "excluded_fraction": 0.13675801595052084
+    },
+    {
+      "input": "frame_001422_train.jpg",
+      "source_frame": 1422,
+      "cli_output": "frame_00015.png",
+      "excluded_fraction": 0.15052720811631945
+    },
+    {
+      "input": "frame_001431_train.jpg",
+      "source_frame": 1431,
+      "cli_output": "frame_00016.png",
+      "excluded_fraction": 0.15366943359375
+    },
+    {
+      "input": "frame_001437_train.jpg",
+      "source_frame": 1437,
+      "cli_output": "frame_00017.png",
+      "excluded_fraction": 0.14485826280381944
+    },
+    {
+      "input": "frame_001440_train.jpg",
+      "source_frame": 1440,
+      "cli_output": "frame_00018.png",
+      "excluded_fraction": 0.140029296875
+    },
+    {
+      "input": "frame_001449_train.jpg",
+      "source_frame": 1449,
+      "cli_output": "frame_00019.png",
+      "excluded_fraction": 0.11741122775607639
+    },
+    {
+      "input": "frame_001455_train.jpg",
+      "source_frame": 1455,
+      "cli_output": "frame_00020.png",
+      "excluded_fraction": 0.09953131781684028
+    },
+    {
+      "input": "frame_001467_eval.jpg",
+      "source_frame": 1467,
+      "cli_output": "frame_00021.png",
+      "excluded_fraction": 0.07802870008680556
+    },
+    {
+      "input": "frame_001473_train.jpg",
+      "source_frame": 1473,
+      "cli_output": "frame_00022.png",
+      "excluded_fraction": 0.05051764594184028
+    },
+    {
+      "input": "frame_001482_train.jpg",
+      "source_frame": 1482,
+      "cli_output": "frame_00023.png",
+      "excluded_fraction": 0.05930704752604166
+    }
+  ]
+}

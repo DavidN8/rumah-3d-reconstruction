@@ -1,0 +1,8 @@
+import fs from 'node:fs/promises';import path from 'node:path';import {createRequire} from 'node:module';import {fileURLToPath} from 'node:url';
+const W=path.join(path.dirname(fileURLToPath(import.meta.url)),'poisson-pilot'),require=createRequire(path.resolve(W,'../../../mobile-20261029/package.json')),{MeshoptSimplifier:S}=require('meshoptimizer');await S.ready;
+async function array(name,T){const b=await fs.readFile(path.join(W,name+'.bin'));return new T(b.buffer,b.byteOffset,b.byteLength/T.BYTES_PER_ELEMENT);}
+const [position,normal,indices]=await Promise.all([array('position',Float32Array),array('normal',Float32Array),array('indices',Uint32Array)]);
+const [simple,error]=S.simplify(indices,position,3,1_500_000,.0005,['LockBorder']);const [remap,count]=S.compactMesh(simple);
+function compact(a){const out=new Float32Array(count*3);for(let old=0;old<remap.length;old++)if(remap[old]!==0xffffffff)out.set(a.subarray(old*3,old*3+3),remap[old]*3);return out;}
+for(const [name,data] of [['compact-position',compact(position)],['compact-normal',compact(normal)],['compact-indices',simple]]){const file=path.join(W,name+'.bin');await fs.writeFile(file,new Uint8Array(data.buffer,data.byteOffset,data.byteLength),{flag:'wx'});}
+const report={inputFaces:indices.length/3,outputFaces:simple.length/3,vertices:count,meshoptRelativeError:error,maximumAllowedRelativeError:.0005,lockedBoundary:true,heightCut:false,sourceModified:false,status:'local geometry preparation, requires visual acceptance'};await fs.writeFile(path.join(W,'simplification-audit.json'),JSON.stringify(report,null,2),{flag:'wx'});console.log(JSON.stringify(report));

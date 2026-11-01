@@ -1,0 +1,675 @@
+{
+  "prepared_date": "2026-10-27",
+  "timezone": "Asia/Bangkok",
+  "records": [
+    {
+      "id": "S01",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\analysis\\fixed-verification.json",
+      "file": "records/S01-fixed-verification.json",
+      "bytes": 15840,
+      "sha256": "d3c0fa797bf06b2fa32c4d439408c65f25852877bc508644a9d1ed3b5be23d63"
+    },
+    {
+      "id": "S02",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\exports\\merge-report.json",
+      "file": "records/S02-merge-report.json",
+      "bytes": 7025,
+      "sha256": "c20676c988607b095a57bcb3a1b3edc30344d49f2c864151e7c23d5d168ebfde"
+    },
+    {
+      "id": "S03",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\analysis\\fixed-transforms.json",
+      "file": "records/S03-fixed-transforms.json",
+      "bytes": 5425,
+      "sha256": "f8caa24b71df8b4854af83ad07ab7e3e64959c59ae9868741feef26dcebdeda9"
+    },
+    {
+      "id": "S04",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\analysis\\fixed-geometry-check.json",
+      "file": "records/S04-fixed-geometry-check.json",
+      "bytes": 2106,
+      "sha256": "5b84e5b4b62af5dfe5d92b8c13e8121a41f311a6d9533646eca589b3475bbe87"
+    },
+    {
+      "id": "S05",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\analysis\\fixed-controls-check.json",
+      "file": "records/S05-fixed-controls-check.json",
+      "bytes": 7880,
+      "sha256": "b1639529d1a0db162028575307a7b6db500afe05db0b24dfcd2d537a01d91af6"
+    },
+    {
+      "id": "S06",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\analysis\\fixed-rebuild-check.json",
+      "file": "records/S06-fixed-rebuild-check.json",
+      "bytes": 198,
+      "sha256": "6eea78729a57999ed83cd11a9fbfba6d8737de261c67bef5f327304246105714"
+    },
+    {
+      "id": "S07",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\analysis\\missing-mesh-diagnosis\\findings.json",
+      "file": "records/S07-findings.json",
+      "bytes": 1244,
+      "sha256": "d5fe1ca101ab937159a4a8a1c4a8e7fe88c14ca8457b4e3dd74f158981b6b2b8"
+    },
+    {
+      "id": "S08",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\analysis\\missing-mesh-diagnosis\\render-info.json",
+      "file": "records/S08-render-info.json",
+      "bytes": 271,
+      "sha256": "f457fd7f491d1b5a402d85917c1e858fe71d78cde577dab601bef1cca47c17ed"
+    },
+    {
+      "id": "S09",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\analysis\\floor-measurements.json",
+      "file": "records/S09-floor-measurements.json",
+      "bytes": 33056,
+      "sha256": "078b53cfc1c359b685a74ffbe8c2941f5134b2db0a3831763c4cff4623912e8f"
+    },
+    {
+      "id": "S10",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\analysis\\metric-scales.json",
+      "file": "records/S10-metric-scales.json",
+      "bytes": 14247,
+      "sha256": "8f11844f477bb9ea3ff84ada3c71ce7d64c753d8fc29c65105f8712b63eaf37f"
+    },
+    {
+      "id": "S11",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\analysis\\bridge-dense-fit.json",
+      "file": "records/S11-bridge-dense-fit.json",
+      "bytes": 957,
+      "sha256": "06400c3d9fdc67c3407ad303f5e07176a830596900dc2b29506405bee808853c"
+    },
+    {
+      "id": "S12",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\IPHONE_RECONSTRUCTION_REPORT.md",
+      "file": "records/S12-IPHONE_RECONSTRUCTION_REPORT.md",
+      "bytes": 12156,
+      "sha256": "ed993968dccf5bdd44a40de4a5eb6389e690286bdc43fb415cd2222df349360a"
+    },
+    {
+      "id": "S13",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\backups\\before-fix-20261027\\model-merge.json",
+      "file": "records/S13-model-merge.json",
+      "bytes": 1238,
+      "sha256": "5e0ae13fed89529479670aed3d25d82b93fdaced556309c9efcc71d1da8f4f3a"
+    },
+    {
+      "id": "S14",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\room-models\\README.md",
+      "file": "records/S14-README.md",
+      "bytes": 7049,
+      "sha256": "9f2bbfef892b4e8211fc8b5a3331a2c1d7949f496f67a82baf9d632a1a1979fc"
+    },
+    {
+      "id": "S15",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\room-models\\cleanup-report.json",
+      "file": "records/S15-cleanup-report.json",
+      "bytes": 11343,
+      "sha256": "a55b351d03bd9a3a62e6c9a844bbb28099e7326ba215629932db67a443c12e81"
+    },
+    {
+      "id": "S16",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\room-models\\manifest.json",
+      "file": "records/S16-manifest.json",
+      "bytes": 1171,
+      "sha256": "164bfbcb1a0278ac6f91e3a885d517c2b38c6268ef271168e41706ca01eb2166"
+    },
+    {
+      "id": "S17",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261019_095800\\high-quality\\reconstruction-report.json",
+      "file": "records/S17-reconstruction-report.json",
+      "bytes": 21994,
+      "sha256": "c0ceab3e31a10b76a24286738d1e30c150316ec45ece77605082730525aa7fda"
+    },
+    {
+      "id": "S18",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261019_095800\\high-quality\\selection.json",
+      "file": "records/S18-selection.json",
+      "bytes": 738,
+      "sha256": "95fe92bfd14b312ed3d9dd8144b2ed35c9151f9b4d2dbad902910d5115579636"
+    },
+    {
+      "id": "S19",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\RECONSTRUCTION_HANDOFF_2026-10-24.md",
+      "file": "records/S19-RECONSTRUCTION_HANDOFF_2026-10-24.md",
+      "bytes": 33987,
+      "sha256": "21b9b97cb832d4ee4ee10d3d75c705ecff516350a622ad5d7556db14d6e948d9"
+    },
+    {
+      "id": "S20",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261019_VID_2445\\analysis\\native-camera-kitchen-status.json",
+      "file": "records/S20-native-camera-kitchen-status.json",
+      "bytes": 1492,
+      "sha256": "a7d3039e73a45a33c37349277a083538f19cac950d2508a4817d5caa01871802"
+    },
+    {
+      "id": "S21",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261019_VID_2445\\training\\native-camera-kitchen-034\\config.json",
+      "file": "records/S21-config.json",
+      "bytes": 8615,
+      "sha256": "26571f568d978e549654e58b9e0b04c348a0d83d2ca2ae5afba9dd8470cbf6db"
+    },
+    {
+      "id": "S22",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261019_VID_2445\\dataset-native-camera-kitchen-034\\ready.json",
+      "file": "records/S22-ready.json",
+      "bytes": 1806,
+      "sha256": "321df0bc8a0fa3742336994b0a4e548200ff9236901f9145d7fc8bf2571f8eb8"
+    },
+    {
+      "id": "S23",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261019_VID_2445\\dataset-native-camera-kitchen-034\\geometry-plan.json",
+      "file": "records/S23-geometry-plan.json",
+      "bytes": 63011,
+      "sha256": "d0893f61aaa95f06f591a594b00f7f9ee2644bba6dade803575401c6717a01a2"
+    },
+    {
+      "id": "S24",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261019_VID_2445\\analysis\\034-mesh-photo-comparison\\034-diagnostic.json",
+      "file": "records/S24-034-diagnostic.json",
+      "bytes": 2873,
+      "sha256": "7cebb96383cf4924c6f93b6f1be324227624444f81495ff66f0a7879b383d911"
+    },
+    {
+      "id": "S25",
+      "original": "C:\\Users\\bombe\\.codex\\attachments\\77079978-8020-4799-89e0-8452cb804b49\\Pasted text.txt",
+      "file": "records/S25-Pasted text.txt",
+      "bytes": 14871,
+      "sha256": "c82d7da69e971fa36556280d9c1357acd09a9713146f63c7e35f3f20896ad39e"
+    },
+    {
+      "id": "S26",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\analysis\\frames-meta.json",
+      "file": "records/S26-frames-meta.json",
+      "bytes": 66348,
+      "sha256": "3294b8a185e56777645b01c2d7ee57b47d5e4caa0f56ba01a92d4477dfc3a625"
+    },
+    {
+      "id": "S27",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\analysis\\metric-bridge\\provenance.json",
+      "file": "records/S27-provenance.json",
+      "bytes": 805,
+      "sha256": "5c22420ace7a3aed135b8f637f601d6fce9fa378320682810d8fe3b63b797258"
+    },
+    {
+      "id": "S28",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\colmap-gpu\\merged\\sparse\\0\\FRAME.json",
+      "file": "records/S28-FRAME.json",
+      "bytes": 307,
+      "sha256": "b18555bb845275d474bb47b6860df7218b42c2d27ab66e37cdd0325e86bc4e28"
+    }
+  ],
+  "images": [
+    {
+      "id": "F01",
+      "file": "images/F01-user-reported-iphone.png",
+      "original": "C:\\Users\\bombe\\AppData\\Local\\Temp\\codex-clipboard-480a054f-69a4-459a-a2fc-670b1a1f379e.png",
+      "dimensions": [
+        838,
+        651
+      ],
+      "bytes": 351016,
+      "sha256": "90d5cf2c33d6de33ec58acb7505289af6b8361e9b7969aa3c4452738b23cf3e0",
+      "caption": "User supplied screenshot of defective iPhone delivery; view differs from controlled ablation."
+    },
+    {
+      "id": "F02",
+      "file": "images/F02-current-iphone.png",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\analysis\\fixed-isometric.png",
+      "dimensions": [
+        1440,
+        1000
+      ],
+      "bytes": 671277,
+      "sha256": "d323b91c411d39b5c923bf3c8b3ab4e7af1e81864c51fc6f4882067c33fd909c",
+      "caption": "Current surface-preserving iPhone model; actual WebGL browser screenshot."
+    },
+    {
+      "id": "F03",
+      "file": "images/F03-samsung-accepted.png",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\room-models\\cleanup-preview.png",
+      "dimensions": [
+        1265,
+        712
+      ],
+      "bytes": 83432,
+      "sha256": "754927e828fb747f2b39d48e0719621f3a820db68781c09220839f7c233aef74",
+      "caption": "Saved browser screenshot of accepted cleaned Samsung bedroom/bathroom dollhouse release."
+    },
+    {
+      "id": "F04",
+      "file": "images/F04-codex-nikon-034.png",
+      "original": "C:\\Users\\bombe\\AppData\\Local\\Temp\\codex-clipboard-4c6bacbe-18a5-4ae7-b9fa-b1287a7c7402.png",
+      "dimensions": [
+        2559,
+        1468
+      ],
+      "bytes": 1005331,
+      "sha256": "0f572436ca48a2b637bcc1ad3a5fe960ef601a1bed3da232d1c62398e23144f2",
+      "caption": "User supplied browser screenshot from Codex native-camera-kitchen-034; not another agent's later model."
+    },
+    {
+      "id": "F05",
+      "file": "images/F05-codex-nikon-source-comparison.jpg",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261019_VID_2445\\review\\Kitchen-preview.jpg",
+      "dimensions": [
+        1890,
+        620
+      ],
+      "bytes": 277764,
+      "sha256": "616d99f38e897cd34feb275db7ce57a44f891811ce8e6d8ce2b725db45e1086f",
+      "caption": "Historical Codex 24k-step model/source contact sheet. Source first, mesh second in each pair. Saved offline renderer output, not a fresh browser test."
+    },
+    {
+      "id": "F06",
+      "file": "images/F06-iphone-cleanup-controlled.png",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\analysis\\missing-mesh-diagnosis\\comparison.png",
+      "dimensions": [
+        1940,
+        770
+      ],
+      "bytes": 534856,
+      "sha256": "09fa5ff5fae5271e3d2b2cb7014a994702a82e9ee6494abefd0ed0845d06422e",
+      "caption": "Same camera, transform and roof cut. Compact untrimmed left; previous harmful cleanup right."
+    },
+    {
+      "id": "F07",
+      "file": "images/F07-ablation-original.png",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\analysis\\missing-mesh-diagnosis\\01-original-untrimmed.png",
+      "dimensions": [
+        1400,
+        1100
+      ],
+      "bytes": 450150,
+      "sha256": "24c3642de75447675a619b11ff14ec71b3d092f66f3dc37d8188bfc722e539c2",
+      "caption": "11,641,867 original source triangles, corrected transform only."
+    },
+    {
+      "id": "F08",
+      "file": "images/F08-ablation-compact.png",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\analysis\\missing-mesh-diagnosis\\02-compact-untrimmed.png",
+      "dimensions": [
+        1400,
+        1100
+      ],
+      "bytes": 424623,
+      "sha256": "fd985185a72e70d1ff39fde6424324dd5e0309021276806834649abc9c69ba6c",
+      "caption": "1,082,185 compact triangles, before automatic export cuts."
+    },
+    {
+      "id": "F09",
+      "file": "images/F09-ablation-trimmed.png",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\analysis\\missing-mesh-diagnosis\\03-final-no-display-floor-clip.png",
+      "dimensions": [
+        1400,
+        1100
+      ],
+      "bytes": 408405,
+      "sha256": "3b5022d76148732c09bc01e2aa8d0b3d8ce5954c4268863b28992529500b691b",
+      "caption": "957,841 previous delivery triangles; no display floor clipping."
+    },
+    {
+      "id": "F10",
+      "file": "images/F10-ablation-trimmed-floorclip.png",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\analysis\\missing-mesh-diagnosis\\04-final-with-display-floor-clip.png",
+      "dimensions": [
+        1400,
+        1100
+      ],
+      "bytes": 408414,
+      "sha256": "f8498075259c6a741304aa50017d09767ff25aad2dd5a21000563139bc1fb12a",
+      "caption": "Same previous delivery, with the old display floor clipping."
+    },
+    {
+      "id": "F11",
+      "file": "images/F11-iphone-floor-and-poses.png",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\analysis\\fixed-elevation-and-floorplan.png",
+      "dimensions": [
+        2121,
+        1593
+      ],
+      "bytes": 932234,
+      "sha256": "b8882b8a9f2215947785b129a1493a03a696050e20c47315394d2fc3ff22deef",
+      "caption": "Written mesh and 501 cameras in corrected frame. Units approximate; fitted local floors do not prove the entire reconstruction is accurate."
+    },
+    {
+      "id": "F12",
+      "file": "images/F12-iphone-bridge.jpg",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\analysis\\bridge-loftr.jpg",
+      "dimensions": [
+        1080,
+        960
+      ],
+      "bytes": 126929,
+      "sha256": "990072fee95d2f5ce6d3fe457f403b20f6a061cbc75e06355661ae9f5943792b",
+      "caption": "18 unique matches clustered on switch plate; weak support for global scale and rotation."
+    },
+    {
+      "id": "F13",
+      "file": "images/F13-samsung-source-bedroom.jpg",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261019_095800\\high-quality\\bedroom\\images\\f_001130.jpg",
+      "dimensions": [
+        2160,
+        3840
+      ],
+      "bytes": 287444,
+      "sha256": "a6920738df3e0b9be03ec0ec72e2f282b3170fead4aaf106ffef87c10f771323",
+      "caption": "Actual Samsung bedroom source frame at 18.834889 seconds; historical dataset."
+    },
+    {
+      "id": "F14",
+      "file": "images/F14-samsung-source-bathroom.jpg",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261019_095800\\high-quality\\bathroom\\images\\f_006654.jpg",
+      "dimensions": [
+        2160,
+        3840
+      ],
+      "bytes": 262070,
+      "sha256": "c434670a591cc37694fcb88e1a5e0eac192338c0c5ccbab3fba9f4540e8d169f",
+      "caption": "Actual Samsung bathroom source frame at 111.009489 seconds; historical dataset."
+    },
+    {
+      "id": "F15",
+      "file": "images/F15-iphone-view-01.png",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\analysis\\fixed-renders\\01-compare.png",
+      "dimensions": [
+        1440,
+        1000
+      ],
+      "bytes": 759851,
+      "sha256": "7d05aff47876dff61521592b86f72f5217f87ed61e6ac870bcb5a5db8c135be8",
+      "caption": "Current iPhone recorded view 1; WebGL model left, original source photograph right."
+    },
+    {
+      "id": "F16",
+      "file": "images/F16-iphone-view-02.png",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\analysis\\fixed-renders\\02-compare.png",
+      "dimensions": [
+        1440,
+        1000
+      ],
+      "bytes": 611227,
+      "sha256": "9aec75cbf9f1b0d932407358de2b5cb72361015479af46f216ef3ee4160c3374",
+      "caption": "Current iPhone recorded view 2; WebGL model left, original source photograph right."
+    },
+    {
+      "id": "F17",
+      "file": "images/F17-iphone-view-03.png",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\analysis\\fixed-renders\\03-compare.png",
+      "dimensions": [
+        1440,
+        1000
+      ],
+      "bytes": 678782,
+      "sha256": "a2abe8167b3ba14903d588ed09fd95e72265be368d6fe1379c30c6c4932275bd",
+      "caption": "Current iPhone recorded view 3; WebGL model left, original source photograph right."
+    },
+    {
+      "id": "F18",
+      "file": "images/F18-iphone-view-04.png",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\analysis\\fixed-renders\\04-compare.png",
+      "dimensions": [
+        1440,
+        1000
+      ],
+      "bytes": 700339,
+      "sha256": "601ecdce02f5ffe35275ba636e9fa2a62abff2b2adc55aa4330da476c478681d",
+      "caption": "Current iPhone recorded view 4; WebGL model left, original source photograph right."
+    },
+    {
+      "id": "F19",
+      "file": "images/F19-iphone-view-05.png",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\analysis\\fixed-renders\\05-compare.png",
+      "dimensions": [
+        1440,
+        1000
+      ],
+      "bytes": 713750,
+      "sha256": "a1d7ac19faac2b9ceb7c19c5c29e23d8d49c79b7547eabf20628e51f573bf3c9",
+      "caption": "Current iPhone recorded view 5; WebGL model left, original source photograph right."
+    },
+    {
+      "id": "F20",
+      "file": "images/F20-iphone-view-06.png",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\analysis\\fixed-renders\\06-compare.png",
+      "dimensions": [
+        1440,
+        1000
+      ],
+      "bytes": 806425,
+      "sha256": "50d4d2223879b8cefafc25ea0fae848782cdd60e303ae687269dc2ef5fa1977e",
+      "caption": "Current iPhone recorded view 6; WebGL model left, original source photograph right."
+    },
+    {
+      "id": "F21",
+      "file": "images/F21-iphone-view-07.png",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\analysis\\fixed-renders\\07-compare.png",
+      "dimensions": [
+        1440,
+        1000
+      ],
+      "bytes": 596658,
+      "sha256": "0c699930f59354e14fff6bae6d295d8b549f187e865341db705c41c91c723569",
+      "caption": "Current iPhone recorded view 7; WebGL model left, original source photograph right."
+    },
+    {
+      "id": "F22",
+      "file": "images/F22-iphone-view-08.png",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\analysis\\fixed-renders\\08-compare.png",
+      "dimensions": [
+        1440,
+        1000
+      ],
+      "bytes": 814869,
+      "sha256": "75dcac0581b8e0710088df04daead88e333b25157cb6b67b7144b77f3edbeba1",
+      "caption": "Current iPhone recorded view 8; WebGL model left, original source photograph right."
+    }
+  ],
+  "models": [
+    {
+      "id": "IP-current",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\exports\\iphone-full-room.glb",
+      "bytes": 60834340,
+      "sha256": "4693a1e608b898383ffe6365e9fc3c5193874cdad90c7533a24e0ac3ad5c2afe",
+      "triangles": 1082185,
+      "binary_in_reference_pack": false
+    },
+    {
+      "id": "IP-before-my-cuts",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\backups\\before-surface-preservation-20261027\\exports\\iphone-full-room.glb",
+      "bytes": 55782052,
+      "sha256": "090626bc4ddad428449a4ab1158417461c1976f6f16760c3709c009c4f55b32d",
+      "triangles": 957841,
+      "binary_in_reference_pack": false
+    },
+    {
+      "id": "NI-Codex-034-raw",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261019_VID_2445\\exports-native-camera-kitchen-034\\native-camera-kitchen.glb",
+      "bytes": 41979020,
+      "sha256": "fc123e86a9160448ebfb0f2af69a11c49385b690390546a80cb68afb341045d5",
+      "triangles": 576595,
+      "binary_in_reference_pack": false
+    },
+    {
+      "id": "NI-Codex-034-display",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261019_VID_2445\\exports-native-camera-kitchen-034\\native-camera-kitchen-preview.glb",
+      "bytes": 41979280,
+      "sha256": "b87af5856cee095e42100c3a55e981d81e242827a013c05c29f7c2b638220f5a",
+      "triangles": 576595,
+      "binary_in_reference_pack": false
+    },
+    {
+      "id": "SA-accepted-full",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261019_095800\\high-quality\\exports\\cleaned\\bedroom-bathroom-cleaned.glb",
+      "bytes": 425821116,
+      "sha256": "c65f0f304c97216c858056446b2a0faa80ce81fc7bed47715e071dcfeab5e1f3",
+      "triangles": 9080740,
+      "binary_in_reference_pack": false
+    },
+    {
+      "id": "SA-accepted-dollhouse",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261019_095800\\high-quality\\exports\\cleaned\\bedroom-bathroom-cleaned-dollhouse.glb",
+      "bytes": 419817188,
+      "sha256": "199fea0205148b122d77d033615ad7e4a1d6231a3f7e5dad7bdcaa3c90479e92",
+      "triangles": 8569710,
+      "binary_in_reference_pack": false
+    }
+  ],
+  "implementation": [
+    {
+      "file": "implementation/05_seed_cloud.py",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\scripts\\05_seed_cloud.py",
+      "sha256": "c529f3d03bb5e5fb89e041eff2fe1ece4a63b0df0efda408aeef7514fe8778a1"
+    },
+    {
+      "file": "implementation/07_train_zone.py",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\scripts\\07_train_zone.py",
+      "sha256": "41fcb41b6244f3e831dc240474872aec442c839233c6b78465d41874348356f1"
+    },
+    {
+      "file": "implementation/08_mesh_zone.py",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\scripts\\08_mesh_zone.py",
+      "sha256": "9998bf2dd8f5a9d20ecad16a73a04b34062d107c094e674ad5481a351ecbac73"
+    },
+    {
+      "file": "implementation/09_merge_export.py",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\scripts\\09_merge_export.py",
+      "sha256": "7b757ef09c11d79a0c055b1aec500bc6bfbe1c3d29054f6bf52d40ad0b3b4875"
+    },
+    {
+      "file": "implementation/11_gate2_verify.py",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\scripts\\11_gate2_verify.py",
+      "sha256": "108b8609343f89c83cd44e5ce26800da00843fa7d1169d320ef877a0c67ff94e"
+    },
+    {
+      "file": "implementation/12_merge_models.py",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\scripts\\12_merge_models.py",
+      "sha256": "760b1f3b1dbdd6716756df61f24e8382500eb7cfd03f0f0b30744a37c1457c73"
+    },
+    {
+      "file": "implementation/13_diagnose_bridge.py",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\scripts\\13_diagnose_bridge.py",
+      "sha256": "910c87347b6d280dbdc77c52fc7a242c2d990483445723e04cfe008db724b801"
+    },
+    {
+      "file": "implementation/14_metric_bridge.py",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\scripts\\14_metric_bridge.py",
+      "sha256": "abfc93f1fd712eac4f7e3e5c397538cd26b243f0ec976c8c72f971a0176bd3c7"
+    },
+    {
+      "file": "implementation/15_dense_bridge.py",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\scripts\\15_dense_bridge.py",
+      "sha256": "edefaff626bbf8dce3863898ce9779df98902ffc9afdf7c108404d3f3c502533"
+    },
+    {
+      "file": "implementation/16_solve_frame.py",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\scripts\\16_solve_frame.py",
+      "sha256": "a8e9f2f51551f70b28303f27856b6dfe08eb613dd0b82eb81b99c0b0c61d00cb"
+    },
+    {
+      "file": "implementation/17_track_bridge.py",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\scripts\\17_track_bridge.py",
+      "sha256": "cf4b9e1e86d6bb57bbda19ed7905b20ee2384f13ba944c0937b43728a2bfa101"
+    },
+    {
+      "file": "implementation/18_measure_planes.py",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\scripts\\18_measure_planes.py",
+      "sha256": "3b19416b69c7bf050883568ced9742adc2b9e1b1a1ddccf93caa2e4da76a4186"
+    },
+    {
+      "file": "implementation/19_verify_geometry.py",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\scripts\\19_verify_geometry.py",
+      "sha256": "4919e778b9999f0508e328ac5ef917fa28d37b9cc12a3007cac399d0e127794b"
+    },
+    {
+      "file": "implementation/reconstruction_frame.py",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\scripts\\reconstruction_frame.py",
+      "sha256": "7fbbcba456b335e0180c107e9aebd3c499e768bdce90938846b3003337bd4200"
+    },
+    {
+      "file": "implementation/doorway_repair.py",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\scripts\\doorway_repair.py",
+      "sha256": "79618c9d4e484b3985ce42f910e2d8646aa31255fccc35cdf6bc0a44a5716f1b"
+    },
+    {
+      "file": "implementation/room-viewer.js",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\viewer-src\\room-viewer.js",
+      "sha256": "df6e15c34083a434bd0f83a485251fb7e1735ee601c330f383b00dd4c41df57c"
+    },
+    {
+      "file": "implementation/build-viewer.mjs",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\viewer-src\\build-viewer.mjs",
+      "sha256": "5f0e38b53f64fc6f8ae1495f2dcad7fdd10cefc52365af68bb339062288f4eaf"
+    },
+    {
+      "file": "implementation/test-controls.mjs",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\viewer-src\\test-controls.mjs",
+      "sha256": "f0ce5d6b41e0d5e360ddcd16e06611466db2a3732b8fbf4f50cecb7f9c63b2da"
+    },
+    {
+      "file": "implementation/verify-viewer.mjs",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\viewer-src\\verify-viewer.mjs",
+      "sha256": "02b31bd584ab4d70b3aa4b5ca044d586c76426f4c59aa424bb6d28d317eb8cda"
+    },
+    {
+      "file": "implementation/diagnose-missing.mjs",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\viewer-src\\diagnose-missing.mjs",
+      "sha256": "4e6f38ad82b8cfbc477f7999eab3088ef4ee0ab9511357f842bde3da0198f493"
+    },
+    {
+      "file": "implementation/iphone-zone-0-config.json",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\training\\zone-0\\config.json",
+      "sha256": "14dd727622959c966e0ba4b2e012bb4535ecdcbb0622eab58b0b2473f4b79c07"
+    },
+    {
+      "file": "implementation/iphone-zone-1-config.json",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\training\\zone-1\\config.json",
+      "sha256": "57d9f6f97d75a0532acbb5e74f63e1f3a5c0bda8741e38c7ce6c7fbe4e12a129"
+    },
+    {
+      "file": "implementation/iphone-zone-2-config.json",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\training\\zone-2\\config.json",
+      "sha256": "7cbfd5e8e01886035f19e58d6765214e3fac079f8cf2f5a3ee8115d90c985031"
+    },
+    {
+      "file": "implementation/iphone-zone-0-mesh-command.json",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\analysis\\logs\\zone-0-mesh-optimized-m12.json",
+      "sha256": "67b6fc03bbd7ed67bb3bf7b83ac5f275556b525d826e894de44d4d1bd0b80f57"
+    },
+    {
+      "file": "implementation/iphone-zone-1-mesh-command.json",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\analysis\\logs\\zone-1-mesh-optimized-m12.json",
+      "sha256": "8b249c4332abf07d4aa4e2d59c4a1a30b13c596ed5b0f6ca7d214885d7bae243"
+    },
+    {
+      "file": "implementation/iphone-zone-2-mesh-command.json",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\analysis\\logs\\zone-2-mesh-optimized-m12.json",
+      "sha256": "8797ce936378570bf220ecfb314739a1781591490013effb94a29b5b60b41d4f"
+    },
+    {
+      "file": "implementation/samsung-run_high_quality.py",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261019_095800\\runtime\\run_high_quality.py",
+      "sha256": "8daf584a6fea8429833fb2de9def0ce38abfe977c615ac3de335e624bec1cb4a"
+    },
+    {
+      "file": "implementation/samsung-bedroom-mesh-command.json",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261019_095800\\high-quality\\logs\\bedroom-mesh.json",
+      "sha256": "b044281c1aaea2c1c6a79e29389b324b1df08ab7791a3272449a48456d4baf9b"
+    },
+    {
+      "file": "implementation/samsung-bedroom-depth-train-command.json",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261019_095800\\high-quality\\logs\\bedroom-depth-train.json",
+      "sha256": "1d15d4c790e8a739be5438fe42bf42a80828c16401acc1a48389713384aafc89"
+    },
+    {
+      "file": "implementation/samsung-bedroom-depth-config.json",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261019_095800\\high-quality\\training\\bedroom-depth\\config.json",
+      "sha256": "952654cf4a03f1d7c6f321b6db691e229cbe0c85cb960dc7b42300a93ecd9893"
+    },
+    {
+      "file": "implementation/samsung-bathroom-config.json",
+      "original": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261019_095800\\high-quality\\training\\bathroom\\config.json",
+      "sha256": "6b991f37272d44c92839b3b0d44b46a2a9bbb166c6de6cca1d0381fcb05ac353"
+    }
+  ]
+}

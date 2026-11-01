@@ -1,0 +1,59 @@
+{
+  "zones": [
+    {
+      "zone": "zone-0",
+      "triangles": 458844,
+      "vertices": 439259,
+      "rotation_determinant": 1.0000000000000007,
+      "fitted_floor_Y": -2.220446049250313e-16,
+      "floor_fit_rms_metres": 0.004416390353099027,
+      "dominant_upper_plane_height_metres_at_mean_footprint": 2.2768866933001157,
+      "upper_shell_Y_p99_metres": 2.2438108921051025,
+      "camera_height_metres_p10_p50_p90": [
+        1.3493877989409384,
+        1.411952049937921,
+        1.7718965513938887
+      ],
+      "projection_invariance_error_pixels": 3.199505580661611e-10
+    },
+    {
+      "zone": "zone-1",
+      "triangles": 440481,
+      "vertices": 386648,
+      "rotation_determinant": 1.0000000000000002,
+      "fitted_floor_Y": 0.0,
+      "floor_fit_rms_metres": 0.009804208979746192,
+      "dominant_upper_plane_height_metres_at_mean_footprint": 2.4161351408816696,
+      "upper_shell_Y_p99_metres": 2.8925468921661377,
+      "camera_height_metres_p10_p50_p90": [
+        1.4589631371608145,
+        1.4999999999999998,
+        1.7512962693824297
+      ],
+      "projection_invariance_error_pixels": 7.969924490607052e-10
+    },
+    {
+      "zone": "zone-2",
+      "triangles": 182860,
+      "vertices": 192462,
+      "rotation_determinant": 1.0000000000000004,
+      "fitted_floor_Y": -2.7755575615628914e-17,
+      "floor_fit_rms_metres": 0.008801958757306763,
+      "dominant_upper_plane_height_metres_at_mean_footprint": 1.9595303233989771,
+      "upper_shell_Y_p99_metres": 2.167712450027466,
+      "camera_height_metres_p10_p50_p90": [
+        0.8764858611292669,
+        1.0551977861513409,
+        1.4692092530622796
+      ],
+      "projection_invariance_error_pixels": 2.1268970098603307e-10
+    }
+  ],
+  "projection_error_pixels_max": 7.969924490607052e-10,
+  "proper_rotations": true,
+  "nodes_have_no_frame_wrappers": true,
+  "triangles": 1082185,
+  "file_bytes": 60834340,
+  "size_and_triangle_gate": true,
+  "visual_quality_gate": "Not claimed: recorded views still expose holes and transient-object geometry."
+}

@@ -1,0 +1,27 @@
+{
+  "command": [
+    "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261019_095800\\runtime\\spirula\\bin\\spirula.exe",
+    "train",
+    "--resume",
+    "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261019_095800\\high-quality\\training\\bedroom\\step-000030000.ckpt",
+    "--data",
+    "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261019_095800\\high-quality\\bedroom-depth",
+    "--output-dir-prefix",
+    "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261019_095800\\high-quality\\training",
+    "--output-dir-name",
+    "bedroom-depth",
+    "--num-iterations",
+    "50000",
+    "--depth-supervision-weight",
+    "0.05",
+    "--disable-viewer",
+    "1",
+    "--keep-viewer-alive",
+    "0"
+  ],
+  "status": "complete",
+  "started_utc": "2026-10-19T06:23:46.057950+00:00",
+  "purpose": "Continue the original 30,000-step bedroom model with relative depth guidance, retaining its original geometry and appearance checkpoint for comparison.",
+  "exit_code": 0,
+  "elapsed_seconds": 1010.6847742999998
+}

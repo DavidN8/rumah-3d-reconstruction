@@ -1,0 +1,23 @@
+C:\Users\bombe\Documents\Codex\2026-10-27\files-pasted-by-the-user-system\work\osmo-clean-20261031\runtime\spirula-2026.10.30\spirula.exe sfm 2026.10.30 (6ad73ef) -- Structure from Motion for Spirula Studio
+
+Usage:
+  C:\Users\bombe\Documents\Codex\2026-10-27\files-pasted-by-the-user-system\work\osmo-clean-20261031\runtime\spirula-2026.10.30\spirula.exe sfm <command> [options]
+  C:\Users\bombe\Documents\Codex\2026-10-27\files-pasted-by-the-user-system\work\osmo-clean-20261031\runtime\spirula-2026.10.30\spirula.exe sfm <command> --help
+
+Commands:
+  auto      reconstruct a sparse model from a directory of images, in one command
+  extract   detect features in an image or a directory of images
+  match     match and geometrically verify a directory of feature files
+  map       incremental reconstruction: matches to a COLMAP sparse model
+  merge     fuse the models of a fragmented capture into fewer
+  ba        bundle-adjust a sparse model
+
+Options:
+  -h, --help      Show this help and exit.
+  -V, --version   Show the version and exit.
+
+Every stage reads and writes COLMAP's formats, so any one of them can be
+replaced by COLMAP's equivalent to bisect a failure. `auto` runs all of them.
+
+Environment:
+  SS_SFM_MAP_PROF=1   print a per-stage breakdown of the mapper's time

@@ -1,0 +1,17 @@
+{
+  "scope": "Manual left-wall ROI in views5/6, neutral source pixels, blue excess>30overR and>5overG. Computed from saved600px QA sheet JPEG; approximate foreground-color diagnostic, not segmentation ground truth.",
+  "views": [
+    {
+      "view_index": 5,
+      "neutral_source_wall_pixels": 93077,
+      "nogain_blue_outlier_pixels": 151,
+      "gain_blue_outlier_pixels": 133
+    },
+    {
+      "view_index": 6,
+      "neutral_source_wall_pixels": 125086,
+      "nogain_blue_outlier_pixels": 2012,
+      "gain_blue_outlier_pixels": 2059
+    }
+  ]
+}

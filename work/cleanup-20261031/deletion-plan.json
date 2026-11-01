@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-31",
+  "authorization": "User requested deletion of unused Nikon and Samsung work, keeping iPhone; asked agent to review other project exports",
+  "projectRoot": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare",
+  "protected": [
+    "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE",
+    "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261019_095800\\runtime"
+  ],
+  "targets": [
+    {
+      "path": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261019_VID_2445",
+      "reason": "Retired Nikon source footage, datasets, training and exports"
+    },
+    {
+      "path": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261019_095800\\bathroom-run",
+      "reason": "Retired Samsung data; shared runtime excluded"
+    },
+    {
+      "path": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261019_095800\\bedroom-run",
+      "reason": "Retired Samsung data; shared runtime excluded"
+    },
+    {
+      "path": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261019_095800\\camera-alignment",
+      "reason": "Retired Samsung data; shared runtime excluded"
+    },
+    {
+      "path": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261019_095800\\connected-loma",
+      "reason": "Retired Samsung data; shared runtime excluded"
+    },
+    {
+      "path": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261019_095800\\connected-loma-fast",
+      "reason": "Retired Samsung data; shared runtime excluded"
+    },
+    {
+      "path": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261019_095800\\connected-run",
+      "reason": "Retired Samsung data; shared runtime excluded"
+    },
+    {
+      "path": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261019_095800\\cut-bridge",
+      "reason": "Retired Samsung data; shared runtime excluded"
+    },
+    {
+      "path": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261019_095800\\cut-bridge-dense",
+      "reason": "Retired Samsung data; shared runtime excluded"
+    },
+    {
+      "path": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261019_095800\\cut-enhanced",
+      "reason": "Retired Samsung data; shared runtime excluded"
+    },
+    {
+      "path": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261019_095800\\cut-joined",
+      "reason": "Retired Samsung data; shared runtime excluded"
+    },
+    {
+      "path": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261019_095800\\cut-run",
+      "reason": "Retired Samsung data; shared runtime excluded"
+    },
+    {
+      "path": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261019_095800\\full-run",
+      "reason": "Retired Samsung data; shared runtime excluded"
+    },
+    {
+      "path": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261019_095800\\high-quality",
+      "reason": "Retired Samsung data; shared runtime excluded"
+    },
+    {
+      "path": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261019_095800\\learned-bridge",
+      "reason": "Retired Samsung data; shared runtime excluded"
+    },
+    {
+      "path": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261019_095800\\logs",
+      "reason": "Retired Samsung data; shared runtime excluded"
+    },
+    {
+      "path": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261019_095800\\review",
+      "reason": "Retired Samsung data; shared runtime excluded"
+    },
+    {
+      "path": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261019_095800\\20261019_095800-results.zip",
+      "reason": "Retired Samsung data; shared runtime excluded"
+    },
+    {
+      "path": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261019_095800\\20261019_095800.mp4",
+      "reason": "Retired Samsung data; shared runtime excluded"
+    },
+    {
+      "path": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\artifacts\\model-release-2026-10-19",
+      "reason": "Reviewed legacy Samsung export package, test copy or prepared viewer cache"
+    },
+    {
+      "path": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\artifacts\\model-release-2026-10-19-v2",
+      "reason": "Reviewed legacy Samsung export package, test copy or prepared viewer cache"
+    },
+    {
+      "path": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\artifacts\\single-model-release",
+      "reason": "Reviewed legacy Samsung export package, test copy or prepared viewer cache"
+    },
+    {
+      "path": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\artifacts\\portable-smoke",
+      "reason": "Reviewed legacy Samsung export package, test copy or prepared viewer cache"
+    },
+    {
+      "path": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\artifacts\\single-package-smoke",
+      "reason": "Reviewed legacy Samsung export package, test copy or prepared viewer cache"
+    },
+    {
+      "path": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\.roomscan-viewer\\site\\high-quality",
+      "reason": "Reviewed legacy Samsung export package, test copy or prepared viewer cache"
+    }
+  ],
+  "sharedRuntimeReason": "Current iPhone scripts 20_component_recovery.py and 14_metric_bridge.py reference the Samsung runtime at its existing path"
+}

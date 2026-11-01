@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fresh Osmo reconstruction review</title>
+<style>body{margin:0;background:#151b22;color:#e6edf3;font:16px system-ui}main{max-width:1350px;margin:auto;padding:20px}h1{font-size:24px}p{max-width:100ch;line-height:1.5;color:#b9c4d1}button,select{font:inherit;padding:10px;margin:3px;border:1px solid #65829a;background:#223241;color:white;border-radius:5px}button:disabled{opacity:.4}#view,#photo{width:min(600px,94vw);height:min(600px,94vw);background:black}#photo{object-fit:contain}.pair{display:flex;gap:12px;flex-wrap:wrap}figure{margin:8px 0}figcaption{padding:6px 0}#status{white-space:pre-wrap}</style>
+<script type="importmap">{"imports":{"three":"/three/build/three.module.js","three/addons/":"/three/examples/jsm/"}}</script>
+<main><h1>Fresh Osmo: matched camera review</h1>
+<p>The new reconstruction uses a fresh masked seed, native-resolution camera estimation and normal guidance. These are actual Gaussian renders, with no ceiling clipping or mesh conversion. The two evaluation timestamps were held out from Gaussian training; camera estimation uses the same video. Intermediate checkpoints are labelled and are not release candidates.</p>
+<button data-kind="preview">Open 5,000-step preview</button><button data-kind="preview15">Open 15,000-step preview</button><button data-kind="preview30">Open 30,000-step preview</button><button data-kind="visibility30">Open visibility experiment</button><button data-kind="bathDepth">Open explicit bathroom pilot</button><button data-kind="bathSog">Open packed bathroom pilot</button><button data-kind="native">Open rejected normals-only run</button><button data-kind="matched">Open rejected run at old comparison cameras</button><button data-kind="fullNative">Open full rebuild · final original PLY</button><button data-kind="fullSog">Open full rebuild · final packed SOG</button>
+<p id="status" role="status">Nothing loaded. Select a model to begin.</p>
+<button data-kind="explicit5">Open full explicit rebuild · 5,000 steps</button>
+<button data-kind="explicit20">Open full explicit rebuild · 20,000 steps</button>
+<label for="pose">Source camera</label> <select id="pose" disabled></select><button id="reset" disabled>Reset matched pose</button><button id="save" disabled>Save render PNG</button>
+<label><input id="radial" type="checkbox" disabled> Radial depth sorting</label> <label><input id="colour-direction" type="checkbox" checked disabled> View-dependent colour (SH2)</label>
+<div class="pair"><figure><figcaption>Calibrated source photograph (excluded regions black)</figcaption><img id="photo" alt="Matched source photograph"></figure><figure><figcaption id="caption">Selected native Gaussian</figcaption><div id="view"></div></figure></div>
+<p>Reload to release GPU resources before changing model. Full-source rendering is used here to compare packing fidelity. The public phone viewer has a separate rendering budget. Source photographs are a visual reference, not geometric ground truth.</p></main>
+<script type="module">
+for(const button of document.querySelectorAll('[data-kind]'))button.addEventListener('click',async()=>{for(const b of document.querySelectorAll('[data-kind]'))b.disabled=true;try{const review=await import('./clean-viewer.mjs');await review.open(button.dataset.kind);}catch(error){document.getElementById('status').textContent='Review failed: '+error.message;console.error(error);}});
+</script></html>

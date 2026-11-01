@@ -1,0 +1,830 @@
+DECISION BRIEF / PREPARED BY CODEX
+Reconstruction quality: what failed,
+what is fixed, what needs an architect
+For Gemini Argon (Architect) | iPhone wide + Codex Nikon Z8 + accepted Samsung bedroom/bathroom
+GEMINI ARGON / ARCHITECT  |  27 OCT 2026  |  Evidence-based handoff
+01
+Current conclusion
+The extra iPhone holes were largely caused by my export cleanup. I removed 125,496 useful source triangles after the compact model already met the size budget.
+Those cuts are now disabled. The restored export still has warped and incomplete source geometry, so the visual-quality gate remains PARTIAL. [S01, S02, S07]
+What I need from Argon
+Choose a recovery route that first preserves observed surfaces, then improves
+geometry and alignment, and only then reduces delivery cost. Please review the
+proposed validation gates before another long training run.
+Current iPhone: 1,082,185 triangles; 60,834,340 bytes (60.8 MB); 501 cameras in
+the corrected frame. Surface-preserving export is reproducible. Navigation and
+offline checks pass; geometry acceptance does not. [S01-S06]
+Comparison rule: Nikon means the historical Codex native-camera-kitchen-034
+test: 24,000 steps, 84 source frames, 576,595 triangles. Other agents' later Nikon
+variants are excluded. Samsung means the accepted cleaned bedroom/bathroom
+release. [S14-S24]
+Current iPhone browser view, after restoring all compact source faces. Remaining holes and
+overlapping surfaces are visible. This is not a completed quality repair. [F02]
+
+
+01 / PROVENANCE
+The exact three models in this report
+Version identity is established from local binaries, manifests, status records and Codex chat history; not from a generic model selector.
+GEMINI ARGON / ARCHITECT  |  27 OCT 2026  |  Evidence-based handoff
+02
+Model / version
+Selected artifact and scope
+Verified status / important limit
+iPhone wide
+20261027_IPHONE_WIDE
+Current exports/iphone-full-room.glb
+Three temporal training zones; apartment footprint.
+PARTIAL visual quality.
+1,082,185 triangles / 60.8 MB. Zero compact faces removed by current
+export.
+Nikon Z8
+Codex native-camera-kitchen-034
+exports-native-camera-kitchen-034/native-camera-kitchen.glb
+Display wrapper: native-camera-kitchen-preview.glb.
+Quality rejected historical local test.
+84 consecutive source frames; not a full-room reconstruction.
+Samsung bedroom + bathroom
+Accepted room-models release
+20261019_095800/high-quality/exports/cleaned/
+bedroom-bathroom-cleaned.glb
+Roofless sibling is used for the overview.
+Accepted visual reference, with known gaps.
+9,080,740 triangles full; 8,569,710 roofless. Physical scale
+uncalibrated.
+Nikon selection, explicitly
+The archived Codex chat Run Graphify on RuangKamar records the 22k-to-24k
+continuation and rejection of the 034 preview. The separate chat Fix kitchen
+reconstruction preview preserved the same geometry while repairing packaging.
+Raw and display hashes match the Oct 24 handoff. [S19-S24; provenance JSON]
+Scope of this handoff
+This report audits existing evidence and creates a PDF/reference pack. No
+Samsung or Nikon asset was modified, retrained or published. The iPhone fixes
+described here were done earlier in this chat; proposals for future work are clearly
+labelled.
+Excluded: exports-broader and Nikon 041/042/043/044 or guided variants. Their
+reports are not used as the Nikon outcome in this comparison. The selected Codex
+model is not claimed to be the best historical checkpoint.
+
+
+02 / VISUAL COMPARISON
+Three outcomes, shown with their true scope
+Overview images are illustrative. Cameras, framing, model scale, cut height and reconstruction scope differ; this is not a controlled hardware benchmark.
+GEMINI ARGON / ARCHITECT  |  27 OCT 2026  |  Evidence-based handoff
+03
+iPhone - current preserve export
+1.08M triangles / 60.8 MB
+Broader apartment coverage, but holes, folded walls,
+ghost surfaces and softened details remain.
+Nikon Z8 - Codex 034
+576,595 triangles / 42.0 MB
+Only the local cooker/counter section. Objects are
+recognizable, but the saved model was explicitly
+rejected for severe holes and fragmentation.
+Samsung - accepted dollhouse
+8.57M triangles / 419.8 MB
+More coherent bedroom surfaces in this view. This
+release preserves far more geometry and still contains
+bathroom/occlusion gaps.
+What this comparison can establish: Samsung supplies a useful conservative processing reference. Codex Nikon is evidence of a local reconstruction failure, despite
+higher source resolution. iPhone demonstrates an additional, proven cleanup regression. These outcomes cannot be explained by camera brand alone.
+References: F02 current actual WebGL view; F04 user-provided screenshot of the Codex 24k kitchen preview; F03 saved release browser screenshot. Full-resolution originals are included in the reference
+pack.
+
+
+03 / CAPTURE AND PIPELINE
+What differs between the three runs
+Source-report values are labelled as records, not newly repeated experiments. MB uses decimal bytes / 1,000,000.
+GEMINI ARGON / ARCHITECT  |  27 OCT 2026  |  Evidence-based handoff
+04
+Property
+iPhone wide - current
+Nikon Z8 - Codex 034
+Samsung - accepted release
+Source recording
+1080 x 1920 portrait; 4,705 decoded frames, about
+156.9 s. [S26]
+5,613 developed RAW working frames, 8256 x 4644;
+25 fps timeline. Originals preserved. [S19]
+2160 x 3840 source; 7,964 frames; 132.91 s, about
+59.92 fps. [S17]
+What was reconstructed
+634 selected images; 501 registered. Initially two
+SfM components, 176 + 325. Three trained zones.
+[S12]
+84 frames, indices 2884-2967, about 3.3 s; 336
+overlapping native-pixel tiles. Not all video frames.
+[S19, S23]
+410 bedroom views + 94 bathroom views.
+Door/light transition 106.55-110.70 s excluded.
+[S17]
+Training record
+40k steps / 2.5M splat cap per zone. Existing
+checkpoints reused; no retraining during fixes. [S12]
+24k steps, 600k cap; last 2k continuation saved.
+Camera optimization disabled. [S19, S21]
+50k per room; bedroom depth supervision added
+after 30k; roughly 3M / 2M splat caps. [S17, S18]
+Delivery geometry
+1,082,185 triangles; 60.8 MB.
+Original source export 11,641,867 triangles / 539.4
+MB.
+576,595 triangles; raw 41,979,020 bytes; 1
+embedded 8K texture.
+Cleaned full 9,080,740 / 425.8 MB.
+Roofless 8,569,710 / 419.8 MB.
+Cleanup / export policy
+Compact re-extraction, then preserve all compact
+faces; roof-only display cutaway.
+Local mesh from sparse initialization and
+depth/normal guidance; porous rejected surface.
+Inspected local removals; retained positions,
+normals, UVs and two 8K PNGs preserved. No global
+decimation/remesh.
+Scale / acceptance
+Approximate metric frame; depth-backed seam
+estimate, not surveyed. Visual gate PARTIAL.
+Uncalibrated scene units; incomplete local test,
+quality rejected.
+Approximate doorway similarity; uncalibrated
+physical scale. Accepted visual release with limits.
+Do not compare logged PSNR/SSIM across these runs as a mesh-quality ranking: they use different views, representations and evaluation conditions. An 8K texture is not evidence of complete or
+dimensionally accurate polygons.
+
+
+04 / WORK PERFORMED
+What I changed in the iPhone reconstruction
+Completed work is separated here from the recovery experiments proposed later. Source videos and trained checkpoints were preserved.
+GEMINI ARGON / ARCHITECT  |  27 OCT 2026  |  Evidence-based handoff
+05
+Frame, scale and registration
+Backed up the prior delivery and source scripts. Estimated camera world-up from
+all 501 poses; fitted floor planes; baked proper rotations, scale and translations
+into mesh positions/normals. Applied the same per-zone transformations to
+corrected cameras. Removed redundant viewer conversion. [S03, S04, S28]
+Recomputed a 76-frame subset with metric depth output, diagnosed unreliable
+joins, and used floor/camera-height constraints plus 18 unique depth-backed
+matches to estimate the kitchen seam. Marked precise registration unverified.
+[S01, S09-S11, S27]
+Delivery and navigation
+Re-extracted compact zone meshes and rebuilt one merged GLB. Added direct
+Three.js walk/orbit navigation, level movement, gentle wheel steps,
+top/reset/rotate controls, eight recorded source comparisons, and a
+self-contained offline HTML preview.
+My cleanup error and correction
+I introduced broad camera-ownership/height cuts after compaction. These
+removed valid surfaces. After the user flagged the missing mesh, I rendered
+controlled stage comparisons, identified the deletion step, preserved the bad
+delivery for diagnosis, and changed the default to preserve every compact face.
+[S07, S08]
+I also disabled the display floor clip and the inferred doorway replacement. The
+current export reports zero removed compact faces in all three zones. The roof
+cutaway is a viewing feature; the complete model remains available. [S02]
+What I have not done
+I have not regenerated the original seed cloud, retrained the three checkpoints
+with the corrected depth preprocessing, established a robust independent
+full-scene bridge, surveyed dimensions, or completed a faithful surface repair. The
+model remains visually incomplete.
+
+
+05 / ROOT CAUSE
+Why the user saw large missing areas
+The current complaint exposed a real regression in my work. It is not defensibly explained as an iPhone capture limitation.
+GEMINI ARGON / ARCHITECT  |  27 OCT 2026  |  Evidence-based handoff
+06
+User screenshot of the defective delivery. The black background exposes absent geometry. Its
+viewpoint is different from the controlled comparison on the right. [F01]
+My mistake: I treated nearest-camera/field-of-view support as evidence that a
+triangle belonged to a room. A point can lie inside a camera frustum and still be
+hidden behind a wall. The heuristic discarded useful walls and floors. Triangle
+count and file size checks did not detect this. [S07; implementation snapshot]
+Controlled comparison: compact source before my cuts (left) versus the previous delivery (right),
+using the same camera, corrected transforms and roof cut. The bedroom loses substantial surfaces
+after cleanup. [F06, S08]
+Arithmetic: 1,082,185 compact triangles - 125,496 source triangles deleted +
+1,152 inferred patch triangles = 957,841 previously delivered triangles. The
+cleanup was unnecessary for the agreed delivery budget. [S07]
+Now: retain all 1,082,185 compact triangles, with the broad cuts and patch
+disabled. Restoring faces reverses this regression; it does not cure the underlying
+warped/porous reconstruction.
+
+
+06 / CONTROLLED DIAGNOSIS
+Where geometry was lost in the pipeline
+All four renders use the same camera, per-zone transforms and roof cut. Display effects and actual mesh deletion are separated. [S07, S08]
+GEMINI ARGON / ARCHITECT  |  27 OCT 2026  |  Evidence-based handoff
+07
+A - Original source, 11.64M
+Most complete of these stages; already warped/porous.
+B - Compact, 1.082M
+Re-extraction loses some detail and creates a smaller floor gap.
+C - Previous export, 0.958M
+Large additional bedroom losses after automatic cuts.
+D - Same export + old floor clip
+Similar here: floor clipping is not the main cause in this view.
+Interpretation: the stage comparison supports cleanup as the largest observed regression in this tested view. It is not a measured percentage of all missing surface area. Remeshing and original
+reconstruction errors remain separate contributors.
+
+
+07 / CURRENT IPHONE EVIDENCE 1 OF 4
+Recorded-view checks: Kitchen / counter + Kitchen / appliances
+Actual browser render on the left of each image, original source photograph on the right. Same corrected camera pose; full image originals are attached.
+GEMINI ARGON / ARCHITECT  |  27 OCT 2026  |  Evidence-based handoff
+08
+01 / Kitchen / counter - frame 999
+Shelves and broad surfaces are recognizable, but small containers and sink-side
+surfaces are soft, fused or missing.
+Image F15. Browser capture from current 1,082,185-triangle export. These eight views expose
+failures; they are not a complete-room coverage audit. [S01, S04]
+02 / Kitchen / appliances - frame 903
+Inspect appliance edges, countertop continuity and surface thickness.
+Recognizable appearance does not establish faithful object geometry.
+Image F16. Browser capture from current 1,082,185-triangle export. These eight views expose
+failures; they are not a complete-room coverage audit. [S01, S04]
+
+
+07 / CURRENT IPHONE EVIDENCE 2 OF 4
+Recorded-view checks: Doorway / transition + Living area
+Actual browser render on the left of each image, original source photograph on the right. Same corrected camera pose; full image originals are attached.
+GEMINI ARGON / ARCHITECT  |  27 OCT 2026  |  Evidence-based handoff
+09
+03 / Doorway / transition - frame 1398
+Door and wall surfaces fold/overlap near the seam. The small depth residual
+reported later does not eliminate this visible defect.
+Image F17. Browser capture from current 1,082,185-triangle export. These eight views expose
+failures; they are not a complete-room coverage audit. [S01, S04]
+04 / Living area - frame 1612
+Review furniture and wall continuity beyond the best-looking central floor. Source
+details should remain the acceptance reference.
+Image F18. Browser capture from current 1,082,185-triangle export. These eight views expose
+failures; they are not a complete-room coverage audit. [S01, S04]
+
+
+07 / CURRENT IPHONE EVIDENCE 3 OF 4
+Recorded-view checks: Living / windows + Corridor / bed
+Actual browser render on the left of each image, original source photograph on the right. Same corrected camera pose; full image originals are attached.
+GEMINI ARGON / ARCHITECT  |  27 OCT 2026  |  Evidence-based handoff
+10
+05 / Living / windows - frame 2402
+Large surfaces and furnishings remain softened. Reflections and moving content
+require separate diagnosis, rather than blanket deletion.
+Image F19. Browser capture from current 1,082,185-triangle export. These eight views expose
+failures; they are not a complete-room coverage audit. [S01, S04]
+06 / Corridor / bed - frame 3606
+The source shows a coherent ceiling and bedroom opening; the mesh still shows
+torn/ghosted surfaces. Restoration has not resolved these.
+Image F20. Browser capture from current 1,082,185-triangle export. These eight views expose
+failures; they are not a complete-room coverage audit. [S01, S04]
+
+
+07 / CURRENT IPHONE EVIDENCE 4 OF 4
+Recorded-view checks: Bedroom / desk + Bedroom entrance
+Actual browser render on the left of each image, original source photograph on the right. Same corrected camera pose; full image originals are attached.
+GEMINI ARGON / ARCHITECT  |  27 OCT 2026  |  Evidence-based handoff
+11
+07 / Bedroom / desk - frame 4297
+Evaluate the desk area, wall continuity and ghost geometry. Zone labels are
+temporal partitions, not a guarantee of semantic room ownership.
+Image F21. Browser capture from current 1,082,185-triangle export. These eight views expose
+failures; they are not a complete-room coverage audit. [S01, S04]
+08 / Bedroom entrance - frame 4400
+Check whether the room entrance and interior surfaces agree across views. This
+view is part of an unfinished quality gate.
+Image F22. Browser capture from current 1,082,185-triangle export. These eight views expose
+failures; they are not a complete-room coverage audit. [S01, S04]
+
+
+08 / COORDINATE CONTRACT
+One transform for geometry and its cameras
+Correcting a display frame fixes orientation and numerical consistency. It does not fix source geometry or validate room dimensions.
+GEMINI ARGON / ARCHITECT  |  27 OCT 2026  |  Evidence-based handoff
+12
+Observed frame, not an assumption
+Averaging camera local-up transformed to world coordinates gives approximately
+[0.0047, 0.0181, 0.9998]: the original world was already close to +Z-up. Camera
++Y-down conventions alone do not identify world gravity. The original display
+mapping sent native +Z toward glTF -Y. [S03]
+Current export mapping
+For each zone, bake p' = s R p + t into positions; rotate normals by R. Rotations are
+proper (det R approximately +1). Fitted local floor planes map to Y = 0; XZ
+centering is shared with camera output. No root orientation wrapper remains.
+[S02-S04]
+Cameras use the same similarity: C' = s R C + t; world-to-camera rotation Rcv' = Rcv
+R transpose. glTF camera orientation also accounts for the CV-to-viewer axis
+convention. Numerical projection invariance is below 8 x 10^-10 pixels. This
+verifies the conversion, not camera accuracy. [S04]
+Training coordinates remain frozen
+Preserved input
+zones/zone-0, zone-1, zone-2 and their existing checkpoints still use the
+original training frame. Re-extraction reads those frozen assets.
+Explicit correction
+analysis/fixed-transforms.json defines per-zone transformations. The merger
+bakes them into the derivative mesh and creates matching corrected
+cameras.
+Corrected output
+colmap-gpu/merged/sparse/0 and corrected/sparse/0 carry a FRAME.json
+contract. New preprocessing is directed to upright datasets to prevent mixing
+old checkpoints with new poses.
+Architectural concern: local floor leveling includes a separate zone-2 adjustment.
+The export is not one unchanged rigid transform of the entire original
+living/bedroom component. Cross-zone continuity still requires visual and
+geometric validation.
+
+
+09 / FRAME VERIFICATION
+Floor alignment and camera paths
+The plot uses the written current GLB and matching 501 camera positions, not only a transform table. [S04]
+GEMINI ARGON / ARCHITECT  |  27 OCT 2026  |  Evidence-based handoff
+13
+What passes
+All three fitted floor datums are numerically at Y = 0.
+Floor-fit RMS is about 4.4 mm, 9.8 mm and 8.8 mm in
+the chosen approximate metric frame. The
+camera/export conversion is internally consistent. [S04]
+What remains uncertain
+The kitchen plane near native Z = 0 was initially a
+countertop, not the tiled floor; the actual floor is lower.
+That distinction materially affects scale and alignment.
+[S09]
+Median exported camera heights differ by zone: kitchen
+1.412 m, living 1.500 m, bedroom/desk 1.055 m. These
+are observations in an approximate frame, not proof
+that every pose should be forced to 1.50 m.
+Detected upper planes near 2.28, 2.42 and 1.96 m may
+be beams or undersides. They must not be labelled
+surveyed ceiling heights. [S04]
+
+
+10 / KITCHEN ALIGNMENT
+Useful alignment evidence, weak global precision
+The current seam is an estimate constrained by learned depth, floors and camera heights. precise_registration_verified remains false. [S01]
+GEMINI ARGON / ARCHITECT  |  27 OCT 2026  |  Evidence-based handoff
+14
+18 unique LoFTR matches, largely on one switch-plate patch, between source frames 1386 and
+1390. A planar, localized feature set poorly constrains a global room join. [F12]
+Sparse 3D track matching found no reliable common associated tracks. The
+optical-flow triangulation attempt failed its checks. Those attempts were rejected,
+not silently treated as independent confirmation.
+Current estimate
+Value / interpretation
+Living scale
+4.00448 m per legacy training unit; anchored to an assumed 1.50
+m median living camera height.
+Kitchen correction
+0.463399 relative to the already joined legacy training frame;
+yaw correction about 3.53 degrees. Not a universal physical
+enlargement factor.
+Depth-point residual
+Median 0.00763 m; P90 0.01798 m, after the constrained fit.
+Internal fit residual, not an independent accuracy guarantee.
+Seam camera heights
+Last-four / first-four medians: 1.4936 / 1.4870 m. Last-to-first
+position step: 0.07865 m. Poses were not forced identical.
+Superseded evidence: bridge-dense-fit.json records the same image pair twice (36 rows). The final
+solve deduplicates to 18. Its earlier unconstrained transform and smaller residual must not replace
+the final S01/S03 result. [S11]
+The original walking-speed scale 0.66055 and a misread units/metre value do not establish
+physical kitchen shrinkage. Metric depth is also learned, not measured. A known length or
+independent multi-view bridge is still needed.
+
+
+11 / UNRESOLVED PIPELINE ISSUE
+Depth preparation was corrected; the model was not retrained
+A code fix to future input preparation is not a repair to existing checkpoints. This is a key limitation for the next architect.
+GEMINI ARGON / ARCHITECT  |  27 OCT 2026  |  Evidence-based handoff
+15
+Two separate depth problems
+The original MoGe PNGs were relative, normalized per image. They cannot be
+interpreted directly as millimetres. I generated a separate 76-frame metric subset
+using explicit mm output and z-depth convention; it supports the seam estimate
+without overwriting training inputs. [S10, S27;
+implementation/14_metric_bridge.py]
+In the seed-cloud preparation I found resized depth (about 598 x 1064) paired
+with full-resolution 1080 x 1920 intrinsics and RGB sampling. The code now scales
+intrinsics and color sampling consistently to the depth grid, and guards frame
+selection. Existing seed clouds and trained splats were not regenerated.
+[implementation/05_seed_cloud.py]
+Implication for diagnosis
+The old initialization may have contributed to poor surfaces. The report does
+not claim how much: that requires a controlled pilot with corrected inputs
+and the same held-out evaluation.
+What the remaining artifacts suggest
+Folded walls, overlapping sheets, damaged small objects and ghost surfaces
+appear in current source comparisons. These may involve camera/zone
+inconsistency, weak initialization, learned-depth error, transient content and
+splat-to-mesh extraction. The current evidence does not isolate one universal
+cause.
+Why more triangles is not enough
+The 11.64M source mesh is more complete than the compact one in the ablation,
+but already contains reconstruction defects. The 8K texture bakes appearance
+onto whatever surface exists. Increasing iterations or filling holes could preserve
+or hide an incorrect surface unless geometry is checked independently.
+Recommended controlled test: one fixed kitchen/doorway subset; corrected
+depth-grid intrinsics; explicit depth units; verified cameras; frozen random
+seed/config; a held-out photo set and matched novel viewpoints. Compare
+original extraction, compact extraction and an error-bounded simplification of the
+original.
+
+
+12 / SAMSUNG REFERENCE
+Why the accepted bedroom workflow is the better cleanup precedent
+This is a processing comparison, not proof that its camera or every training setting is superior. [S14-S18]
+GEMINI ARGON / ARCHITECT  |  27 OCT 2026  |  Evidence-based handoff
+16
+Accepted cleaned roofless release. Bedroom and bathroom remain separate meshes with
+approximate doorway alignment. [F03]
+The full cleanup retained 9,077,606 scanned triangles and added 3,134 separately
+labelled inferred doorway triangles, for 9,080,740 total. It removed inspected
+debris/small components and outside-envelope fragments, while preserving
+retained positions, normals and UVs. [S15]
+Practices worth carrying forward
+Separate room training; exclude the moving door/light transition; inspect the
+weak plain-wall area and add depth guidance; keep original exports; inspect local
+cleanup regions; isolate inferred geometry in a named node. Original 8K PNG
+texture bytes were preserved. [S14, S17, S18]
+The roofless cut uses exact triangle-plane intersections and interpolates
+UVs/normals. File size also fell by removing unused buffer data. This preserved
+detail instead of globally re-extracting or decimating the accepted scene. [S14,
+S15]
+Limits that remain
+This model is not welded or watertight, has mirror/occlusion and wall/floor gaps,
+and includes an inferred doorway surround. Scale was never physically calibrated.
+Approximate alignment used 49 stationary landmarks across eight doorway views,
+not a survey. [S17]
+Its 425.8 MB full model is roughly seven times the current iPhone file size. A fair
+future quality comparison must account for the very different geometry budget
+and capture scope.
+
+
+13 / SAMSUNG SOURCE EVIDENCE
+The accepted reference still needs to be judged against photographs
+Actual source images are attached. They are historical capture evidence; no new Samsung reconstruction was run for this report.
+GEMINI ARGON / ARCHITECT  |  27 OCT 2026  |  Evidence-based handoff
+17
+Bedroom, source f_001130.jpg at 18.834889 s. Original dataset photo; visual benchmark for the
+room, not a fresh matched render of the cleaned GLB. [F13, S17]
+Bathroom, source f_006654.jpg at 111.009489 s, after the excluded light/door transition.
+Mirrors, glossy tiles and occlusion remain documented limitations in the release. [F14, S14, S17]
+
+
+14 / NIKON Z8, CODEX VERSION
+Our Nikon result: native-camera-kitchen-034
+Selected using the Codex history and matching binary hashes. Another agent's later full-room or zone candidates are not substituted here.
+GEMINI ARGON / ARCHITECT  |  27 OCT 2026  |  Evidence-based handoff
+18
+User-provided screenshot of the 24k-step Codex kitchen preview. It shows a short counter strip
+with damaged surfaces and holes, not a complete room. [F04]
+This run used 84 of 5,613 source frames, expanded into 336 overlapping
+native-pixel crops. The full developed 8K image set was preserved, but preserving
+source images did not mean they were all reconstructed. The broader camera
+candidate remained split into 29 components. [S19, S23]
+What Codex did historically
+Ran local camera/guidance experiments, trained a native-pixel kitchen pilot,
+resumed from 22k to 24k, meshed it, and packaged source-photo comparison plus
+a standalone preview. A separate Codex viewer repair preserved exactly the same
+mesh. [S19-S23; chat provenance]
+What went wrong
+I spent effort refining and packaging a tiny test while full-room camera alignment
+and obvious surface defects remained unresolved. The user rejected it; the status
+was changed to quality_rejected. Steps, texture size and frame preservation were
+poor proxies for a usable result. [S20]
+Historical automated browser testing was blocked in those chats; Node logic tests
+did not prove rendering or input behavior. The user screenshot proves that a
+preview was visible to the user, not that all controls or downloads passed
+automation. No new Nikon browser pass is claimed here.
+
+
+15 / NIKON SOURCE COMPARISON
+The Codex kitchen mesh loses visible source structure
+Historical saved source/model renders from the 24k-step run. These images precede the other agent's later reconstruction attempts. [F05, S19, S20]
+GEMINI ARGON / ARCHITECT  |  27 OCT 2026  |  Evidence-based handoff
+19
+116.16 s
+Source (left) / Codex mesh (right)
+The source contains coherent bottles, bowls and sink
+edges. The mesh contains gaps and damaged
+silhouettes.
+117.12 s
+Source (left) / Codex mesh (right)
+The white appliance and countertop are softened or
+fragmented; broad texture resemblance is
+insufficient.
+117.92 s
+Source (left) / Codex mesh (right)
+The second appliance and wall regions show holes and
+smeared surfaces. The local test fails visual
+acceptance.
+These local viewpoints are not a whole-room completeness score. The contact sheet is kept at its original resolution in the reference pack. Nikon source resolution is
+much higher than the phone captures, but camera recovery, scope selection, initialization and surface extraction still dominate the outcome.
+
+
+16 / VERIFICATION STATUS
+Separate numerical, visual and usability gates
+The current iPhone is usable for inspection. It is not accepted as a faithful final reconstruction. [S01-S06]
+GEMINI ARGON / ARCHITECT  |  27 OCT 2026  |  Evidence-based handoff
+20
+Gate
+Current evidence
+Verdict / limit
+Source protection / identity
+49-file original backup manifest; second snapshot preserves my harmful trimmed delivery. Six
+current comparison binary hashes rechecked for this report.
+Preserved. No old scans modified for the report.
+Export coordinate consistency
+501 cameras; proper rotations; fitted floors at Y=0; projection conversion error below 8e-10
+pixels; no root frame wrappers.
+PASS conversion math. Does not prove recovered camera
+positions or room geometry.
+Triangle and byte budget
+1,082,185 triangles / 60,834,340 bytes. All three compact source face counts retained. Rebuild
+SHA-256 identical.
+PASS agreed 600k-2M / under 120 MB budget.
+Browser behavior
+33 checks: movement directions, held/released and overlapping keys, drag/orbit/reset, source
+views, no roll, offline embedded sources, no browser errors.
+PASS tested browser automation. Not a physical
+keyboard/hardware or universal-device guarantee.
+Performance
+Hardware RTX 5080 / Chrome / D3D11; 1440 x 1000; about 240 FPS and 4.3 ms P95 in saved
+walk/orbit tests.
+PASS this setup. No phone, low-memory GPU, network or
+cold-load benchmark claimed.
+Seam precision / physical
+scale
+18 localized depth-backed matches; floor/height constraints; sub-2 cm internal P90 residual.
+UNVERIFIED globally. Learned depth, assumed scale and
+local floor adjustments remain.
+Visual reconstruction quality
+Eight actual WebGL/source comparisons; controlled original/compact/trimmed ablation. Visible
+holes, warped surfaces and ghost geometry remain.
+PARTIAL. No full-room quality completion or survey
+accuracy claimed.
+The original iPhone report's CPU coverage=1.0 and Gaussian image metrics are not accepted as proof of polygon completeness. Gate 2 now returns PARTIAL rather than an unconditional PASS. [S01, S12;
+implementation/11_gate2_verify.py]
+
+
+17 / ISSUES, STRUGGLES AND LESSONS
+What did not work, and what the evidence actually says
+Failed experiments are retained as evidence; they are not presented as validated solutions.
+GEMINI ARGON / ARCHITECT  |  27 OCT 2026  |  Evidence-based handoff
+21
+A shortcut for zone ownership
+Closest camera plus frustum inclusion ignored wall occlusion and deleted valid
+surfaces. Fixed by disabling broad default cuts; no safe automatic ownership
+replacement has yet been validated.
+A misleading scale story
+Walking-speed ratios and an initially wrong floor/countertop datum made the
+original kitchen-scale explanation unreliable. The current correction is an estimate
+with explicit uncertainty.
+Weak registration witnesses
+Sparse-track and optical-flow bridges failed. Learned matches yielded only one
+localized planar patch; low fit residual cannot support a high-confidence
+whole-room claim.
+Parameter experiments without a quality win
+Hybrid extraction settings increased geometry in some zones but produced larger
+floor gaps and did not repair the bedroom. These candidates were rejected and
+not promoted.
+Correctness checks missed usefulness
+A consistent coordinate transform, a smaller GLB and fast controls all passed while
+the mesh looked bad. These checks must stay separate from source-based surface
+acceptance.
+A real preprocessing fix remains unapplied
+The corrected depth-grid intrinsics/color sampling protect future builds. Existing
+seed clouds and checkpoints still embody the previous preparation; their quality
+cannot improve merely because the script changed.
+Temporal zones were overinterpreted
+The living/corridor partition includes bedroom content, and the later zone
+includes the desk area. These labels cannot supply semantic ownership or justify
+deleting overlap.
+Scope and cost drift
+The Nikon history repeated local experiments without a solved whole-room
+camera path. A small, falsifiable pilot with a stop condition is preferable to
+promising that more steps or more splats will finish the scene.
+
+
+18 / DIRECTION AND PLAN
+Recommended next steps, in order
+These are proposals for Argon's review. They have not been executed as part of this reporting task.
+GEMINI ARGON / ARCHITECT  |  27 OCT 2026  |  Evidence-based handoff
+22
+Stage
+Action and purpose
+Evidence required before continuing
+0 / Freeze the
+baseline
+Keep current preserve-policy export, original source meshes, frozen checkpoints
+and corrected cameras. Give every candidate an asset hash and transform
+contract.
+One reproducible baseline; preserve all originals. Current bad-trim snapshot
+remains available for causal comparison.
+1 / Measure the
+actual losses
+Use the same cameras to compare original 11.64M meshes, current compact
+meshes and splats. Inspect representative rooms, boundaries and novel views.
+Record holes, wrong surfaces and silhouette changes separately.
+An annotated defect map that says which stage creates each failure. Use
+depth/visibility tests and source masks; raw occupancy alone is insufficient.
+2 / Validate
+alignment
+Seek spatially distributed, static correspondences across the doorway; hold some
+out. Check intrinsics, gravity/floor assumptions and zone-2 continuity. If available,
+use one or more real known lengths.
+Independent photo residuals plus coherent wall/floor structure across views.
+Keep physical precision unverified if the evidence is insufficient.
+3 / Run one
+corrected-input pilot
+Regenerate seeds in a separate dataset with depth-grid K/RGB consistency and
+explicit units. Train a small kitchen/doorway pilot under the same comparison
+protocol; retain existing checkpoints.
+Repeatable visible improvement in geometry, silhouettes and held-out views.
+Stop if only training image metrics improve.
+4 / Choose the
+delivery method
+Compare topology/UV-preserving error-bounded simplification of the original
+against current re-extraction. Evaluate LOD or compression separately if quality
+exceeds the byte/poly budget.
+No material new holes in protected regions. Document surface deviation and
+small-object loss; bytes/FPS are secondary gates.
+5 / Release a
+reviewed candidate
+Only remove artifacts with occlusion-aware multi-view evidence or inspected local
+masks. Label inferred fills separately. Recheck views, exact cameras, offline bundle
+and target devices.
+Visual acceptance, provenance and regression checks pass. Otherwise keep the
+candidate experimental and report the unresolved defect.
+Priority recommendation: first isolate camera/initialization defects from mesh-extraction defects; do not begin with global hole filling, forced wall planes, stronger trimming or another blind parameter
+sweep.
+
+
+19 / QUESTIONS FOR GEMINI ARGON
+Decisions I need help making
+Please assess the evidence and recommend a bounded next experiment, with explicit success and stop conditions.
+GEMINI ARGON / ARCHITECT  |  27 OCT 2026  |  Evidence-based handoff
+23
+1. Which representation should be the quality baseline?
+The original iPhone mesh preserves more coverage but is already warped. Should
+the next pilot prioritize corrected-camera/depth retraining, or first isolate
+splat-to-mesh extraction using the existing checkpoint?
+2. How should overlapping temporal zones be fused?
+What occlusion-aware visibility or multi-view consistency test can retain thin
+walls, floors and furniture while removing duplicate/ghost sheets? The failed
+nearest-camera/frustum heuristic is documented.
+3. Is the kitchen join sufficiently constrained?
+We have only 18 switch-plate matches plus learned depth and floor/height
+assumptions. Which distributed correspondences or held-out tests are needed
+before applying a global similarity?
+4. Is local floor leveling defensible?
+Zone 2 has a separate correction inside a component that originally shared a world
+frame. Should one gravity transform be enforced, with camera/geometry errors
+repaired earlier instead?
+5. What controlled seed/training pilot will isolate the bug?
+Please specify a small subset, exact preprocessing invariants, supervision weights
+to review and evidence that would justify expanding to all zones.
+6. Can geometry be preserved within the delivery budget?
+Should we prefer error-bounded simplification, LOD, mesh compression or texture
+compression over re-extraction? Which protected features and deviation metrics
+should be mandatory?
+7. What is a valid visual completeness gate?
+How should we score missing visible surfaces separately from wrong foreground
+sheets, dynamic objects and unseen areas? Existing PSNR, frustum counts and CPU
+occupancy gave false confidence.
+8. What minimum new evidence is truly needed?
+Can existing footage and local measurements resolve the uncertainty? If not,
+identify the exact doorway views or known lengths needed and explain the
+blocked decision. No capture inadequacy has been established.
+9. Is a different Codex Nikon checkpoint intended?
+This report pins the historical 034 model by hash. If comparing another Codex
+candidate, identify the exact asset first; do not substitute a later other-agent
+model or silently rank mismatched scopes.
+
+
+20 / REPRODUCTION AND ARTIFACT MAP
+Where to inspect the current result
+Paths are local to this Windows machine. The accompanying reference pack allows Argon to review images, records and code without these folders.
+GEMINI ARGON / ARCHITECT  |  27 OCT 2026  |  Evidence-based handoff
+24
+Repository root (R):
+C:/Users/bombe/OneDrive/Documents/ChatGPT/Ruang Kamare
+iPhone scan (IP): R / roomscan-reconstruction/data/20261027_IPHONE_WIDE
+Current model: IP / exports/iphone-full-room.glb
+Interactive entry: IP / review/open_viewer.bat
+Standalone: IP / review/iPhone-Full-Room-preview.html
+Current browser: http://127.0.0.1:53251/?mode=orbit&rev=surface-preserved
+Core review records: analysis/fixed-verification.json; fixed-transforms.json;
+fixed-geometry-check.json; fixed-controls-check.json; fixed-rebuild-check.json;
+missing-mesh-diagnosis/findings.json.
+Backups: IP / backups/before-fix-20261027 (original delivery) and IP /
+backups/before-surface-preservation-20261027 (my harmful trimmed delivery
+and reports).
+Implementation entry points
+09_merge_export.py
+Default preserve policy; bakes transforms/cameras, keeps compact faces. legacy-trim is diagnostic
+only.
+16_solve_frame.py / 18_measure_planes.py
+Constrained seam/floor solution and plane measurement. Reference the final transform, not the
+superseded 36-row preliminary fit.
+19_verify_geometry.py / 11_gate2_verify.py
+Written-asset frame checks and source-based quality gate. PARTIAL is a meaningful result.
+05_seed_cloud.py / 07_train_zone.py
+Future corrected-frame preprocessing/training preparation; existing checkpoints have not been
+rebuilt.
+room-viewer.js / test-controls.mjs
+Viewer behavior and 33 browser checks. Snapshot included; dependencies and models are not
+included.
+Do not run old training scripts with corrected cameras and legacy checkpoint data
+without choosing one frame contract. To reproduce safely, inspect the copied
+implementation and configuration before launching any processing.
+
+
+21 / BINARY FINGERPRINTS
+Exact model identity and reproducibility
+All six binary hashes below were recalculated while preparing this report. Large model binaries are not duplicated in the reference pack.
+GEMINI ARGON / ARCHITECT  |  27 OCT 2026  |  Evidence-based handoff
+25
+Current iPhone preserve export | 1,082,185 triangles | 60,834,340 bytes
+4693a1e608b898383ffe6365e9fc3c5193874cdad90c7533a24e0ac3ad5c2afe
+Previous harmful iPhone trimmed export | 957,841 triangles | 55,782,052 bytes
+090626bc4ddad428449a4ab1158417461c1976f6f16760c3709c009c4f55b32d
+Codex Nikon 034 - raw mesh | 576,595 triangles | 41,979,020 bytes
+fc123e86a9160448ebfb0f2af69a11c49385b690390546a80cb68afb341045d5
+Codex Nikon 034 - display wrapper | 576,595 triangles | 41,979,280 bytes
+b87af5856cee095e42100c3a55e981d81e242827a013c05c29f7c2b638220f5a
+Accepted Samsung - full | 9,080,740 triangles | 425,821,116 bytes
+c65f0f304c97216c858056446b2a0faa80ce81fc7bed47715e071dcfeab5e1f3
+Accepted Samsung - roofless | 8,569,710 triangles | 419,817,188 bytes
+199fea0205148b122d77d033615ad7e4a1d6231a3f7e5dad7bdcaa3c90479e92
+The current iPhone rebuild also reproduced byte-identical output in the saved verification record. Its standalone HTML is 84,803,417 bytes and contains the current
+model and eight reference photographs. Hashes prove identity/integrity, not geometric correctness. [S01, S06]
+
+
+22 / SOURCE REGISTER 1 OF 2
+Evidence register and reading order
+[Sxx] references in the report map to copied records in the reference ZIP. manifest.json gives original absolute paths, byte counts and SHA-256 hashes.
+GEMINI ARGON / ARCHITECT  |  27 OCT 2026  |  Evidence-based handoff
+26
+S01 / fixed-verification.json
+Current combined verdict and final gate results. Authoritative current status.
+S02 / merge-report.json
+Current export accounting: preserve policy, zero compact face removals, baked transforms.
+S03 / fixed-transforms.json
+Final per-zone coordinate/scale transformations; final registration constraints.
+S04 / fixed-geometry-check.json
+Written-GLB geometry, floor, rotation and camera-projection verification.
+S05 / fixed-controls-check.json
+33 browser/control/performance/offline checks and renderer evidence.
+S06 / fixed-rebuild-check.json
+Byte-identical rebuild and all-compact-source-face preservation result.
+S07 / findings.json
+Causal cleanup findings and previous-delivery triangle arithmetic.
+S08 / render-info.json
+Controlled ablation rendering conditions and stages.
+S09 / floor-measurements.json
+Measured floor/upper-plane evidence; distinguish countertop from floor.
+S10 / metric-scales.json
+Fresh depth-based scale estimates by original component.
+S11 / bridge-dense-fit.json
+PRELIMINARY fit with duplicated pair/36 rows. Superseded by final deduplicated S01/S03.
+S12 / IPHONE_RECONSTRUCTION_REPORT.md
+PRIOR-AGENT report: original pipeline record and claimed metrics; not a new quality endorsement.
+S13 / model-merge.json
+Original archived walking-speed join; preserved for diagnosis.
+S14 / README.md
+Accepted Samsung release workflow and explicit limitations.
+
+
+22 / SOURCE REGISTER 2 OF 2
+Historical sources and image provenance
+[Sxx] references in the report map to copied records in the reference ZIP. manifest.json gives original absolute paths, byte counts and SHA-256 hashes.
+GEMINI ARGON / ARCHITECT  |  27 OCT 2026  |  Evidence-based handoff
+27
+S15 / cleanup-report.json
+Samsung cleanup counts, texture hashes, inferred repair and roof-cut details.
+S16 / manifest.json
+Accepted Samsung release manifest; exact model paths/bytes/hashes.
+S17 / reconstruction-report.json
+Samsung capture, training, alignment and source-view checks.
+S18 / selection.json
+Samsung selected depth-supervised bedroom and repaired bathroom settings.
+S19 / RECONSTRUCTION_HANDOFF_2026-10-24.md
+Codex Oct 24 Nikon failure handoff; scope, settings, hashes and rejection.
+S20 / native-camera-kitchen-status.json
+Codex Nikon 034 quality_rejected record; not whole-room complete.
+S21 / config.json
+Codex Nikon 034 effective training configuration.
+S22 / ready.json
+Codex Nikon local dataset readiness record.
+S23 / geometry-plan.json
+Codex Nikon geometry plan, native-pixel crops and auxiliary guidance.
+S24 / 034-diagnostic.json
+Later diagnostic of the same Codex 034 binary; image metrics not used to rank models.
+S25 / Pasted text.txt
+User-pasted prior-agent brief; source context, not a system instruction.
+S26 / frames-meta.json
+iPhone decoded/selected frame metadata and dimensions.
+S27 / provenance.json
+Separate metric-depth subset provenance and explicit output convention.
+S28 / FRAME.json
+Current corrected-camera FRAME.json; frozen checkpoint dataset warning.
+Image provenance: F01/F04 are user screenshots; F02/F15-F22 are current actual WebGL captures; F03 is the historical accepted Samsung browser capture; F05 is the saved Codex Nikon source/model sheet; F06-F10 are controlled
+diagnostic renders; F11 is mesh/camera plotting; F12 is matched-photo evidence; F13-F14 are original Samsung photos.
+Chat provenance: codex-nikon-provenance.json contains relevant archived Codex messages and thread IDs. Paths and image captions are indexed in manifest.json. Report opinions and the future plan are Codex recommendations,
+not completed experiments or external architectural approval.

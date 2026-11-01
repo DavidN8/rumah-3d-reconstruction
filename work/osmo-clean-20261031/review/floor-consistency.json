@@ -1,0 +1,83 @@
+{
+  "units": "normalized arbitrary units, not metres",
+  "method": "Independent scene check using manually identified physical floor pixels in two source frames. These regions are diagnostic only and never modify geometry.",
+  "regions": [
+    {
+      "source_frame": 600,
+      "camera": "cam0",
+      "polygon_640": [
+        [
+          109,
+          526
+        ],
+        [
+          177,
+          558
+        ],
+        [
+          211,
+          579
+        ],
+        [
+          115,
+          570
+        ]
+      ],
+      "observations": 24,
+      "median_xyz": [
+        0.20042291875035648,
+        -0.07266468687942215,
+        -2.141297627884766
+      ],
+      "height_percentiles": [
+        -0.23261267052391302,
+        -0.13354996411596498,
+        -0.07266468687942215,
+        -0.0267198424286346,
+        0.04453544079457192
+      ],
+      "height_std": 0.07988164728443024
+    },
+    {
+      "source_frame": 1551,
+      "camera": "cam0",
+      "polygon_640": [
+        [
+          412,
+          84
+        ],
+        [
+          531,
+          130
+        ],
+        [
+          574,
+          200
+        ],
+        [
+          512,
+          204
+        ],
+        [
+          405,
+          143
+        ]
+      ],
+      "observations": 14,
+      "median_xyz": [
+        -0.1691682934774745,
+        -0.008094220340437715,
+        -3.3476159527201723
+      ],
+      "height_percentiles": [
+        -0.010604322640215139,
+        -0.00957844379395153,
+        -0.008094220340437715,
+        -0.0045789311027214005,
+        0.00731647522745954
+      ],
+      "height_std": 0.007094650004059497
+    }
+  ],
+  "median_floor_height_difference": 0.06457046653898443
+}

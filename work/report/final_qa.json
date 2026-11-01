@@ -1,0 +1,13 @@
+{
+  "pdf_pages": 28,
+  "pdf_words": 6533,
+  "pdf_bytes": 20362304,
+  "pdf_sha256": "cf1a44f3d8211ba83b218a9765175a6f82aba1fdcd2314ada96f6df4875f1843",
+  "zip_bytes": 11967951,
+  "zip_files": 85,
+  "reference_images": 22,
+  "evidence_records": 28,
+  "implementation_files": 31,
+  "visual_review": "All pages rendered and inspected; revised pages inspected again. No clipped text or table overlap found.",
+  "archive_integrity": "PASS; every manifest-listed copied file hash matches."
+}

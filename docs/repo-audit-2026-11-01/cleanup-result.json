@@ -1,0 +1,15 @@
+{
+  "filesDeleted": 2557,
+  "logicalBytesRemoved": 916957834,
+  "estimatedUniqueBytesReleased": 916957834,
+  "volumeFreeBefore": 796897550336,
+  "volumeFreeAfter": 797814341632,
+  "volumeDeltaCaveat": "Other applications may change free space; linked files may remain allocated through external paths.",
+  "authoredCodeFilesVerifiedUnchanged": 408,
+  "uniqueModelsRemoved": 0,
+  "sourceVideosRemoved": 0,
+  "externalFilesRemoved": 0,
+  "reportFilesRemoved": 0,
+  "recursiveDeleteUsed": false,
+  "journal": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\docs\\repo-audit-2026-11-01\\cleanup-journal.jsonl"
+}

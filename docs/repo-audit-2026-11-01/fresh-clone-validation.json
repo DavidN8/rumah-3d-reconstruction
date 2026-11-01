@@ -1,0 +1,177 @@
+{
+  "passed": true,
+  "sourceCommit": "5d7b02cb962a9f1e8d918f51448b5dd7af675baf",
+  "nodeVersion": "v24.13.1",
+  "sourceOnlyGitClone": true,
+  "npmCiBothLockfilesPassed": true,
+  "restoredCanonicalAssets": 6,
+  "restoredReferenceFiles": 37,
+  "restoredRuntimeArchiveAndExecutableHashPassed": true,
+  "pythonValidation": "CPython 3.14.3 global NumPy/SciPy/OpenCV/Pillow with the pinned cp314 QA packages via process-local PYTHONPATH; cp312 tsdfdeps excluded. No fresh pip installation claimed.",
+  "checkReport": {
+    "passed": true,
+    "date": "2026-11-01",
+    "checks": [
+      {
+        "command": [
+          "node",
+          "--test",
+          "C:\\Users\\bombe\\AppData\\Local\\Temp\\rumah-handoff-20261101-ewkt8lj_\\checkout\\work\\osmo-clean-20261031\\review\\production\\loader-core.test.mjs",
+          "C:\\Users\\bombe\\AppData\\Local\\Temp\\rumah-handoff-20261101-ewkt8lj_\\checkout\\work\\osmo-clean-20261031\\review\\production\\choice-gate.test.mjs",
+          "C:\\Users\\bombe\\AppData\\Local\\Temp\\rumah-handoff-20261101-ewkt8lj_\\checkout\\work\\osmo-clean-20261031\\review\\production\\model-selection.test.mjs",
+          "C:\\Users\\bombe\\AppData\\Local\\Temp\\rumah-handoff-20261101-ewkt8lj_\\checkout\\work\\osmo-clean-20261031\\review\\production\\native-delivery.test.mjs",
+          "C:\\Users\\bombe\\AppData\\Local\\Temp\\rumah-handoff-20261101-ewkt8lj_\\checkout\\work\\osmo-parity-20261101\\review\\production\\loader-core.test.mjs",
+          "C:\\Users\\bombe\\AppData\\Local\\Temp\\rumah-handoff-20261101-ewkt8lj_\\checkout\\work\\osmo-parity-20261101\\review\\production\\choice-gate.test.mjs",
+          "C:\\Users\\bombe\\AppData\\Local\\Temp\\rumah-handoff-20261101-ewkt8lj_\\checkout\\work\\osmo-parity-20261101\\review\\production\\model-selection.test.mjs",
+          "C:\\Users\\bombe\\AppData\\Local\\Temp\\rumah-handoff-20261101-ewkt8lj_\\checkout\\work\\osmo-parity-20261101\\review\\production\\native-delivery.test.mjs"
+        ],
+        "passed": true,
+        "stdoutTail": "ort ready (0.2794ms)\n\u2714 pinch spread zooms in, and invalid tiny gestures do not jump the camera (0.0722ms)\n\u2714 a stuck preparation promise is bounded, while a successful one returns normally (13.2516ms)\n\u2714 all public model choices and query aliases override device defaults (0.9429ms)\n\u2714 Osmo selection receives its own bounds and cameras, never retained iPhone metadata (0.2409ms)\n\u2714 each model keeps its own budget; Osmo permits 50 decimal MB and a 4K atlas (0.558ms)\n\u2714 compression costs decide simplification, with no fixed triangle cap (0.2403ms)\n\u2714 desktop draws the full scene while phone retains a bounded draw budget (0.6575ms)\n\u2714 native selection uses its own cameras and rejects excessive source counts and bytes (0.4523ms)\n\u2714 format-aware download validation never treats HTML or arbitrary bytes as a valid native file (12.2054ms)\n\u2714 download formats map to the installed Spark SDK decoder names (4.0789ms)\n\u2714 native ready waits for a sorted, nonempty draw instead of decoded data alone (34.2716ms)\n\u2714 a stuck first sort fails visibly and never draws after the deadline (33.0262ms)\n\u2714 an empty scene cannot report ready (25.2975ms)\n\u2714 cancelled native preparation cannot draw or report ready (20.6648ms)\n\u2139 tests 52\n\u2139 suites 0\n\u2139 pass 52\n\u2139 fail 0\n\u2139 cancelled 0\n\u2139 skipped 0\n\u2139 todo 0\n\u2139 duration_ms 221.8923\n",
+        "stderrTail": ""
+      },
+      {
+        "command": [
+          "C:\\Python314\\python.exe",
+          "-B",
+          "C:\\Users\\bombe\\AppData\\Local\\Temp\\rumah-handoff-20261101-ewkt8lj_\\checkout\\work\\osmo-reconstruct-20261031\\test_seed_fisheye.py"
+        ],
+        "passed": true,
+        "stdoutTail": "",
+        "stderrTail": ".......\n----------------------------------------------------------------------\nRan 7 tests in 0.270s\n\nOK\n"
+      },
+      {
+        "command": [
+          "C:\\Python314\\python.exe",
+          "-B",
+          "C:\\Users\\bombe\\AppData\\Local\\Temp\\rumah-handoff-20261101-ewkt8lj_\\checkout\\work\\osmo-clean-20261031\\geometry\\test_operator_pinhole.py"
+        ],
+        "passed": true,
+        "stdoutTail": "{'passed': True, 'gpu_used': False, 'capture_files_read': False, 'views': [{'phi': 0.0, 'round_trip_iou': 1.0, 'native_coverage_fraction': 0.1837836371527778, 'native_excluded_fraction': 0.028923882378472224}, {'phi': 90.0, 'round_trip_iou': 1.0, 'native_coverage_fraction': 0.1837836371527778, 'native_excluded_fraction': 0.028923882378472224}, {'phi': 180.0, 'round_trip_iou': 1.0, 'native_coverage_fraction': 0.1837836371527778, 'native_excluded_fraction': 0.028923882378472224}, {'phi': 270.0, 'round_trip_iou': 1.0, 'native_coverage_fraction': 0.1837836371527778, 'native_excluded_fraction': 0.028923882378472224}], 'semantics_verified': ['four native rim orientations', 'proper rotation, no reflection', 'inverse exclusion stays inside validity coverage', 'keep/exclude polarity equivalence', 'an all-keep view excludes no native pixels', 'binary mask round trip IoU above0.90']}\n",
+        "stderrTail": ""
+      },
+      {
+        "command": [
+          "C:\\Python314\\python.exe",
+          "-B",
+          "C:\\Users\\bombe\\AppData\\Local\\Temp\\rumah-handoff-20261101-ewkt8lj_\\checkout\\work\\osmo-clean-20261031\\geometry\\test_preparation_synthetic.py"
+        ],
+        "passed": true,
+        "stdoutTail": "101-ewkt8lj_\\\\checkout\\\\work\\\\osmo-clean-20261031\\\\geometry\\\\synthetic-preparation-gqt9jva2\\\\sfm\\\\sparse\\\\0\",\n  \"registered_images\": 8,\n  \"registered_complete_pairs\": 4,\n  \"p95_reprojection_native_px\": 0.0,\n  \"seed_points\": 2,\n  \"train_pose_count\": 6,\n  \"eval_pose_count\": 2,\n  \"ray_identity_max_error\": 5.551115123125783e-17,\n  \"metric_scale_known\": false,\n  \"applied\": true,\n  \"report\": \"C:\\\\Users\\\\bombe\\\\AppData\\\\Local\\\\Temp\\\\rumah-handoff-20261101-ewkt8lj_\\\\checkout\\\\work\\\\osmo-clean-20261031\\\\geometry\\\\synthetic-preparation-gqt9jva2\\\\report.json\"\n}\n{\n  \"passed\": 9,\n  \"checks\": [\n    \"two lenses at one timestamp are not two independent training observations\",\n    \"eval-only and masked train points are excluded\",\n    \"train point tracks and eval image links remain mutually consistent after text round-trip\",\n    \"seed colors come only from train RGB, not old points3D colors or eval RGB\",\n    \"one Y-up similarity preserves projection rays\",\n    \"repeat-room audit counts cross-visit tracks separately from one-instant lens duplicates\",\n    \"registration gates count complete synchronized pairs\",\n    \"fisheye projection round-trips a 100-degree behind-hemisphere ray\",\n    \"existing seed and prepared model cannot be overwritten\"\n  ],\n  \"capture_files_read\": false,\n  \"gpu_used\": false\n}\n",
+        "stderrTail": ""
+      },
+      {
+        "command": [
+          "C:\\Python314\\python.exe",
+          "-B",
+          "C:\\Users\\bombe\\AppData\\Local\\Temp\\rumah-handoff-20261101-ewkt8lj_\\checkout\\work\\osmo-clean-20261031\\geometry\\test_negative_rays.py"
+        ],
+        "passed": true,
+        "stdoutTail": "{\n  \"passed\": 6,\n  \"checks\": [\n    \"actual CPU triangle intersection flags two distinct-timestamp, distinct-point early contradictions\",\n    \"two lens views at the same timestamp cannot satisfy temporal independence\",\n    \"repeated evidence from a single sparse point cannot reject a face\",\n    \"camera rotation without translated baseline cannot satisfy the witness gate\",\n    \"observed surface support vetoes deleting the whole triangle\",\n    \"no-hit and unknown evidence never rejects a face\"\n  ],\n  \"gpu_used\": false,\n  \"capture_files_read\": false,\n  \"mesh_edited\": false\n}\n",
+        "stderrTail": ""
+      },
+      {
+        "command": [
+          "C:\\Users\\bombe\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+          "-B",
+          "C:\\Users\\bombe\\AppData\\Local\\Temp\\rumah-handoff-20261101-ewkt8lj_\\checkout\\tools\\restore_assets.py",
+          "--check"
+        ],
+        "passed": true,
+        "stdoutTail": "{\"verifiedAssetIds\": [\"A001\", \"A003\", \"A006\", \"A013\", \"A018\", \"A034\"], \"referenceFiles\": 37, \"externalWrites\": 0, \"networkRequests\": 0}\n",
+        "stderrTail": ""
+      },
+      {
+        "command": [
+          "node",
+          "build.mjs"
+        ],
+        "passed": true,
+        "stdoutTail": "ourceCandidate\": \"C:\\\\Users\\\\bombe\\\\AppData\\\\Local\\\\Temp\\\\rumah-handoff-20261101-ewkt8lj_\\\\checkout\\\\work\\\\osmo-clean-20261031\\\\review\\\\clean-final.sog\",\n  \"candidateSha256\": \"cbb33c91b5b481460b2c75e2125f3efa1458e6634abc3da1ce051a0989fd315c\",\n  \"manifestName\": \"room-173dad2959.json\",\n  \"bundleName\": \"room-viewer-WNFPTVAA.js\",\n  \"osmo\": {\n    \"label\": \"Osmo\",\n    \"representation\": \"gaussian\",\n    \"format\": \"sog\",\n    \"cameraSet\": \"osmo\",\n    \"url\": \"models/osmo-native-cbb33c91b5.sog\",\n    \"fileBytes\": 45177102,\n    \"downloadBytes\": 45177102,\n    \"splats\": 2997908,\n    \"shDegree\": 2,\n    \"note\": \"Osmo \u00b7 native Gaussian view \u00b7 approximate scale\",\n    \"provisional\": false\n  },\n  \"iphoneMetadataUnchanged\": true,\n  \"choiceRequired\": true,\n  \"automaticModelRetry\": false,\n  \"prechoiceExternalRequests\": 0,\n  \"lodPolicy\": {\n    \"lodSplatCount\": 750000,\n    \"baseSplats\": 2997908,\n    \"lod\": true,\n    \"nonLod\": false,\n    \"extSplats\": false\n  },\n  \"runtimeMemoryWarning\": \"LOD display budget limits active draws, not transient decoder/build memory. Physical Fold 7/iPhone 17 memory and touch tests remain required. Prebuilt paged RAD or SOG path should be benchmarked before release.\",\n  \"sourceFormat\": \"Actual Gaussian PLY -> SOG; no mesh or photo texture proxy\",\n  \"newTrainingNotUsed\": false\n}\n",
+        "stderrTail": ""
+      },
+      {
+        "command": [
+          "C:\\Users\\bombe\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+          "-B",
+          "C:\\Users\\bombe\\AppData\\Local\\Temp\\rumah-handoff-20261101-ewkt8lj_\\checkout\\work\\osmo-clean-20261031\\review\\production\\audit-deploy-native.py"
+        ],
+        "passed": true,
+        "stdoutTail": "{\n  \"passed\": 21,\n  \"checks\": [\n    \"valid three-choice gate\",\n    \"reject initial resource <img\",\n    \"reject initial resource <script\",\n    \"reject initial resource <link\",\n    \"reject initial resource <style>body{background:url(photo.jpg)}</style>\",\n    \"reject initial resource <meta\",\n    \"reject duplicate choice\",\n    \"reject unsafe path ../private.json\",\n    \"reject unsafe path /etc/passwd\",\n    \"reject unsafe path models\\\\scene.sog\",\n    \"reject unsafe path models/model;touch\",\n    \"old provisional model blocked\",\n    \"ignored range rejected before model body is read\",\n    \"range failure reads zero model body bytes\",\n    \"archive has only explicit regular public files\",\n    \"iPhone models excluded from upload\",\n    \"all replacement hardlinks detached before extraction\",\n    \"atomic promotion and guarded rollback generated\",\n    \"rendered deployment and rollback scripts pass bash -n\",\n    \"origin verification contains no full model GET\",\n    \"package cannot silently overwrite a prior release package\"\n  ],\n  \"remoteCalls\": 0,\n  \"gpuWork\": false\n}\n",
+        "stderrTail": ""
+      },
+      {
+        "command": [
+          "C:\\Users\\bombe\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+          "-B",
+          "C:\\Users\\bombe\\AppData\\Local\\Temp\\rumah-handoff-20261101-ewkt8lj_\\checkout\\work\\osmo-clean-20261031\\review\\production\\prepare-deploy.py",
+          "--audit-only"
+        ],
+        "passed": true,
+        "stdoutTail": "{\n  \"auditPassed\": true,\n  \"provisional\": false,\n  \"files\": 16,\n  \"applicationBytes\": 3516801,\n  \"nativeBytes\": 45177102,\n  \"iphoneHashesPreserved\": true,\n  \"remoteCalls\": 0,\n  \"packageCreated\": false\n}\n",
+        "stderrTail": ""
+      },
+      {
+        "command": [
+          "node",
+          "build.mjs"
+        ],
+        "passed": true,
+        "stdoutTail": "urceCandidate\": \"C:\\\\Users\\\\bombe\\\\AppData\\\\Local\\\\Temp\\\\rumah-handoff-20261101-ewkt8lj_\\\\checkout\\\\work\\\\osmo-parity-20261101\\\\review\\\\final-sharp.sog\",\n  \"candidateSha256\": \"db0e94c2fab729fa218a34064971a948448a856e02a06c56e6b2b5daf09f29f1\",\n  \"manifestName\": \"room-c4db7847e4.json\",\n  \"bundleName\": \"room-viewer-USS37N3G.js\",\n  \"osmo\": {\n    \"label\": \"Osmo\",\n    \"representation\": \"gaussian\",\n    \"format\": \"sog\",\n    \"cameraSet\": \"osmo\",\n    \"url\": \"models/osmo-native-db0e94c2fa.sog\",\n    \"fileBytes\": 44904208,\n    \"downloadBytes\": 44904208,\n    \"splats\": 2960980,\n    \"shDegree\": 2,\n    \"note\": \"Osmo \u00b7 native Gaussian view \u00b7 approximate scale\",\n    \"provisional\": false\n  },\n  \"iphoneMetadataUnchanged\": true,\n  \"choiceRequired\": true,\n  \"automaticModelRetry\": false,\n  \"prechoiceExternalRequests\": 0,\n  \"lodPolicy\": {\n    \"lodSplatCount\": 1500000,\n    \"baseSplats\": 2960980,\n    \"lod\": true,\n    \"nonLod\": false,\n    \"extSplats\": true\n  },\n  \"runtimeMemoryWarning\": \"LOD display budget limits active draws, not transient decoder/build memory. Physical Fold 7/iPhone 17 memory and touch tests remain required. Prebuilt paged RAD or SOG path should be benchmarked before release.\",\n  \"sourceFormat\": \"Actual Gaussian PLY -> SOG; no mesh or photo texture proxy\",\n  \"newTrainingNotUsed\": false\n}\n",
+        "stderrTail": ""
+      },
+      {
+        "command": [
+          "C:\\Users\\bombe\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+          "-B",
+          "C:\\Users\\bombe\\AppData\\Local\\Temp\\rumah-handoff-20261101-ewkt8lj_\\checkout\\work\\osmo-parity-20261101\\review\\production\\audit-deploy-native.py"
+        ],
+        "passed": true,
+        "stdoutTail": "{\n  \"passed\": 21,\n  \"checks\": [\n    \"valid three-choice gate\",\n    \"reject initial resource <img\",\n    \"reject initial resource <script\",\n    \"reject initial resource <link\",\n    \"reject initial resource <style>body{background:url(photo.jpg)}</style>\",\n    \"reject initial resource <meta\",\n    \"reject duplicate choice\",\n    \"reject unsafe path ../private.json\",\n    \"reject unsafe path /etc/passwd\",\n    \"reject unsafe path models\\\\scene.sog\",\n    \"reject unsafe path models/model;touch\",\n    \"old provisional model blocked\",\n    \"ignored range rejected before model body is read\",\n    \"range failure reads zero model body bytes\",\n    \"archive has only explicit regular public files\",\n    \"iPhone models excluded from upload\",\n    \"all replacement hardlinks detached before extraction\",\n    \"atomic promotion and guarded rollback generated\",\n    \"rendered deployment and rollback scripts pass bash -n\",\n    \"origin verification contains no full model GET\",\n    \"package cannot silently overwrite a prior release package\"\n  ],\n  \"remoteCalls\": 0,\n  \"gpuWork\": false\n}\n",
+        "stderrTail": ""
+      },
+      {
+        "command": [
+          "C:\\Users\\bombe\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+          "-B",
+          "C:\\Users\\bombe\\AppData\\Local\\Temp\\rumah-handoff-20261101-ewkt8lj_\\checkout\\work\\osmo-parity-20261101\\review\\production\\prepare-deploy.py",
+          "--audit-only"
+        ],
+        "passed": true,
+        "stdoutTail": "{\n  \"auditPassed\": true,\n  \"provisional\": false,\n  \"files\": 17,\n  \"applicationBytes\": 4278243,\n  \"nativeBytes\": 44904208,\n  \"iphoneHashesPreserved\": true,\n  \"remoteCalls\": 0,\n  \"packageCreated\": false\n}\n",
+        "stderrTail": ""
+      }
+    ],
+    "phases": [
+      {
+        "phase": "osmo-clean-20261031",
+        "preview": {
+          "passed": true,
+          "landingBytes": 16114,
+          "modelHeads": 3,
+          "modelRangeBytes": 12,
+          "productionRequests": 0
+        },
+        "fileClosurePassed": true,
+        "reviewDeploymentRefusal": null
+      },
+      {
+        "phase": "osmo-parity-20261101",
+        "preview": {
+          "passed": true,
+          "landingBytes": 16100,
+          "modelHeads": 3,
+          "modelRangeBytes": 12,
+          "productionRequests": 0
+        },
+        "fileClosurePassed": true,
+        "reviewDeploymentRefusal": "Root release review does not approve this exact model/release"
+      }
+    ],
+    "trainingJobsLaunched": 0,
+    "productionRequests": 0,
+    "physicalPhoneValidation": false
+  },
+  "secondsFinalChecks": 13.89,
+  "trainingJobs": 0,
+  "productionRequests": 0
+}

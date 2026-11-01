@@ -1,0 +1,82 @@
+{
+  "resolution": [
+    1920,
+    1920
+  ],
+  "method": "Least squares fit theta_d on theta,theta^3,...theta^9 with focal free; native LensCalibration.h equivalent, sampled 4001 points. Dense 100001-angle validation. Native-refine slots1/2.",
+  "fits": [
+    {
+      "lens": 0,
+      "theta_max_degrees": 98.93062253383115,
+      "circle_radius_px": 955.318115234375,
+      "max_radial_error_px": 0.6054911649705952,
+      "rms_radial_error_px": 0.1271328267314796,
+      "opencv_fisheye_params": [
+        524.2642721373848,
+        524.1651532119041,
+        957.357666015625,
+        955.318115234375,
+        0.04586795011188721,
+        0.022022968684015008,
+        -0.014674260646479597,
+        0.001405351585462022
+      ],
+      "thin_prism_fisheye_params": [
+        524.2642721373848,
+        524.1651532119041,
+        957.357666015625,
+        955.318115234375,
+        0.04586795011188721,
+        0.022022968684015008,
+        -0.0002858272784110542,
+        -1.4845849599227726e-05,
+        -0.014674260646479597,
+        0.001405351585462022,
+        0,
+        0
+      ],
+      "tangential_p_native": [
+        -0.00028634999762289226,
+        -1.487299959990196e-05
+      ],
+      "note": "Reported error is radial only; OPENCV_FISHEYE omits the small native tangential p terms. THIN_PRISM_FISHEYE params preserve them."
+    },
+    {
+      "lens": 1,
+      "theta_max_degrees": 98.9706013541565,
+      "circle_radius_px": 955.5902709960938,
+      "max_radial_error_px": 0.5438266087584998,
+      "rms_radial_error_px": 0.11418533914808685,
+      "opencv_fisheye_params": [
+        523.693620420726,
+        523.5788691634145,
+        955.8488159179688,
+        963.4097290039062,
+        0.052244144163356696,
+        0.01540256693821909,
+        -0.011822314931383856,
+        0.0009688846457092743
+      ],
+      "thin_prism_fisheye_params": [
+        523.693620420726,
+        523.5788691634145,
+        955.8488159179688,
+        963.4097290039062,
+        0.052244144163356696,
+        0.01540256693821909,
+        3.367196594643358e-05,
+        -0.00041683597612270914,
+        -0.011822314931383856,
+        0.0009688846457092743,
+        0,
+        0
+      ],
+      "tangential_p_native": [
+        3.372730134287849e-05,
+        -0.0004175209905952215
+      ],
+      "note": "Reported error is radial only; OPENCV_FISHEYE omits the small native tangential p terms. THIN_PRISM_FISHEYE params preserve them."
+    }
+  ],
+  "rig_note": "Rig frame is cam0: cam1 rotation = factory cam1_from_body * inverse(cam0_from_body). No factory baseline found; starts zero, axial refinement allowed. This does not establish physical scale."
+}

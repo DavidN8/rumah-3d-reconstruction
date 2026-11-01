@@ -1,0 +1,273 @@
+{
+  "status": "complete",
+  "started_unix": 1793389194.4068406,
+  "native_record": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\recovery-v2\\analysis\\v4-texture.json",
+  "gpu_jobs_launched": false,
+  "commands": [
+    {
+      "command": [
+        "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261019_095800\\runtime\\host-model-venv\\Scripts\\python.exe",
+        "-B",
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-improve-20261031\\qa-support-filter.py",
+        "--input",
+        "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\recovery-v2\\exports\\v4-texture.glb",
+        "--baseline",
+        "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\recovery-v2\\exports\\v4-probe.glb",
+        "--prefix",
+        "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\recovery-v2\\exports\\v4-supported",
+        "--thresholds",
+        ".05"
+      ],
+      "started_unix": 1793389358.5500686,
+      "pid": 53804,
+      "exit_code": 0,
+      "elapsed_seconds": 4.698427677154541
+    },
+    {
+      "command": [
+        "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261019_095800\\runtime\\host-model-venv\\Scripts\\python.exe",
+        "-B",
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-improve-20261031\\qa-geometry.py",
+        "--mesh",
+        "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\recovery-v2\\exports\\v4-supported-05cm.glb",
+        "--label",
+        "v4-supported-05cm",
+        "--out",
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-improve-20261031\\qa-v4-supported-05cm.json"
+      ],
+      "started_unix": 1793389363.2497513,
+      "pid": 57964,
+      "exit_code": 0,
+      "elapsed_seconds": 5.5777506828308105
+    },
+    {
+      "command": [
+        "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261019_095800\\runtime\\host-model-venv\\Scripts\\python.exe",
+        "-B",
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-improve-20261031\\qa-paired-comparison.py",
+        "--reference",
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-improve-20261031\\qa-baseline-trusted-v3.json",
+        "--candidate",
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-improve-20261031\\qa-v4-supported-05cm.json",
+        "--out",
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-improve-20261031\\qa-baseline-v4-supported-paired.json"
+      ],
+      "started_unix": 1793389368.8284316,
+      "pid": 57872,
+      "exit_code": 0,
+      "elapsed_seconds": 0.3161776065826416
+    },
+    {
+      "command": [
+        "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261019_095800\\runtime\\host-model-venv\\Scripts\\python.exe",
+        "-B",
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-improve-20261031\\qa-paired-comparison.py",
+        "--reference",
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-improve-20261031\\qa-v4-probe.json",
+        "--candidate",
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-improve-20261031\\qa-v4-supported-05cm.json",
+        "--out",
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-improve-20261031\\qa-v4probe-supported-paired.json"
+      ],
+      "started_unix": 1793389369.145502,
+      "pid": 57256,
+      "exit_code": 0,
+      "elapsed_seconds": 0.2956976890563965
+    }
+  ],
+  "native_complete_unix": 1793389358.5490422,
+  "elapsed_seconds": 175.04313015937805,
+  "filtered_model": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\recovery-v2\\exports\\v4-supported-05cm.glb",
+  "topology": {
+    "vertices": 2618057,
+    "faces": 2366966,
+    "world_bounds": [
+      [
+        -2.2971081733703613,
+        -0.8978968262672424,
+        -4.423658847808838
+      ],
+      [
+        3.088467836380005,
+        2.4720590114593506,
+        2.8481204509735107
+      ]
+    ],
+    "surface_area_world_units_squared": 161.19416944157314,
+    "weld_precision_world_units": 1e-05,
+    "position_welded_vertices": 1091867,
+    "position_welded_components": 867,
+    "largest_components_by_area": [
+      {
+        "faces": 2283308,
+        "area": 159.55731713063818,
+        "area_fraction": 0.9898454620498649
+      },
+      {
+        "faces": 48,
+        "area": 0.2041314646130092,
+        "area_fraction": 0.001266370026410907
+      },
+      {
+        "faces": 62,
+        "area": 0.11185479250385526,
+        "area_fraction": 0.0006939133896179691
+      },
+      {
+        "faces": 96,
+        "area": 0.08162052764614065,
+        "area_fraction": 0.0005063491311683271
+      },
+      {
+        "faces": 10,
+        "area": 0.04565146692625231,
+        "area_fraction": 0.0002832079291974594
+      },
+      {
+        "faces": 1224,
+        "area": 0.03455698983270644,
+        "area_fraction": 0.00021438114016420463
+      },
+      {
+        "faces": 4,
+        "area": 0.034013615572361836,
+        "area_fraction": 0.00021101021017196593
+      },
+      {
+        "faces": 44,
+        "area": 0.02308819176967575,
+        "area_fraction": 0.00014323217675713982
+      },
+      {
+        "faces": 2,
+        "area": 0.022728196599944482,
+        "area_fraction": 0.00014099887532335718
+      },
+      {
+        "faces": 12,
+        "area": 0.021279361442457807,
+        "area_fraction": 0.00013201073907434833
+      },
+      {
+        "faces": 90,
+        "area": 0.020411425826135258,
+        "area_fraction": 0.0001266263283395845
+      },
+      {
+        "faces": 278,
+        "area": 0.018653449324380574,
+        "area_fraction": 0.00011572037244896598
+      }
+    ],
+    "components_under_50_faces": 279,
+    "area_fraction_in_components_under_50_faces": 0.0042373588636423825,
+    "floor_reference": {
+      "candidate_points_near_y0": 22403,
+      "refit_inlier_points": 15136,
+      "normal": [
+        0.004358895812466939,
+        0.9999904997107415,
+        -2.270588837080727e-05
+      ],
+      "tilt_from_world_up_degrees": 0.249750512659208,
+      "plane_center": [
+        0.3651373290966861,
+        -0.00027596692020849154,
+        -0.9052319725178916
+      ],
+      "interpretation": "Independent least-squares fit of the near-ground sparse support band. Does not establish measured metric scale."
+    },
+    "area_below_floor_by_0_10_world_units": 3.2511689997577773,
+    "area_fraction_below_floor_by_0_10_world_units": 0.020169271698975467,
+    "elapsed_seconds": 2.145378899993375
+  },
+  "visibility": {
+    "observations": 4711,
+    "near_surface_consistent": 3046,
+    "early_surface_occludes_observed_feature": 892,
+    "first_surface_behind_observed_feature": 762,
+    "no_mesh_intersection": 11,
+    "absolute_tolerance_world_units": 0.05,
+    "relative_tolerance": 0.025,
+    "near_surface_consistent_fraction": 0.6465718531097432,
+    "early_occlusion_fraction": 0.18934408830396943,
+    "behind_fraction": 0.16174909785608152,
+    "no_hit_fraction": 0.002334960730205901,
+    "median_absolute_hit_range_error": 0.0345865840301407,
+    "p90_absolute_hit_range_error": 0.20156226123652213,
+    "median_early_occlusion_distance": 0.10699751656588319,
+    "elapsed_seconds": 1.2076293000136502
+  },
+  "vs_probe": {
+    "reference": "v4-probe",
+    "candidate": "v4-supported-05cm",
+    "observation_count": 4711,
+    "in_sample_consistency_only": true,
+    "matrix_reference_row_candidate_column": {
+      "near": {
+        "near": 2984,
+        "early": 17,
+        "behind": 29,
+        "missing": 0
+      },
+      "early": {
+        "near": 18,
+        "early": 867,
+        "behind": 1,
+        "missing": 0
+      },
+      "behind": {
+        "near": 23,
+        "early": 1,
+        "behind": 701,
+        "missing": 1
+      },
+      "missing": {
+        "near": 21,
+        "early": 7,
+        "behind": 31,
+        "missing": 10
+      }
+    },
+    "new_near": 62,
+    "lost_near": 46,
+    "new_early": 25,
+    "resolved_early": 19
+  },
+  "vs_original": {
+    "reference": "baseline-trusted-v3",
+    "candidate": "v4-supported-05cm",
+    "observation_count": 4711,
+    "in_sample_consistency_only": true,
+    "matrix_reference_row_candidate_column": {
+      "near": {
+        "near": 2739,
+        "early": 57,
+        "behind": 87,
+        "missing": 2
+      },
+      "early": {
+        "near": 116,
+        "early": 797,
+        "behind": 3,
+        "missing": 1
+      },
+      "behind": {
+        "near": 152,
+        "early": 13,
+        "behind": 647,
+        "missing": 2
+      },
+      "missing": {
+        "near": 39,
+        "early": 25,
+        "behind": 25,
+        "missing": 6
+      }
+    },
+    "new_near": 307,
+    "lost_near": 146,
+    "new_early": 95,
+    "resolved_early": 120
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "bedroom": {
+    "training": "training/bedroom-depth",
+    "data": "bedroom-depth",
+    "status": "Selected; training, polygon export and calibrated-view render checks complete.",
+    "baseline": "training/bedroom/step-000030000.ckpt",
+    "reason": "The combined preview exposed weak depth on plain bedroom walls. Continue with MoGe2 relative depth supervision while preserving the earlier model.",
+    "carve_k": 3,
+    "hole_max_edges": 64
+  },
+  "bathroom": {
+    "training": "training/bathroom",
+    "data": "bathroom",
+    "status": "Selected; training, polygon export and calibrated-view render checks complete.",
+    "export_dir": "exports/bathroom-repaired",
+    "carve_k": 3,
+    "hole_max_edges": 64
+  }
+}

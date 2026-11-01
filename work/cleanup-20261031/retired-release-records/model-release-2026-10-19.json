@@ -1,0 +1,51 @@
+{
+  "release": "2026-10-19",
+  "bundles": [
+    {
+      "filename": "ruangkamar-cleaned-models-2026-10-19.zip",
+      "optional": false,
+      "bytes": 758054851,
+      "sha256": "b0efc1693657d29349b990a31da9c788f4b79c6a68f34bb58caf6146e45e4eaf",
+      "files": [
+        {
+          "path": "high-quality/exports/cleaned/bedroom-bathroom-cleaned.glb",
+          "bytes": 425821116,
+          "sha256": "c65f0f304c97216c858056446b2a0faa80ce81fc7bed47715e071dcfeab5e1f3"
+        },
+        {
+          "path": "high-quality/exports/cleaned/bedroom-bathroom-cleaned-dollhouse.glb",
+          "bytes": 419817188,
+          "sha256": "199fea0205148b122d77d033615ad7e4a1d6231a3f7e5dad7bdcaa3c90479e92"
+        },
+        {
+          "path": "high-quality/exports/cleaned/bedroom-bathroom-cleaned.json",
+          "bytes": 11343,
+          "sha256": "a55b351d03bd9a3a62e6c9a844bbb28099e7326ba215629932db67a443c12e81"
+        },
+        {
+          "path": "high-quality/exports/cleaned/bedroom-bathroom-cleaned-dollhouse.json",
+          "bytes": 8454,
+          "sha256": "cd3509091090e58f89d24b06b4c12ea06cb1da40bb14cc62e46076ff1b6b6e91"
+        },
+        {
+          "path": "high-quality/exports/cleaned/doorway-repair-config.json",
+          "bytes": 979,
+          "sha256": "449af57b6802904196e0ec03d3a85666dca2a1cad2b63aef4bdce670a36e199b"
+        }
+      ]
+    },
+    {
+      "filename": "ruangkamar-original-model-2026-10-19.zip",
+      "optional": true,
+      "bytes": 463841207,
+      "sha256": "e79379ec5b7457db9084b577d76a5630bfec2e7a4917b00b2579cd846f4d3193",
+      "files": [
+        {
+          "path": "high-quality/exports/combined/bedroom-bathroom.glb",
+          "bytes": 543126104,
+          "sha256": "39ba4fc4d35128d159af9e17b030021e470578d07b12125045f13ccac08cdccf"
+        }
+      ]
+    }
+  ]
+}

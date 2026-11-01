@@ -1,0 +1,95 @@
+{
+  "bounds": [
+    [
+      -8.076386125413464,
+      -8.023997887794653,
+      -13.3119496119649
+    ],
+    [
+      7.492553943254166,
+      25.003959897661304,
+      6.993000241326221
+    ]
+  ],
+  "boundsSource": "actual registered fresh sparse points (navigation framing only)",
+  "coordinateFrame": "+Y up",
+  "normalizationEvidence": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\geometry\\fresh-sfm-preparation-audit.json",
+  "startCamera": {
+    "position": [
+      -0.07237060859861898,
+      0.44450866879164797,
+      -3.377950509705911
+    ],
+    "quaternion": [
+      0.0,
+      0.8129768186032162,
+      0.0,
+      0.5822960522052275
+    ]
+  },
+  "homeTarget": [
+    -1.9659433766266918,
+    0.44450866879164797,
+    -2.7342252793610835
+  ],
+  "presets": [
+    {
+      "name": "cam0/frame_001551_train.jpg",
+      "label": "Capture 51.75s \u00b7 train source",
+      "sourceFile": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\bath-nearby-cameras-photos\\fresh-01-cam0-frame_001551_train.jpg",
+      "sourceImageId": 173,
+      "sourceCameraId": 1,
+      "sourceTimeSeconds": 51.7517,
+      "sourceFrame": 1551,
+      "split": "train",
+      "position": [
+        -0.07237060859861898,
+        0.44450866879164797,
+        -3.377950509705911
+      ],
+      "quaternion": [
+        0.0,
+        0.8129768186032162,
+        0.0,
+        0.5822960522052275
+      ],
+      "imageWidth": 1200,
+      "imageHeight": 1200,
+      "intrinsics": [
+        600.0,
+        600.0,
+        600.0,
+        600.0
+      ]
+    },
+    {
+      "name": "cam0/frame_001572_train.jpg",
+      "label": "Capture 52.45s \u00b7 train source",
+      "sourceFile": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\bath-nearby-cameras-photos\\fresh-02-cam0-frame_001572_train.jpg",
+      "sourceImageId": 176,
+      "sourceCameraId": 1,
+      "sourceTimeSeconds": 52.452400000000004,
+      "sourceFrame": 1572,
+      "split": "train",
+      "position": [
+        -0.156901049370082,
+        0.44106415823399725,
+        -3.2109332894157188
+      ],
+      "quaternion": [
+        0.0,
+        0.9776306381814674,
+        0.0,
+        0.21032911184354988
+      ],
+      "imageWidth": 1200,
+      "imageHeight": 1200,
+      "intrinsics": [
+        600.0,
+        600.0,
+        600.0,
+        600.0
+      ]
+    }
+  ]
+}

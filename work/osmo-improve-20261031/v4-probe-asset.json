@@ -1,0 +1,151 @@
+{
+  "file": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\recovery-v2\\exports\\v4-probe-packed.glb",
+  "sha256": "6826756a28ee48eafd15d802d9ac8974316d9e06217f5a53374d99520fec3b7f",
+  "bytes": 9267256,
+  "triangles": 1683387,
+  "maxTextureSize": 1,
+  "bounds": [
+    [
+      -2.235191019616718,
+      -1.4020656593136893,
+      -4.2794084548950195
+    ],
+    [
+      3.3213836274963566,
+      2.4246422298245536,
+      2.8441989421844482
+    ]
+  ],
+  "sourceBounds": [
+    [
+      -2.2352068424224854,
+      -1.4021050930023193,
+      -4.2794084548950195
+    ],
+    [
+      3.321399450302124,
+      2.4246816635131836,
+      2.8441989421844482
+    ]
+  ],
+  "preCompressionBounds": [
+    [
+      -2.2352068424224854,
+      -1.4021050930023193,
+      -4.2794084548950195
+    ],
+    [
+      3.321399450302124,
+      2.4246816635131836,
+      2.8441989421844482
+    ]
+  ],
+  "maximumCompressionBoundsChange": 0.0000394336886300195,
+  "quantizationBoundsTolerance": 0.0005988568812011206,
+  "decodedGeometryBytes": 33450244,
+  "accessorGeometryBytes": 30137844,
+  "textures": [],
+  "estimatedTextureGpuBytesWithMipmaps": 0,
+  "sourceFile": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\recovery-v2\\exports\\v4-probe.glb",
+  "sourceSha256": "e0c63a9ceba7720dbb53cb5a86866165d7f729ad27d4094fc751b4fc274eb5c5",
+  "sourceBytes": 50013400,
+  "sourceGeometryBytes": 50012244,
+  "sourceTriangles": 1683387,
+  "sourcePrimitives": [
+    {
+      "mesh": 0,
+      "name": "mesh-0",
+      "primitive": 0,
+      "triangles": 1683387,
+      "vertices": 828100,
+      "semantics": [
+        "COLOR_0",
+        "NORMAL",
+        "POSITION"
+      ],
+      "indexedComponents": 456
+    }
+  ],
+  "packedPrimitives": [
+    {
+      "mesh": 0,
+      "name": "mesh-0",
+      "primitive": 0,
+      "triangles": 1683387,
+      "vertices": 828100,
+      "semantics": [
+        "COLOR_0",
+        "NORMAL",
+        "POSITION"
+      ],
+      "indexedComponents": 456
+    }
+  ],
+  "simplification": [],
+  "firstCompressionAttempt": {
+    "profile": "medium-p16-n8-uv12-j86",
+    "simplified": false,
+    "bytes": 9267256,
+    "decodedGeometryBytes": 33450244,
+    "triangles": 1683387,
+    "vertices": 828100,
+    "withinFileBudget": true,
+    "withinGeometryBudget": true
+  },
+  "compressionAttempts": [
+    {
+      "profile": "medium-p16-n8-uv12-j86",
+      "simplified": false,
+      "bytes": 9267256,
+      "decodedGeometryBytes": 33450244,
+      "triangles": 1683387,
+      "vertices": 828100,
+      "withinFileBudget": true,
+      "withinGeometryBudget": true
+    }
+  ],
+  "compressionProfile": {
+    "name": "medium-p16-n8-uv12-j86",
+    "level": "medium",
+    "positionBits": 16,
+    "normalBits": 8,
+    "uvBits": 12,
+    "jpegQuality": 86
+  },
+  "compressionAttemptLog": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-improve-20261031\\v4-probe-asset.json.attempts.json",
+  "deliveryBudget": {
+    "fileBytes": 50000000,
+    "textureSize": 4096,
+    "preferredGeometryBytes": 134217728,
+    "maximumGeometryBytes": 201326592,
+    "simplificationWorldError": 0.003
+  },
+  "withinPreferredGeometryBudget": true,
+  "simplificationNecessaryForFinalBudget": false,
+  "unlit": true,
+  "unlitReason": "Baked camera-photo atlas already contains scene lighting; KHR_materials_unlit avoids a second PBR lighting pass and matches the iPhone versions",
+  "compressionTopologyPreserved": true,
+  "allIndexedComponentsPreserved": true,
+  "sourceUnchanged": true,
+  "iphoneAssetsUnchanged": true,
+  "ownershipCrop": false,
+  "heightCrop": false,
+  "axisRotation": false,
+  "coordinateFrame": "Unchanged source glTF world, including complete node world matrices",
+  "simplificationErrorLimitWorldUnits": 0,
+  "simplificationErrorDescription": "No simplification; complete source geometry retained before attribute quantization.",
+  "independent2mmAccuracyClaim": false,
+  "independentDeviationMeasurement": false,
+  "quantization": {
+    "positions": 16,
+    "normals": 8,
+    "uvs": 12,
+    "normalStorageFilterBits": 8,
+    "normalPreRounded": false,
+    "positionWorldGridUpperBound": 0.00014971422030028014
+  },
+  "libraries": {
+    "gltfTransform": "4.5.1",
+    "meshoptimizer": "0.25.0"
+  }
+}

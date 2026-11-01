@@ -1,0 +1,42 @@
+{
+  "file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\output\\pdf\\Osmo_Architect_Mandate_Execution_and_Acceptance_2026-11-01.pdf",
+  "pages": 20,
+  "bytes": 10833280,
+  "sha256": "a20de66841ed9b71358e498c177810c3906a1fc9c0cec61979d20f779ba365c2",
+  "titles": [
+    "The rebuild ran. The quality gates did not pass.",
+    "What was executed, in the requested order",
+    "Occupied bounds: the 33-unit framing error is fixed",
+    "Dollhouse restoration: behavior versus visual acceptance",
+    "Top view, reversible shell and navigation",
+    "Display blur: tested, then bounded local defaults",
+    "Exact processing changes and the correction to the brief",
+    "Full rebuild: measured results, not a quality sign-off",
+    "Fridge stickers: original versus full mandated rebuild",
+    "Floor fan and vacuum: original versus full mandated rebuild",
+    "Dining table: original versus full mandated rebuild",
+    "Bathroom tiles: original versus full mandated rebuild",
+    "Option B: official mesh extraction and trusted-depth TSDF",
+    "Screened Poisson: continuity test and its limitations",
+    "Final textured surface: sharper patches, unacceptable scene",
+    "Four further training diagnostics did not resolve the blur",
+    "Quota, preservation and physical-device limits",
+    "What the experiments establish - and what they do not",
+    "Implementation references: camera fit and navigation",
+    "Evidence map and reproducibility"
+  ],
+  "visualQA": {
+    "passed": true,
+    "all20LayoutsInspected": true,
+    "fullPageRendersInspected": [
+      1,
+      7,
+      16,
+      19,
+      20
+    ],
+    "noDetectedClippingOrOverlap": true,
+    "nativeImageDimensionsPreserved": true,
+    "displayCopyEncoding": "JPEG94, 4:4:4; original PNG comparison evidence retained"
+  }
+}

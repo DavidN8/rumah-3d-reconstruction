@@ -1,0 +1,32 @@
+import {createRequire} from 'node:module';import fs from 'node:fs/promises';import path from 'node:path';import {fileURLToPath} from 'node:url';
+const require=createRequire('C:/Users/bombe/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/package.json'),{chromium}=require('playwright');
+const here=path.dirname(fileURLToPath(import.meta.url)),reviewModel=process.env.REVIEW_MODEL||(process.env.MESH_PREVIEW==='1'?'vertex':''),evidence=reviewModel?reviewModel+'-evidence':'evidence';await fs.mkdir(path.join(here,evidence),{recursive:true});
+const browser=await chromium.launch({executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true,args:['--enable-gpu','--use-angle=d3d11','--disable-background-timer-throttling']});
+const page=await browser.newPage({viewport:{width:1920,height:1080},deviceScaleFactor:1});const errors=[],checks=[],requests=[];
+await page.route('**/favicon.ico',route=>route.fulfill({status:204}));
+page.on('pageerror',e=>errors.push(String(e)));page.on('console',m=>{if(m.type()==='error')errors.push(m.text().slice(0,1500));});page.on('request',r=>requests.push(r.url()));
+const check=(name,pass,evidence)=>{checks.push({name,pass:!!pass,evidence:structuredClone(evidence)});console.log(pass?'PASS':'FAIL',name);};
+const state=()=>page.evaluate(()=>__room.state());
+try{
+ await page.goto('http://127.0.0.1:53270/?quality=osmo&ablation=1'+(reviewModel?'&mesh='+reviewModel:''));await page.waitForTimeout(1500);
+ check('Zero model bytes before explicit open',!requests.some(u=>/\.(sog|glb|spz|ply)(\?|$)/.test(u)),requests);
+ console.log('BUTTONS',await page.locator('button').allTextContents());
+ await page.locator('#open-model').click();await page.waitForFunction(()=>window.__room?.ready&&document.body.dataset.phase==='ready',{timeout:90000});
+ await page.waitForTimeout(2000);check('GPU hardware', (await page.evaluate(()=>__room.rendererInfo())).renderer.includes('RTX 5080'),await page.evaluate(()=>__room.rendererInfo()));
+ let s=await state();check('Default fitted dollhouse',s.mode==='orbit'&&s.fov===42&&s.seeInside&&s.orbit.radius>4,s);
+ check('Overview controls enabled',await page.locator('#top').isVisible()&&await page.locator('#top').isEnabled()&&await page.locator('#see-inside').isVisible(),null);
+ await page.screenshot({path:path.join(here,evidence+'/01-osmo-dollhouse.png')});
+ await page.click('#top');await page.waitForTimeout(1000);s=await state();check('Top view',s.forward[1]<-.999&&s.mode==='orbit',s);await page.screenshot({path:path.join(here,evidence+'/02-osmo-top.png')});
+ await page.click('#see-inside');await page.waitForTimeout(1000);s=await state();check('Shell restores',!s.seeInside,s);await page.screenshot({path:path.join(here,evidence+'/03-osmo-roof-restored.png')});
+ await page.click('#reset');await page.waitForTimeout(1000);s=await state();check('Orbit reset stays overview',s.mode==='orbit'&&s.seeInside&&s.fov===42,s);
+ await page.click('#walk');await page.waitForTimeout(1000);s=await state();check('Walk starts inside with shell restored',s.mode==='walk'&&!s.seeInside&&s.position.every((v,i)=>v>=-5&&v<=5),s);
+ await page.click('#reset');s=await state();check('Walk reset stays walk',s.mode==='walk',s);
+ await page.selectOption('#views','0');const a=await state();await page.mouse.move(900,500);await page.mouse.down();const b=await state();await page.mouse.up();
+ check('Preset exit preserves pixel focal length',Math.abs(a.projection[5]-b.projection[5])<1e-6,{before:a.projection[5],after:b.projection[5],beforePose:a.position,afterPose:b.position});
+ await page.keyboard.down('w');await page.waitForTimeout(250);await page.keyboard.up('w');await page.waitForTimeout(600);const released=await state();await page.waitForTimeout(300);const stopped=await state();
+ check('Walking input releases without cleanup',released.keys.length===0&&Math.hypot(...stopped.position.map((x,i)=>x-released.position[i]))<.001,{released,stopped});
+ await page.click('#orbit');await page.waitForTimeout(1500);await page.screenshot({path:path.join(here,evidence+'/04-osmo-orbit-return.png')});
+ check('No browser/render errors',errors.length===0,errors);
+}catch(e){errors.push(String(e));console.error(e);await page.screenshot({path:path.join(here,evidence+'/error.png')});}
+finally{await fs.writeFile(path.join(here,reviewModel?reviewModel+'-controls-verification.json':'controls-verification.json'),JSON.stringify({checks,errors,physicalPhonesTested:false,viewport:[1920,1080]},null,2));await browser.close();}
+if(errors.length||checks.some(c=>!c.pass))process.exitCode=1;

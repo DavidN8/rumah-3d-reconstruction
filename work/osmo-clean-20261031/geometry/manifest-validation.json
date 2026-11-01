@@ -1,0 +1,297 @@
+{
+  "calibration_file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-format-20261031\\calibration.json",
+  "calibration_sha256": "915249e24890b515546138232ede421585d773ce1c25df566b26005db8ee13d3",
+  "fit_file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-format-20261031\\kb4-fit-report.json",
+  "fit_sha256": "8f210ac74cfb9df8d58d9f03f751abfa262dc79b4794f66ac8ced3f067acbf9f",
+  "manifest_sha256": "414049ec6974193f0e3f14cc3e7f8adbc1d053dc1787ce19861030af3705a869",
+  "image_dir": "C:/Users/bombe/OneDrive/Documents/ChatGPT/Ruang Kamare/roomscan-reconstruction/data/20261031_OSMO360/clean-v3/dataset/images",
+  "source_slots_available": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "11",
+    "12"
+  ],
+  "far_distance_slots_available": [],
+  "validated_radial_approximation": [
+    {
+      "lens": 0,
+      "native_width": 3840,
+      "native_height": 3840,
+      "max_theta_deg": 98.93062253383115,
+      "max_radial_error_native_px": 1.2109823299408617,
+      "rms_radial_error_native_px": 0.25426565346296004,
+      "native_tangential_p_not_represented": [
+        -0.00028634999762289226,
+        -1.487299959990196e-05
+      ]
+    },
+    {
+      "lens": 1,
+      "native_width": 3840,
+      "native_height": 3840,
+      "max_theta_deg": 98.9706013541565,
+      "max_radial_error_native_px": 1.0876532175172997,
+      "rms_radial_error_native_px": 0.22837067829617413,
+      "native_tangential_p_not_represented": [
+        3.372730134287849e-05,
+        -0.0004175209905952215
+      ]
+    }
+  ],
+  "rotation_convention": "w,x,y,z; source cam_extri_q maps body to lens; cam1_from_cam0 = q1 * inverse(q0)",
+  "translation_convention": "cam_from_rig translation, not camera-center coordinates; units become arbitrary SfM model units",
+  "baseline_policy": "Zero initialization only; cam1 axial refinement allows 3 rotation parameters plus its own t.z. No measured optical-center separation is available.",
+  "metric_scale": "unknown; far_XX stitching presets are not a surveyed metric lens separation",
+  "reconstruction_reused": false,
+  "limitations": [
+    "KB5 radial approximation is validated only to the recorded angle; it omits native tangential p terms.",
+    "This calibration does not prove frame synchronization, image orientation, or recovered geometry; audit fresh SfM separately.",
+    "Keep synchronized source-frame filenames identical between cam0 and cam1."
+  ],
+  "raw_djmd_first_sample_sha256": "8ce41ffa8459b1a1050ed59ca8ad2665824011893ccb6109f63d3108d18fb9f6",
+  "raw_calibration_slots": [
+    {
+      "slot": 1,
+      "record_bytes": 324,
+      "fx": 1046.614501953125,
+      "fy": 1046.4166259765625,
+      "width": 3840.0,
+      "height": 3840.0,
+      "has_extrinsic_quaternion": true,
+      "usable_intrinsics": true
+    },
+    {
+      "slot": 2,
+      "record_bytes": 309,
+      "fx": 1045.6688232421875,
+      "fy": 1045.439697265625,
+      "width": 3840.0,
+      "height": 3840.0,
+      "has_extrinsic_quaternion": true,
+      "usable_intrinsics": true
+    },
+    {
+      "slot": 3,
+      "record_bytes": 342,
+      "fx": 1053.793212890625,
+      "fy": 1053.614013671875,
+      "width": 3840.0,
+      "height": 3840.0,
+      "has_extrinsic_quaternion": true,
+      "usable_intrinsics": true
+    },
+    {
+      "slot": 4,
+      "record_bytes": 327,
+      "fx": 1051.42822265625,
+      "fy": 1051.22314453125,
+      "width": 3840.0,
+      "height": 3840.0,
+      "has_extrinsic_quaternion": true,
+      "usable_intrinsics": true
+    },
+    {
+      "slot": 5,
+      "record_bytes": 202,
+      "fx": null,
+      "fy": null,
+      "width": null,
+      "height": null,
+      "has_extrinsic_quaternion": false,
+      "usable_intrinsics": false
+    },
+    {
+      "slot": 6,
+      "record_bytes": 202,
+      "fx": null,
+      "fy": null,
+      "width": null,
+      "height": null,
+      "has_extrinsic_quaternion": false,
+      "usable_intrinsics": false
+    },
+    {
+      "slot": 7,
+      "record_bytes": 202,
+      "fx": null,
+      "fy": null,
+      "width": null,
+      "height": null,
+      "has_extrinsic_quaternion": false,
+      "usable_intrinsics": false
+    },
+    {
+      "slot": 8,
+      "record_bytes": 202,
+      "fx": null,
+      "fy": null,
+      "width": null,
+      "height": null,
+      "has_extrinsic_quaternion": false,
+      "usable_intrinsics": false
+    },
+    {
+      "slot": 9,
+      "record_bytes": 202,
+      "fx": null,
+      "fy": null,
+      "width": null,
+      "height": null,
+      "has_extrinsic_quaternion": false,
+      "usable_intrinsics": false
+    },
+    {
+      "slot": 10,
+      "record_bytes": 202,
+      "fx": null,
+      "fy": null,
+      "width": null,
+      "height": null,
+      "has_extrinsic_quaternion": false,
+      "usable_intrinsics": false
+    },
+    {
+      "slot": 11,
+      "record_bytes": 324,
+      "fx": 1045.7099609375,
+      "fy": 1045.7099609375,
+      "width": 3840.0,
+      "height": 3840.0,
+      "has_extrinsic_quaternion": true,
+      "usable_intrinsics": true
+    },
+    {
+      "slot": 12,
+      "record_bytes": 309,
+      "fx": 1043.800048828125,
+      "fy": 1043.800048828125,
+      "width": 3840.0,
+      "height": 3840.0,
+      "has_extrinsic_quaternion": true,
+      "usable_intrinsics": true
+    },
+    {
+      "slot": 13,
+      "record_bytes": 202,
+      "fx": null,
+      "fy": null,
+      "width": null,
+      "height": null,
+      "has_extrinsic_quaternion": false,
+      "usable_intrinsics": false
+    },
+    {
+      "slot": 14,
+      "record_bytes": 202,
+      "fx": null,
+      "fy": null,
+      "width": null,
+      "height": null,
+      "has_extrinsic_quaternion": false,
+      "usable_intrinsics": false
+    },
+    {
+      "slot": 15,
+      "record_bytes": 202,
+      "fx": null,
+      "fy": null,
+      "width": null,
+      "height": null,
+      "has_extrinsic_quaternion": false,
+      "usable_intrinsics": false
+    },
+    {
+      "slot": 16,
+      "record_bytes": 202,
+      "fx": null,
+      "fy": null,
+      "width": null,
+      "height": null,
+      "has_extrinsic_quaternion": false,
+      "usable_intrinsics": false
+    },
+    {
+      "slot": 17,
+      "record_bytes": 202,
+      "fx": null,
+      "fy": null,
+      "width": null,
+      "height": null,
+      "has_extrinsic_quaternion": false,
+      "usable_intrinsics": false
+    },
+    {
+      "slot": 18,
+      "record_bytes": 202,
+      "fx": null,
+      "fy": null,
+      "width": null,
+      "height": null,
+      "has_extrinsic_quaternion": false,
+      "usable_intrinsics": false
+    },
+    {
+      "slot": 19,
+      "record_bytes": 202,
+      "fx": null,
+      "fy": null,
+      "width": null,
+      "height": null,
+      "has_extrinsic_quaternion": false,
+      "usable_intrinsics": false
+    },
+    {
+      "slot": 20,
+      "record_bytes": 202,
+      "fx": null,
+      "fy": null,
+      "width": null,
+      "height": null,
+      "has_extrinsic_quaternion": false,
+      "usable_intrinsics": false
+    },
+    {
+      "slot": 21,
+      "record_bytes": 202,
+      "fx": null,
+      "fy": null,
+      "width": null,
+      "height": null,
+      "has_extrinsic_quaternion": false,
+      "usable_intrinsics": false
+    },
+    {
+      "slot": 22,
+      "record_bytes": 202,
+      "fx": null,
+      "fy": null,
+      "width": null,
+      "height": null,
+      "has_extrinsic_quaternion": false,
+      "usable_intrinsics": false
+    },
+    {
+      "slot": 23,
+      "record_bytes": 202,
+      "fx": null,
+      "fy": null,
+      "width": null,
+      "height": null,
+      "has_extrinsic_quaternion": false,
+      "usable_intrinsics": false
+    },
+    {
+      "slot": 24,
+      "record_bytes": 202,
+      "fx": null,
+      "fy": null,
+      "width": null,
+      "height": null,
+      "has_extrinsic_quaternion": false,
+      "usable_intrinsics": false
+    }
+  ],
+  "far_distance_slot_note": "Raw slots13-24 exist as placeholder records, but contain no fx/fy/width/height/extrinsic quaternion. They cannot establish a baseline for this clip. The decoded JSON omits unusable slots."
+}

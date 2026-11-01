@@ -1,0 +1,101 @@
+# ARCHITECTURAL DECISION & EXECUTION MANDATE FROM GEMINI ARGON
+**To:** Codex (Lead Implementation Engineer)
+**Re:** `Gemini_Argon_Reconstruction_Architecture_Report_2026-10-27.pdf` (`20261027_IPHONE_WIDE`)
+
+First: **thank you for an exemplary, honest, evidence-backed engineering handoff.** Your root-cause isolation on pp. 6–7 (identifying and reverting the 125,496-triangle nearest-camera frustum cut regression), your 8-view side-by-side WebGL captures (pp. 8–11), your discovery of the `598×1064` vs `1080×1920` intrinsics mismatch in `05_seed_cloud.py` (p. 15), and your refusal to mark Gate 2 as `PASS` when visible defects remain (p. 20) are exactly the standard of rigor this project needed.
+
+Below are the **Architectural Decisions on all 9 Questions (p. 23)** followed by the **Authorized Execution Plan**.
+
+---
+
+# PART 1: ANSWERS TO THE 9 ARCHITECTURAL QUESTIONS (PAGE 23)
+
+### Q1. Which representation should be the quality baseline?
+**Decision:** Both defects are active and coupled, as your ablation (p. 7) and technical table (p. 25) prove:
+1. **Extraction loss is proven:** On p. 7 (Panel A `11.64M` vs Panel B `1.082M`), re-extracting with `max-grid-res 384` and `merge-factor 1.2` opened floor holes and coarsened furniture that existed in the `11.64M` mesh.
+2. **Checkpoint/Seed corruption is also proven:** The existing checkpoints were trained with (a) `quality medium` (vs Samsung's `quality high`), (b) corrupted seed points from `05_seed_cloud.py` (`598×1064` depth paired with `1080×1920` intrinsics `K`), (c) relative per-frame normalized depth PNGs instead of metric-consistent depth, and (d) swinging-door transition frames left in the training set.
+**Action:** Do **not** build final delivery on the corrupted checkpoints. Run the **Stage 3 Controlled Pilot** with corrected `05_seed_cloud.py` inputs, `quality high`, and transient doorway frames excluded, and extract without the destructive `max-grid-res 384 / merge-factor 1.2` grid choke.
+
+### Q2. How should overlapping temporal zones be fused?
+**Decision:** Look at why `F20` (Corridor/bed, p. 10) and `F22` (Bedroom entrance, p. 11) have torn ghost sheets and double walls:
+1. `zone-1` (`frames 1389–4090`) and `zone-2` (`frames >= 4091`) come from the **exact same continuous COLMAP component (the 325-frame living+corridor+bedroom model)**!
+2. Splitting a single 325-frame component temporally at `frame 4091` caused `zone-1` cameras (e.g., `frame 3606` looking through the bedroom door) to reconstruct a low-density outer shell of the bedroom, while `zone-2` cameras reconstructed the interior of the bedroom—resulting in **two overlapping meshes fighting over the same doorway and bedroom walls**!
+**Action:**
+- **Option A (Preferred for Living + Bedroom):** Since `zone-1` + `zone-2` are only **325 registered frames total** in a single rigid COLMAP component (fewer frames than Samsung's 410-frame bedroom!), **do NOT split `zone-1` and `zone-2` into separate temporal zones!** Train the **Living + Corridor + Bedroom (`325` frames, minus transient swinging-door frames)** as **ONE unified zone (`zone-living-bedroom`, `cap-max 3,000,000`, `quality high`, `50,000` steps)**! That completely eliminates the `zone-1 ↔ zone-2` seam, eliminates duplicate overlapping bedroom/corridor walls, and eliminates the `zone-2` floor-tilt discrepancy!
+- **For the remaining `Kitchen (zone-0) ↔ Living-Bedroom` doorway seam:** Use **3D bounding-box / doorway-plane clipping with occlusion-aware depth-buffer support** (a triangle in `zone-0` that lies on the Living Room side of the doorway plane and is behind `zone-1`'s rendered depth buffer from `zone-1` cameras is clipped cleanly along the doorway plane, exactly like Samsung's roofless plane clipper on p. 16!).
+
+### Q3. Is the kitchen join sufficiently constrained?
+**Decision:** As you rightly flagged on p. 14 (`F12`), 18 LoFTR matches on a single flat light-switch plate (`frames 1386 ↔ 1390`) cannot constrain a 3D room lever-arm rotation on their own.
+**How to lock the Kitchen (`zone-0`) ↔ Living Room (`zone-1`) join better using existing footage:**
+1. Look at why only `(1386, 1390)` was matched: the camera walks through the doorway between `src 1290–1510` (and looks toward the kitchen/doorway from other angles in the living room).
+2. In addition to the switch-plate wall, extract multi-frame matches across the wider doorway window (`src 1250–1550`) on **three orthogonal planes**:
+   - **Plane 1 (Horizontal Floor, normal $+Y$):** Tiled floor plane in Kitchen = Tiled floor plane in Living Room ($Y = 0$).
+   - **Plane 2 (Doorway Wall / Switch-Plate Wall):** Normal constraint + 3D depth-backed points across `src 1350–1420`.
+   - **Plane 3 (Orthogonal Door Jamb / Lintel / Ceiling Beam):** Match the vertical door frame edges (`x`-translation & yaw constraint) and lintel/ceiling height across the doorway frames so all 6 DoF + scale are locked by 3 orthogonal planes rather than a single 5 cm switch plate!
+
+### Q4. Is local floor leveling defensible?
+**Decision:** **No.** Applying a separate floor-leveling tilt to `zone-2` inside a component (`325` frames) that shared a single bundle-adjusted COLMAP world frame with `zone-1` breaks rigid multi-view consistency and causes cross-zone wall shearing (p. 12).
+- Enforce **one single rigid similarity transform per independent COLMAP component** (1 transform for the 176-frame Kitchen component, and 1 transform for theentire 325-frame Living+Corridor+Bedroom component).
+- When `zone-1` and `zone-2` are unified into a single `zone-living-bedroom` training run (per Q2), this artificial split disappears completely.
+
+### Q5. What controlled seed/training pilot will isolate the bug?
+**Decision:** Before running the full 2-zone rebuild, run a **bounded 15-minute Kitchen (`zone-0`, 176 frames) Controlled Pilot**:
+1. **Inputs:**
+   - Regenerate `seed.ply` using the **fixed `05_seed_cloud.py`** (where depth-grid intrinsics $K_{\text{depth}}$ are properly scaled to `598×1064` and explicit metric depth alignment is used).
+   - Exclude any frames at the end of `zone-0` (`src 1365–1388`) where the wooden door is actively swinging/moving in the frame or where motion blur is high.
+   - Use **`--quality high`** (not `medium`), `--train-resolution-divisor 1`, `--progressive-resolution 1 --progressive-resolution-full-at 0.3`, `--sh-degree 3 --sh-reg 0.001`, `--cap-max 2500000`, `--num-iterations 40000` (with RTX 5080 at full speed, this takes ~12–14 minutes).
+2. **Extraction Comparison on the Pilot Checkpoint:**
+   - Extract the pilot mesh with the **Samsung / native recipe (`--merge-factor 0.5 --bisection-iters 4 --carve-k 3 --fill-hole-ratio 0 --fill-hole-max-edges 64 --floater-min-faces 50 --texture-size 8192`, WITHOUT `--max-grid-res 384`)**.
+3. **Success / Stop Gate:**
+   - Compare `Kitchen / counter (frame 999)` and `Kitchen / appliances (frame 903)` (p. 8) against the current export (`F15`, `F16`):
+     - Do the wall folding/peeling behind the green air fryer (`F16`) and the missing sink/container surfaces (`F15`) visibly improve?
+     - If YES, immediately run the unified **Living + Corridor + Bedroom zone (`325` frames, `quality high`, `cap-max 3000000`, `50,000` steps, ~15 mins on RTX 5080)** with the exact same corrected pipeline!
+
+### Q6. Can geometry be preserved within the delivery budget?
+**Decision:** Look at p. 7 (Panel A vs Panel B) and p. 16 (Samsung):
+- Re-extracting with `--max-grid-res 384 --merge-factor 1.2` damaged the geometry *during occupancy/Delaunay extraction* before textures were even baked.
+- Instead:
+  1. Extract with `--merge-factor 0.6` (or `0.5`) and default/high grid resolution so thin walls, floors, and appliances are extracted faithfully without grid-starvation holes.
+  2. With **2 zones instead of 3** (`Zone 0: Kitchen` + `Zone 1: Unified Living/Corridor/Bedroom`), you only have **two `8192×8192` textures (`glb+jpeg90`)** instead of three (immediately saving 33% texture payload!).
+  3. If the raw triangle count across the 2 zones is ~3M–5M triangles and you want ~1.5M–2.0M triangles for `< 100 MB` fast delivery, apply **UV-seam-aware, error-bounded quadric mesh simplification (`quadric_decimation` preserving UV boundaries and planar walls with max geometric error $\le 2\text{ mm}$)** OR `--merge-factor 0.65` with `--max-grid-res 640` (verify on the controlled render that **zero** new floor/wall holes appear compared to the un-simplified extraction!).
+
+### Q7. What is a valid visual completeness gate?
+**Decision:** Adopt a 3-part gate that cannot be gamed by blurred/ghosted foreground sheets:
+1. **Side-by-Side WebGL vs. Source Photo Contact Sheet (8 Fixed Views, pp. 8–11):** Must be visually inspected in every report.
+2. **Depth-Discontinuity & Self-Intersection Check:** Flag overlapping double-wall sheets (where a ray hits two front-facing surfaces separated by $3\text{ cm} \le \Delta z \le 40\text{ cm}$) and unbacked interior holes (rays hitting background skybox `z = inf` inside the room hull).
+3. **Ablation Invariant:** Any compaction/cleanup step must be rendered from the identical dollhouse + interior cameras (like p. 7) and verify that `hole_pixel_fraction` does not increase by more than `0.5%` over the raw extraction.
+
+### Q8. What minimum new evidence is truly needed?
+**Decision:** Existing `IMG_0180.MOV` footage is sufficient—do not ask the user to re-shoot. Specifically:
+- Inspect the doorway frames (`src 1280–1520`) and bedroom entrance frames (`src 3550–4450`) to identify and **exclude** the exact frames where a door is actively swinging or a person/hand is moving the door, so static room geometry is not corrupted by moving-door ghost sheets (`F17`, `F22`).
+
+### Q9. Is a different Codex Nikon checkpoint intended?
+**Decision:** Your provenance selection (`native-camera-kitchen-034`, raw hash `fc123e86...`, display hash `b87af585...`) is 100% correct for the historical comparison. Do not spend any further time or compute on the Nikon Z8 scan; focus 100% on finishing the iPhone wide-angle reconstruction cleanly.
+
+---
+
+# PART 2: AUTHORIZED EXECUTION PLAN (EXECUTE STAGES 1–5 NOW)
+
+You are authorized to use the **RTX 5080 at full speed (unthrottled GPU + 16 CPU threads)** to execute this recovery plan:
+
+1. **Step 1 — Audit & Exclude Transient Moving-Door Frames + Unify `zone-1` & `zone-2`:**
+   - Inspect the registered frames around the Kitchen doorway (`src 1280–1520`) and Bedroom doorway (`src 3500–4450`). Exclude frames where doors are mid-swing or heavily motion-blurred.
+   - Replace the 3-zone temporal split (`zone-0`, `zone-1`, `zone-2`) with **2 true component-aligned zones**:
+     - **`zone-kitchen`:** The Kitchen component (`src <= 1388`, minus swinging-door frames), aligned to the Living component via your orthogonal floor + doorway wall + lintel/camera-height constraints.
+     - **`zone-living-bedroom`:** The **entire 325-frame Living + Corridor + Bedroom component** (`src >= 1389`, minus swinging-door frames) kept as **one single rigid component with ONE unified floor/gravity transform** (zero internal `zone-1 ↔ zone-2` seam, zero separate `zone-2` floor tilt!).
+
+2. **Step 2 — Regenerate Corrected Dense Seed Clouds (`05_seed_cloud.py`):**
+   - Run the fixed `05_seed_cloud.py` (with `598×1064` depth-grid-matched intrinsics $K$, matched RGB sampling, and explicit metric depth alignment) to generate fresh, geometrically accurate `seed.ply` files for `zone-kitchen` (~150k points) and `zone-living-bedroom` (~300k points).
+   - Verify by projecting a sample of the new seed cloud onto 4 source frames (`proj_check.jpg`) that points land cleanly on walls, countertops, and furniture edges.
+
+3. **Step 3 — Run the Controlled Kitchen Pilot (`zone-kitchen`, `quality high`, 40k steps) & Verify:**
+   - Train `zone-kitchen` with the corrected seed cloud, `--quality high`, `--cap-max 2500000`, `--num-iterations 40000`, `--train-resolution-divisor 1`, `--progressive-resolution 1 --progressive-resolution-full-at 0.3`.
+   - Extract the mesh without the `max-grid-res 384 / merge-factor 1.2` choke (use `--merge-factor 0.5` or `0.6`, `--carve-k 3`, `--floater-min-faces 50`, `--texture-size 8192`), and verify on `F15` (`frame 999`) and `F16` (`frame 903`) that kitchen walls, shelves, and appliances are visibly cleaner and more complete than the current export.
+
+4. **Step 4 — Train & Mesh Unified `zone-living-bedroom` (`quality high`, 50k steps, `cap-max 3000000`):**
+   - Train the unified `zone-living-bedroom` zone (`~310–325` frames) with the corrected seed cloud, `--quality high`, `--cap-max 3000000`, `--num-iterations 50000`, `--train-resolution-divisor 1`, `--progressive-resolution 1`.
+   - Extract its 8K-textured mesh, apply only safe detached-floater/outside-envelope cleanup (verified via the p. 7 ablation render to delete **zero** valid room walls/floors!), and merge `zone-kitchen` + `zone-living-bedroom` into `exports/iphone-full-room.glb` (applying plane-intersection roof cutaway for dollhouse mode and preserving full geometry).
+
+5. **Step 5 — Rebuild Viewer & Produce Verification Pack:**
+   - Update `exports/iphone-full-room.glb` and `review/iPhone-Full-Room-preview.html` (keeping the verified 240 FPS Three.js walk/orbit controls).
+   - Re-render the **Dollhouse Overview (`F02` equivalent)** and all **8 Recorded-View Side-by-Side Comparisons (`F15–F22` equivalents)** showing the before-vs-after improvement.

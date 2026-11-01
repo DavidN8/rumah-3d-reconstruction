@@ -1,0 +1,41 @@
+{
+  "nativeModelUnchanged": true,
+  "sourceNativeSha256": "16f8963b043a766317497ee4281f4cf39c6b2190fafaaed51334734723c8b207",
+  "phoneFile": "models/iphone-phone-2b811d1241.glb",
+  "bytes": 21144604,
+  "sha256": "2b811d124120e70dcecc25d06e5dc397e2a28f310403a21fdfa1e290c41c9d2b",
+  "triangles": 1603164,
+  "meshes": [
+    {
+      "name": "zone-kitchen",
+      "triangles": 563447
+    },
+    {
+      "name": "zone-living-bedroom",
+      "triangles": 1039717
+    }
+  ],
+  "textures": [
+    {
+      "width": 2048,
+      "height": 2048,
+      "bytes": 1002686
+    },
+    {
+      "width": 2048,
+      "height": 2048,
+      "bytes": 1174001
+    }
+  ],
+  "decodedGeometryBytes": 43401159,
+  "estimatedTextureGpuBytesWithMipmaps": 44739242.666666664,
+  "quantization": {
+    "positions": 16,
+    "normals": 8,
+    "uvs": 12
+  },
+  "componentsPreserved": true,
+  "ownershipCrop": false,
+  "simplificationReport": "phone-simplified.glb.json",
+  "independent2mmAccuracyClaim": false
+}

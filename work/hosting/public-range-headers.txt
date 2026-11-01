@@ -1,0 +1,35 @@
+HTTP/1.1 307 Temporary Redirect
+Date: Tue, 27 Oct 2026 11:29:41 GMT
+Content-Type: text/html
+Transfer-Encoding: chunked
+Connection: keep-alive
+Cache-Control: no-store
+location: /models/iphone-full-room-16f8963b.glb
+Server: cloudflare
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+X-Content-Type-Options: nosniff
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=%2FPMH0eFINBWlAYKogjzJXSyx5nunTY3T%2BTIXRlLVbwJu0xRbqgxCgp7J1Z4D28%2BZVUdPxCmFR4QSsa8N%2FcuPZgPMZu9FU4c9GTRiFwyvqcyX8N%2FhnocNqV0XvFgHiS5sk3%2FNC6E%3D"}]}
+CF-RAY: a5115d4a5d8cce33-SIN
+alt-svc: h3=":443"; ma=86400
+
+HTTP/1.1 206 Partial Content
+Date: Tue, 27 Oct 2026 11:29:41 GMT
+Content-Type: model/gltf-binary
+Content-Length: 12
+Connection: keep-alive
+Cache-Control: public, max-age=31536000, immutable
+content-range: bytes 0-11/435614584
+etag: "6ae08975-19f6f378"
+last-modified: Tue, 27 Oct 2026 11:22:29 GMT
+Server: cloudflare
+x-content-type-options: nosniff
+x-robots-tag: noindex, nofollow
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=fY7qSxsRTTx1d5ivN8YXAjuNKsdrsK5NUoKqDRG3128OqlmQc7LCXRiclDJ0KvMIqd5C%2BWM7itWa3ewAvZgbJFspSjy7iMt0yJTvb%2Fha9eCMTpyTXP%2F6kBoWYESq021d7gNpxCU%3D"}]}
+CF-RAY: a5115d4ade90ce33-SIN
+alt-svc: h3=":443"; ma=86400
+

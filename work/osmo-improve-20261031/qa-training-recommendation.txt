@@ -1,0 +1,85 @@
+OSMO V3 VS SUCCESSFUL IPHONE: READ-ONLY TRAINING AUDIT, 2026-10-31
+
+Evidence: qa-training-config.json (actual saved configs and CPU audit of all
+2,498,101 Gaussians in the retained Osmo step-000040000.ckpt/splat.ply).
+
+Actual changed controls (iPhone -> Osmo v3):
+  num_iterations: 50000 -> 40000             CLI --num-iterations
+  cap_max: 3000000 -> 2500000                CLI --cap-max
+  max_world_size: 0.12 -> Infinity           CLI --max-world-size
+  refine_stop_iter: 40000 -> 30000           CLI --refine-stop-iter
+  sh_degree: 3 -> 0                         CLI --sh-degree
+  sh_reg: .001 -> .01                       CLI --sh-reg
+  depth_dir: depths -> depths-trusted-scale CLI --depth-dir
+  input_depth_is_ray_depth: false -> true   CLI --input-depth-is-ray-depth
+  warp_to_pinhole: false -> true            CLI --warp-to-pinhole
+  progressive_resolution_full_at: .30 -> .25
+
+The preset strings are meshing / 3dgs, but actual stored geometry loss values
+are identical. Do not infer that geometry priors were disabled by this label:
+normal_reg_weight=.04, normal_supervision_weight=.02,
+depth_supervision_weight=.05, depth_distortion_reg=.01,
+normal_distortion_reg=.01, rgb_distortion_reg=.01,
+mean_median_depth_weight=.01, median_depth_normal_reg_weight=.01,
+median_normal_supervision_weight=.01, median_render_normal_reg_weight=.01.
+Both also use max_screen_size=.2, hardness1.25, penalty1; scale_reg=.01;
+opacity_reg=.005; scales_lr .02 -> .005; long-axis/revised densification;
+refine_every100; max_split_fraction .1; oversize_split_fraction .15;
+refine_stop_num_iter2500; auto_scale_poses=false and train_frame=points.
+
+Native semantics verified in retained Spirula source:
+- src/backend/vulkan/shaders/densify.slang:191 and
+  src/kernels/densify/DensifyScoring.cu:175:
+  max_world_size becomes log(max_scale3d); each log-scale is clamped with min.
+  This shrinks axes above the limit. It does not delete the Gaussian, change
+  opacity, crop space, or by itself force a Gaussian split.
+- src/engine/EngineDensify.cpp:210: with screen-size penalty enabled, the hard
+  clip runs at refinement cadence (100 steps here). A separate budgeted
+  oversize/refinement mechanism may split splats; do not conflate it with clamp.
+- src/app/TrainerCore.cpp:606 multiplies max_world_size by train_frame_scale.
+  With auto_scale_poses=false, that scale is1. Osmo's saved scene transform is
+  identity; .12 is .12 in its current approximately normalized world units.
+  The capture was scaled using an assumed median camera height1.5m; this is
+  not surveyed centimetre accuracy.
+- EngineDensify.cpp:90 uses
+    step < max(refine_stop_iter, max_steps - refine_stop_num_iter).
+  Therefore effective growth stops were iPhone47500 and Osmo37500, not the
+  apparent absolute values40000/30000 alone.
+- TrainerCore.cpp:478-513 builds supervision/reg weights. At resumed step40000,
+  all warmups are already saturated, so new weights take full effect at once.
+
+CPU scale distribution of Osmo v3:
+  Largest-axis stddev P50=.00532, P95=.03860, P99=.06722,
+  P99.9=.12286, maximum=.31653.
+  .12 would clamp2775 splats (0.111%), comprising0.274% of summed opacity.
+  Of these1592 have opacity>.5. Median volume multiplier of the changed splats
+  is.8465. This is an opacity/count diagnostic, not projected wall area.
+  .08 would affect0.543% of splats /1.212% of opacity mass.
+  .12 is a useful conservative guard but cannot alone explain or repair broad
+  rough walls; almost all Gaussians are already smaller than it.
+
+Suggested isolated v4 geometry-prior trial from the preserved step40000:
+  --num-iterations 50000 --cap-max 3000000
+  --refine-stop-iter 48000 --refine-stop-num-iter 2000
+  --max-world-size .12 --normal-reg-weight .1
+  --normal-supervision-weight .06 --depth-supervision-weight .1
+
+This grows through48000 then settles for2000 steps. New strengths are2.5x
+flatness,3x normal supervision and2x depth. More room in the cap and resumed
+refinement can represent fine structure instead of only shrinking broad splats.
+Do not return to untrusted affine depth, change poses, ray-vs-axis depth,
+fisheye warp, masks or scene frame in this trial. Trusted depth exists only in
+the accepted subset; stronger priors can improve wall noise but can also bake
+model errors or flatten door/frame detail. Keep SH0 for diffuse mesh geometry;
+original-photo UV bake independently addresses native Gaussian-DC texture blur.
+With max_steps=null, extending total iterations also changes LR progress; record
+actual run settings rather than calling this a one-variable max-scale test.
+
+Promotion gate:
+Compare same4711 fixed SfM observations (in-sample consistency, not external
+ground truth), six calibrated source-view renders, and orbit views of door
+frames/white walls/floor. Require a near-surface gain and fewer missing rays
+without materially more early occlusions or unsupported underside area. Track
+physical wall roughness separately from photo-texture detail. Neither closed
+topology nor100% alpha coverage proves correct geometry. Keep v3 for rollback.
+No GPU training was launched by this audit helper.

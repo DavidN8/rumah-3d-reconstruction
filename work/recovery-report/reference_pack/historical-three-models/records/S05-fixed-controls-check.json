@@ -1,0 +1,377 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "Hardware GPU",
+      "pass": true,
+      "evidence": {
+        "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 5080 (0x00002C02) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "drawCalls": 3,
+        "triangles": 1082185
+      }
+    },
+    {
+      "name": "WASD w",
+      "pass": true,
+      "evidence": {
+        "delta": [
+          0.04908262743403874,
+          0,
+          0.2722845727880179
+        ],
+        "directionalDistance": 0.2766730794533181
+      }
+    },
+    {
+      "name": "WASD s",
+      "pass": true,
+      "evidence": {
+        "delta": [
+          -0.04968365786486073,
+          0,
+          -0.2756187731486016
+        ],
+        "directionalDistance": 0.2800610182991787
+      }
+    },
+    {
+      "name": "WASD a",
+      "pass": true,
+      "evidence": {
+        "delta": [
+          0.27563232766429313,
+          0,
+          -0.04968610123224282
+        ],
+        "directionalDistance": 0.28007479127778867
+      }
+    },
+    {
+      "name": "WASD d",
+      "pass": true,
+      "evidence": {
+        "delta": [
+          -0.26073543392717247,
+          0,
+          0.04700075377484947
+        ],
+        "directionalDistance": 0.2649377990408219
+      }
+    },
+    {
+      "name": "Vertical q",
+      "pass": true,
+      "evidence": {
+        "delta": [
+          0,
+          -0.27981013992043047,
+          0
+        ]
+      }
+    },
+    {
+      "name": "Vertical e",
+      "pass": true,
+      "evidence": {
+        "delta": [
+          0,
+          0.2796851737279258,
+          0
+        ]
+      }
+    },
+    {
+      "name": "Vertical Space",
+      "pass": true,
+      "evidence": {
+        "delta": [
+          0,
+          0.2751756377630763,
+          0
+        ]
+      }
+    },
+    {
+      "name": "Vertical c",
+      "pass": true,
+      "evidence": {
+        "delta": [
+          0,
+          -0.28020742944327925,
+          0
+        ]
+      }
+    },
+    {
+      "name": "Shift faster",
+      "pass": true,
+      "evidence": {
+        "ratio": 2.7044900610418217
+      }
+    },
+    {
+      "name": "Overlap release w then d",
+      "pass": true,
+      "evidence": {
+        "keysBeforeCleanup": [],
+        "driftAfterSettling": 0
+      }
+    },
+    {
+      "name": "Overlap release d then w",
+      "pass": true,
+      "evidence": {
+        "keysBeforeCleanup": [],
+        "driftAfterSettling": 0
+      }
+    },
+    {
+      "name": "Mouse yaw right",
+      "pass": true,
+      "evidence": {
+        "before": [
+          0.17740297513231756,
+          0,
+          0.98413829537022
+        ],
+        "after": [
+          -0.29709903242655233,
+          0,
+          0.9548466709012533
+        ],
+        "rightY": 0
+      }
+    },
+    {
+      "name": "Mouse down, no roll",
+      "pass": true,
+      "evidence": {
+        "forward": [
+          -0.2780540407657981,
+          -0.35227423327509005,
+          0.8936379663959335
+        ],
+        "rightY": 0
+      }
+    },
+    {
+      "name": "Wheel forward",
+      "pass": true,
+      "evidence": {
+        "delta": [
+          0.047978807864275,
+          0,
+          0.2661611630257321
+        ]
+      }
+    },
+    {
+      "name": "Rotate 90",
+      "pass": true,
+      "evidence": {
+        "angleDot": 1.6653345369377348e-16
+      }
+    },
+    {
+      "name": "Orbit keeps +Y upright",
+      "pass": true,
+      "evidence": {
+        "position": [
+          0.4392764568259829,
+          9.049329162605675,
+          4.378112248693751
+        ],
+        "rightY": 6.938893903907228e-18
+      }
+    },
+    {
+      "name": "Top view",
+      "pass": true,
+      "evidence": {
+        "forward": [
+          -0.0006442175798679894,
+          -0.9999995000000418,
+          -0.0007648420598106442
+        ],
+        "position": [
+          0.0060230816712871504,
+          10.149447838694387,
+          0.0071508545184675795
+        ]
+      }
+    },
+    {
+      "name": "Keyboard reset",
+      "pass": true,
+      "evidence": {
+        "position": [
+          0.3295223446810732,
+          1.5039917775601208,
+          -0.5515332515787474
+        ]
+      }
+    },
+    {
+      "name": "Recorded preset 0",
+      "pass": true,
+      "evidence": {
+        "name": "frame_0000999.jpg",
+        "distance": 0,
+        "rotationDot": 0.9999999999999999
+      }
+    },
+    {
+      "name": "Recorded preset 1",
+      "pass": true,
+      "evidence": {
+        "name": "frame_0000903.jpg",
+        "distance": 0,
+        "rotationDot": 1.0000000000000002
+      }
+    },
+    {
+      "name": "Recorded preset 2",
+      "pass": true,
+      "evidence": {
+        "name": "frame_0001398.jpg",
+        "distance": 0,
+        "rotationDot": 1.0000000000000002
+      }
+    },
+    {
+      "name": "Recorded preset 3",
+      "pass": true,
+      "evidence": {
+        "name": "frame_0001612.jpg",
+        "distance": 0,
+        "rotationDot": 1.0000000000000002
+      }
+    },
+    {
+      "name": "Recorded preset 4",
+      "pass": true,
+      "evidence": {
+        "name": "frame_0002402.jpg",
+        "distance": 0,
+        "rotationDot": 0.9999999999999999
+      }
+    },
+    {
+      "name": "Recorded preset 5",
+      "pass": true,
+      "evidence": {
+        "name": "frame_0003606.jpg",
+        "distance": 0,
+        "rotationDot": 1
+      }
+    },
+    {
+      "name": "Recorded preset 6",
+      "pass": true,
+      "evidence": {
+        "name": "frame_0004297.jpg",
+        "distance": 0,
+        "rotationDot": 1
+      }
+    },
+    {
+      "name": "Recorded preset 7",
+      "pass": true,
+      "evidence": {
+        "name": "frame_0004400.jpg",
+        "distance": 0,
+        "rotationDot": 1
+      }
+    },
+    {
+      "name": "Source comparison",
+      "pass": true,
+      "evidence": {
+        "source": "sources/frame_0004400.jpg"
+      }
+    },
+    {
+      "name": "Preset supports immediate WASD",
+      "pass": true,
+      "evidence": {
+        "position": [
+          0.8688845785752745,
+          1.337884514039037,
+          -3.149779567675532
+        ],
+        "quaternion": [
+          -0.0035972714236134954,
+          0.9943745428515354,
+          0.03592160000552869,
+          0.09957894767543818
+        ],
+        "forward": [
+          -0.19777910165442092,
+          -0.07215547417371933,
+          0.9775873436657905
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "right": [
+          -0.9801421856363143,
+          -8.673617379884035e-19,
+          -0.19829598063518233
+        ],
+        "mode": "walk",
+        "yaw": 2.941973582562585,
+        "pitch": -0.07221823318225389,
+        "keys": [],
+        "comparison": false,
+        "triangles": 1082185,
+        "renderCount": 1707
+      }
+    },
+    {
+      "name": "60 FPS target in this session",
+      "pass": true,
+      "evidence": {
+        "frames": 961,
+        "averageFps": 239.9980020977973,
+        "medianMs": 4.199999999998909,
+        "p95Ms": 4.299999999999272,
+        "p99Ms": 4.300000000001091,
+        "renderer": {
+          "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 5080 (0x00002C02) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "drawCalls": 3,
+          "triangles": 1082185
+        }
+      }
+    },
+    {
+      "name": "Full model orbit reaches 60 FPS",
+      "pass": true,
+      "evidence": {
+        "frames": 579,
+        "averageFps": 239.9900522258146,
+        "p95Ms": 4.299999999999272,
+        "renderer": {
+          "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 5080 (0x00002C02) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "drawCalls": 3,
+          "triangles": 1082185
+        }
+      }
+    },
+    {
+      "name": "Standalone works from file, fully offline",
+      "pass": true,
+      "evidence": {
+        "networkRequests": [],
+        "sourceEmbedded": true
+      }
+    },
+    {
+      "name": "No browser errors",
+      "pass": true,
+      "evidence": []
+    }
+  ],
+  "errors": []
+}

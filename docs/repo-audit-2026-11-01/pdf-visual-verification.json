@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "pdfSha256": "2fe3dc06dc99f48a7283527d3eedbf59b1718a65a1762cccf7e5424a34f5f307",
+  "pagesRenderedAt60Dpi": 784,
+  "contactSheetsRendered": 13,
+  "review": "All contact-sheet page groups examined across iterations. Updated source explanation pages re-rendered and inspected after docstring formatting fix. Full-size samples cover the guide, diagram, cleanup, Drive proof, source explanations, assets and file-register templates. No clipping/overlap found.",
+  "fullSizeSamplePagesInspected": [
+    1,
+    2,
+    8,
+    11,
+    19,
+    87,
+    140,
+    500
+  ],
+  "independentAllPageGlyphBoundsPassed": true,
+  "scratchCleanup": {
+    "exactGeneratedFilesRemoved": 816,
+    "bytesRemoved": 52505530,
+    "excludedFromPrimaryCleanupTotals": true,
+    "kept": "Final PDF, supporting audit records and original Chrome completion screenshot"
+  }
+}

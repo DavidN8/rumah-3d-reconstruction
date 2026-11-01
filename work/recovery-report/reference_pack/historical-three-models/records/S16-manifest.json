@@ -1,0 +1,30 @@
+{
+  "release": "2026-10-19",
+  "folder_url": "https://drive.google.com/drive/folders/1zX-JPXYY1Zeoiw-WecHVYTf2xUAh4PFj",
+  "bundles": [
+    {
+      "filename": "RuangKamar-models.zip",
+      "drive_id": "1uNabZmV9T8D9bVE_avVtBBNcTS0o--Yk",
+      "url": "https://drive.google.com/file/d/1uNabZmV9T8D9bVE_avVtBBNcTS0o--Yk/view?usp=drivesdk",
+      "bytes": 1221887411,
+      "sha256": "81778988cb33b0f7845171ce4070a4c3ace7f564ce1c39ecc1b3bcd29a30eebd",
+      "files": [
+        {
+          "path": "high-quality/exports/cleaned/bedroom-bathroom-cleaned-dollhouse.glb",
+          "bytes": 419817188,
+          "sha256": "199fea0205148b122d77d033615ad7e4a1d6231a3f7e5dad7bdcaa3c90479e92"
+        },
+        {
+          "path": "high-quality/exports/cleaned/bedroom-bathroom-cleaned.glb",
+          "bytes": 425821116,
+          "sha256": "c65f0f304c97216c858056446b2a0faa80ce81fc7bed47715e071dcfeab5e1f3"
+        },
+        {
+          "path": "high-quality/exports/combined/bedroom-bathroom.glb",
+          "bytes": 543126104,
+          "sha256": "39ba4fc4d35128d159af9e17b030021e470578d07b12125045f13ccac08cdccf"
+        }
+      ]
+    }
+  ]
+}

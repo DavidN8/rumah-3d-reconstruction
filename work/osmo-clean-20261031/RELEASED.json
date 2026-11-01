@@ -1,0 +1,21 @@
+{
+  "status": "released_and_verified",
+  "completedUtc": "2026-10-31T01:55:42.800769+00:00",
+  "site": "https://rumah.shizuku.rest/",
+  "release": "/var/www/rumah/releases/20261031-osmo-clean-v1",
+  "modelBytes": 45177102,
+  "modelSha256": "cbb33c91b5b481460b2c75e2125f3efa1458e6634abc3da1ce051a0989fd315c",
+  "sourceCheckpointSha256": "fd4816886cf15a96f2595fa529114af02f57c25897851e9657857f58c94fbeb6",
+  "finalReview": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\full-final-review.json",
+  "rootReleaseApproval": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\production\\release-approval.json",
+  "publicVerification": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\production\\deployment\\public-browser-verification.json",
+  "publicDesktopReadySeconds": 12.453799999982119,
+  "physicalPhones": "unverified; deferred by user",
+  "remainingQualityLimits": [
+    "Some floor patches remain soft or uneven at extreme downward/oblique views.",
+    "Some oblique door-frame edges and fringe regions remain rough.",
+    "Fine text and small objects are softer than source photographs."
+  ],
+  "referenceImage": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\outputs\\Osmo_Rebuilt_Dining_2026-10-31.png",
+  "referenceImageSha256": "a3552383c4908a43815a4a5640cd59c22f422418d29e1222c98ecd86fd518c74"
+}

@@ -1,0 +1,38 @@
+{
+  "method": "Screened Poisson, validated oriented depth seed plus accurate native SfM anchors; no Gaussian extraction",
+  "dataset": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\clean-v3\\explicit-full-v1\\dataset",
+  "nativeDataset": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\clean-v3\\dataset",
+  "denseSeedSha256": "0e405c89fefc6a9de46ba2ae2db141ef0a1a832bd44bd2c8dd58bd0984eb68e5",
+  "orientedDepthSamples": 1067622,
+  "sparseAnchors": 38577,
+  "anchorRule": "reprojection error <=1.25 native pixels, >=3 distinct training timestamps; <=.055 distance to dense surface; five-neighbor normal agreement >.80",
+  "heldOutDefinition": "Evaluation timestamps excluded from qualifying tracks and texture; SfM itself was solved using all images",
+  "qualityWeights": {
+    "dense": 1,
+    "sparse": 2
+  },
+  "poissonParameters": {
+    "depth": 9,
+    "fulldepth": 5,
+    "cgdepth": 0,
+    "scale": 1.1,
+    "samplespernode": 1.5,
+    "pointweight": 6.0,
+    "iters": 8,
+    "confidence": true,
+    "preclean": true,
+    "threads": 12
+  },
+  "orientation": {
+    "floorMedianNormalY": 0.996786247593697,
+    "ceilingMedianNormalY": -0.9976528952333075
+  },
+  "globalNormalFlip": false,
+  "vertices": 799520,
+  "faces": 1599436,
+  "exteriorFacesRemoved": 0,
+  "heightCut": false,
+  "worldFrame": "+Y up, original normalized units; no new transform",
+  "seconds": 17.735000000044238,
+  "status": "local pilot, requires visibility carving and visual acceptance"
+}

@@ -1,0 +1,1191 @@
+{
+  "frames": [
+    {
+      "camera": "cam0",
+      "source_frame": 1221,
+      "filename": "frame_001221_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 87556,
+      "component_count": 1,
+      "approved": true,
+      "decision": "Viewed source and rectified silhouette; retain actual operator, reject static scene",
+      "native_addition_file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\masking\\operator-additions\\cam0\\frame_001221_train.png",
+      "native_exclusion_fraction": 0.028304646809895834
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1230,
+      "filename": "frame_001230_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 117666,
+      "component_count": 2,
+      "approved": true,
+      "decision": "Viewed source and rectified silhouette; retain actual operator, reject static scene",
+      "native_addition_file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\masking\\operator-additions\\cam0\\frame_001230_train.png",
+      "native_exclusion_fraction": 0.04557257758246528
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1287,
+      "filename": "frame_001287_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 195944,
+      "component_count": 3,
+      "approved": true,
+      "decision": "Viewed source and rectified silhouette; retain actual operator, reject static scene",
+      "native_addition_file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\masking\\operator-additions\\cam0\\frame_001287_train.png",
+      "native_exclusion_fraction": 0.07816162109375
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1299,
+      "filename": "frame_001299_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 204309,
+      "component_count": 3,
+      "approved": true,
+      "decision": "Viewed source and rectified silhouette; retain actual operator, reject static scene",
+      "native_addition_file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\masking\\operator-additions\\cam0\\frame_001299_train.png",
+      "native_exclusion_fraction": 0.08352945963541666
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1308,
+      "filename": "frame_001308_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 186183,
+      "component_count": 1,
+      "approved": true,
+      "decision": "Viewed source and rectified silhouette; retain actual operator, reject static scene",
+      "native_addition_file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\masking\\operator-additions\\cam0\\frame_001308_train.png",
+      "native_exclusion_fraction": 0.0720281982421875
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1344,
+      "filename": "frame_001344_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 155184,
+      "component_count": 2,
+      "approved": true,
+      "decision": "Viewed source and rectified silhouette; retain actual operator, reject static scene",
+      "native_addition_file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\masking\\operator-additions\\cam0\\frame_001344_train.png",
+      "native_exclusion_fraction": 0.05815782335069444
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1356,
+      "filename": "frame_001356_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 167398,
+      "component_count": 3,
+      "approved": true,
+      "decision": "Viewed source and rectified silhouette; retain actual operator, reject static scene",
+      "native_addition_file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\masking\\operator-additions\\cam0\\frame_001356_train.png",
+      "native_exclusion_fraction": 0.06786953396267362
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1374,
+      "filename": "frame_001374_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 86316,
+      "component_count": 2,
+      "approved": true,
+      "decision": "Viewed source and rectified silhouette; retain actual operator, reject static scene",
+      "native_addition_file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\masking\\operator-additions\\cam0\\frame_001374_train.png",
+      "native_exclusion_fraction": 0.027288953993055556
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1377,
+      "filename": "frame_001377_eval.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 68607,
+      "component_count": 3,
+      "approved": true,
+      "decision": "Viewed source and rectified silhouette; retain actual operator, reject static scene",
+      "native_addition_file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\masking\\operator-additions\\cam0\\frame_001377_eval.png",
+      "native_exclusion_fraction": 0.019326375325520832
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1386,
+      "filename": "frame_001386_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 121665,
+      "component_count": 3,
+      "approved": true,
+      "decision": "Viewed source and rectified silhouette; retain actual operator, reject static scene",
+      "native_addition_file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\masking\\operator-additions\\cam0\\frame_001386_train.png",
+      "native_exclusion_fraction": 0.044214748806423614
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1392,
+      "filename": "frame_001392_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 177981,
+      "component_count": 2,
+      "approved": true,
+      "decision": "Viewed source and rectified silhouette; retain actual operator, reject static scene",
+      "native_addition_file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\masking\\operator-additions\\cam0\\frame_001392_train.png",
+      "native_exclusion_fraction": 0.06580966525607639
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1401,
+      "filename": "frame_001401_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 185518,
+      "component_count": 2,
+      "approved": true,
+      "decision": "Viewed source and rectified silhouette; retain actual operator, reject static scene",
+      "native_addition_file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\masking\\operator-additions\\cam0\\frame_001401_train.png",
+      "native_exclusion_fraction": 0.07214152018229167
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1407,
+      "filename": "frame_001407_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 201729,
+      "component_count": 1,
+      "approved": true,
+      "decision": "Viewed source and rectified silhouette; retain actual operator, reject static scene",
+      "native_addition_file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\masking\\operator-additions\\cam0\\frame_001407_train.png",
+      "native_exclusion_fraction": 0.08267618815104166
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1473,
+      "filename": "frame_001473_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 88242,
+      "component_count": 1,
+      "approved": true,
+      "decision": "Viewed source and rectified silhouette; retain actual operator, reject static scene",
+      "native_addition_file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\masking\\operator-additions\\cam0\\frame_001473_train.png",
+      "native_exclusion_fraction": 0.024936184353298613
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1482,
+      "filename": "frame_001482_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 97684,
+      "component_count": 1,
+      "approved": true,
+      "decision": "Viewed source and rectified silhouette; retain actual operator, reject static scene",
+      "native_addition_file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\masking\\operator-additions\\cam0\\frame_001482_train.png",
+      "native_exclusion_fraction": 0.03160420735677083
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1485,
+      "filename": "frame_001485_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 150825,
+      "component_count": 2,
+      "approved": true,
+      "static_mat_restoration": "x>=360,y>=775 and y>=835 in1024 view",
+      "decision": "Viewed source and rectified silhouette; retain actual operator, reject static scene",
+      "native_addition_file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\masking\\operator-additions\\cam0\\frame_001485_train.png",
+      "native_exclusion_fraction": 0.02876064724392361
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1491,
+      "filename": "frame_001491_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 123632,
+      "component_count": 76,
+      "approved": true,
+      "static_mat_restoration": "x>=360,y>=670 and y>=950 in1024 view",
+      "decision": "Viewed source and rectified silhouette; retain actual operator, reject static scene",
+      "native_addition_file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\masking\\operator-additions\\cam0\\frame_001491_train.png",
+      "native_exclusion_fraction": 0.01989902072482639
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1497,
+      "filename": "frame_001497_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 115318,
+      "component_count": 1,
+      "approved": true,
+      "decision": "Viewed source and rectified silhouette; retain actual operator, reject static scene",
+      "native_addition_file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\masking\\operator-additions\\cam0\\frame_001497_train.png",
+      "native_exclusion_fraction": 0.04021755642361111
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1506,
+      "filename": "frame_001506_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 166268,
+      "component_count": 1,
+      "approved": true,
+      "decision": "Viewed source and rectified silhouette; retain actual operator, reject static scene",
+      "native_addition_file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\masking\\operator-additions\\cam0\\frame_001506_train.png",
+      "native_exclusion_fraction": 0.06301154242621528
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1584,
+      "filename": "frame_001584_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 62700,
+      "component_count": 1,
+      "approved": true,
+      "decision": "Viewed source and rectified silhouette; retain actual operator, reject static scene",
+      "native_addition_file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\masking\\operator-additions\\cam0\\frame_001584_train.png",
+      "native_exclusion_fraction": 0.019251776801215276
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1626,
+      "filename": "frame_001626_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 55490,
+      "component_count": 21,
+      "approved": true,
+      "decision": "Viewed source and rectified silhouette; retain actual operator, reject static scene",
+      "native_addition_file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\masking\\operator-additions\\cam0\\frame_001626_train.png",
+      "native_exclusion_fraction": 0.013953789605034721
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1629,
+      "filename": "frame_001629_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 46082,
+      "component_count": 58,
+      "approved": true,
+      "decision": "Viewed source and rectified silhouette; retain actual operator, reject static scene",
+      "native_addition_file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\masking\\operator-additions\\cam0\\frame_001629_train.png",
+      "native_exclusion_fraction": 0.012022162543402777
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1659,
+      "filename": "frame_001659_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 43886,
+      "component_count": 2,
+      "approved": true,
+      "decision": "Viewed source and rectified silhouette; retain actual operator, reject static scene",
+      "native_addition_file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\masking\\operator-additions\\cam0\\frame_001659_train.png",
+      "native_exclusion_fraction": 0.013818223741319444
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1668,
+      "filename": "frame_001668_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 70112,
+      "component_count": 1,
+      "approved": true,
+      "decision": "Viewed source and rectified silhouette; retain actual operator, reject static scene",
+      "native_addition_file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\masking\\operator-additions\\cam0\\frame_001668_train.png",
+      "native_exclusion_fraction": 0.019585774739583332
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1677,
+      "filename": "frame_001677_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 67263,
+      "component_count": 2,
+      "approved": true,
+      "decision": "Viewed source and rectified silhouette; retain actual operator, reject static scene",
+      "native_addition_file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\masking\\operator-additions\\cam0\\frame_001677_train.png",
+      "native_exclusion_fraction": 0.0195562744140625
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1695,
+      "filename": "frame_001695_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 126924,
+      "component_count": 1,
+      "approved": true,
+      "decision": "Viewed source and rectified silhouette; retain actual operator, reject static scene",
+      "native_addition_file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\masking\\operator-additions\\cam0\\frame_001695_train.png",
+      "native_exclusion_fraction": 0.040599500868055555
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1704,
+      "filename": "frame_001704_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 67871,
+      "component_count": 1,
+      "approved": true,
+      "decision": "Viewed source and rectified silhouette; retain actual operator, reject static scene",
+      "native_addition_file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\masking\\operator-additions\\cam0\\frame_001704_train.png",
+      "native_exclusion_fraction": 0.02015957302517361
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1716,
+      "filename": "frame_001716_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 133409,
+      "component_count": 3,
+      "approved": true,
+      "manual_view_operator_polygon": [
+        [
+          280,
+          0
+        ],
+        [
+          635,
+          0
+        ],
+        [
+          615,
+          52
+        ],
+        [
+          460,
+          88
+        ],
+        [
+          446,
+          200
+        ],
+        [
+          450,
+          251
+        ],
+        [
+          469,
+          310
+        ],
+        [
+          475,
+          391
+        ],
+        [
+          458,
+          446
+        ],
+        [
+          431,
+          468
+        ],
+        [
+          397,
+          478
+        ],
+        [
+          395,
+          511
+        ],
+        [
+          361,
+          549
+        ],
+        [
+          355,
+          578
+        ],
+        [
+          363,
+          599
+        ],
+        [
+          350,
+          623
+        ],
+        [
+          361,
+          672
+        ],
+        [
+          358,
+          699
+        ],
+        [
+          348,
+          724
+        ],
+        [
+          315,
+          733
+        ],
+        [
+          290,
+          733
+        ]
+      ],
+      "decision": "Viewed source and rectified silhouette; retain actual operator, reject static scene",
+      "native_addition_file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\masking\\operator-additions\\cam0\\frame_001716_train.png",
+      "native_exclusion_fraction": 0.030922105577256945
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1722,
+      "filename": "frame_001722_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 94496,
+      "component_count": 1,
+      "approved": true,
+      "decision": "Viewed source and rectified silhouette; retain actual operator, reject static scene",
+      "native_addition_file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\masking\\operator-additions\\cam0\\frame_001722_train.png",
+      "native_exclusion_fraction": 0.025244954427083334
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1731,
+      "filename": "frame_001731_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 81338,
+      "component_count": 1,
+      "approved": false,
+      "decision": "Rejected static water bottle, furniture or floor-clothing detection. Existing native operator remains."
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1737,
+      "filename": "frame_001737_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 148386,
+      "component_count": 3,
+      "approved": false,
+      "decision": "Rejected static water bottle, furniture or floor-clothing detection. Existing native operator remains."
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1749,
+      "filename": "frame_001749_eval.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 122759,
+      "component_count": 7,
+      "approved": false,
+      "decision": "Rejected static water bottle, furniture or floor-clothing detection. Existing native operator remains."
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1755,
+      "filename": "frame_001755_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 5300,
+      "component_count": 2,
+      "approved": true,
+      "manual_view_operator_polygon": [
+        [
+          320,
+          615
+        ],
+        [
+          339,
+          672
+        ],
+        [
+          361,
+          731
+        ],
+        [
+          382,
+          787
+        ],
+        [
+          409,
+          819
+        ],
+        [
+          390,
+          851
+        ],
+        [
+          359,
+          886
+        ],
+        [
+          336,
+          923
+        ],
+        [
+          300,
+          951
+        ],
+        [
+          280,
+          951
+        ]
+      ],
+      "decision": "Viewed source and rectified silhouette; retain actual operator, reject static scene",
+      "native_addition_file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\masking\\operator-additions\\cam0\\frame_001755_train.png",
+      "native_exclusion_fraction": 0.004307590060763889
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1761,
+      "filename": "frame_001761_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 23145,
+      "component_count": 7,
+      "approved": true,
+      "decision": "Viewed source and rectified silhouette; retain actual operator, reject static scene",
+      "native_addition_file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\masking\\operator-additions\\cam0\\frame_001761_train.png",
+      "native_exclusion_fraction": 0.004259507921006944
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1770,
+      "filename": "frame_001770_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 3846,
+      "component_count": 2,
+      "approved": false,
+      "decision": "Rejected static water bottle, furniture or floor-clothing detection. Existing native operator remains."
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1776,
+      "filename": "frame_001776_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 3012,
+      "component_count": 3,
+      "approved": false,
+      "decision": "Rejected static water bottle, furniture or floor-clothing detection. Existing native operator remains."
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1785,
+      "filename": "frame_001785_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 11604,
+      "component_count": 2,
+      "approved": true,
+      "decision": "Viewed source and rectified silhouette; retain actual operator, reject static scene",
+      "native_addition_file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\masking\\operator-additions\\cam0\\frame_001785_train.png",
+      "native_exclusion_fraction": 0.003100246853298611
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1800,
+      "filename": "frame_001800_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 1069,
+      "component_count": 1,
+      "approved": false,
+      "decision": "Rejected static water bottle, furniture or floor-clothing detection. Existing native operator remains."
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1809,
+      "filename": "frame_001809_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 20101,
+      "component_count": 5,
+      "approved": true,
+      "decision": "Viewed source and rectified silhouette; retain actual operator, reject static scene",
+      "native_addition_file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\masking\\operator-additions\\cam0\\frame_001809_train.png",
+      "native_exclusion_fraction": 0.006917860243055555
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1815,
+      "filename": "frame_001815_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 37566,
+      "component_count": 2,
+      "approved": true,
+      "manual_view_operator_polygon": [
+        [
+          294,
+          73
+        ],
+        [
+          339,
+          82
+        ],
+        [
+          330,
+          137
+        ],
+        [
+          322,
+          205
+        ],
+        [
+          326,
+          265
+        ],
+        [
+          326,
+          420
+        ],
+        [
+          344,
+          543
+        ],
+        [
+          349,
+          640
+        ],
+        [
+          379,
+          697
+        ],
+        [
+          398,
+          760
+        ],
+        [
+          426,
+          813
+        ],
+        [
+          414,
+          850
+        ],
+        [
+          384,
+          892
+        ],
+        [
+          350,
+          930
+        ],
+        [
+          351,
+          1000
+        ],
+        [
+          341,
+          1024
+        ],
+        [
+          285,
+          1024
+        ]
+      ],
+      "decision": "Viewed source and rectified silhouette; retain actual operator, reject static scene",
+      "native_addition_file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\masking\\operator-additions\\cam0\\frame_001815_train.png",
+      "native_exclusion_fraction": 0.01015102810329861
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1824,
+      "filename": "frame_001824_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 68154,
+      "component_count": 5,
+      "approved": false,
+      "decision": "Rejected static water bottle, furniture or floor-clothing detection. Existing native operator remains."
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1860,
+      "filename": "frame_001860_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 166780,
+      "component_count": 7,
+      "approved": false,
+      "decision": "Rejected static water bottle, furniture or floor-clothing detection. Existing native operator remains."
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1869,
+      "filename": "frame_001869_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 74884,
+      "component_count": 9,
+      "approved": false,
+      "decision": "Rejected static water bottle, furniture or floor-clothing detection. Existing native operator remains."
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1872,
+      "filename": "frame_001872_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 6917,
+      "component_count": 3,
+      "approved": false,
+      "decision": "Rejected static water bottle, furniture or floor-clothing detection. Existing native operator remains."
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1881,
+      "filename": "frame_001881_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 71714,
+      "component_count": 128,
+      "approved": false,
+      "decision": "Rejected static water bottle, furniture or floor-clothing detection. Existing native operator remains."
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1890,
+      "filename": "frame_001890_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 5370,
+      "component_count": 1,
+      "approved": false,
+      "decision": "Rejected static water bottle, furniture or floor-clothing detection. Existing native operator remains."
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1896,
+      "filename": "frame_001896_train.jpg",
+      "phi": 0,
+      "roll": 180,
+      "selected_component_px": 8513,
+      "component_count": 1,
+      "approved": false,
+      "decision": "Rejected static water bottle, furniture or floor-clothing detection. Existing native operator remains."
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1926,
+      "filename": "frame_001926_eval.jpg",
+      "phi": 65,
+      "roll": 180,
+      "selected_component_px": 124644,
+      "component_count": 22,
+      "approved": true,
+      "decision": "Viewed source and rectified silhouette; retain actual operator, reject static scene",
+      "native_addition_file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\masking\\operator-additions\\cam0\\frame_001926_eval.png",
+      "native_exclusion_fraction": 0.05910224066840278
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1938,
+      "filename": "frame_001938_train.jpg",
+      "phi": 65,
+      "roll": 180,
+      "selected_component_px": 194901,
+      "component_count": 39,
+      "approved": true,
+      "manual_view_operator_polygon": [
+        [
+          546,
+          0
+        ],
+        [
+          639,
+          0
+        ],
+        [
+          635,
+          150
+        ],
+        [
+          621,
+          220
+        ],
+        [
+          618,
+          280
+        ],
+        [
+          626,
+          370
+        ],
+        [
+          623,
+          428
+        ],
+        [
+          618,
+          476
+        ],
+        [
+          644,
+          503
+        ],
+        [
+          644,
+          524
+        ],
+        [
+          627,
+          540
+        ],
+        [
+          600,
+          526
+        ],
+        [
+          570,
+          500
+        ],
+        [
+          549,
+          506
+        ],
+        [
+          533,
+          563
+        ],
+        [
+          516,
+          603
+        ],
+        [
+          493,
+          628
+        ],
+        [
+          455,
+          633
+        ],
+        [
+          238,
+          604
+        ]
+      ],
+      "decision": "Viewed source and rectified silhouette; retain actual operator, reject static scene",
+      "native_addition_file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\masking\\operator-additions\\cam0\\frame_001938_train.png",
+      "native_exclusion_fraction": 0.06185512966579861
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1944,
+      "filename": "frame_001944_train.jpg",
+      "phi": 65,
+      "roll": 180,
+      "selected_component_px": 110822,
+      "component_count": 40,
+      "approved": true,
+      "manual_view_operator_polygon": [
+        [
+          546,
+          0
+        ],
+        [
+          661,
+          0
+        ],
+        [
+          641,
+          77
+        ],
+        [
+          636,
+          177
+        ],
+        [
+          625,
+          235
+        ],
+        [
+          618,
+          284
+        ],
+        [
+          622,
+          350
+        ],
+        [
+          615,
+          385
+        ],
+        [
+          622,
+          424
+        ],
+        [
+          620,
+          447
+        ],
+        [
+          623,
+          479
+        ],
+        [
+          613,
+          501
+        ],
+        [
+          595,
+          492
+        ],
+        [
+          583,
+          483
+        ],
+        [
+          585,
+          520
+        ],
+        [
+          592,
+          550
+        ],
+        [
+          589,
+          574
+        ],
+        [
+          565,
+          578
+        ],
+        [
+          548,
+          566
+        ],
+        [
+          540,
+          546
+        ],
+        [
+          528,
+          565
+        ],
+        [
+          518,
+          599
+        ],
+        [
+          488,
+          627
+        ],
+        [
+          450,
+          629
+        ],
+        [
+          238,
+          603
+        ]
+      ],
+      "decision": "Viewed source and rectified silhouette; retain actual operator, reject static scene",
+      "native_addition_file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\masking\\operator-additions\\cam0\\frame_001944_train.png",
+      "native_exclusion_fraction": 0.06227410210503472
+    },
+    {
+      "camera": "cam0",
+      "source_frame": 1950,
+      "filename": "frame_001950_train.jpg",
+      "phi": 65,
+      "roll": 180,
+      "selected_component_px": 155901,
+      "component_count": 29,
+      "approved": true,
+      "manual_view_operator_polygon": [
+        [
+          547,
+          0
+        ],
+        [
+          658,
+          0
+        ],
+        [
+          646,
+          58
+        ],
+        [
+          621,
+          109
+        ],
+        [
+          604,
+          200
+        ],
+        [
+          600,
+          300
+        ],
+        [
+          588,
+          365
+        ],
+        [
+          579,
+          394
+        ],
+        [
+          581,
+          418
+        ],
+        [
+          581,
+          446
+        ],
+        [
+          574,
+          451
+        ],
+        [
+          580,
+          491
+        ],
+        [
+          582,
+          519
+        ],
+        [
+          584,
+          538
+        ],
+        [
+          573,
+          547
+        ],
+        [
+          558,
+          544
+        ],
+        [
+          534,
+          531
+        ],
+        [
+          522,
+          559
+        ],
+        [
+          509,
+          581
+        ],
+        [
+          489,
+          597
+        ],
+        [
+          448,
+          600
+        ],
+        [
+          253,
+          592
+        ]
+      ],
+      "decision": "Viewed source and rectified silhouette; retain actual operator, reject static scene",
+      "native_addition_file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\masking\\operator-additions\\cam0\\frame_001950_train.png",
+      "native_exclusion_fraction": 0.052006700303819445
+    },
+    {
+      "camera": "cam1",
+      "source_frame": 1254,
+      "filename": "frame_001254_train.jpg",
+      "phi": 180,
+      "roll": 0,
+      "selected_component_px": 70849,
+      "component_count": 2,
+      "approved": true,
+      "decision": "Viewed source and rectified silhouette; retain actual operator, reject static scene",
+      "native_addition_file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\masking\\operator-additions\\cam1\\frame_001254_train.png",
+      "native_exclusion_fraction": 0.020075208875868056
+    },
+    {
+      "camera": "cam1",
+      "source_frame": 1266,
+      "filename": "frame_001266_train.jpg",
+      "phi": 180,
+      "roll": 0,
+      "selected_component_px": 80527,
+      "component_count": 2,
+      "approved": true,
+      "decision": "Viewed source and rectified silhouette; retain actual operator, reject static scene",
+      "native_addition_file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\masking\\operator-additions\\cam1\\frame_001266_train.png",
+      "native_exclusion_fraction": 0.024500325520833335
+    },
+    {
+      "camera": "cam1",
+      "source_frame": 1386,
+      "filename": "frame_001386_train.jpg",
+      "phi": 180,
+      "roll": 0,
+      "selected_component_px": 289111,
+      "component_count": 1,
+      "approved": true,
+      "decision": "Viewed source and rectified silhouette; retain actual operator, reject static scene",
+      "native_addition_file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\masking\\operator-additions\\cam1\\frame_001386_train.png",
+      "native_exclusion_fraction": 0.11180345323350695
+    },
+    {
+      "camera": "cam1",
+      "source_frame": 1497,
+      "filename": "frame_001497_train.jpg",
+      "phi": 180,
+      "roll": 0,
+      "selected_component_px": 268399,
+      "component_count": 1,
+      "approved": true,
+      "decision": "Viewed source and rectified silhouette; retain actual operator, reject static scene",
+      "native_addition_file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\masking\\operator-additions\\cam1\\frame_001497_train.png",
+      "native_exclusion_fraction": 0.1051898193359375
+    },
+    {
+      "camera": "cam1",
+      "source_frame": 1737,
+      "filename": "frame_001737_train.jpg",
+      "phi": 180,
+      "roll": 0,
+      "selected_component_px": 364877,
+      "component_count": 1,
+      "approved": true,
+      "decision": "Viewed source and rectified silhouette; retain actual operator, reject static scene",
+      "native_addition_file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\masking\\operator-additions\\cam1\\frame_001737_train.png",
+      "native_exclusion_fraction": 0.10673428005642362
+    },
+    {
+      "camera": "cam1",
+      "source_frame": 1515,
+      "filename": "frame_001515_train.jpg",
+      "phi": 105,
+      "roll": 0,
+      "selected_component_px": 155408,
+      "component_count": 8,
+      "approved": true,
+      "decision": "Viewed source and rectified silhouette; retain actual operator, reject static scene",
+      "native_addition_file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\masking\\operator-additions\\cam1\\frame_001515_train.png",
+      "native_exclusion_fraction": 0.06989556206597222
+    }
+  ],
+  "stage": "All candidates visually reviewed; accepted corrections separated from static-scene rejections",
+  "native_addition_semantics": "WHITE exclude, zero no opinion"
+}

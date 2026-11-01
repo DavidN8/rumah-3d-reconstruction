@@ -1,0 +1,4445 @@
+{
+  "frames": {
+    "cam0/frame_000006_train.jpg": {
+      "reviewed": true,
+      "source_frame": 6,
+      "time_seconds": 0.20020000000000002,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000015_train.jpg": {
+      "reviewed": true,
+      "source_frame": 15,
+      "time_seconds": 0.5005000000000001,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000027_train.jpg": {
+      "reviewed": true,
+      "source_frame": 27,
+      "time_seconds": 0.9009,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000036_train.jpg": {
+      "reviewed": true,
+      "source_frame": 36,
+      "time_seconds": 1.2012,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000045_train.jpg": {
+      "reviewed": true,
+      "source_frame": 45,
+      "time_seconds": 1.5015,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000054_train.jpg": {
+      "reviewed": true,
+      "source_frame": 54,
+      "time_seconds": 1.8018,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000066_eval.jpg": {
+      "reviewed": true,
+      "source_frame": 66,
+      "time_seconds": 2.2022,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000078_train.jpg": {
+      "reviewed": true,
+      "source_frame": 78,
+      "time_seconds": 2.6026000000000002,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000090_train.jpg": {
+      "reviewed": true,
+      "source_frame": 90,
+      "time_seconds": 3.003,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000102_train.jpg": {
+      "reviewed": true,
+      "source_frame": 102,
+      "time_seconds": 3.4034,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000120_train.jpg": {
+      "reviewed": true,
+      "source_frame": 120,
+      "time_seconds": 4.0040000000000004,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000129_train.jpg": {
+      "reviewed": true,
+      "source_frame": 129,
+      "time_seconds": 4.3043000000000005,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000135_train.jpg": {
+      "reviewed": true,
+      "source_frame": 135,
+      "time_seconds": 4.5045,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000147_train.jpg": {
+      "reviewed": true,
+      "source_frame": 147,
+      "time_seconds": 4.9049000000000005,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000162_train.jpg": {
+      "reviewed": true,
+      "source_frame": 162,
+      "time_seconds": 5.4054,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000171_train.jpg": {
+      "reviewed": true,
+      "source_frame": 171,
+      "time_seconds": 5.7057,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000180_train.jpg": {
+      "reviewed": true,
+      "source_frame": 180,
+      "time_seconds": 6.006,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000192_train.jpg": {
+      "reviewed": true,
+      "source_frame": 192,
+      "time_seconds": 6.4064000000000005,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000201_eval.jpg": {
+      "reviewed": true,
+      "source_frame": 201,
+      "time_seconds": 6.7067000000000005,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000207_train.jpg": {
+      "reviewed": true,
+      "source_frame": 207,
+      "time_seconds": 6.9069,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000219_train.jpg": {
+      "reviewed": true,
+      "source_frame": 219,
+      "time_seconds": 7.307300000000001,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000228_train.jpg": {
+      "reviewed": true,
+      "source_frame": 228,
+      "time_seconds": 7.6076,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000237_train.jpg": {
+      "reviewed": true,
+      "source_frame": 237,
+      "time_seconds": 7.9079,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000243_train.jpg": {
+      "reviewed": true,
+      "source_frame": 243,
+      "time_seconds": 8.1081,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000255_train.jpg": {
+      "reviewed": true,
+      "source_frame": 255,
+      "time_seconds": 8.5085,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000267_train.jpg": {
+      "reviewed": true,
+      "source_frame": 267,
+      "time_seconds": 8.908900000000001,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000276_train.jpg": {
+      "reviewed": true,
+      "source_frame": 276,
+      "time_seconds": 9.209200000000001,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000288_train.jpg": {
+      "reviewed": true,
+      "source_frame": 288,
+      "time_seconds": 9.6096,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000297_train.jpg": {
+      "reviewed": true,
+      "source_frame": 297,
+      "time_seconds": 9.9099,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000306_train.jpg": {
+      "reviewed": true,
+      "source_frame": 306,
+      "time_seconds": 10.2102,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000318_eval.jpg": {
+      "reviewed": true,
+      "source_frame": 318,
+      "time_seconds": 10.6106,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000330_train.jpg": {
+      "reviewed": true,
+      "source_frame": 330,
+      "time_seconds": 11.011000000000001,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000339_train.jpg": {
+      "reviewed": true,
+      "source_frame": 339,
+      "time_seconds": 11.311300000000001,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000348_train.jpg": {
+      "reviewed": true,
+      "source_frame": 348,
+      "time_seconds": 11.611600000000001,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000357_train.jpg": {
+      "reviewed": true,
+      "source_frame": 357,
+      "time_seconds": 11.911900000000001,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000372_train.jpg": {
+      "reviewed": true,
+      "source_frame": 372,
+      "time_seconds": 12.4124,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000378_train.jpg": {
+      "reviewed": true,
+      "source_frame": 378,
+      "time_seconds": 12.6126,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000390_train.jpg": {
+      "reviewed": true,
+      "source_frame": 390,
+      "time_seconds": 13.013,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000411_train.jpg": {
+      "reviewed": true,
+      "source_frame": 411,
+      "time_seconds": 13.713700000000001,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000420_train.jpg": {
+      "reviewed": true,
+      "source_frame": 420,
+      "time_seconds": 14.014000000000001,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000432_train.jpg": {
+      "reviewed": true,
+      "source_frame": 432,
+      "time_seconds": 14.4144,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000441_train.jpg": {
+      "reviewed": true,
+      "source_frame": 441,
+      "time_seconds": 14.7147,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000453_eval.jpg": {
+      "reviewed": true,
+      "source_frame": 453,
+      "time_seconds": 15.1151,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000462_train.jpg": {
+      "reviewed": true,
+      "source_frame": 462,
+      "time_seconds": 15.4154,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000471_train.jpg": {
+      "reviewed": true,
+      "source_frame": 471,
+      "time_seconds": 15.7157,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000477_train.jpg": {
+      "reviewed": true,
+      "source_frame": 477,
+      "time_seconds": 15.9159,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000486_train.jpg": {
+      "reviewed": true,
+      "source_frame": 486,
+      "time_seconds": 16.2162,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000498_train.jpg": {
+      "reviewed": true,
+      "source_frame": 498,
+      "time_seconds": 16.616600000000002,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000504_train.jpg": {
+      "reviewed": true,
+      "source_frame": 504,
+      "time_seconds": 16.8168,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000513_train.jpg": {
+      "reviewed": true,
+      "source_frame": 513,
+      "time_seconds": 17.1171,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000522_train.jpg": {
+      "reviewed": true,
+      "source_frame": 522,
+      "time_seconds": 17.4174,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000528_train.jpg": {
+      "reviewed": true,
+      "source_frame": 528,
+      "time_seconds": 17.6176,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000537_train.jpg": {
+      "reviewed": true,
+      "source_frame": 537,
+      "time_seconds": 17.9179,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000546_train.jpg": {
+      "reviewed": true,
+      "source_frame": 546,
+      "time_seconds": 18.2182,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000552_eval.jpg": {
+      "reviewed": true,
+      "source_frame": 552,
+      "time_seconds": 18.418400000000002,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000564_train.jpg": {
+      "reviewed": true,
+      "source_frame": 564,
+      "time_seconds": 18.8188,
+      "mirror_polygons": [
+        [
+          [
+            0.571875,
+            0.440625
+          ],
+          [
+            0.7625,
+            0.496875
+          ],
+          [
+            0.66875,
+            0.7859375
+          ],
+          [
+            0.4765625,
+            0.75
+          ]
+        ]
+      ]
+    },
+    "cam0/frame_000573_train.jpg": {
+      "reviewed": true,
+      "source_frame": 573,
+      "time_seconds": 19.1191,
+      "mirror_polygons": [
+        [
+          [
+            0.475,
+            0.4109375
+          ],
+          [
+            0.69375,
+            0.471875
+          ],
+          [
+            0.609375,
+            0.7625
+          ],
+          [
+            0.390625,
+            0.71875
+          ]
+        ]
+      ]
+    },
+    "cam0/frame_000585_train.jpg": {
+      "reviewed": true,
+      "source_frame": 585,
+      "time_seconds": 19.5195,
+      "mirror_polygons": [
+        [
+          [
+            0.4078125,
+            0.3875
+          ],
+          [
+            0.6359375,
+            0.4546875
+          ],
+          [
+            0.54375,
+            0.7390625
+          ],
+          [
+            0.3375,
+            0.696875
+          ]
+        ]
+      ]
+    },
+    "cam0/frame_000591_train.jpg": {
+      "reviewed": true,
+      "source_frame": 591,
+      "time_seconds": 19.7197,
+      "mirror_polygons": [
+        [
+          [
+            0.3859375,
+            0.3828125
+          ],
+          [
+            0.61875,
+            0.446875
+          ],
+          [
+            0.5234375,
+            0.7375
+          ],
+          [
+            0.3265625,
+            0.690625
+          ]
+        ]
+      ]
+    },
+    "cam0/frame_000600_train.jpg": {
+      "reviewed": true,
+      "source_frame": 600,
+      "time_seconds": 20.02,
+      "mirror_polygons": [
+        [
+          [
+            0.35625,
+            0.378125
+          ],
+          [
+            0.5890625,
+            0.434375
+          ],
+          [
+            0.4828125,
+            0.740625
+          ],
+          [
+            0.2640625,
+            0.6953125
+          ]
+        ]
+      ]
+    },
+    "cam0/frame_000609_train.jpg": {
+      "reviewed": true,
+      "source_frame": 609,
+      "time_seconds": 20.3203,
+      "mirror_polygons": [
+        [
+          [
+            0.34375,
+            0.384375
+          ],
+          [
+            0.5578125,
+            0.4359375
+          ],
+          [
+            0.465625,
+            0.734375
+          ],
+          [
+            0.2875,
+            0.690625
+          ]
+        ]
+      ]
+    },
+    "cam0/frame_000615_train.jpg": {
+      "reviewed": true,
+      "source_frame": 615,
+      "time_seconds": 20.520500000000002,
+      "mirror_polygons": [
+        [
+          [
+            0.3625,
+            0.4046875
+          ],
+          [
+            0.5578125,
+            0.4359375
+          ],
+          [
+            0.4671875,
+            0.7375
+          ],
+          [
+            0.31875,
+            0.6859375
+          ]
+        ]
+      ]
+    },
+    "cam0/frame_000621_train.jpg": {
+      "reviewed": true,
+      "source_frame": 621,
+      "time_seconds": 20.7207,
+      "mirror_polygons": [
+        [
+          [
+            0.4171875,
+            0.4296875
+          ],
+          [
+            0.596875,
+            0.446875
+          ],
+          [
+            0.5140625,
+            0.7546875
+          ],
+          [
+            0.3765625,
+            0.6890625
+          ]
+        ]
+      ]
+    },
+    "cam0/frame_000627_train.jpg": {
+      "reviewed": true,
+      "source_frame": 627,
+      "time_seconds": 20.9209,
+      "mirror_polygons": [
+        [
+          [
+            0.4875,
+            0.4546875
+          ],
+          [
+            0.6703125,
+            0.471875
+          ],
+          [
+            0.65625,
+            0.571875
+          ],
+          [
+            0.6140625,
+            0.675
+          ],
+          [
+            0.5625,
+            0.775
+          ],
+          [
+            0.4359375,
+            0.7109375
+          ]
+        ]
+      ]
+    },
+    "cam0/frame_000636_train.jpg": {
+      "reviewed": true,
+      "source_frame": 636,
+      "time_seconds": 21.2212,
+      "mirror_polygons": [
+        [
+          [
+            0.65,
+            0.49375
+          ],
+          [
+            0.8625,
+            0.49375
+          ],
+          [
+            0.853125,
+            0.6015625
+          ],
+          [
+            0.8171875,
+            0.7046875
+          ],
+          [
+            0.759375,
+            0.8015625
+          ],
+          [
+            0.6109375,
+            0.7625
+          ]
+        ]
+      ]
+    },
+    "cam0/frame_000642_train.jpg": {
+      "reviewed": true,
+      "source_frame": 642,
+      "time_seconds": 21.421400000000002,
+      "mirror_polygons": [
+        [
+          [
+            0.7640625,
+            0.5203125
+          ],
+          [
+            1.0,
+            0.4890625
+          ],
+          [
+            1.0,
+            0.753125
+          ],
+          [
+            0.871875,
+            0.8203125
+          ],
+          [
+            0.6765625,
+            0.7640625
+          ]
+        ]
+      ]
+    },
+    "cam0/frame_000645_eval.jpg": {
+      "reviewed": true,
+      "source_frame": 645,
+      "time_seconds": 21.5215,
+      "mirror_polygons": [
+        [
+          [
+            0.8390625,
+            0.5265625
+          ],
+          [
+            1.0,
+            0.496875
+          ],
+          [
+            1.0,
+            0.7171875
+          ],
+          [
+            0.884375,
+            0.815625
+          ],
+          [
+            0.759375,
+            0.7859375
+          ]
+        ]
+      ]
+    },
+    "cam0/frame_000651_train.jpg": {
+      "reviewed": true,
+      "source_frame": 651,
+      "time_seconds": 21.721700000000002,
+      "mirror_polygons": [
+        [
+          [
+            0.9359375,
+            0.54375
+          ],
+          [
+            1.0,
+            0.525
+          ],
+          [
+            1.0,
+            0.684375
+          ],
+          [
+            0.915625,
+            0.8140625
+          ],
+          [
+            0.859375,
+            0.7875
+          ]
+        ]
+      ]
+    },
+    "cam0/frame_000660_train.jpg": {
+      "reviewed": true,
+      "source_frame": 660,
+      "time_seconds": 22.022000000000002,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000666_train.jpg": {
+      "reviewed": true,
+      "source_frame": 666,
+      "time_seconds": 22.2222,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000678_train.jpg": {
+      "reviewed": true,
+      "source_frame": 678,
+      "time_seconds": 22.622600000000002,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000687_train.jpg": {
+      "reviewed": true,
+      "source_frame": 687,
+      "time_seconds": 22.922900000000002,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000696_train.jpg": {
+      "reviewed": true,
+      "source_frame": 696,
+      "time_seconds": 23.223200000000002,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000708_train.jpg": {
+      "reviewed": true,
+      "source_frame": 708,
+      "time_seconds": 23.6236,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000714_train.jpg": {
+      "reviewed": true,
+      "source_frame": 714,
+      "time_seconds": 23.823800000000002,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000723_train.jpg": {
+      "reviewed": true,
+      "source_frame": 723,
+      "time_seconds": 24.124100000000002,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000735_train.jpg": {
+      "reviewed": true,
+      "source_frame": 735,
+      "time_seconds": 24.5245,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000741_train.jpg": {
+      "reviewed": true,
+      "source_frame": 741,
+      "time_seconds": 24.724700000000002,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000750_eval.jpg": {
+      "reviewed": true,
+      "source_frame": 750,
+      "time_seconds": 25.025000000000002,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000768_train.jpg": {
+      "reviewed": true,
+      "source_frame": 768,
+      "time_seconds": 25.625600000000002,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000774_train.jpg": {
+      "reviewed": true,
+      "source_frame": 774,
+      "time_seconds": 25.8258,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000786_train.jpg": {
+      "reviewed": true,
+      "source_frame": 786,
+      "time_seconds": 26.226200000000002,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000804_train.jpg": {
+      "reviewed": true,
+      "source_frame": 804,
+      "time_seconds": 26.826800000000002,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000816_train.jpg": {
+      "reviewed": true,
+      "source_frame": 816,
+      "time_seconds": 27.2272,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000822_train.jpg": {
+      "reviewed": true,
+      "source_frame": 822,
+      "time_seconds": 27.427400000000002,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000837_train.jpg": {
+      "reviewed": true,
+      "source_frame": 837,
+      "time_seconds": 27.9279,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000843_train.jpg": {
+      "reviewed": true,
+      "source_frame": 843,
+      "time_seconds": 28.1281,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000852_train.jpg": {
+      "reviewed": true,
+      "source_frame": 852,
+      "time_seconds": 28.4284,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000861_train.jpg": {
+      "reviewed": true,
+      "source_frame": 861,
+      "time_seconds": 28.7287,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000870_train.jpg": {
+      "reviewed": true,
+      "source_frame": 870,
+      "time_seconds": 29.029,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000882_eval.jpg": {
+      "reviewed": true,
+      "source_frame": 882,
+      "time_seconds": 29.4294,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000888_train.jpg": {
+      "reviewed": true,
+      "source_frame": 888,
+      "time_seconds": 29.6296,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000897_train.jpg": {
+      "reviewed": true,
+      "source_frame": 897,
+      "time_seconds": 29.9299,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000906_train.jpg": {
+      "reviewed": true,
+      "source_frame": 906,
+      "time_seconds": 30.2302,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000912_train.jpg": {
+      "reviewed": true,
+      "source_frame": 912,
+      "time_seconds": 30.4304,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000921_train.jpg": {
+      "reviewed": true,
+      "source_frame": 921,
+      "time_seconds": 30.7307,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000933_train.jpg": {
+      "reviewed": true,
+      "source_frame": 933,
+      "time_seconds": 31.1311,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000942_train.jpg": {
+      "reviewed": true,
+      "source_frame": 942,
+      "time_seconds": 31.4314,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000954_train.jpg": {
+      "reviewed": true,
+      "source_frame": 954,
+      "time_seconds": 31.8318,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000957_train.jpg": {
+      "reviewed": true,
+      "source_frame": 957,
+      "time_seconds": 31.9319,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000966_train.jpg": {
+      "reviewed": true,
+      "source_frame": 966,
+      "time_seconds": 32.2322,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000981_train.jpg": {
+      "reviewed": true,
+      "source_frame": 981,
+      "time_seconds": 32.7327,
+      "mirror_polygons": []
+    },
+    "cam0/frame_000987_eval.jpg": {
+      "reviewed": true,
+      "source_frame": 987,
+      "time_seconds": 32.932900000000004,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001002_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1002,
+      "time_seconds": 33.4334,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001011_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1011,
+      "time_seconds": 33.7337,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001017_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1017,
+      "time_seconds": 33.9339,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001029_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1029,
+      "time_seconds": 34.3343,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001035_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1035,
+      "time_seconds": 34.5345,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001044_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1044,
+      "time_seconds": 34.8348,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001056_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1056,
+      "time_seconds": 35.2352,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001059_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1059,
+      "time_seconds": 35.335300000000004,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001065_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1065,
+      "time_seconds": 35.5355,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001074_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1074,
+      "time_seconds": 35.8358,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001083_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1083,
+      "time_seconds": 36.1361,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001086_eval.jpg": {
+      "reviewed": true,
+      "source_frame": 1086,
+      "time_seconds": 36.236200000000004,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001092_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1092,
+      "time_seconds": 36.4364,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001098_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1098,
+      "time_seconds": 36.6366,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001107_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1107,
+      "time_seconds": 36.9369,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001113_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1113,
+      "time_seconds": 37.137100000000004,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001122_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1122,
+      "time_seconds": 37.437400000000004,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001131_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1131,
+      "time_seconds": 37.737700000000004,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001140_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1140,
+      "time_seconds": 38.038000000000004,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001146_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1146,
+      "time_seconds": 38.2382,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001152_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1152,
+      "time_seconds": 38.4384,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001167_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1167,
+      "time_seconds": 38.938900000000004,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001173_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1173,
+      "time_seconds": 39.1391,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001179_eval.jpg": {
+      "reviewed": true,
+      "source_frame": 1179,
+      "time_seconds": 39.3393,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001191_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1191,
+      "time_seconds": 39.7397,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001197_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1197,
+      "time_seconds": 39.9399,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001203_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1203,
+      "time_seconds": 40.140100000000004,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001212_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1212,
+      "time_seconds": 40.440400000000004,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001221_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1221,
+      "time_seconds": 40.740700000000004,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001230_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1230,
+      "time_seconds": 41.041000000000004,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001236_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1236,
+      "time_seconds": 41.2412,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001248_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1248,
+      "time_seconds": 41.641600000000004,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001254_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1254,
+      "time_seconds": 41.8418,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001266_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1266,
+      "time_seconds": 42.242200000000004,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001272_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1272,
+      "time_seconds": 42.4424,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001284_eval.jpg": {
+      "reviewed": true,
+      "source_frame": 1284,
+      "time_seconds": 42.842800000000004,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001287_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1287,
+      "time_seconds": 42.9429,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001299_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1299,
+      "time_seconds": 43.3433,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001308_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1308,
+      "time_seconds": 43.6436,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001320_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1320,
+      "time_seconds": 44.044000000000004,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001326_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1326,
+      "time_seconds": 44.2442,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001332_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1332,
+      "time_seconds": 44.4444,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001344_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1344,
+      "time_seconds": 44.8448,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001356_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1356,
+      "time_seconds": 45.245200000000004,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001359_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1359,
+      "time_seconds": 45.3453,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001365_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1365,
+      "time_seconds": 45.545500000000004,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001374_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1374,
+      "time_seconds": 45.845800000000004,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001377_eval.jpg": {
+      "reviewed": true,
+      "source_frame": 1377,
+      "time_seconds": 45.9459,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001386_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1386,
+      "time_seconds": 46.2462,
+      "mirror_polygons": [
+        [
+          [
+            0.4625,
+            0.5265625
+          ],
+          [
+            0.484375,
+            0.5359375
+          ],
+          [
+            0.434375,
+            0.625
+          ],
+          [
+            0.4125,
+            0.6046875
+          ]
+        ]
+      ]
+    },
+    "cam0/frame_001392_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1392,
+      "time_seconds": 46.446400000000004,
+      "mirror_polygons": [
+        [
+          [
+            0.515625,
+            0.5859375
+          ],
+          [
+            0.540625,
+            0.5984375
+          ],
+          [
+            0.4796875,
+            0.6953125
+          ],
+          [
+            0.453125,
+            0.66875
+          ]
+        ]
+      ]
+    },
+    "cam0/frame_001401_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1401,
+      "time_seconds": 46.746700000000004,
+      "mirror_polygons": [
+        [
+          [
+            0.571875,
+            0.646875
+          ],
+          [
+            0.6078125,
+            0.6625
+          ],
+          [
+            0.5359375,
+            0.7515625
+          ],
+          [
+            0.4984375,
+            0.7203125
+          ]
+        ]
+      ]
+    },
+    "cam0/frame_001407_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1407,
+      "time_seconds": 46.9469,
+      "mirror_polygons": [
+        [
+          [
+            0.5640625,
+            0.6609375
+          ],
+          [
+            0.6,
+            0.6765625
+          ],
+          [
+            0.5328125,
+            0.7640625
+          ],
+          [
+            0.49375,
+            0.73125
+          ]
+        ]
+      ]
+    },
+    "cam0/frame_001416_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1416,
+      "time_seconds": 47.2472,
+      "mirror_polygons": [
+        [
+          [
+            0.4953125,
+            0.6203125
+          ],
+          [
+            0.534375,
+            0.640625
+          ],
+          [
+            0.471875,
+            0.74375
+          ],
+          [
+            0.4328125,
+            0.7109375
+          ]
+        ]
+      ]
+    },
+    "cam0/frame_001422_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1422,
+      "time_seconds": 47.4474,
+      "mirror_polygons": [
+        [
+          [
+            0.4125,
+            0.5796875
+          ],
+          [
+            0.4515625,
+            0.5984375
+          ],
+          [
+            0.3921875,
+            0.6953125
+          ],
+          [
+            0.35,
+            0.6609375
+          ]
+        ]
+      ]
+    },
+    "cam0/frame_001431_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1431,
+      "time_seconds": 47.7477,
+      "mirror_polygons": [
+        [
+          [
+            0.25625,
+            0.5078125
+          ],
+          [
+            0.315625,
+            0.5359375
+          ],
+          [
+            0.25625,
+            0.6421875
+          ],
+          [
+            0.20625,
+            0.6109375
+          ]
+        ]
+      ]
+    },
+    "cam0/frame_001437_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1437,
+      "time_seconds": 47.947900000000004,
+      "mirror_polygons": [
+        [
+          [
+            0.1578125,
+            0.4625
+          ],
+          [
+            0.209375,
+            0.48125
+          ],
+          [
+            0.1625,
+            0.634375
+          ],
+          [
+            0.1140625,
+            0.6015625
+          ]
+        ]
+      ]
+    },
+    "cam0/frame_001440_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1440,
+      "time_seconds": 48.048,
+      "mirror_polygons": [
+        [
+          [
+            0.1171875,
+            0.4390625
+          ],
+          [
+            0.1734375,
+            0.459375
+          ],
+          [
+            0.1359375,
+            0.63125
+          ],
+          [
+            0.0859375,
+            0.6
+          ]
+        ]
+      ]
+    },
+    "cam0/frame_001449_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1449,
+      "time_seconds": 48.3483,
+      "mirror_polygons": [
+        [
+          [
+            0.0296875,
+            0.41875
+          ],
+          [
+            0.0640625,
+            0.4328125
+          ],
+          [
+            0.0609375,
+            0.6265625
+          ],
+          [
+            0.0296875,
+            0.5984375
+          ]
+        ]
+      ]
+    },
+    "cam0/frame_001455_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1455,
+      "time_seconds": 48.548500000000004,
+      "mirror_polygons": [
+        [
+          [
+            0.009375,
+            0.403125
+          ],
+          [
+            0.034375,
+            0.4203125
+          ],
+          [
+            0.0390625,
+            0.6359375
+          ],
+          [
+            0.015625,
+            0.6109375
+          ]
+        ]
+      ]
+    },
+    "cam0/frame_001467_eval.jpg": {
+      "reviewed": true,
+      "source_frame": 1467,
+      "time_seconds": 48.9489,
+      "mirror_polygons": [
+        [
+          [
+            0.0,
+            0.3875
+          ],
+          [
+            0.0234375,
+            0.4015625
+          ],
+          [
+            0.021875,
+            0.6359375
+          ],
+          [
+            0.0,
+            0.6203125
+          ]
+        ]
+      ]
+    },
+    "cam0/frame_001473_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1473,
+      "time_seconds": 49.149100000000004,
+      "mirror_polygons": [
+        [
+          [
+            0.0203125,
+            0.421875
+          ],
+          [
+            0.046875,
+            0.434375
+          ],
+          [
+            0.065625,
+            0.6515625
+          ],
+          [
+            0.03125,
+            0.6203125
+          ]
+        ]
+      ]
+    },
+    "cam0/frame_001482_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1482,
+      "time_seconds": 49.449400000000004,
+      "mirror_polygons": [
+        [
+          [
+            0.075,
+            0.484375
+          ],
+          [
+            0.1375,
+            0.5015625
+          ],
+          [
+            0.1390625,
+            0.6265625
+          ],
+          [
+            0.1640625,
+            0.6859375
+          ],
+          [
+            0.1015625,
+            0.6609375
+          ],
+          [
+            0.0734375,
+            0.584375
+          ]
+        ]
+      ]
+    },
+    "cam0/frame_001485_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1485,
+      "time_seconds": 49.5495,
+      "mirror_polygons": [
+        [
+          [
+            0.1015625,
+            0.5015625
+          ],
+          [
+            0.196875,
+            0.53125
+          ],
+          [
+            0.1875,
+            0.69375
+          ],
+          [
+            0.1234375,
+            0.6609375
+          ],
+          [
+            0.103125,
+            0.5875
+          ]
+        ]
+      ]
+    },
+    "cam0/frame_001491_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1491,
+      "time_seconds": 49.749700000000004,
+      "mirror_polygons": [
+        [
+          [
+            0.146875,
+            0.528125
+          ],
+          [
+            0.303125,
+            0.5671875
+          ],
+          [
+            0.278125,
+            0.734375
+          ],
+          [
+            0.159375,
+            0.6828125
+          ]
+        ]
+      ]
+    },
+    "cam0/frame_001497_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1497,
+      "time_seconds": 49.9499,
+      "mirror_polygons": [
+        [
+          [
+            0.19375,
+            0.55
+          ],
+          [
+            0.384375,
+            0.60625
+          ],
+          [
+            0.31875,
+            0.7625
+          ],
+          [
+            0.1875,
+            0.6953125
+          ]
+        ]
+      ]
+    },
+    "cam0/frame_001506_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1506,
+      "time_seconds": 50.2502,
+      "mirror_polygons": [
+        [
+          [
+            0.2640625,
+            0.5859375
+          ],
+          [
+            0.4671875,
+            0.6671875
+          ],
+          [
+            0.3859375,
+            0.803125
+          ],
+          [
+            0.2390625,
+            0.728125
+          ]
+        ]
+      ]
+    },
+    "cam0/frame_001515_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1515,
+      "time_seconds": 50.5505,
+      "mirror_polygons": [
+        [
+          [
+            0.346875,
+            0.6296875
+          ],
+          [
+            0.534375,
+            0.7171875
+          ],
+          [
+            0.440625,
+            0.8375
+          ],
+          [
+            0.2859375,
+            0.7578125
+          ]
+        ]
+      ]
+    },
+    "cam0/frame_001524_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1524,
+      "time_seconds": 50.8508,
+      "mirror_polygons": [
+        [
+          [
+            0.4140625,
+            0.6546875
+          ],
+          [
+            0.6,
+            0.7390625
+          ],
+          [
+            0.4953125,
+            0.85
+          ],
+          [
+            0.3296875,
+            0.765625
+          ]
+        ]
+      ]
+    },
+    "cam0/frame_001530_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1530,
+      "time_seconds": 51.051,
+      "mirror_polygons": [
+        [
+          [
+            0.4375,
+            0.671875
+          ],
+          [
+            0.6078125,
+            0.746875
+          ],
+          [
+            0.5109375,
+            0.8515625
+          ],
+          [
+            0.353125,
+            0.7875
+          ]
+        ]
+      ]
+    },
+    "cam0/frame_001539_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1539,
+      "time_seconds": 51.3513,
+      "mirror_polygons": [
+        [
+          [
+            0.4859375,
+            0.703125
+          ],
+          [
+            0.6265625,
+            0.7765625
+          ],
+          [
+            0.540625,
+            0.8671875
+          ],
+          [
+            0.378125,
+            0.8
+          ]
+        ]
+      ]
+    },
+    "cam0/frame_001551_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1551,
+      "time_seconds": 51.7517,
+      "mirror_polygons": [
+        [
+          [
+            0.5,
+            0.734375
+          ],
+          [
+            0.6328125,
+            0.803125
+          ],
+          [
+            0.5390625,
+            0.896875
+          ],
+          [
+            0.375,
+            0.834375
+          ]
+        ]
+      ]
+    },
+    "cam0/frame_001557_eval.jpg": {
+      "reviewed": true,
+      "source_frame": 1557,
+      "time_seconds": 51.9519,
+      "mirror_polygons": [
+        [
+          [
+            0.471875,
+            0.7359375
+          ],
+          [
+            0.609375,
+            0.7921875
+          ],
+          [
+            0.546875,
+            0.9
+          ],
+          [
+            0.35625,
+            0.825
+          ]
+        ]
+      ]
+    },
+    "cam0/frame_001563_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1563,
+      "time_seconds": 52.152100000000004,
+      "mirror_polygons": [
+        [
+          [
+            0.4421875,
+            0.70625
+          ],
+          [
+            0.578125,
+            0.759375
+          ],
+          [
+            0.515625,
+            0.8640625
+          ],
+          [
+            0.3265625,
+            0.796875
+          ]
+        ]
+      ]
+    },
+    "cam0/frame_001572_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1572,
+      "time_seconds": 52.452400000000004,
+      "mirror_polygons": [
+        [
+          [
+            0.3234375,
+            0.6109375
+          ],
+          [
+            0.4515625,
+            0.6421875
+          ],
+          [
+            0.4515625,
+            0.7578125
+          ],
+          [
+            0.25,
+            0.746875
+          ]
+        ]
+      ]
+    },
+    "cam0/frame_001575_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1575,
+      "time_seconds": 52.5525,
+      "mirror_polygons": [
+        [
+          [
+            0.2765625,
+            0.5875
+          ],
+          [
+            0.4046875,
+            0.6109375
+          ],
+          [
+            0.396875,
+            0.7375
+          ],
+          [
+            0.21875,
+            0.7375
+          ]
+        ]
+      ]
+    },
+    "cam0/frame_001584_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1584,
+      "time_seconds": 52.8528,
+      "mirror_polygons": [
+        [
+          [
+            0.090625,
+            0.515625
+          ],
+          [
+            0.2234375,
+            0.5390625
+          ],
+          [
+            0.3109375,
+            0.66875
+          ],
+          [
+            0.1171875,
+            0.7203125
+          ],
+          [
+            0.090625,
+            0.61875
+          ]
+        ]
+      ]
+    },
+    "cam0/frame_001590_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1590,
+      "time_seconds": 53.053000000000004,
+      "mirror_polygons": [
+        [
+          [
+            0.01875,
+            0.5046875
+          ],
+          [
+            0.1609375,
+            0.51875
+          ],
+          [
+            0.25,
+            0.6484375
+          ],
+          [
+            0.075,
+            0.7265625
+          ],
+          [
+            0.03125,
+            0.6515625
+          ],
+          [
+            0.01875,
+            0.5796875
+          ]
+        ]
+      ]
+    },
+    "cam0/frame_001593_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1593,
+      "time_seconds": 53.1531,
+      "mirror_polygons": [
+        [
+          [
+            0.0,
+            0.5
+          ],
+          [
+            0.1203125,
+            0.5109375
+          ],
+          [
+            0.2140625,
+            0.6421875
+          ],
+          [
+            0.05625,
+            0.7375
+          ],
+          [
+            0.0125,
+            0.6609375
+          ],
+          [
+            0.0,
+            0.5828125
+          ]
+        ]
+      ]
+    },
+    "cam0/frame_001599_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1599,
+      "time_seconds": 53.353300000000004,
+      "mirror_polygons": [
+        [
+          [
+            0.0,
+            0.5265625
+          ],
+          [
+            0.040625,
+            0.515625
+          ],
+          [
+            0.1609375,
+            0.6640625
+          ],
+          [
+            0.075,
+            0.7484375
+          ],
+          [
+            0.0203125,
+            0.653125
+          ]
+        ]
+      ]
+    },
+    "cam0/frame_001608_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1608,
+      "time_seconds": 53.653600000000004,
+      "mirror_polygons": [
+        [
+          [
+            0.0,
+            0.5546875
+          ],
+          [
+            0.03125,
+            0.6078125
+          ],
+          [
+            0.0671875,
+            0.6859375
+          ],
+          [
+            0.0984375,
+            0.734375
+          ],
+          [
+            0.0734375,
+            0.765625
+          ],
+          [
+            0.028125,
+            0.70625
+          ],
+          [
+            0.0,
+            0.64375
+          ]
+        ]
+      ]
+    },
+    "cam0/frame_001614_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1614,
+      "time_seconds": 53.8538,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001626_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1626,
+      "time_seconds": 54.254200000000004,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001629_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1629,
+      "time_seconds": 54.3543,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001641_eval.jpg": {
+      "reviewed": true,
+      "source_frame": 1641,
+      "time_seconds": 54.7547,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001647_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1647,
+      "time_seconds": 54.9549,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001659_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1659,
+      "time_seconds": 55.3553,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001668_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1668,
+      "time_seconds": 55.6556,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001677_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1677,
+      "time_seconds": 55.9559,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001689_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1689,
+      "time_seconds": 56.356300000000005,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001695_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1695,
+      "time_seconds": 56.5565,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001704_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1704,
+      "time_seconds": 56.8568,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001716_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1716,
+      "time_seconds": 57.257200000000005,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001722_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1722,
+      "time_seconds": 57.4574,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001731_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1731,
+      "time_seconds": 57.7577,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001737_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1737,
+      "time_seconds": 57.9579,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001749_eval.jpg": {
+      "reviewed": true,
+      "source_frame": 1749,
+      "time_seconds": 58.3583,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001755_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1755,
+      "time_seconds": 58.5585,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001761_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1761,
+      "time_seconds": 58.758700000000005,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001770_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1770,
+      "time_seconds": 59.059000000000005,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001776_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1776,
+      "time_seconds": 59.2592,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001785_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1785,
+      "time_seconds": 59.5595,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001800_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1800,
+      "time_seconds": 60.06,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001809_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1809,
+      "time_seconds": 60.3603,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001815_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1815,
+      "time_seconds": 60.5605,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001824_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1824,
+      "time_seconds": 60.8608,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001833_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1833,
+      "time_seconds": 61.1611,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001836_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1836,
+      "time_seconds": 61.2612,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001842_eval.jpg": {
+      "reviewed": true,
+      "source_frame": 1842,
+      "time_seconds": 61.4614,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001848_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1848,
+      "time_seconds": 61.6616,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001860_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1860,
+      "time_seconds": 62.062,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001869_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1869,
+      "time_seconds": 62.3623,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001872_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1872,
+      "time_seconds": 62.4624,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001881_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1881,
+      "time_seconds": 62.7627,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001890_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1890,
+      "time_seconds": 63.063,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001896_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1896,
+      "time_seconds": 63.2632,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001902_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1902,
+      "time_seconds": 63.4634,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001908_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1908,
+      "time_seconds": 63.6636,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001917_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1917,
+      "time_seconds": 63.9639,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001920_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1920,
+      "time_seconds": 64.06400000000001,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001926_eval.jpg": {
+      "reviewed": true,
+      "source_frame": 1926,
+      "time_seconds": 64.2642,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001938_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1938,
+      "time_seconds": 64.66460000000001,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001944_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1944,
+      "time_seconds": 64.8648,
+      "mirror_polygons": []
+    },
+    "cam0/frame_001950_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1950,
+      "time_seconds": 65.065,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000006_train.jpg": {
+      "reviewed": true,
+      "source_frame": 6,
+      "time_seconds": 0.20020000000000002,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000015_train.jpg": {
+      "reviewed": true,
+      "source_frame": 15,
+      "time_seconds": 0.5005000000000001,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000027_train.jpg": {
+      "reviewed": true,
+      "source_frame": 27,
+      "time_seconds": 0.9009,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000036_train.jpg": {
+      "reviewed": true,
+      "source_frame": 36,
+      "time_seconds": 1.2012,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000045_train.jpg": {
+      "reviewed": true,
+      "source_frame": 45,
+      "time_seconds": 1.5015,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000054_train.jpg": {
+      "reviewed": true,
+      "source_frame": 54,
+      "time_seconds": 1.8018,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000066_eval.jpg": {
+      "reviewed": true,
+      "source_frame": 66,
+      "time_seconds": 2.2022,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000078_train.jpg": {
+      "reviewed": true,
+      "source_frame": 78,
+      "time_seconds": 2.6026000000000002,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000090_train.jpg": {
+      "reviewed": true,
+      "source_frame": 90,
+      "time_seconds": 3.003,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000102_train.jpg": {
+      "reviewed": true,
+      "source_frame": 102,
+      "time_seconds": 3.4034,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000120_train.jpg": {
+      "reviewed": true,
+      "source_frame": 120,
+      "time_seconds": 4.0040000000000004,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000129_train.jpg": {
+      "reviewed": true,
+      "source_frame": 129,
+      "time_seconds": 4.3043000000000005,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000135_train.jpg": {
+      "reviewed": true,
+      "source_frame": 135,
+      "time_seconds": 4.5045,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000147_train.jpg": {
+      "reviewed": true,
+      "source_frame": 147,
+      "time_seconds": 4.9049000000000005,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000162_train.jpg": {
+      "reviewed": true,
+      "source_frame": 162,
+      "time_seconds": 5.4054,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000171_train.jpg": {
+      "reviewed": true,
+      "source_frame": 171,
+      "time_seconds": 5.7057,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000180_train.jpg": {
+      "reviewed": true,
+      "source_frame": 180,
+      "time_seconds": 6.006,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000192_train.jpg": {
+      "reviewed": true,
+      "source_frame": 192,
+      "time_seconds": 6.4064000000000005,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000201_eval.jpg": {
+      "reviewed": true,
+      "source_frame": 201,
+      "time_seconds": 6.7067000000000005,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000207_train.jpg": {
+      "reviewed": true,
+      "source_frame": 207,
+      "time_seconds": 6.9069,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000219_train.jpg": {
+      "reviewed": true,
+      "source_frame": 219,
+      "time_seconds": 7.307300000000001,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000228_train.jpg": {
+      "reviewed": true,
+      "source_frame": 228,
+      "time_seconds": 7.6076,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000237_train.jpg": {
+      "reviewed": true,
+      "source_frame": 237,
+      "time_seconds": 7.9079,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000243_train.jpg": {
+      "reviewed": true,
+      "source_frame": 243,
+      "time_seconds": 8.1081,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000255_train.jpg": {
+      "reviewed": true,
+      "source_frame": 255,
+      "time_seconds": 8.5085,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000267_train.jpg": {
+      "reviewed": true,
+      "source_frame": 267,
+      "time_seconds": 8.908900000000001,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000276_train.jpg": {
+      "reviewed": true,
+      "source_frame": 276,
+      "time_seconds": 9.209200000000001,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000288_train.jpg": {
+      "reviewed": true,
+      "source_frame": 288,
+      "time_seconds": 9.6096,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000297_train.jpg": {
+      "reviewed": true,
+      "source_frame": 297,
+      "time_seconds": 9.9099,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000306_train.jpg": {
+      "reviewed": true,
+      "source_frame": 306,
+      "time_seconds": 10.2102,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000318_eval.jpg": {
+      "reviewed": true,
+      "source_frame": 318,
+      "time_seconds": 10.6106,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000330_train.jpg": {
+      "reviewed": true,
+      "source_frame": 330,
+      "time_seconds": 11.011000000000001,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000339_train.jpg": {
+      "reviewed": true,
+      "source_frame": 339,
+      "time_seconds": 11.311300000000001,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000348_train.jpg": {
+      "reviewed": true,
+      "source_frame": 348,
+      "time_seconds": 11.611600000000001,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000357_train.jpg": {
+      "reviewed": true,
+      "source_frame": 357,
+      "time_seconds": 11.911900000000001,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000372_train.jpg": {
+      "reviewed": true,
+      "source_frame": 372,
+      "time_seconds": 12.4124,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000378_train.jpg": {
+      "reviewed": true,
+      "source_frame": 378,
+      "time_seconds": 12.6126,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000390_train.jpg": {
+      "reviewed": true,
+      "source_frame": 390,
+      "time_seconds": 13.013,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000411_train.jpg": {
+      "reviewed": true,
+      "source_frame": 411,
+      "time_seconds": 13.713700000000001,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000420_train.jpg": {
+      "reviewed": true,
+      "source_frame": 420,
+      "time_seconds": 14.014000000000001,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000432_train.jpg": {
+      "reviewed": true,
+      "source_frame": 432,
+      "time_seconds": 14.4144,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000441_train.jpg": {
+      "reviewed": true,
+      "source_frame": 441,
+      "time_seconds": 14.7147,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000453_eval.jpg": {
+      "reviewed": true,
+      "source_frame": 453,
+      "time_seconds": 15.1151,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000462_train.jpg": {
+      "reviewed": true,
+      "source_frame": 462,
+      "time_seconds": 15.4154,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000471_train.jpg": {
+      "reviewed": true,
+      "source_frame": 471,
+      "time_seconds": 15.7157,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000477_train.jpg": {
+      "reviewed": true,
+      "source_frame": 477,
+      "time_seconds": 15.9159,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000486_train.jpg": {
+      "reviewed": true,
+      "source_frame": 486,
+      "time_seconds": 16.2162,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000498_train.jpg": {
+      "reviewed": true,
+      "source_frame": 498,
+      "time_seconds": 16.616600000000002,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000504_train.jpg": {
+      "reviewed": true,
+      "source_frame": 504,
+      "time_seconds": 16.8168,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000513_train.jpg": {
+      "reviewed": true,
+      "source_frame": 513,
+      "time_seconds": 17.1171,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000522_train.jpg": {
+      "reviewed": true,
+      "source_frame": 522,
+      "time_seconds": 17.4174,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000528_train.jpg": {
+      "reviewed": true,
+      "source_frame": 528,
+      "time_seconds": 17.6176,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000537_train.jpg": {
+      "reviewed": true,
+      "source_frame": 537,
+      "time_seconds": 17.9179,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000546_train.jpg": {
+      "reviewed": true,
+      "source_frame": 546,
+      "time_seconds": 18.2182,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000552_eval.jpg": {
+      "reviewed": true,
+      "source_frame": 552,
+      "time_seconds": 18.418400000000002,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000564_train.jpg": {
+      "reviewed": true,
+      "source_frame": 564,
+      "time_seconds": 18.8188,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000573_train.jpg": {
+      "reviewed": true,
+      "source_frame": 573,
+      "time_seconds": 19.1191,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000585_train.jpg": {
+      "reviewed": true,
+      "source_frame": 585,
+      "time_seconds": 19.5195,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000591_train.jpg": {
+      "reviewed": true,
+      "source_frame": 591,
+      "time_seconds": 19.7197,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000600_train.jpg": {
+      "reviewed": true,
+      "source_frame": 600,
+      "time_seconds": 20.02,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000609_train.jpg": {
+      "reviewed": true,
+      "source_frame": 609,
+      "time_seconds": 20.3203,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000615_train.jpg": {
+      "reviewed": true,
+      "source_frame": 615,
+      "time_seconds": 20.520500000000002,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000621_train.jpg": {
+      "reviewed": true,
+      "source_frame": 621,
+      "time_seconds": 20.7207,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000627_train.jpg": {
+      "reviewed": true,
+      "source_frame": 627,
+      "time_seconds": 20.9209,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000636_train.jpg": {
+      "reviewed": true,
+      "source_frame": 636,
+      "time_seconds": 21.2212,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000642_train.jpg": {
+      "reviewed": true,
+      "source_frame": 642,
+      "time_seconds": 21.421400000000002,
+      "mirror_polygons": [
+        [
+          [
+            0.0,
+            0.5015625
+          ],
+          [
+            0.0484375,
+            0.4921875
+          ],
+          [
+            0.0796875,
+            0.68125
+          ],
+          [
+            0.1921875,
+            0.840625
+          ],
+          [
+            0.1296875,
+            0.8390625
+          ],
+          [
+            0.0,
+            0.6640625
+          ]
+        ]
+      ]
+    },
+    "cam1/frame_000645_eval.jpg": {
+      "reviewed": true,
+      "source_frame": 645,
+      "time_seconds": 21.5215,
+      "mirror_polygons": [
+        [
+          [
+            0.0,
+            0.509375
+          ],
+          [
+            0.103125,
+            0.4859375
+          ],
+          [
+            0.1375,
+            0.68125
+          ],
+          [
+            0.2828125,
+            0.834375
+          ],
+          [
+            0.175,
+            0.8515625
+          ],
+          [
+            0.0,
+            0.6984375
+          ]
+        ]
+      ]
+    },
+    "cam1/frame_000651_train.jpg": {
+      "reviewed": true,
+      "source_frame": 651,
+      "time_seconds": 21.721700000000002,
+      "mirror_polygons": [
+        [
+          [
+            0.0,
+            0.54375
+          ],
+          [
+            0.20625,
+            0.48125
+          ],
+          [
+            0.24375,
+            0.6546875
+          ],
+          [
+            0.35,
+            0.7828125
+          ],
+          [
+            0.228125,
+            0.85
+          ],
+          [
+            0.0765625,
+            0.7609375
+          ]
+        ]
+      ]
+    },
+    "cam1/frame_000660_train.jpg": {
+      "reviewed": true,
+      "source_frame": 660,
+      "time_seconds": 22.022000000000002,
+      "mirror_polygons": [
+        [
+          [
+            0.14375,
+            0.4921875
+          ],
+          [
+            0.3515625,
+            0.446875
+          ],
+          [
+            0.4390625,
+            0.715625
+          ],
+          [
+            0.26875,
+            0.7765625
+          ]
+        ]
+      ]
+    },
+    "cam1/frame_000666_train.jpg": {
+      "reviewed": true,
+      "source_frame": 666,
+      "time_seconds": 22.2222,
+      "mirror_polygons": [
+        [
+          [
+            0.2265625,
+            0.478125
+          ],
+          [
+            0.4171875,
+            0.4296875
+          ],
+          [
+            0.4859375,
+            0.6828125
+          ],
+          [
+            0.325,
+            0.7359375
+          ]
+        ]
+      ]
+    },
+    "cam1/frame_000678_train.jpg": {
+      "reviewed": true,
+      "source_frame": 678,
+      "time_seconds": 22.622600000000002,
+      "mirror_polygons": [
+        [
+          [
+            0.3421875,
+            0.44375
+          ],
+          [
+            0.5328125,
+            0.403125
+          ],
+          [
+            0.596875,
+            0.646875
+          ],
+          [
+            0.440625,
+            0.7078125
+          ]
+        ]
+      ]
+    },
+    "cam1/frame_000687_train.jpg": {
+      "reviewed": true,
+      "source_frame": 687,
+      "time_seconds": 22.922900000000002,
+      "mirror_polygons": [
+        [
+          [
+            0.40625,
+            0.4265625
+          ],
+          [
+            0.5765625,
+            0.3921875
+          ],
+          [
+            0.6328125,
+            0.621875
+          ],
+          [
+            0.4921875,
+            0.6796875
+          ]
+        ]
+      ]
+    },
+    "cam1/frame_000696_train.jpg": {
+      "reviewed": true,
+      "source_frame": 696,
+      "time_seconds": 23.223200000000002,
+      "mirror_polygons": [
+        [
+          [
+            0.46875,
+            0.3921875
+          ],
+          [
+            0.59375,
+            0.3734375
+          ],
+          [
+            0.6421875,
+            0.590625
+          ],
+          [
+            0.5328125,
+            0.625
+          ]
+        ]
+      ]
+    },
+    "cam1/frame_000708_train.jpg": {
+      "reviewed": true,
+      "source_frame": 708,
+      "time_seconds": 23.6236,
+      "mirror_polygons": [
+        [
+          [
+            0.5765625,
+            0.3859375
+          ],
+          [
+            0.6296875,
+            0.38125
+          ],
+          [
+            0.6640625,
+            0.5734375
+          ],
+          [
+            0.6171875,
+            0.5953125
+          ]
+        ]
+      ]
+    },
+    "cam1/frame_000714_train.jpg": {
+      "reviewed": true,
+      "source_frame": 714,
+      "time_seconds": 23.823800000000002,
+      "mirror_polygons": [
+        [
+          [
+            0.63125,
+            0.384375
+          ],
+          [
+            0.653125,
+            0.38125
+          ],
+          [
+            0.68125,
+            0.5625
+          ],
+          [
+            0.6640625,
+            0.575
+          ]
+        ]
+      ]
+    },
+    "cam1/frame_000723_train.jpg": {
+      "reviewed": true,
+      "source_frame": 723,
+      "time_seconds": 24.124100000000002,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000735_train.jpg": {
+      "reviewed": true,
+      "source_frame": 735,
+      "time_seconds": 24.5245,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000741_train.jpg": {
+      "reviewed": true,
+      "source_frame": 741,
+      "time_seconds": 24.724700000000002,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000750_eval.jpg": {
+      "reviewed": true,
+      "source_frame": 750,
+      "time_seconds": 25.025000000000002,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000768_train.jpg": {
+      "reviewed": true,
+      "source_frame": 768,
+      "time_seconds": 25.625600000000002,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000774_train.jpg": {
+      "reviewed": true,
+      "source_frame": 774,
+      "time_seconds": 25.8258,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000786_train.jpg": {
+      "reviewed": true,
+      "source_frame": 786,
+      "time_seconds": 26.226200000000002,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000804_train.jpg": {
+      "reviewed": true,
+      "source_frame": 804,
+      "time_seconds": 26.826800000000002,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000816_train.jpg": {
+      "reviewed": true,
+      "source_frame": 816,
+      "time_seconds": 27.2272,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000822_train.jpg": {
+      "reviewed": true,
+      "source_frame": 822,
+      "time_seconds": 27.427400000000002,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000837_train.jpg": {
+      "reviewed": true,
+      "source_frame": 837,
+      "time_seconds": 27.9279,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000843_train.jpg": {
+      "reviewed": true,
+      "source_frame": 843,
+      "time_seconds": 28.1281,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000852_train.jpg": {
+      "reviewed": true,
+      "source_frame": 852,
+      "time_seconds": 28.4284,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000861_train.jpg": {
+      "reviewed": true,
+      "source_frame": 861,
+      "time_seconds": 28.7287,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000870_train.jpg": {
+      "reviewed": true,
+      "source_frame": 870,
+      "time_seconds": 29.029,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000882_eval.jpg": {
+      "reviewed": true,
+      "source_frame": 882,
+      "time_seconds": 29.4294,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000888_train.jpg": {
+      "reviewed": true,
+      "source_frame": 888,
+      "time_seconds": 29.6296,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000897_train.jpg": {
+      "reviewed": true,
+      "source_frame": 897,
+      "time_seconds": 29.9299,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000906_train.jpg": {
+      "reviewed": true,
+      "source_frame": 906,
+      "time_seconds": 30.2302,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000912_train.jpg": {
+      "reviewed": true,
+      "source_frame": 912,
+      "time_seconds": 30.4304,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000921_train.jpg": {
+      "reviewed": true,
+      "source_frame": 921,
+      "time_seconds": 30.7307,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000933_train.jpg": {
+      "reviewed": true,
+      "source_frame": 933,
+      "time_seconds": 31.1311,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000942_train.jpg": {
+      "reviewed": true,
+      "source_frame": 942,
+      "time_seconds": 31.4314,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000954_train.jpg": {
+      "reviewed": true,
+      "source_frame": 954,
+      "time_seconds": 31.8318,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000957_train.jpg": {
+      "reviewed": true,
+      "source_frame": 957,
+      "time_seconds": 31.9319,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000966_train.jpg": {
+      "reviewed": true,
+      "source_frame": 966,
+      "time_seconds": 32.2322,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000981_train.jpg": {
+      "reviewed": true,
+      "source_frame": 981,
+      "time_seconds": 32.7327,
+      "mirror_polygons": []
+    },
+    "cam1/frame_000987_eval.jpg": {
+      "reviewed": true,
+      "source_frame": 987,
+      "time_seconds": 32.932900000000004,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001002_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1002,
+      "time_seconds": 33.4334,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001011_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1011,
+      "time_seconds": 33.7337,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001017_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1017,
+      "time_seconds": 33.9339,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001029_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1029,
+      "time_seconds": 34.3343,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001035_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1035,
+      "time_seconds": 34.5345,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001044_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1044,
+      "time_seconds": 34.8348,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001056_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1056,
+      "time_seconds": 35.2352,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001059_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1059,
+      "time_seconds": 35.335300000000004,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001065_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1065,
+      "time_seconds": 35.5355,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001074_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1074,
+      "time_seconds": 35.8358,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001083_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1083,
+      "time_seconds": 36.1361,
+      "mirror_polygons": [],
+      "restore_static_polygons": [
+        [
+          [
+            0.1140625,
+            0.728125
+          ],
+          [
+            0.171875,
+            0.7171875
+          ],
+          [
+            0.240625,
+            0.728125
+          ],
+          [
+            0.271875,
+            0.75
+          ],
+          [
+            0.2984375,
+            0.7515625
+          ],
+          [
+            0.3171875,
+            0.771875
+          ],
+          [
+            0.35,
+            0.7875
+          ],
+          [
+            0.3609375,
+            0.815625
+          ],
+          [
+            0.3375,
+            0.8265625
+          ],
+          [
+            0.271875,
+            0.8375
+          ],
+          [
+            0.20625,
+            0.840625
+          ],
+          [
+            0.18125,
+            0.825
+          ],
+          [
+            0.1625,
+            0.803125
+          ],
+          [
+            0.128125,
+            0.79375
+          ],
+          [
+            0.1125,
+            0.78125
+          ]
+        ]
+      ]
+    },
+    "cam1/frame_001086_eval.jpg": {
+      "reviewed": true,
+      "source_frame": 1086,
+      "time_seconds": 36.236200000000004,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001092_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1092,
+      "time_seconds": 36.4364,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001098_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1098,
+      "time_seconds": 36.6366,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001107_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1107,
+      "time_seconds": 36.9369,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001113_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1113,
+      "time_seconds": 37.137100000000004,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001122_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1122,
+      "time_seconds": 37.437400000000004,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001131_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1131,
+      "time_seconds": 37.737700000000004,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001140_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1140,
+      "time_seconds": 38.038000000000004,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001146_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1146,
+      "time_seconds": 38.2382,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001152_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1152,
+      "time_seconds": 38.4384,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001167_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1167,
+      "time_seconds": 38.938900000000004,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001173_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1173,
+      "time_seconds": 39.1391,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001179_eval.jpg": {
+      "reviewed": true,
+      "source_frame": 1179,
+      "time_seconds": 39.3393,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001191_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1191,
+      "time_seconds": 39.7397,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001197_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1197,
+      "time_seconds": 39.9399,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001203_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1203,
+      "time_seconds": 40.140100000000004,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001212_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1212,
+      "time_seconds": 40.440400000000004,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001221_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1221,
+      "time_seconds": 40.740700000000004,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001230_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1230,
+      "time_seconds": 41.041000000000004,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001236_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1236,
+      "time_seconds": 41.2412,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001248_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1248,
+      "time_seconds": 41.641600000000004,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001254_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1254,
+      "time_seconds": 41.8418,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001266_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1266,
+      "time_seconds": 42.242200000000004,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001272_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1272,
+      "time_seconds": 42.4424,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001284_eval.jpg": {
+      "reviewed": true,
+      "source_frame": 1284,
+      "time_seconds": 42.842800000000004,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001287_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1287,
+      "time_seconds": 42.9429,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001299_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1299,
+      "time_seconds": 43.3433,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001308_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1308,
+      "time_seconds": 43.6436,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001320_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1320,
+      "time_seconds": 44.044000000000004,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001326_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1326,
+      "time_seconds": 44.2442,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001332_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1332,
+      "time_seconds": 44.4444,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001344_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1344,
+      "time_seconds": 44.8448,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001356_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1356,
+      "time_seconds": 45.245200000000004,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001359_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1359,
+      "time_seconds": 45.3453,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001365_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1365,
+      "time_seconds": 45.545500000000004,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001374_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1374,
+      "time_seconds": 45.845800000000004,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001377_eval.jpg": {
+      "reviewed": true,
+      "source_frame": 1377,
+      "time_seconds": 45.9459,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001386_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1386,
+      "time_seconds": 46.2462,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001392_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1392,
+      "time_seconds": 46.446400000000004,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001401_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1401,
+      "time_seconds": 46.746700000000004,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001407_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1407,
+      "time_seconds": 46.9469,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001416_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1416,
+      "time_seconds": 47.2472,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001422_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1422,
+      "time_seconds": 47.4474,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001431_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1431,
+      "time_seconds": 47.7477,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001437_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1437,
+      "time_seconds": 47.947900000000004,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001440_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1440,
+      "time_seconds": 48.048,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001449_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1449,
+      "time_seconds": 48.3483,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001455_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1455,
+      "time_seconds": 48.548500000000004,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001467_eval.jpg": {
+      "reviewed": true,
+      "source_frame": 1467,
+      "time_seconds": 48.9489,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001473_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1473,
+      "time_seconds": 49.149100000000004,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001482_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1482,
+      "time_seconds": 49.449400000000004,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001485_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1485,
+      "time_seconds": 49.5495,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001491_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1491,
+      "time_seconds": 49.749700000000004,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001497_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1497,
+      "time_seconds": 49.9499,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001506_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1506,
+      "time_seconds": 50.2502,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001515_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1515,
+      "time_seconds": 50.5505,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001524_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1524,
+      "time_seconds": 50.8508,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001530_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1530,
+      "time_seconds": 51.051,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001539_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1539,
+      "time_seconds": 51.3513,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001551_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1551,
+      "time_seconds": 51.7517,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001557_eval.jpg": {
+      "reviewed": true,
+      "source_frame": 1557,
+      "time_seconds": 51.9519,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001563_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1563,
+      "time_seconds": 52.152100000000004,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001572_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1572,
+      "time_seconds": 52.452400000000004,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001575_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1575,
+      "time_seconds": 52.5525,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001584_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1584,
+      "time_seconds": 52.8528,
+      "mirror_polygons": [
+        [
+          [
+            0.9875,
+            0.509375
+          ],
+          [
+            0.9984375,
+            0.5078125
+          ],
+          [
+            0.9984375,
+            0.575
+          ],
+          [
+            0.9859375,
+            0.6234375
+          ],
+          [
+            0.9640625,
+            0.6765625
+          ],
+          [
+            0.9609375,
+            0.65625
+          ],
+          [
+            0.9734375,
+            0.5953125
+          ],
+          [
+            0.98125,
+            0.54375
+          ]
+        ]
+      ]
+    },
+    "cam1/frame_001590_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1590,
+      "time_seconds": 53.053000000000004,
+      "mirror_polygons": [
+        [
+          [
+            0.9484375,
+            0.459375
+          ],
+          [
+            0.99375,
+            0.45
+          ],
+          [
+            0.9984375,
+            0.5296875
+          ],
+          [
+            0.9921875,
+            0.5875
+          ],
+          [
+            0.9765625,
+            0.6515625
+          ],
+          [
+            0.9421875,
+            0.721875
+          ],
+          [
+            0.925,
+            0.7171875
+          ],
+          [
+            0.9390625,
+            0.646875
+          ],
+          [
+            0.9453125,
+            0.5609375
+          ]
+        ]
+      ]
+    },
+    "cam1/frame_001593_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1593,
+      "time_seconds": 53.1531,
+      "mirror_polygons": [
+        [
+          [
+            0.9125,
+            0.484375
+          ],
+          [
+            0.9875,
+            0.4796875
+          ],
+          [
+            0.9984375,
+            0.534375
+          ],
+          [
+            0.9953125,
+            0.590625
+          ],
+          [
+            0.978125,
+            0.6515625
+          ],
+          [
+            0.9359375,
+            0.728125
+          ],
+          [
+            0.9,
+            0.7203125
+          ],
+          [
+            0.90625,
+            0.6421875
+          ],
+          [
+            0.9109375,
+            0.559375
+          ]
+        ]
+      ]
+    },
+    "cam1/frame_001599_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1599,
+      "time_seconds": 53.353300000000004,
+      "mirror_polygons": [
+        [
+          [
+            0.821875,
+            0.496875
+          ],
+          [
+            0.8421875,
+            0.5109375
+          ],
+          [
+            0.8859375,
+            0.5171875
+          ],
+          [
+            0.9484375,
+            0.509375
+          ],
+          [
+            0.9828125,
+            0.4984375
+          ],
+          [
+            0.984375,
+            0.571875
+          ],
+          [
+            0.9640625,
+            0.6484375
+          ],
+          [
+            0.940625,
+            0.725
+          ],
+          [
+            0.89375,
+            0.7265625
+          ],
+          [
+            0.8390625,
+            0.7125
+          ],
+          [
+            0.828125,
+            0.6109375
+          ]
+        ]
+      ]
+    },
+    "cam1/frame_001608_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1608,
+      "time_seconds": 53.653600000000004,
+      "mirror_polygons": [
+        [
+          [
+            0.7,
+            0.5671875
+          ],
+          [
+            0.74375,
+            0.5671875
+          ],
+          [
+            0.7890625,
+            0.5515625
+          ],
+          [
+            0.8375,
+            0.5265625
+          ],
+          [
+            0.9125,
+            0.515625
+          ],
+          [
+            0.9390625,
+            0.559375
+          ],
+          [
+            0.9265625,
+            0.621875
+          ],
+          [
+            0.90625,
+            0.68125
+          ],
+          [
+            0.8921875,
+            0.73125
+          ],
+          [
+            0.8375,
+            0.7375
+          ],
+          [
+            0.7546875,
+            0.728125
+          ],
+          [
+            0.728125,
+            0.6453125
+          ]
+        ]
+      ]
+    },
+    "cam1/frame_001614_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1614,
+      "time_seconds": 53.8538,
+      "mirror_polygons": [
+        [
+          [
+            0.64375,
+            0.603125
+          ],
+          [
+            0.6828125,
+            0.6046875
+          ],
+          [
+            0.725,
+            0.590625
+          ],
+          [
+            0.75625,
+            0.5703125
+          ],
+          [
+            0.8203125,
+            0.5625
+          ],
+          [
+            0.85625,
+            0.5953125
+          ],
+          [
+            0.85625,
+            0.65625
+          ],
+          [
+            0.8390625,
+            0.734375
+          ],
+          [
+            0.7703125,
+            0.75
+          ],
+          [
+            0.703125,
+            0.746875
+          ],
+          [
+            0.675,
+            0.684375
+          ]
+        ]
+      ]
+    },
+    "cam1/frame_001626_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1626,
+      "time_seconds": 54.254200000000004,
+      "mirror_polygons": [
+        [
+          [
+            0.590625,
+            0.625
+          ],
+          [
+            0.6453125,
+            0.6046875
+          ],
+          [
+            0.68125,
+            0.6546875
+          ],
+          [
+            0.7234375,
+            0.753125
+          ],
+          [
+            0.6609375,
+            0.7625
+          ],
+          [
+            0.6265625,
+            0.6953125
+          ]
+        ]
+      ]
+    },
+    "cam1/frame_001629_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1629,
+      "time_seconds": 54.3543,
+      "mirror_polygons": [
+        [
+          [
+            0.584375,
+            0.625
+          ],
+          [
+            0.6171875,
+            0.609375
+          ],
+          [
+            0.65,
+            0.6625
+          ],
+          [
+            0.6953125,
+            0.7546875
+          ],
+          [
+            0.6578125,
+            0.7625
+          ],
+          [
+            0.621875,
+            0.6984375
+          ]
+        ]
+      ]
+    },
+    "cam1/frame_001641_eval.jpg": {
+      "reviewed": true,
+      "source_frame": 1641,
+      "time_seconds": 54.7547,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001647_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1647,
+      "time_seconds": 54.9549,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001659_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1659,
+      "time_seconds": 55.3553,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001668_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1668,
+      "time_seconds": 55.6556,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001677_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1677,
+      "time_seconds": 55.9559,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001689_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1689,
+      "time_seconds": 56.356300000000005,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001695_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1695,
+      "time_seconds": 56.5565,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001704_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1704,
+      "time_seconds": 56.8568,
+      "mirror_polygons": [],
+      "restore_static_polygons": [
+        [
+          [
+            0.5328125,
+            0.3703125
+          ],
+          [
+            0.6609375,
+            0.2171875
+          ],
+          [
+            0.70625,
+            0.2484375
+          ],
+          [
+            0.7546875,
+            0.3203125
+          ],
+          [
+            0.8015625,
+            0.415625
+          ],
+          [
+            0.8359375,
+            0.534375
+          ],
+          [
+            0.828125,
+            0.6765625
+          ],
+          [
+            0.6765625,
+            0.6703125
+          ],
+          [
+            0.6390625,
+            0.578125
+          ],
+          [
+            0.5875,
+            0.4609375
+          ]
+        ]
+      ]
+    },
+    "cam1/frame_001716_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1716,
+      "time_seconds": 57.257200000000005,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001722_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1722,
+      "time_seconds": 57.4574,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001731_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1731,
+      "time_seconds": 57.7577,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001737_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1737,
+      "time_seconds": 57.9579,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001749_eval.jpg": {
+      "reviewed": true,
+      "source_frame": 1749,
+      "time_seconds": 58.3583,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001755_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1755,
+      "time_seconds": 58.5585,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001761_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1761,
+      "time_seconds": 58.758700000000005,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001770_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1770,
+      "time_seconds": 59.059000000000005,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001776_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1776,
+      "time_seconds": 59.2592,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001785_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1785,
+      "time_seconds": 59.5595,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001800_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1800,
+      "time_seconds": 60.06,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001809_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1809,
+      "time_seconds": 60.3603,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001815_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1815,
+      "time_seconds": 60.5605,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001824_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1824,
+      "time_seconds": 60.8608,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001833_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1833,
+      "time_seconds": 61.1611,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001836_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1836,
+      "time_seconds": 61.2612,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001842_eval.jpg": {
+      "reviewed": true,
+      "source_frame": 1842,
+      "time_seconds": 61.4614,
+      "mirror_polygons": [],
+      "restore_static_polygons": [
+        [
+          [
+            0.0390625,
+            0.2390625
+          ],
+          [
+            0.096875,
+            0.240625
+          ],
+          [
+            0.1703125,
+            0.2828125
+          ],
+          [
+            0.228125,
+            0.31875
+          ],
+          [
+            0.2859375,
+            0.3234375
+          ],
+          [
+            0.315625,
+            0.3203125
+          ],
+          [
+            0.3515625,
+            0.2578125
+          ],
+          [
+            0.3734375,
+            0.234375
+          ],
+          [
+            0.390625,
+            0.2875
+          ],
+          [
+            0.4328125,
+            0.3109375
+          ],
+          [
+            0.453125,
+            0.3546875
+          ],
+          [
+            0.459375,
+            0.384375
+          ],
+          [
+            0.4390625,
+            0.4203125
+          ],
+          [
+            0.409375,
+            0.453125
+          ],
+          [
+            0.334375,
+            0.46875
+          ],
+          [
+            0.303125,
+            0.484375
+          ],
+          [
+            0.259375,
+            0.5078125
+          ],
+          [
+            0.234375,
+            0.509375
+          ],
+          [
+            0.221875,
+            0.5203125
+          ],
+          [
+            0.196875,
+            0.5359375
+          ],
+          [
+            0.1796875,
+            0.515625
+          ],
+          [
+            0.159375,
+            0.4921875
+          ],
+          [
+            0.1328125,
+            0.484375
+          ],
+          [
+            0.1171875,
+            0.4671875
+          ],
+          [
+            0.0875,
+            0.4453125
+          ],
+          [
+            0.0765625,
+            0.4375
+          ],
+          [
+            0.103125,
+            0.415625
+          ],
+          [
+            0.125,
+            0.40625
+          ],
+          [
+            0.1203125,
+            0.390625
+          ],
+          [
+            0.075,
+            0.3703125
+          ],
+          [
+            0.0390625,
+            0.328125
+          ],
+          [
+            0.03125,
+            0.2875
+          ]
+        ]
+      ]
+    },
+    "cam1/frame_001848_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1848,
+      "time_seconds": 61.6616,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001860_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1860,
+      "time_seconds": 62.062,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001869_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1869,
+      "time_seconds": 62.3623,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001872_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1872,
+      "time_seconds": 62.4624,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001881_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1881,
+      "time_seconds": 62.7627,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001890_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1890,
+      "time_seconds": 63.063,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001896_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1896,
+      "time_seconds": 63.2632,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001902_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1902,
+      "time_seconds": 63.4634,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001908_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1908,
+      "time_seconds": 63.6636,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001917_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1917,
+      "time_seconds": 63.9639,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001920_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1920,
+      "time_seconds": 64.06400000000001,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001926_eval.jpg": {
+      "reviewed": true,
+      "source_frame": 1926,
+      "time_seconds": 64.2642,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001938_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1938,
+      "time_seconds": 64.66460000000001,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001944_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1944,
+      "time_seconds": 64.8648,
+      "mirror_polygons": []
+    },
+    "cam1/frame_001950_train.jpg": {
+      "reviewed": true,
+      "source_frame": 1950,
+      "time_seconds": 65.065,
+      "mirror_polygons": []
+    }
+  },
+  "coordinate_system": "normalized XY on native source image, not panorama",
+  "optical_circle": {
+    "cam0": [
+      0.5,
+      0.5,
+      0.48
+    ],
+    "cam1": [
+      0.5,
+      0.5,
+      0.48
+    ]
+  },
+  "mirror_note": "Full visible glass, manually traced independently per selected frame at640; native margin16px; no person-only or SAM semantic holes.",
+  "release_review": {
+    "status": "all selected frames visually reviewed; known major operator gaps corrected",
+    "coverage": {
+      "cam0": "Masking agent reviewed all226 corrected operator images; root independently reviewed final tail; masking agent reviewed all48 last changed candidates.",
+      "cam1": "Root reviewed first120 corrected operator images; calibration agent reviewed remaining106; masking agent reviewed9 last changed candidates."
+    },
+    "mirror_review": "63 explicit full-glass polygons; first and second bathroom visits checked against source photos, including root approach traces and calibration exit traces.",
+    "targeted_pinhole_repairs_accepted": 44,
+    "targeted_pinhole_candidates_rejected": 13,
+    "limits": [
+      "Visual review is not pixel-level ground truth. Minor hair/boundary residuals can remain.",
+      "Conservative small static-clothing exclusions remain in some frames; masks do not create observations behind the operator.",
+      "Moving cast shadows were excluded only in reviewed spatial/time regions. No inpainting or source image changes."
+    ],
+    "masking_models": "SAM2.1 small plus GroundingDINO tiny; existing local weights. Both Apache2.0; SAM3 license is not used.",
+    "pinhole_policy": "Calibrated virtual views for segmentation only; accepted native additions are WHITE=exclude and zero outside covered rays. Final masks are opposite polarity (255=keep,0=exclude).",
+    "training_requirement": "apply_loss_for_mask=false: excluded rays carry no photometric loss; do not treat operator masks as empty observed space."
+  }
+}

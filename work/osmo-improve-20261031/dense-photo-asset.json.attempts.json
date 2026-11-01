@@ -1,0 +1,28 @@
+{
+  "input": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\recovery-v2\\exports\\dense-photo-consensus-4k.glb",
+  "sourceSha256": "2b1d28701275d764ce85252f94af7a2938d4cc6684281bd6c63cd3a1f814d740",
+  "sourceTriangles": 4428334,
+  "output": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\recovery-v2\\exports\\dense-photo-consensus-4k-packed.glb",
+  "compressionAttempts": [
+    {
+      "profile": "medium-p16-n8-uv12-j86",
+      "simplified": false,
+      "bytes": 51858900,
+      "decodedGeometryBytes": 125891832,
+      "triangles": 4428334,
+      "vertices": 4546989,
+      "withinFileBudget": false,
+      "withinGeometryBudget": true
+    },
+    {
+      "profile": "high-p16-n8-uv12-j86",
+      "simplified": false,
+      "bytes": 47375092,
+      "decodedGeometryBytes": 125891832,
+      "triangles": 4428334,
+      "vertices": 4546989,
+      "withinFileBudget": true,
+      "withinGeometryBudget": true
+    }
+  ]
+}

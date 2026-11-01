@@ -1,0 +1,50 @@
+{
+  "renderer": "NVIDIA GeForce RTX 5080/PCIe/SSE2",
+  "plane_tests": [
+    {
+      "roll_rad": 0,
+      "coverage": 0.9587673611111112,
+      "interior_coverage": 1.0,
+      "max_channel_error": 0.0039020712111295097,
+      "mean_channel_error": 0.0008704810073071004
+    },
+    {
+      "roll_rad": 0.7,
+      "coverage": 0.9587673611111112,
+      "interior_coverage": 1.0,
+      "max_channel_error": 0.003859724214379412,
+      "mean_channel_error": 0.0008629269357027594
+    },
+    {
+      "roll_rad": -1.1,
+      "coverage": 0.9587673611111112,
+      "interior_coverage": 1.0,
+      "max_channel_error": 0.003891647394539177,
+      "mean_channel_error": 0.0008700986223498171
+    }
+  ],
+  "beyond_90_degrees_test": {
+    "theta_center_degrees": 94,
+    "translated_center": [
+      0.13,
+      -0.17,
+      0.09
+    ],
+    "interior_coverage": 1.0,
+    "max_channel_error": 0.0038837976433399035
+  },
+  "occluded_center_supported_pixels": 0,
+  "visible_outer_supported_pixels": 1034,
+  "temporal_color_consensus_test": {
+    "interior_coverage": 1.0,
+    "blue_outlier_winning_texels": 0,
+    "max_gray_error_255": 0.0,
+    "color_agreeing_time_groups_at_center": 3
+  },
+  "subpixel_uv_island_test": {
+    "exact_center_occupied_texels": 0,
+    "native_matching_occupied_texels": 4,
+    "plane_z_max_error": 0.0
+  },
+  "scalar_linear_exposure_max_error_255": 2.853423185233961e-05
+}

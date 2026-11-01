@@ -1,0 +1,2087 @@
+{
+  "label": "baseline-trusted-v3",
+  "mesh": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\lite-v1\\exports\\osmo-lite-trusted-source.glb",
+  "mesh_sha256": "4c09c9b60acedb9d455db34881f6e77987b26520d70325b1698b10e12a32d1d5",
+  "method": "CPU ray consistency at stable masked main-component SfM observations, plus position-welded topology. In-sample geometric consistency only, not external ground truth. World scale is approximate.",
+  "trimesh_version": "5.2.0",
+  "topology": {
+    "vertices": 1585684,
+    "faces": 1523311,
+    "world_bounds": [
+      [
+        -2.1974287033081055,
+        -1.6641640663146973,
+        -4.3460493087768555
+      ],
+      [
+        3.1133689880371094,
+        2.3994321823120117,
+        2.8260996341705322
+      ]
+    ],
+    "surface_area_world_units_squared": 125.97754305567094,
+    "weld_precision_world_units": 1e-05,
+    "position_welded_vertices": 751744,
+    "position_welded_components": 466,
+    "largest_components_by_area": [
+      {
+        "faces": 1460801,
+        "area": 123.3624921508034,
+        "area_fraction": 0.9792419280338567
+      },
+      {
+        "faces": 54,
+        "area": 0.49951885276306335,
+        "area_fraction": 0.003965142045533625
+      },
+      {
+        "faces": 168,
+        "area": 0.2243749986403487,
+        "area_fraction": 0.0017810713973140022
+      },
+      {
+        "faces": 47,
+        "area": 0.13731013082882212,
+        "area_fraction": 0.0010899572058501188
+      },
+      {
+        "faces": 254,
+        "area": 0.10743528951447864,
+        "area_fraction": 0.0008528130245166136
+      },
+      {
+        "faces": 63,
+        "area": 0.06875942648708142,
+        "area_fraction": 0.0005458070130538728
+      },
+      {
+        "faces": 788,
+        "area": 0.05584307232907628,
+        "area_fraction": 0.0004432779920497305
+      },
+      {
+        "faces": 296,
+        "area": 0.05519849187282158,
+        "area_fraction": 0.0004381613622074589
+      },
+      {
+        "faces": 691,
+        "area": 0.049882794215776224,
+        "area_fraction": 0.000395965765054907
+      },
+      {
+        "faces": 287,
+        "area": 0.04986107405204192,
+        "area_fraction": 0.0003957933520739306
+      },
+      {
+        "faces": 600,
+        "area": 0.04659047431371709,
+        "area_fraction": 0.0003698315841350249
+      },
+      {
+        "faces": 58,
+        "area": 0.038286924742348225,
+        "area_fraction": 0.00030391864941697416
+      }
+    ],
+    "components_under_50_faces": 25,
+    "area_fraction_in_components_under_50_faces": 0.0011472738705172701,
+    "floor_reference": {
+      "candidate_points_near_y0": 22403,
+      "refit_inlier_points": 15136,
+      "normal": [
+        0.004358895812466939,
+        0.9999904997107415,
+        -2.270588837080727e-05
+      ],
+      "tilt_from_world_up_degrees": 0.249750512659208,
+      "plane_center": [
+        0.3651373290966861,
+        -0.00027596692020849154,
+        -0.9052319725178916
+      ],
+      "interpretation": "Independent least-squares fit of the near-ground sparse support band. Does not establish measured metric scale."
+    },
+    "area_below_floor_by_0_10_world_units": 4.912883705787843,
+    "area_fraction_below_floor_by_0_10_world_units": 0.038998091140869315,
+    "elapsed_seconds": 1.2544470999855548
+  },
+  "ray_sample": {
+    "observations": 4711,
+    "images": 243,
+    "sample_seed": 20261031,
+    "per_image_cap": 20,
+    "minimum_track_length": 5,
+    "maximum_reprojection_pixels": 2,
+    "maximum_fisheye_theta_degrees": 85,
+    "source_masks_required": true,
+    "model": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\lite-v1\\dataset\\sparse\\0",
+    "cache_sha256": "c9ef56d4868fcdec8498f29bb336f08ff7e884fc42dd3b806d29ff77216bc4f5",
+    "note": "Identical observations reused for baseline and candidates. These points participated in SfM/training; this is consistency, not held-out geometry accuracy."
+  },
+  "visibility": {
+    "observations": 4711,
+    "near_surface_consistent": 2885,
+    "early_surface_occludes_observed_feature": 917,
+    "first_surface_behind_observed_feature": 814,
+    "no_mesh_intersection": 95,
+    "absolute_tolerance_world_units": 0.05,
+    "relative_tolerance": 0.025,
+    "near_surface_consistent_fraction": 0.6123965187858205,
+    "early_occlusion_fraction": 0.19465081723625557,
+    "behind_fraction": 0.17278709403523668,
+    "no_hit_fraction": 0.02016556994268733,
+    "median_absolute_hit_range_error": 0.03811312306913406,
+    "p90_absolute_hit_range_error": 0.21095210593510538,
+    "median_early_occlusion_distance": 0.1048194517937604,
+    "per_image": [
+      {
+        "name": "cam0/frame_000001.jpg",
+        "count": 20,
+        "near_fraction": 0.85,
+        "early_occlusion_fraction": 0.0,
+        "behind_fraction": 0.05,
+        "no_hit_fraction": 0.1
+      },
+      {
+        "name": "cam0/frame_000002.jpg",
+        "count": 20,
+        "near_fraction": 0.8,
+        "early_occlusion_fraction": 0.1,
+        "behind_fraction": 0.1,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000003.jpg",
+        "count": 20,
+        "near_fraction": 0.85,
+        "early_occlusion_fraction": 0.05,
+        "behind_fraction": 0.1,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000004.jpg",
+        "count": 20,
+        "near_fraction": 0.85,
+        "early_occlusion_fraction": 0.1,
+        "behind_fraction": 0.05,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000005.jpg",
+        "count": 20,
+        "near_fraction": 0.85,
+        "early_occlusion_fraction": 0.1,
+        "behind_fraction": 0.05,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000006.jpg",
+        "count": 20,
+        "near_fraction": 0.75,
+        "early_occlusion_fraction": 0.1,
+        "behind_fraction": 0.15,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000007.jpg",
+        "count": 20,
+        "near_fraction": 0.95,
+        "early_occlusion_fraction": 0.0,
+        "behind_fraction": 0.05,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000008.jpg",
+        "count": 20,
+        "near_fraction": 0.8,
+        "early_occlusion_fraction": 0.15,
+        "behind_fraction": 0.05,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000009.jpg",
+        "count": 20,
+        "near_fraction": 0.85,
+        "early_occlusion_fraction": 0.0,
+        "behind_fraction": 0.15,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000010.jpg",
+        "count": 20,
+        "near_fraction": 0.7,
+        "early_occlusion_fraction": 0.15,
+        "behind_fraction": 0.1,
+        "no_hit_fraction": 0.05
+      },
+      {
+        "name": "cam0/frame_000011.jpg",
+        "count": 20,
+        "near_fraction": 0.85,
+        "early_occlusion_fraction": 0.0,
+        "behind_fraction": 0.1,
+        "no_hit_fraction": 0.05
+      },
+      {
+        "name": "cam0/frame_000012.jpg",
+        "count": 20,
+        "near_fraction": 0.7,
+        "early_occlusion_fraction": 0.2,
+        "behind_fraction": 0.05,
+        "no_hit_fraction": 0.05
+      },
+      {
+        "name": "cam0/frame_000013.jpg",
+        "count": 20,
+        "near_fraction": 0.75,
+        "early_occlusion_fraction": 0.2,
+        "behind_fraction": 0.05,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000014.jpg",
+        "count": 20,
+        "near_fraction": 0.55,
+        "early_occlusion_fraction": 0.3,
+        "behind_fraction": 0.15,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000015.jpg",
+        "count": 20,
+        "near_fraction": 0.6,
+        "early_occlusion_fraction": 0.3,
+        "behind_fraction": 0.1,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000016.jpg",
+        "count": 20,
+        "near_fraction": 0.45,
+        "early_occlusion_fraction": 0.35,
+        "behind_fraction": 0.15,
+        "no_hit_fraction": 0.05
+      },
+      {
+        "name": "cam0/frame_000017.jpg",
+        "count": 20,
+        "near_fraction": 0.75,
+        "early_occlusion_fraction": 0.1,
+        "behind_fraction": 0.1,
+        "no_hit_fraction": 0.05
+      },
+      {
+        "name": "cam0/frame_000018.jpg",
+        "count": 20,
+        "near_fraction": 0.7,
+        "early_occlusion_fraction": 0.2,
+        "behind_fraction": 0.1,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000019.jpg",
+        "count": 20,
+        "near_fraction": 0.35,
+        "early_occlusion_fraction": 0.3,
+        "behind_fraction": 0.3,
+        "no_hit_fraction": 0.05
+      },
+      {
+        "name": "cam0/frame_000020.jpg",
+        "count": 20,
+        "near_fraction": 0.3,
+        "early_occlusion_fraction": 0.4,
+        "behind_fraction": 0.3,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000021.jpg",
+        "count": 20,
+        "near_fraction": 0.35,
+        "early_occlusion_fraction": 0.3,
+        "behind_fraction": 0.3,
+        "no_hit_fraction": 0.05
+      },
+      {
+        "name": "cam0/frame_000022.jpg",
+        "count": 20,
+        "near_fraction": 0.6,
+        "early_occlusion_fraction": 0.15,
+        "behind_fraction": 0.15,
+        "no_hit_fraction": 0.1
+      },
+      {
+        "name": "cam0/frame_000023.jpg",
+        "count": 20,
+        "near_fraction": 0.55,
+        "early_occlusion_fraction": 0.15,
+        "behind_fraction": 0.25,
+        "no_hit_fraction": 0.05
+      },
+      {
+        "name": "cam0/frame_000024.jpg",
+        "count": 20,
+        "near_fraction": 0.55,
+        "early_occlusion_fraction": 0.3,
+        "behind_fraction": 0.15,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000025.jpg",
+        "count": 20,
+        "near_fraction": 0.65,
+        "early_occlusion_fraction": 0.05,
+        "behind_fraction": 0.3,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000026.jpg",
+        "count": 20,
+        "near_fraction": 0.75,
+        "early_occlusion_fraction": 0.1,
+        "behind_fraction": 0.1,
+        "no_hit_fraction": 0.05
+      },
+      {
+        "name": "cam0/frame_000027.jpg",
+        "count": 20,
+        "near_fraction": 0.9,
+        "early_occlusion_fraction": 0.0,
+        "behind_fraction": 0.1,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000028.jpg",
+        "count": 20,
+        "near_fraction": 0.8,
+        "early_occlusion_fraction": 0.05,
+        "behind_fraction": 0.15,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000029.jpg",
+        "count": 20,
+        "near_fraction": 0.65,
+        "early_occlusion_fraction": 0.15,
+        "behind_fraction": 0.2,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000030.jpg",
+        "count": 20,
+        "near_fraction": 0.55,
+        "early_occlusion_fraction": 0.2,
+        "behind_fraction": 0.2,
+        "no_hit_fraction": 0.05
+      },
+      {
+        "name": "cam0/frame_000031.jpg",
+        "count": 20,
+        "near_fraction": 0.55,
+        "early_occlusion_fraction": 0.2,
+        "behind_fraction": 0.15,
+        "no_hit_fraction": 0.1
+      },
+      {
+        "name": "cam0/frame_000032.jpg",
+        "count": 20,
+        "near_fraction": 0.75,
+        "early_occlusion_fraction": 0.1,
+        "behind_fraction": 0.15,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000033.jpg",
+        "count": 20,
+        "near_fraction": 0.65,
+        "early_occlusion_fraction": 0.1,
+        "behind_fraction": 0.2,
+        "no_hit_fraction": 0.05
+      },
+      {
+        "name": "cam0/frame_000034.jpg",
+        "count": 20,
+        "near_fraction": 0.7,
+        "early_occlusion_fraction": 0.05,
+        "behind_fraction": 0.25,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000035.jpg",
+        "count": 20,
+        "near_fraction": 0.6,
+        "early_occlusion_fraction": 0.15,
+        "behind_fraction": 0.2,
+        "no_hit_fraction": 0.05
+      },
+      {
+        "name": "cam0/frame_000036.jpg",
+        "count": 20,
+        "near_fraction": 0.4,
+        "early_occlusion_fraction": 0.3,
+        "behind_fraction": 0.25,
+        "no_hit_fraction": 0.05
+      },
+      {
+        "name": "cam0/frame_000037.jpg",
+        "count": 20,
+        "near_fraction": 1.0,
+        "early_occlusion_fraction": 0.0,
+        "behind_fraction": 0.0,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000038.jpg",
+        "count": 20,
+        "near_fraction": 0.45,
+        "early_occlusion_fraction": 0.05,
+        "behind_fraction": 0.5,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000039.jpg",
+        "count": 20,
+        "near_fraction": 0.55,
+        "early_occlusion_fraction": 0.05,
+        "behind_fraction": 0.2,
+        "no_hit_fraction": 0.2
+      },
+      {
+        "name": "cam0/frame_000040.jpg",
+        "count": 20,
+        "near_fraction": 0.55,
+        "early_occlusion_fraction": 0.1,
+        "behind_fraction": 0.3,
+        "no_hit_fraction": 0.05
+      },
+      {
+        "name": "cam0/frame_000041.jpg",
+        "count": 20,
+        "near_fraction": 0.65,
+        "early_occlusion_fraction": 0.25,
+        "behind_fraction": 0.1,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000042.jpg",
+        "count": 20,
+        "near_fraction": 0.6,
+        "early_occlusion_fraction": 0.3,
+        "behind_fraction": 0.1,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000043.jpg",
+        "count": 20,
+        "near_fraction": 0.75,
+        "early_occlusion_fraction": 0.15,
+        "behind_fraction": 0.05,
+        "no_hit_fraction": 0.05
+      },
+      {
+        "name": "cam0/frame_000044.jpg",
+        "count": 20,
+        "near_fraction": 0.55,
+        "early_occlusion_fraction": 0.2,
+        "behind_fraction": 0.25,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000045.jpg",
+        "count": 20,
+        "near_fraction": 0.3,
+        "early_occlusion_fraction": 0.6,
+        "behind_fraction": 0.1,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000046.jpg",
+        "count": 20,
+        "near_fraction": 0.35,
+        "early_occlusion_fraction": 0.55,
+        "behind_fraction": 0.1,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000047.jpg",
+        "count": 20,
+        "near_fraction": 0.35,
+        "early_occlusion_fraction": 0.35,
+        "behind_fraction": 0.25,
+        "no_hit_fraction": 0.05
+      },
+      {
+        "name": "cam0/frame_000048.jpg",
+        "count": 20,
+        "near_fraction": 0.35,
+        "early_occlusion_fraction": 0.35,
+        "behind_fraction": 0.25,
+        "no_hit_fraction": 0.05
+      },
+      {
+        "name": "cam0/frame_000049.jpg",
+        "count": 20,
+        "near_fraction": 0.2,
+        "early_occlusion_fraction": 0.45,
+        "behind_fraction": 0.2,
+        "no_hit_fraction": 0.15
+      },
+      {
+        "name": "cam0/frame_000050.jpg",
+        "count": 20,
+        "near_fraction": 0.35,
+        "early_occlusion_fraction": 0.45,
+        "behind_fraction": 0.1,
+        "no_hit_fraction": 0.1
+      },
+      {
+        "name": "cam0/frame_000051.jpg",
+        "count": 20,
+        "near_fraction": 0.15,
+        "early_occlusion_fraction": 0.55,
+        "behind_fraction": 0.2,
+        "no_hit_fraction": 0.1
+      },
+      {
+        "name": "cam0/frame_000052.jpg",
+        "count": 20,
+        "near_fraction": 0.25,
+        "early_occlusion_fraction": 0.5,
+        "behind_fraction": 0.15,
+        "no_hit_fraction": 0.1
+      },
+      {
+        "name": "cam0/frame_000053.jpg",
+        "count": 20,
+        "near_fraction": 0.4,
+        "early_occlusion_fraction": 0.55,
+        "behind_fraction": 0.05,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000054.jpg",
+        "count": 20,
+        "near_fraction": 0.45,
+        "early_occlusion_fraction": 0.45,
+        "behind_fraction": 0.0,
+        "no_hit_fraction": 0.1
+      },
+      {
+        "name": "cam0/frame_000055.jpg",
+        "count": 20,
+        "near_fraction": 0.7,
+        "early_occlusion_fraction": 0.3,
+        "behind_fraction": 0.0,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000056.jpg",
+        "count": 20,
+        "near_fraction": 0.95,
+        "early_occlusion_fraction": 0.05,
+        "behind_fraction": 0.0,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000057.jpg",
+        "count": 20,
+        "near_fraction": 0.7,
+        "early_occlusion_fraction": 0.3,
+        "behind_fraction": 0.0,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000058.jpg",
+        "count": 20,
+        "near_fraction": 0.7,
+        "early_occlusion_fraction": 0.2,
+        "behind_fraction": 0.1,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000059.jpg",
+        "count": 20,
+        "near_fraction": 0.75,
+        "early_occlusion_fraction": 0.1,
+        "behind_fraction": 0.15,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000060.jpg",
+        "count": 20,
+        "near_fraction": 0.85,
+        "early_occlusion_fraction": 0.1,
+        "behind_fraction": 0.05,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000061.jpg",
+        "count": 20,
+        "near_fraction": 0.8,
+        "early_occlusion_fraction": 0.0,
+        "behind_fraction": 0.2,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000062.jpg",
+        "count": 20,
+        "near_fraction": 0.8,
+        "early_occlusion_fraction": 0.0,
+        "behind_fraction": 0.2,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000063.jpg",
+        "count": 20,
+        "near_fraction": 0.8,
+        "early_occlusion_fraction": 0.15,
+        "behind_fraction": 0.05,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000064.jpg",
+        "count": 20,
+        "near_fraction": 0.8,
+        "early_occlusion_fraction": 0.1,
+        "behind_fraction": 0.1,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000065.jpg",
+        "count": 20,
+        "near_fraction": 0.8,
+        "early_occlusion_fraction": 0.1,
+        "behind_fraction": 0.05,
+        "no_hit_fraction": 0.05
+      },
+      {
+        "name": "cam0/frame_000066.jpg",
+        "count": 20,
+        "near_fraction": 0.65,
+        "early_occlusion_fraction": 0.1,
+        "behind_fraction": 0.2,
+        "no_hit_fraction": 0.05
+      },
+      {
+        "name": "cam0/frame_000067.jpg",
+        "count": 20,
+        "near_fraction": 0.85,
+        "early_occlusion_fraction": 0.05,
+        "behind_fraction": 0.05,
+        "no_hit_fraction": 0.05
+      },
+      {
+        "name": "cam0/frame_000068.jpg",
+        "count": 20,
+        "near_fraction": 0.75,
+        "early_occlusion_fraction": 0.05,
+        "behind_fraction": 0.2,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000069.jpg",
+        "count": 20,
+        "near_fraction": 0.8,
+        "early_occlusion_fraction": 0.0,
+        "behind_fraction": 0.15,
+        "no_hit_fraction": 0.05
+      },
+      {
+        "name": "cam0/frame_000070.jpg",
+        "count": 20,
+        "near_fraction": 0.8,
+        "early_occlusion_fraction": 0.05,
+        "behind_fraction": 0.15,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000071.jpg",
+        "count": 20,
+        "near_fraction": 0.7,
+        "early_occlusion_fraction": 0.05,
+        "behind_fraction": 0.25,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000072.jpg",
+        "count": 20,
+        "near_fraction": 0.85,
+        "early_occlusion_fraction": 0.05,
+        "behind_fraction": 0.1,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000073.jpg",
+        "count": 20,
+        "near_fraction": 0.9,
+        "early_occlusion_fraction": 0.0,
+        "behind_fraction": 0.1,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000074.jpg",
+        "count": 20,
+        "near_fraction": 0.8,
+        "early_occlusion_fraction": 0.05,
+        "behind_fraction": 0.15,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000075.jpg",
+        "count": 20,
+        "near_fraction": 0.65,
+        "early_occlusion_fraction": 0.1,
+        "behind_fraction": 0.25,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000076.jpg",
+        "count": 20,
+        "near_fraction": 0.55,
+        "early_occlusion_fraction": 0.05,
+        "behind_fraction": 0.4,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000077.jpg",
+        "count": 20,
+        "near_fraction": 0.7,
+        "early_occlusion_fraction": 0.1,
+        "behind_fraction": 0.2,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000078.jpg",
+        "count": 20,
+        "near_fraction": 0.5,
+        "early_occlusion_fraction": 0.05,
+        "behind_fraction": 0.4,
+        "no_hit_fraction": 0.05
+      },
+      {
+        "name": "cam0/frame_000079.jpg",
+        "count": 20,
+        "near_fraction": 0.6,
+        "early_occlusion_fraction": 0.1,
+        "behind_fraction": 0.3,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000080.jpg",
+        "count": 20,
+        "near_fraction": 0.75,
+        "early_occlusion_fraction": 0.0,
+        "behind_fraction": 0.25,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000081.jpg",
+        "count": 20,
+        "near_fraction": 0.55,
+        "early_occlusion_fraction": 0.1,
+        "behind_fraction": 0.35,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000082.jpg",
+        "count": 20,
+        "near_fraction": 0.75,
+        "early_occlusion_fraction": 0.0,
+        "behind_fraction": 0.25,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000083.jpg",
+        "count": 20,
+        "near_fraction": 0.75,
+        "early_occlusion_fraction": 0.2,
+        "behind_fraction": 0.05,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000084.jpg",
+        "count": 20,
+        "near_fraction": 0.45,
+        "early_occlusion_fraction": 0.15,
+        "behind_fraction": 0.4,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000085.jpg",
+        "count": 20,
+        "near_fraction": 0.45,
+        "early_occlusion_fraction": 0.2,
+        "behind_fraction": 0.35,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000086.jpg",
+        "count": 20,
+        "near_fraction": 0.65,
+        "early_occlusion_fraction": 0.2,
+        "behind_fraction": 0.15,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000087.jpg",
+        "count": 20,
+        "near_fraction": 0.4,
+        "early_occlusion_fraction": 0.35,
+        "behind_fraction": 0.25,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000089.jpg",
+        "count": 11,
+        "near_fraction": 0.5454545454545454,
+        "early_occlusion_fraction": 0.18181818181818182,
+        "behind_fraction": 0.18181818181818182,
+        "no_hit_fraction": 0.09090909090909091
+      },
+      {
+        "name": "cam0/frame_000092.jpg",
+        "count": 20,
+        "near_fraction": 0.75,
+        "early_occlusion_fraction": 0.1,
+        "behind_fraction": 0.1,
+        "no_hit_fraction": 0.05
+      },
+      {
+        "name": "cam0/frame_000093.jpg",
+        "count": 20,
+        "near_fraction": 0.4,
+        "early_occlusion_fraction": 0.25,
+        "behind_fraction": 0.3,
+        "no_hit_fraction": 0.05
+      },
+      {
+        "name": "cam0/frame_000094.jpg",
+        "count": 20,
+        "near_fraction": 0.6,
+        "early_occlusion_fraction": 0.1,
+        "behind_fraction": 0.3,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000095.jpg",
+        "count": 20,
+        "near_fraction": 0.5,
+        "early_occlusion_fraction": 0.05,
+        "behind_fraction": 0.4,
+        "no_hit_fraction": 0.05
+      },
+      {
+        "name": "cam0/frame_000096.jpg",
+        "count": 20,
+        "near_fraction": 0.45,
+        "early_occlusion_fraction": 0.2,
+        "behind_fraction": 0.35,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000097.jpg",
+        "count": 20,
+        "near_fraction": 0.6,
+        "early_occlusion_fraction": 0.15,
+        "behind_fraction": 0.2,
+        "no_hit_fraction": 0.05
+      },
+      {
+        "name": "cam0/frame_000098.jpg",
+        "count": 20,
+        "near_fraction": 0.6,
+        "early_occlusion_fraction": 0.05,
+        "behind_fraction": 0.35,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000099.jpg",
+        "count": 20,
+        "near_fraction": 0.75,
+        "early_occlusion_fraction": 0.0,
+        "behind_fraction": 0.2,
+        "no_hit_fraction": 0.05
+      },
+      {
+        "name": "cam0/frame_000100.jpg",
+        "count": 20,
+        "near_fraction": 0.65,
+        "early_occlusion_fraction": 0.15,
+        "behind_fraction": 0.15,
+        "no_hit_fraction": 0.05
+      },
+      {
+        "name": "cam0/frame_000106.jpg",
+        "count": 20,
+        "near_fraction": 0.4,
+        "early_occlusion_fraction": 0.45,
+        "behind_fraction": 0.15,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000107.jpg",
+        "count": 20,
+        "near_fraction": 0.4,
+        "early_occlusion_fraction": 0.4,
+        "behind_fraction": 0.2,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000108.jpg",
+        "count": 20,
+        "near_fraction": 0.6,
+        "early_occlusion_fraction": 0.4,
+        "behind_fraction": 0.0,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000109.jpg",
+        "count": 20,
+        "near_fraction": 0.55,
+        "early_occlusion_fraction": 0.4,
+        "behind_fraction": 0.05,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000110.jpg",
+        "count": 20,
+        "near_fraction": 0.75,
+        "early_occlusion_fraction": 0.1,
+        "behind_fraction": 0.15,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000111.jpg",
+        "count": 20,
+        "near_fraction": 0.6,
+        "early_occlusion_fraction": 0.2,
+        "behind_fraction": 0.2,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000112.jpg",
+        "count": 20,
+        "near_fraction": 0.5,
+        "early_occlusion_fraction": 0.2,
+        "behind_fraction": 0.25,
+        "no_hit_fraction": 0.05
+      },
+      {
+        "name": "cam0/frame_000113.jpg",
+        "count": 20,
+        "near_fraction": 0.5,
+        "early_occlusion_fraction": 0.2,
+        "behind_fraction": 0.25,
+        "no_hit_fraction": 0.05
+      },
+      {
+        "name": "cam0/frame_000114.jpg",
+        "count": 20,
+        "near_fraction": 0.7,
+        "early_occlusion_fraction": 0.15,
+        "behind_fraction": 0.15,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000115.jpg",
+        "count": 20,
+        "near_fraction": 0.5,
+        "early_occlusion_fraction": 0.15,
+        "behind_fraction": 0.3,
+        "no_hit_fraction": 0.05
+      },
+      {
+        "name": "cam0/frame_000116.jpg",
+        "count": 20,
+        "near_fraction": 0.6,
+        "early_occlusion_fraction": 0.25,
+        "behind_fraction": 0.15,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000117.jpg",
+        "count": 20,
+        "near_fraction": 0.7,
+        "early_occlusion_fraction": 0.2,
+        "behind_fraction": 0.1,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000118.jpg",
+        "count": 20,
+        "near_fraction": 0.8,
+        "early_occlusion_fraction": 0.1,
+        "behind_fraction": 0.05,
+        "no_hit_fraction": 0.05
+      },
+      {
+        "name": "cam0/frame_000119.jpg",
+        "count": 20,
+        "near_fraction": 0.85,
+        "early_occlusion_fraction": 0.05,
+        "behind_fraction": 0.1,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000120.jpg",
+        "count": 20,
+        "near_fraction": 0.6,
+        "early_occlusion_fraction": 0.3,
+        "behind_fraction": 0.1,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000121.jpg",
+        "count": 20,
+        "near_fraction": 0.8,
+        "early_occlusion_fraction": 0.1,
+        "behind_fraction": 0.05,
+        "no_hit_fraction": 0.05
+      },
+      {
+        "name": "cam0/frame_000122.jpg",
+        "count": 20,
+        "near_fraction": 0.75,
+        "early_occlusion_fraction": 0.1,
+        "behind_fraction": 0.15,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000123.jpg",
+        "count": 20,
+        "near_fraction": 0.75,
+        "early_occlusion_fraction": 0.15,
+        "behind_fraction": 0.1,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000124.jpg",
+        "count": 20,
+        "near_fraction": 0.8,
+        "early_occlusion_fraction": 0.2,
+        "behind_fraction": 0.0,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000125.jpg",
+        "count": 20,
+        "near_fraction": 0.65,
+        "early_occlusion_fraction": 0.1,
+        "behind_fraction": 0.2,
+        "no_hit_fraction": 0.05
+      },
+      {
+        "name": "cam0/frame_000126.jpg",
+        "count": 20,
+        "near_fraction": 0.65,
+        "early_occlusion_fraction": 0.2,
+        "behind_fraction": 0.15,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000127.jpg",
+        "count": 20,
+        "near_fraction": 0.5,
+        "early_occlusion_fraction": 0.2,
+        "behind_fraction": 0.3,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000128.jpg",
+        "count": 20,
+        "near_fraction": 0.7,
+        "early_occlusion_fraction": 0.2,
+        "behind_fraction": 0.1,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000129.jpg",
+        "count": 20,
+        "near_fraction": 0.65,
+        "early_occlusion_fraction": 0.05,
+        "behind_fraction": 0.3,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam0/frame_000130.jpg",
+        "count": 20,
+        "near_fraction": 0.85,
+        "early_occlusion_fraction": 0.05,
+        "behind_fraction": 0.1,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000001.jpg",
+        "count": 20,
+        "near_fraction": 0.65,
+        "early_occlusion_fraction": 0.2,
+        "behind_fraction": 0.15,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000002.jpg",
+        "count": 20,
+        "near_fraction": 0.45,
+        "early_occlusion_fraction": 0.2,
+        "behind_fraction": 0.35,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000003.jpg",
+        "count": 20,
+        "near_fraction": 0.5,
+        "early_occlusion_fraction": 0.15,
+        "behind_fraction": 0.35,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000004.jpg",
+        "count": 20,
+        "near_fraction": 0.45,
+        "early_occlusion_fraction": 0.05,
+        "behind_fraction": 0.45,
+        "no_hit_fraction": 0.05
+      },
+      {
+        "name": "cam1/frame_000005.jpg",
+        "count": 20,
+        "near_fraction": 0.6,
+        "early_occlusion_fraction": 0.1,
+        "behind_fraction": 0.3,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000006.jpg",
+        "count": 20,
+        "near_fraction": 0.75,
+        "early_occlusion_fraction": 0.1,
+        "behind_fraction": 0.15,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000007.jpg",
+        "count": 20,
+        "near_fraction": 0.6,
+        "early_occlusion_fraction": 0.1,
+        "behind_fraction": 0.3,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000008.jpg",
+        "count": 20,
+        "near_fraction": 0.8,
+        "early_occlusion_fraction": 0.0,
+        "behind_fraction": 0.2,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000009.jpg",
+        "count": 20,
+        "near_fraction": 0.6,
+        "early_occlusion_fraction": 0.15,
+        "behind_fraction": 0.25,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000010.jpg",
+        "count": 20,
+        "near_fraction": 0.65,
+        "early_occlusion_fraction": 0.05,
+        "behind_fraction": 0.3,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000011.jpg",
+        "count": 20,
+        "near_fraction": 0.55,
+        "early_occlusion_fraction": 0.1,
+        "behind_fraction": 0.35,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000012.jpg",
+        "count": 20,
+        "near_fraction": 0.75,
+        "early_occlusion_fraction": 0.1,
+        "behind_fraction": 0.15,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000013.jpg",
+        "count": 20,
+        "near_fraction": 0.75,
+        "early_occlusion_fraction": 0.05,
+        "behind_fraction": 0.2,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000014.jpg",
+        "count": 20,
+        "near_fraction": 0.5,
+        "early_occlusion_fraction": 0.2,
+        "behind_fraction": 0.25,
+        "no_hit_fraction": 0.05
+      },
+      {
+        "name": "cam1/frame_000015.jpg",
+        "count": 20,
+        "near_fraction": 0.85,
+        "early_occlusion_fraction": 0.05,
+        "behind_fraction": 0.1,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000016.jpg",
+        "count": 20,
+        "near_fraction": 0.85,
+        "early_occlusion_fraction": 0.0,
+        "behind_fraction": 0.1,
+        "no_hit_fraction": 0.05
+      },
+      {
+        "name": "cam1/frame_000017.jpg",
+        "count": 20,
+        "near_fraction": 0.75,
+        "early_occlusion_fraction": 0.05,
+        "behind_fraction": 0.2,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000018.jpg",
+        "count": 20,
+        "near_fraction": 0.9,
+        "early_occlusion_fraction": 0.0,
+        "behind_fraction": 0.1,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000019.jpg",
+        "count": 20,
+        "near_fraction": 0.6,
+        "early_occlusion_fraction": 0.2,
+        "behind_fraction": 0.2,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000020.jpg",
+        "count": 20,
+        "near_fraction": 0.6,
+        "early_occlusion_fraction": 0.25,
+        "behind_fraction": 0.15,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000021.jpg",
+        "count": 20,
+        "near_fraction": 0.6,
+        "early_occlusion_fraction": 0.15,
+        "behind_fraction": 0.2,
+        "no_hit_fraction": 0.05
+      },
+      {
+        "name": "cam1/frame_000022.jpg",
+        "count": 20,
+        "near_fraction": 0.8,
+        "early_occlusion_fraction": 0.1,
+        "behind_fraction": 0.1,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000023.jpg",
+        "count": 20,
+        "near_fraction": 0.85,
+        "early_occlusion_fraction": 0.05,
+        "behind_fraction": 0.05,
+        "no_hit_fraction": 0.05
+      },
+      {
+        "name": "cam1/frame_000024.jpg",
+        "count": 20,
+        "near_fraction": 0.75,
+        "early_occlusion_fraction": 0.05,
+        "behind_fraction": 0.2,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000025.jpg",
+        "count": 20,
+        "near_fraction": 0.85,
+        "early_occlusion_fraction": 0.1,
+        "behind_fraction": 0.05,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000026.jpg",
+        "count": 20,
+        "near_fraction": 0.8,
+        "early_occlusion_fraction": 0.0,
+        "behind_fraction": 0.15,
+        "no_hit_fraction": 0.05
+      },
+      {
+        "name": "cam1/frame_000027.jpg",
+        "count": 20,
+        "near_fraction": 0.75,
+        "early_occlusion_fraction": 0.0,
+        "behind_fraction": 0.25,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000028.jpg",
+        "count": 20,
+        "near_fraction": 0.75,
+        "early_occlusion_fraction": 0.05,
+        "behind_fraction": 0.2,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000029.jpg",
+        "count": 20,
+        "near_fraction": 0.75,
+        "early_occlusion_fraction": 0.1,
+        "behind_fraction": 0.15,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000030.jpg",
+        "count": 20,
+        "near_fraction": 0.4,
+        "early_occlusion_fraction": 0.1,
+        "behind_fraction": 0.5,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000031.jpg",
+        "count": 20,
+        "near_fraction": 0.5,
+        "early_occlusion_fraction": 0.3,
+        "behind_fraction": 0.2,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000032.jpg",
+        "count": 20,
+        "near_fraction": 0.7,
+        "early_occlusion_fraction": 0.05,
+        "behind_fraction": 0.2,
+        "no_hit_fraction": 0.05
+      },
+      {
+        "name": "cam1/frame_000033.jpg",
+        "count": 20,
+        "near_fraction": 0.6,
+        "early_occlusion_fraction": 0.25,
+        "behind_fraction": 0.15,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000034.jpg",
+        "count": 20,
+        "near_fraction": 0.5,
+        "early_occlusion_fraction": 0.15,
+        "behind_fraction": 0.25,
+        "no_hit_fraction": 0.1
+      },
+      {
+        "name": "cam1/frame_000035.jpg",
+        "count": 20,
+        "near_fraction": 0.6,
+        "early_occlusion_fraction": 0.2,
+        "behind_fraction": 0.2,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000036.jpg",
+        "count": 20,
+        "near_fraction": 0.35,
+        "early_occlusion_fraction": 0.55,
+        "behind_fraction": 0.05,
+        "no_hit_fraction": 0.05
+      },
+      {
+        "name": "cam1/frame_000037.jpg",
+        "count": 20,
+        "near_fraction": 0.45,
+        "early_occlusion_fraction": 0.55,
+        "behind_fraction": 0.0,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000038.jpg",
+        "count": 20,
+        "near_fraction": 0.4,
+        "early_occlusion_fraction": 0.6,
+        "behind_fraction": 0.0,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000039.jpg",
+        "count": 20,
+        "near_fraction": 0.65,
+        "early_occlusion_fraction": 0.35,
+        "behind_fraction": 0.0,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000040.jpg",
+        "count": 20,
+        "near_fraction": 0.55,
+        "early_occlusion_fraction": 0.45,
+        "behind_fraction": 0.0,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000041.jpg",
+        "count": 20,
+        "near_fraction": 0.4,
+        "early_occlusion_fraction": 0.5,
+        "behind_fraction": 0.0,
+        "no_hit_fraction": 0.1
+      },
+      {
+        "name": "cam1/frame_000042.jpg",
+        "count": 20,
+        "near_fraction": 0.45,
+        "early_occlusion_fraction": 0.45,
+        "behind_fraction": 0.05,
+        "no_hit_fraction": 0.05
+      },
+      {
+        "name": "cam1/frame_000043.jpg",
+        "count": 20,
+        "near_fraction": 0.45,
+        "early_occlusion_fraction": 0.4,
+        "behind_fraction": 0.15,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000044.jpg",
+        "count": 20,
+        "near_fraction": 0.7,
+        "early_occlusion_fraction": 0.25,
+        "behind_fraction": 0.05,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000045.jpg",
+        "count": 20,
+        "near_fraction": 0.7,
+        "early_occlusion_fraction": 0.25,
+        "behind_fraction": 0.05,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000046.jpg",
+        "count": 20,
+        "near_fraction": 0.5,
+        "early_occlusion_fraction": 0.2,
+        "behind_fraction": 0.3,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000047.jpg",
+        "count": 20,
+        "near_fraction": 0.9,
+        "early_occlusion_fraction": 0.05,
+        "behind_fraction": 0.05,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000048.jpg",
+        "count": 20,
+        "near_fraction": 0.6,
+        "early_occlusion_fraction": 0.15,
+        "behind_fraction": 0.25,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000049.jpg",
+        "count": 20,
+        "near_fraction": 0.5,
+        "early_occlusion_fraction": 0.05,
+        "behind_fraction": 0.4,
+        "no_hit_fraction": 0.05
+      },
+      {
+        "name": "cam1/frame_000050.jpg",
+        "count": 20,
+        "near_fraction": 0.6,
+        "early_occlusion_fraction": 0.15,
+        "behind_fraction": 0.25,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000051.jpg",
+        "count": 20,
+        "near_fraction": 0.6,
+        "early_occlusion_fraction": 0.05,
+        "behind_fraction": 0.35,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000052.jpg",
+        "count": 20,
+        "near_fraction": 0.45,
+        "early_occlusion_fraction": 0.05,
+        "behind_fraction": 0.5,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000053.jpg",
+        "count": 20,
+        "near_fraction": 0.65,
+        "early_occlusion_fraction": 0.0,
+        "behind_fraction": 0.3,
+        "no_hit_fraction": 0.05
+      },
+      {
+        "name": "cam1/frame_000054.jpg",
+        "count": 20,
+        "near_fraction": 0.6,
+        "early_occlusion_fraction": 0.1,
+        "behind_fraction": 0.3,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000055.jpg",
+        "count": 20,
+        "near_fraction": 0.5,
+        "early_occlusion_fraction": 0.2,
+        "behind_fraction": 0.3,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000056.jpg",
+        "count": 20,
+        "near_fraction": 0.7,
+        "early_occlusion_fraction": 0.0,
+        "behind_fraction": 0.3,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000057.jpg",
+        "count": 20,
+        "near_fraction": 0.7,
+        "early_occlusion_fraction": 0.15,
+        "behind_fraction": 0.15,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000058.jpg",
+        "count": 20,
+        "near_fraction": 0.55,
+        "early_occlusion_fraction": 0.2,
+        "behind_fraction": 0.25,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000059.jpg",
+        "count": 20,
+        "near_fraction": 0.6,
+        "early_occlusion_fraction": 0.0,
+        "behind_fraction": 0.35,
+        "no_hit_fraction": 0.05
+      },
+      {
+        "name": "cam1/frame_000060.jpg",
+        "count": 20,
+        "near_fraction": 0.5,
+        "early_occlusion_fraction": 0.15,
+        "behind_fraction": 0.35,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000061.jpg",
+        "count": 20,
+        "near_fraction": 0.7,
+        "early_occlusion_fraction": 0.05,
+        "behind_fraction": 0.2,
+        "no_hit_fraction": 0.05
+      },
+      {
+        "name": "cam1/frame_000062.jpg",
+        "count": 20,
+        "near_fraction": 0.75,
+        "early_occlusion_fraction": 0.2,
+        "behind_fraction": 0.05,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000063.jpg",
+        "count": 20,
+        "near_fraction": 0.75,
+        "early_occlusion_fraction": 0.05,
+        "behind_fraction": 0.2,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000064.jpg",
+        "count": 20,
+        "near_fraction": 0.55,
+        "early_occlusion_fraction": 0.05,
+        "behind_fraction": 0.4,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000065.jpg",
+        "count": 20,
+        "near_fraction": 0.5,
+        "early_occlusion_fraction": 0.25,
+        "behind_fraction": 0.2,
+        "no_hit_fraction": 0.05
+      },
+      {
+        "name": "cam1/frame_000066.jpg",
+        "count": 20,
+        "near_fraction": 0.6,
+        "early_occlusion_fraction": 0.05,
+        "behind_fraction": 0.25,
+        "no_hit_fraction": 0.1
+      },
+      {
+        "name": "cam1/frame_000067.jpg",
+        "count": 20,
+        "near_fraction": 0.55,
+        "early_occlusion_fraction": 0.05,
+        "behind_fraction": 0.4,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000068.jpg",
+        "count": 20,
+        "near_fraction": 0.4,
+        "early_occlusion_fraction": 0.15,
+        "behind_fraction": 0.4,
+        "no_hit_fraction": 0.05
+      },
+      {
+        "name": "cam1/frame_000069.jpg",
+        "count": 20,
+        "near_fraction": 0.4,
+        "early_occlusion_fraction": 0.1,
+        "behind_fraction": 0.45,
+        "no_hit_fraction": 0.05
+      },
+      {
+        "name": "cam1/frame_000070.jpg",
+        "count": 20,
+        "near_fraction": 0.65,
+        "early_occlusion_fraction": 0.15,
+        "behind_fraction": 0.15,
+        "no_hit_fraction": 0.05
+      },
+      {
+        "name": "cam1/frame_000071.jpg",
+        "count": 20,
+        "near_fraction": 0.7,
+        "early_occlusion_fraction": 0.15,
+        "behind_fraction": 0.15,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000072.jpg",
+        "count": 20,
+        "near_fraction": 0.75,
+        "early_occlusion_fraction": 0.1,
+        "behind_fraction": 0.15,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000073.jpg",
+        "count": 20,
+        "near_fraction": 0.6,
+        "early_occlusion_fraction": 0.05,
+        "behind_fraction": 0.35,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000074.jpg",
+        "count": 20,
+        "near_fraction": 0.7,
+        "early_occlusion_fraction": 0.0,
+        "behind_fraction": 0.3,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000075.jpg",
+        "count": 20,
+        "near_fraction": 0.7,
+        "early_occlusion_fraction": 0.2,
+        "behind_fraction": 0.1,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000076.jpg",
+        "count": 20,
+        "near_fraction": 0.75,
+        "early_occlusion_fraction": 0.05,
+        "behind_fraction": 0.2,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000077.jpg",
+        "count": 20,
+        "near_fraction": 0.8,
+        "early_occlusion_fraction": 0.05,
+        "behind_fraction": 0.15,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000078.jpg",
+        "count": 20,
+        "near_fraction": 0.9,
+        "early_occlusion_fraction": 0.0,
+        "behind_fraction": 0.1,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000079.jpg",
+        "count": 20,
+        "near_fraction": 0.85,
+        "early_occlusion_fraction": 0.05,
+        "behind_fraction": 0.1,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000080.jpg",
+        "count": 20,
+        "near_fraction": 0.85,
+        "early_occlusion_fraction": 0.05,
+        "behind_fraction": 0.1,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000081.jpg",
+        "count": 5,
+        "near_fraction": 0.8,
+        "early_occlusion_fraction": 0.2,
+        "behind_fraction": 0.0,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000082.jpg",
+        "count": 4,
+        "near_fraction": 0.5,
+        "early_occlusion_fraction": 0.5,
+        "behind_fraction": 0.0,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000083.jpg",
+        "count": 8,
+        "near_fraction": 0.625,
+        "early_occlusion_fraction": 0.375,
+        "behind_fraction": 0.0,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000084.jpg",
+        "count": 6,
+        "near_fraction": 0.16666666666666666,
+        "early_occlusion_fraction": 0.8333333333333334,
+        "behind_fraction": 0.0,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000085.jpg",
+        "count": 5,
+        "near_fraction": 0.0,
+        "early_occlusion_fraction": 0.8,
+        "behind_fraction": 0.0,
+        "no_hit_fraction": 0.2
+      },
+      {
+        "name": "cam1/frame_000086.jpg",
+        "count": 3,
+        "near_fraction": 0.3333333333333333,
+        "early_occlusion_fraction": 0.6666666666666666,
+        "behind_fraction": 0.0,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000087.jpg",
+        "count": 3,
+        "near_fraction": 0.0,
+        "early_occlusion_fraction": 1.0,
+        "behind_fraction": 0.0,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000089.jpg",
+        "count": 13,
+        "near_fraction": 0.15384615384615385,
+        "early_occlusion_fraction": 0.7692307692307693,
+        "behind_fraction": 0.0,
+        "no_hit_fraction": 0.07692307692307693
+      },
+      {
+        "name": "cam1/frame_000092.jpg",
+        "count": 20,
+        "near_fraction": 0.2,
+        "early_occlusion_fraction": 0.65,
+        "behind_fraction": 0.15,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000093.jpg",
+        "count": 20,
+        "near_fraction": 0.15,
+        "early_occlusion_fraction": 0.85,
+        "behind_fraction": 0.0,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000094.jpg",
+        "count": 20,
+        "near_fraction": 0.0,
+        "early_occlusion_fraction": 1.0,
+        "behind_fraction": 0.0,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000095.jpg",
+        "count": 20,
+        "near_fraction": 0.15,
+        "early_occlusion_fraction": 0.85,
+        "behind_fraction": 0.0,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000096.jpg",
+        "count": 20,
+        "near_fraction": 0.35,
+        "early_occlusion_fraction": 0.55,
+        "behind_fraction": 0.05,
+        "no_hit_fraction": 0.05
+      },
+      {
+        "name": "cam1/frame_000097.jpg",
+        "count": 20,
+        "near_fraction": 0.3,
+        "early_occlusion_fraction": 0.5,
+        "behind_fraction": 0.15,
+        "no_hit_fraction": 0.05
+      },
+      {
+        "name": "cam1/frame_000098.jpg",
+        "count": 20,
+        "near_fraction": 0.55,
+        "early_occlusion_fraction": 0.2,
+        "behind_fraction": 0.15,
+        "no_hit_fraction": 0.1
+      },
+      {
+        "name": "cam1/frame_000099.jpg",
+        "count": 20,
+        "near_fraction": 0.2,
+        "early_occlusion_fraction": 0.55,
+        "behind_fraction": 0.2,
+        "no_hit_fraction": 0.05
+      },
+      {
+        "name": "cam1/frame_000100.jpg",
+        "count": 12,
+        "near_fraction": 0.08333333333333333,
+        "early_occlusion_fraction": 0.9166666666666666,
+        "behind_fraction": 0.0,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000106.jpg",
+        "count": 20,
+        "near_fraction": 0.0,
+        "early_occlusion_fraction": 0.8,
+        "behind_fraction": 0.15,
+        "no_hit_fraction": 0.05
+      },
+      {
+        "name": "cam1/frame_000107.jpg",
+        "count": 20,
+        "near_fraction": 0.2,
+        "early_occlusion_fraction": 0.65,
+        "behind_fraction": 0.1,
+        "no_hit_fraction": 0.05
+      },
+      {
+        "name": "cam1/frame_000108.jpg",
+        "count": 20,
+        "near_fraction": 0.2,
+        "early_occlusion_fraction": 0.5,
+        "behind_fraction": 0.25,
+        "no_hit_fraction": 0.05
+      },
+      {
+        "name": "cam1/frame_000109.jpg",
+        "count": 20,
+        "near_fraction": 0.55,
+        "early_occlusion_fraction": 0.35,
+        "behind_fraction": 0.05,
+        "no_hit_fraction": 0.05
+      },
+      {
+        "name": "cam1/frame_000110.jpg",
+        "count": 20,
+        "near_fraction": 0.5,
+        "early_occlusion_fraction": 0.35,
+        "behind_fraction": 0.15,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000111.jpg",
+        "count": 20,
+        "near_fraction": 0.55,
+        "early_occlusion_fraction": 0.4,
+        "behind_fraction": 0.05,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000112.jpg",
+        "count": 20,
+        "near_fraction": 0.7,
+        "early_occlusion_fraction": 0.2,
+        "behind_fraction": 0.1,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000113.jpg",
+        "count": 20,
+        "near_fraction": 0.8,
+        "early_occlusion_fraction": 0.1,
+        "behind_fraction": 0.1,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000114.jpg",
+        "count": 20,
+        "near_fraction": 0.75,
+        "early_occlusion_fraction": 0.15,
+        "behind_fraction": 0.1,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000115.jpg",
+        "count": 20,
+        "near_fraction": 0.5,
+        "early_occlusion_fraction": 0.3,
+        "behind_fraction": 0.15,
+        "no_hit_fraction": 0.05
+      },
+      {
+        "name": "cam1/frame_000116.jpg",
+        "count": 20,
+        "near_fraction": 0.55,
+        "early_occlusion_fraction": 0.35,
+        "behind_fraction": 0.0,
+        "no_hit_fraction": 0.1
+      },
+      {
+        "name": "cam1/frame_000117.jpg",
+        "count": 20,
+        "near_fraction": 0.7,
+        "early_occlusion_fraction": 0.15,
+        "behind_fraction": 0.15,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000118.jpg",
+        "count": 20,
+        "near_fraction": 0.65,
+        "early_occlusion_fraction": 0.25,
+        "behind_fraction": 0.1,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000119.jpg",
+        "count": 20,
+        "near_fraction": 0.65,
+        "early_occlusion_fraction": 0.15,
+        "behind_fraction": 0.2,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000120.jpg",
+        "count": 20,
+        "near_fraction": 0.7,
+        "early_occlusion_fraction": 0.15,
+        "behind_fraction": 0.15,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000121.jpg",
+        "count": 20,
+        "near_fraction": 0.6,
+        "early_occlusion_fraction": 0.1,
+        "behind_fraction": 0.3,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000122.jpg",
+        "count": 20,
+        "near_fraction": 0.75,
+        "early_occlusion_fraction": 0.2,
+        "behind_fraction": 0.05,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000123.jpg",
+        "count": 20,
+        "near_fraction": 0.6,
+        "early_occlusion_fraction": 0.2,
+        "behind_fraction": 0.15,
+        "no_hit_fraction": 0.05
+      },
+      {
+        "name": "cam1/frame_000124.jpg",
+        "count": 20,
+        "near_fraction": 0.65,
+        "early_occlusion_fraction": 0.2,
+        "behind_fraction": 0.1,
+        "no_hit_fraction": 0.05
+      },
+      {
+        "name": "cam1/frame_000125.jpg",
+        "count": 20,
+        "near_fraction": 0.55,
+        "early_occlusion_fraction": 0.25,
+        "behind_fraction": 0.2,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000126.jpg",
+        "count": 20,
+        "near_fraction": 0.6,
+        "early_occlusion_fraction": 0.3,
+        "behind_fraction": 0.1,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000127.jpg",
+        "count": 9,
+        "near_fraction": 0.7777777777777778,
+        "early_occlusion_fraction": 0.2222222222222222,
+        "behind_fraction": 0.0,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000129.jpg",
+        "count": 12,
+        "near_fraction": 0.6666666666666666,
+        "early_occlusion_fraction": 0.08333333333333333,
+        "behind_fraction": 0.25,
+        "no_hit_fraction": 0.0
+      },
+      {
+        "name": "cam1/frame_000130.jpg",
+        "count": 20,
+        "near_fraction": 0.45,
+        "early_occlusion_fraction": 0.2,
+        "behind_fraction": 0.35,
+        "no_hit_fraction": 0.0
+      }
+    ],
+    "elapsed_seconds": 1.0990004999912344
+  },
+  "elapsed_seconds": 2.888819300016621
+}

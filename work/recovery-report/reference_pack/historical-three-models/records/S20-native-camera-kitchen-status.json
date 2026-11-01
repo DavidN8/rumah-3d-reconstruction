@@ -1,0 +1,36 @@
+{
+  "stage": "review_native_camera_kitchen",
+  "status": "quality_rejected",
+  "pid": 33048,
+  "continuation_script": "continue_native_camera_kitchen.py",
+  "source_frames": 5613,
+  "source_resolution": [
+    8256,
+    4644
+  ],
+  "source_images_unchanged": true,
+  "rgb_resampling": false,
+  "whole_room_complete": false,
+  "local_surface_quality_verified": false,
+  "updated_utc": "2026-10-23T18:06:59.842201+00:00",
+  "gpu_compute": false,
+  "model": "exports-native-camera-kitchen-034\\native-camera-kitchen.glb",
+  "local_source_frames": 84,
+  "preview_file": "review/Kitchen-preview.html",
+  "preview_comparison": "review/Kitchen-preview.jpg",
+  "preview_available": true,
+  "training_steps_completed": 24000,
+  "preview_triangles": 576595,
+  "preview_texture_size": [
+    8192,
+    8192
+  ],
+  "visual_review": "Rejected after user inspection and saved source/model comparison: severe holes, jagged walls, fragmented objects and smeared surfaces. This local 84-frame test does not meet the requested detailed room reconstruction quality.",
+  "interactive_browser_check": "Unavailable: local file URLs blocked by browser automation; local server launch blocked by automatic review.",
+  "latest_run_peak_total_gpu_memory_percent": 31.328541909464516,
+  "quality_review_basis": [
+    "User-provided browser screenshot",
+    "Saved review/Kitchen-preview.jpg source/model comparisons"
+  ],
+  "quality_reviewed_utc": "2026-10-23T18:46:26.467164+00:00"
+}

@@ -1,0 +1,2827 @@
+{
+  "viewport": [
+    1920,
+    1080
+  ],
+  "deviceScaleFactor": 2,
+  "sourceSha256": "cbb33c91b5b481460b2c75e2125f3efa1458e6634abc3da1ce051a0989fd315c",
+  "results": [
+    {
+      "name": "baseline",
+      "settings": {
+        "lod": 1,
+        "ext": 0,
+        "blur": 0.3,
+        "dpr": 1.25,
+        "budget": 2000000
+      },
+      "readySeconds": 9.357,
+      "errors": [],
+      "views": [
+        {
+          "label": "fridge",
+          "index": 0,
+          "diagnostics": {
+            "activeSplats": 1999998,
+            "lod": true,
+            "blur": 0.3,
+            "extSplats": false,
+            "dpr": 1.25,
+            "size": [
+              2400,
+              1182
+            ],
+            "maxSh": 2
+          },
+          "state": {
+            "position": [
+              -0.04734322054037422,
+              1.5427764395823702,
+              0.16500877423918853
+            ],
+            "quaternion": [
+              0,
+              -0.9512285361086977,
+              0,
+              0.3084870695710014
+            ],
+            "forward": [
+              0.5868834071929714,
+              0,
+              0.8096714558149922
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ],
+            "right": [
+              -0.8096714558149922,
+              0,
+              0.5868834071929714
+            ],
+            "mode": "walk",
+            "yaw": -2.51438841389687,
+            "pitch": 0,
+            "keys": [],
+            "comparison": false,
+            "recorded": "Osmo view 1",
+            "triangles": 3999997,
+            "renderCount": 43,
+            "fov": 75,
+            "seeInside": false,
+            "projection": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              -1.000500125031258,
+              -1,
+              0,
+              0,
+              -0.05001250312578145,
+              0
+            ],
+            "orbit": {
+              "target": [
+                0,
+                0,
+                0
+              ],
+              "radius": 8,
+              "theta": 0,
+              "phi": 1
+            }
+          },
+          "viewportFile": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\display-ablation\\baseline-fridge-viewport.png",
+          "canvasFile": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\display-ablation\\baseline-fridge-canvas.png"
+        },
+        {
+          "label": "fan",
+          "index": 6,
+          "diagnostics": {
+            "activeSplats": 1915979,
+            "lod": true,
+            "blur": 0.3,
+            "extSplats": false,
+            "dpr": 1.25,
+            "size": [
+              2400,
+              1182
+            ],
+            "maxSh": 2
+          },
+          "state": {
+            "position": [
+              -0.8176386469064271,
+              0.4255116593924649,
+              0.8534996480900683
+            ],
+            "quaternion": [
+              0,
+              -0.997386339509432,
+              0,
+              0.07225295675594115
+            ],
+            "forward": [
+              0.1441282241150829,
+              0,
+              0.9895590204800482
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ],
+            "right": [
+              -0.989559020480048,
+              0,
+              0.14412822411508286
+            ],
+            "mode": "walk",
+            "yaw": -2.9969607118444594,
+            "pitch": 0,
+            "keys": [],
+            "comparison": false,
+            "recorded": "Osmo view 7",
+            "triangles": 3831958,
+            "renderCount": 56,
+            "fov": 75,
+            "seeInside": false,
+            "projection": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              -1.000500125031258,
+              -1,
+              0,
+              0,
+              -0.05001250312578145,
+              0
+            ],
+            "orbit": {
+              "target": [
+                0,
+                0,
+                0
+              ],
+              "radius": 8,
+              "theta": 0,
+              "phi": 1
+            }
+          },
+          "viewportFile": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\display-ablation\\baseline-fan-viewport.png",
+          "canvasFile": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\display-ablation\\baseline-fan-canvas.png"
+        },
+        {
+          "label": "dining",
+          "index": 4,
+          "diagnostics": {
+            "activeSplats": 1915979,
+            "lod": true,
+            "blur": 0.3,
+            "extSplats": false,
+            "dpr": 1.25,
+            "size": [
+              2400,
+              1182
+            ],
+            "maxSh": 2
+          },
+          "state": {
+            "position": [
+              0.7616677170986236,
+              0.7530471853609798,
+              1.059430921517134
+            ],
+            "quaternion": [
+              0,
+              0.07585943406091754,
+              0,
+              0.9971185216733051
+            ],
+            "forward": [
+              -0.15128169349159132,
+              0,
+              -0.9884906925279147
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ],
+            "right": [
+              0.9884906925279147,
+              0,
+              -0.15128169349159132
+            ],
+            "mode": "walk",
+            "yaw": 0.15186476116749714,
+            "pitch": 0,
+            "keys": [],
+            "comparison": false,
+            "recorded": "Osmo view 5",
+            "triangles": 3817288,
+            "renderCount": 69,
+            "fov": 75,
+            "seeInside": false,
+            "projection": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              -1.000500125031258,
+              -1,
+              0,
+              0,
+              -0.05001250312578145,
+              0
+            ],
+            "orbit": {
+              "target": [
+                0,
+                0,
+                0
+              ],
+              "radius": 8,
+              "theta": 0,
+              "phi": 1
+            }
+          },
+          "viewportFile": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\display-ablation\\baseline-dining-viewport.png",
+          "canvasFile": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\display-ablation\\baseline-dining-canvas.png"
+        },
+        {
+          "label": "bathroom",
+          "index": 5,
+          "diagnostics": {
+            "activeSplats": 1908644,
+            "lod": true,
+            "blur": 0.3,
+            "extSplats": false,
+            "dpr": 1.25,
+            "size": [
+              2400,
+              1182
+            ],
+            "maxSh": 2
+          },
+          "state": {
+            "position": [
+              -0.11036735204714103,
+              0.4616502046204495,
+              -3.4100854048200673
+            ],
+            "quaternion": [
+              0,
+              0.8397103441859145,
+              0,
+              0.5430345641551493
+            ],
+            "forward": [
+              -0.9119834815431371,
+              0,
+              0.4102269242656541
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ],
+            "right": [
+              -0.410226924265654,
+              0,
+              -0.9119834815431369
+            ],
+            "mode": "walk",
+            "yaw": 1.9934992000343095,
+            "pitch": 0,
+            "keys": [],
+            "comparison": false,
+            "recorded": "Osmo view 6",
+            "triangles": 3999998,
+            "renderCount": 83,
+            "fov": 75,
+            "seeInside": false,
+            "projection": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              -1.000500125031258,
+              -1,
+              0,
+              0,
+              -0.05001250312578145,
+              0
+            ],
+            "orbit": {
+              "target": [
+                0,
+                0,
+                0
+              ],
+              "radius": 8,
+              "theta": 0,
+              "phi": 1
+            }
+          },
+          "viewportFile": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\display-ablation\\baseline-bathroom-viewport.png",
+          "canvasFile": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\display-ablation\\baseline-bathroom-canvas.png"
+        }
+      ],
+      "frameCount": 360,
+      "averageFps": 239.99999999999997
+    },
+    {
+      "name": "blur-zero",
+      "settings": {
+        "lod": 1,
+        "ext": 0,
+        "blur": 0,
+        "dpr": 1.25,
+        "budget": 2000000
+      },
+      "readySeconds": 8.649,
+      "errors": [],
+      "views": [
+        {
+          "label": "fridge",
+          "index": 0,
+          "diagnostics": {
+            "activeSplats": 1999998,
+            "lod": true,
+            "blur": 0,
+            "extSplats": false,
+            "dpr": 1.25,
+            "size": [
+              2400,
+              1182
+            ],
+            "maxSh": 2
+          },
+          "state": {
+            "position": [
+              -0.04734322054037422,
+              1.5427764395823702,
+              0.16500877423918853
+            ],
+            "quaternion": [
+              0,
+              -0.9512285361086977,
+              0,
+              0.3084870695710014
+            ],
+            "forward": [
+              0.5868834071929714,
+              0,
+              0.8096714558149922
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ],
+            "right": [
+              -0.8096714558149922,
+              0,
+              0.5868834071929714
+            ],
+            "mode": "walk",
+            "yaw": -2.51438841389687,
+            "pitch": 0,
+            "keys": [],
+            "comparison": false,
+            "recorded": "Osmo view 1",
+            "triangles": 3999996,
+            "renderCount": 41,
+            "fov": 75,
+            "seeInside": false,
+            "projection": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              -1.000500125031258,
+              -1,
+              0,
+              0,
+              -0.05001250312578145,
+              0
+            ],
+            "orbit": {
+              "target": [
+                0,
+                0,
+                0
+              ],
+              "radius": 8,
+              "theta": 0,
+              "phi": 1
+            }
+          },
+          "viewportFile": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\display-ablation\\blur-zero-fridge-viewport.png",
+          "canvasFile": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\display-ablation\\blur-zero-fridge-canvas.png"
+        },
+        {
+          "label": "fan",
+          "index": 6,
+          "diagnostics": {
+            "activeSplats": 1915979,
+            "lod": true,
+            "blur": 0,
+            "extSplats": false,
+            "dpr": 1.25,
+            "size": [
+              2400,
+              1182
+            ],
+            "maxSh": 2
+          },
+          "state": {
+            "position": [
+              -0.8176386469064271,
+              0.4255116593924649,
+              0.8534996480900683
+            ],
+            "quaternion": [
+              0,
+              -0.997386339509432,
+              0,
+              0.07225295675594115
+            ],
+            "forward": [
+              0.1441282241150829,
+              0,
+              0.9895590204800482
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ],
+            "right": [
+              -0.989559020480048,
+              0,
+              0.14412822411508286
+            ],
+            "mode": "walk",
+            "yaw": -2.9969607118444594,
+            "pitch": 0,
+            "keys": [],
+            "comparison": false,
+            "recorded": "Osmo view 7",
+            "triangles": 3815628,
+            "renderCount": 56,
+            "fov": 75,
+            "seeInside": false,
+            "projection": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              -1.000500125031258,
+              -1,
+              0,
+              0,
+              -0.05001250312578145,
+              0
+            ],
+            "orbit": {
+              "target": [
+                0,
+                0,
+                0
+              ],
+              "radius": 8,
+              "theta": 0,
+              "phi": 1
+            }
+          },
+          "viewportFile": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\display-ablation\\blur-zero-fan-viewport.png",
+          "canvasFile": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\display-ablation\\blur-zero-fan-canvas.png"
+        },
+        {
+          "label": "dining",
+          "index": 4,
+          "diagnostics": {
+            "activeSplats": 1907814,
+            "lod": true,
+            "blur": 0,
+            "extSplats": false,
+            "dpr": 1.25,
+            "size": [
+              2400,
+              1182
+            ],
+            "maxSh": 2
+          },
+          "state": {
+            "position": [
+              0.7616677170986236,
+              0.7530471853609798,
+              1.059430921517134
+            ],
+            "quaternion": [
+              0,
+              0.07585943406091754,
+              0,
+              0.9971185216733051
+            ],
+            "forward": [
+              -0.15128169349159132,
+              0,
+              -0.9884906925279147
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ],
+            "right": [
+              0.9884906925279147,
+              0,
+              -0.15128169349159132
+            ],
+            "mode": "walk",
+            "yaw": 0.15186476116749714,
+            "pitch": 0,
+            "keys": [],
+            "comparison": false,
+            "recorded": "Osmo view 5",
+            "triangles": 3817288,
+            "renderCount": 69,
+            "fov": 75,
+            "seeInside": false,
+            "projection": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              -1.000500125031258,
+              -1,
+              0,
+              0,
+              -0.05001250312578145,
+              0
+            ],
+            "orbit": {
+              "target": [
+                0,
+                0,
+                0
+              ],
+              "radius": 8,
+              "theta": 0,
+              "phi": 1
+            }
+          },
+          "viewportFile": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\display-ablation\\blur-zero-dining-viewport.png",
+          "canvasFile": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\display-ablation\\blur-zero-dining-canvas.png"
+        },
+        {
+          "label": "bathroom",
+          "index": 5,
+          "diagnostics": {
+            "activeSplats": 1999999,
+            "lod": true,
+            "blur": 0,
+            "extSplats": false,
+            "dpr": 1.25,
+            "size": [
+              2400,
+              1182
+            ],
+            "maxSh": 2
+          },
+          "state": {
+            "position": [
+              -0.11036735204714103,
+              0.4616502046204495,
+              -3.4100854048200673
+            ],
+            "quaternion": [
+              0,
+              0.8397103441859145,
+              0,
+              0.5430345641551493
+            ],
+            "forward": [
+              -0.9119834815431371,
+              0,
+              0.4102269242656541
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ],
+            "right": [
+              -0.410226924265654,
+              0,
+              -0.9119834815431369
+            ],
+            "mode": "walk",
+            "yaw": 1.9934992000343095,
+            "pitch": 0,
+            "keys": [],
+            "comparison": false,
+            "recorded": "Osmo view 6",
+            "triangles": 3999998,
+            "renderCount": 83,
+            "fov": 75,
+            "seeInside": false,
+            "projection": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              -1.000500125031258,
+              -1,
+              0,
+              0,
+              -0.05001250312578145,
+              0
+            ],
+            "orbit": {
+              "target": [
+                0,
+                0,
+                0
+              ],
+              "radius": 8,
+              "theta": 0,
+              "phi": 1
+            }
+          },
+          "viewportFile": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\display-ablation\\blur-zero-bathroom-viewport.png",
+          "canvasFile": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\display-ablation\\blur-zero-bathroom-canvas.png"
+        }
+      ],
+      "frameCount": 361,
+      "averageFps": 239.99468155830328
+    },
+    {
+      "name": "blur-005",
+      "settings": {
+        "lod": 1,
+        "ext": 0,
+        "blur": 0.05,
+        "dpr": 1.25,
+        "budget": 2000000
+      },
+      "readySeconds": 9.84,
+      "errors": [],
+      "views": [
+        {
+          "label": "fridge",
+          "index": 0,
+          "diagnostics": {
+            "activeSplats": 1999998,
+            "lod": true,
+            "blur": 0.05,
+            "extSplats": false,
+            "dpr": 1.25,
+            "size": [
+              2400,
+              1182
+            ],
+            "maxSh": 2
+          },
+          "state": {
+            "position": [
+              -0.04734322054037422,
+              1.5427764395823702,
+              0.16500877423918853
+            ],
+            "quaternion": [
+              0,
+              -0.9512285361086977,
+              0,
+              0.3084870695710014
+            ],
+            "forward": [
+              0.5868834071929714,
+              0,
+              0.8096714558149922
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ],
+            "right": [
+              -0.8096714558149922,
+              0,
+              0.5868834071929714
+            ],
+            "mode": "walk",
+            "yaw": -2.51438841389687,
+            "pitch": 0,
+            "keys": [],
+            "comparison": false,
+            "recorded": "Osmo view 1",
+            "triangles": 3999996,
+            "renderCount": 40,
+            "fov": 75,
+            "seeInside": false,
+            "projection": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              -1.000500125031258,
+              -1,
+              0,
+              0,
+              -0.05001250312578145,
+              0
+            ],
+            "orbit": {
+              "target": [
+                0,
+                0,
+                0
+              ],
+              "radius": 8,
+              "theta": 0,
+              "phi": 1
+            }
+          },
+          "viewportFile": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\display-ablation\\blur-005-fridge-viewport.png",
+          "canvasFile": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\display-ablation\\blur-005-fridge-canvas.png"
+        },
+        {
+          "label": "fan",
+          "index": 6,
+          "diagnostics": {
+            "activeSplats": 1999998,
+            "lod": true,
+            "blur": 0.05,
+            "extSplats": false,
+            "dpr": 1.25,
+            "size": [
+              2400,
+              1182
+            ],
+            "maxSh": 2
+          },
+          "state": {
+            "position": [
+              -0.8176386469064271,
+              0.4255116593924649,
+              0.8534996480900683
+            ],
+            "quaternion": [
+              0,
+              -0.997386339509432,
+              0,
+              0.07225295675594115
+            ],
+            "forward": [
+              0.1441282241150829,
+              0,
+              0.9895590204800482
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ],
+            "right": [
+              -0.989559020480048,
+              0,
+              0.14412822411508286
+            ],
+            "mode": "walk",
+            "yaw": -2.9969607118444594,
+            "pitch": 0,
+            "keys": [],
+            "comparison": false,
+            "recorded": "Osmo view 7",
+            "triangles": 3831958,
+            "renderCount": 52,
+            "fov": 75,
+            "seeInside": false,
+            "projection": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              -1.000500125031258,
+              -1,
+              0,
+              0,
+              -0.05001250312578145,
+              0
+            ],
+            "orbit": {
+              "target": [
+                0,
+                0,
+                0
+              ],
+              "radius": 8,
+              "theta": 0,
+              "phi": 1
+            }
+          },
+          "viewportFile": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\display-ablation\\blur-005-fan-viewport.png",
+          "canvasFile": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\display-ablation\\blur-005-fan-canvas.png"
+        },
+        {
+          "label": "dining",
+          "index": 4,
+          "diagnostics": {
+            "activeSplats": 1908644,
+            "lod": true,
+            "blur": 0.05,
+            "extSplats": false,
+            "dpr": 1.25,
+            "size": [
+              2400,
+              1182
+            ],
+            "maxSh": 2
+          },
+          "state": {
+            "position": [
+              0.7616677170986236,
+              0.7530471853609798,
+              1.059430921517134
+            ],
+            "quaternion": [
+              0,
+              0.07585943406091754,
+              0,
+              0.9971185216733051
+            ],
+            "forward": [
+              -0.15128169349159132,
+              0,
+              -0.9884906925279147
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ],
+            "right": [
+              0.9884906925279147,
+              0,
+              -0.15128169349159132
+            ],
+            "mode": "walk",
+            "yaw": 0.15186476116749714,
+            "pitch": 0,
+            "keys": [],
+            "comparison": false,
+            "recorded": "Osmo view 5",
+            "triangles": 3817288,
+            "renderCount": 64,
+            "fov": 75,
+            "seeInside": false,
+            "projection": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              -1.000500125031258,
+              -1,
+              0,
+              0,
+              -0.05001250312578145,
+              0
+            ],
+            "orbit": {
+              "target": [
+                0,
+                0,
+                0
+              ],
+              "radius": 8,
+              "theta": 0,
+              "phi": 1
+            }
+          },
+          "viewportFile": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\display-ablation\\blur-005-dining-viewport.png",
+          "canvasFile": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\display-ablation\\blur-005-dining-canvas.png"
+        },
+        {
+          "label": "bathroom",
+          "index": 5,
+          "diagnostics": {
+            "activeSplats": 1999999,
+            "lod": true,
+            "blur": 0.05,
+            "extSplats": false,
+            "dpr": 1.25,
+            "size": [
+              2400,
+              1182
+            ],
+            "maxSh": 2
+          },
+          "state": {
+            "position": [
+              -0.11036735204714103,
+              0.4616502046204495,
+              -3.4100854048200673
+            ],
+            "quaternion": [
+              0,
+              0.8397103441859145,
+              0,
+              0.5430345641551493
+            ],
+            "forward": [
+              -0.9119834815431371,
+              0,
+              0.4102269242656541
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ],
+            "right": [
+              -0.410226924265654,
+              0,
+              -0.9119834815431369
+            ],
+            "mode": "walk",
+            "yaw": 1.9934992000343095,
+            "pitch": 0,
+            "keys": [],
+            "comparison": false,
+            "recorded": "Osmo view 6",
+            "triangles": 3999998,
+            "renderCount": 78,
+            "fov": 75,
+            "seeInside": false,
+            "projection": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              -1.000500125031258,
+              -1,
+              0,
+              0,
+              -0.05001250312578145,
+              0
+            ],
+            "orbit": {
+              "target": [
+                0,
+                0,
+                0
+              ],
+              "radius": 8,
+              "theta": 0,
+              "phi": 1
+            }
+          },
+          "viewportFile": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\display-ablation\\blur-005-bathroom-viewport.png",
+          "canvasFile": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\display-ablation\\blur-005-bathroom-canvas.png"
+        }
+      ],
+      "frameCount": 361,
+      "averageFps": 239.99468155830328
+    },
+    {
+      "name": "extended",
+      "settings": {
+        "lod": 1,
+        "ext": 1,
+        "blur": 0.3,
+        "dpr": 1.25,
+        "budget": 2000000
+      },
+      "readySeconds": 10.557,
+      "errors": [],
+      "views": [
+        {
+          "label": "fridge",
+          "index": 0,
+          "diagnostics": {
+            "activeSplats": 2000000,
+            "lod": true,
+            "blur": 0.3,
+            "extSplats": true,
+            "dpr": 1.25,
+            "size": [
+              2400,
+              1182
+            ],
+            "maxSh": 2
+          },
+          "state": {
+            "position": [
+              -0.04734322054037422,
+              1.5427764395823702,
+              0.16500877423918853
+            ],
+            "quaternion": [
+              0,
+              -0.9512285361086977,
+              0,
+              0.3084870695710014
+            ],
+            "forward": [
+              0.5868834071929714,
+              0,
+              0.8096714558149922
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ],
+            "right": [
+              -0.8096714558149922,
+              0,
+              0.5868834071929714
+            ],
+            "mode": "walk",
+            "yaw": -2.51438841389687,
+            "pitch": 0,
+            "keys": [],
+            "comparison": false,
+            "recorded": "Osmo view 1",
+            "triangles": 4000000,
+            "renderCount": 42,
+            "fov": 75,
+            "seeInside": false,
+            "projection": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              -1.000500125031258,
+              -1,
+              0,
+              0,
+              -0.05001250312578145,
+              0
+            ],
+            "orbit": {
+              "target": [
+                0,
+                0,
+                0
+              ],
+              "radius": 8,
+              "theta": 0,
+              "phi": 1
+            }
+          },
+          "viewportFile": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\display-ablation\\extended-fridge-viewport.png",
+          "canvasFile": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\display-ablation\\extended-fridge-canvas.png"
+        },
+        {
+          "label": "fan",
+          "index": 6,
+          "diagnostics": {
+            "activeSplats": 2000000,
+            "lod": true,
+            "blur": 0.3,
+            "extSplats": true,
+            "dpr": 1.25,
+            "size": [
+              2400,
+              1182
+            ],
+            "maxSh": 2
+          },
+          "state": {
+            "position": [
+              -0.8176386469064271,
+              0.4255116593924649,
+              0.8534996480900683
+            ],
+            "quaternion": [
+              0,
+              -0.997386339509432,
+              0,
+              0.07225295675594115
+            ],
+            "forward": [
+              0.1441282241150829,
+              0,
+              0.9895590204800482
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ],
+            "right": [
+              -0.989559020480048,
+              0,
+              0.14412822411508286
+            ],
+            "mode": "walk",
+            "yaw": -2.9969607118444594,
+            "pitch": 0,
+            "keys": [],
+            "comparison": false,
+            "recorded": "Osmo view 7",
+            "triangles": 4000001,
+            "renderCount": 55,
+            "fov": 75,
+            "seeInside": false,
+            "projection": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              -1.000500125031258,
+              -1,
+              0,
+              0,
+              -0.05001250312578145,
+              0
+            ],
+            "orbit": {
+              "target": [
+                0,
+                0,
+                0
+              ],
+              "radius": 8,
+              "theta": 0,
+              "phi": 1
+            }
+          },
+          "viewportFile": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\display-ablation\\extended-fan-viewport.png",
+          "canvasFile": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\display-ablation\\extended-fan-canvas.png"
+        },
+        {
+          "label": "dining",
+          "index": 4,
+          "diagnostics": {
+            "activeSplats": 1908897,
+            "lod": true,
+            "blur": 0.3,
+            "extSplats": true,
+            "dpr": 1.25,
+            "size": [
+              2400,
+              1182
+            ],
+            "maxSh": 2
+          },
+          "state": {
+            "position": [
+              0.7616677170986236,
+              0.7530471853609798,
+              1.059430921517134
+            ],
+            "quaternion": [
+              0,
+              0.07585943406091754,
+              0,
+              0.9971185216733051
+            ],
+            "forward": [
+              -0.15128169349159132,
+              0,
+              -0.9884906925279147
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ],
+            "right": [
+              0.9884906925279147,
+              0,
+              -0.15128169349159132
+            ],
+            "mode": "walk",
+            "yaw": 0.15186476116749714,
+            "pitch": 0,
+            "keys": [],
+            "comparison": false,
+            "recorded": "Osmo view 5",
+            "triangles": 3817794,
+            "renderCount": 68,
+            "fov": 75,
+            "seeInside": false,
+            "projection": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              -1.000500125031258,
+              -1,
+              0,
+              0,
+              -0.05001250312578145,
+              0
+            ],
+            "orbit": {
+              "target": [
+                0,
+                0,
+                0
+              ],
+              "radius": 8,
+              "theta": 0,
+              "phi": 1
+            }
+          },
+          "viewportFile": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\display-ablation\\extended-dining-viewport.png",
+          "canvasFile": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\display-ablation\\extended-dining-canvas.png"
+        },
+        {
+          "label": "bathroom",
+          "index": 5,
+          "diagnostics": {
+            "activeSplats": 1908897,
+            "lod": true,
+            "blur": 0.3,
+            "extSplats": true,
+            "dpr": 1.25,
+            "size": [
+              2400,
+              1182
+            ],
+            "maxSh": 2
+          },
+          "state": {
+            "position": [
+              -0.11036735204714103,
+              0.4616502046204495,
+              -3.4100854048200673
+            ],
+            "quaternion": [
+              0,
+              0.8397103441859145,
+              0,
+              0.5430345641551493
+            ],
+            "forward": [
+              -0.9119834815431371,
+              0,
+              0.4102269242656541
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ],
+            "right": [
+              -0.410226924265654,
+              0,
+              -0.9119834815431369
+            ],
+            "mode": "walk",
+            "yaw": 1.9934992000343095,
+            "pitch": 0,
+            "keys": [],
+            "comparison": false,
+            "recorded": "Osmo view 6",
+            "triangles": 3999996,
+            "renderCount": 81,
+            "fov": 75,
+            "seeInside": false,
+            "projection": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              -1.000500125031258,
+              -1,
+              0,
+              0,
+              -0.05001250312578145,
+              0
+            ],
+            "orbit": {
+              "target": [
+                0,
+                0,
+                0
+              ],
+              "radius": 8,
+              "theta": 0,
+              "phi": 1
+            }
+          },
+          "viewportFile": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\display-ablation\\extended-bathroom-viewport.png",
+          "canvasFile": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\display-ablation\\extended-bathroom-canvas.png"
+        }
+      ],
+      "frameCount": 361,
+      "averageFps": 239.97872764741084
+    },
+    {
+      "name": "budget-3m",
+      "settings": {
+        "lod": 1,
+        "ext": 0,
+        "blur": 0.3,
+        "dpr": 1.25,
+        "budget": 3000000
+      },
+      "readySeconds": 8.617,
+      "errors": [],
+      "views": [
+        {
+          "label": "fridge",
+          "index": 0,
+          "diagnostics": {
+            "activeSplats": 2187369,
+            "lod": true,
+            "blur": 0.3,
+            "extSplats": false,
+            "dpr": 1.25,
+            "size": [
+              2400,
+              1182
+            ],
+            "maxSh": 2
+          },
+          "state": {
+            "position": [
+              -0.04734322054037422,
+              1.5427764395823702,
+              0.16500877423918853
+            ],
+            "quaternion": [
+              0,
+              -0.9512285361086977,
+              0,
+              0.3084870695710014
+            ],
+            "forward": [
+              0.5868834071929714,
+              0,
+              0.8096714558149922
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ],
+            "right": [
+              -0.8096714558149922,
+              0,
+              0.5868834071929714
+            ],
+            "mode": "walk",
+            "yaw": -2.51438841389687,
+            "pitch": 0,
+            "keys": [],
+            "comparison": false,
+            "recorded": "Osmo view 1",
+            "triangles": 4374738,
+            "renderCount": 46,
+            "fov": 75,
+            "seeInside": false,
+            "projection": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              -1.000500125031258,
+              -1,
+              0,
+              0,
+              -0.05001250312578145,
+              0
+            ],
+            "orbit": {
+              "target": [
+                0,
+                0,
+                0
+              ],
+              "radius": 8,
+              "theta": 0,
+              "phi": 1
+            }
+          },
+          "viewportFile": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\display-ablation\\budget-3m-fridge-viewport.png",
+          "canvasFile": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\display-ablation\\budget-3m-fridge-canvas.png"
+        },
+        {
+          "label": "fan",
+          "index": 6,
+          "diagnostics": {
+            "activeSplats": 2187369,
+            "lod": true,
+            "blur": 0.3,
+            "extSplats": false,
+            "dpr": 1.25,
+            "size": [
+              2400,
+              1182
+            ],
+            "maxSh": 2
+          },
+          "state": {
+            "position": [
+              -0.8176386469064271,
+              0.4255116593924649,
+              0.8534996480900683
+            ],
+            "quaternion": [
+              0,
+              -0.997386339509432,
+              0,
+              0.07225295675594115
+            ],
+            "forward": [
+              0.1441282241150829,
+              0,
+              0.9895590204800482
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ],
+            "right": [
+              -0.989559020480048,
+              0,
+              0.14412822411508286
+            ],
+            "mode": "walk",
+            "yaw": -2.9969607118444594,
+            "pitch": 0,
+            "keys": [],
+            "comparison": false,
+            "recorded": "Osmo view 7",
+            "triangles": 3831958,
+            "renderCount": 59,
+            "fov": 75,
+            "seeInside": false,
+            "projection": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              -1.000500125031258,
+              -1,
+              0,
+              0,
+              -0.05001250312578145,
+              0
+            ],
+            "orbit": {
+              "target": [
+                0,
+                0,
+                0
+              ],
+              "radius": 8,
+              "theta": 0,
+              "phi": 1
+            }
+          },
+          "viewportFile": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\display-ablation\\budget-3m-fan-viewport.png",
+          "canvasFile": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\display-ablation\\budget-3m-fan-canvas.png"
+        },
+        {
+          "label": "dining",
+          "index": 4,
+          "diagnostics": {
+            "activeSplats": 1908644,
+            "lod": true,
+            "blur": 0.3,
+            "extSplats": false,
+            "dpr": 1.25,
+            "size": [
+              2400,
+              1182
+            ],
+            "maxSh": 2
+          },
+          "state": {
+            "position": [
+              0.7616677170986236,
+              0.7530471853609798,
+              1.059430921517134
+            ],
+            "quaternion": [
+              0,
+              0.07585943406091754,
+              0,
+              0.9971185216733051
+            ],
+            "forward": [
+              -0.15128169349159132,
+              0,
+              -0.9884906925279147
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ],
+            "right": [
+              0.9884906925279147,
+              0,
+              -0.15128169349159132
+            ],
+            "mode": "walk",
+            "yaw": 0.15186476116749714,
+            "pitch": 0,
+            "keys": [],
+            "comparison": false,
+            "recorded": "Osmo view 5",
+            "triangles": 3817288,
+            "renderCount": 72,
+            "fov": 75,
+            "seeInside": false,
+            "projection": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              -1.000500125031258,
+              -1,
+              0,
+              0,
+              -0.05001250312578145,
+              0
+            ],
+            "orbit": {
+              "target": [
+                0,
+                0,
+                0
+              ],
+              "radius": 8,
+              "theta": 0,
+              "phi": 1
+            }
+          },
+          "viewportFile": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\display-ablation\\budget-3m-dining-viewport.png",
+          "canvasFile": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\display-ablation\\budget-3m-dining-canvas.png"
+        },
+        {
+          "label": "bathroom",
+          "index": 5,
+          "diagnostics": {
+            "activeSplats": 1908644,
+            "lod": true,
+            "blur": 0.3,
+            "extSplats": false,
+            "dpr": 1.25,
+            "size": [
+              2400,
+              1182
+            ],
+            "maxSh": 2
+          },
+          "state": {
+            "position": [
+              -0.11036735204714103,
+              0.4616502046204495,
+              -3.4100854048200673
+            ],
+            "quaternion": [
+              0,
+              0.8397103441859145,
+              0,
+              0.5430345641551493
+            ],
+            "forward": [
+              -0.9119834815431371,
+              0,
+              0.4102269242656541
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ],
+            "right": [
+              -0.410226924265654,
+              0,
+              -0.9119834815431369
+            ],
+            "mode": "walk",
+            "yaw": 1.9934992000343095,
+            "pitch": 0,
+            "keys": [],
+            "comparison": false,
+            "recorded": "Osmo view 6",
+            "triangles": 4898382,
+            "renderCount": 86,
+            "fov": 75,
+            "seeInside": false,
+            "projection": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              -1.000500125031258,
+              -1,
+              0,
+              0,
+              -0.05001250312578145,
+              0
+            ],
+            "orbit": {
+              "target": [
+                0,
+                0,
+                0
+              ],
+              "radius": 8,
+              "theta": 0,
+              "phi": 1
+            }
+          },
+          "viewportFile": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\display-ablation\\budget-3m-bathroom-viewport.png",
+          "canvasFile": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\display-ablation\\budget-3m-bathroom-canvas.png"
+        }
+      ],
+      "frameCount": 360,
+      "averageFps": 240.01600106673783
+    },
+    {
+      "name": "all-source",
+      "settings": {
+        "lod": 0,
+        "ext": 1,
+        "blur": 0.05,
+        "dpr": 1.25,
+        "budget": 3000000
+      },
+      "readySeconds": 1.802,
+      "errors": [],
+      "views": [
+        {
+          "label": "fridge",
+          "index": 0,
+          "diagnostics": {
+            "activeSplats": 2997908,
+            "lod": false,
+            "blur": 0.05,
+            "extSplats": true,
+            "dpr": 1.25,
+            "size": [
+              2400,
+              1182
+            ],
+            "maxSh": 2
+          },
+          "state": {
+            "position": [
+              -0.04734322054037422,
+              1.5427764395823702,
+              0.16500877423918853
+            ],
+            "quaternion": [
+              0,
+              -0.9512285361086977,
+              0,
+              0.3084870695710014
+            ],
+            "forward": [
+              0.5868834071929714,
+              0,
+              0.8096714558149922
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ],
+            "right": [
+              -0.8096714558149922,
+              0,
+              0.5868834071929714
+            ],
+            "mode": "walk",
+            "yaw": -2.51438841389687,
+            "pitch": 0,
+            "keys": [],
+            "comparison": false,
+            "recorded": "Osmo view 1",
+            "triangles": 5995816,
+            "renderCount": 13,
+            "fov": 75,
+            "seeInside": false,
+            "projection": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              -1.000500125031258,
+              -1,
+              0,
+              0,
+              -0.05001250312578145,
+              0
+            ],
+            "orbit": {
+              "target": [
+                0,
+                0,
+                0
+              ],
+              "radius": 8,
+              "theta": 0,
+              "phi": 1
+            }
+          },
+          "viewportFile": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\display-ablation\\all-source-fridge-viewport.png",
+          "canvasFile": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\display-ablation\\all-source-fridge-canvas.png"
+        },
+        {
+          "label": "fan",
+          "index": 6,
+          "diagnostics": {
+            "activeSplats": 2997908,
+            "lod": false,
+            "blur": 0.05,
+            "extSplats": true,
+            "dpr": 1.25,
+            "size": [
+              2400,
+              1182
+            ],
+            "maxSh": 2
+          },
+          "state": {
+            "position": [
+              -0.8176386469064271,
+              0.4255116593924649,
+              0.8534996480900683
+            ],
+            "quaternion": [
+              0,
+              -0.997386339509432,
+              0,
+              0.07225295675594115
+            ],
+            "forward": [
+              0.1441282241150829,
+              0,
+              0.9895590204800482
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ],
+            "right": [
+              -0.989559020480048,
+              0,
+              0.14412822411508286
+            ],
+            "mode": "walk",
+            "yaw": -2.9969607118444594,
+            "pitch": 0,
+            "keys": [],
+            "comparison": false,
+            "recorded": "Osmo view 7",
+            "triangles": 5995816,
+            "renderCount": 25,
+            "fov": 75,
+            "seeInside": false,
+            "projection": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              -1.000500125031258,
+              -1,
+              0,
+              0,
+              -0.05001250312578145,
+              0
+            ],
+            "orbit": {
+              "target": [
+                0,
+                0,
+                0
+              ],
+              "radius": 8,
+              "theta": 0,
+              "phi": 1
+            }
+          },
+          "viewportFile": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\display-ablation\\all-source-fan-viewport.png",
+          "canvasFile": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\display-ablation\\all-source-fan-canvas.png"
+        },
+        {
+          "label": "dining",
+          "index": 4,
+          "diagnostics": {
+            "activeSplats": 2997908,
+            "lod": false,
+            "blur": 0.05,
+            "extSplats": true,
+            "dpr": 1.25,
+            "size": [
+              2400,
+              1182
+            ],
+            "maxSh": 2
+          },
+          "state": {
+            "position": [
+              0.7616677170986236,
+              0.7530471853609798,
+              1.059430921517134
+            ],
+            "quaternion": [
+              0,
+              0.07585943406091754,
+              0,
+              0.9971185216733051
+            ],
+            "forward": [
+              -0.15128169349159132,
+              0,
+              -0.9884906925279147
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ],
+            "right": [
+              0.9884906925279147,
+              0,
+              -0.15128169349159132
+            ],
+            "mode": "walk",
+            "yaw": 0.15186476116749714,
+            "pitch": 0,
+            "keys": [],
+            "comparison": false,
+            "recorded": "Osmo view 5",
+            "triangles": 5995816,
+            "renderCount": 36,
+            "fov": 75,
+            "seeInside": false,
+            "projection": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              -1.000500125031258,
+              -1,
+              0,
+              0,
+              -0.05001250312578145,
+              0
+            ],
+            "orbit": {
+              "target": [
+                0,
+                0,
+                0
+              ],
+              "radius": 8,
+              "theta": 0,
+              "phi": 1
+            }
+          },
+          "viewportFile": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\display-ablation\\all-source-dining-viewport.png",
+          "canvasFile": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\display-ablation\\all-source-dining-canvas.png"
+        },
+        {
+          "label": "bathroom",
+          "index": 5,
+          "diagnostics": {
+            "activeSplats": 2997908,
+            "lod": false,
+            "blur": 0.05,
+            "extSplats": true,
+            "dpr": 1.25,
+            "size": [
+              2400,
+              1182
+            ],
+            "maxSh": 2
+          },
+          "state": {
+            "position": [
+              -0.11036735204714103,
+              0.4616502046204495,
+              -3.4100854048200673
+            ],
+            "quaternion": [
+              0,
+              0.8397103441859145,
+              0,
+              0.5430345641551493
+            ],
+            "forward": [
+              -0.9119834815431371,
+              0,
+              0.4102269242656541
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ],
+            "right": [
+              -0.410226924265654,
+              0,
+              -0.9119834815431369
+            ],
+            "mode": "walk",
+            "yaw": 1.9934992000343095,
+            "pitch": 0,
+            "keys": [],
+            "comparison": false,
+            "recorded": "Osmo view 6",
+            "triangles": 5995816,
+            "renderCount": 47,
+            "fov": 75,
+            "seeInside": false,
+            "projection": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              -1.000500125031258,
+              -1,
+              0,
+              0,
+              -0.05001250312578145,
+              0
+            ],
+            "orbit": {
+              "target": [
+                0,
+                0,
+                0
+              ],
+              "radius": 8,
+              "theta": 0,
+              "phi": 1
+            }
+          },
+          "viewportFile": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\display-ablation\\all-source-bathroom-viewport.png",
+          "canvasFile": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\display-ablation\\all-source-bathroom-canvas.png"
+        }
+      ],
+      "frameCount": 361,
+      "averageFps": 240.01063759058584
+    },
+    {
+      "name": "dpr-2",
+      "settings": {
+        "lod": 1,
+        "ext": 0,
+        "blur": 0.3,
+        "dpr": 2,
+        "budget": 2000000
+      },
+      "readySeconds": 9.358,
+      "errors": [],
+      "views": [
+        {
+          "label": "fridge",
+          "index": 0,
+          "diagnostics": {
+            "activeSplats": 1999998,
+            "lod": true,
+            "blur": 0.3,
+            "extSplats": false,
+            "dpr": 2,
+            "size": [
+              3840,
+              1892
+            ],
+            "maxSh": 2
+          },
+          "state": {
+            "position": [
+              -0.04734322054037422,
+              1.5427764395823702,
+              0.16500877423918853
+            ],
+            "quaternion": [
+              0,
+              -0.9512285361086977,
+              0,
+              0.3084870695710014
+            ],
+            "forward": [
+              0.5868834071929714,
+              0,
+              0.8096714558149922
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ],
+            "right": [
+              -0.8096714558149922,
+              0,
+              0.5868834071929714
+            ],
+            "mode": "walk",
+            "yaw": -2.51438841389687,
+            "pitch": 0,
+            "keys": [],
+            "comparison": false,
+            "recorded": "Osmo view 1",
+            "triangles": 3999996,
+            "renderCount": 43,
+            "fov": 75,
+            "seeInside": false,
+            "projection": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              -1.000500125031258,
+              -1,
+              0,
+              0,
+              -0.05001250312578145,
+              0
+            ],
+            "orbit": {
+              "target": [
+                0,
+                0,
+                0
+              ],
+              "radius": 8,
+              "theta": 0,
+              "phi": 1
+            }
+          },
+          "viewportFile": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\display-ablation\\dpr-2-fridge-viewport.png",
+          "canvasFile": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\display-ablation\\dpr-2-fridge-canvas.png"
+        },
+        {
+          "label": "fan",
+          "index": 6,
+          "diagnostics": {
+            "activeSplats": 1999998,
+            "lod": true,
+            "blur": 0.3,
+            "extSplats": false,
+            "dpr": 2,
+            "size": [
+              3840,
+              1892
+            ],
+            "maxSh": 2
+          },
+          "state": {
+            "position": [
+              -0.8176386469064271,
+              0.4255116593924649,
+              0.8534996480900683
+            ],
+            "quaternion": [
+              0,
+              -0.997386339509432,
+              0,
+              0.07225295675594115
+            ],
+            "forward": [
+              0.1441282241150829,
+              0,
+              0.9895590204800482
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ],
+            "right": [
+              -0.989559020480048,
+              0,
+              0.14412822411508286
+            ],
+            "mode": "walk",
+            "yaw": -2.9969607118444594,
+            "pitch": 0,
+            "keys": [],
+            "comparison": false,
+            "recorded": "Osmo view 7",
+            "triangles": 4000000,
+            "renderCount": 56,
+            "fov": 75,
+            "seeInside": false,
+            "projection": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              -1.000500125031258,
+              -1,
+              0,
+              0,
+              -0.05001250312578145,
+              0
+            ],
+            "orbit": {
+              "target": [
+                0,
+                0,
+                0
+              ],
+              "radius": 8,
+              "theta": 0,
+              "phi": 1
+            }
+          },
+          "viewportFile": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\display-ablation\\dpr-2-fan-viewport.png",
+          "canvasFile": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\display-ablation\\dpr-2-fan-canvas.png"
+        },
+        {
+          "label": "dining",
+          "index": 4,
+          "diagnostics": {
+            "activeSplats": 2000000,
+            "lod": true,
+            "blur": 0.3,
+            "extSplats": false,
+            "dpr": 2,
+            "size": [
+              3840,
+              1892
+            ],
+            "maxSh": 2
+          },
+          "state": {
+            "position": [
+              0.7616677170986236,
+              0.7530471853609798,
+              1.059430921517134
+            ],
+            "quaternion": [
+              0,
+              0.07585943406091754,
+              0,
+              0.9971185216733051
+            ],
+            "forward": [
+              -0.15128169349159132,
+              0,
+              -0.9884906925279147
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ],
+            "right": [
+              0.9884906925279147,
+              0,
+              -0.15128169349159132
+            ],
+            "mode": "walk",
+            "yaw": 0.15186476116749714,
+            "pitch": 0,
+            "keys": [],
+            "comparison": false,
+            "recorded": "Osmo view 5",
+            "triangles": 4000000,
+            "renderCount": 69,
+            "fov": 75,
+            "seeInside": false,
+            "projection": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              -1.000500125031258,
+              -1,
+              0,
+              0,
+              -0.05001250312578145,
+              0
+            ],
+            "orbit": {
+              "target": [
+                0,
+                0,
+                0
+              ],
+              "radius": 8,
+              "theta": 0,
+              "phi": 1
+            }
+          },
+          "viewportFile": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\display-ablation\\dpr-2-dining-viewport.png",
+          "canvasFile": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\display-ablation\\dpr-2-dining-canvas.png"
+        },
+        {
+          "label": "bathroom",
+          "index": 5,
+          "diagnostics": {
+            "activeSplats": 1999999,
+            "lod": true,
+            "blur": 0.3,
+            "extSplats": false,
+            "dpr": 2,
+            "size": [
+              3840,
+              1892
+            ],
+            "maxSh": 2
+          },
+          "state": {
+            "position": [
+              -0.11036735204714103,
+              0.4616502046204495,
+              -3.4100854048200673
+            ],
+            "quaternion": [
+              0,
+              0.8397103441859145,
+              0,
+              0.5430345641551493
+            ],
+            "forward": [
+              -0.9119834815431371,
+              0,
+              0.4102269242656541
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ],
+            "right": [
+              -0.410226924265654,
+              0,
+              -0.9119834815431369
+            ],
+            "mode": "walk",
+            "yaw": 1.9934992000343095,
+            "pitch": 0,
+            "keys": [],
+            "comparison": false,
+            "recorded": "Osmo view 6",
+            "triangles": 3999998,
+            "renderCount": 83,
+            "fov": 75,
+            "seeInside": false,
+            "projection": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              -1.000500125031258,
+              -1,
+              0,
+              0,
+              -0.05001250312578145,
+              0
+            ],
+            "orbit": {
+              "target": [
+                0,
+                0,
+                0
+              ],
+              "radius": 8,
+              "theta": 0,
+              "phi": 1
+            }
+          },
+          "viewportFile": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\display-ablation\\dpr-2-bathroom-viewport.png",
+          "canvasFile": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\display-ablation\\dpr-2-bathroom-canvas.png"
+        }
+      ],
+      "frameCount": 362,
+      "averageFps": 239.98939273402286
+    },
+    {
+      "name": "combined",
+      "settings": {
+        "lod": 0,
+        "ext": 1,
+        "blur": 0.05,
+        "dpr": 2,
+        "budget": 3000000
+      },
+      "readySeconds": 1.84,
+      "errors": [],
+      "views": [
+        {
+          "label": "fridge",
+          "index": 0,
+          "diagnostics": {
+            "activeSplats": 2997908,
+            "lod": false,
+            "blur": 0.05,
+            "extSplats": true,
+            "dpr": 2,
+            "size": [
+              3840,
+              1892
+            ],
+            "maxSh": 2
+          },
+          "state": {
+            "position": [
+              -0.04734322054037422,
+              1.5427764395823702,
+              0.16500877423918853
+            ],
+            "quaternion": [
+              0,
+              -0.9512285361086977,
+              0,
+              0.3084870695710014
+            ],
+            "forward": [
+              0.5868834071929714,
+              0,
+              0.8096714558149922
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ],
+            "right": [
+              -0.8096714558149922,
+              0,
+              0.5868834071929714
+            ],
+            "mode": "walk",
+            "yaw": -2.51438841389687,
+            "pitch": 0,
+            "keys": [],
+            "comparison": false,
+            "recorded": "Osmo view 1",
+            "triangles": 5995816,
+            "renderCount": 13,
+            "fov": 75,
+            "seeInside": false,
+            "projection": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              -1.000500125031258,
+              -1,
+              0,
+              0,
+              -0.05001250312578145,
+              0
+            ],
+            "orbit": {
+              "target": [
+                0,
+                0,
+                0
+              ],
+              "radius": 8,
+              "theta": 0,
+              "phi": 1
+            }
+          },
+          "viewportFile": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\display-ablation\\combined-fridge-viewport.png",
+          "canvasFile": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\display-ablation\\combined-fridge-canvas.png"
+        },
+        {
+          "label": "fan",
+          "index": 6,
+          "diagnostics": {
+            "activeSplats": 2997908,
+            "lod": false,
+            "blur": 0.05,
+            "extSplats": true,
+            "dpr": 2,
+            "size": [
+              3840,
+              1892
+            ],
+            "maxSh": 2
+          },
+          "state": {
+            "position": [
+              -0.8176386469064271,
+              0.4255116593924649,
+              0.8534996480900683
+            ],
+            "quaternion": [
+              0,
+              -0.997386339509432,
+              0,
+              0.07225295675594115
+            ],
+            "forward": [
+              0.1441282241150829,
+              0,
+              0.9895590204800482
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ],
+            "right": [
+              -0.989559020480048,
+              0,
+              0.14412822411508286
+            ],
+            "mode": "walk",
+            "yaw": -2.9969607118444594,
+            "pitch": 0,
+            "keys": [],
+            "comparison": false,
+            "recorded": "Osmo view 7",
+            "triangles": 5995816,
+            "renderCount": 24,
+            "fov": 75,
+            "seeInside": false,
+            "projection": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              -1.000500125031258,
+              -1,
+              0,
+              0,
+              -0.05001250312578145,
+              0
+            ],
+            "orbit": {
+              "target": [
+                0,
+                0,
+                0
+              ],
+              "radius": 8,
+              "theta": 0,
+              "phi": 1
+            }
+          },
+          "viewportFile": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\display-ablation\\combined-fan-viewport.png",
+          "canvasFile": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\display-ablation\\combined-fan-canvas.png"
+        },
+        {
+          "label": "dining",
+          "index": 4,
+          "diagnostics": {
+            "activeSplats": 2997908,
+            "lod": false,
+            "blur": 0.05,
+            "extSplats": true,
+            "dpr": 2,
+            "size": [
+              3840,
+              1892
+            ],
+            "maxSh": 2
+          },
+          "state": {
+            "position": [
+              0.7616677170986236,
+              0.7530471853609798,
+              1.059430921517134
+            ],
+            "quaternion": [
+              0,
+              0.07585943406091754,
+              0,
+              0.9971185216733051
+            ],
+            "forward": [
+              -0.15128169349159132,
+              0,
+              -0.9884906925279147
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ],
+            "right": [
+              0.9884906925279147,
+              0,
+              -0.15128169349159132
+            ],
+            "mode": "walk",
+            "yaw": 0.15186476116749714,
+            "pitch": 0,
+            "keys": [],
+            "comparison": false,
+            "recorded": "Osmo view 5",
+            "triangles": 5995816,
+            "renderCount": 35,
+            "fov": 75,
+            "seeInside": false,
+            "projection": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              -1.000500125031258,
+              -1,
+              0,
+              0,
+              -0.05001250312578145,
+              0
+            ],
+            "orbit": {
+              "target": [
+                0,
+                0,
+                0
+              ],
+              "radius": 8,
+              "theta": 0,
+              "phi": 1
+            }
+          },
+          "viewportFile": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\display-ablation\\combined-dining-viewport.png",
+          "canvasFile": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\display-ablation\\combined-dining-canvas.png"
+        },
+        {
+          "label": "bathroom",
+          "index": 5,
+          "diagnostics": {
+            "activeSplats": 2997908,
+            "lod": false,
+            "blur": 0.05,
+            "extSplats": true,
+            "dpr": 2,
+            "size": [
+              3840,
+              1892
+            ],
+            "maxSh": 2
+          },
+          "state": {
+            "position": [
+              -0.11036735204714103,
+              0.4616502046204495,
+              -3.4100854048200673
+            ],
+            "quaternion": [
+              0,
+              0.8397103441859145,
+              0,
+              0.5430345641551493
+            ],
+            "forward": [
+              -0.9119834815431371,
+              0,
+              0.4102269242656541
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ],
+            "right": [
+              -0.410226924265654,
+              0,
+              -0.9119834815431369
+            ],
+            "mode": "walk",
+            "yaw": 1.9934992000343095,
+            "pitch": 0,
+            "keys": [],
+            "comparison": false,
+            "recorded": "Osmo view 6",
+            "triangles": 5995816,
+            "renderCount": 46,
+            "fov": 75,
+            "seeInside": false,
+            "projection": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              -1.000500125031258,
+              -1,
+              0,
+              0,
+              -0.05001250312578145,
+              0
+            ],
+            "orbit": {
+              "target": [
+                0,
+                0,
+                0
+              ],
+              "radius": 8,
+              "theta": 0,
+              "phi": 1
+            }
+          },
+          "viewportFile": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\display-ablation\\combined-bathroom-viewport.png",
+          "canvasFile": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\display-ablation\\combined-bathroom-canvas.png"
+        }
+      ],
+      "frameCount": 361,
+      "averageFps": 240.01063759058567
+    }
+  ],
+  "physicalPhones": false
+}

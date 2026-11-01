@@ -1,0 +1,24 @@
+{
+  "scope": "Architect mandate 2026-11-01; staged changes only; no public deployment",
+  "fullRun": "finished: 50000 steps, 41m18.641s training",
+  "packedModel": {
+    "path": "work\\osmo-parity-20261101\\review\\final-sharp.sog",
+    "bytes": 44904208,
+    "sha256": "db0e94c2fab729fa218a34064971a948448a856e02a06c56e6b2b5daf09f29f1",
+    "splats": 2960980
+  },
+  "visualGate": "FAILED: native Gaussian rebuild remains soft and outside cutaway untidy; all surface alternatives rejected. No deployment.",
+  "liveRelease": "20261031-osmo-clean-v1",
+  "activeChecks": [],
+  "localViewer": "http://127.0.0.1:53270/",
+  "evidenceRoot": "work\\osmo-parity-20261101\\review",
+  "plan": "Complete diagnostic comparisons and all four gate records; do not misrepresent loading or small PSNR gains as quality acceptance.",
+  "next": "Architect review of captured evidence; recommended next controlled experiment is dense camera/edge consistency followed by an independent trainer / multiview surface check, not another blind full run.",
+  "computeJobs": "All training, extraction, fusion and texture jobs finished; superseded UV jobs explicitly stopped. Only the local review web server remains.",
+  "acceptanceRecord": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\acceptance-gates.json",
+  "report": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\output\\pdf\\Osmo_Architect_Mandate_Execution_and_Acceptance_2026-11-01.pdf",
+  "reportPages": 20,
+  "reportBytes": 10833280,
+  "reportSha256": "a20de66841ed9b71358e498c177810c3906a1fc9c0cec61979d20f779ba365c2",
+  "reportQA": "Text checks and visual layout inspection passed"
+}

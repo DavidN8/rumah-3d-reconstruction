@@ -1,0 +1,53 @@
+{
+  "source": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\recovery-v2\\training\\osmo-surface-v4\\step-000050000.ckpt\\splat.ply",
+  "output": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\native-v4.sog",
+  "sourceBytes": 203831437,
+  "bytes": 36835837,
+  "sha256": "434bfc67a8a810c2bea2c148c703e4afa4147dd249283e24a16c4917677d5ef1",
+  "splats": 2997515,
+  "shDegree": 0,
+  "model": "antialiased",
+  "sourceCountPreserved": true,
+  "under50MB": true,
+  "format": "sog",
+  "tool": "@playcanvas/splat-transform 3.10.3",
+  "command": [
+    "node",
+    "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\converter\\node_modules\\@playcanvas\\splat-transform\\bin\\cli.mjs",
+    "-g",
+    "cpu",
+    "--max-workers",
+    "2",
+    "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\mip-tagged-packing-input.ply",
+    "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\native-v4.sog"
+  ],
+  "sourceModification": "Temporary header-only Mip comment added; all binary splat bytes unchanged. Original file unmodified.",
+  "members": [
+    {
+      "name": "means_l.webp",
+      "bytes": 8708104
+    },
+    {
+      "name": "means_u.webp",
+      "bytes": 1353110
+    },
+    {
+      "name": "quats.webp",
+      "bytes": 9755774
+    },
+    {
+      "name": "scales.webp",
+      "bytes": 7135086
+    },
+    {
+      "name": "sh0.webp",
+      "bytes": 9872746
+    },
+    {
+      "name": "meta.json",
+      "bytes": 10319
+    }
+  ],
+  "seconds": 5.389999999984866,
+  "validation": "Count/model metadata only. Visual fidelity checked separately against original Gaussian renders; not yet a phone loading benchmark."
+}

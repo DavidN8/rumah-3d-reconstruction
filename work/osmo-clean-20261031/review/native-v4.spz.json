@@ -1,0 +1,23 @@
+{
+  "source": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\recovery-v2\\training\\osmo-surface-v4\\step-000050000.ckpt\\splat.ply",
+  "sourceBytes": 203831437,
+  "output": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\native-v4.spz",
+  "format": "SPZ v3, official Adobe/Niantic @adobe/spz 0.2.3",
+  "numPoints": 2997515,
+  "shDegree": 0,
+  "antialiased": true,
+  "packedBytes": 48377598,
+  "under50MB": true,
+  "sha256": "a26f6d34146cec3628a30cf9071a0a50c9aa485095d4c1002fd08812a9678888",
+  "axes": "Identity RUB / project Y-up; PLY wxyz quaternion reordered to SPZ xyzw",
+  "unchangedSplatCount": true,
+  "roundtrip": {
+    "maxPositionComponentErrorSceneUnits": 0.0001220703125,
+    "maxSH0ComponentError": 0.01307225227355957,
+    "maxScaleLogError": 36.55404281616211,
+    "maxOpacityError": 0.001960883997050522,
+    "maxRotationDegrees": 0.24604520109551997
+  },
+  "seconds": 4.5299622,
+  "limitation": "Compression is lossy. File budget is not a runtime memory budget. Visual quality and physical phone loading remain to be checked."
+}

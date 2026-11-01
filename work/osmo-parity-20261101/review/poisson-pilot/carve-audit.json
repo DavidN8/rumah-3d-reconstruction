@@ -1,0 +1,14 @@
+{
+  "inputFaces": 1599436,
+  "removedFaces": 2843,
+  "retainedFaces": 1596593,
+  "rule": ">=5 distinct train timestamps say face is in free space; no map says it is on a measured surface",
+  "rangeTolerance": ".035 + .04 * observed Euclidean ray range, unchanged scene units",
+  "trainMaps": 439,
+  "distinctTimestamps": 171,
+  "heldoutUsed": false,
+  "heightClip": false,
+  "seconds": 7.594000000040978,
+  "renderer": "NVIDIA GeForce RTX 5080/PCIe/SSE2",
+  "status": "local pilot requires photographic and dollhouse inspection"
+}

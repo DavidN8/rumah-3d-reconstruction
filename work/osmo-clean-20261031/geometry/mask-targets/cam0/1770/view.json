@@ -1,0 +1,54 @@
+{
+  "camera": {
+    "id": 1,
+    "model": "OPENCV_FISHEYE",
+    "model_id": 5,
+    "width": 3840,
+    "height": 3840,
+    "params": [
+      1048.5285442747695,
+      1048.3303064238082,
+      1914.71533203125,
+      1910.63623046875,
+      0.04586795011188721,
+      0.022022968684015008,
+      -0.014674260646479597,
+      0.001405351585462022
+    ]
+  },
+  "view_size": 1024,
+  "focal": 429.6190111627674,
+  "principal_point": [
+    512.0,
+    512.0
+  ],
+  "virtual_to_native_rotation": [
+    [
+      -0.25881904510252074,
+      -3.169619151431765e-17,
+      0.9659258262890683
+    ],
+    [
+      1.2246467991473532e-16,
+      -1.0,
+      0.0
+    ],
+    [
+      0.9659258262890683,
+      1.1829179713786698e-16,
+      0.25881904510252074
+    ]
+  ],
+  "center_theta_deg": 75,
+  "center_phi_deg": 0,
+  "roll_deg": 180,
+  "horizontal_vertical_fov_deg": 100,
+  "max_native_theta_deg": 98.5,
+  "pixel_convention": "COLMAP/OpenCV calibrated centers at j+0.5; cv2.remap indices subtract 0.5",
+  "purpose": "Segmentation view only. No source images or SfM cameras are changed.",
+  "source_image": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\clean-v3\\dataset\\images\\cam0\\frame_001770_train.jpg",
+  "view_image": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\geometry\\mask-targets\\cam0\\1770\\view.png",
+  "view_validity": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\geometry\\mask-targets\\cam0\\1770\\valid.png",
+  "source_frame": 1770,
+  "camera_name": "cam0"
+}

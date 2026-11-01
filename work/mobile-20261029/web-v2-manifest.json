@@ -1,0 +1,21 @@
+{
+  "release": "20261029-mobile-v2",
+  "tar_sha256": "f73e4ae0cc62b8cb3fd7609654e6fe3efadef0aab5ded32212201dfd03c3d0d1",
+  "files": [
+    {
+      "path": "index.html",
+      "sha256": "db33758e0ce3e5d53ec4ef8c35da9b58afefb73d7c61362bd4efe6efb112c8f6",
+      "bytes": 10853
+    },
+    {
+      "path": "room-9605351002.json",
+      "sha256": "9605351002b147501bf8e95f3255441c25ca5e0bc3a4a67001842772b2b51fbe",
+      "bytes": 5258
+    },
+    {
+      "path": "room-viewer-9d561f9f03.js",
+      "sha256": "9d561f9f032ea42d64447a734887ce3d5c4b92a3ee06f684a05ffc3e7900012c",
+      "bytes": 695102
+    }
+  ]
+}

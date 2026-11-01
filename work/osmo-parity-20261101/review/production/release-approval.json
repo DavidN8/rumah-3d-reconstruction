@@ -1,0 +1,92 @@
+{
+  "approvedForDeployment": false,
+  "releaseId": "20261101-osmo-parity-review",
+  "modelSha256": "db0e94c2fab729fa218a34064971a948448a856e02a06c56e6b2b5daf09f29f1",
+  "reason": "Mandatory visible sharpness and clean dollhouse acceptance gates have not passed. Successful controls and download checks do not authorize promotion.",
+  "physicalPhones": "unverified",
+  "qualityChecks": {
+    "cleanFullHeightDollhouseAccepted": false,
+    "topAndReversibleShellAccepted": false,
+    "fourDetailSharpnessLeapAccepted": false,
+    "totalModelDownloadWithin50MB": true,
+    "zeroModelBytesBeforeOpen": true,
+    "iphoneHashesPreserved": true
+  },
+  "evidence": [
+    {
+      "path": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\evidence\\01-osmo-dollhouse.png",
+      "sha256": "c32f51d30adc571e75dfee8b5d512766befe256b01b1642bca0ec4d88811e1cf",
+      "bytes": 1171384
+    },
+    {
+      "path": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\evidence\\02-osmo-top.png",
+      "sha256": "69ffd1c84f792f7c17736fcb38cbbc4c490b5d1457e2afed3d8fa88135c0a300",
+      "bytes": 817437
+    },
+    {
+      "path": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\evidence\\03-osmo-roof-restored.png",
+      "sha256": "c152d19b0dbfb4cc39655adadd4eb0c3c5365071601dcaf319df52c3b921ca26",
+      "bytes": 1379229
+    },
+    {
+      "path": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\controls-verification.json",
+      "sha256": "0b64c56d500fbfff96943207dd6ee81c7dd3d4681c429c53b5939ac29ea4573e",
+      "bytes": 13008
+    },
+    {
+      "path": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\choice-and-phone-policy-verification.json",
+      "sha256": "a1f746feb0e14c1c4fbe29b3ff65a998bbffcb7e1153bb7d4d6f42bdd60c894e",
+      "bytes": 4434
+    },
+    {
+      "path": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\input-contract-verification.json",
+      "sha256": "addf850cd64585648bfec82ed88e17b58070338f5b686f70ecee8b31a050804a",
+      "bytes": 4493
+    },
+    {
+      "path": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\production-readonly-check.json",
+      "sha256": "245d331dfcb2f1da09d0308ff2f2675137ebd3ad68e3972961e0882c3706cbe8",
+      "bytes": 392
+    },
+    {
+      "path": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\qa\\newest-fridge.png",
+      "sha256": "2eaf871cd8cc6b8af4bc3d9009ebe871c527436614ea528899031bddf258b403",
+      "bytes": 1658327
+    },
+    {
+      "path": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\qa\\newest-fan.png",
+      "sha256": "f595933e4ecd2c406a08c5871dc40a74afe7e5d7437c290c5b3e595a792aee50",
+      "bytes": 1583767
+    },
+    {
+      "path": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\qa\\newest-dining.png",
+      "sha256": "1262e1cde20d9b16ea54edf6eccca3ffeabc4588fc30a2ffc7c63ea201a67bbd",
+      "bytes": 1460819
+    },
+    {
+      "path": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\qa\\newest-bathroom.png",
+      "sha256": "5181a2eabff0b2a002db820420239312e2ab41789c542edd6002fc07425b25b9",
+      "bytes": 1345410
+    },
+    {
+      "path": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\qa\\new-full-50000-fridge.png",
+      "sha256": "e6fffa5c0881c7cdc4a09b38713b9c50f39d6eac64f9d9cbad2b6d67654142cc",
+      "bytes": 4139703
+    },
+    {
+      "path": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\qa\\new-full-50000-fan.png",
+      "sha256": "26223f724ecc047beff1ca7aed30df09f86a87d7168c41f54e917ef71f696d62",
+      "bytes": 4231047
+    },
+    {
+      "path": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\qa\\new-full-50000-dining.png",
+      "sha256": "d549b0688f8a944671aa8f69563067d3cc7b2a0ce540725acc5e4ea1c18d778b",
+      "bytes": 4136070
+    },
+    {
+      "path": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\qa\\new-full-50000-bathroom.png",
+      "sha256": "3195d2c30fa2f36ac48c6c156e8cffaab781ae4554fc5d4c144a08859615809b",
+      "bytes": 3859573
+    }
+  ]
+}

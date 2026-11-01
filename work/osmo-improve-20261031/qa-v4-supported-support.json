@@ -1,0 +1,78 @@
+{
+  "input": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\recovery-v2\\exports\\v4-texture.glb",
+  "input_sha256": "7bcd990b53627a717cc5a38b65936a46469c9baad4aa33edff5494d314b4bd4c",
+  "baseline": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\recovery-v2\\exports\\v4-probe.glb",
+  "baseline_support_vertices": 825437,
+  "sfm_support": {
+    "total_main_points": 125862,
+    "track4_candidates": 29794,
+    "good_points": 25676,
+    "minimum_track_length": 4,
+    "minimum_masked_observations_at_actual_reprojection_le2": 3,
+    "maximum_mean_actual_reprojection_px": 1.5,
+    "writer_point_error_field_used": false,
+    "source": "accepted normalized main SfM component",
+    "cache_sha256": "c46cb47312d66f6216fd8be3f58675c6dd4032452ab4430c761864145b1a704d"
+  },
+  "method": "At least2 face vertices close to baseline vertices or good main-SfM points; no per-vertex unseen self-occlusion cull, no height crop or caps. Retained position/normal/UV/color bytes and embedded source images preserved.",
+  "variants": [
+    {
+      "file": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\recovery-v2\\exports\\v4-supported-05cm.glb",
+      "bytes": 121264520,
+      "sha256": "acac076b2736787a29b7ce6197bad4448e44ecbe8205cfd669248788f6de0c6a",
+      "baseline_support_distance": 0.05,
+      "sfm_support_distance": 0.04,
+      "minimum_supported_vertices_per_face": 2,
+      "source_faces": 2577478,
+      "retained_faces": 2366966,
+      "removed_faces": 210512,
+      "primitives": [
+        {
+          "mesh": 0,
+          "primitive": 0,
+          "source_faces": 2577478,
+          "retained_faces": 2366966,
+          "supported_vertices": 2606844,
+          "vertices_total": 2867037
+        }
+      ],
+      "attribute_checks": [
+        {
+          "mesh": 0,
+          "primitive": 0,
+          "semantic": "POSITION",
+          "retained_attribute_bytes_sha256": "3a86f5bbdde584e1d9fae5efafd8a18040f69309ef54b39a705cf8f9355bc49a",
+          "original_selected_attribute_bytes_identical": true
+        },
+        {
+          "mesh": 0,
+          "primitive": 0,
+          "semantic": "NORMAL",
+          "retained_attribute_bytes_sha256": "c0ccc911ef81421276a3fc67ad834e7d9ab6bd313808c67c899e541727c85f83",
+          "original_selected_attribute_bytes_identical": true
+        },
+        {
+          "mesh": 0,
+          "primitive": 0,
+          "semantic": "TEXCOORD_0",
+          "retained_attribute_bytes_sha256": "12fcf857e001781e03e6d39c3fbb4f4b06c08be85984b6c73aae32a0fe83f73d",
+          "original_selected_attribute_bytes_identical": true
+        }
+      ],
+      "embedded_image_checks": [
+        {
+          "image": 0,
+          "bytes": 9081622,
+          "sha256": "1044dd0ca5ee6ca31deef92b25a6177967a3076789bbfd17cac78eb04883d796"
+        }
+      ],
+      "nodes_materials_textures_samplers_unchanged": true,
+      "height_crop": false,
+      "vertex_position_changes": false,
+      "normal_changes": false,
+      "uv_changes": false,
+      "invented_caps": false
+    }
+  ],
+  "elapsed_seconds": 3.3340485999942757
+}

@@ -1,0 +1,186 @@
+{
+  "results": [
+    {
+      "kind": "poisson-photo",
+      "label": "fridge",
+      "file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\qa\\poisson-photo-fridge.png",
+      "loaded": {
+        "kind": "poisson-photo"
+      },
+      "evidence": {
+        "pose": {
+          "label": "fridge",
+          "source": "cam0/frame_000027_train.jpg",
+          "sourceFrame": 27,
+          "split": "train",
+          "position": [
+            -0.04734322054037422,
+            1.5427764395823702,
+            0.16500877423918853
+          ],
+          "quaternion": [
+            -0.02772637025938751,
+            -0.947378660256456,
+            -0.08549504078119761,
+            0.30723854003810014
+          ],
+          "fov": 75,
+          "width": 1920,
+          "height": 1080,
+          "intrinsics": [
+            703.741701334251,
+            703.741701334251,
+            960,
+            540
+          ],
+          "mask": "fridge-keep.png"
+        }
+      }
+    },
+    {
+      "kind": "poisson-photo",
+      "label": "fan",
+      "file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\qa\\poisson-photo-fan.png",
+      "loaded": {
+        "kind": "poisson-photo"
+      },
+      "evidence": {
+        "pose": {
+          "label": "fan",
+          "source": "cam0/frame_001800_train.jpg",
+          "sourceFrame": 1800,
+          "split": "train",
+          "position": [
+            -0.8176386469064271,
+            0.4255116593924649,
+            0.8534996480900683
+          ],
+          "quaternion": [
+            -0.0036111427560121846,
+            -0.9961398662994274,
+            -0.049848540690604154,
+            0.07216265937430248
+          ],
+          "fov": 75,
+          "width": 1920,
+          "height": 1080,
+          "intrinsics": [
+            703.741701334251,
+            703.741701334251,
+            960,
+            540
+          ],
+          "mask": "fan-keep.png"
+        }
+      }
+    },
+    {
+      "kind": "poisson-photo",
+      "label": "dining",
+      "file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\qa\\poisson-photo-dining.png",
+      "loaded": {
+        "kind": "poisson-photo"
+      },
+      "evidence": {
+        "pose": {
+          "label": "dining",
+          "source": "cam0/frame_001197_train.jpg",
+          "sourceFrame": 1197,
+          "split": "train",
+          "position": [
+            0.7616677170986236,
+            0.7530471853609798,
+            1.059430921517134
+          ],
+          "quaternion": [
+            -0.049835155377638655,
+            0.07576462952175617,
+            0.0037913914957084585,
+            0.9958723831658571
+          ],
+          "fov": 75,
+          "width": 1920,
+          "height": 1080,
+          "intrinsics": [
+            703.741701334251,
+            703.741701334251,
+            960,
+            540
+          ],
+          "mask": "dining-keep.png"
+        }
+      }
+    },
+    {
+      "kind": "poisson-photo",
+      "label": "bathroom",
+      "file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\qa\\poisson-photo-bathroom.png",
+      "loaded": {
+        "kind": "poisson-photo"
+      },
+      "evidence": {
+        "pose": {
+          "label": "bathroom",
+          "source": "cam0/frame_001557_eval.jpg",
+          "sourceFrame": 1557,
+          "split": "eval",
+          "position": [
+            -0.11036735204714103,
+            0.4616502046204495,
+            -3.4100854048200673
+          ],
+          "quaternion": [
+            0,
+            0.8397103441859145,
+            0,
+            0.5430345641551493
+          ],
+          "fov": 75,
+          "width": 1920,
+          "height": 1080,
+          "intrinsics": [
+            703.741701334251,
+            703.741701334251,
+            960,
+            540
+          ],
+          "mask": "bathroom-keep.png"
+        }
+      }
+    },
+    {
+      "kind": "poisson-photo",
+      "label": "overview",
+      "file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\qa\\poisson-photo-overview.png",
+      "evidence": {
+        "which": "orbit",
+        "inside": true,
+        "fov": 42,
+        "radius": 9.97646132238895
+      }
+    },
+    {
+      "kind": "poisson-photo",
+      "label": "top",
+      "file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\qa\\poisson-photo-top.png",
+      "evidence": {
+        "which": "top",
+        "inside": true,
+        "fov": 42,
+        "radius": 13.211222472284305
+      }
+    },
+    {
+      "kind": "poisson-photo",
+      "label": "roof",
+      "file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\qa\\poisson-photo-roof.png",
+      "evidence": {
+        "which": "orbit",
+        "inside": false,
+        "fov": 42,
+        "radius": 9.97646132238895
+      }
+    }
+  ],
+  "errors": []
+}

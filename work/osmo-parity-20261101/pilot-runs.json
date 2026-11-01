@@ -1,0 +1,14 @@
+{
+  "results": [
+    {
+      "label": "baseline-1200",
+      "status": "finished"
+    },
+    {
+      "label": "sharp-1600",
+      "status": "finished"
+    }
+  ],
+  "fullRunStarted": false,
+  "deploymentAuthorized": false
+}

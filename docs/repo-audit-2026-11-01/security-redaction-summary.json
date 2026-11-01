@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "localRemoteSettingsPreservedExactly": true,
+  "networkConnectionsMade": 0,
+  "redactions": [
+    {
+      "path": "work/hosting/finalize_receipt.py",
+      "category": "private-infrastructure-address",
+      "originalPreservedLocally": true,
+      "originalSha256": "ee2bd48e455523c2d30c03c40080f81aac067a2abc51cd5abfd2f2e9ca46d3fc"
+    },
+    {
+      "path": "work/hosting/build_receipt.py",
+      "category": "private-infrastructure-address",
+      "originalPreservedLocally": true,
+      "originalSha256": "27b8bc862e90a09e4e31813c2d1b641e6d29ccab842c84e027ebc06b6604926a"
+    },
+    {
+      "path": "work/hosting/deployment-evidence.json",
+      "category": "private-infrastructure-address",
+      "originalPreservedLocally": true,
+      "originalSha256": "ea60f086e4079d90c0d059abeb14eb78414824c5fbe62767c6cb8ac7aa6763e5"
+    }
+  ],
+  "credentialFilesIgnored": true,
+  "plaintextSecretsCopiedIntoGit": false
+}

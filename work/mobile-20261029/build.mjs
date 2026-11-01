@@ -1,0 +1,35 @@
+import {build} from 'esbuild';
+import {readFile,writeFile,copyFile,mkdir,link,stat} from 'node:fs/promises';
+import {fileURLToPath} from 'node:url';
+import {createRequire} from 'node:module';
+import {createHash} from 'node:crypto';
+import {gzipSync} from 'node:zlib';
+const here=new URL('./',import.meta.url),pub=new URL('public/',here);
+const runtimeRequire=createRequire('C:/Users/bombe/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/sharp/package.json');
+const sharp=runtimeRequire('sharp'),hash=bytes=>createHash('sha256').update(bytes).digest('hex');
+await mkdir(new URL('models/',pub),{recursive:true});await mkdir(new URL('sources/',pub),{recursive:true});
+const phone=JSON.parse(await readFile(new URL('phone-asset-report.json',here),'utf8'));
+const originalPub=new URL('../hosting/public/',here);
+const camera=JSON.parse(await readFile(new URL('cameras.json',originalPub),'utf8'));
+const cameraData={bounds:camera.bounds,startCamera:camera.startCamera,homeTarget:camera.homeTarget,presets:camera.presets.map(c=>Object.fromEntries(['name','label','source','position','quaternion','imageWidth','imageHeight','intrinsics'].map(k=>[k,c[k]])))};
+const manifest={build:'20261029-fullheight-v1',cameraData,models:{phone:{url:phone.phoneFile,fileBytes:phone.bytes,triangles:phone.triangles,maxTextureSize:2048},native:{url:'models/iphone-full-room-16f8963b.glb',fileBytes:435614584,triangles:11891853,maxTextureSize:8192}}};
+const manifestBytes=Buffer.from(JSON.stringify(manifest)),manifestName=`room-${hash(manifestBytes).slice(0,10)}.json`;
+await writeFile(new URL(manifestName,pub),manifestBytes);
+const preview=await sharp(fileURLToPath(new URL('../../outputs/iPhone_Wide_Rebuilt_Overview.png',here))).resize({width:1200,withoutEnlargement:true}).jpeg({quality:74}).toBuffer();
+const overviewName=`overview-${hash(preview).slice(0,10)}.jpg`;await writeFile(new URL(overviewName,pub),preview);
+const source=(await readFile(new URL('room-viewer.js',here),'utf8')).replace('__MANIFEST__',manifestName);
+const result=await build({stdin:{contents:source,sourcefile:'room-viewer.js',resolveDir:fileURLToPath(here),loader:'js'},bundle:true,write:false,minify:true,format:'iife',target:'es2020',logLevel:'warning'});
+const bundle=result.outputFiles[0].contents,bundleName=`room-viewer-${hash(bundle).slice(0,10)}.js`;
+await writeFile(new URL(bundleName,pub),bundle);
+const shell=(await readFile(new URL('room-shell.html',here),'utf8')).replace('__OVERVIEW__',overviewName).replace('__BUNDLE__',bundleName);
+await writeFile(new URL('index.html',pub),shell);
+await writeFile(new URL('qa-script-failure.html',pub),shell.replace(`src="${bundleName}"`,'src="room-viewer-qa-missing.js"'));
+for(const c of cameraData.presets)await copyFile(new URL(c.source,originalPub),new URL(c.source,pub));
+await writeFile(new URL('robots.txt',pub),'User-agent: *\nDisallow: /\n');
+const phoneBytes=await readFile(new URL(phone.phoneFile,pub));await writeFile(new URL(phone.phoneFile+'.gz',pub),gzipSync(phoneBytes,{level:6,mtime:0}));
+// The local review uses the same immutable original without another 435 MB copy.
+const nativeSource=new URL('../../outputs/iPhone_Wide_Full_Native.glb',here),nativeTarget=new URL('models/iphone-full-room-16f8963b.glb',pub);
+try{await stat(nativeTarget);}catch{await link(nativeSource,nativeTarget);}
+const buildReport={build:manifest.build,manifestName,bundleName,overviewName,phoneBytes:phoneBytes.length,phoneGzipBytes:(await stat(new URL(phone.phoneFile+'.gz',pub))).size,manifestBytes:manifestBytes.length,previewBytes:preview.length,bundleBytes:bundle.length,indexSha256:hash(Buffer.from(shell)),bundleSha256:hash(bundle),phoneModelSha256:phone.sha256};
+await writeFile(new URL('build-report.json',here),JSON.stringify(buildReport,null,2));
+console.log(JSON.stringify(buildReport,null,2));

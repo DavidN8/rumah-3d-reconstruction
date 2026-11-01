@@ -1,0 +1,19 @@
+{
+  "purpose": "Read-only diagnostic for Gaussian cores intruding into known training cameras.\n\nCamera origins supply independent empty-space evidence, not a holed mesh probe.\nThe diagnostic never edits/culls the model. Ellipsoid density is a proxy, not a\nphysically calibrated opacity/occupancy measurement or a release-quality score.\n",
+  "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\checkpoints\\step-30000.ply",
+  "sourceSplats": 2999726,
+  "trainingCameras": 414,
+  "screenedSplats": 14672,
+  "coreIntrusionCandidates": 0,
+  "units": "Fresh normalized arbitrary units, not metres",
+  "scaleMaxPercentiles": {
+    "50": 0.008886415511369705,
+    "90": 0.022489387542009354,
+    "99": 0.04428285360336304,
+    "99.9": 0.07401318103075027,
+    "100": 0.36757779121398926
+  },
+  "examples": [],
+  "modifiedModel": false,
+  "caveat": "Nearest-12-camera screening can miss a more distant camera. Gaussian tails alone are not evidence of a bad splat. No spatial or photometric culling is performed."
+}

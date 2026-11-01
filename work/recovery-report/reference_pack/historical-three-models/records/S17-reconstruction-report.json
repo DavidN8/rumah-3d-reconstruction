@@ -1,0 +1,711 @@
+{
+  "created_utc": "2026-10-19T07:01:16.326532+00:00",
+  "status": "Separate detailed room reconstructions and one approximately aligned combined scene exported and visually checked.",
+  "input": {
+    "file": "20261019_095800.mp4",
+    "frames": 7964,
+    "duration_seconds": 132.9113,
+    "source_resolution": [
+      2160,
+      3840
+    ],
+    "excluded_transition_seconds": [
+      106.55,
+      110.7
+    ],
+    "handling": "Bedroom before door motion; bathroom after the light has settled. Source recording preserved."
+  },
+  "rooms": {
+    "bedroom": {
+      "training": "training/bedroom-depth",
+      "source_views": 410,
+      "steps": 50000,
+      "guidance": "MoGe2 ViT-L normals; relative depth added after step 30000",
+      "metrics": {
+        "cc_l1": [
+          0.0366404,
+          0.016007,
+          0.0138393,
+          0.0251749,
+          0.03453,
+          0.0183108,
+          0.0356393,
+          0.0186707,
+          0.029154,
+          0.0268388,
+          0.0261388,
+          0.0152739,
+          0.0207514,
+          0.0391983,
+          0.0233774,
+          0.0195939,
+          0.0397328,
+          0.0292646,
+          0.0230675,
+          0.0213257,
+          0.0305161,
+          0.0248637,
+          0.0244697,
+          0.0280619,
+          0.028904,
+          0.010803,
+          0.0398739,
+          0.0247488,
+          0.0227311,
+          0.0284584,
+          0.0207662,
+          0.0237752,
+          0.0252752,
+          0.0272234,
+          0.0306985
+        ],
+        "cc_psnr": [
+          26.2519,
+          33.4339,
+          33.8587,
+          29.4614,
+          25.8171,
+          31.5622,
+          27.4022,
+          31.3753,
+          28.6235,
+          28.7203,
+          29.3276,
+          32.796,
+          31.4685,
+          25.9124,
+          30.3625,
+          32.1521,
+          25.7761,
+          28.1807,
+          30.6124,
+          30.6066,
+          28.2179,
+          29.7521,
+          29.1921,
+          28.4323,
+          29.1986,
+          36.6052,
+          26.2484,
+          27.6916,
+          30.8946,
+          29.3108,
+          31.0906,
+          30.2676,
+          29.0364,
+          29.0286,
+          28.1137
+        ],
+        "cc_ssim": [
+          0.96763,
+          0.985138,
+          0.977884,
+          0.9829,
+          0.955504,
+          0.948211,
+          0.984659,
+          0.98074,
+          0.972504,
+          0.965583,
+          0.979617,
+          0.972137,
+          0.986579,
+          0.982535,
+          0.981897,
+          0.987036,
+          0.974604,
+          0.945192,
+          0.984576,
+          0.973101,
+          0.976019,
+          0.982435,
+          0.978269,
+          0.976397,
+          0.988765,
+          0.986096,
+          0.984054,
+          0.962022,
+          0.98894,
+          0.987086,
+          0.98071,
+          0.984831,
+          0.97091,
+          0.978616,
+          0.982647
+        ],
+        "l1": [
+          0.0764772,
+          0.0448768,
+          0.0311245,
+          0.0776426,
+          0.0432344,
+          0.138369,
+          0.049951,
+          0.0426721,
+          0.0374228,
+          0.0556103,
+          0.0617243,
+          0.0188998,
+          0.0265206,
+          0.0767332,
+          0.0316978,
+          0.0271593,
+          0.0503299,
+          0.0764301,
+          0.0568772,
+          0.0311342,
+          0.0576423,
+          0.0305662,
+          0.0457953,
+          0.0330779,
+          0.035906,
+          0.0206281,
+          0.0440756,
+          0.0462674,
+          0.0285169,
+          0.0338088,
+          0.0227976,
+          0.0344306,
+          0.0300691,
+          0.0608903,
+          0.0473527
+        ],
+        "psnr": [
+          20.2878,
+          26.0085,
+          28.0025,
+          20.4583,
+          24.3051,
+          16.4077,
+          23.8511,
+          25.4202,
+          26.4808,
+          23.3654,
+          22.7241,
+          31.1969,
+          29.3757,
+          20.6383,
+          28.2363,
+          29.6507,
+          23.9182,
+          20.8858,
+          23.2743,
+          27.4155,
+          23.2334,
+          27.9319,
+          25.0331,
+          27.403,
+          27.1767,
+          31.7568,
+          25.1782,
+          24.1968,
+          29.0194,
+          27.5511,
+          30.4193,
+          27.3125,
+          27.1813,
+          22.7771,
+          24.4755
+        ],
+        "ssim": [
+          0.970841,
+          0.981721,
+          0.980092,
+          0.972178,
+          0.954078,
+          0.918312,
+          0.980396,
+          0.976167,
+          0.984417,
+          0.964352,
+          0.974052,
+          0.971358,
+          0.987216,
+          0.976981,
+          0.981615,
+          0.986246,
+          0.977238,
+          0.939014,
+          0.980204,
+          0.973272,
+          0.972734,
+          0.982011,
+          0.975877,
+          0.975737,
+          0.988321,
+          0.985765,
+          0.984553,
+          0.970211,
+          0.9893,
+          0.987904,
+          0.980585,
+          0.98361,
+          0.970022,
+          0.971966,
+          0.980425
+        ],
+        "avg_cc_l1": 0.02582,
+        "avg_cc_psnr": 29.6223,
+        "avg_cc_ssim": 0.977024,
+        "avg_l1": 0.0464775,
+        "avg_psnr": 25.5014,
+        "avg_ssim": 0.975108,
+        "num_eval_images": 35,
+        "training_time": 962.422,
+        "engine_vram": 2115.27
+      },
+      "mesh_directory": "exports/bedroom"
+    },
+    "bathroom": {
+      "training": "training/bathroom",
+      "source_views": 94,
+      "steps": 50000,
+      "guidance": "MoGe2 ViT-L normals",
+      "metrics": {
+        "cc_l1": [
+          0.0457166,
+          0.038421,
+          0.0433844,
+          0.0276756,
+          0.0324487,
+          0.0421502,
+          0.0421502,
+          0.0301234
+        ],
+        "cc_psnr": [
+          24.9995,
+          24.0626,
+          23.413,
+          28.1084,
+          27.2509,
+          25.6333,
+          25.6333,
+          28.5572
+        ],
+        "cc_ssim": [
+          0.972164,
+          0.932045,
+          0.946613,
+          0.972222,
+          0.95329,
+          0.964851,
+          0.964851,
+          0.979322
+        ],
+        "l1": [
+          0.0666278,
+          0.0681772,
+          0.0943343,
+          0.134497,
+          0.0363671,
+          0.0480819,
+          0.0480819,
+          0.049864
+        ],
+        "psnr": [
+          21.8826,
+          21.3496,
+          19.0995,
+          16.5701,
+          26.2346,
+          24.2454,
+          24.2454,
+          24.529
+        ],
+        "ssim": [
+          0.97014,
+          0.928405,
+          0.934429,
+          0.946408,
+          0.951791,
+          0.965053,
+          0.965053,
+          0.980404
+        ],
+        "avg_cc_l1": 0.0377588,
+        "avg_cc_psnr": 25.9573,
+        "avg_cc_ssim": 0.96067,
+        "avg_l1": 0.0682539,
+        "avg_psnr": 22.2695,
+        "avg_ssim": 0.95521,
+        "num_eval_images": 8,
+        "training_time": 2800.85,
+        "engine_vram": 1699.55
+      },
+      "mesh_directory": "exports/bathroom-repaired"
+    }
+  },
+  "combined_mesh": {
+    "status": "combined textured scene; approximate doorway registration",
+    "geometry_policy": "Keep source position, normal and UV buffers unchanged; replace only triangle indices at the doorway and overlap. No decimation.",
+    "texture_policy": "Copy original embedded PNG bytes exactly. No resize, recompression, rebake or atlas combination.",
+    "coordinate_system": "glTF Y-up; separate room nodes and the bathroom similarity are retained for editing.",
+    "rooms": {
+      "bedroom": {
+        "source": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261019_095800\\high-quality\\exports\\bedroom\\bedroom_textured.glb",
+        "primitives": [
+          {
+            "source_vertices": 4817416,
+            "source_triangles": 6469672,
+            "combined_triangles": 6445047,
+            "removed_doorway_overlap_triangles": 24625
+          }
+        ],
+        "node": 2,
+        "transform": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "bathroom": {
+        "source": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261019_095800\\high-quality\\exports\\bathroom-repaired\\bathroom_textured.glb",
+        "primitives": [
+          {
+            "source_vertices": 2384872,
+            "source_triangles": 3014591,
+            "combined_triangles": 2955244,
+            "removed_doorway_overlap_triangles": 59347
+          }
+        ],
+        "node": 4,
+        "transform": [
+          [
+            0.17946537539287818,
+            0.42159129073524054,
+            0.12214326677010427,
+            0.5501319127741706
+          ],
+          [
+            -0.4374602085412243,
+            0.182584403610822,
+            0.01255055804076665,
+            0.9867218909334889
+          ],
+          [
+            -0.03587143688434453,
+            -0.11742969871484811,
+            0.45802786037704973,
+            0.697380275241922
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      }
+    },
+    "textures": [
+      {
+        "room": "bedroom",
+        "width": 8192,
+        "height": 8192,
+        "bytes": 42356814,
+        "sha256": "3bcac4e9b6eb257a076b809f92705ca5e1558615447a473276dd8a452e6d457f",
+        "combined_buffer_view": 4
+      },
+      {
+        "room": "bathroom",
+        "width": 8192,
+        "height": 8192,
+        "bytes": 43677691,
+        "sha256": "0f0d988c41154b61cef85b66682de163b02e141dc6483eb78c1a288016d1da87",
+        "combined_buffer_view": 10
+      }
+    ],
+    "triangles": 9400291,
+    "file_bytes": 543126104,
+    "texture_bytes_verified": true
+  },
+  "combined_splat": {
+    "status": "aligned walkthrough; approximate registration",
+    "alignment": [
+      [
+        0.17946537539287818,
+        0.42159129073524054,
+        0.12214326677010427,
+        0.5501319127741706
+      ],
+      [
+        -0.4374602085412243,
+        0.182584403610822,
+        0.01255055804076665,
+        0.9867218909334889
+      ],
+      [
+        -0.03587143688434453,
+        -0.11742969871484811,
+        0.45802786037704973,
+        0.697380275241922
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "scale": 0.47420039540893016,
+    "rooms": {
+      "bedroom": {
+        "source": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261019_095800\\high-quality\\training\\bedroom-depth\\step-000050000.ckpt\\splat.ply",
+        "original_splats": 2998789,
+        "combined_splats": 2971715,
+        "doorway_overlap_splats_removed": 27074
+      },
+      "bathroom": {
+        "source": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261019_095800\\high-quality\\training\\bathroom\\step-000050000.ckpt\\splat.ply",
+        "original_splats": 1999816,
+        "combined_splats": 1836838,
+        "doorway_overlap_splats_removed": 162978
+      }
+    },
+    "sh_degree": 3,
+    "processing": "Similarity transform with covariance/quaternion and SH colour rotation; no global voxel reduction.",
+    "doorway_edit": "Closed bedroom door leaf removed from combined derivative; bathroom cropped to its side of doorway. Independent originals retained.",
+    "transform_round_trip_max_errors": {
+      "position": 4.76837158203125e-07,
+      "log_scale": 1.9073486328125e-06,
+      "colour_coefficients": 2.384185791015625e-07
+    },
+    "combined_splats": 4808553,
+    "file_bytes": 1134819986
+  },
+  "alignment": {
+    "method": "One similarity fitted from shared stationary landmarks across eight doorway views; no whole-room ICP.",
+    "inliers_8px": 107,
+    "unique_landmarks": 49,
+    "inlier_median_px": 4.887557960528513,
+    "scale": 0.47420039540893016,
+    "matrix": [
+      [
+        0.17946537539287818,
+        0.42159129073524054,
+        0.12214326677010427,
+        0.5501319127741706
+      ],
+      [
+        -0.4374602085412243,
+        0.182584403610822,
+        0.01255055804076665,
+        0.9867218909334889
+      ],
+      [
+        -0.03587143688434453,
+        -0.11742969871484811,
+        0.45802786037704973,
+        0.697380275241922
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "physical_scale_calibrated": false,
+    "registration": "approximate"
+  },
+  "visual_checks": {
+    "bedroom": {
+      "meaning": "Visibility in these recorded views only; not a measure of whole-room completeness or dimensional accuracy.",
+      "views": [
+        {
+          "source": "f_001130.jpg",
+          "seconds": 18.834889,
+          "visible_surface_fraction": 0.9969155092592593,
+          "fully_open_pixel_fraction": 0.002841435185185185
+        },
+        {
+          "source": "f_002940.jpg",
+          "seconds": 49.004033,
+          "visible_surface_fraction": 0.9983854166666667,
+          "fully_open_pixel_fraction": 0.0011631944444444443
+        },
+        {
+          "source": "f_005283.jpg",
+          "seconds": 88.073922,
+          "visible_surface_fraction": 0.9999228395061729,
+          "fully_open_pixel_fraction": 3.8580246913580246e-05
+        },
+        {
+          "source": "f_006339.jpg",
+          "seconds": 105.708711,
+          "visible_surface_fraction": 0.9996122685185185,
+          "fully_open_pixel_fraction": 0.0002642746913580247
+        }
+      ],
+      "vertices": 4817416,
+      "triangles": 6469672,
+      "textures": [
+        {
+          "material": "Material_0",
+          "size": [
+            8192,
+            8192
+          ]
+        }
+      ]
+    },
+    "bathroom-repaired": {
+      "meaning": "Visibility in these recorded views only; not a measure of whole-room completeness or dimensional accuracy.",
+      "views": [
+        {
+          "source": "f_006654.jpg",
+          "seconds": 111.009489,
+          "visible_surface_fraction": 0.9764891975308642,
+          "fully_open_pixel_fraction": 0.02125
+        },
+        {
+          "source": "f_007062.jpg",
+          "seconds": 117.826722,
+          "visible_surface_fraction": 0.893431712962963,
+          "fully_open_pixel_fraction": 0.09855902777777778
+        },
+        {
+          "source": "f_007495.jpg",
+          "seconds": 125.043978,
+          "visible_surface_fraction": 0.9703819444444445,
+          "fully_open_pixel_fraction": 0.02443287037037037
+        },
+        {
+          "source": "f_007853.jpg",
+          "seconds": 131.044478,
+          "visible_surface_fraction": 0.9925443672839506,
+          "fully_open_pixel_fraction": 0.006103395061728395
+        }
+      ],
+      "vertices": 2384872,
+      "triangles": 3014591,
+      "textures": [
+        {
+          "material": "Material_0",
+          "size": [
+            8192,
+            8192
+          ]
+        }
+      ]
+    },
+    "combined": {
+      "meaning": "Visibility in these recorded views only; not a measure of whole-room completeness or dimensional accuracy.",
+      "views": [
+        {
+          "source": "f_001130.jpg",
+          "seconds": 18.834889,
+          "visible_surface_fraction": 0.9219945987654321,
+          "fully_open_pixel_fraction": 0.07229359567901235
+        },
+        {
+          "source": "f_006339.jpg",
+          "seconds": 105.708711,
+          "visible_surface_fraction": 0.9589853395061728,
+          "fully_open_pixel_fraction": 0.03972800925925926
+        },
+        {
+          "source": "f_006654.jpg",
+          "seconds": 111.009489,
+          "visible_surface_fraction": 0.9564737654320987,
+          "fully_open_pixel_fraction": 0.041442901234567904
+        },
+        {
+          "source": "f_007495.jpg",
+          "seconds": 125.043978,
+          "visible_surface_fraction": 0.9703838734567901,
+          "fully_open_pixel_fraction": 0.02443094135802469
+        }
+      ],
+      "vertices": 7135093,
+      "triangles": 9400291,
+      "textures": [
+        {
+          "material": "bathroom / original 8K atlas",
+          "size": [
+            8192,
+            8192
+          ]
+        },
+        {
+          "material": "bedroom / original 8K atlas",
+          "size": [
+            8192,
+            8192
+          ]
+        }
+      ]
+    }
+  },
+  "limitations": [
+    "The combined GLB contains separately editable room meshes. The doorway is an approximate registration, not a welded or watertight join.",
+    "Mirrors, reflective fixtures, thin objects and surfaces missing from the recording retain gaps or distortion.",
+    "Monocular depth is inferred guidance, not measured depth. More polygons do not imply measurement accuracy.",
+    "The room models are static. Door motion and the light switch are excluded from training rather than animated.",
+    "The separate room splats retain more photographic appearance than the extracted polygon meshes. The combined splat has visible ghosting near the doorway from some viewpoints."
+  ],
+  "research": {
+    "checked_on": "2026-10-19",
+    "sources": [
+      {
+        "url": "https://www.reddit.com/r/GaussianSplatting/comments/1wmlobx/scanning_houses_just_got_10x_cheaper/",
+        "finding": "The post identifies Insta360 X5 interval photographs, Spirula Studio, PlayCanvas and 15 million Gaussians. Its author is on the PlayCanvas team and says he did not train the scan. The post does not supply a verified detailed training recipe."
+      },
+      {
+        "url": "https://superspl.at/scene/9d09ab82",
+        "finding": "Creator eraser851 reports about 1000 360 photographs, approximately four hours capturing interiors, splitting INSP photographs into cam0/cam1 JPEGs, Spirula alignment plus depth and normal maps, roughly 15 hours alignment and 20 hours training on a Ryzen 5950X / RTX 3090 / 128 GB RAM, then SuperSplat cleanup. This is the direct detailed account for the original reference."
+      },
+      {
+        "url": "https://www.reddit.com/r/GaussianSplatting/comments/1vyvyv4/gaussian_splat_from_eyes_wide_shut_from_x/",
+        "finding": "Provenance is disputed. The poster discusses AI-assisted missing views and links to a separate X author. Commenters argue the displayed clip is AI-generated; another commenter links a splat trained from that generated clip. Treat as an appearance reference, not verified documentary reconstruction evidence."
+      },
+      {
+        "url": "https://www.reddit.com/r/GaussianSplatting/comments/1wq496j/yes_gaussian_splatting_will_be_the_next_matterport/",
+        "finding": "The scan creator reports Spirula Studio, MoGe2 normals, 1,153 aligned photos and a 50,000-step local run with approximately 2.97 million splats. A much larger run gave only a small visible improvement. The creator acknowledges reflection, thin-object and measurement limitations."
+      },
+      {
+        "url": "https://www.reddit.com/r/GaussianSplatting/comments/1wr30kn/are_there_toolsmethods_to_align_multiple_splats/",
+        "finding": "Discussion of separately training apartment rooms recommends overlap-aware alignment, cropping and tools including splatreg. Suggestions are community experience rather than validation on this recording."
+      },
+      {
+        "url": "https://github.com/harry7557558/spirula-studio",
+        "finding": "Official implementation supports normal-guided meshing, per-image colour/exposure correction, full-resolution progressive training and textured mesh export.",
+        "version_used": "2026.10.16",
+        "commit": "65246c5579c127081bff6f4422bd12a542906f78"
+      },
+      {
+        "url": "https://github.com/Archerkattri/splatreg",
+        "finding": "Official implementation supports similarity transforms and rotates the Gaussian covariance and higher-order spherical-harmonic colour coefficients together. Its full-overlap default registration loss must not be used indiscriminately on two nearly disjoint rooms.",
+        "commit": "db7c05aa127cbaac5bb139f7db44c3d9fe3c4d69"
+      },
+      {
+        "url": "https://github.com/microsoft/MoGe",
+        "finding": "Official monocular geometry model; the larger MoGe2 normal model was used as geometric supervision, not treated as measured ground truth.",
+        "model_sha256": "afbc4ccc3450298f3afb35b90f015f4c4f552dea21dc6470d5f7b78b77e2d751"
+      }
+    ],
+    "adaptation": "Separate full-4K room reconstructions with MoGe2 ViT-L normals, Spirula meshing preset, SH3 appearance and 50,000 steps. The bedroom continued from step 30,000 with relative depth guidance after the combined preview exposed weak depth on plain walls. Export 8K-textured meshes with camera-carving tolerance 3 and small-hole repair; align stationary doorway landmarks, remove the captured closed-door surface in the combined derivative, and retain all independent originals.",
+    "privacy": "All room image processing and model training are local. No recording or reconstruction was uploaded to the research sites."
+  }
+}

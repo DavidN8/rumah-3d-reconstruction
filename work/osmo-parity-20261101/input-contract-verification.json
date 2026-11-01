@@ -1,0 +1,159 @@
+{
+  "passed": true,
+  "views": 2219,
+  "RGBSize": 1600,
+  "baselineRGBSize": 1200,
+  "maxRotationMatrixError": 0.0,
+  "maxTranslationError": 0.0,
+  "maxNormalizedIntrinsicsError": 0.0,
+  "maxScaledFeatureObservationErrorPixelsWhenPointIDsUnique": 2.2737367544323206e-13,
+  "maxErrorWhenDuplicatePointIDsComparedNaively": 6.841945646204067,
+  "ambiguousDuplicatePointInstances": 107,
+  "duplicateExamples": [
+    {
+      "image": "cam1-n000420-f0_train.jpg",
+      "pointId": 467045,
+      "errorPixels": 5.495486877548615,
+      "duplicatePointIdentityInImage": true,
+      "oldCoordinates": [
+        [
+          1195.2438001488883,
+          582.8633597571464
+        ]
+      ],
+      "newCoordinates": [
+        [
+          1593.6584001985177,
+          777.1511463428619
+        ],
+        [
+          1596.942949558926,
+          782.6466332204105
+        ]
+      ]
+    },
+    {
+      "image": "cam0-n000498-f2_train.jpg",
+      "pointId": 467452,
+      "errorPixels": 6.841945646204067,
+      "duplicatePointIdentityInImage": true,
+      "oldCoordinates": [
+        [
+          1192.5162522152732,
+          598.6497450029507
+        ]
+      ],
+      "newCoordinates": [
+        [
+          1590.0216696203643,
+          798.1996600039342
+        ],
+        [
+          1596.8636152665683,
+          798.9044158471729
+        ]
+      ]
+    },
+    {
+      "image": "cam1-n001074-f4_train.jpg",
+      "pointId": 302100,
+      "errorPixels": 2.4283780928979013,
+      "duplicatePointIdentityInImage": true,
+      "oldCoordinates": [
+        [
+          493.5166205962295,
+          1195.7712615423943
+        ]
+      ],
+      "newCoordinates": [
+        [
+          658.0221607949726,
+          1594.3616820565255
+        ],
+        [
+          660.4505388878705,
+          1596.4113714907094
+        ]
+      ]
+    },
+    {
+      "image": "cam0-n001584-f0_train.jpg",
+      "pointId": 89317,
+      "errorPixels": 1.5756242188167562,
+      "duplicatePointIdentityInImage": true,
+      "oldCoordinates": [
+        [
+          1196.3896471029243,
+          587.3183598289518
+        ]
+      ],
+      "newCoordinates": [
+        [
+          1595.1861961372324,
+          783.0911464386023
+        ],
+        [
+          1596.7618203560492,
+          783.7899763822652
+        ]
+      ]
+    },
+    {
+      "image": "cam1-n001881-f0_train.jpg",
+      "pointId": 71502,
+      "errorPixels": 4.813197903911032,
+      "duplicatePointIdentityInImage": true,
+      "oldCoordinates": [
+        [
+          783.9004552593908,
+          1196.69879378584
+        ]
+      ],
+      "newCoordinates": [
+        [
+          1045.200607012521,
+          1595.5983917144533
+        ],
+        [
+          1050.013804916432,
+          1596.3572922683725
+        ]
+      ]
+    }
+  ],
+  "sharedObservations": 1577099,
+  "oldOnlyObservations": 0,
+  "newOnlyObservations": 3415,
+  "observationDifference": "Resolution-dependent mask sampling and fixed three-pixel view-edge guard; repeated point identities cannot be compared by dict row. All shared 3D positions unchanged; exact original dense training seed reused",
+  "guidance": {
+    "depths-trusted": {
+      "files": 439,
+      "allHashesIdentical": true
+    },
+    "normals-trusted": {
+      "files": 439,
+      "allHashesIdentical": true
+    }
+  },
+  "seedSha256": "0e405c89fefc6a9de46ba2ae2db141ef0a1a832bd44bd2c8dd58bd0984eb68e5",
+  "trainingTransformIdentity": true,
+  "baselineFilesVerifiedUnchanged": 34,
+  "iphoneModels": [
+    {
+      "model": "fast",
+      "file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\production\\public\\models\\iphone-phone-2b811d1241.glb",
+      "bytes": 21144604,
+      "sha256": "2b811d124120e70dcecc25d06e5dc397e2a28f310403a21fdfa1e290c41c9d2b",
+      "preserved": true
+    },
+    {
+      "model": "full",
+      "file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\production\\public\\models\\iphone-full-room-16f8963b.glb",
+      "bytes": 435614584,
+      "sha256": "16f8963b043a766317497ee4281f4cf39c6b2190fafaaed51334734723c8b207",
+      "preserved": true
+    }
+  ],
+  "seconds": 9.702999999979511,
+  "scope": "Identity and geometry contract; does not assert visual acceptance or physical mobile compatibility"
+}

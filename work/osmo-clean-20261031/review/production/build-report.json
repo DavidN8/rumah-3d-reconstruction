@@ -1,0 +1,545 @@
+{
+  "build": "20261031-osmo-clean-v1",
+  "provisional": false,
+  "deploymentAuthorized": false,
+  "sourceCandidate": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\clean-final.sog",
+  "candidateSha256": "cbb33c91b5b481460b2c75e2125f3efa1458e6634abc3da1ce051a0989fd315c",
+  "manifestName": "room-173dad2959.json",
+  "bundleName": "room-viewer-WNFPTVAA.js",
+  "osmo": {
+    "label": "Osmo",
+    "representation": "gaussian",
+    "format": "sog",
+    "cameraSet": "osmo",
+    "url": "models/osmo-native-cbb33c91b5.sog",
+    "fileBytes": 45177102,
+    "downloadBytes": 45177102,
+    "splats": 2997908,
+    "shDegree": 2,
+    "note": "Osmo · native Gaussian view · approximate scale",
+    "provisional": false
+  },
+  "iphoneMetadataUnchanged": true,
+  "choiceRequired": true,
+  "automaticModelRetry": false,
+  "prechoiceExternalRequests": 0,
+  "lodPolicy": {
+    "lodSplatCount": 750000,
+    "baseSplats": 2997908,
+    "lod": true,
+    "nonLod": false,
+    "extSplats": false
+  },
+  "runtimeMemoryWarning": "LOD display budget limits active draws, not transient decoder/build memory. Physical Fold 7/iPhone 17 memory and touch tests remain required. Prebuilt paged RAD or SOG path should be benchmarked before release.",
+  "sourceFormat": "Actual Gaussian PLY -> SOG; no mesh or photo texture proxy",
+  "newTrainingNotUsed": false,
+  "metafile": {
+    "inputs": {
+      "../../../mobile-20261029/node_modules/three/build/three.core.js": {
+        "bytes": 1403455,
+        "imports": [],
+        "format": "esm"
+      },
+      "../../../mobile-20261029/node_modules/three/build/three.module.js": {
+        "bytes": 603113,
+        "imports": [
+          {
+            "path": "../../../mobile-20261029/node_modules/three/build/three.core.js",
+            "kind": "import-statement",
+            "original": "./three.core.js"
+          },
+          {
+            "path": "../../../mobile-20261029/node_modules/three/build/three.core.js",
+            "kind": "import-statement",
+            "original": "./three.core.js"
+          }
+        ],
+        "format": "esm"
+      },
+      "native-delivery.js": {
+        "bytes": 2802,
+        "imports": [],
+        "format": "esm"
+      },
+      "delivery-policy.js": {
+        "bytes": 837,
+        "imports": [],
+        "format": "esm"
+      },
+      "loader-core.js": {
+        "bytes": 3921,
+        "imports": [
+          {
+            "path": "delivery-policy.js",
+            "kind": "import-statement",
+            "original": "./delivery-policy.js"
+          },
+          {
+            "path": "native-delivery.js",
+            "kind": "import-statement",
+            "original": "./native-delivery.js"
+          }
+        ],
+        "format": "esm"
+      },
+      "choice-core.js": {
+        "bytes": 1179,
+        "imports": [],
+        "format": "esm"
+      },
+      "../../../mobile-20261029/node_modules/three/examples/jsm/postprocessing/Pass.js": {
+        "bytes": 4218,
+        "imports": [
+          {
+            "path": "../../../mobile-20261029/node_modules/three/build/three.module.js",
+            "kind": "import-statement",
+            "original": "three"
+          }
+        ],
+        "format": "esm"
+      },
+      "../../../mobile-20261029/node_modules/@sparkjsdev/spark/dist/spark.module.js": {
+        "bytes": 2997944,
+        "imports": [
+          {
+            "path": "../../../mobile-20261029/node_modules/three/build/three.module.js",
+            "kind": "import-statement",
+            "original": "three"
+          },
+          {
+            "path": "../../../mobile-20261029/node_modules/three/build/three.module.js",
+            "kind": "import-statement",
+            "original": "three"
+          },
+          {
+            "path": "../../../mobile-20261029/node_modules/three/examples/jsm/postprocessing/Pass.js",
+            "kind": "import-statement",
+            "original": "three/addons/postprocessing/Pass.js"
+          }
+        ],
+        "format": "esm"
+      },
+      "../../../mobile-20261029/node_modules/three/examples/jsm/utils/BufferGeometryUtils.js": {
+        "bytes": 35539,
+        "imports": [
+          {
+            "path": "../../../mobile-20261029/node_modules/three/build/three.module.js",
+            "kind": "import-statement",
+            "original": "three"
+          }
+        ],
+        "format": "esm"
+      },
+      "../../../mobile-20261029/node_modules/three/examples/jsm/loaders/GLTFLoader.js": {
+        "bytes": 114739,
+        "imports": [
+          {
+            "path": "../../../mobile-20261029/node_modules/three/build/three.module.js",
+            "kind": "import-statement",
+            "original": "three"
+          },
+          {
+            "path": "../../../mobile-20261029/node_modules/three/examples/jsm/utils/BufferGeometryUtils.js",
+            "kind": "import-statement",
+            "original": "../utils/BufferGeometryUtils.js"
+          }
+        ],
+        "format": "esm"
+      },
+      "../../../mobile-20261029/node_modules/meshoptimizer/meshopt_encoder.module.js": {
+        "bytes": 24349,
+        "imports": [],
+        "format": "esm"
+      },
+      "../../../mobile-20261029/node_modules/meshoptimizer/meshopt_decoder.module.js": {
+        "bytes": 32483,
+        "imports": [],
+        "format": "esm"
+      },
+      "../../../mobile-20261029/node_modules/meshoptimizer/meshopt_simplifier.module.js": {
+        "bytes": 52710,
+        "imports": [],
+        "format": "esm"
+      },
+      "../../../mobile-20261029/node_modules/meshoptimizer/meshopt_clusterizer.module.js": {
+        "bytes": 23679,
+        "imports": [],
+        "format": "esm"
+      },
+      "../../../mobile-20261029/node_modules/meshoptimizer/index.module.js": {
+        "bytes": 187,
+        "imports": [
+          {
+            "path": "../../../mobile-20261029/node_modules/meshoptimizer/meshopt_encoder.module.js",
+            "kind": "import-statement",
+            "original": "./meshopt_encoder.module.js"
+          },
+          {
+            "path": "../../../mobile-20261029/node_modules/meshoptimizer/meshopt_decoder.module.js",
+            "kind": "import-statement",
+            "original": "./meshopt_decoder.module.js"
+          },
+          {
+            "path": "../../../mobile-20261029/node_modules/meshoptimizer/meshopt_simplifier.module.js",
+            "kind": "import-statement",
+            "original": "./meshopt_simplifier.module.js"
+          },
+          {
+            "path": "../../../mobile-20261029/node_modules/meshoptimizer/meshopt_clusterizer.module.js",
+            "kind": "import-statement",
+            "original": "./meshopt_clusterizer.module.js"
+          }
+        ],
+        "format": "esm"
+      },
+      "build-entry.js": {
+        "bytes": 32780,
+        "imports": [
+          {
+            "path": "../../../mobile-20261029/node_modules/three/build/three.module.js",
+            "kind": "import-statement",
+            "original": "three"
+          },
+          {
+            "path": "native-delivery.js",
+            "kind": "import-statement",
+            "original": "./native-delivery.js"
+          },
+          {
+            "path": "loader-core.js",
+            "kind": "import-statement",
+            "original": "./loader-core.js"
+          },
+          {
+            "path": "choice-core.js",
+            "kind": "import-statement",
+            "original": "./choice-core.js"
+          },
+          {
+            "path": "../../../mobile-20261029/node_modules/@sparkjsdev/spark/dist/spark.module.js",
+            "kind": "dynamic-import",
+            "original": "@sparkjsdev/spark"
+          },
+          {
+            "path": "../../../mobile-20261029/node_modules/three/examples/jsm/loaders/GLTFLoader.js",
+            "kind": "dynamic-import",
+            "original": "three/addons/loaders/GLTFLoader.js"
+          },
+          {
+            "path": "../../../mobile-20261029/node_modules/meshoptimizer/index.module.js",
+            "kind": "dynamic-import",
+            "original": "meshoptimizer"
+          }
+        ],
+        "format": "esm"
+      }
+    },
+    "outputs": {
+      "public/room-viewer-WNFPTVAA.js": {
+        "imports": [
+          {
+            "path": "public/chunks/chunk-6KGGFDN3.js",
+            "kind": "import-statement"
+          },
+          {
+            "path": "public/chunks/spark.module-LONRNVC6.js",
+            "kind": "dynamic-import"
+          },
+          {
+            "path": "public/chunks/GLTFLoader-PMKDZMES.js",
+            "kind": "dynamic-import"
+          },
+          {
+            "path": "public/chunks/index.module-HNWUULKQ.js",
+            "kind": "dynamic-import"
+          }
+        ],
+        "exports": [],
+        "entryPoint": "build-entry.js",
+        "inputs": {
+          "native-delivery.js": {
+            "bytesInOutput": 1730
+          },
+          "delivery-policy.js": {
+            "bytesInOutput": 149
+          },
+          "loader-core.js": {
+            "bytesInOutput": 2544
+          },
+          "choice-core.js": {
+            "bytesInOutput": 299
+          },
+          "build-entry.js": {
+            "bytesInOutput": 22131
+          }
+        },
+        "bytes": 26993
+      },
+      "public/chunks/spark.module-LONRNVC6.js": {
+        "imports": [
+          {
+            "path": "public/chunks/chunk-6KGGFDN3.js",
+            "kind": "import-statement"
+          }
+        ],
+        "exports": [
+          "DEFAULT_CONTROLLER_FAST_MULTIPLIER",
+          "DEFAULT_CONTROLLER_GETFAST",
+          "DEFAULT_CONTROLLER_GETMOVE",
+          "DEFAULT_CONTROLLER_GETROTATE",
+          "DEFAULT_CONTROLLER_GETSLOW",
+          "DEFAULT_CONTROLLER_MOVE_HEADING",
+          "DEFAULT_CONTROLLER_MOVE_SPEED",
+          "DEFAULT_CONTROLLER_ROLL_SPEED",
+          "DEFAULT_CONTROLLER_ROTATE_SPEED",
+          "DEFAULT_CONTROLLER_SLOW_MULTIPLIER",
+          "DISK_PORTAL_FRAGMENT_SHADER",
+          "ExtSplats",
+          "FINGER_TIPS",
+          "FpsMovement",
+          "HANDS",
+          "Hand",
+          "HandMovement",
+          "JOINT_IDS",
+          "JOINT_INDEX",
+          "JOINT_RADIUS",
+          "JOINT_SEGMENTS",
+          "JOINT_SEGMENT_STEPS",
+          "JOINT_TIPS",
+          "JointEnum",
+          "JointSplats",
+          "LN_SCALE_MAX",
+          "LN_SCALE_MIN",
+          "NUM_JOINTS",
+          "PackedSplats",
+          "PagedSplats",
+          "PointerControls",
+          "Readback",
+          "RgbaArray",
+          "Sint8ToFloat",
+          "SparkControls",
+          "SparkPortals",
+          "SparkRenderer",
+          "SparkXr",
+          "SplatAccumulator",
+          "SplatEdit",
+          "SplatEditRgbaBlendMode",
+          "SplatEditSdf",
+          "SplatEditSdfType",
+          "SplatEdits",
+          "SplatFileType",
+          "SplatGenerator",
+          "SplatLoader",
+          "SplatMesh",
+          "SplatModifier",
+          "SplatPager",
+          "SplatSkinning",
+          "SplatSkinningMode",
+          "SplatTransformer",
+          "Uint8ToFloat",
+          "XrHand",
+          "XrHands",
+          "constructAxes",
+          "constructGrid",
+          "constructSpherePoints",
+          "defines",
+          "dyno",
+          "flipPixels",
+          "floatToSint8",
+          "floatToUint8",
+          "fromHalf",
+          "generators",
+          "getSplatFileType",
+          "imageSplats",
+          "isAndroid",
+          "isIos",
+          "isMobile",
+          "isOculus",
+          "isQuest2",
+          "isVisionPro",
+          "lerpHandsSnapshots",
+          "modifiers",
+          "pixelsToPngUrl",
+          "readRgbaArray",
+          "setPackedSplat",
+          "textSplats",
+          "toHalf",
+          "transcodeSpz",
+          "unpackSplat",
+          "utils",
+          "writeSpz"
+        ],
+        "entryPoint": "../../../mobile-20261029/node_modules/@sparkjsdev/spark/dist/spark.module.js",
+        "inputs": {
+          "../../../mobile-20261029/node_modules/three/examples/jsm/postprocessing/Pass.js": {
+            "bytesInOutput": 399
+          },
+          "../../../mobile-20261029/node_modules/@sparkjsdev/spark/dist/spark.module.js": {
+            "bytesInOutput": 2797403
+          }
+        },
+        "bytes": 2799994
+      },
+      "public/chunks/GLTFLoader-PMKDZMES.js": {
+        "imports": [
+          {
+            "path": "public/chunks/chunk-6KGGFDN3.js",
+            "kind": "import-statement"
+          }
+        ],
+        "exports": [
+          "GLTFLoader"
+        ],
+        "entryPoint": "../../../mobile-20261029/node_modules/three/examples/jsm/loaders/GLTFLoader.js",
+        "inputs": {
+          "../../../mobile-20261029/node_modules/three/examples/jsm/utils/BufferGeometryUtils.js": {
+            "bytesInOutput": 988
+          },
+          "../../../mobile-20261029/node_modules/three/examples/jsm/loaders/GLTFLoader.js": {
+            "bytesInOutput": 42933
+          }
+        },
+        "bytes": 44521
+      },
+      "public/chunks/chunk-6KGGFDN3.js": {
+        "imports": [],
+        "exports": [
+          "$",
+          "A",
+          "Aa",
+          "B",
+          "Ba",
+          "C",
+          "Ca",
+          "D",
+          "Da",
+          "E",
+          "Ea",
+          "F",
+          "Fa",
+          "G",
+          "Ga",
+          "H",
+          "Ha",
+          "I",
+          "Ia",
+          "J",
+          "Ja",
+          "K",
+          "Ka",
+          "L",
+          "La",
+          "M",
+          "Ma",
+          "N",
+          "Na",
+          "O",
+          "Oa",
+          "P",
+          "Pa",
+          "Q",
+          "Qa",
+          "R",
+          "S",
+          "T",
+          "U",
+          "V",
+          "W",
+          "X",
+          "Y",
+          "Z",
+          "_",
+          "a",
+          "aa",
+          "b",
+          "ba",
+          "c",
+          "ca",
+          "d",
+          "da",
+          "e",
+          "ea",
+          "f",
+          "fa",
+          "g",
+          "ga",
+          "h",
+          "ha",
+          "i",
+          "ia",
+          "j",
+          "ja",
+          "k",
+          "ka",
+          "l",
+          "la",
+          "m",
+          "ma",
+          "n",
+          "na",
+          "o",
+          "oa",
+          "p",
+          "pa",
+          "q",
+          "qa",
+          "r",
+          "ra",
+          "s",
+          "sa",
+          "t",
+          "ta",
+          "u",
+          "ua",
+          "v",
+          "va",
+          "w",
+          "wa",
+          "x",
+          "xa",
+          "y",
+          "ya",
+          "z",
+          "za"
+        ],
+        "inputs": {
+          "../../../mobile-20261029/node_modules/three/build/three.core.js": {
+            "bytesInOutput": 205181
+          },
+          "../../../mobile-20261029/node_modules/three/build/three.module.js": {
+            "bytesInOutput": 321203
+          }
+        },
+        "bytes": 527406
+      },
+      "public/chunks/index.module-HNWUULKQ.js": {
+        "imports": [],
+        "exports": [
+          "MeshoptClusterizer",
+          "MeshoptDecoder",
+          "MeshoptEncoder",
+          "MeshoptSimplifier"
+        ],
+        "entryPoint": "../../../mobile-20261029/node_modules/meshoptimizer/index.module.js",
+        "inputs": {
+          "../../../mobile-20261029/node_modules/meshoptimizer/meshopt_encoder.module.js": {
+            "bytesInOutput": 20595
+          },
+          "../../../mobile-20261029/node_modules/meshoptimizer/index.module.js": {
+            "bytesInOutput": 0
+          },
+          "../../../mobile-20261029/node_modules/meshoptimizer/meshopt_decoder.module.js": {
+            "bytesInOutput": 29691
+          },
+          "../../../mobile-20261029/node_modules/meshoptimizer/meshopt_simplifier.module.js": {
+            "bytesInOutput": 40531
+          },
+          "../../../mobile-20261029/node_modules/meshoptimizer/meshopt_clusterizer.module.js": {
+            "bytesInOutput": 17180
+          }
+        },
+        "bytes": 108093
+      }
+    }
+  }
+}

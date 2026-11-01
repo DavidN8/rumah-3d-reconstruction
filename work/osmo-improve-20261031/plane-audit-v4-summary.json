@@ -1,0 +1,873 @@
+{
+  "source_mesh": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\recovery-v2\\exports\\v4-probe.glb",
+  "source_mesh_sha256": "e0c63a9ceba7720dbb53cb5a86866165d7f729ad27d4094fc751b4fc274eb5c5",
+  "strict_sfm_points": 25022,
+  "strict_masked_observations": 154411,
+  "camera_model": "Native OPENCV_FISHEYE, 8 parameters; exact accepted normalized Y-up frame",
+  "point_gate": "Cached accepted track>=4, then recomputed >=3 masked observations <=2px reprojection and theta<=85deg; zero writer point.error ignored",
+  "units": "Approximate normalized world units from assumed1.5m median camera height; no measured centimetre accuracy claim",
+  "mesh_faces": 1683387,
+  "mesh_vertices": 828100,
+  "area_weighted_surface_samples": 200000,
+  "planes": [
+    {
+      "plane": 0,
+      "kind": "horizontal",
+      "normal": [
+        0.005288902937781982,
+        0.9999836637665547,
+        0.002167880470278804
+      ],
+      "offset": 0.0027995578608779378,
+      "center": [
+        0.19940857089115227,
+        -0.0028638241991544348,
+        -0.45686698865916403
+      ],
+      "support_points": 3270,
+      "support_observations": 19780,
+      "distinct_images": 232,
+      "white_support_fraction": 0.10030581039755351,
+      "plane_hull_area": 26.058787101210477,
+      "local_extents": [
+        6.772449353754361,
+        5.239902635505056
+      ],
+      "sparse_inlier_absolute_residual": {
+        "count": 3270,
+        "median": 0.00806042854285774,
+        "p90": 0.02044527128463013,
+        "p95": 0.022582251338577893,
+        "maximum": 0.0249893853391883
+      },
+      "independent_spatial_half_normal_difference_degrees": 0.3188132449542962,
+      "baseline_surface_points_within_20cm_parallel_slab": 21747,
+      "baseline_conditional_plane_residual": {
+        "count": 21747,
+        "median": 0.01736611579572586,
+        "p90": 0.0561479177901724,
+        "p95": 0.08018332608495163,
+        "maximum": 0.19990688195685338
+      },
+      "baseline_conditional_within_2cm": 0.5564445670667219,
+      "baseline_conditional_within_5cm": 0.8753391272359405,
+      "grid_cell_size": 0.05,
+      "hull_grid_cells": 10421,
+      "mesh_supported_within_5cm_cells": 5063,
+      "missing_near_plane_cells": 5358,
+      "missing_near_plane_area": 13.395000000000003,
+      "gap_cells_with_at_least2_distinct_background_feature_rays": 0,
+      "gap_cells_with_sparse_plane_support_within10cm_and_no_negative_witness": 1770,
+      "photo_checked_candidate_samples": 250,
+      "samples_visible_in_at_least2_of6_source_views": 0,
+      "multiview_5x5_rgb_mean_std_255": {
+        "count": 0
+      },
+      "multiview_bright_neutral_sample_fraction": null,
+      "negative_witness_observations": 215,
+      "maximum_negative_witness_count_per_cell": 5,
+      "interpretation": "Convex-hull/slab figures include finite wall extents and real openings. Gap cells are not automatically repairable."
+    },
+    {
+      "plane": 1,
+      "kind": "horizontal",
+      "normal": [
+        0.00343290591708103,
+        0.9999933548011375,
+        0.001226992473609954
+      ],
+      "offset": -0.03766765712624018,
+      "center": [
+        -0.36898705710535357,
+        0.03870262192688039,
+        0.18907225808788694
+      ],
+      "support_points": 1889,
+      "support_observations": 11698,
+      "distinct_images": 227,
+      "white_support_fraction": 0.006881948120698782,
+      "plane_hull_area": 27.47629053221579,
+      "local_extents": [
+        7.100033828463659,
+        5.711208043180266
+      ],
+      "sparse_inlier_absolute_residual": {
+        "count": 1889,
+        "median": 0.012849512738606187,
+        "p90": 0.02261032645787872,
+        "p95": 0.023834594361789224,
+        "maximum": 0.024952293499584263
+      },
+      "independent_spatial_half_normal_difference_degrees": 0.07314753669914226,
+      "baseline_surface_points_within_20cm_parallel_slab": 21962,
+      "baseline_conditional_plane_residual": {
+        "count": 21962,
+        "median": 0.027401952130348618,
+        "p90": 0.047757847478781215,
+        "p95": 0.06518496792915147,
+        "maximum": 0.19992731106877498
+      },
+      "baseline_conditional_within_2cm": 0.3312995173481468,
+      "baseline_conditional_within_5cm": 0.9133958655860122,
+      "grid_cell_size": 0.05,
+      "hull_grid_cells": 10986,
+      "mesh_supported_within_5cm_cells": 5468,
+      "missing_near_plane_cells": 5518,
+      "missing_near_plane_area": 13.795000000000003,
+      "gap_cells_with_at_least2_distinct_background_feature_rays": 28,
+      "gap_cells_with_sparse_plane_support_within10cm_and_no_negative_witness": 1229,
+      "photo_checked_candidate_samples": 250,
+      "samples_visible_in_at_least2_of6_source_views": 1,
+      "multiview_5x5_rgb_mean_std_255": {
+        "count": 1,
+        "median": 0.9774795130724814,
+        "p90": 0.9774795130724814,
+        "p95": 0.9774795130724814,
+        "maximum": 0.9774795130724814
+      },
+      "multiview_bright_neutral_sample_fraction": 0.0,
+      "negative_witness_observations": 1795,
+      "maximum_negative_witness_count_per_cell": 10,
+      "interpretation": "Convex-hull/slab figures include finite wall extents and real openings. Gap cells are not automatically repairable."
+    },
+    {
+      "plane": 2,
+      "kind": "horizontal",
+      "normal": [
+        0.003947134253026738,
+        0.9999921744012308,
+        0.0002669597102749956
+      ],
+      "offset": -0.5634969544167093,
+      "center": [
+        0.7691808462802028,
+        0.5607271306661242,
+        -0.980853210869646
+      ],
+      "support_points": 1429,
+      "support_observations": 9718,
+      "distinct_images": 203,
+      "white_support_fraction": 0.0034989503149055285,
+      "plane_hull_area": 24.762158738836405,
+      "local_extents": [
+        6.465735681640869,
+        5.343099752130791
+      ],
+      "sparse_inlier_absolute_residual": {
+        "count": 1429,
+        "median": 0.008626438988202811,
+        "p90": 0.019987490419327035,
+        "p95": 0.022339298539688388,
+        "maximum": 0.02484763648838928
+      },
+      "independent_spatial_half_normal_difference_degrees": 0.4271328076000804,
+      "baseline_surface_points_within_20cm_parallel_slab": 3905,
+      "baseline_conditional_plane_residual": {
+        "count": 3905,
+        "median": 0.07609685571023339,
+        "p90": 0.1659777547979254,
+        "p95": 0.18253375428843369,
+        "maximum": 0.19984574911600028
+      },
+      "baseline_conditional_within_2cm": 0.170550576184379,
+      "baseline_conditional_within_5cm": 0.3503201024327785,
+      "grid_cell_size": 0.05,
+      "hull_grid_cells": 9904,
+      "mesh_supported_within_5cm_cells": 479,
+      "missing_near_plane_cells": 9425,
+      "missing_near_plane_area": 23.562500000000004,
+      "gap_cells_with_at_least2_distinct_background_feature_rays": 4560,
+      "gap_cells_with_sparse_plane_support_within10cm_and_no_negative_witness": 769,
+      "photo_checked_candidate_samples": 250,
+      "samples_visible_in_at_least2_of6_source_views": 3,
+      "multiview_5x5_rgb_mean_std_255": {
+        "count": 3,
+        "median": 4.628606754551666,
+        "p90": 5.5056915469645835,
+        "p95": 5.615327146016198,
+        "maximum": 5.724962745067812
+      },
+      "multiview_bright_neutral_sample_fraction": 0.0,
+      "negative_witness_observations": 65607,
+      "maximum_negative_witness_count_per_cell": 80,
+      "interpretation": "Convex-hull/slab figures include finite wall extents and real openings. Gap cells are not automatically repairable."
+    },
+    {
+      "plane": 3,
+      "kind": "horizontal",
+      "normal": [
+        0.006194694379691995,
+        0.9999740195735651,
+        0.003685910936133989
+      ],
+      "offset": -1.9835732843740685,
+      "center": [
+        0.9821065230589296,
+        1.9766866729601962,
+        0.23172475751893962
+      ],
+      "support_points": 697,
+      "support_observations": 3650,
+      "distinct_images": 223,
+      "white_support_fraction": 0.040172166427546625,
+      "plane_hull_area": 26.055115943859974,
+      "local_extents": [
+        7.243373254558464,
+        4.898044536683113
+      ],
+      "sparse_inlier_absolute_residual": {
+        "count": 697,
+        "median": 0.010351455100643392,
+        "p90": 0.021314041831162988,
+        "p95": 0.0230980675751435,
+        "maximum": 0.02498952500821172
+      },
+      "independent_spatial_half_normal_difference_degrees": 0.2706802980370588,
+      "baseline_surface_points_within_20cm_parallel_slab": 19075,
+      "baseline_conditional_plane_residual": {
+        "count": 19075,
+        "median": 0.01136690522193784,
+        "p90": 0.07017945188102907,
+        "p95": 0.08097266910408982,
+        "maximum": 0.19984537459545937
+      },
+      "baseline_conditional_within_2cm": 0.6985058977719528,
+      "baseline_conditional_within_5cm": 0.8234862385321101,
+      "grid_cell_size": 0.05,
+      "hull_grid_cells": 10423,
+      "mesh_supported_within_5cm_cells": 4039,
+      "missing_near_plane_cells": 6384,
+      "missing_near_plane_area": 15.960000000000003,
+      "gap_cells_with_at_least2_distinct_background_feature_rays": 813,
+      "gap_cells_with_sparse_plane_support_within10cm_and_no_negative_witness": 974,
+      "photo_checked_candidate_samples": 250,
+      "samples_visible_in_at_least2_of6_source_views": 14,
+      "multiview_5x5_rgb_mean_std_255": {
+        "count": 14,
+        "median": 2.191421167065197,
+        "p90": 10.058890535589748,
+        "p95": 14.80785311375675,
+        "maximum": 21.356879832180134
+      },
+      "multiview_bright_neutral_sample_fraction": 0.6428571428571429,
+      "negative_witness_observations": 4841,
+      "maximum_negative_witness_count_per_cell": 28,
+      "interpretation": "Convex-hull/slab figures include finite wall extents and real openings. Gap cells are not automatically repairable."
+    },
+    {
+      "plane": 4,
+      "kind": "vertical",
+      "normal": [
+        -0.6670327719812108,
+        -0.0014364310764286726,
+        0.7450269913022108
+      ],
+      "offset": -2.0313491641958614,
+      "center": [
+        -0.9164013233903231,
+        1.7192257304771867,
+        1.9093925657482367
+      ],
+      "support_points": 1131,
+      "support_observations": 6418,
+      "distinct_images": 139,
+      "white_support_fraction": 0.0,
+      "plane_hull_area": 5.64118564852756,
+      "local_extents": [
+        3.1225557601918004,
+        2.0937946920838924
+      ],
+      "sparse_inlier_absolute_residual": {
+        "count": 1131,
+        "median": 0.01120713481322655,
+        "p90": 0.02170132149585413,
+        "p95": 0.023027178180664798,
+        "maximum": 0.024974171335603312
+      },
+      "independent_spatial_half_normal_difference_degrees": 0.2451589423385858,
+      "baseline_surface_points_within_20cm_parallel_slab": 5799,
+      "baseline_conditional_plane_residual": {
+        "count": 5799,
+        "median": 0.02319156239099085,
+        "p90": 0.09186556534328419,
+        "p95": 0.11329400889673057,
+        "maximum": 0.19898004996907814
+      },
+      "baseline_conditional_within_2cm": 0.4336954647352992,
+      "baseline_conditional_within_5cm": 0.7734092084842215,
+      "grid_cell_size": 0.05,
+      "hull_grid_cells": 2270,
+      "mesh_supported_within_5cm_cells": 1424,
+      "missing_near_plane_cells": 846,
+      "missing_near_plane_area": 2.115,
+      "gap_cells_with_at_least2_distinct_background_feature_rays": 193,
+      "gap_cells_with_sparse_plane_support_within10cm_and_no_negative_witness": 460,
+      "photo_checked_candidate_samples": 250,
+      "samples_visible_in_at_least2_of6_source_views": 3,
+      "multiview_5x5_rgb_mean_std_255": {
+        "count": 3,
+        "median": 12.312102342388865,
+        "p90": 16.699870362833977,
+        "p95": 17.248341365389614,
+        "maximum": 17.796812367945254
+      },
+      "multiview_bright_neutral_sample_fraction": 0.0,
+      "negative_witness_observations": 1978,
+      "maximum_negative_witness_count_per_cell": 30,
+      "interpretation": "Convex-hull/slab figures include finite wall extents and real openings. Gap cells are not automatically repairable."
+    },
+    {
+      "plane": 5,
+      "kind": "vertical",
+      "normal": [
+        0.7966409346079528,
+        -0.004488872600285182,
+        0.6044361598463033
+      ],
+      "offset": 0.6359316749502721,
+      "center": [
+        -1.2084933504605393,
+        0.5315660592523929,
+        0.5446228260573202
+      ],
+      "support_points": 1254,
+      "support_observations": 7634,
+      "distinct_images": 147,
+      "white_support_fraction": 0.011164274322169059,
+      "plane_hull_area": 12.204233831929864,
+      "local_extents": [
+        6.358391972157163,
+        2.480827080378286
+      ],
+      "sparse_inlier_absolute_residual": {
+        "count": 1254,
+        "median": 0.011406624238556429,
+        "p90": 0.02187564630162362,
+        "p95": 0.023377119096530865,
+        "maximum": 0.024992024719708517
+      },
+      "independent_spatial_half_normal_difference_degrees": 0.6638583585558733,
+      "baseline_surface_points_within_20cm_parallel_slab": 1923,
+      "baseline_conditional_plane_residual": {
+        "count": 1923,
+        "median": 0.04719503344635034,
+        "p90": 0.1682340892875677,
+        "p95": 0.1861899775533018,
+        "maximum": 0.1999429472412167
+      },
+      "baseline_conditional_within_2cm": 0.25689027561102445,
+      "baseline_conditional_within_5cm": 0.515340613624545,
+      "grid_cell_size": 0.05,
+      "hull_grid_cells": 4883,
+      "mesh_supported_within_5cm_cells": 410,
+      "missing_near_plane_cells": 4473,
+      "missing_near_plane_area": 11.182500000000003,
+      "gap_cells_with_at_least2_distinct_background_feature_rays": 2394,
+      "gap_cells_with_sparse_plane_support_within10cm_and_no_negative_witness": 522,
+      "photo_checked_candidate_samples": 250,
+      "samples_visible_in_at_least2_of6_source_views": 2,
+      "multiview_5x5_rgb_mean_std_255": {
+        "count": 2,
+        "median": 18.432237800030776,
+        "p90": 20.895591608283198,
+        "p95": 21.20351083431475,
+        "maximum": 21.511430060346303
+      },
+      "multiview_bright_neutral_sample_fraction": 0.0,
+      "negative_witness_observations": 35515,
+      "maximum_negative_witness_count_per_cell": 340,
+      "interpretation": "Convex-hull/slab figures include finite wall extents and real openings. Gap cells are not automatically repairable."
+    },
+    {
+      "plane": 6,
+      "kind": "vertical",
+      "normal": [
+        0.7678317977920588,
+        0.00055544616560338,
+        0.6406512481678095
+      ],
+      "offset": -1.653353540734694,
+      "center": [
+        1.2500040029213917,
+        0.6216270310754226,
+        1.0820480589961603
+      ],
+      "support_points": 1228,
+      "support_observations": 10050,
+      "distinct_images": 142,
+      "white_support_fraction": 0.08143322475570032,
+      "plane_hull_area": 10.862312779760853,
+      "local_extents": [
+        4.826960608550719,
+        2.6409320608623315
+      ],
+      "sparse_inlier_absolute_residual": {
+        "count": 1228,
+        "median": 0.010683228832727987,
+        "p90": 0.021594251278690413,
+        "p95": 0.023144050330824215,
+        "maximum": 0.024996505573806838
+      },
+      "independent_spatial_half_normal_difference_degrees": 0.11795074647968821,
+      "baseline_surface_points_within_20cm_parallel_slab": 3251,
+      "baseline_conditional_plane_residual": {
+        "count": 3251,
+        "median": 0.054145166710201975,
+        "p90": 0.13626298058492492,
+        "p95": 0.15150484343220094,
+        "maximum": 0.19972867020668272
+      },
+      "baseline_conditional_within_2cm": 0.20978160565979698,
+      "baseline_conditional_within_5cm": 0.47646877883728084,
+      "grid_cell_size": 0.05,
+      "hull_grid_cells": 4363,
+      "mesh_supported_within_5cm_cells": 544,
+      "missing_near_plane_cells": 3819,
+      "missing_near_plane_area": 9.547500000000001,
+      "gap_cells_with_at_least2_distinct_background_feature_rays": 1404,
+      "gap_cells_with_sparse_plane_support_within10cm_and_no_negative_witness": 619,
+      "photo_checked_candidate_samples": 250,
+      "samples_visible_in_at_least2_of6_source_views": 37,
+      "multiview_5x5_rgb_mean_std_255": {
+        "count": 37,
+        "median": 4.450213950682442,
+        "p90": 23.78689127169814,
+        "p95": 33.24981221944886,
+        "maximum": 49.60188330185112
+      },
+      "multiview_bright_neutral_sample_fraction": 0.2972972972972973,
+      "negative_witness_observations": 13823,
+      "maximum_negative_witness_count_per_cell": 81,
+      "interpretation": "Convex-hull/slab figures include finite wall extents and real openings. Gap cells are not automatically repairable."
+    },
+    {
+      "plane": 7,
+      "kind": "vertical",
+      "normal": [
+        -0.6855496029174819,
+        -0.0006698814756421574,
+        0.7280256130099348
+      ],
+      "offset": -1.952987049972446,
+      "center": [
+        -0.8102058677047103,
+        1.5787672728426345,
+        1.9210976936019002
+      ],
+      "support_points": 644,
+      "support_observations": 3592,
+      "distinct_images": 138,
+      "white_support_fraction": 0.0,
+      "plane_hull_area": 5.470863010987516,
+      "local_extents": [
+        2.9314500299606965,
+        2.1361259584876646
+      ],
+      "sparse_inlier_absolute_residual": {
+        "count": 644,
+        "median": 0.012758255639615745,
+        "p90": 0.023160047838692587,
+        "p95": 0.024205098210138755,
+        "maximum": 0.024982812822511358
+      },
+      "independent_spatial_half_normal_difference_degrees": 0.2853485000176371,
+      "baseline_surface_points_within_20cm_parallel_slab": 5629,
+      "baseline_conditional_plane_residual": {
+        "count": 5629,
+        "median": 0.03851347908256475,
+        "p90": 0.11795590317680407,
+        "p95": 0.17668483466805912,
+        "maximum": 0.1998319934395303
+      },
+      "baseline_conditional_within_2cm": 0.17480902469355125,
+      "baseline_conditional_within_5cm": 0.6812933025404158,
+      "grid_cell_size": 0.05,
+      "hull_grid_cells": 2188,
+      "mesh_supported_within_5cm_cells": 1226,
+      "missing_near_plane_cells": 962,
+      "missing_near_plane_area": 2.4050000000000002,
+      "gap_cells_with_at_least2_distinct_background_feature_rays": 301,
+      "gap_cells_with_sparse_plane_support_within10cm_and_no_negative_witness": 372,
+      "photo_checked_candidate_samples": 250,
+      "samples_visible_in_at_least2_of6_source_views": 2,
+      "multiview_5x5_rgb_mean_std_255": {
+        "count": 2,
+        "median": 18.607548104643303,
+        "p90": 18.905009005068663,
+        "p95": 18.942191617621834,
+        "maximum": 18.979374230175004
+      },
+      "multiview_bright_neutral_sample_fraction": 0.0,
+      "negative_witness_observations": 3535,
+      "maximum_negative_witness_count_per_cell": 44,
+      "interpretation": "Convex-hull/slab figures include finite wall extents and real openings. Gap cells are not automatically repairable."
+    },
+    {
+      "plane": 8,
+      "kind": "vertical",
+      "normal": [
+        -0.5954631469580318,
+        -0.005354521287921341,
+        0.8033647799826769
+      ],
+      "offset": 1.468026876694008,
+      "center": [
+        0.3851582178336288,
+        0.8124450126893302,
+        -1.5364491061419867
+      ],
+      "support_points": 576,
+      "support_observations": 3145,
+      "distinct_images": 157,
+      "white_support_fraction": 0.17708333333333334,
+      "plane_hull_area": 11.715072694189582,
+      "local_extents": [
+        5.273587596085172,
+        2.5483690478289556
+      ],
+      "sparse_inlier_absolute_residual": {
+        "count": 576,
+        "median": 0.011962020366566462,
+        "p90": 0.022207304530035943,
+        "p95": 0.023643698179354855,
+        "maximum": 0.024971565058424128
+      },
+      "independent_spatial_half_normal_difference_degrees": 1.2325200545104844,
+      "baseline_surface_points_within_20cm_parallel_slab": 3392,
+      "baseline_conditional_plane_residual": {
+        "count": 3392,
+        "median": 0.044980350240631295,
+        "p90": 0.1626679112398095,
+        "p95": 0.18064379217242135,
+        "maximum": 0.19999475114474352
+      },
+      "baseline_conditional_within_2cm": 0.22435141509433962,
+      "baseline_conditional_within_5cm": 0.5368514150943396,
+      "grid_cell_size": 0.05,
+      "hull_grid_cells": 4690,
+      "mesh_supported_within_5cm_cells": 579,
+      "missing_near_plane_cells": 4111,
+      "missing_near_plane_area": 10.277500000000002,
+      "gap_cells_with_at_least2_distinct_background_feature_rays": 2328,
+      "gap_cells_with_sparse_plane_support_within10cm_and_no_negative_witness": 667,
+      "photo_checked_candidate_samples": 250,
+      "samples_visible_in_at_least2_of6_source_views": 2,
+      "multiview_5x5_rgb_mean_std_255": {
+        "count": 2,
+        "median": 8.755493794774221,
+        "p90": 9.156326342128523,
+        "p95": 9.206430410547812,
+        "maximum": 9.2565344789671
+      },
+      "multiview_bright_neutral_sample_fraction": 0.0,
+      "negative_witness_observations": 32021,
+      "maximum_negative_witness_count_per_cell": 200,
+      "interpretation": "Convex-hull/slab figures include finite wall extents and real openings. Gap cells are not automatically repairable."
+    },
+    {
+      "plane": 9,
+      "kind": "vertical",
+      "normal": [
+        -0.7021624862945698,
+        -0.0051009033052549805,
+        0.7119984716459008
+      ],
+      "offset": -1.6173686839294334,
+      "center": [
+        -1.4652834974433215,
+        0.8796507061172713,
+        0.8328509358478556
+      ],
+      "support_points": 593,
+      "support_observations": 3536,
+      "distinct_images": 140,
+      "white_support_fraction": 0.1551433389544688,
+      "plane_hull_area": 6.3406277052955,
+      "local_extents": [
+        3.200712113430702,
+        2.3939553562496183
+      ],
+      "sparse_inlier_absolute_residual": {
+        "count": 593,
+        "median": 0.012640937088139736,
+        "p90": 0.022078800966132794,
+        "p95": 0.02360078259064182,
+        "maximum": 0.024966705271318057
+      },
+      "independent_spatial_half_normal_difference_degrees": 1.2686714931884555,
+      "baseline_surface_points_within_20cm_parallel_slab": 1377,
+      "baseline_conditional_plane_residual": {
+        "count": 1377,
+        "median": 0.03365526461910773,
+        "p90": 0.14530176271184986,
+        "p95": 0.17429363315086047,
+        "maximum": 0.1989839407389129
+      },
+      "baseline_conditional_within_2cm": 0.3064633260711692,
+      "baseline_conditional_within_5cm": 0.6753812636165577,
+      "grid_cell_size": 0.05,
+      "hull_grid_cells": 2545,
+      "mesh_supported_within_5cm_cells": 316,
+      "missing_near_plane_cells": 2229,
+      "missing_near_plane_area": 5.572500000000001,
+      "gap_cells_with_at_least2_distinct_background_feature_rays": 1496,
+      "gap_cells_with_sparse_plane_support_within10cm_and_no_negative_witness": 358,
+      "photo_checked_candidate_samples": 250,
+      "samples_visible_in_at_least2_of6_source_views": 0,
+      "multiview_5x5_rgb_mean_std_255": {
+        "count": 0
+      },
+      "multiview_bright_neutral_sample_fraction": null,
+      "negative_witness_observations": 19966,
+      "maximum_negative_witness_count_per_cell": 93,
+      "interpretation": "Convex-hull/slab figures include finite wall extents and real openings. Gap cells are not automatically repairable."
+    },
+    {
+      "plane": 10,
+      "kind": "vertical",
+      "normal": [
+        -0.6784191557909821,
+        0.011837665095687674,
+        0.7345796884892292
+      ],
+      "offset": 2.326021126557418,
+      "center": [
+        0.094374706236999,
+        1.4787491430040236,
+        -3.103135699038501
+      ],
+      "support_points": 269,
+      "support_observations": 1333,
+      "distinct_images": 144,
+      "white_support_fraction": 0.1821561338289963,
+      "plane_hull_area": 11.739677966475929,
+      "local_extents": [
+        6.016385140970186,
+        2.065883454383923
+      ],
+      "sparse_inlier_absolute_residual": {
+        "count": 269,
+        "median": 0.013953737181402914,
+        "p90": 0.022748304759981245,
+        "p95": 0.024043701033114394,
+        "maximum": 0.024990070504702366
+      },
+      "independent_spatial_half_normal_difference_degrees": 0.47257231968799224,
+      "baseline_surface_points_within_20cm_parallel_slab": 10466,
+      "baseline_conditional_plane_residual": {
+        "count": 10466,
+        "median": 0.05525679674894457,
+        "p90": 0.09596763826919652,
+        "p95": 0.11401012824850931,
+        "maximum": 0.19993254130372584
+      },
+      "baseline_conditional_within_2cm": 0.06793426332887445,
+      "baseline_conditional_within_5cm": 0.41802025606726545,
+      "grid_cell_size": 0.05,
+      "hull_grid_cells": 4675,
+      "mesh_supported_within_5cm_cells": 1235,
+      "missing_near_plane_cells": 3440,
+      "missing_near_plane_area": 8.600000000000001,
+      "gap_cells_with_at_least2_distinct_background_feature_rays": 758,
+      "gap_cells_with_sparse_plane_support_within10cm_and_no_negative_witness": 569,
+      "photo_checked_candidate_samples": 250,
+      "samples_visible_in_at_least2_of6_source_views": 0,
+      "multiview_5x5_rgb_mean_std_255": {
+        "count": 0
+      },
+      "multiview_bright_neutral_sample_fraction": null,
+      "negative_witness_observations": 8101,
+      "maximum_negative_witness_count_per_cell": 222,
+      "interpretation": "Convex-hull/slab figures include finite wall extents and real openings. Gap cells are not automatically repairable."
+    },
+    {
+      "plane": 11,
+      "kind": "vertical",
+      "normal": [
+        0.7806567352603778,
+        -0.007457156979165118,
+        0.6249155562973266
+      ],
+      "offset": -1.5221310249234496,
+      "center": [
+        1.3319177185751832,
+        0.5552898039457707,
+        0.7785073766199841
+      ],
+      "support_points": 1020,
+      "support_observations": 8901,
+      "distinct_images": 139,
+      "white_support_fraction": 0.020588235294117647,
+      "plane_hull_area": 10.987537944385451,
+      "local_extents": [
+        5.116881130320028,
+        2.5077680940367824
+      ],
+      "sparse_inlier_absolute_residual": {
+        "count": 1020,
+        "median": 0.007550874172462696,
+        "p90": 0.018291791208344853,
+        "p95": 0.02129843414656902,
+        "maximum": 0.024969604339155183
+      },
+      "independent_spatial_half_normal_difference_degrees": 0.20548217492320262,
+      "baseline_surface_points_within_20cm_parallel_slab": 3154,
+      "baseline_conditional_plane_residual": {
+        "count": 3154,
+        "median": 0.07580496354268629,
+        "p90": 0.14726091949348705,
+        "p95": 0.1718839583371977,
+        "maximum": 0.19957592667261292
+      },
+      "baseline_conditional_within_2cm": 0.23303741280913126,
+      "baseline_conditional_within_5cm": 0.3906150919467343,
+      "grid_cell_size": 0.05,
+      "hull_grid_cells": 4397,
+      "mesh_supported_within_5cm_cells": 511,
+      "missing_near_plane_cells": 3886,
+      "missing_near_plane_area": 9.715000000000002,
+      "gap_cells_with_at_least2_distinct_background_feature_rays": 2022,
+      "gap_cells_with_sparse_plane_support_within10cm_and_no_negative_witness": 412,
+      "photo_checked_candidate_samples": 250,
+      "samples_visible_in_at_least2_of6_source_views": 38,
+      "multiview_5x5_rgb_mean_std_255": {
+        "count": 38,
+        "median": 6.865473969727498,
+        "p90": 25.017678814273808,
+        "p95": 41.81625555475,
+        "maximum": 49.09848945659587
+      },
+      "multiview_bright_neutral_sample_fraction": 0.42105263157894735,
+      "negative_witness_observations": 29496,
+      "maximum_negative_witness_count_per_cell": 145,
+      "interpretation": "Convex-hull/slab figures include finite wall extents and real openings. Gap cells are not automatically repairable."
+    },
+    {
+      "plane": 12,
+      "kind": "horizontal",
+      "normal": [
+        0.009562019920689906,
+        0.999946501024043,
+        -0.003944979696999385
+      ],
+      "offset": -2.320966000766949,
+      "center": [
+        0.553852011404626,
+        2.318925436809892,
+        0.7937480325437869
+      ],
+      "support_points": 307,
+      "support_observations": 1432,
+      "distinct_images": 122,
+      "white_support_fraction": 0.742671009771987,
+      "plane_hull_area": 7.181923274109666,
+      "local_extents": [
+        3.7357322896872533,
+        3.553578622934296
+      ],
+      "sparse_inlier_absolute_residual": {
+        "count": 307,
+        "median": 0.009636947940372398,
+        "p90": 0.021817597505125443,
+        "p95": 0.023575393216224195,
+        "maximum": 0.024897440809533045
+      },
+      "independent_spatial_half_normal_difference_degrees": 0.5593107930291625,
+      "baseline_surface_points_within_20cm_parallel_slab": 9061,
+      "baseline_conditional_plane_residual": {
+        "count": 9061,
+        "median": 0.023197558611696145,
+        "p90": 0.03603578523440465,
+        "p95": 0.04152468651894203,
+        "maximum": 0.1902498459073123
+      },
+      "baseline_conditional_within_2cm": 0.3948791524114336,
+      "baseline_conditional_within_5cm": 0.9810175477320384,
+      "grid_cell_size": 0.05,
+      "hull_grid_cells": 2873,
+      "mesh_supported_within_5cm_cells": 2274,
+      "missing_near_plane_cells": 599,
+      "missing_near_plane_area": 1.4975000000000003,
+      "gap_cells_with_at_least2_distinct_background_feature_rays": 3,
+      "gap_cells_with_sparse_plane_support_within10cm_and_no_negative_witness": 220,
+      "photo_checked_candidate_samples": 220,
+      "samples_visible_in_at_least2_of6_source_views": 30,
+      "multiview_5x5_rgb_mean_std_255": {
+        "count": 30,
+        "median": 1.9968638295189032,
+        "p90": 4.795198747552015,
+        "p95": 5.964536702618485,
+        "maximum": 9.49489781179251
+      },
+      "multiview_bright_neutral_sample_fraction": 0.9666666666666667,
+      "negative_witness_observations": 45,
+      "maximum_negative_witness_count_per_cell": 5,
+      "interpretation": "Convex-hull/slab figures include finite wall extents and real openings. Gap cells are not automatically repairable."
+    }
+  ],
+  "dominant_horizontal_mesh_height_bands": [
+    {
+      "y_center": 1.975,
+      "area_sample_count": 10521
+    },
+    {
+      "y_center": 0.025,
+      "area_sample_count": 10257
+    },
+    {
+      "y_center": 2.325,
+      "area_sample_count": 6156
+    },
+    {
+      "y_center": 2.025,
+      "area_sample_count": 3907
+    },
+    {
+      "y_center": -0.025,
+      "area_sample_count": 3056
+    },
+    {
+      "y_center": 1.925,
+      "area_sample_count": 2325
+    },
+    {
+      "y_center": 2.375,
+      "area_sample_count": 1885
+    },
+    {
+      "y_center": 0.07500000000000001,
+      "area_sample_count": 1054
+    },
+    {
+      "y_center": 0.325,
+      "area_sample_count": 505
+    },
+    {
+      "y_center": 0.525,
+      "area_sample_count": 374
+    },
+    {
+      "y_center": 0.42500000000000004,
+      "area_sample_count": 324
+    },
+    {
+      "y_center": 0.5750000000000001,
+      "area_sample_count": 291
+    }
+  ],
+  "mesh_informed_high_ceiling_seed_tests": [],
+  "limits": [
+    "In-sample SfM support is not independent ground truth.",
+    "Planar furniture/doors can fit alongside walls; white RGB support is descriptive only.",
+    "Convex hulls bridge actual openings and occlusion boundaries; missing cells must not be filled by hull alone.",
+    "Conditional mesh residual excludes surfaces farther than20cm or normals differing >31.8deg, so it cannot validate arbitrary absent geometry.",
+    "Six upright source views have limited wall/ceiling overlap. RGB agreement alone, especially on textureless white paint, cannot prove a proposed plane patch.",
+    "Sparse point colors favor textured/dark corners and do not classify the material of the surrounding white wall.",
+    "A background-track ray crossing a proposed patch is strong negative evidence; no such witness is not positive evidence that a wall exists."
+  ],
+  "geometry_mutated": false,
+  "gpu_used": false,
+  "linear_algebra_threads": 4,
+  "process_logical_cpu_affinity_maximum": 8,
+  "elapsed_seconds": 9.970706399995834
+}

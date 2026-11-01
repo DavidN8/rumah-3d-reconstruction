@@ -1,0 +1,14 @@
+{
+  "file": "../clean-final.sog",
+  "format": "sog",
+  "sha256": "cbb33c91b5b481460b2c75e2125f3efa1458e6634abc3da1ce051a0989fd315c",
+  "bytes": 45177102,
+  "splats": 2997908,
+  "shDegree": 2,
+  "description": "Fresh full Osmo reconstruction from explicit calibrated pinholes, validated scale-only depth, dense seed and per-frame masks; native Gaussian delivery.",
+  "cameras": "../clean-cameras.json",
+  "packingReport": "../clean-final.sog.json",
+  "newTraining": true,
+  "provisional": false,
+  "releaseId": "20261031-osmo-clean-v1"
+}

@@ -1,0 +1,13 @@
+{
+  "cause": "The broad automatic export filters removed useful room surfaces. Remeshing caused smaller additional losses; it was not the largest observed regression.",
+  "controlled_comparison": "Same camera, same corrected transforms, same roof cut in each render. Original source meshes, compact untrimmed meshes and previously delivered meshes compared independently.",
+  "original_triangles": 11641867,
+  "compact_before_trimming_triangles": 1082185,
+  "previous_published_triangles": 957841,
+  "source_faces_deleted_by_previous_cleanup": 125496,
+  "previous_inferred_repair_triangles": 1152,
+  "floor_display_clipping": "Not the main cause in this comparison; most gaps were already present in the exported trimmed geometry.",
+  "older_bedroom_workflow": "Preserved about 9.08M scanned triangles with inspected local debris removal and separately labelled doorway repair. No global remesh or decimation.",
+  "correction": "Surface-preserving export now retains all 1,082,185 compact triangles. Broad overlap/height cuts and display floor clipping disabled; optional inferred patch/replacement disabled.",
+  "remaining": "Original mesh warping, some holes and ghost surfaces remain. Full visual-quality gate remains partial."
+}

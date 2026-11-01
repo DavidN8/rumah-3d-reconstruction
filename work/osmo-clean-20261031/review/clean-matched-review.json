@@ -1,0 +1,206 @@
+{
+  "purpose": "Compare real matched-camera screenshots and create an auditable contact sheet.\n\nRun only after all seven original PLY and SOG PNGs have been captured by the\nbrowser's Save render PNG control. No generated or repaired reference imagery.\n",
+  "scope": "Source timestamps held out from Gaussian training still participate in SfM pose estimation. Source comparisons are appearance diagnostics, not independent geometric ground truth. Packing comparison uses the same browser renderer, exact cameras, all source splats, SH2, and no LoD.",
+  "poses": [
+    {
+      "pose": 1,
+      "name": "cam0/frame_000027_train.jpg",
+      "timestampSeconds": 0.9009,
+      "split": "train",
+      "validFraction": 1.0,
+      "nativeVsSource": {
+        "rmse255": 16.126531537948402,
+        "psnrDb": 23.979984203748884,
+        "ssim": 0.8105363015427262
+      },
+      "packedVsSource": {
+        "rmse255": 16.139838793999658,
+        "psnrDb": 23.972819755885002,
+        "ssim": 0.8098055521543666
+      },
+      "packingVsNative": {
+        "rmse255": 2.368958788316238,
+        "psnrDb": 40.63965349732662,
+        "ssim": 0.9507554337635586
+      },
+      "sha256": {
+        "fresh-01-cam0-frame_000027_train.jpg": "9e81f90b1ecf0a1df6ef9db87526c5caafafea7d1b0d7c1efcc283c95ff72e50",
+        "fresh-01-cam0-frame_000027_train-valid.png": "3b252db6ddda4c92fc411a6cb87dae1d47b2b2efcd0ecda3f73a01e90a675fed",
+        "clean-fullNative-pose-1.png": "eb9feb81ccb30267141bdf312f437652021d81e0b3d27e8deab09ccd37fa1b78",
+        "clean-fullSog-pose-1.png": "cf2cfbe3bcbf5a79648f1db720ec13dfd69b493a7873ded38bc95ebc2b996606"
+      }
+    },
+    {
+      "pose": 2,
+      "name": "cam0/frame_000357_train.jpg",
+      "timestampSeconds": 11.911900000000001,
+      "split": "train",
+      "validFraction": 1.0,
+      "nativeVsSource": {
+        "rmse255": 12.119649105664918,
+        "psnrDb": 26.461002686792394,
+        "ssim": 0.8958242823194077
+      },
+      "packedVsSource": {
+        "rmse255": 12.178550892936805,
+        "psnrDb": 26.41889130192391,
+        "ssim": 0.8939186109679932
+      },
+      "packingVsNative": {
+        "rmse255": 2.2509479484578643,
+        "psnrDb": 41.08349456125771,
+        "ssim": 0.9544991662617226
+      },
+      "sha256": {
+        "fresh-02-cam0-frame_000357_train.jpg": "7ba9efc2de120c0ee802b34f475f6e8ffa8c562832e3a26012da935f3eaec136",
+        "fresh-02-cam0-frame_000357_train-valid.png": "3b252db6ddda4c92fc411a6cb87dae1d47b2b2efcd0ecda3f73a01e90a675fed",
+        "clean-fullNative-pose-2.png": "b16f4ec42adf3268501e55b3dfd4f339ed5ff07d13906654d7941f83edeee02f",
+        "clean-fullSog-pose-2.png": "2e90125049a5db2c3b51516777a70f172a1bc764b362804acae639f3e5ae57d1"
+      }
+    },
+    {
+      "pose": 3,
+      "name": "cam1/frame_000600_train.jpg",
+      "timestampSeconds": 20.02,
+      "split": "train",
+      "validFraction": 1.0,
+      "nativeVsSource": {
+        "rmse255": 9.941846743269918,
+        "psnrDb": 28.181462327339265,
+        "ssim": 0.8834443531004964
+      },
+      "packedVsSource": {
+        "rmse255": 10.01786921973449,
+        "psnrDb": 28.115296452542285,
+        "ssim": 0.8819813643167153
+      },
+      "packingVsNative": {
+        "rmse255": 2.242190975445751,
+        "psnrDb": 41.11735160362457,
+        "ssim": 0.9550809046205629
+      },
+      "sha256": {
+        "fresh-03-cam1-frame_000600_train.jpg": "ac531ed57965e2e98da36cea69c27c541854471e99ee5e2919fe26d7f351b7d0",
+        "fresh-03-cam1-frame_000600_train-valid.png": "3b252db6ddda4c92fc411a6cb87dae1d47b2b2efcd0ecda3f73a01e90a675fed",
+        "clean-fullNative-pose-3.png": "e50d1522f6362c29ec5563965d4aaae72044489bba92cc65c7c203f3a6f87535",
+        "clean-fullSog-pose-3.png": "52340c64695e385375659614aa819035db2192147ee7b4c18424a93e93176ccc"
+      }
+    },
+    {
+      "pose": 4,
+      "name": "cam0/frame_000750_eval.jpg",
+      "timestampSeconds": 25.025000000000002,
+      "split": "eval",
+      "validFraction": 0.9987527777777778,
+      "nativeVsSource": {
+        "rmse255": 14.031623809528199,
+        "psnrDb": 25.18864495545205,
+        "ssim": 0.9146569470515511
+      },
+      "packedVsSource": {
+        "rmse255": 14.131186649651223,
+        "psnrDb": 25.12723095379329,
+        "ssim": 0.9163605414540938
+      },
+      "packingVsNative": {
+        "rmse255": 2.5310241668805404,
+        "psnrDb": 40.06487776997268,
+        "ssim": 0.9380403800578292
+      },
+      "sha256": {
+        "fresh-04-cam0-frame_000750_eval.jpg": "7fd2d87684d829d07fa14ea36e767a151626260a5fc60ba454bdb0bbc7a30d40",
+        "fresh-04-cam0-frame_000750_eval-valid.png": "09653b8ff32f86c4f3549c971c15a297f142dd2e2e97a64b72013725d14f8c76",
+        "clean-fullNative-pose-4.png": "ef365d12a81a62e736a3950def7a779c597e7ce88b8e2db2c177045176558fd9",
+        "clean-fullSog-pose-4.png": "f78aecd78c36e3fb97e9cc2c3366e0daf6d59a6f6f50626ac428f1d593c9df21"
+      }
+    },
+    {
+      "pose": 5,
+      "name": "cam0/frame_001197_train.jpg",
+      "timestampSeconds": 39.9399,
+      "split": "train",
+      "validFraction": 1.0,
+      "nativeVsSource": {
+        "rmse255": 13.529504658201507,
+        "psnrDb": 25.505165678423253,
+        "ssim": 0.8553522986986366
+      },
+      "packedVsSource": {
+        "rmse255": 13.647143847163962,
+        "psnrDb": 25.42996822393823,
+        "ssim": 0.8527448409600753
+      },
+      "packingVsNative": {
+        "rmse255": 2.4939809022405806,
+        "psnrDb": 40.19294113812444,
+        "ssim": 0.948663535937779
+      },
+      "sha256": {
+        "fresh-05-cam0-frame_001197_train.jpg": "6b6a89da28a0c164aea8c5892f085db604a1b8eacc44e6c8023c898b4eab1e6f",
+        "fresh-05-cam0-frame_001197_train-valid.png": "3b252db6ddda4c92fc411a6cb87dae1d47b2b2efcd0ecda3f73a01e90a675fed",
+        "clean-fullNative-pose-5.png": "277c3cf6debc35b34d0124b25f58438adfa5ac575ef9038ca97684844e908487",
+        "clean-fullSog-pose-5.png": "a3552383c4908a43815a4a5640cd59c22f422418d29e1222c98ecd86fd518c74"
+      }
+    },
+    {
+      "pose": 6,
+      "name": "cam0/frame_001557_eval.jpg",
+      "timestampSeconds": 51.9519,
+      "split": "eval",
+      "validFraction": 0.959225,
+      "nativeVsSource": {
+        "rmse255": 10.334032378745203,
+        "psnrDb": 27.84540724968396,
+        "ssim": 0.8694963725641134
+      },
+      "packedVsSource": {
+        "rmse255": 10.464406284202084,
+        "psnrDb": 27.736511749851832,
+        "ssim": 0.869673340352462
+      },
+      "packingVsNative": {
+        "rmse255": 2.272066077221184,
+        "psnrDb": 41.00238445737794,
+        "ssim": 0.9589450153727732
+      },
+      "sha256": {
+        "fresh-06-cam0-frame_001557_eval.jpg": "961d8b109cc151d9f64cd45eb56bc553d39d21a98185abb9c8dcc7a70df69c2b",
+        "fresh-06-cam0-frame_001557_eval-valid.png": "639253aff9a930def45a83a8369485291a01d34733dfba485fc1fe7e21d7bba1",
+        "clean-fullNative-pose-6.png": "77683f704d6d21c8183ff64719d735119ce180b6dace4396640a45816171d18e",
+        "clean-fullSog-pose-6.png": "0fc30bb8334e9797648a134d6d5a70f7c685f7f418268e0925d00558c5ba0763"
+      }
+    },
+    {
+      "pose": 7,
+      "name": "cam0/frame_001800_train.jpg",
+      "timestampSeconds": 60.06,
+      "split": "train",
+      "validFraction": 1.0,
+      "nativeVsSource": {
+        "rmse255": 13.021245922352069,
+        "psnrDb": 25.837752785303785,
+        "ssim": 0.8318369052876345
+      },
+      "packedVsSource": {
+        "rmse255": 13.09252992415197,
+        "psnrDb": 25.79033210480577,
+        "ssim": 0.8307610874815691
+      },
+      "packingVsNative": {
+        "rmse255": 2.4691061510565286,
+        "psnrDb": 40.28000838090228,
+        "ssim": 0.9444190423058143
+      },
+      "sha256": {
+        "fresh-07-cam0-frame_001800_train.jpg": "006bb010285d48fc68e20065dcd969cdabb07e07d298a71efd5691caab8bbeb4",
+        "fresh-07-cam0-frame_001800_train-valid.png": "3b252db6ddda4c92fc411a6cb87dae1d47b2b2efcd0ecda3f73a01e90a675fed",
+        "clean-fullNative-pose-7.png": "a7e7d9207cd55e172eb37862ed5b7341242ff75570b0df736fa828d9a5c6f877",
+        "clean-fullSog-pose-7.png": "933a35d3949f9d7457843a165a1d5807fcaea891cf334a389ff7f419b43954d5"
+      }
+    }
+  ],
+  "packingMinimumPsnrDb": 40.06487776997268,
+  "packingMeanRmse255": 2.3754678585169553,
+  "evalMeanSourcePsnrDb": 26.517026102568003,
+  "contactSheet": "renders/clean-seven-source-native-sog.jpg"
+}

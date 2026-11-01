@@ -1,0 +1,99 @@
+V4 QUICK GEOMETRY GATE, 2026-10-31
+
+Recommendation: accept the bounded v4 training result for final extraction,
+subject to calibrated/orbit visual review. Do not claim final delivery ready
+from these tests. No GPU extraction was launched by this QA helper.
+
+The v4 probe uses the original v3 geometry controls (cull1/merge1 and implicit
+degenerate-angle15), isolating the combined training change. All4711 original
+masked, stable SfM observations and their tolerances are reused exactly.
+
+                           Original v3    V3 dense5cm    V4 probe
+Faces                      1,523,311      4,428,334      1,683,387
+Near-consistent rays        2885/61.240%   2928/62.152%   3030/64.318%
+Early occluding rays        917/19.465%    932/19.783%    886/18.807%
+Behind observed point       814/17.279%    827/17.555%    726/15.411%
+Missing mesh hit            95/2.017%      24/.509%       69/1.465%
+Median abs hit error        .03811        .03814         .03429
+P90 abs hit error           .21095        .20807         .20457
+Surface area                125.98        182.78         120.13
+Area below floor-.10        4.913         7.146          1.932
+Underfloor area fraction    3.900%        3.910%         1.608%
+
+V4 improves near/early/behind/missing compared with the directly controlled
+v3 baseline and removes underside area instead of adding a closed shell.
+This is stronger evidence of actual geometry improvement than alpha coverage.
+Versus dense5cm, v4 improves near by102 observations and reduces early by46,
+but has45 more misses because the conservative cull1 remains enabled.
+
+Paired changes vs original v3:
+308 new near observations and163 lost near (net+145).
+96 newly early-occluded and127 resolved early occlusions (net-31).
+Of95 original misses:39 become near,24 early,18 behind and14 stay missing.
+The counts are a net improvement, not a guarantee every local surface improved.
+Largest per-image loss is5/20 near observations at cam0/frame_000043.jpg,
+near the bathroom/mirror segment; visually review it. The six standard cam0
+presets have no losses except frame61 (one lost/one gained near; one new early).
+
+Next extraction recommendation: root's planned v4 cull0/merge1/explicit
+degenerate-angle2, retaining its valid native UVs/materials; apply5cm spatial
+support relative to v4-probe vertices plus the same good sparse points.
+Using v4 as support reference avoids dragging the refined surfaces toward old
+v3 positions. Re-run fixed-ray and below-floor QA after filtering. Do not loosen
+support merely to improve alpha: v3's8/12cm variants gained no near rays and
+added unsupported backside/underside area.
+
+Evidence files: qa-v4-probe.json/npz, qa-v4-comparison.json,
+qa-baseline-v4-paired.json, qa-dense5-v4-paired.json.
+Units are the existing approximate normalized world units. These are in-sample
+geometric consistency checks; the SfM points participated in reconstruction,
+and this does not establish independent metric accuracy or wall planarity.
+
+FINAL SUPPORTED EXTRACTION ADDENDUM
+
+Root completed v4 texture extraction cull0/merge1/degenerate-angle2/4K.
+CPU5cm filtering used v4-probe as the support reference plus25,676 good sparse
+points, not the old v3 geometry. It kept2,366,966 of2,577,478 native faces.
+Output: recovery-v2/exports/v4-supported-05cm.glb,121,264,520 uncompressed bytes.
+SHA256: acac076b2736787a29b7ce6197bad4448e44ecbe8205cfd669248788f6de0c6a
+This is an intermediate float source; packed website size is root's next step.
+
+Confirmed byte preservation of retained position/normal/UV attributes and
+native embedded image; node/material/texture/sampler JSON unchanged.
+No vertex movement, normal rewrite, UV unwrap, height crop or invented caps.
+
+Actual final supported geometry on the identical4711 observations:
+  Near3046 (64.657%), early892 (18.934%), behind762 (16.175%), missing11 (.2335%).
+  Median absolute hit error.03459; P90.20156 world units.
+  Total area161.194; area below floor-.10=3.251 (2.017%).
+  Largest physical component98.985% of area;867 position-welded components.
+
+Versus original v3: +161 near, -25 early, -52 behind and -84 missing rays;
+underside area3.251 vs4.913. Paired transitions:307 new-near/146 lost-near,
+95 new-early/120 resolved-early. This improves all headline categories.
+
+Versus conservative v4 probe: +16 near, +6 early, +36 behind, -58 missing;
+underside grows1.932->3.251 as more extracted surfaces are retained.
+Paired transitions:62 new-near/46 lost-near;25 new-early/19 resolved-early.
+This is a small explicit occlusion tradeoff, not all59 recovered probe misses
+becoming near-consistent:21 become near,7 early,31 behind;10 remain missing.
+One previously hit observation becomes missing (hence net58 fewer misses).
+
+Recommendation: use supported v4 geometry for root's final photo-texture and
+visual review. Root approved the bake and format agent was notified READY.
+Do not run further geometry/training trials. Root owns final browser review,
+compression, texture choice and deployment.
+
+Appearance limitation: format agent found strict multi-view photo consensus
+reduced but did not fully eliminate clothing-like wall contamination. Source
+operator masks were manually anchored per-frame polygons, not general person
+segmentation; reflected operator in the bathroom mirror is unmasked. Photo
+render RMSE and source texture support remain appearance checks, not geometry
+ground truth. Native Gaussian DC atlas alone can blur actual source detail.
+
+Final evidence: qa-v4-supported-support.json (all byte/hash checks),
+qa-v4-supported-05cm.json/npz (geometry/rays),
+qa-baseline-v4-supported-paired.json, qa-v4probe-supported-paired.json,
+qa-v4-texture-pipeline.json/log. CPU pipeline completed successfully; no GPU
+job was launched during filter/QA. The only GPU training run this helper
+launched was root's authorized bounded40k->50k v4 trial, now complete.

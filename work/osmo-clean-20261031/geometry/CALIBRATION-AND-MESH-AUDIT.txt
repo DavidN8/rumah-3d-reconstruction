@@ -1,0 +1,165 @@
+Osmo clean-v3 calibration, holdout, and geometry audit
+2026-10-31 — implementation candidate notes; no production model changed
+
+CALIBRATION DECISION
+
+Use the original dual-fisheye stream images, their exact synchronized source-frame
+names, and one calibrated camera per lens. Keep the two-lens rig throughout SfM.
+sfm-manifest-native3840.json uses source native_refine slots 1/2. The source
+calibration is KB5; the installed SfM model OPENCV_FISHEYE is KB4. Pixel-valued
+intrinsics from the previously independently fitted calibration are scaled by 2
+to match native 3840-square images. The dimensionless distortion stays unchanged.
+No previous reconstructed camera pose, sparse XYZ, or learned depth is reused.
+
+Dense radial validation at 100,001 angles gives maximum error 1.21098/1.08765
+native pixels and RMS 0.25427/0.22837 pixels for lenses 0/1 respectively. Validation
+extends to 98.9306/98.9706 degrees. This is not exact KB5. Native tangential p terms
+remain omitted. Inspect fresh residuals by lens and image radius if a systematic
+edge error remains; native resolution alone does not eliminate calibration error.
+
+Quaternion order is w,x,y,z. cam_extri_q maps body to lens, hence cam1_from_cam0
+is q1 * inverse(q0). In the cam0 reference frame, cam0 is fixed identity and cam1
+starts with zero translation but has axial refinement enabled. In Spirula, axial
+means three rotation parameters and cam1's own t.z. The translation is part of
+cam_from_rig, not an absolute camera-center coordinate. The model scale is unknown.
+
+Gemini's proposed far_XX metric baseline is not defensible for this clip. Direct
+decoding of djmd-first.bin finds all 24 raw calibration slots, but 13-24 are 202-byte
+placeholder records without fx, fy, width, height, or cam_extri_q. Only 1/2/3/4/11/12
+have usable intrinsics. Therefore the six far-distance focal changes needed by
+calib_slots.py do not exist here. More generally, that script itself labels its
+parallax-from-stitching approximation research-only; it is not a surveyed optical
+center separation. Do not insert an invented millimetre baseline into arbitrary
+SfM units. The prior accepted model already refined a nonzero baseline; zero was
+an initialization, not its final enforced physical model.
+
+make_native_manifest.py reproduces the manifest and raw-slot audit. Source hashes,
+radial-error measurements, conventions, and limitations are in manifest-validation.json.
+
+TIMESTAMP HOLDOUT AND SPARSE INITIALIZATION
+
+Official v2026.10.30 DatasetCommon.cpp still splits sorted image indices for interval
+and fraction modes. It does not group rig timestamps. Filename mode examines only
+the filename, not the containing folder. Use identical frame_NNNNNN_train.jpg or
+frame_NNNNNN_eval.jpg basenames in both lenses. The source frame comes before the
+suffix so alphabetical image sorting preserves chronology. Use eval_mode=filename
+and validation_fraction=0. Both lens images from one timestamp have the same split.
+
+normalize_fresh_sfm.py requires a NEW clean-v3 SfM root and the selected frame list.
+It selects a single component only after both registered-image fraction and complete
+pair fraction reach 90%. room-coverage.json records visually verified bathroom
+573-687 and entry-threshold 546-564 intervals; their counts, gaps, and crossing
+camera motions are reported for review without an arbitrary room 100% gate.
+
+The helper recomputes projection residuals from actual XYZ and calibrated fisheye
+math rather than trusting native point.error placeholders. It accepts only a single
+declared source-up transform, then rotates Z-up to Y-up if requested. Optional
+unit-camera-height makes median height one ARBITRARY unit, never 1.5 metres.
+There is no room-specific deformation, crop, floor clamp, or cap.
+
+Prepared sparse points need valid unmasked observations at two distinct TRAIN
+timestamps, not merely two lenses at the same instant. All eval track links are
+removed, and eval images retain their poses with all point IDs set to -1. Seed
+colors are recomputed only from train RGB; native points3D colors are discarded
+because they could have incorporated eval pixels. The initial seed is sparse SfM,
+with no learned-depth points or prior checkpoint. Projection-ray invariance and
+exported track consistency are checked. Existing prepared files cannot be overwritten.
+
+This is a held-out timestamp photometric check within one video. SfM poses and
+triangulated XYZ were solved using all images, so it is not an independent capture
+or a held-out geometric ground truth. The helper states this explicitly.
+
+8 small CPU integration checks passed, including same-time lens leakage, eval and
+masked-point exclusion, train-only color, track round-trip, ray invariance, pair
+registration, a 100-degree fisheye ray, and overwrite protection. No capture SfM or
+GPU job was run by these tests. See preparation-synthetic-tests.json.
+
+MASK MEANING DURING TRAINING
+
+Explicit apply_loss_for_mask=false is the correct setting for a moving operator,
+hands, reflection exclusion, and the unobserved black fisheye border. False means
+excluded pixels are ignored, not trained as empty space. True introduces alpha
+supervision that cuts the scene away along masked rays and is appropriate for
+foreground object cutouts, not an operator hiding a room wall.
+
+Version distinction matters: v2026.10.16 TrainerCore defaulted this flag to true
+for dense seeds if unspecified. Official v2026.10.30 removed that dense-seed default:
+it now auto-enables only for image alpha with no separate mask files. Keep false
+explicit regardless, because it documents the intended semantics. This is a source
+contract finding, not evidence that a previous run necessarily used the bad default.
+
+NATIVE MESHING: WHAT THE SOURCE ACTUALLY DOES
+
+The existing v2026.10.16 source is commit
+65246c5579c127081bff6f4422bd12a542906f78. Relevant official v2026.10.30 files were
+downloaded separately under geometry/source-v2026.10.30, with URL and SHA256 in
+download-provenance.json. The old runtime and repository were not edited. The
+v2026.10.30 Vulkan occupancy shader is unchanged from the inspected older source.
+
+mesh_main.cpp parses mask_dir but MeshCameras carries only poses, intrinsics,
+distortion, sizes, and camera models. MeshingRasterHost.cpp RenderContext does not
+carry source bitmap masks. mesh_sample_occ receives Gaussian-rendered moments, not
+a source foreground mask. Thus a mask path in the mesh CLI configuration does not
+establish that source masked pixels abstain during native occupancy evaluation.
+
+The native occupancy is reconstructed from rendered Gaussian transmittance. For a
+camera with positive moment m0, occupancy is approximately
+  min(m0, 1 - exp(-max(c0 + c1*ray_range, 0)^2)).
+The four bilinear corners are evaluated separately, abstaining corners are removed,
+and valid corner weights are renormalized. m0 <= 0 abstains for that camera/ray.
+Zero contributions across ALL cameras finally become occupancy=0 (free space),
+so an unobserved region is not explicitly represented as UNKNOWN in the final field.
+
+carve-k is the kth-SMALLEST per-camera occupancy, using min(k, count) if fewer
+cameras contribute. k=1 uses the most aggressive free-space vote. k=3 tolerates
+two low-occupancy outlier views when enough cameras contribute. It does not require
+three independent timestamps, three geometric depth confirmations, or three masks.
+Adjacent frames and the two lenses can dominate this count. Increasing k is not a
+substitute for fixing masks and camera/depth consistency.
+
+cull-unseen projects a mesh vertex into a camera and casts a segment between that
+vertex and the camera center against the mesh's own triangles. It checks neither
+source foreground masks nor actual source RGB depth. A face is removed if ANY of
+its three vertices is unseen. This can expose holes around otherwise visible faces.
+Simply disabling it can retain false back shells and below-floor surfaces. The old
+support filter against a previously culled probe cannot independently demonstrate
+that its missing areas are invalid: it reuses the old extraction's visibility bias.
+
+There is no existing CLI flag that means 'read each source mask and make masked
+occupancy rays abstain'. A proper native fix must plumb per-camera source mask data
+through load_cameras / RenderContext into both CUDA and Vulkan sampling kernels,
+align its pixels with camera/downscale transforms, and treat masks as UNKNOWN,
+never a zero occupancy assertion. Masked bilinear corners must be excluded before
+normalization. The visibility cull also needs source-validity checks. Unknown-only
+samples require an explicit support policy; merely writing m0=0 still makes the
+all-unseen final sample occupancy zero. These are source changes requiring compiled
+backend parity and synthetic semantic tests, not an unverified CLI workaround.
+
+INDEPENDENT NEGATIVE-RAY CANDIDATE AUDIT
+
+negative_ray_audit.py is a conservative CPU alternative for assessing a candidate
+mesh without the old circular probe. It takes unmasked, low-reprojection train
+feature observations from the fresh prepared model and casts rays toward their
+triangulated positions. A mesh hit significantly before a reliable feature is an
+observed-free-space contradiction. A candidate face needs distinct sparse points,
+distinct timestamps, and translated viewpoints; near-surface support vetoes whole-
+face deletion. It writes a JSON report and exact face IDs in NPZ, never edits meshes.
+
+This audit does NOT remove unseen faces just because no witness exists. It does
+not close holes, restore unobserved walls, or guarantee removal of back shells
+behind already observed surfaces. Incorrect/reflected SfM points remain possible;
+masks and track/reprojection gates lower that risk without eliminating it. Any
+candidate deletion needs visual review and a new audit of the resulting artifact.
+6 CPU checks passed using actual triangle intersection plus rejection/veto cases;
+see negative-ray-synthetic-tests.json. No current model was meshed or filtered.
+
+PRIMARY SOURCE REFERENCES
+
+https://github.com/colmap/colmap/blob/main/doc/rigs.rst
+https://raw.githubusercontent.com/harry7557558/spirula-studio/v2026.10.30/src/sfm/core/Rig.h
+https://raw.githubusercontent.com/harry7557558/spirula-studio/v2026.10.30/src/data/parsers/DatasetCommon.cpp
+https://raw.githubusercontent.com/harry7557558/spirula-studio/v2026.10.30/src/app/TrainerCore.cpp
+https://raw.githubusercontent.com/harry7557558/spirula-studio/v2026.10.30/src/app/cli/mesh_main.cpp
+https://raw.githubusercontent.com/harry7557558/spirula-studio/v2026.10.30/src/mesh/MeshingRasterHost.cpp
+https://raw.githubusercontent.com/harry7557558/spirula-studio/v2026.10.30/src/backend/vulkan/shaders/meshing_raster.slang
+https://github.com/Kemerd/OpenOSV

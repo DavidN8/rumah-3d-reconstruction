@@ -1,0 +1,325 @@
+{
+  "scope": "Six training-geometry camera poses, not held-out geometry validation. Source is calibrated/masked virtual pinhole reprojected from fisheye, not native pinhole photo. Black metric is a display proxy; not geometric completeness. All screenshots 600x600, no lighting/ceiling clipping, matched projection. Original PLY and SPZ render through Spark 2.4.0, not a claim of bit-identical Spirula backend.",
+  "renderer": "Three 0.180.0 and Spark 2.4.0; 3D mip splats, sortRadial false, LoD false, extSplats true, blurAmount .3, preBlurAmount 0; all 2,997,515 splats",
+  "spz_file_bytes": 48377598,
+  "cameras": [
+    {
+      "view": "cam0/frame_000003.jpg",
+      "camera": {
+        "name": "cam0/frame_000003.jpg",
+        "label": "Capture ~1s \u00b7 reprojected source",
+        "sourceFile": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\lite-v1\\review\\photos\\osmo-upright-01-frame_000003.jpg",
+        "position": [
+          0.36702162862946286,
+          1.541369844480851,
+          -0.35076081614372406
+        ],
+        "quaternion": [
+          -0.0,
+          -0.8605465092957088,
+          -0.0,
+          0.5093718733292706
+        ],
+        "imageWidth": 1200,
+        "imageHeight": 1200,
+        "intrinsics": [
+          600.0,
+          600.0,
+          600.0,
+          600.0
+        ]
+      },
+      "valid_source_fraction": 1.0,
+      "native": {
+        "source_valid_rgb_mae_255": 6.3992305555555555,
+        "source_valid_rgb_rmse_255": 10.83919742997266,
+        "near_black_fraction_in_source_valid_pixels": 0.0
+      },
+      "mesh": {
+        "source_valid_rgb_mae_255": 14.150611111111111,
+        "source_valid_rgb_rmse_255": 30.02785096095512,
+        "near_black_fraction_in_source_valid_pixels": 0.021591666666666665
+      },
+      "compressed": {
+        "source_valid_rgb_mae_255": 6.384687037037037,
+        "source_valid_rgb_rmse_255": 10.820412893470618,
+        "near_black_fraction_in_source_valid_pixels": 0.0
+      },
+      "spz_vs_ply": {
+        "all_pixel_rgb_rmse_255": 1.5525227379500282,
+        "all_pixel_rgb_mae_255": 1.1236064814814815,
+        "psnr_db": 44.31004421890271
+      },
+      "sog_vs_ply": {
+        "all_pixel_rgb_rmse_255": 1.6858987601957687,
+        "all_pixel_rgb_mae_255": 1.2250083333333333,
+        "psnr_db": 43.59417378307612
+      }
+    },
+    {
+      "view": "cam0/frame_000025.jpg",
+      "camera": {
+        "name": "cam0/frame_000025.jpg",
+        "label": "Capture ~12s \u00b7 reprojected source",
+        "sourceFile": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\lite-v1\\review\\photos\\osmo-upright-02-frame_000025.jpg",
+        "position": [
+          -0.19639896747464888,
+          1.5822303752058904,
+          -1.10886475847726
+        ],
+        "quaternion": [
+          0.0,
+          0.8045657254040841,
+          0.0,
+          0.5938636152392232
+        ],
+        "imageWidth": 1200,
+        "imageHeight": 1200,
+        "intrinsics": [
+          600.0,
+          600.0,
+          600.0,
+          600.0
+        ]
+      },
+      "valid_source_fraction": 1.0,
+      "native": {
+        "source_valid_rgb_mae_255": 5.452937962962963,
+        "source_valid_rgb_rmse_255": 8.759132218560366,
+        "near_black_fraction_in_source_valid_pixels": 0.0
+      },
+      "mesh": {
+        "source_valid_rgb_mae_255": 12.06284537037037,
+        "source_valid_rgb_rmse_255": 21.094131336745104,
+        "near_black_fraction_in_source_valid_pixels": 0.013791666666666667
+      },
+      "compressed": {
+        "source_valid_rgb_mae_255": 5.4616,
+        "source_valid_rgb_rmse_255": 8.777562092990074,
+        "near_black_fraction_in_source_valid_pixels": 0.0
+      },
+      "spz_vs_ply": {
+        "all_pixel_rgb_rmse_255": 1.3347142154922293,
+        "all_pixel_rgb_mae_255": 0.9438046296296296,
+        "psnr_db": 45.623037888993714
+      },
+      "sog_vs_ply": {
+        "all_pixel_rgb_rmse_255": 1.4829050567745081,
+        "all_pixel_rgb_mae_255": 1.054075925925926,
+        "psnr_db": 44.708536685736306
+      }
+    },
+    {
+      "view": "cam0/frame_000041.jpg",
+      "camera": {
+        "name": "cam0/frame_000041.jpg",
+        "label": "Capture ~20s \u00b7 reprojected source",
+        "sourceFile": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\lite-v1\\review\\photos\\osmo-upright-03-frame_000041.jpg",
+        "position": [
+          -0.6527362857465422,
+          1.5536895938488104,
+          -3.1211721182317356
+        ],
+        "quaternion": [
+          0.0,
+          0.9465912411753241,
+          0.0,
+          0.3224360744863381
+        ],
+        "imageWidth": 1200,
+        "imageHeight": 1200,
+        "intrinsics": [
+          600.0,
+          600.0,
+          600.0,
+          600.0
+        ]
+      },
+      "valid_source_fraction": 1.0,
+      "native": {
+        "source_valid_rgb_mae_255": 7.449040740740741,
+        "source_valid_rgb_rmse_255": 13.706870742644199,
+        "near_black_fraction_in_source_valid_pixels": 0.0
+      },
+      "mesh": {
+        "source_valid_rgb_mae_255": 19.099196296296295,
+        "source_valid_rgb_rmse_255": 33.5100456745602,
+        "near_black_fraction_in_source_valid_pixels": 0.028666666666666667
+      },
+      "compressed": {
+        "source_valid_rgb_mae_255": 7.472912962962963,
+        "source_valid_rgb_rmse_255": 13.754779909921146,
+        "near_black_fraction_in_source_valid_pixels": 0.0
+      },
+      "spz_vs_ply": {
+        "all_pixel_rgb_rmse_255": 1.6117732355895984,
+        "all_pixel_rgb_mae_255": 1.1569518518518518,
+        "psnr_db": 43.98472481289173
+      },
+      "sog_vs_ply": {
+        "all_pixel_rgb_rmse_255": 1.7681092118942159,
+        "all_pixel_rgb_mae_255": 1.290213888888889,
+        "psnr_db": 43.180621871855635
+      }
+    },
+    {
+      "view": "cam0/frame_000061.jpg",
+      "camera": {
+        "name": "cam0/frame_000061.jpg",
+        "label": "Capture ~30s \u00b7 reprojected source",
+        "sourceFile": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\lite-v1\\review\\photos\\osmo-upright-04-frame_000061.jpg",
+        "position": [
+          0.5430918288353827,
+          1.5314572333156735,
+          -0.08721521441854906
+        ],
+        "quaternion": [
+          0.0,
+          0.9932559081346726,
+          0.0,
+          0.11594266236190512
+        ],
+        "imageWidth": 1200,
+        "imageHeight": 1200,
+        "intrinsics": [
+          600.0,
+          600.0,
+          600.0,
+          600.0
+        ]
+      },
+      "valid_source_fraction": 1.0,
+      "native": {
+        "source_valid_rgb_mae_255": 12.749721296296297,
+        "source_valid_rgb_rmse_255": 17.056303412847434,
+        "near_black_fraction_in_source_valid_pixels": 0.0
+      },
+      "mesh": {
+        "source_valid_rgb_mae_255": 18.578035185185186,
+        "source_valid_rgb_rmse_255": 27.382783791063833,
+        "near_black_fraction_in_source_valid_pixels": 0.007069444444444444
+      },
+      "compressed": {
+        "source_valid_rgb_mae_255": 12.760665740740741,
+        "source_valid_rgb_rmse_255": 17.08298392596606,
+        "near_black_fraction_in_source_valid_pixels": 0.0
+      },
+      "spz_vs_ply": {
+        "all_pixel_rgb_rmse_255": 1.5921718221068704,
+        "all_pixel_rgb_mae_255": 1.1476425925925926,
+        "psnr_db": 44.09100493654702
+      },
+      "sog_vs_ply": {
+        "all_pixel_rgb_rmse_255": 1.7536937208836287,
+        "all_pixel_rgb_mae_255": 1.2724638888888888,
+        "psnr_db": 43.25172866895572
+      }
+    },
+    {
+      "view": "cam0/frame_000081.jpg",
+      "camera": {
+        "name": "cam0/frame_000081.jpg",
+        "label": "Capture ~40s \u00b7 reprojected source",
+        "sourceFile": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\lite-v1\\review\\photos\\osmo-upright-05-frame_000081.jpg",
+        "position": [
+          1.5354255457283734,
+          0.6407448819297455,
+          0.014305212581831636
+        ],
+        "quaternion": [
+          0.0,
+          0.2966825774484644,
+          0.0,
+          0.9549761506124307
+        ],
+        "imageWidth": 1200,
+        "imageHeight": 1200,
+        "intrinsics": [
+          600.0,
+          600.0,
+          600.0,
+          600.0
+        ]
+      },
+      "valid_source_fraction": 1.0,
+      "native": {
+        "source_valid_rgb_mae_255": 8.729748148148149,
+        "source_valid_rgb_rmse_255": 12.462089028849174,
+        "near_black_fraction_in_source_valid_pixels": 0.0
+      },
+      "mesh": {
+        "source_valid_rgb_mae_255": 14.231834259259259,
+        "source_valid_rgb_rmse_255": 22.457665708485244,
+        "near_black_fraction_in_source_valid_pixels": 0.002075
+      },
+      "compressed": {
+        "source_valid_rgb_mae_255": 8.720457407407407,
+        "source_valid_rgb_rmse_255": 12.466644385006825,
+        "near_black_fraction_in_source_valid_pixels": 0.0
+      },
+      "spz_vs_ply": {
+        "all_pixel_rgb_rmse_255": 1.4763656578082396,
+        "all_pixel_rgb_mae_255": 1.0598777777777777,
+        "psnr_db": 44.74692492098433
+      },
+      "sog_vs_ply": {
+        "all_pixel_rgb_rmse_255": 1.604330655398647,
+        "all_pixel_rgb_mae_255": 1.1633027777777778,
+        "psnr_db": 44.024925967924034
+      }
+    },
+    {
+      "view": "cam0/frame_000111.jpg",
+      "camera": {
+        "name": "cam0/frame_000111.jpg",
+        "label": "Capture ~55s \u00b7 reprojected source",
+        "sourceFile": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\lite-v1\\review\\photos\\osmo-upright-06-frame_000111.jpg",
+        "position": [
+          0.0436288755542224,
+          0.4537141127664982,
+          -2.2669070800059528
+        ],
+        "quaternion": [
+          -0.0,
+          -0.8495499986738988,
+          -0.0,
+          0.5275081039691982
+        ],
+        "imageWidth": 1200,
+        "imageHeight": 1200,
+        "intrinsics": [
+          600.0,
+          600.0,
+          600.0,
+          600.0
+        ]
+      },
+      "valid_source_fraction": 1.0,
+      "native": {
+        "source_valid_rgb_mae_255": 10.700569444444444,
+        "source_valid_rgb_rmse_255": 13.305159226294027,
+        "near_black_fraction_in_source_valid_pixels": 0.0
+      },
+      "mesh": {
+        "source_valid_rgb_mae_255": 16.757052777777776,
+        "source_valid_rgb_rmse_255": 26.523338238168595,
+        "near_black_fraction_in_source_valid_pixels": 0.006316666666666667
+      },
+      "compressed": {
+        "source_valid_rgb_mae_255": 10.661488888888888,
+        "source_valid_rgb_rmse_255": 13.263633447220345,
+        "near_black_fraction_in_source_valid_pixels": 0.0
+      },
+      "spz_vs_ply": {
+        "all_pixel_rgb_rmse_255": 1.5920209029895165,
+        "all_pixel_rgb_mae_255": 1.161837962962963,
+        "psnr_db": 44.091828295502815
+      },
+      "sog_vs_ply": {
+        "all_pixel_rgb_rmse_255": 1.7428223172858528,
+        "all_pixel_rgb_mae_255": 1.285012962962963,
+        "psnr_db": 43.30574135765265
+      }
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "rumah-mobile-delivery",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@gltf-transform/core": "4.5.1",
+    "@gltf-transform/extensions": "4.5.1",
+    "@gltf-transform/functions": "4.5.1",
+    "@sparkjsdev/spark": "2.4.0",
+    "esbuild": "0.25.11",
+    "meshoptimizer": "0.25.0",
+    "sharp": "0.35.5",
+    "three": "0.180.0"
+  }
+}

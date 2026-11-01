@@ -1,0 +1,264 @@
+{
+  "triangles": 1082185,
+  "file_bytes": 60834340,
+  "bounds": [
+    [
+      -3.603821873664856,
+      -0.15299445390701294,
+      -4.984648704528809
+    ],
+    [
+      3.603821873664856,
+      4.391535758972168,
+      4.984648704528809
+    ]
+  ],
+  "zones": [
+    {
+      "zone": "zone-0",
+      "triangles": 458844,
+      "speculative_or_outside_triangles_removed": 0,
+      "source": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\exports\\optimized-m12\\zone-0\\zone-0.glb",
+      "baked_transform": {
+        "scale": 1.8556735183842084,
+        "R": [
+          [
+            0.9993587983552388,
+            -0.03219904134550589,
+            -0.015659306702537186
+          ],
+          [
+            0.01820481860682235,
+            0.08034613816934176,
+            0.9966007639274446
+          ],
+          [
+            -0.030831424382704378,
+            -0.9962468167164721,
+            0.08088079780040587
+          ]
+        ],
+        "t": [
+          0.47764744892732725,
+          0.9744851569474526,
+          1.0368501358281523
+        ],
+        "training_correction": {
+          "scale": 0.46339881778834463,
+          "R": [
+            [
+              0.9968458889596489,
+              -0.06581973881899157,
+              -0.04434000051925298
+            ],
+            [
+              0.062162802156666225,
+              0.9949076967262599,
+              -0.07933763938308223
+            ],
+            [
+              0.04933619049216095,
+              0.07633110097888385,
+              0.9958611867780935
+            ]
+          ],
+          "t": [
+            0.11981305885728717,
+            -0.6469617721658136,
+            0.22941685616089721
+          ]
+        }
+      },
+      "bounds": [
+        [
+          -1.9251452684402466,
+          -0.033416345715522766,
+          1.9127206802368164
+        ],
+        [
+          2.620395302772522,
+          2.88843035697937,
+          4.984648704528809
+        ]
+      ]
+    },
+    {
+      "zone": "zone-1",
+      "triangles": 440481,
+      "speculative_or_outside_triangles_removed": 0,
+      "source": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\exports\\optimized-m12\\zone-1\\zone-1.glb",
+      "baked_transform": {
+        "scale": 4.00448479182737,
+        "R": [
+          [
+            0.9990203758949789,
+            0.0313302416319845,
+            0.03125227201239321
+          ],
+          [
+            -0.0313302416319845,
+            0.002000701786883663,
+            0.9995070850932681
+          ],
+          [
+            0.03125227201239321,
+            -0.9995070850932681,
+            0.0029803258919048337
+          ]
+        ],
+        "t": [
+          0.05078532221959864,
+          0.07645692310244807,
+          -1.5703539517286031
+        ],
+        "training_correction": {
+          "scale": 1.0,
+          "R": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "t": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "bounds": [
+        [
+          -3.603821873664856,
+          -0.15299445390701294,
+          -4.984648704528809
+        ],
+        [
+          3.2141042947769165,
+          4.391535758972168,
+          4.014382362365723
+        ]
+      ]
+    },
+    {
+      "zone": "zone-2",
+      "triangles": 182860,
+      "speculative_or_outside_triangles_removed": 0,
+      "source": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\exports\\optimized-m12\\zone-2\\zone-2.glb",
+      "baked_transform": {
+        "scale": 4.00448479182737,
+        "R": [
+          [
+            0.9985390335799615,
+            0.03008283099477922,
+            -0.04488676527147128
+          ],
+          [
+            0.04396179618033502,
+            0.030734287463919614,
+            0.9985603457231236
+          ],
+          [
+            0.03141908486565591,
+            -0.9990747854156989,
+            0.029366890417271096
+          ]
+        ],
+        "t": [
+          0.14782275258048894,
+          -0.2011746959475283,
+          -1.603983013888232
+        ],
+        "training_correction": {
+          "scale": 1.0,
+          "R": [
+            [
+              0.997165424762558,
+              -0.002132908478776817,
+              -0.07521014798235964
+            ],
+            [
+              -3.117428516866572e-05,
+              0.9995863190689157,
+              -0.028760906773253974
+            ],
+            [
+              0.07524037936022929,
+              0.028681726441708907,
+              0.9967528499493
+            ]
+          ],
+          "t": [
+            0.026118129223478035,
+            0.009014201784830225,
+            -0.06856371542285913
+          ]
+        }
+      },
+      "bounds": [
+        [
+          -0.41888564825057983,
+          -0.1388024240732193,
+          -4.678088665008545
+        ],
+        [
+          3.603821873664856,
+          2.3905866146087646,
+          0.1591286063194275
+        ]
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "zone": "zone-0",
+      "bufferView": 0,
+      "sha256": "8894fc59b2ddd96eda556c546b3810d39d5e2366c6c24cf8e77a839d3045813d"
+    },
+    {
+      "zone": "zone-1",
+      "bufferView": 5,
+      "sha256": "d1f986f535a210fa886e30cf72b4ce491780b0441fe2c0d54eaa735ab7e62a1b"
+    },
+    {
+      "zone": "zone-2",
+      "bufferView": 10,
+      "sha256": "0c719ba4bd0d9e119007b8da3c7dd461d6a8de226b8d410f981d52b4e83e3290"
+    }
+  ],
+  "texture_bytes_verified": true,
+  "index_bounds_verified": true,
+  "baked_proper_rotations": true,
+  "camera_count": 501,
+  "surface_policy": "preserve",
+  "kitchen_bridge": {
+    "method": "GPU LoFTR / fresh metric MoGe 3D correspondences / floor-coplanar Sim3 / seam camera-height continuity",
+    "surface_fit_rejected": false,
+    "precise_registration_verified": false,
+    "unique_surface_matches": 18,
+    "unique_depth_matches": 18,
+    "relative_scale_correction": 0.46339881778834463,
+    "height_only_scale_correction": 0.4613434781565557,
+    "surface_residual_metres_median": 0.00763033399305022,
+    "surface_residual_metres_p90": 0.017976339804431175,
+    "seam_camera_heights_metres": [
+      1.4935868430584875,
+      1.4869622507759521
+    ],
+    "yaw_correction_degrees": 3.5293486030596877
+  },
+  "doorway_repair": {
+    "applied": false,
+    "reason": "Preserve all observed compact-mesh surfaces; inferred patch and destructive replacement disabled"
+  }
+}

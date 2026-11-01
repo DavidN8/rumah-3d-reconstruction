@@ -1,0 +1,2446 @@
+{
+  "scope": "CPU source RGB audit of static high-track, non-clipped, low-gradient SfM observations. Brightness reference is per-track median across views; no correction applied. Specularity, correspondence uncertainty and vignette/scene correlations can remain.",
+  "observations": 85739,
+  "accepted_point_tracks": 12094,
+  "view_median_stops_p05_p50_p95": [
+    -0.1943401761706633,
+    0.0,
+    0.17019049621461496
+  ],
+  "p05_to_p95_exposure_ratio": 1.2874627328678583,
+  "lens_radial_bins": [
+    {
+      "lens": "cam0",
+      "theta_degrees": [
+        0,
+        30
+      ],
+      "observations": 7420,
+      "brightness_stops_after_view_offset": -0.010737866233262304
+    },
+    {
+      "lens": "cam0",
+      "theta_degrees": [
+        30,
+        60
+      ],
+      "observations": 20512,
+      "brightness_stops_after_view_offset": -0.013945271832339016
+    },
+    {
+      "lens": "cam0",
+      "theta_degrees": [
+        60,
+        80
+      ],
+      "observations": 13020,
+      "brightness_stops_after_view_offset": 0.015342829280215839
+    },
+    {
+      "lens": "cam0",
+      "theta_degrees": [
+        80,
+        95
+      ],
+      "observations": 3978,
+      "brightness_stops_after_view_offset": 0.050766197754583256
+    },
+    {
+      "lens": "cam0",
+      "theta_degrees": [
+        95,
+        106
+      ],
+      "observations": 0,
+      "brightness_stops_after_view_offset": null
+    },
+    {
+      "lens": "cam1",
+      "theta_degrees": [
+        0,
+        30
+      ],
+      "observations": 5059,
+      "brightness_stops_after_view_offset": 0.0012676754084263245
+    },
+    {
+      "lens": "cam1",
+      "theta_degrees": [
+        30,
+        60
+      ],
+      "observations": 20878,
+      "brightness_stops_after_view_offset": -0.0004728440240130598
+    },
+    {
+      "lens": "cam1",
+      "theta_degrees": [
+        60,
+        80
+      ],
+      "observations": 11058,
+      "brightness_stops_after_view_offset": 0.0
+    },
+    {
+      "lens": "cam1",
+      "theta_degrees": [
+        80,
+        95
+      ],
+      "observations": 3812,
+      "brightness_stops_after_view_offset": 0.0014797293460911591
+    },
+    {
+      "lens": "cam1",
+      "theta_degrees": [
+        95,
+        106
+      ],
+      "observations": 2,
+      "brightness_stops_after_view_offset": -0.2763611882482308
+    }
+  ],
+  "half_track_exposure_crosscheck": {
+    "scope": "Fit one scalar linear exposure offset per view on even-ID source tracks, evaluate odd-ID tracks against per-track multi-view median. Diagnostic only; not independent photographic image validation.",
+    "gain_clamp_stops": [
+      -0.2,
+      0.2
+    ],
+    "fitted_views": 184,
+    "evaluation_observations": 41613,
+    "source_srgb_rmse_255": 10.995176596543223,
+    "scalar_corrected_srgb_rmse_255": 10.404099454731455
+  },
+  "views": [
+    {
+      "name": "cam0/frame_000001.jpg",
+      "observations": 868,
+      "median_brightness_stops": -0.055085943501274895,
+      "rgb_channel_stops": [
+        -0.10861683199479868,
+        -0.03913292029552434,
+        0.0
+      ],
+      "residual_mad_stops": 0.1335594239014893
+    },
+    {
+      "name": "cam0/frame_000002.jpg",
+      "observations": 845,
+      "median_brightness_stops": 0.0,
+      "rgb_channel_stops": [
+        -0.020387616033190257,
+        0.0,
+        0.01879158831605687
+      ],
+      "residual_mad_stops": 0.13814164212191496
+    },
+    {
+      "name": "cam0/frame_000004.jpg",
+      "observations": 975,
+      "median_brightness_stops": 0.029676557085157932,
+      "rgb_channel_stops": [
+        0.0,
+        0.03030344109845672,
+        0.040017422749855765
+      ],
+      "residual_mad_stops": 0.10811112930307537
+    },
+    {
+      "name": "cam0/frame_000005.jpg",
+      "observations": 957,
+      "median_brightness_stops": -0.050766197754583256,
+      "rgb_channel_stops": [
+        -0.06391450768202585,
+        -0.04283855315520404,
+        -0.039724301146993796
+      ],
+      "residual_mad_stops": 0.12707896648543432
+    },
+    {
+      "name": "cam0/frame_000006.jpg",
+      "observations": 907,
+      "median_brightness_stops": -0.06870449648863176,
+      "rgb_channel_stops": [
+        -0.0732318953589306,
+        -0.061638754786735105,
+        -0.08241929242675095
+      ],
+      "residual_mad_stops": 0.1215582103465572
+    },
+    {
+      "name": "cam0/frame_000007.jpg",
+      "observations": 829,
+      "median_brightness_stops": -0.040723768641834315,
+      "rgb_channel_stops": [
+        -0.03380032721006327,
+        -0.03824914255631584,
+        -0.04687577907138421
+      ],
+      "residual_mad_stops": 0.12387528222543968
+    },
+    {
+      "name": "cam0/frame_000008.jpg",
+      "observations": 720,
+      "median_brightness_stops": -0.07980252095666916,
+      "rgb_channel_stops": [
+        -0.07262298087321503,
+        -0.07867346420406819,
+        -0.09858246230354129
+      ],
+      "residual_mad_stops": 0.1400014892904265
+    },
+    {
+      "name": "cam0/frame_000009.jpg",
+      "observations": 628,
+      "median_brightness_stops": -0.04899162894065294,
+      "rgb_channel_stops": [
+        -0.03336565295973841,
+        -0.054517192908015405,
+        -0.06455108205794696
+      ],
+      "residual_mad_stops": 0.17047658726094092
+    },
+    {
+      "name": "cam0/frame_000010.jpg",
+      "observations": 550,
+      "median_brightness_stops": -0.01752476980292174,
+      "rgb_channel_stops": [
+        0.0,
+        0.0,
+        -0.02820235613821727
+      ],
+      "residual_mad_stops": 0.17349431586715722
+    },
+    {
+      "name": "cam0/frame_000011.jpg",
+      "observations": 496,
+      "median_brightness_stops": -0.10233956602058869,
+      "rgb_channel_stops": [
+        -0.08807997668841067,
+        -0.09938277171595772,
+        -0.10645069727940068
+      ],
+      "residual_mad_stops": 0.18886994371226207
+    },
+    {
+      "name": "cam0/frame_000012.jpg",
+      "observations": 528,
+      "median_brightness_stops": -0.09095068011955998,
+      "rgb_channel_stops": [
+        -0.08193441532189505,
+        -0.08177886194914785,
+        -0.08942205582791049
+      ],
+      "residual_mad_stops": 0.16584156683195872
+    },
+    {
+      "name": "cam0/frame_000013.jpg",
+      "observations": 412,
+      "median_brightness_stops": -0.043463874749726655,
+      "rgb_channel_stops": [
+        -0.04464483394548202,
+        -0.04222083948675301,
+        -0.0533419054653454
+      ],
+      "residual_mad_stops": 0.11552807278152691
+    },
+    {
+      "name": "cam0/frame_000014.jpg",
+      "observations": 405,
+      "median_brightness_stops": -0.015308903447591468,
+      "rgb_channel_stops": [
+        0.0,
+        0.0,
+        -0.02062748236403901
+      ],
+      "residual_mad_stops": 0.11450258173734702
+    },
+    {
+      "name": "cam0/frame_000015.jpg",
+      "observations": 381,
+      "median_brightness_stops": -0.009175343660024959,
+      "rgb_channel_stops": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "residual_mad_stops": 0.08833755881748562
+    },
+    {
+      "name": "cam0/frame_000016.jpg",
+      "observations": 365,
+      "median_brightness_stops": 0.0,
+      "rgb_channel_stops": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "residual_mad_stops": 0.10832989379319748
+    },
+    {
+      "name": "cam0/frame_000017.jpg",
+      "observations": 274,
+      "median_brightness_stops": 0.037720853903739505,
+      "rgb_channel_stops": [
+        0.0407868186308645,
+        0.03221287766443037,
+        0.040793244581155366
+      ],
+      "residual_mad_stops": 0.14057473517616073
+    },
+    {
+      "name": "cam0/frame_000018.jpg",
+      "observations": 261,
+      "median_brightness_stops": 0.01023963909986551,
+      "rgb_channel_stops": [
+        0.021079591254300714,
+        0.0,
+        0.0
+      ],
+      "residual_mad_stops": 0.12711639650672746
+    },
+    {
+      "name": "cam0/frame_000019.jpg",
+      "observations": 299,
+      "median_brightness_stops": 0.0,
+      "rgb_channel_stops": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "residual_mad_stops": 0.11148989110108304
+    },
+    {
+      "name": "cam0/frame_000020.jpg",
+      "observations": 368,
+      "median_brightness_stops": 0.005603898757801467,
+      "rgb_channel_stops": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "residual_mad_stops": 0.1365175916413176
+    },
+    {
+      "name": "cam0/frame_000021.jpg",
+      "observations": 472,
+      "median_brightness_stops": 0.05266290777382607,
+      "rgb_channel_stops": [
+        0.04601922287751573,
+        0.038169744470162234,
+        0.04419933874197647
+      ],
+      "residual_mad_stops": 0.13600362055487134
+    },
+    {
+      "name": "cam0/frame_000022.jpg",
+      "observations": 408,
+      "median_brightness_stops": 0.00840880393308507,
+      "rgb_channel_stops": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "residual_mad_stops": 0.1190432282300235
+    },
+    {
+      "name": "cam0/frame_000023.jpg",
+      "observations": 397,
+      "median_brightness_stops": 0.034401940018035156,
+      "rgb_channel_stops": [
+        0.0173791837357028,
+        0.021079591254300714,
+        0.04278462005652103
+      ],
+      "residual_mad_stops": 0.13571579413703
+    },
+    {
+      "name": "cam0/frame_000024.jpg",
+      "observations": 412,
+      "median_brightness_stops": 0.06696915982601861,
+      "rgb_channel_stops": [
+        0.043520798277482835,
+        0.0628688999152213,
+        0.10106963999747459
+      ],
+      "residual_mad_stops": 0.1406196346893144
+    },
+    {
+      "name": "cam0/frame_000026.jpg",
+      "observations": 308,
+      "median_brightness_stops": 0.23331263119387952,
+      "rgb_channel_stops": [
+        0.17514656839751966,
+        0.23577671805055,
+        0.31113847472559375
+      ],
+      "residual_mad_stops": 0.19606094882842653
+    },
+    {
+      "name": "cam0/frame_000027.jpg",
+      "observations": 200,
+      "median_brightness_stops": 0.16418173591696886,
+      "rgb_channel_stops": [
+        0.08796864677996277,
+        0.16451846512050616,
+        0.24500051968894704
+      ],
+      "residual_mad_stops": 0.16418173591696886
+    },
+    {
+      "name": "cam0/frame_000028.jpg",
+      "observations": 115,
+      "median_brightness_stops": 0.1387756120888767,
+      "rgb_channel_stops": [
+        0.0638111749004894,
+        0.1398816072146301,
+        0.17225463195782845
+      ],
+      "residual_mad_stops": 0.16355892954392479
+    },
+    {
+      "name": "cam0/frame_000029.jpg",
+      "observations": 105,
+      "median_brightness_stops": 0.08034561820591507,
+      "rgb_channel_stops": [
+        0.07692546733267552,
+        0.08342037868998192,
+        0.16090845150868727
+      ],
+      "residual_mad_stops": 0.18931128481458634
+    },
+    {
+      "name": "cam0/frame_000030.jpg",
+      "observations": 228,
+      "median_brightness_stops": 0.22870978522075147,
+      "rgb_channel_stops": [
+        0.20406604459786049,
+        0.21745437769573212,
+        0.27758667765433453
+      ],
+      "residual_mad_stops": 0.1940977599287011
+    },
+    {
+      "name": "cam0/frame_000031.jpg",
+      "observations": 246,
+      "median_brightness_stops": 0.09809723474777295,
+      "rgb_channel_stops": [
+        0.06445310054393874,
+        0.09236672719197808,
+        0.15999690668153144
+      ],
+      "residual_mad_stops": 0.14794555185161334
+    },
+    {
+      "name": "cam0/frame_000032.jpg",
+      "observations": 221,
+      "median_brightness_stops": -0.008571004979015046,
+      "rgb_channel_stops": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "residual_mad_stops": 0.10964694470165644
+    },
+    {
+      "name": "cam0/frame_000033.jpg",
+      "observations": 367,
+      "median_brightness_stops": -0.049523136491680164,
+      "rgb_channel_stops": [
+        -0.03611958572090221,
+        -0.04195707615425706,
+        0.0
+      ],
+      "residual_mad_stops": 0.13929872343832647
+    },
+    {
+      "name": "cam0/frame_000034.jpg",
+      "observations": 442,
+      "median_brightness_stops": -0.09622137283296711,
+      "rgb_channel_stops": [
+        -0.07144337505659903,
+        -0.08037265860765638,
+        -0.06273257796740535
+      ],
+      "residual_mad_stops": 0.19782514483057423
+    },
+    {
+      "name": "cam0/frame_000035.jpg",
+      "observations": 505,
+      "median_brightness_stops": -0.19341333237058322,
+      "rgb_channel_stops": [
+        -0.18065199734778092,
+        -0.19381385522741582,
+        -0.18215753506308283
+      ],
+      "residual_mad_stops": 0.17911861785725508
+    },
+    {
+      "name": "cam0/frame_000036.jpg",
+      "observations": 549,
+      "median_brightness_stops": -0.17916877131688919,
+      "rgb_channel_stops": [
+        -0.16254879283598642,
+        -0.1822374044645785,
+        -0.14167892704932664
+      ],
+      "residual_mad_stops": 0.1786479894702247
+    },
+    {
+      "name": "cam0/frame_000037.jpg",
+      "observations": 562,
+      "median_brightness_stops": -0.015376248315405837,
+      "rgb_channel_stops": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "residual_mad_stops": 0.1690114639290188
+    },
+    {
+      "name": "cam0/frame_000038.jpg",
+      "observations": 575,
+      "median_brightness_stops": 0.22699112205182193,
+      "rgb_channel_stops": [
+        0.25650162298419926,
+        0.21568845930417785,
+        0.2584647472195008
+      ],
+      "residual_mad_stops": 0.21413678405079029
+    },
+    {
+      "name": "cam0/frame_000039.jpg",
+      "observations": 332,
+      "median_brightness_stops": 0.2316221719233866,
+      "rgb_channel_stops": [
+        0.2340501567073614,
+        0.21523896784901062,
+        0.25361487241013625
+      ],
+      "residual_mad_stops": 0.22959587587570401
+    },
+    {
+      "name": "cam0/frame_000040.jpg",
+      "observations": 263,
+      "median_brightness_stops": 0.12791199670546127,
+      "rgb_channel_stops": [
+        0.10990698596255617,
+        0.14465675392113442,
+        0.1344199001261195
+      ],
+      "residual_mad_stops": 0.18318887311282805
+    },
+    {
+      "name": "cam0/frame_000042.jpg",
+      "observations": 203,
+      "median_brightness_stops": -0.2681754708821343,
+      "rgb_channel_stops": [
+        -0.2987678456281028,
+        -0.26722718616605323,
+        -0.33626285450835325
+      ],
+      "residual_mad_stops": 0.264739604319076
+    },
+    {
+      "name": "cam0/frame_000043.jpg",
+      "observations": 122,
+      "median_brightness_stops": -0.15193904496390143,
+      "rgb_channel_stops": [
+        -0.16753999722713725,
+        -0.1420635692061757,
+        -0.13370256649185558
+      ],
+      "residual_mad_stops": 0.2163610542613594
+    },
+    {
+      "name": "cam0/frame_000044.jpg",
+      "observations": 152,
+      "median_brightness_stops": -0.1360277694333454,
+      "rgb_channel_stops": [
+        -0.15622407120920834,
+        -0.11467664502363711,
+        -0.3374635194856237
+      ],
+      "residual_mad_stops": 0.2560123934205587
+    },
+    {
+      "name": "cam0/frame_000047.jpg",
+      "observations": 64,
+      "median_brightness_stops": 0.11798402577999745,
+      "rgb_channel_stops": [
+        0.09921272289416105,
+        0.14287792898599314,
+        0.0
+      ],
+      "residual_mad_stops": 0.2026907732440616
+    },
+    {
+      "name": "cam0/frame_000048.jpg",
+      "observations": 84,
+      "median_brightness_stops": -0.08025305007949847,
+      "rgb_channel_stops": [
+        -0.09255395285578223,
+        -0.041677069355804855,
+        -0.11287641869432011
+      ],
+      "residual_mad_stops": 0.18962528486143562
+    },
+    {
+      "name": "cam0/frame_000049.jpg",
+      "observations": 76,
+      "median_brightness_stops": -0.1699194419429299,
+      "rgb_channel_stops": [
+        -0.20585590543300197,
+        -0.13229600709001443,
+        -0.10280176759562912
+      ],
+      "residual_mad_stops": 0.21096732914691063
+    },
+    {
+      "name": "cam0/frame_000050.jpg",
+      "observations": 35,
+      "median_brightness_stops": -0.10855573432554397,
+      "rgb_channel_stops": [
+        -0.09070494433393413,
+        -0.12234015446226061,
+        -0.09227628756282567
+      ],
+      "residual_mad_stops": 0.17755792192179556
+    },
+    {
+      "name": "cam0/frame_000056.jpg",
+      "observations": 52,
+      "median_brightness_stops": -0.15130564649817868,
+      "rgb_channel_stops": [
+        -0.12638903817203068,
+        -0.1526869603354733,
+        -0.12280826774511731
+      ],
+      "residual_mad_stops": 0.33090454798219315
+    },
+    {
+      "name": "cam0/frame_000057.jpg",
+      "observations": 84,
+      "median_brightness_stops": -0.02156027259150577,
+      "rgb_channel_stops": [
+        -0.05203541940583739,
+        -0.005972792814262805,
+        0.0
+      ],
+      "residual_mad_stops": 0.27555610757805127
+    },
+    {
+      "name": "cam0/frame_000058.jpg",
+      "observations": 180,
+      "median_brightness_stops": 0.10514556983469664,
+      "rgb_channel_stops": [
+        0.07364620723880302,
+        0.09310246975384223,
+        0.07069518663435156
+      ],
+      "residual_mad_stops": 0.4043468671253848
+    },
+    {
+      "name": "cam0/frame_000059.jpg",
+      "observations": 493,
+      "median_brightness_stops": -0.022868033964937393,
+      "rgb_channel_stops": [
+        -0.04382235774543462,
+        0.0,
+        0.0
+      ],
+      "residual_mad_stops": 0.24274072449940556
+    },
+    {
+      "name": "cam0/frame_000060.jpg",
+      "observations": 783,
+      "median_brightness_stops": -0.21952632506357214,
+      "rgb_channel_stops": [
+        -0.22976695832755425,
+        -0.22334256777244915,
+        -0.2098047412962191
+      ],
+      "residual_mad_stops": 0.1938589703500425
+    },
+    {
+      "name": "cam0/frame_000062.jpg",
+      "observations": 958,
+      "median_brightness_stops": -0.2305220409075762,
+      "rgb_channel_stops": [
+        -0.22923838947500713,
+        -0.2392061265314113,
+        -0.27541124990482124
+      ],
+      "residual_mad_stops": 0.18141661445936597
+    },
+    {
+      "name": "cam0/frame_000063.jpg",
+      "observations": 1127,
+      "median_brightness_stops": -0.14999438726765119,
+      "rgb_channel_stops": [
+        -0.15867195758892916,
+        -0.14844715354850233,
+        -0.16196642603159714
+      ],
+      "residual_mad_stops": 0.14415135620588104
+    },
+    {
+      "name": "cam0/frame_000064.jpg",
+      "observations": 1041,
+      "median_brightness_stops": -0.07713139923635627,
+      "rgb_channel_stops": [
+        -0.07778964704843437,
+        -0.07987526130065144,
+        -0.08338676912698284
+      ],
+      "residual_mad_stops": 0.125749002285156
+    },
+    {
+      "name": "cam0/frame_000065.jpg",
+      "observations": 1049,
+      "median_brightness_stops": -0.07214213808086331,
+      "rgb_channel_stops": [
+        -0.06352809781879305,
+        -0.07098542379396164,
+        -0.07778964704843437
+      ],
+      "residual_mad_stops": 0.12331223585087009
+    },
+    {
+      "name": "cam0/frame_000066.jpg",
+      "observations": 1036,
+      "median_brightness_stops": -0.000805677437183673,
+      "rgb_channel_stops": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "residual_mad_stops": 0.11115253662291968
+    },
+    {
+      "name": "cam0/frame_000067.jpg",
+      "observations": 1038,
+      "median_brightness_stops": 0.0055870649294413955,
+      "rgb_channel_stops": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "residual_mad_stops": 0.12069698371502671
+    },
+    {
+      "name": "cam0/frame_000068.jpg",
+      "observations": 985,
+      "median_brightness_stops": 0.040970150401713035,
+      "rgb_channel_stops": [
+        0.03312591908054131,
+        0.036246997851892615,
+        0.041460981090389086
+      ],
+      "residual_mad_stops": 0.12174528908071693
+    },
+    {
+      "name": "cam0/frame_000069.jpg",
+      "observations": 789,
+      "median_brightness_stops": 0.06494025122340034,
+      "rgb_channel_stops": [
+        0.05818595706012793,
+        0.06552730348312816,
+        0.06594321943022317
+      ],
+      "residual_mad_stops": 0.12329029953714421
+    },
+    {
+      "name": "cam0/frame_000070.jpg",
+      "observations": 752,
+      "median_brightness_stops": 0.1175063801098003,
+      "rgb_channel_stops": [
+        0.10224312938977875,
+        0.11587656668357954,
+        0.12634284737984602
+      ],
+      "residual_mad_stops": 0.14678656443198965
+    },
+    {
+      "name": "cam0/frame_000071.jpg",
+      "observations": 734,
+      "median_brightness_stops": 0.10051965489189185,
+      "rgb_channel_stops": [
+        0.10078807503732479,
+        0.0975698014162734,
+        0.1195372936543871
+      ],
+      "residual_mad_stops": 0.15012458239220983
+    },
+    {
+      "name": "cam0/frame_000072.jpg",
+      "observations": 657,
+      "median_brightness_stops": 0.1210027868057517,
+      "rgb_channel_stops": [
+        0.12487972659602169,
+        0.12387851940648481,
+        0.1294442853485327
+      ],
+      "residual_mad_stops": 0.14386844664566914
+    },
+    {
+      "name": "cam0/frame_000073.jpg",
+      "observations": 709,
+      "median_brightness_stops": 0.13585767299246668,
+      "rgb_channel_stops": [
+        0.154751169529574,
+        0.11738727542232384,
+        0.11735818687550444
+      ],
+      "residual_mad_stops": 0.1640254473239842
+    },
+    {
+      "name": "cam0/frame_000074.jpg",
+      "observations": 647,
+      "median_brightness_stops": 0.21154800745377622,
+      "rgb_channel_stops": [
+        0.24711045679418697,
+        0.20674797670188783,
+        0.2014628422701668
+      ],
+      "residual_mad_stops": 0.2132075142245989
+    },
+    {
+      "name": "cam0/frame_000075.jpg",
+      "observations": 767,
+      "median_brightness_stops": 0.047337949396035604,
+      "rgb_channel_stops": [
+        0.053688902001974174,
+        0.035503956401823626,
+        0.0
+      ],
+      "residual_mad_stops": 0.1550375312896415
+    },
+    {
+      "name": "cam0/frame_000076.jpg",
+      "observations": 672,
+      "median_brightness_stops": -0.006492993237791171,
+      "rgb_channel_stops": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "residual_mad_stops": 0.13464890693238046
+    },
+    {
+      "name": "cam0/frame_000077.jpg",
+      "observations": 633,
+      "median_brightness_stops": -0.004191899932861698,
+      "rgb_channel_stops": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "residual_mad_stops": 0.15189080171974817
+    },
+    {
+      "name": "cam0/frame_000078.jpg",
+      "observations": 492,
+      "median_brightness_stops": 0.013903061588912958,
+      "rgb_channel_stops": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "residual_mad_stops": 0.14807243040189388
+    },
+    {
+      "name": "cam0/frame_000079.jpg",
+      "observations": 404,
+      "median_brightness_stops": 0.058433131593323515,
+      "rgb_channel_stops": [
+        0.01836479744642558,
+        0.05750923611004741,
+        0.06236754826658171
+      ],
+      "residual_mad_stops": 0.18709755742360382
+    },
+    {
+      "name": "cam0/frame_000080.jpg",
+      "observations": 287,
+      "median_brightness_stops": 0.09490744317836576,
+      "rgb_channel_stops": [
+        0.03752868444081542,
+        0.08019969483880511,
+        0.10654925352207134
+      ],
+      "residual_mad_stops": 0.26425168044379743
+    },
+    {
+      "name": "cam0/frame_000082.jpg",
+      "observations": 62,
+      "median_brightness_stops": -0.0018205149154788642,
+      "rgb_channel_stops": [
+        -0.035126728677161406,
+        0.0,
+        0.0
+      ],
+      "residual_mad_stops": 0.17716915015487356
+    },
+    {
+      "name": "cam0/frame_000083.jpg",
+      "observations": 55,
+      "median_brightness_stops": -0.01647650292058267,
+      "rgb_channel_stops": [
+        -0.010893290593072008,
+        0.0,
+        0.0
+      ],
+      "residual_mad_stops": 0.12374554223082063
+    },
+    {
+      "name": "cam0/frame_000084.jpg",
+      "observations": 32,
+      "median_brightness_stops": -0.03996491999852998,
+      "rgb_channel_stops": [
+        -0.05767587702303723,
+        -0.04001784071377412,
+        -0.08320629680125465
+      ],
+      "residual_mad_stops": 0.12548783113369433
+    },
+    {
+      "name": "cam0/frame_000085.jpg",
+      "observations": 30,
+      "median_brightness_stops": 0.00034543246035632886,
+      "rgb_channel_stops": [
+        0.0,
+        0.0,
+        0.044984487388966536
+      ],
+      "residual_mad_stops": 0.09520769171402424
+    },
+    {
+      "name": "cam0/frame_000086.jpg",
+      "observations": 31,
+      "median_brightness_stops": 0.11408585753288103,
+      "rgb_channel_stops": [
+        0.07212786541961135,
+        0.10991138040188045,
+        0.17627699427512963
+      ],
+      "residual_mad_stops": 0.11149658832321632
+    },
+    {
+      "name": "cam0/frame_000092.jpg",
+      "observations": 115,
+      "median_brightness_stops": 0.06377099670623516,
+      "rgb_channel_stops": [
+        0.0400235123874896,
+        0.0662713539608942,
+        0.10816862976481237
+      ],
+      "residual_mad_stops": 0.18068282458780432
+    },
+    {
+      "name": "cam0/frame_000093.jpg",
+      "observations": 237,
+      "median_brightness_stops": 0.025706837434694995,
+      "rgb_channel_stops": [
+        0.0,
+        0.019954008117123296,
+        0.04195707615425695
+      ],
+      "residual_mad_stops": 0.11147068118808977
+    },
+    {
+      "name": "cam0/frame_000094.jpg",
+      "observations": 143,
+      "median_brightness_stops": -0.010224075381631462,
+      "rgb_channel_stops": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "residual_mad_stops": 0.09816616297250423
+    },
+    {
+      "name": "cam0/frame_000095.jpg",
+      "observations": 108,
+      "median_brightness_stops": 0.0,
+      "rgb_channel_stops": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "residual_mad_stops": 0.10565935521117756
+    },
+    {
+      "name": "cam0/frame_000096.jpg",
+      "observations": 180,
+      "median_brightness_stops": 0.047503325751596145,
+      "rgb_channel_stops": [
+        0.062094643846054315,
+        0.05073864572166936,
+        0.0638773296159306
+      ],
+      "residual_mad_stops": 0.11982615300683835
+    },
+    {
+      "name": "cam0/frame_000097.jpg",
+      "observations": 343,
+      "median_brightness_stops": 0.0,
+      "rgb_channel_stops": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "residual_mad_stops": 0.12243680453870295
+    },
+    {
+      "name": "cam0/frame_000098.jpg",
+      "observations": 352,
+      "median_brightness_stops": -0.03355770317683351,
+      "rgb_channel_stops": [
+        -0.030852953415881564,
+        -0.005587276028041599,
+        0.0
+      ],
+      "residual_mad_stops": 0.1128883772463411
+    },
+    {
+      "name": "cam0/frame_000099.jpg",
+      "observations": 376,
+      "median_brightness_stops": -0.028251923578500898,
+      "rgb_channel_stops": [
+        -0.03211250762063614,
+        -0.027735508600353034,
+        0.0
+      ],
+      "residual_mad_stops": 0.12866260702513282
+    },
+    {
+      "name": "cam0/frame_000100.jpg",
+      "observations": 181,
+      "median_brightness_stops": -0.0014468296250637804,
+      "rgb_channel_stops": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "residual_mad_stops": 0.11107100735851691
+    },
+    {
+      "name": "cam0/frame_000106.jpg",
+      "observations": 66,
+      "median_brightness_stops": 0.10963590266509007,
+      "rgb_channel_stops": [
+        0.028526052107557133,
+        0.13491749251840707,
+        0.13833774654977327
+      ],
+      "residual_mad_stops": 0.1290115881457793
+    },
+    {
+      "name": "cam0/frame_000107.jpg",
+      "observations": 98,
+      "median_brightness_stops": 0.1761992565122611,
+      "rgb_channel_stops": [
+        0.13801967988425773,
+        0.20590761058737456,
+        0.18734675128457962
+      ],
+      "residual_mad_stops": 0.12409503880623372
+    },
+    {
+      "name": "cam0/frame_000108.jpg",
+      "observations": 230,
+      "median_brightness_stops": 0.1870830466499474,
+      "rgb_channel_stops": [
+        0.14545020485183835,
+        0.20517855731938917,
+        0.14471646452713138
+      ],
+      "residual_mad_stops": 0.18208122871381274
+    },
+    {
+      "name": "cam0/frame_000109.jpg",
+      "observations": 330,
+      "median_brightness_stops": 0.08303757329452531,
+      "rgb_channel_stops": [
+        0.06912221395474587,
+        0.09617969173955365,
+        0.054243916497788924
+      ],
+      "residual_mad_stops": 0.12395113951610515
+    },
+    {
+      "name": "cam0/frame_000110.jpg",
+      "observations": 439,
+      "median_brightness_stops": 0.0,
+      "rgb_channel_stops": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "residual_mad_stops": 0.13167762904206787
+    },
+    {
+      "name": "cam0/frame_000112.jpg",
+      "observations": 387,
+      "median_brightness_stops": -0.09755978175629872,
+      "rgb_channel_stops": [
+        -0.0795547142723752,
+        -0.09772552562575963,
+        -0.08988124750025718
+      ],
+      "residual_mad_stops": 0.14551908365224592
+    },
+    {
+      "name": "cam0/frame_000113.jpg",
+      "observations": 376,
+      "median_brightness_stops": -0.032163870047671655,
+      "rgb_channel_stops": [
+        -0.03347406230936088,
+        -0.028811111105437145,
+        -0.011052169365390593
+      ],
+      "residual_mad_stops": 0.12136271760784353
+    },
+    {
+      "name": "cam0/frame_000114.jpg",
+      "observations": 451,
+      "median_brightness_stops": 0.029706220210680763,
+      "rgb_channel_stops": [
+        0.0,
+        0.021339420304194424,
+        0.034534388930114686
+      ],
+      "residual_mad_stops": 0.12478605019912767
+    },
+    {
+      "name": "cam0/frame_000115.jpg",
+      "observations": 379,
+      "median_brightness_stops": 0.0,
+      "rgb_channel_stops": [
+        0.0,
+        0.0,
+        0.010297158197599236
+      ],
+      "residual_mad_stops": 0.12426991407334415
+    },
+    {
+      "name": "cam0/frame_000116.jpg",
+      "observations": 298,
+      "median_brightness_stops": 0.0003483421585154155,
+      "rgb_channel_stops": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "residual_mad_stops": 0.11208404760355337
+    },
+    {
+      "name": "cam0/frame_000117.jpg",
+      "observations": 313,
+      "median_brightness_stops": -0.041774831791598674,
+      "rgb_channel_stops": [
+        -0.03611958572090221,
+        -0.0382851108561206,
+        -0.02997177468157204
+      ],
+      "residual_mad_stops": 0.1340618582211625
+    },
+    {
+      "name": "cam0/frame_000118.jpg",
+      "observations": 384,
+      "median_brightness_stops": -0.016098921575855574,
+      "rgb_channel_stops": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "residual_mad_stops": 0.14305210280861683
+    },
+    {
+      "name": "cam0/frame_000119.jpg",
+      "observations": 531,
+      "median_brightness_stops": -0.07413996504295217,
+      "rgb_channel_stops": [
+        -0.06391450768202585,
+        -0.06853206554206231,
+        -0.0755200915015089
+      ],
+      "residual_mad_stops": 0.14798414482033032
+    },
+    {
+      "name": "cam0/frame_000120.jpg",
+      "observations": 525,
+      "median_brightness_stops": -0.036756006794985314,
+      "rgb_channel_stops": [
+        -0.03333764783548224,
+        -0.03132768255837354,
+        -0.03769212987990011
+      ],
+      "residual_mad_stops": 0.14597807068527052
+    },
+    {
+      "name": "cam0/frame_000121.jpg",
+      "observations": 438,
+      "median_brightness_stops": -0.0721879998709995,
+      "rgb_channel_stops": [
+        -0.05969516102952124,
+        -0.07635395445333251,
+        -0.09314864280744323
+      ],
+      "residual_mad_stops": 0.15603512655772975
+    },
+    {
+      "name": "cam0/frame_000122.jpg",
+      "observations": 374,
+      "median_brightness_stops": 0.0,
+      "rgb_channel_stops": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "residual_mad_stops": 0.17837724403931643
+    },
+    {
+      "name": "cam0/frame_000123.jpg",
+      "observations": 311,
+      "median_brightness_stops": 0.08536129382759665,
+      "rgb_channel_stops": [
+        0.11502346190123007,
+        0.07328093472038508,
+        0.057012931026384446
+      ],
+      "residual_mad_stops": 0.20155547628511172
+    },
+    {
+      "name": "cam0/frame_000124.jpg",
+      "observations": 194,
+      "median_brightness_stops": 0.1404505373674123,
+      "rgb_channel_stops": [
+        0.18459464999476333,
+        0.11660314534774245,
+        0.13894198729040458
+      ],
+      "residual_mad_stops": 0.1829027360989164
+    },
+    {
+      "name": "cam0/frame_000125.jpg",
+      "observations": 117,
+      "median_brightness_stops": 0.06210243713301525,
+      "rgb_channel_stops": [
+        0.12365434687282609,
+        0.038044221465686985,
+        0.05867481620677394
+      ],
+      "residual_mad_stops": 0.12472888246991884
+    },
+    {
+      "name": "cam0/frame_000126.jpg",
+      "observations": 157,
+      "median_brightness_stops": 0.14698558983128335,
+      "rgb_channel_stops": [
+        0.1625487928359864,
+        0.13818109436734777,
+        0.15159015761136102
+      ],
+      "residual_mad_stops": 0.2158564192497609
+    },
+    {
+      "name": "cam0/frame_000127.jpg",
+      "observations": 174,
+      "median_brightness_stops": 0.1407160852330508,
+      "rgb_channel_stops": [
+        0.1866454474819615,
+        0.13730537484256425,
+        0.11973674294796419
+      ],
+      "residual_mad_stops": 0.19372256348353395
+    },
+    {
+      "name": "cam0/frame_000128.jpg",
+      "observations": 105,
+      "median_brightness_stops": 0.26525661186151617,
+      "rgb_channel_stops": [
+        0.30559807818641593,
+        0.27043954139542353,
+        0.27373040549756344
+      ],
+      "residual_mad_stops": 0.29693716027147476
+    },
+    {
+      "name": "cam0/frame_000129.jpg",
+      "observations": 344,
+      "median_brightness_stops": 0.11801653216169045,
+      "rgb_channel_stops": [
+        0.14346444153753263,
+        0.10651200132675664,
+        0.09880381988156041
+      ],
+      "residual_mad_stops": 0.23782184064851464
+    },
+    {
+      "name": "cam0/frame_000130.jpg",
+      "observations": 628,
+      "median_brightness_stops": 0.02552493021891042,
+      "rgb_channel_stops": [
+        0.02839860582465361,
+        0.0,
+        0.0
+      ],
+      "residual_mad_stops": 0.19404257955335652
+    },
+    {
+      "name": "cam1/frame_000001.jpg",
+      "observations": 364,
+      "median_brightness_stops": 0.12784494526768767,
+      "rgb_channel_stops": [
+        0.11898232530422664,
+        0.09755223162916779,
+        0.14579797182906762
+      ],
+      "residual_mad_stops": 0.17628567744873144
+    },
+    {
+      "name": "cam1/frame_000002.jpg",
+      "observations": 397,
+      "median_brightness_stops": 0.12093797928640117,
+      "rgb_channel_stops": [
+        0.09977567481906668,
+        0.11165711119250672,
+        0.16886558077744696
+      ],
+      "residual_mad_stops": 0.15033587558301878
+    },
+    {
+      "name": "cam1/frame_000003.jpg",
+      "observations": 530,
+      "median_brightness_stops": 0.08448273894015723,
+      "rgb_channel_stops": [
+        0.0716457054893356,
+        0.07651785429534265,
+        0.0898812475002571
+      ],
+      "residual_mad_stops": 0.16077725917911062
+    },
+    {
+      "name": "cam1/frame_000004.jpg",
+      "observations": 608,
+      "median_brightness_stops": 0.031638354795909956,
+      "rgb_channel_stops": [
+        0.0,
+        0.024487433809202014,
+        0.07084060464458164
+      ],
+      "residual_mad_stops": 0.14209854423042456
+    },
+    {
+      "name": "cam1/frame_000005.jpg",
+      "observations": 663,
+      "median_brightness_stops": 0.003968836136773151,
+      "rgb_channel_stops": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "residual_mad_stops": 0.13657361375901134
+    },
+    {
+      "name": "cam1/frame_000006.jpg",
+      "observations": 696,
+      "median_brightness_stops": -0.010302226359777223,
+      "rgb_channel_stops": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "residual_mad_stops": 0.12941768489232755
+    },
+    {
+      "name": "cam1/frame_000007.jpg",
+      "observations": 750,
+      "median_brightness_stops": -0.007755014783903249,
+      "rgb_channel_stops": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "residual_mad_stops": 0.13695244184966
+    },
+    {
+      "name": "cam1/frame_000008.jpg",
+      "observations": 729,
+      "median_brightness_stops": -0.016970129758851555,
+      "rgb_channel_stops": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "residual_mad_stops": 0.12904881773732396
+    },
+    {
+      "name": "cam1/frame_000009.jpg",
+      "observations": 765,
+      "median_brightness_stops": -0.012108206535845269,
+      "rgb_channel_stops": [
+        0.0,
+        0.0,
+        -0.01312267738652951
+      ],
+      "residual_mad_stops": 0.12105875843550087
+    },
+    {
+      "name": "cam1/frame_000010.jpg",
+      "observations": 722,
+      "median_brightness_stops": -0.03515856266736255,
+      "rgb_channel_stops": [
+        -0.012753853260223942,
+        -0.02833657315029864,
+        -0.026095144256678734
+      ],
+      "residual_mad_stops": 0.14961604725649763
+    },
+    {
+      "name": "cam1/frame_000011.jpg",
+      "observations": 654,
+      "median_brightness_stops": -0.03793471637490274,
+      "rgb_channel_stops": [
+        0.0,
+        -0.03343733592972756,
+        -0.052474571440550594
+      ],
+      "residual_mad_stops": 0.15418360190036648
+    },
+    {
+      "name": "cam1/frame_000012.jpg",
+      "observations": 651,
+      "median_brightness_stops": -0.01489055467132772,
+      "rgb_channel_stops": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "residual_mad_stops": 0.14062834072669067
+    },
+    {
+      "name": "cam1/frame_000013.jpg",
+      "observations": 623,
+      "median_brightness_stops": -0.019039978099528947,
+      "rgb_channel_stops": [
+        0.0,
+        -0.01273652459474791,
+        -0.0374567892929028
+      ],
+      "residual_mad_stops": 0.15461863863076142
+    },
+    {
+      "name": "cam1/frame_000014.jpg",
+      "observations": 618,
+      "median_brightness_stops": -0.009844828674022086,
+      "rgb_channel_stops": [
+        0.0,
+        0.0,
+        -0.015401472538398233
+      ],
+      "residual_mad_stops": 0.12230131222144178
+    },
+    {
+      "name": "cam1/frame_000015.jpg",
+      "observations": 598,
+      "median_brightness_stops": 0.00871780426262072,
+      "rgb_channel_stops": [
+        0.00475283451002541,
+        0.0,
+        0.0
+      ],
+      "residual_mad_stops": 0.12507756152088711
+    },
+    {
+      "name": "cam1/frame_000016.jpg",
+      "observations": 624,
+      "median_brightness_stops": 0.0,
+      "rgb_channel_stops": [
+        0.0,
+        0.0,
+        -0.008660250223790668
+      ],
+      "residual_mad_stops": 0.12179996118425468
+    },
+    {
+      "name": "cam1/frame_000017.jpg",
+      "observations": 706,
+      "median_brightness_stops": 0.06372557912082556,
+      "rgb_channel_stops": [
+        0.09051618678884499,
+        0.060731156515808515,
+        0.0453373094113353
+      ],
+      "residual_mad_stops": 0.1224773801801193
+    },
+    {
+      "name": "cam1/frame_000018.jpg",
+      "observations": 770,
+      "median_brightness_stops": 0.06899945243024411,
+      "rgb_channel_stops": [
+        0.08674269334992252,
+        0.061684899444907126,
+        0.0405544111654146
+      ],
+      "residual_mad_stops": 0.13299888057827403
+    },
+    {
+      "name": "cam1/frame_000019.jpg",
+      "observations": 839,
+      "median_brightness_stops": 0.06464712050550239,
+      "rgb_channel_stops": [
+        0.07537449174085323,
+        0.05053869133908183,
+        0.03824914255631583
+      ],
+      "residual_mad_stops": 0.11930777232457737
+    },
+    {
+      "name": "cam1/frame_000020.jpg",
+      "observations": 850,
+      "median_brightness_stops": 0.030992644509480347,
+      "rgb_channel_stops": [
+        0.04688203114459745,
+        0.022573492086227373,
+        0.0
+      ],
+      "residual_mad_stops": 0.13677227999196617
+    },
+    {
+      "name": "cam1/frame_000021.jpg",
+      "observations": 941,
+      "median_brightness_stops": 0.04343191511685653,
+      "rgb_channel_stops": [
+        0.04980293874076781,
+        0.03377216771081611,
+        0.026325665485739492
+      ],
+      "residual_mad_stops": 0.13610139317927686
+    },
+    {
+      "name": "cam1/frame_000022.jpg",
+      "observations": 868,
+      "median_brightness_stops": 0.011554132757736667,
+      "rgb_channel_stops": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "residual_mad_stops": 0.13795454987875122
+    },
+    {
+      "name": "cam1/frame_000023.jpg",
+      "observations": 823,
+      "median_brightness_stops": 0.004735506124137251,
+      "rgb_channel_stops": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "residual_mad_stops": 0.14062171319609515
+    },
+    {
+      "name": "cam1/frame_000024.jpg",
+      "observations": 669,
+      "median_brightness_stops": 0.03734586390308579,
+      "rgb_channel_stops": [
+        0.026179666534468897,
+        0.01839234958262493,
+        0.023312390988115127
+      ],
+      "residual_mad_stops": 0.15575866314771628
+    },
+    {
+      "name": "cam1/frame_000025.jpg",
+      "observations": 672,
+      "median_brightness_stops": 0.06444514661796596,
+      "rgb_channel_stops": [
+        0.03594148128119441,
+        0.0679323757279228,
+        0.06106050295419244
+      ],
+      "residual_mad_stops": 0.16137322914076152
+    },
+    {
+      "name": "cam1/frame_000026.jpg",
+      "observations": 668,
+      "median_brightness_stops": 0.15934099699388482,
+      "rgb_channel_stops": [
+        0.1418996781735578,
+        0.16807206801986935,
+        0.18138740190956715
+      ],
+      "residual_mad_stops": 0.17811323496907447
+    },
+    {
+      "name": "cam1/frame_000027.jpg",
+      "observations": 648,
+      "median_brightness_stops": 0.17811213638559234,
+      "rgb_channel_stops": [
+        0.14776175534799307,
+        0.1818509221697146,
+        0.2415989189355347
+      ],
+      "residual_mad_stops": 0.18127512929059802
+    },
+    {
+      "name": "cam1/frame_000028.jpg",
+      "observations": 638,
+      "median_brightness_stops": 0.12934215735635296,
+      "rgb_channel_stops": [
+        0.11279469737576155,
+        0.12981738703639423,
+        0.20145733495063953
+      ],
+      "residual_mad_stops": 0.1675603543278909
+    },
+    {
+      "name": "cam1/frame_000029.jpg",
+      "observations": 575,
+      "median_brightness_stops": 0.10166224697648434,
+      "rgb_channel_stops": [
+        0.07135691797463589,
+        0.10961668766872747,
+        0.14524879446644035
+      ],
+      "residual_mad_stops": 0.17469793858374805
+    },
+    {
+      "name": "cam1/frame_000030.jpg",
+      "observations": 502,
+      "median_brightness_stops": 0.1328750623084839,
+      "rgb_channel_stops": [
+        0.12272564273684082,
+        0.11937690090555578,
+        0.18263948397052357
+      ],
+      "residual_mad_stops": 0.18013651544578074
+    },
+    {
+      "name": "cam1/frame_000031.jpg",
+      "observations": 491,
+      "median_brightness_stops": 0.07806443104425467,
+      "rgb_channel_stops": [
+        0.05653595582809706,
+        0.07285830772664072,
+        0.10431850482005639
+      ],
+      "residual_mad_stops": 0.14675338801482438
+    },
+    {
+      "name": "cam1/frame_000032.jpg",
+      "observations": 413,
+      "median_brightness_stops": -0.011355486278715068,
+      "rgb_channel_stops": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "residual_mad_stops": 0.17602790897948173
+    },
+    {
+      "name": "cam1/frame_000033.jpg",
+      "observations": 133,
+      "median_brightness_stops": -0.16351978492165567,
+      "rgb_channel_stops": [
+        -0.19376884155934945,
+        -0.1422409560590607,
+        -0.07041578335656584
+      ],
+      "residual_mad_stops": 0.2641492850199306
+    },
+    {
+      "name": "cam1/frame_000034.jpg",
+      "observations": 40,
+      "median_brightness_stops": -0.1730731840740969,
+      "rgb_channel_stops": [
+        -0.1672801378303722,
+        -0.15787716179145245,
+        -0.13043362876365974
+      ],
+      "residual_mad_stops": 0.15321510912159247
+    },
+    {
+      "name": "cam1/frame_000035.jpg",
+      "observations": 60,
+      "median_brightness_stops": -0.13759868586776308,
+      "rgb_channel_stops": [
+        -0.12688500362252497,
+        -0.14898045383765557,
+        -0.09448836732988802
+      ],
+      "residual_mad_stops": 0.13759868586776308
+    },
+    {
+      "name": "cam1/frame_000036.jpg",
+      "observations": 123,
+      "median_brightness_stops": -0.05831481052866888,
+      "rgb_channel_stops": [
+        -0.0331259190805414,
+        -0.03867632477635984,
+        0.0
+      ],
+      "residual_mad_stops": 0.1525552705628177
+    },
+    {
+      "name": "cam1/frame_000037.jpg",
+      "observations": 137,
+      "median_brightness_stops": 0.03711225371391614,
+      "rgb_channel_stops": [
+        0.05284319258885249,
+        0.01646788553125993,
+        0.036630524310268656
+      ],
+      "residual_mad_stops": 0.18790122259818787
+    },
+    {
+      "name": "cam1/frame_000038.jpg",
+      "observations": 150,
+      "median_brightness_stops": 0.38875312822564756,
+      "rgb_channel_stops": [
+        0.41102791174657327,
+        0.3560800059249857,
+        0.38405900569053414
+      ],
+      "residual_mad_stops": 0.2249621023612382
+    },
+    {
+      "name": "cam1/frame_000039.jpg",
+      "observations": 149,
+      "median_brightness_stops": 0.3021129507437731,
+      "rgb_channel_stops": [
+        0.2994924552564342,
+        0.29107373535678266,
+        0.3476048157570587
+      ],
+      "residual_mad_stops": 0.1873181646796298
+    },
+    {
+      "name": "cam1/frame_000040.jpg",
+      "observations": 123,
+      "median_brightness_stops": 0.07701139744269414,
+      "rgb_channel_stops": [
+        0.0615783395710915,
+        0.08194354789171092,
+        0.06410679106818203
+      ],
+      "residual_mad_stops": 0.16162234803874725
+    },
+    {
+      "name": "cam1/frame_000041.jpg",
+      "observations": 139,
+      "median_brightness_stops": -0.08357334365216651,
+      "rgb_channel_stops": [
+        -0.08839872385682193,
+        -0.06531608268726317,
+        -0.14602882115740792
+      ],
+      "residual_mad_stops": 0.13453474793488412
+    },
+    {
+      "name": "cam1/frame_000042.jpg",
+      "observations": 112,
+      "median_brightness_stops": -0.467893405419045,
+      "rgb_channel_stops": [
+        -0.5089363644805626,
+        -0.4680863646975255,
+        -0.5385575972552071
+      ],
+      "residual_mad_stops": 0.16933209517197367
+    },
+    {
+      "name": "cam1/frame_000043.jpg",
+      "observations": 69,
+      "median_brightness_stops": -0.46129160747007103,
+      "rgb_channel_stops": [
+        -0.5013213614129163,
+        -0.4443729977290168,
+        -0.549808724753851
+      ],
+      "residual_mad_stops": 0.23441017290162403
+    },
+    {
+      "name": "cam1/frame_000044.jpg",
+      "observations": 49,
+      "median_brightness_stops": -0.37116661885136004,
+      "rgb_channel_stops": [
+        -0.39444776896774536,
+        -0.34780848797979563,
+        -0.43128411287737284
+      ],
+      "residual_mad_stops": 0.309338809255449
+    },
+    {
+      "name": "cam1/frame_000045.jpg",
+      "observations": 192,
+      "median_brightness_stops": -0.34157606181932043,
+      "rgb_channel_stops": [
+        -0.3919510938481442,
+        -0.3326302984293028,
+        -0.42910891440442456
+      ],
+      "residual_mad_stops": 0.28968081838200943
+    },
+    {
+      "name": "cam1/frame_000046.jpg",
+      "observations": 426,
+      "median_brightness_stops": -0.1476075313082073,
+      "rgb_channel_stops": [
+        -0.15304804798371804,
+        -0.12440912534697876,
+        -0.258657410902288
+      ],
+      "residual_mad_stops": 0.18417293358576545
+    },
+    {
+      "name": "cam1/frame_000047.jpg",
+      "observations": 673,
+      "median_brightness_stops": -0.04647714492484749,
+      "rgb_channel_stops": [
+        -0.06002773869583593,
+        -0.029384257639412745,
+        -0.1640897436977248
+      ],
+      "residual_mad_stops": 0.17210576518955611
+    },
+    {
+      "name": "cam1/frame_000048.jpg",
+      "observations": 763,
+      "median_brightness_stops": 0.03686416750975675,
+      "rgb_channel_stops": [
+        0.014655596943735276,
+        0.03824914255631583,
+        0.0
+      ],
+      "residual_mad_stops": 0.11739750582356046
+    },
+    {
+      "name": "cam1/frame_000049.jpg",
+      "observations": 747,
+      "median_brightness_stops": -0.04023937669356293,
+      "rgb_channel_stops": [
+        -0.03210890758438764,
+        -0.03334834644488707,
+        -0.07637339700034278
+      ],
+      "residual_mad_stops": 0.16866638298622624
+    },
+    {
+      "name": "cam1/frame_000050.jpg",
+      "observations": 759,
+      "median_brightness_stops": -0.037126092517291744,
+      "rgb_channel_stops": [
+        -0.023264235404902602,
+        -0.027510729900327487,
+        0.0
+      ],
+      "residual_mad_stops": 0.12834193749710063
+    },
+    {
+      "name": "cam1/frame_000051.jpg",
+      "observations": 688,
+      "median_brightness_stops": -0.0049218631000900424,
+      "rgb_channel_stops": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "residual_mad_stops": 0.1466788650435975
+    },
+    {
+      "name": "cam1/frame_000052.jpg",
+      "observations": 660,
+      "median_brightness_stops": 0.0016478406991112954,
+      "rgb_channel_stops": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "residual_mad_stops": 0.1512655932834786
+    },
+    {
+      "name": "cam1/frame_000053.jpg",
+      "observations": 594,
+      "median_brightness_stops": 0.0,
+      "rgb_channel_stops": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "residual_mad_stops": 0.12847302583004927
+    },
+    {
+      "name": "cam1/frame_000054.jpg",
+      "observations": 587,
+      "median_brightness_stops": -0.0013887708119578739,
+      "rgb_channel_stops": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "residual_mad_stops": 0.16499747936629663
+    },
+    {
+      "name": "cam1/frame_000055.jpg",
+      "observations": 568,
+      "median_brightness_stops": -0.003922184924756454,
+      "rgb_channel_stops": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "residual_mad_stops": 0.16898160134024287
+    },
+    {
+      "name": "cam1/frame_000056.jpg",
+      "observations": 537,
+      "median_brightness_stops": 0.04633235842615484,
+      "rgb_channel_stops": [
+        0.0,
+        0.047275276037490835,
+        0.0490964552022168
+      ],
+      "residual_mad_stops": 0.17637564051781218
+    },
+    {
+      "name": "cam1/frame_000057.jpg",
+      "observations": 497,
+      "median_brightness_stops": -0.042364439791899265,
+      "rgb_channel_stops": [
+        -0.06592230014546331,
+        -0.03281207842075853,
+        0.0
+      ],
+      "residual_mad_stops": 0.1581975507928152
+    },
+    {
+      "name": "cam1/frame_000058.jpg",
+      "observations": 508,
+      "median_brightness_stops": -0.1119274122896236,
+      "rgb_channel_stops": [
+        -0.1279159829847973,
+        -0.10068339806779245,
+        -0.0865108160164904
+      ],
+      "residual_mad_stops": 0.1535469872762464
+    },
+    {
+      "name": "cam1/frame_000059.jpg",
+      "observations": 446,
+      "median_brightness_stops": -0.1952670199707434,
+      "rgb_channel_stops": [
+        -0.2062682866596113,
+        -0.19838404509191276,
+        -0.19194251383508462
+      ],
+      "residual_mad_stops": 0.20055739895940694
+    },
+    {
+      "name": "cam1/frame_000060.jpg",
+      "observations": 506,
+      "median_brightness_stops": -0.3054692045359968,
+      "rgb_channel_stops": [
+        -0.3045315032787003,
+        -0.30764578029961287,
+        -0.3129789639082984
+      ],
+      "residual_mad_stops": 0.23650644605600663
+    },
+    {
+      "name": "cam1/frame_000061.jpg",
+      "observations": 568,
+      "median_brightness_stops": -0.28824053231696045,
+      "rgb_channel_stops": [
+        -0.30832613553334576,
+        -0.28157422612457517,
+        -0.31102603730423545
+      ],
+      "residual_mad_stops": 0.22840881759834036
+    },
+    {
+      "name": "cam1/frame_000062.jpg",
+      "observations": 522,
+      "median_brightness_stops": -0.21231657654199435,
+      "rgb_channel_stops": [
+        -0.22310024095991454,
+        -0.2136474048990546,
+        -0.26844201383341276
+      ],
+      "residual_mad_stops": 0.19371244510321523
+    },
+    {
+      "name": "cam1/frame_000063.jpg",
+      "observations": 337,
+      "median_brightness_stops": -0.12305387371231116,
+      "rgb_channel_stops": [
+        -0.11348713701601187,
+        -0.11076291737847989,
+        -0.12361748497253629
+      ],
+      "residual_mad_stops": 0.18363727885667155
+    },
+    {
+      "name": "cam1/frame_000064.jpg",
+      "observations": 456,
+      "median_brightness_stops": -0.059331911207305604,
+      "rgb_channel_stops": [
+        -0.043734904853141396,
+        -0.057652422985895804,
+        -0.060937637702230284
+      ],
+      "residual_mad_stops": 0.1678161496197892
+    },
+    {
+      "name": "cam1/frame_000065.jpg",
+      "observations": 482,
+      "median_brightness_stops": -0.01648123965422204,
+      "rgb_channel_stops": [
+        -0.016163192928325684,
+        0.0,
+        0.0
+      ],
+      "residual_mad_stops": 0.13236329667527313
+    },
+    {
+      "name": "cam1/frame_000066.jpg",
+      "observations": 515,
+      "median_brightness_stops": 0.0063081800365997285,
+      "rgb_channel_stops": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "residual_mad_stops": 0.14645657178204652
+    },
+    {
+      "name": "cam1/frame_000067.jpg",
+      "observations": 543,
+      "median_brightness_stops": 0.0974343739415677,
+      "rgb_channel_stops": [
+        0.08621448145239498,
+        0.08877188861890481,
+        0.10418553980998094
+      ],
+      "residual_mad_stops": 0.15110834997149575
+    },
+    {
+      "name": "cam1/frame_000068.jpg",
+      "observations": 576,
+      "median_brightness_stops": 0.06143850034597011,
+      "rgb_channel_stops": [
+        0.04445923981884957,
+        0.044333634308888904,
+        0.023143417100997384
+      ],
+      "residual_mad_stops": 0.219792238281154
+    },
+    {
+      "name": "cam1/frame_000069.jpg",
+      "observations": 582,
+      "median_brightness_stops": 0.0724473553525975,
+      "rgb_channel_stops": [
+        0.07657721058532972,
+        0.06321873959842414,
+        0.055732164317908964
+      ],
+      "residual_mad_stops": 0.19763137618246096
+    },
+    {
+      "name": "cam1/frame_000070.jpg",
+      "observations": 483,
+      "median_brightness_stops": 0.05847741969121341,
+      "rgb_channel_stops": [
+        0.0278649264850788,
+        0.05627866743107174,
+        0.06898718031312692
+      ],
+      "residual_mad_stops": 0.18928182781128694
+    },
+    {
+      "name": "cam1/frame_000071.jpg",
+      "observations": 338,
+      "median_brightness_stops": 0.027579474627228005,
+      "rgb_channel_stops": [
+        0.0,
+        0.0,
+        0.029123692373080594
+      ],
+      "residual_mad_stops": 0.18417347988741986
+    },
+    {
+      "name": "cam1/frame_000072.jpg",
+      "observations": 236,
+      "median_brightness_stops": 0.0,
+      "rgb_channel_stops": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "residual_mad_stops": 0.167511268691661
+    },
+    {
+      "name": "cam1/frame_000073.jpg",
+      "observations": 173,
+      "median_brightness_stops": 0.15941845771537846,
+      "rgb_channel_stops": [
+        0.17295897314085973,
+        0.13757667951098157,
+        0.13188799954855654
+      ],
+      "residual_mad_stops": 0.1616201198917654
+    },
+    {
+      "name": "cam1/frame_000074.jpg",
+      "observations": 52,
+      "median_brightness_stops": 0.05357555308012574,
+      "rgb_channel_stops": [
+        0.13115987423041758,
+        0.04479397323369014,
+        0.06670349031251024
+      ],
+      "residual_mad_stops": 0.23713375848179283
+    },
+    {
+      "name": "cam1/frame_000075.jpg",
+      "observations": 97,
+      "median_brightness_stops": 0.0,
+      "rgb_channel_stops": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "residual_mad_stops": 0.2629271367113183
+    },
+    {
+      "name": "cam1/frame_000076.jpg",
+      "observations": 128,
+      "median_brightness_stops": 0.02926986099103593,
+      "rgb_channel_stops": [
+        0.052682921078024456,
+        0.0,
+        0.015190098984558456
+      ],
+      "residual_mad_stops": 0.1573462683718399
+    },
+    {
+      "name": "cam1/frame_000077.jpg",
+      "observations": 113,
+      "median_brightness_stops": 0.07983759418977421,
+      "rgb_channel_stops": [
+        0.06721816549156792,
+        0.06125707989716981,
+        0.04840995387258273
+      ],
+      "residual_mad_stops": 0.15493657808163858
+    },
+    {
+      "name": "cam1/frame_000078.jpg",
+      "observations": 106,
+      "median_brightness_stops": 0.0071314319960065625,
+      "rgb_channel_stops": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "residual_mad_stops": 0.21374898137499188
+    },
+    {
+      "name": "cam1/frame_000079.jpg",
+      "observations": 72,
+      "median_brightness_stops": -0.10438153506567809,
+      "rgb_channel_stops": [
+        -0.14477652947042405,
+        -0.12392322356165388,
+        -0.054943213582559956
+      ],
+      "residual_mad_stops": 0.2530019718605686
+    },
+    {
+      "name": "cam1/frame_000080.jpg",
+      "observations": 46,
+      "median_brightness_stops": 0.07534434483952165,
+      "rgb_channel_stops": [
+        0.0,
+        0.10493285875552216,
+        0.0
+      ],
+      "residual_mad_stops": 0.20526968754262923
+    },
+    {
+      "name": "cam1/frame_000089.jpg",
+      "observations": 32,
+      "median_brightness_stops": 0.043502015206155764,
+      "rgb_channel_stops": [
+        0.07794264390301953,
+        0.040887060369135295,
+        0.03298129628234382
+      ],
+      "residual_mad_stops": 0.13225539451821178
+    },
+    {
+      "name": "cam1/frame_000097.jpg",
+      "observations": 70,
+      "median_brightness_stops": 0.03811136277203156,
+      "rgb_channel_stops": [
+        0.061462828753180404,
+        0.026652896722691513,
+        0.0
+      ],
+      "residual_mad_stops": 0.07279916090473001
+    },
+    {
+      "name": "cam1/frame_000098.jpg",
+      "observations": 132,
+      "median_brightness_stops": -0.05542262985967307,
+      "rgb_channel_stops": [
+        0.0,
+        -0.06421719568098519,
+        -0.03781855787599368
+      ],
+      "residual_mad_stops": 0.0762138787172198
+    },
+    {
+      "name": "cam1/frame_000099.jpg",
+      "observations": 135,
+      "median_brightness_stops": -0.02059065926258475,
+      "rgb_channel_stops": [
+        0.0,
+        -0.028419513153892854,
+        -0.018832480299181054
+      ],
+      "residual_mad_stops": 0.07484433039429556
+    },
+    {
+      "name": "cam1/frame_000106.jpg",
+      "observations": 59,
+      "median_brightness_stops": -0.16547828418055016,
+      "rgb_channel_stops": [
+        -0.24779266880041448,
+        -0.13890830603000837,
+        -0.12234015446226061
+      ],
+      "residual_mad_stops": 0.193900293063519
+    },
+    {
+      "name": "cam1/frame_000107.jpg",
+      "observations": 112,
+      "median_brightness_stops": -0.009681058798748515,
+      "rgb_channel_stops": [
+        -0.03991407337028541,
+        0.0,
+        0.0
+      ],
+      "residual_mad_stops": 0.11328149152020939
+    },
+    {
+      "name": "cam1/frame_000108.jpg",
+      "observations": 90,
+      "median_brightness_stops": 0.10931228737872178,
+      "rgb_channel_stops": [
+        0.036869598937683074,
+        0.13953706753310927,
+        0.08165315009475851
+      ],
+      "residual_mad_stops": 0.1304828590901632
+    },
+    {
+      "name": "cam1/frame_000109.jpg",
+      "observations": 117,
+      "median_brightness_stops": 0.07631816262552156,
+      "rgb_channel_stops": [
+        0.010057863657096672,
+        0.07867346420406826,
+        0.04353983868290417
+      ],
+      "residual_mad_stops": 0.17157537475763612
+    },
+    {
+      "name": "cam1/frame_000110.jpg",
+      "observations": 126,
+      "median_brightness_stops": 0.09443720401141328,
+      "rgb_channel_stops": [
+        0.0940879089363866,
+        0.0973226163450863,
+        0.1009924074320856
+      ],
+      "residual_mad_stops": 0.1269224303067903
+    },
+    {
+      "name": "cam1/frame_000111.jpg",
+      "observations": 41,
+      "median_brightness_stops": -0.055678800221963844,
+      "rgb_channel_stops": [
+        -0.012284827212931256,
+        -0.042660557568692525,
+        -0.027085720823469852
+      ],
+      "residual_mad_stops": 0.07024172059242653
+    },
+    {
+      "name": "cam1/frame_000114.jpg",
+      "observations": 48,
+      "median_brightness_stops": -0.023785305424780197,
+      "rgb_channel_stops": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "residual_mad_stops": 0.1598257196565192
+    },
+    {
+      "name": "cam1/frame_000115.jpg",
+      "observations": 102,
+      "median_brightness_stops": 0.13467869408342031,
+      "rgb_channel_stops": [
+        0.07605893948371231,
+        0.14504283489032516,
+        0.1491809757044718
+      ],
+      "residual_mad_stops": 0.13467869408342031
+    },
+    {
+      "name": "cam1/frame_000116.jpg",
+      "observations": 160,
+      "median_brightness_stops": 0.03558695572414243,
+      "rgb_channel_stops": [
+        0.02424524015493532,
+        0.040640508113596,
+        0.053300015834639225
+      ],
+      "residual_mad_stops": 0.12406577756201206
+    },
+    {
+      "name": "cam1/frame_000117.jpg",
+      "observations": 175,
+      "median_brightness_stops": 0.013522742511500197,
+      "rgb_channel_stops": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "residual_mad_stops": 0.113734602017409
+    },
+    {
+      "name": "cam1/frame_000118.jpg",
+      "observations": 124,
+      "median_brightness_stops": 0.02433378402302503,
+      "rgb_channel_stops": [
+        0.0,
+        0.02135391792615427,
+        0.06609682705317868
+      ],
+      "residual_mad_stops": 0.15653673195175977
+    },
+    {
+      "name": "cam1/frame_000119.jpg",
+      "observations": 121,
+      "median_brightness_stops": -0.03130082215575877,
+      "rgb_channel_stops": [
+        -0.01139511239189183,
+        -0.023906874422428944,
+        0.0
+      ],
+      "residual_mad_stops": 0.13273644175930366
+    },
+    {
+      "name": "cam1/frame_000120.jpg",
+      "observations": 128,
+      "median_brightness_stops": -0.046727242165831406,
+      "rgb_channel_stops": [
+        -0.039601668428510164,
+        -0.04497019197427519,
+        -0.1070577660094195
+      ],
+      "residual_mad_stops": 0.12417126690336519
+    },
+    {
+      "name": "cam1/frame_000121.jpg",
+      "observations": 150,
+      "median_brightness_stops": -0.08927618347788557,
+      "rgb_channel_stops": [
+        -0.04826380506424283,
+        -0.1126801447089474,
+        -0.14302102689132867
+      ],
+      "residual_mad_stops": 0.14964611618050097
+    },
+    {
+      "name": "cam1/frame_000122.jpg",
+      "observations": 170,
+      "median_brightness_stops": -0.005200793938813697,
+      "rgb_channel_stops": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "residual_mad_stops": 0.188936370868412
+    },
+    {
+      "name": "cam1/frame_000123.jpg",
+      "observations": 166,
+      "median_brightness_stops": 0.08330069013957217,
+      "rgb_channel_stops": [
+        0.08707282835960127,
+        0.08298864037235773,
+        0.10958856907753123
+      ],
+      "residual_mad_stops": 0.1357055378991992
+    },
+    {
+      "name": "cam1/frame_000124.jpg",
+      "observations": 128,
+      "median_brightness_stops": 0.0026184927154307967,
+      "rgb_channel_stops": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "residual_mad_stops": 0.13469188570497315
+    },
+    {
+      "name": "cam1/frame_000125.jpg",
+      "observations": 99,
+      "median_brightness_stops": -0.02703686324860265,
+      "rgb_channel_stops": [
+        -0.050529376261263845,
+        -0.019915664053651312,
+        -0.032101455943311125
+      ],
+      "residual_mad_stops": 0.19296989440229786
+    },
+    {
+      "name": "cam1/frame_000126.jpg",
+      "observations": 86,
+      "median_brightness_stops": 0.0021697773038215117,
+      "rgb_channel_stops": [
+        0.01962194742177504,
+        0.0,
+        0.0
+      ],
+      "residual_mad_stops": 0.11814570063339393
+    },
+    {
+      "name": "cam1/frame_000130.jpg",
+      "observations": 107,
+      "median_brightness_stops": 0.12221455738685674,
+      "rgb_channel_stops": [
+        0.18554961911499862,
+        0.10108256183849783,
+        0.19561635428659954
+      ],
+      "residual_mad_stops": 0.17689564112515696
+    }
+  ],
+  "seconds": 6.187999999994645,
+  "excluded_source_views": [
+    "cam0/frame_000003.jpg",
+    "cam0/frame_000025.jpg",
+    "cam0/frame_000041.jpg",
+    "cam0/frame_000061.jpg",
+    "cam0/frame_000081.jpg",
+    "cam0/frame_000111.jpg"
+  ]
+}

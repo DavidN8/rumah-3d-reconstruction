@@ -1,0 +1,84 @@
+{
+  "release": "20261029-mobile-v1",
+  "files": [
+    {
+      "path": "index.html",
+      "bytes": 9625,
+      "sha256": "20fd6d960c58539236f88d1d30372ef72f6edcdada9dd6a433d4c947c336c4d4"
+    },
+    {
+      "path": "robots.txt",
+      "bytes": 26,
+      "sha256": "331ea9090db0c9f6f597bd9840fd5b171830f6e0b3ba1cb24dfa91f0c95aedc1"
+    },
+    {
+      "path": "room-b42f3e37c2.json",
+      "bytes": 5258,
+      "sha256": "b42f3e37c29709c9c08dde7bd010713189e57395aa0d5dd17d389b2d5cf7743b"
+    },
+    {
+      "path": "room-viewer-c1e65c82a7.js",
+      "bytes": 695099,
+      "sha256": "c1e65c82a7019de979d94d7144bf92d2441001d42011bb9d573e31c93ccb00e7"
+    },
+    {
+      "path": "overview-8516540657.jpg",
+      "bytes": 79837,
+      "sha256": "8516540657f307fcf60a29e2f6eba34186f9f75421139e643fb560f2cc8d6c5c"
+    },
+    {
+      "path": "models/iphone-phone-2b811d1241.glb",
+      "bytes": 21144604,
+      "sha256": "2b811d124120e70dcecc25d06e5dc397e2a28f310403a21fdfa1e290c41c9d2b"
+    },
+    {
+      "path": "models/iphone-phone-2b811d1241.glb.gz",
+      "bytes": 17853120,
+      "sha256": "2683f178656b3c6c48a05a49812ecc3d62bd46bfb16989045c41c66708e570ca"
+    },
+    {
+      "path": "sources/frame_0000999.jpg",
+      "bytes": 287839,
+      "sha256": "3af470bb2687de65bb8f574f06348a7ebda7dc6302bce7aa8f5c49515d1854eb"
+    },
+    {
+      "path": "sources/frame_0000903.jpg",
+      "bytes": 218338,
+      "sha256": "544835ade72c22594fbfad011d60e2358579b71922407f7abdf24509439853a0"
+    },
+    {
+      "path": "sources/frame_0001398.jpg",
+      "bytes": 209011,
+      "sha256": "a468d1455616eca37fd99c60cfe22bff7b02eca88b601a60642cb3cfde16aa41"
+    },
+    {
+      "path": "sources/frame_0001612.jpg",
+      "bytes": 263857,
+      "sha256": "43a803084c79304cdc3abef83f42f73c3207bf39d590c7474d752fbbdb233a55"
+    },
+    {
+      "path": "sources/frame_0002402.jpg",
+      "bytes": 274875,
+      "sha256": "8a4cbada269b96b02bca186868eb6c5583565386ebb5352b09e9073c4b48f5dd"
+    },
+    {
+      "path": "sources/frame_0003606.jpg",
+      "bytes": 259433,
+      "sha256": "9aafb22ee5af6a806f432622cdbbb405b5551ad1df69773922c2382cacf94f8a"
+    },
+    {
+      "path": "sources/frame_0004297.jpg",
+      "bytes": 223728,
+      "sha256": "bff0d428b383a592fca70bc5e7de18109fd3c86e1ca7531f1d53f897354bca36"
+    },
+    {
+      "path": "sources/frame_0004400.jpg",
+      "bytes": 248068,
+      "sha256": "e5923f2cef8f1d571329a9767bce8c0e501fefea8926d375a9c58f0d227a9648"
+    }
+  ],
+  "tar_bytes": 41809920,
+  "tar_sha256": "a28fbea4575fd6362e8df5167f5f7d7fdc661058e99c882d3d3f2a49cc987b5f",
+  "native_model_sha256": "16f8963b043a766317497ee4281f4cf39c6b2190fafaaed51334734723c8b207",
+  "phone_model_sha256": "2b811d124120e70dcecc25d06e5dc397e2a28f310403a21fdfa1e290c41c9d2b"
+}

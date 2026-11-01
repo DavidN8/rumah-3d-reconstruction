@@ -1,0 +1,52 @@
+[
+  {
+    "name": "baseline-trusted-v3",
+    "faces": 1523311,
+    "area": 125.978,
+    "below_floor_area": 4.913,
+    "near_pct": 61.24,
+    "early_pct": 19.465,
+    "no_hit_pct": 2.017,
+    "behind_pct": 17.279
+  },
+  {
+    "name": "cull-off-probe",
+    "faces": 2315246,
+    "area": 400.504,
+    "below_floor_area": 77.245,
+    "near_pct": 61.855,
+    "early_pct": 19.89,
+    "no_hit_pct": 0.0,
+    "behind_pct": 18.255
+  },
+  {
+    "name": "probe-supported-05cm",
+    "faces": 2124326,
+    "area": 172.755,
+    "below_floor_area": 7.132,
+    "near_pct": 61.855,
+    "early_pct": 19.89,
+    "no_hit_pct": 0.637,
+    "behind_pct": 17.618
+  },
+  {
+    "name": "probe-supported-08cm",
+    "faces": 2184334,
+    "area": 190.624,
+    "below_floor_area": 8.836,
+    "near_pct": 61.855,
+    "early_pct": 19.89,
+    "no_hit_pct": 0.467,
+    "behind_pct": 17.788
+  },
+  {
+    "name": "probe-supported-12cm",
+    "faces": 2230296,
+    "area": 209.391,
+    "below_floor_area": 10.71,
+    "near_pct": 61.855,
+    "early_pct": 19.89,
+    "no_hit_pct": 0.446,
+    "behind_pct": 17.809
+  }
+]

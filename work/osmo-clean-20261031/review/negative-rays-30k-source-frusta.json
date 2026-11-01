@@ -1,0 +1,44 @@
+[
+  {
+    "pose": 1,
+    "time": 0.9009,
+    "candidateCentresInFrustum": 24,
+    "nearestCandidateCentre": 1.1026482077630706
+  },
+  {
+    "pose": 2,
+    "time": 11.911900000000001,
+    "candidateCentresInFrustum": 26,
+    "nearestCandidateCentre": 0.5837021674019828
+  },
+  {
+    "pose": 3,
+    "time": 20.02,
+    "candidateCentresInFrustum": 2,
+    "nearestCandidateCentre": 0.38209332696976583
+  },
+  {
+    "pose": 4,
+    "time": 25.025000000000002,
+    "candidateCentresInFrustum": 3,
+    "nearestCandidateCentre": 0.9985217759819808
+  },
+  {
+    "pose": 5,
+    "time": 39.9399,
+    "candidateCentresInFrustum": 157,
+    "nearestCandidateCentre": 0.7234290814514398
+  },
+  {
+    "pose": 6,
+    "time": 51.9519,
+    "candidateCentresInFrustum": 25,
+    "nearestCandidateCentre": 0.2578262892236734
+  },
+  {
+    "pose": 7,
+    "time": 60.06,
+    "candidateCentresInFrustum": 50,
+    "nearestCandidateCentre": 0.39491409911300585
+  }
+]

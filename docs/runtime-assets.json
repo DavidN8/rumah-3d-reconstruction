@@ -1,0 +1,20 @@
+{
+  "version": "2026.10.30",
+  "platform": "windows-vulkan-x86_64",
+  "archive_name": "spirula-2026.10.30-windows-vulkan-x86_64.zip",
+  "archive_bytes": 75446110,
+  "archive_sha256": "dfaf1376ab78acf4bfbaaeb7a3f12b7c06ab30bf1d9eee6082100dbc1e7b71dd",
+  "files": [
+    {
+      "path": "work/osmo-clean-20261031/runtime/spirula-2026.10.30/spirula.exe",
+      "archive_entry": "spirula.exe",
+      "bytes": 234968064,
+      "sha256": "5ea84267b276ea92e62bc1521977c836dfa7141eb3b9e2a12637cc13a2a859f2"
+    }
+  ],
+  "drive_id": "1-4yyj3SWXnl2dlGXuceXPnF_BjVDpolY",
+  "drive_url": "https://drive.google.com/file/d/1-4yyj3SWXnl2dlGXuceXPnF_BjVDpolY/view?usp=drivesdk",
+  "parent_id": "1JKHs_AMs6C7fhZOGtlzbyR3mhke6sblL",
+  "verified_remote_bytes": 75446110,
+  "verification": "Exact filename, byte count and target parent readback; full archive SHA-256 is local"
+}

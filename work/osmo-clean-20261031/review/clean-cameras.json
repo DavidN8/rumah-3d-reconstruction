@@ -1,0 +1,240 @@
+{
+  "bounds": [
+    [
+      -8.076386125413464,
+      -8.023997887794653,
+      -13.3119496119649
+    ],
+    [
+      7.492553943254166,
+      25.003959897661304,
+      6.993000241326221
+    ]
+  ],
+  "boundsSource": "actual registered fresh sparse points (navigation framing only)",
+  "coordinateFrame": "+Y up",
+  "normalizationEvidence": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\geometry\\fresh-sfm-preparation-audit.json",
+  "startCamera": {
+    "position": [
+      -0.04734322054037422,
+      1.5427764395823702,
+      0.16500877423918853
+    ],
+    "quaternion": [
+      -0.0,
+      -0.9512285361086977,
+      -0.0,
+      0.3084870695710014
+    ]
+  },
+  "homeTarget": [
+    1.1264235938455682,
+    1.5427764395823702,
+    1.784351685869173
+  ],
+  "presets": [
+    {
+      "name": "cam0/frame_000027_train.jpg",
+      "label": "Capture 0.90s \u00b7 train source",
+      "sourceFile": "clean-cameras-photos/fresh-01-cam0-frame_000027_train.jpg",
+      "sourceImageId": 2,
+      "sourceCameraId": 1,
+      "sourceTimeSeconds": 0.9009,
+      "sourceFrame": 27,
+      "split": "train",
+      "position": [
+        -0.04734322054037422,
+        1.5427764395823702,
+        0.16500877423918853
+      ],
+      "quaternion": [
+        -0.0,
+        -0.9512285361086977,
+        -0.0,
+        0.3084870695710014
+      ],
+      "imageWidth": 1200,
+      "imageHeight": 1200,
+      "intrinsics": [
+        600.0,
+        600.0,
+        600.0,
+        600.0
+      ]
+    },
+    {
+      "name": "cam0/frame_000357_train.jpg",
+      "label": "Capture 11.91s \u00b7 train source",
+      "sourceFile": "clean-cameras-photos/fresh-02-cam0-frame_000357_train.jpg",
+      "sourceImageId": 34,
+      "sourceCameraId": 1,
+      "sourceTimeSeconds": 11.911900000000001,
+      "sourceFrame": 357,
+      "split": "train",
+      "position": [
+        -0.3496397567306609,
+        1.5936464712729803,
+        -0.5127180330711167
+      ],
+      "quaternion": [
+        0.0,
+        0.7010305706838427,
+        0.0,
+        0.7131312214218963
+      ],
+      "imageWidth": 1200,
+      "imageHeight": 1200,
+      "intrinsics": [
+        600.0,
+        600.0,
+        600.0,
+        600.0
+      ]
+    },
+    {
+      "name": "cam1/frame_000600_train.jpg",
+      "label": "Capture 20.02s \u00b7 train source",
+      "sourceFile": "clean-cameras-photos/fresh-03-cam1-frame_000600_train.jpg",
+      "sourceImageId": 285,
+      "sourceCameraId": 2,
+      "sourceTimeSeconds": 20.02,
+      "sourceFrame": 600,
+      "split": "train",
+      "position": [
+        0.0426035519809401,
+        1.5804732591102624,
+        -2.7491894086220525
+      ],
+      "quaternion": [
+        0.0,
+        -0.5001721293829414,
+        0.0,
+        0.8659260020281954
+      ],
+      "imageWidth": 1200,
+      "imageHeight": 1200,
+      "intrinsics": [
+        600.0,
+        600.0,
+        600.0,
+        600.0
+      ]
+    },
+    {
+      "name": "cam0/frame_000750_eval.jpg",
+      "label": "Capture 25.03s \u00b7 eval source",
+      "sourceFile": "clean-cameras-photos/fresh-04-cam0-frame_000750_eval.jpg",
+      "sourceImageId": 78,
+      "sourceCameraId": 1,
+      "sourceTimeSeconds": 25.025000000000002,
+      "sourceFrame": 750,
+      "split": "eval",
+      "position": [
+        1.0981363617612274,
+        1.5735985870871716,
+        -1.208727232524263
+      ],
+      "quaternion": [
+        0.0,
+        -0.5874741602505047,
+        0.0,
+        0.8092429246140892
+      ],
+      "imageWidth": 1200,
+      "imageHeight": 1200,
+      "intrinsics": [
+        600.0,
+        600.0,
+        600.0,
+        600.0
+      ]
+    },
+    {
+      "name": "cam0/frame_001197_train.jpg",
+      "label": "Capture 39.94s \u00b7 train source",
+      "sourceFile": "clean-cameras-photos/fresh-05-cam0-frame_001197_train.jpg",
+      "sourceImageId": 128,
+      "sourceCameraId": 1,
+      "sourceTimeSeconds": 39.9399,
+      "sourceFrame": 1197,
+      "split": "train",
+      "position": [
+        0.7616677170986236,
+        0.7530471853609798,
+        1.059430921517134
+      ],
+      "quaternion": [
+        0.0,
+        0.07585943406091754,
+        0.0,
+        0.9971185216733051
+      ],
+      "imageWidth": 1200,
+      "imageHeight": 1200,
+      "intrinsics": [
+        600.0,
+        600.0,
+        600.0,
+        600.0
+      ]
+    },
+    {
+      "name": "cam0/frame_001557_eval.jpg",
+      "label": "Capture 51.95s \u00b7 eval source",
+      "sourceFile": "clean-cameras-photos/fresh-06-cam0-frame_001557_eval.jpg",
+      "sourceImageId": 174,
+      "sourceCameraId": 1,
+      "sourceTimeSeconds": 51.9519,
+      "sourceFrame": 1557,
+      "split": "eval",
+      "position": [
+        -0.11036735204714103,
+        0.4616502046204495,
+        -3.4100854048200673
+      ],
+      "quaternion": [
+        0.0,
+        0.8397103441859145,
+        0.0,
+        0.5430345641551493
+      ],
+      "imageWidth": 1200,
+      "imageHeight": 1200,
+      "intrinsics": [
+        600.0,
+        600.0,
+        600.0,
+        600.0
+      ]
+    },
+    {
+      "name": "cam0/frame_001800_train.jpg",
+      "label": "Capture 60.06s \u00b7 train source",
+      "sourceFile": "clean-cameras-photos/fresh-07-cam0-frame_001800_train.jpg",
+      "sourceImageId": 204,
+      "sourceCameraId": 1,
+      "sourceTimeSeconds": 60.06,
+      "sourceFrame": 1800,
+      "split": "train",
+      "position": [
+        -0.8176386469064271,
+        0.4255116593924649,
+        0.8534996480900683
+      ],
+      "quaternion": [
+        -0.0,
+        -0.997386339509432,
+        -0.0,
+        0.07225295675594115
+      ],
+      "imageWidth": 1200,
+      "imageHeight": 1200,
+      "intrinsics": [
+        600.0,
+        600.0,
+        600.0,
+        600.0
+      ]
+    }
+  ]
+}

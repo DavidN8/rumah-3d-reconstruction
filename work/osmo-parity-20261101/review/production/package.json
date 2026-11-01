@@ -1,0 +1,1 @@
+{"name":"rumah-native-osmo-provisional","private":true,"type":"module","scripts":{"build":"node build.mjs","test":"node --test choice-gate.test.mjs loader-core.test.mjs model-selection.test.mjs native-delivery.test.mjs"}}

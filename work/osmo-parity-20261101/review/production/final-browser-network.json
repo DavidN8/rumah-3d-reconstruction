@@ -1,0 +1,255 @@
+{
+  "build": "20261031-osmo-clean-v1",
+  "capturedUtc": "2026-10-31T01:46:51.135659+00:00",
+  "sourceLogs": [
+    "../requests.jsonl",
+    "../failure-requests.jsonl"
+  ],
+  "zeroBasedLineRanges": {
+    "prechoice": [
+      278,
+      280
+    ],
+    "iphoneFast": [
+      297,
+      305
+    ],
+    "iphoneFull": [
+      305,
+      313
+    ]
+  },
+  "prechoice": [
+    {
+      "time": "2026-10-31T01:40:32.425Z",
+      "method": "GET",
+      "path": "/production/public/index.html"
+    },
+    {
+      "time": "2026-10-31T01:40:59.129Z",
+      "method": "GET",
+      "path": "/production/public/index.html"
+    }
+  ],
+  "osmoDesktopCancelAndNarrow": [
+    {
+      "time": "2026-10-31T01:41:17.890Z",
+      "method": "GET",
+      "path": "/production/public/room-viewer-B35IPUXA.js"
+    },
+    {
+      "time": "2026-10-31T01:41:17.910Z",
+      "method": "GET",
+      "path": "/production/public/chunks/chunk-LEOKMXNU.js"
+    },
+    {
+      "time": "2026-10-31T01:41:17.935Z",
+      "method": "GET",
+      "path": "/production/public/room-be410c75b8.json"
+    },
+    {
+      "time": "2026-10-31T01:41:17.940Z",
+      "method": "GET",
+      "path": "/production/public/models/osmo-native-cbb33c91b5.sog"
+    },
+    {
+      "time": "2026-10-31T01:41:18.113Z",
+      "method": "GET",
+      "path": "/production/public/chunks/spark.module-XBMJVCYQ.js"
+    },
+    {
+      "time": "2026-10-31T01:41:58.039Z",
+      "method": "GET",
+      "path": "/production/public/sources/osmo-fa546196d4.jpg"
+    },
+    {
+      "time": "2026-10-31T01:42:44.175Z",
+      "method": "GET",
+      "path": "/production/public/index.html"
+    },
+    {
+      "time": "2026-10-31T01:42:44.329Z",
+      "method": "GET",
+      "path": "/production/public/room-viewer-B35IPUXA.js"
+    },
+    {
+      "time": "2026-10-31T01:42:44.333Z",
+      "method": "GET",
+      "path": "/production/public/chunks/chunk-LEOKMXNU.js"
+    },
+    {
+      "time": "2026-10-31T01:42:44.353Z",
+      "method": "GET",
+      "path": "/production/public/room-be410c75b8.json"
+    },
+    {
+      "time": "2026-10-31T01:42:44.357Z",
+      "method": "GET",
+      "path": "/production/public/models/osmo-native-cbb33c91b5.sog"
+    },
+    {
+      "time": "2026-10-31T01:42:45.346Z",
+      "method": "GET",
+      "path": "/production/public/index.html"
+    },
+    {
+      "time": "2026-10-31T01:42:56.491Z",
+      "method": "GET",
+      "path": "/production/public/room-viewer-B35IPUXA.js"
+    },
+    {
+      "time": "2026-10-31T01:42:56.498Z",
+      "method": "GET",
+      "path": "/production/public/chunks/chunk-LEOKMXNU.js"
+    },
+    {
+      "time": "2026-10-31T01:42:56.517Z",
+      "method": "GET",
+      "path": "/production/public/room-be410c75b8.json"
+    },
+    {
+      "time": "2026-10-31T01:42:56.520Z",
+      "method": "GET",
+      "path": "/production/public/models/osmo-native-cbb33c91b5.sog"
+    },
+    {
+      "time": "2026-10-31T01:42:56.772Z",
+      "method": "GET",
+      "path": "/production/public/chunks/spark.module-XBMJVCYQ.js"
+    }
+  ],
+  "iphoneFast": [
+    {
+      "time": "2026-10-31T01:43:58.781Z",
+      "method": "GET",
+      "path": "/production/public/index.html"
+    },
+    {
+      "time": "2026-10-31T01:43:59.940Z",
+      "method": "GET",
+      "path": "/production/public/room-viewer-B35IPUXA.js"
+    },
+    {
+      "time": "2026-10-31T01:44:00.007Z",
+      "method": "GET",
+      "path": "/production/public/chunks/chunk-LEOKMXNU.js"
+    },
+    {
+      "time": "2026-10-31T01:44:00.028Z",
+      "method": "GET",
+      "path": "/production/public/room-be410c75b8.json"
+    },
+    {
+      "time": "2026-10-31T01:44:00.032Z",
+      "method": "GET",
+      "path": "/production/public/models/iphone-phone-2b811d1241.glb"
+    },
+    {
+      "time": "2026-10-31T01:44:00.032Z",
+      "method": "GET",
+      "path": "/production/public/overview-8516540657.jpg"
+    },
+    {
+      "time": "2026-10-31T01:44:01.943Z",
+      "method": "GET",
+      "path": "/production/public/chunks/GLTFLoader-4MN6SB6K.js"
+    },
+    {
+      "time": "2026-10-31T01:44:01.944Z",
+      "method": "GET",
+      "path": "/production/public/chunks/index.module-MFKVMRU3.js"
+    }
+  ],
+  "iphoneFull": [
+    {
+      "time": "2026-10-31T01:44:24.646Z",
+      "method": "GET",
+      "path": "/production/public/index.html"
+    },
+    {
+      "time": "2026-10-31T01:44:25.807Z",
+      "method": "GET",
+      "path": "/production/public/room-viewer-B35IPUXA.js"
+    },
+    {
+      "time": "2026-10-31T01:44:25.861Z",
+      "method": "GET",
+      "path": "/production/public/chunks/chunk-LEOKMXNU.js"
+    },
+    {
+      "time": "2026-10-31T01:44:25.880Z",
+      "method": "GET",
+      "path": "/production/public/room-be410c75b8.json"
+    },
+    {
+      "time": "2026-10-31T01:44:25.883Z",
+      "method": "GET",
+      "path": "/production/public/overview-8516540657.jpg"
+    },
+    {
+      "time": "2026-10-31T01:44:25.884Z",
+      "method": "GET",
+      "path": "/production/public/models/iphone-full-room-16f8963b.glb"
+    },
+    {
+      "time": "2026-10-31T01:44:27.807Z",
+      "method": "GET",
+      "path": "/production/public/chunks/GLTFLoader-4MN6SB6K.js"
+    },
+    {
+      "time": "2026-10-31T01:44:27.808Z",
+      "method": "GET",
+      "path": "/production/public/chunks/index.module-MFKVMRU3.js"
+    }
+  ],
+  "syntheticFailure": [
+    {
+      "time": "2026-10-31T01:45:15.120Z",
+      "method": "GET",
+      "path": "/",
+      "syntheticModelFailure": false
+    },
+    {
+      "time": "2026-10-31T01:45:15.258Z",
+      "method": "GET",
+      "path": "/favicon.ico",
+      "syntheticModelFailure": false
+    },
+    {
+      "time": "2026-10-31T01:45:15.359Z",
+      "method": "GET",
+      "path": "/room-viewer-B35IPUXA.js",
+      "syntheticModelFailure": false
+    },
+    {
+      "time": "2026-10-31T01:45:15.377Z",
+      "method": "GET",
+      "path": "/chunks/chunk-LEOKMXNU.js",
+      "syntheticModelFailure": false
+    },
+    {
+      "time": "2026-10-31T01:45:15.402Z",
+      "method": "GET",
+      "path": "/room-be410c75b8.json",
+      "syntheticModelFailure": false
+    },
+    {
+      "time": "2026-10-31T01:45:15.406Z",
+      "method": "GET",
+      "path": "/models/osmo-native-cbb33c91b5.sog",
+      "syntheticModelFailure": true
+    },
+    {
+      "time": "2026-10-31T01:45:32.903Z",
+      "method": "GET",
+      "path": "/",
+      "syntheticModelFailure": false
+    }
+  ],
+  "assertions": {
+    "prechoiceOnlyHTML": true,
+    "iphoneModelsDoNotFetchSparkOrOsmo": true,
+    "syntheticFailureOnlyOneModelAttempt": true,
+    "selectingAnotherModelAfterFailureDoesNotFetchIt": true
+  }
+}

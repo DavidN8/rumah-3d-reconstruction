@@ -1,0 +1,103 @@
+Read-only architectural-plane feasibility and v4 comparison
+31 October 2026
+
+The data support local plane regularization as a possible later experiment,
+especially on the higher white ceiling. They do not support automatic completion
+of whole wall rectangles. v4 improves waviness on one well-supported wall family
+and improves coverage, while other wall regions remain mixed. No geometry was
+changed and no additional reconstruction trial was started for this audit.
+
+Evidence and frame
+
+Used the accepted normalized Y-up main SfM component, with the strict reader for
+OPENCV_FISHEYE model 5 / 8 parameters. Rechecked 25,022 accepted points against
+154,411 observations: each point has at least 3 masked observations, reprojection
+error <= 2 px and fisheye theta <= 85 degrees. The zero writer point.error field was
+ignored. Baseline is osmo-lite-trusted-source.glb; v4 is recovery-v2/v4-probe.glb.
+Source hashes are recorded in the JSON reports. Both meshes remain unchanged.
+
+Distances are approximate scene units converted to centimetres using the assumed
+1.5 m median camera-height normalization. This is not measured metric ground truth.
+The audit was CPU-only, with four linear-algebra threads and process affinity
+restricted to at most eight logical CPUs.
+
+Stable support
+
+Wall candidate 4: 1,131 tracks, 139 source images, 5.64 approximate square metres of
+convex-hull support; spatial-half plane-normal difference 0.25 degrees. Baseline
+nearby parallel surfaces have median/p90 plane error 2.78/9.17 cm, with 76.8% within
+5 cm. v4 changes those to 2.32/9.19 cm and 77.3%. The broad p90 includes different
+surface coverage and nearby layers; it alone does not measure waviness fairly.
+
+Higher ceiling candidate 12: Y approximately 2.321; 307 tracks, 1,432 observations,
+122 source images; 7.18 approximate square metres of hull support. Spatial-half
+normal difference 0.56 degrees. Baseline median/p90 error 1.59/3.16 cm; 98.75% of the
+conditional nearby parallel surface samples lie within 5 cm. v4 median/p90 becomes
+2.32/3.60 cm; 98.1% remains within 5 cm. These are strong local plane hypotheses,
+not proof that every blank area of their convex hull is a real wall/ceiling.
+
+Fixed common-grid comparison
+
+Used identical 5 cm grid cells, identical plane equations, excluded cells crossed
+by at least 2 distinct trusted background-feature rays, and required both meshes
+to have a normal-ray hit within 20 cm. Subtracted each surface's signed median to
+separate offset from waviness. Neighbor differences use the same valid grid edges.
+
+Plane / common cells / centered p90 displacement / neighbor-step p90 difference
+Wall 4   / 1,620 / 7.81 -> 5.17 cm / 3.65 -> 2.69 cm
+Wall 7   / 1,505 / 6.75 -> 4.86 cm / 3.28 -> 2.43 cm
+Floor 0  / 5,732 / 6.20 -> 5.10 cm / 2.73 -> 2.01 cm
+Ceil 12  / 2,395 / 3.59 -> 3.53 cm / 1.85 -> 1.72 cm
+Wall 8   /  967 / 14.81 -> 15.02 cm / 7.85 -> 8.11 cm
+
+Candidates 4 and 7 are nearby hypotheses from the same wall family; they are not
+two independent demonstrations on separate rooms. The fixed-grid evidence does
+show locally smoother v4 geometry. It does not justify saying all white walls
+are now flat. Common-cell shape measurements omit newly recovered coverage,
+which is reported separately. Wall 4 missing near-plane grid cells improve
+926 -> 846; higher ceiling 610 -> 599. Some other walls gain little or regress.
+
+Why blanket filling is unsafe
+
+On baseline wall 4, 194 of 926 missing cells have at least 2 trusted background
+features observed through the proposed plane. On several other wall candidates,
+roughly half or more of the missing cells have such negative evidence. These
+can be real doors, windows, finite wall boundaries or visible space behind a
+surface. A rectangular planar cap would close legitimate openings. Absence of
+a negative witness is not positive evidence that a surface exists.
+
+The higher ceiling has 240 gap cells within 10 cm of sparse plane support and no
+negative witness. Only 30 have visibility in two of the six upright reference
+photos. Those 30 have bright neutral colors, with median cross-view 5x5 RGB-mean
+standard deviation about 2/255. This supports their appearance, but white paint
+has too little texture for RGB agreement alone to prove the proposed geometry.
+Most candidates lack enough overlap in those six reference views. The raw 244
+calibrated fisheye frames would be needed for stronger local validation.
+
+Recommended direction
+
+Keep the current v4 geometry/texture review and deployment work as planned.
+Do not add an automatic room-wide plane-fill step to this delivery. The evidence
+supports describing better local wall smoothness and coverage, with remaining
+holes and uneven walls explicitly acknowledged.
+
+If a later local repair experiment is warranted, start with small, genuinely
+closed boundary loops on the stable ceiling/wall regions. Require a small loop
+diameter, near-planar boundary, normal agreement, nearby sparse support, and no
+background-ray contradiction; protect door/window edges with an expanded mask.
+The earlier topology audit counted 173 loops with diameter <= 5 cm and plane max
+error <= 5 mm across the entire baseline, before these additional evidence gates.
+That is a candidate pool, not an approved repair count. Prefer several separated
+raw viewpoints and compare a separate candidate against the original geometry,
+source photos and ray consistency. Do not bridge open boundary chains or use the
+convex hull as a completion mask. No such repair was performed here.
+
+Artifacts
+
+plane-audit-summary.json: baseline support, conditional residuals, photo checks.
+plane-audit-v4-summary.json: same fitted planes applied to v4.
+plane-audit-v4-comparison.json: area-weighted before/after metrics.
+plane-audit-v4-common-grid.json: fixed common-cell waviness measurements.
+plane-audit-support.png and plane-audit-v4-support.png: coverage/opening maps.
+Green=mesh near plane; purple=negative background rays; yellow=near sparse support.
+The maps are diagnostic projections, not proposed replacement geometry.

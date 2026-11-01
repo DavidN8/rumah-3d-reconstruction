@@ -1,0 +1,13 @@
+{
+  "status": "rejected_as_bathroom_fix",
+  "sourcePose": "cam0/frame_001557_eval.jpg",
+  "removedForTrial": 319,
+  "sourceSplatsBefore": 2999726,
+  "nativeBeforeRmse255": 33.880071359431646,
+  "visibilityTrialRmse255": 33.88000669848767,
+  "sourcePsnrChangeDb": 1.657724841462505e-05,
+  "beforeVsAfterRmse255": 0.02400573697096968,
+  "visualResult": "Hazy obstruction persists; do not use this candidate as a fix.",
+  "originalModelModified": false,
+  "deployed": false
+}

@@ -1,0 +1,11 @@
+{
+  "total_main_points": 125862,
+  "track4_candidates": 29794,
+  "good_points": 25676,
+  "minimum_track_length": 4,
+  "minimum_masked_observations_at_actual_reprojection_le2": 3,
+  "maximum_mean_actual_reprojection_px": 1.5,
+  "writer_point_error_field_used": false,
+  "source": "accepted normalized main SfM component",
+  "cache_sha256": "c46cb47312d66f6216fd8be3f58675c6dd4032452ab4430c761864145b1a704d"
+}

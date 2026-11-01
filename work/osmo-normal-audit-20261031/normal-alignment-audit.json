@@ -1,0 +1,609 @@
+{
+  "mode": "read-only CPU audit",
+  "mapMutation": false,
+  "frameCount": 10,
+  "rows": [
+    {
+      "name": "cam0/frame_000001.jpg",
+      "samples": 19442,
+      "scale": 0.7581381644480629,
+      "offset": -0.0007157955930426303,
+      "offsetFraction": 0.0003146336074798244,
+      "rawToAlignedGeometricAngleP10P50P90P95": [
+        0.17196938033820078,
+        0.5287339095615604,
+        1.7594964162217035,
+        2.993658213384312
+      ],
+      "predToRawPlaneAngleP10P50P90P95": [
+        1.2460210310512325,
+        4.4187433255438355,
+        26.33372867617443,
+        36.536516357687375
+      ],
+      "predToAlignedPlaneAngleP10P50P90P95": [
+        1.273116477713451,
+        4.559967623254217,
+        26.331076603832365,
+        36.7650072585857
+      ],
+      "predToRawSignedAngleP10P50P90P95": [
+        1.2460210310512325,
+        4.4187433255438355,
+        26.33372867617443,
+        36.536516357687375
+      ],
+      "predPointsTowardCameraFraction": 1.0,
+      "conventionFlipsBest": [
+        {
+          "signs": [
+            -1,
+            -1,
+            -1
+          ],
+          "medianPlaneAngle": 4.4187433255438355
+        },
+        {
+          "signs": [
+            1,
+            1,
+            1
+          ],
+          "medianPlaneAngle": 4.4187433255438355
+        },
+        {
+          "signs": [
+            -1,
+            1,
+            1
+          ],
+          "medianPlaneAngle": 13.966342731964483
+        }
+      ],
+      "geometricNormalChangeOver10DegFraction": 0.00020574015019030964,
+      "mapsUnchanged": true
+    },
+    {
+      "name": "cam0/frame_000010.jpg",
+      "samples": 20996,
+      "scale": 0.8614363059339871,
+      "offset": 0.051812048287519875,
+      "offsetFraction": 0.03352893690655603,
+      "rawToAlignedGeometricAngleP10P50P90P95": [
+        0.4578310317278836,
+        1.0981212227333064,
+        2.042637076578849,
+        2.4824833627782303
+      ],
+      "predToRawPlaneAngleP10P50P90P95": [
+        1.052659894533215,
+        3.1859665278039495,
+        13.35475131534097,
+        19.408638409398293
+      ],
+      "predToAlignedPlaneAngleP10P50P90P95": [
+        1.2970941611942908,
+        3.67027988436193,
+        12.680154672071565,
+        18.905882711100137
+      ],
+      "predToRawSignedAngleP10P50P90P95": [
+        1.052659894533215,
+        3.1859665278039495,
+        13.35475131534097,
+        19.408638409398293
+      ],
+      "predPointsTowardCameraFraction": 1.0,
+      "conventionFlipsBest": [
+        {
+          "signs": [
+            -1,
+            -1,
+            -1
+          ],
+          "medianPlaneAngle": 3.1859665278039495
+        },
+        {
+          "signs": [
+            1,
+            1,
+            1
+          ],
+          "medianPlaneAngle": 3.1859665278039495
+        },
+        {
+          "signs": [
+            -1,
+            -1,
+            1
+          ],
+          "medianPlaneAngle": 20.2197181143438
+        }
+      ],
+      "geometricNormalChangeOver10DegFraction": 0.0020003810249571347,
+      "mapsUnchanged": true
+    },
+    {
+      "name": "cam0/frame_000030.jpg",
+      "samples": 18143,
+      "scale": 0.5159876431616618,
+      "offset": 0.6382277615162021,
+      "offsetFraction": 0.3190600640500444,
+      "rawToAlignedGeometricAngleP10P50P90P95": [
+        6.18600938823729,
+        19.669517815700317,
+        25.0040165604836,
+        26.259610163597582
+      ],
+      "predToRawPlaneAngleP10P50P90P95": [
+        1.1084157669665946,
+        3.675671635663193,
+        16.555243106031327,
+        23.379656683463494
+      ],
+      "predToAlignedPlaneAngleP10P50P90P95": [
+        5.755253343918021,
+        17.884079007922548,
+        25.400600699873998,
+        27.751552872925988
+      ],
+      "predToRawSignedAngleP10P50P90P95": [
+        1.1084157669665946,
+        3.675671635663193,
+        16.555243106031327,
+        23.379656683463494
+      ],
+      "predPointsTowardCameraFraction": 1.0,
+      "conventionFlipsBest": [
+        {
+          "signs": [
+            -1,
+            -1,
+            -1
+          ],
+          "medianPlaneAngle": 3.675671635663193
+        },
+        {
+          "signs": [
+            1,
+            1,
+            1
+          ],
+          "medianPlaneAngle": 3.675671635663193
+        },
+        {
+          "signs": [
+            -1,
+            -1,
+            1
+          ],
+          "medianPlaneAngle": 18.8028376543274
+        }
+      ],
+      "geometricNormalChangeOver10DegFraction": 0.7905528302926749,
+      "mapsUnchanged": true
+    },
+    {
+      "name": "cam0/frame_000043.jpg",
+      "samples": 19356,
+      "scale": 1.0461438599477362,
+      "offset": -0.5373506480838981,
+      "offsetFraction": 0.5104393786497287,
+      "rawToAlignedGeometricAngleP10P50P90P95": [
+        6.795964165113018,
+        18.985841557337444,
+        42.56582102665117,
+        46.72272999613443
+      ],
+      "predToRawPlaneAngleP10P50P90P95": [
+        1.2560280730886875,
+        3.8833546024155705,
+        20.513567637462696,
+        31.97805065708883
+      ],
+      "predToAlignedPlaneAngleP10P50P90P95": [
+        9.050049685112137,
+        26.610728246845582,
+        47.71473058813912,
+        53.80605676476149
+      ],
+      "predToRawSignedAngleP10P50P90P95": [
+        1.2560280730886875,
+        3.8833546024155705,
+        20.513567637462696,
+        31.97805065708883
+      ],
+      "predPointsTowardCameraFraction": 1.0,
+      "conventionFlipsBest": [
+        {
+          "signs": [
+            -1,
+            -1,
+            -1
+          ],
+          "medianPlaneAngle": 3.8833546024155705
+        },
+        {
+          "signs": [
+            1,
+            1,
+            1
+          ],
+          "medianPlaneAngle": 3.8833546024155705
+        },
+        {
+          "signs": [
+            -1,
+            -1,
+            1
+          ],
+          "medianPlaneAngle": 17.74132540212069
+        }
+      ],
+      "geometricNormalChangeOver10DegFraction": 0.7564062822897293,
+      "mapsUnchanged": true
+    },
+    {
+      "name": "cam0/frame_000052.jpg",
+      "samples": 17867,
+      "scale": 0.10657568362959287,
+      "offset": 1.80406381418506,
+      "offsetFraction": 0.8878382219509221,
+      "rawToAlignedGeometricAngleP10P50P90P95": [
+        17.428775256308654,
+        38.313049112293875,
+        51.27096943840109,
+        53.83919804082483
+      ],
+      "predToRawPlaneAngleP10P50P90P95": [
+        1.4450382177503682,
+        5.281642509401732,
+        23.194188166804697,
+        36.79322530822681
+      ],
+      "predToAlignedPlaneAngleP10P50P90P95": [
+        14.797766829907681,
+        35.485935245932865,
+        52.83941534099208,
+        56.14480775053886
+      ],
+      "predToRawSignedAngleP10P50P90P95": [
+        1.4450382177503682,
+        5.281642509401732,
+        23.194188166804697,
+        36.79322530822681
+      ],
+      "predPointsTowardCameraFraction": 1.0,
+      "conventionFlipsBest": [
+        {
+          "signs": [
+            -1,
+            -1,
+            -1
+          ],
+          "medianPlaneAngle": 5.281642509401732
+        },
+        {
+          "signs": [
+            1,
+            1,
+            1
+          ],
+          "medianPlaneAngle": 5.281642509401732
+        },
+        {
+          "signs": [
+            -1,
+            1,
+            -1
+          ],
+          "medianPlaneAngle": 24.408476374608423
+        }
+      ],
+      "geometricNormalChangeOver10DegFraction": 0.9703363743213747,
+      "mapsUnchanged": true
+    },
+    {
+      "name": "cam0/frame_000053.jpg",
+      "samples": 18177,
+      "scale": 0.013548474808774306,
+      "offset": 1.71717094965098,
+      "offsetFraction": 0.9928590925972389,
+      "rawToAlignedGeometricAngleP10P50P90P95": [
+        16.665656177942047,
+        41.287757596417336,
+        54.190366340349236,
+        56.891409547623056
+      ],
+      "predToRawPlaneAngleP10P50P90P95": [
+        1.5810751404229983,
+        5.061058220657453,
+        25.879229247319437,
+        40.34776007092997
+      ],
+      "predToAlignedPlaneAngleP10P50P90P95": [
+        14.830444265295407,
+        38.031916664732165,
+        55.0470873873152,
+        59.19055746938762
+      ],
+      "predToRawSignedAngleP10P50P90P95": [
+        1.5810751404229983,
+        5.061058220657453,
+        25.879229247319437,
+        40.34776007092997
+      ],
+      "predPointsTowardCameraFraction": 1.0,
+      "conventionFlipsBest": [
+        {
+          "signs": [
+            -1,
+            -1,
+            -1
+          ],
+          "medianPlaneAngle": 5.061058220657453
+        },
+        {
+          "signs": [
+            1,
+            1,
+            1
+          ],
+          "medianPlaneAngle": 5.061058220657453
+        },
+        {
+          "signs": [
+            -1,
+            1,
+            -1
+          ],
+          "medianPlaneAngle": 24.925790571847607
+        }
+      ],
+      "geometricNormalChangeOver10DegFraction": 0.9598393574297188,
+      "mapsUnchanged": true
+    },
+    {
+      "name": "cam1/frame_000001.jpg",
+      "samples": 15606,
+      "scale": 1.0272190529967897,
+      "offset": -0.24934619477687675,
+      "offsetFraction": 0.12374911587945368,
+      "rawToAlignedGeometricAngleP10P50P90P95": [
+        1.588416453797386,
+        4.070128919150424,
+        10.337430901751373,
+        11.680778268307488
+      ],
+      "predToRawPlaneAngleP10P50P90P95": [
+        1.1329894834491268,
+        3.097243051194582,
+        18.458955638839967,
+        28.336511088956758
+      ],
+      "predToAlignedPlaneAngleP10P50P90P95": [
+        2.0963673137758008,
+        7.509752038521226,
+        20.307220899336883,
+        31.42089089495265
+      ],
+      "predToRawSignedAngleP10P50P90P95": [
+        1.1329894834491268,
+        3.097243051194582,
+        18.458955638839967,
+        28.336511088956758
+      ],
+      "predPointsTowardCameraFraction": 1.0,
+      "conventionFlipsBest": [
+        {
+          "signs": [
+            -1,
+            -1,
+            -1
+          ],
+          "medianPlaneAngle": 3.097243051194582
+        },
+        {
+          "signs": [
+            1,
+            1,
+            1
+          ],
+          "medianPlaneAngle": 3.097243051194582
+        },
+        {
+          "signs": [
+            -1,
+            1,
+            1
+          ],
+          "medianPlaneAngle": 11.063640439941105
+        }
+      ],
+      "geometricNormalChangeOver10DegFraction": 0.11758298090478021,
+      "mapsUnchanged": true
+    },
+    {
+      "name": "cam1/frame_000093.jpg",
+      "samples": 15213,
+      "scale": 1.0521214904856975,
+      "offset": -0.4280906153981279,
+      "offsetFraction": 0.40760603363006465,
+      "rawToAlignedGeometricAngleP10P50P90P95": [
+        6.108111191717979,
+        14.999044495903544,
+        28.167495511851907,
+        33.67126328640157
+      ],
+      "predToRawPlaneAngleP10P50P90P95": [
+        1.4493316807252956,
+        5.112723286374317,
+        23.724892021334266,
+        31.771371718537647
+      ],
+      "predToAlignedPlaneAngleP10P50P90P95": [
+        7.174457072899138,
+        20.47578436650354,
+        43.054379563439866,
+        52.47782598783669
+      ],
+      "predToRawSignedAngleP10P50P90P95": [
+        1.4493316807252956,
+        5.112723286374317,
+        23.724892021334266,
+        31.771371718537647
+      ],
+      "predPointsTowardCameraFraction": 1.0,
+      "conventionFlipsBest": [
+        {
+          "signs": [
+            -1,
+            -1,
+            -1
+          ],
+          "medianPlaneAngle": 5.112723286374317
+        },
+        {
+          "signs": [
+            1,
+            1,
+            1
+          ],
+          "medianPlaneAngle": 5.112723286374317
+        },
+        {
+          "signs": [
+            -1,
+            1,
+            -1
+          ],
+          "medianPlaneAngle": 54.58467327155836
+        }
+      ],
+      "geometricNormalChangeOver10DegFraction": 0.6481956221652534,
+      "mapsUnchanged": true
+    },
+    {
+      "name": "cam1/frame_000119.jpg",
+      "samples": 14075,
+      "scale": 1.4523440307590196,
+      "offset": -0.783439589913883,
+      "offsetFraction": 0.5391756289058258,
+      "rawToAlignedGeometricAngleP10P50P90P95": [
+        5.93956380721255,
+        16.411164885749248,
+        45.17772984826355,
+        48.6571716247291
+      ],
+      "predToRawPlaneAngleP10P50P90P95": [
+        1.5610816789268391,
+        5.70836088880377,
+        25.78107978273599,
+        40.063125328162954
+      ],
+      "predToAlignedPlaneAngleP10P50P90P95": [
+        9.125263883645578,
+        23.97872816805455,
+        53.75669561854287,
+        67.46246698924821
+      ],
+      "predToRawSignedAngleP10P50P90P95": [
+        1.5610816789268391,
+        5.70836088880377,
+        25.78107978273599,
+        40.063125328162954
+      ],
+      "predPointsTowardCameraFraction": 1.0,
+      "conventionFlipsBest": [
+        {
+          "signs": [
+            -1,
+            -1,
+            -1
+          ],
+          "medianPlaneAngle": 5.70836088880377
+        },
+        {
+          "signs": [
+            1,
+            1,
+            1
+          ],
+          "medianPlaneAngle": 5.70836088880377
+        },
+        {
+          "signs": [
+            -1,
+            -1,
+            1
+          ],
+          "medianPlaneAngle": 25.417896050134136
+        }
+      ],
+      "geometricNormalChangeOver10DegFraction": 0.7558792184724689,
+      "mapsUnchanged": true
+    },
+    {
+      "name": "cam1/frame_000120.jpg",
+      "samples": 14701,
+      "scale": 1.4492516441051413,
+      "offset": -0.5861672085737549,
+      "offsetFraction": 0.49318026779090973,
+      "rawToAlignedGeometricAngleP10P50P90P95": [
+        5.539914170162572,
+        11.232603794019278,
+        21.063579219114494,
+        22.883597289679333
+      ],
+      "predToRawPlaneAngleP10P50P90P95": [
+        1.7004828656025792,
+        6.858006438998634,
+        28.217379617064175,
+        39.61596330274992
+      ],
+      "predToAlignedPlaneAngleP10P50P90P95": [
+        6.1981190518098135,
+        16.494245020434622,
+        41.77540259176819,
+        52.5286564541444
+      ],
+      "predToRawSignedAngleP10P50P90P95": [
+        1.7004828656025792,
+        6.858006438998634,
+        28.217379617064175,
+        39.61596330274992
+      ],
+      "predPointsTowardCameraFraction": 1.0,
+      "conventionFlipsBest": [
+        {
+          "signs": [
+            -1,
+            -1,
+            -1
+          ],
+          "medianPlaneAngle": 6.858006438998634
+        },
+        {
+          "signs": [
+            1,
+            1,
+            1
+          ],
+          "medianPlaneAngle": 6.858006438998634
+        },
+        {
+          "signs": [
+            -1,
+            -1,
+            1
+          ],
+          "medianPlaneAngle": 30.80434540423455
+        }
+      ],
+      "geometricNormalChangeOver10DegFraction": 0.604448676960751,
+      "mapsUnchanged": true
+    }
+  ],
+  "samplePolicy": "Central differences over +/-3px; 7x7 eroded valid mask; raw relative depth span below5% over7px; sampled on4px grid; predicted normals RGB decoded to[-1,1]. Geometric normals face camera.",
+  "warning": "Absolute-dot angles compare tangent planes independently of global sign; best per-axis flip is a convention diagnostic, not a proposed map edit."
+}

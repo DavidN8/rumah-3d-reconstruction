@@ -1,0 +1,58 @@
+{
+  "dateLocal": "2026-10-31",
+  "environment": "Local Windows Chrome, RTX 5080, loopback HTTP. These are not physical Fold 7 / iPhone 17 tests or cellular download timings.",
+  "url": "http://127.0.0.1:53267/production/public/index.html",
+  "candidate": "Old v4 native Gaussian baseline, not new clean reconstruction",
+  "candidateFormat": "spz",
+  "candidateSha256": "a26f6d34146cec3628a30cf9071a0a50c9aa485095d4c1002fd08812a9678888",
+  "finalBundle": "room-viewer-RZ2AJEEV.js",
+  "earlierCoreBranchBundle": "room-viewer-6UCI4FL4.js",
+  "requestEvidence": "../requests.jsonl",
+  "landingAndRadioSelection": {
+    "passed": true,
+    "observedRequests": ["index.html"],
+    "viewerScriptModelMetadataPhotoOrLibraryRequestsBeforeExplicitOpen": 0
+  },
+  "nativeDesktop": {"readySeconds": 6.1322, "displayedLodTarget": 2000000, "visibleRoom": true},
+  "nativeNarrowViewport": {
+    "viewport": [402, 874],
+    "canvas": [402, 709],
+    "readySeconds": 6.8184,
+    "phoneInputBranch": true,
+    "displayedLodTarget": 750000,
+    "visibleRoomAndTouchArrows": true,
+    "moveForwardHoldMilliseconds": 350,
+    "cameraBefore": [0.36702162862946286, 1.541369844480851, -0.35076081614372406],
+    "cameraAfter": [0.4284322, 1.541369844480851, -0.3170615],
+    "activeMovesAfterReleaseBeforeCleanup": [],
+    "keysAfterReleaseBeforeCleanup": []
+  },
+  "iphoneFast": {
+    "readySeconds": 0.2698,
+    "triangles": 1603164,
+    "sparkOrNativeModelRequested": false,
+    "requestIntervalUTC": ["2026-10-30T21:50:16.101Z", "2026-10-30T21:50:28.525Z"]
+  },
+  "iphoneFull": {
+    "readySeconds": 2.459,
+    "triangles": 11891853,
+    "sparkOrNativeModelRequested": false,
+    "requestIntervalUTC": ["2026-10-30T21:50:28.525Z", "2026-10-30T21:50:45.610Z"]
+  },
+  "finalOrbitRegression": {
+    "passed": true,
+    "cameraBefore": [0.36702162862946286, 1.541369844480851, -0.35076081614372406],
+    "cameraAfter": [0.36702162862946286, 1.541369844480851, -0.35076081614372406],
+    "interiorVisible": true,
+    "requestIntervalUTC": ["2026-10-30T21:56:31.282Z", "2026-10-30T21:56:47.710Z"],
+    "cleanup": "Returned to chooser, then closed browser tab; GPU window released."
+  },
+  "focusedAutomatedTests": {"passed": 21, "failed": 0},
+  "stillUnverified": [
+    "Physical Fold 7 and iPhone 17 memory, browser compatibility, controls and cellular loading",
+    "Transient memory cost of decoding and building the LoD tree for the forthcoming SH2 model",
+    "New reconstruction appearance and compressed size",
+    "Prebuilt paged RAD package total bytes and peak resident memory"
+  ],
+  "deployed": false
+}

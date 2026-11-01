@@ -1,0 +1,11 @@
+{
+  "coordinate_system": "640x640 original source thumbnail coordinates, not contact-sheet coordinates",
+  "thumbnail_mapping": "sample index = source_frame/3 + 1",
+  "reviewed_source_frames": [1584,1590,1593,1599,1608,1614,1626,1629,1641,1647,1659],
+  "polygon_scope": "Full visible glass including ceiling/light reflections, with a small conservative edge allowance. Curved fisheye outline approximated by multiple vertices. Physically occluding basin/door is excluded where its visible contour is clear.",
+  "earliest_edge_sliver": 1584,
+  "last_visible_glass_in_selected_frames": 1629,
+  "reviewed_no_visible_glass": [1641,1647,1659],
+  "no_glass_explanation": "Doorframe/wall occludes mirror by1641. Remaining bathroom slit shows shower wall and direct ceiling/lamp; do not mask that whole slit as mirror without new evidence.",
+  "limitations": "Manual thumbnail-level tracing, not subpixel contour accuracy. Agent should inspect overlay and use its existing small boundary margin. Not a source mask mutation."
+}

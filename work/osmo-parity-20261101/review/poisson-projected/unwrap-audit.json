@@ -1,0 +1,14 @@
+{
+  "method": "Dominant normal-axis local planar UV projection with .5-unit spatial patches, then UV-only atlas packing. No global conformal solve.",
+  "sourceSurface": "poisson-pilot/surface-compact.npz",
+  "geometryChangedByUV": false,
+  "normalizedNormals": true,
+  "faces": 499987,
+  "vertices": 519071,
+  "patchGroups": 2888,
+  "atlasWidth": 12640,
+  "atlasHeight": 12660,
+  "seconds": 14.875,
+  "bytes": 22611676,
+  "requiresPhotographicAndSeamReview": true
+}

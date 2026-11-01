@@ -1,0 +1,6 @@
+* text=auto eol=lf
+*.pdf binary
+# Upstream excerpts and captured headers retain their original whitespace.
+work/osmo-clean-20261031/geometry/source-v*/** -whitespace
+*.headers -whitespace
+work/hosting/public-*-headers.txt -whitespace

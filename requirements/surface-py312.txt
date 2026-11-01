@@ -1,0 +1,14 @@
+# Observed CPython 3.12.14 photographic/TSDF/Poisson/UV environment.
+# Do not reuse the cp314 Embree binaries from qa-deps in this interpreter.
+numpy==2.3.5
+Pillow==12.3.0
+opencv-python-headless==5.0.0.93
+moderngl==5.13.0
+glcontext==3.1.0
+scipy==1.18.1
+pymeshlab==2025.7.post1
+scikit-image==0.26.0
+xatlas==0.0.11
+lazy-loader==0.6
+trimesh==5.2.0
+rtree==1.4.1

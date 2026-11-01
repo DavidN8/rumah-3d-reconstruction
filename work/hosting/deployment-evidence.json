@@ -1,0 +1,46 @@
+{
+  "site": "https://rumah.shizuku.rest/",
+  "captured_at": "2026-10-27T11:34:46.510465+00:00",
+  "authentication_required": false,
+  "lxc": {
+    "id": 710,
+    "hostname": "rumah",
+    "distribution": "Debian 13",
+    "unprivileged": true,
+    "cores": 2,
+    "memory_mib": 2048,
+    "disk_gib": 16,
+    "onboot": true
+  },
+  "native_model": {
+    "bytes": 435614584,
+    "triangles": 11891853,
+    "sha256": "16f8963b043a766317497ee4281f4cf39c6b2190fafaaed51334734723c8b207",
+    "downloaded_through_public_https": true,
+    "lossless_gzip_transfer_bytes": 302564257,
+    "transfer_seconds": 38.789415
+  },
+  "public_download_verification_note": "Desktop DNS held a cached NXDOMAIN. The full HTTPS download and range check used the public Cloudflare address resolved independently by the Proxmox host; normal TLS hostname verification remained enabled.",
+  "range_verification": {
+    "status": 206,
+    "bytes": 12,
+    "total_bytes": 435614584,
+    "body_hex": "676c54460200000078f3f619"
+  },
+  "services": [
+    "nginx",
+    "cloudflared 2026.10.4"
+  ],
+  "reboot_verified": true,
+  "reference_photos": 8,
+  "frufru": {
+    "nginx": "stopped and disabled",
+    "container_700": "kept running because its tunnel also routes tracker.shizuku.rest",
+    "shared_cloudflared": "running",
+    "tracker_backend": "CONFIGURED_OUT_OF_BAND:8090 was unreachable; left unchanged"
+  },
+  "internal_reports_published": false,
+  "browser_verification": "pending desktop DNS refresh",
+  "initial_backup": "pending completion",
+  "redactionNote": "Private infrastructure address removed for source handoff; original record preserved locally outside Git."
+}

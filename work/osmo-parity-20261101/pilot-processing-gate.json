@@ -1,0 +1,14 @@
+{
+  "status": "approved_for_one_full_processing_run_only",
+  "basis": "Four full-viewport source-camera renders reviewed; modest local gains in fridge/fan/bathroom detail against matched 8k baseline; dining effectively unchanged. No bathroom obstruction. This is not release acceptance or a claim of a full-viewport sharpness leap.",
+  "steps": 8000,
+  "pilotSplats": 1500000,
+  "cropPSNRDelta": {
+    "fridge": 0.5853930801370204,
+    "fan": 0.16683760748182053,
+    "dining": -0.00828372636837571,
+    "bathroom": 0.5876251650337352
+  },
+  "sourceSeedSame": true,
+  "fullReleaseGateStillRequired": true
+}

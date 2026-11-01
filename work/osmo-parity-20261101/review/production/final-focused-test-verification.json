@@ -1,0 +1,8 @@
+{
+  "build": "20261031-osmo-clean-v1",
+  "recordedUtc": "2026-10-31T01:46:51.135659+00:00",
+  "command": "node --test choice-gate.test.mjs loader-core.test.mjs model-selection.test.mjs native-delivery.test.mjs",
+  "passed": 26,
+  "failed": 0,
+  "source": "Actual completed test run for this final build; no physical-device compatibility claim."
+}

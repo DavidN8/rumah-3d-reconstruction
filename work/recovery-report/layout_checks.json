@@ -1,0 +1,1064 @@
+{
+  "pages": 24,
+  "titles": [
+    "iPhone reconstruction recovery",
+    "Execution against the architectural mandate",
+    "The three models: correct provenance retained",
+    "Input corrections and what they establish",
+    "Coverage correction and training record",
+    "Dollhouse comparison",
+    "01 / Kitchen / counter - source frame 999",
+    "02 / Kitchen / appliances - source frame 903",
+    "03 / Doorway / transition - source frame 1398",
+    "04 / Living room - source frame 1612",
+    "05 / Living room / windows - source frame 2402",
+    "06 / Corridor / bed - source frame 3606",
+    "07 / Bedroom / desk - source frame 4297",
+    "08 / Bedroom / entrance - source frame 4400",
+    "Kitchen join: wider matching did not establish precision",
+    "Doorway defect: component ablation",
+    "Geometric frame and floor evidence",
+    "Full native selected: delivery caps removed",
+    "Alternative extraction pilot: tested and archived",
+    "Depth layers and native preservation",
+    "Why a low hole score is not sufficient",
+    "Actual browser controls and offline delivery",
+    "Remaining issues, recommendation and architect questions",
+    "Evidence and reproducibility"
+  ],
+  "checks": [
+    {
+      "page": 1,
+      "kind": "text",
+      "bottom": 523.2755905511812
+    },
+    {
+      "page": 1,
+      "kind": "text",
+      "bottom": 505.17559055118113
+    },
+    {
+      "page": 1,
+      "kind": "text",
+      "bottom": 466.5755905511811
+    },
+    {
+      "page": 1,
+      "kind": "text",
+      "bottom": 360.4755905511811
+    },
+    {
+      "page": 1,
+      "kind": "text",
+      "bottom": 339.4755905511811
+    },
+    {
+      "page": 1,
+      "kind": "text",
+      "bottom": 290.5755905511811
+    },
+    {
+      "page": 1,
+      "kind": "text",
+      "bottom": 241.6755905511811
+    },
+    {
+      "page": 1,
+      "kind": "image",
+      "file": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\recovery-v2\\analysis\\verification-full-native\\after-overview.png",
+      "bottom": 232.71386701662288
+    },
+    {
+      "page": 1,
+      "kind": "text",
+      "bottom": 200.5138670166229
+    },
+    {
+      "page": 1,
+      "kind": "text",
+      "bottom": 67.9
+    },
+    {
+      "page": 2,
+      "kind": "text",
+      "bottom": 536.2755905511812
+    },
+    {
+      "page": 2,
+      "kind": "text",
+      "bottom": 518.1755905511811
+    },
+    {
+      "page": 2,
+      "kind": "table",
+      "bottom": 294.5755905511811
+    },
+    {
+      "page": 2,
+      "kind": "text",
+      "bottom": 272.4755905511811
+    },
+    {
+      "page": 3,
+      "kind": "text",
+      "bottom": 536.2755905511812
+    },
+    {
+      "page": 3,
+      "kind": "text",
+      "bottom": 518.1755905511811
+    },
+    {
+      "page": 3,
+      "kind": "text",
+      "bottom": 493.17559055118113
+    },
+    {
+      "page": 3,
+      "kind": "image",
+      "file": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\recovery-v2\\analysis\\verification-full-native\\after-overview.png",
+      "bottom": 313.1270341207349
+    },
+    {
+      "page": 3,
+      "kind": "text",
+      "bottom": 268.8270341207349
+    },
+    {
+      "page": 3,
+      "kind": "text",
+      "bottom": 493.17559055118113
+    },
+    {
+      "page": 3,
+      "kind": "image",
+      "file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\report\\reference_pack\\images\\F04-codex-nikon-034.png",
+      "bottom": 343.39883228254143
+    },
+    {
+      "page": 3,
+      "kind": "text",
+      "bottom": 299.0988322825414
+    },
+    {
+      "page": 3,
+      "kind": "text",
+      "bottom": 493.17559055118113
+    },
+    {
+      "page": 3,
+      "kind": "image",
+      "file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\report\\reference_pack\\images\\F03-samsung-accepted.png",
+      "bottom": 346.1095795337836
+    },
+    {
+      "page": 3,
+      "kind": "text",
+      "bottom": 301.80957953378356
+    },
+    {
+      "page": 3,
+      "kind": "text",
+      "bottom": 81.8
+    },
+    {
+      "page": 3,
+      "kind": "text",
+      "bottom": 51.9
+    },
+    {
+      "page": 4,
+      "kind": "text",
+      "bottom": 536.2755905511812
+    },
+    {
+      "page": 4,
+      "kind": "text",
+      "bottom": 518.1755905511811
+    },
+    {
+      "page": 4,
+      "kind": "text",
+      "bottom": 493.17559055118113
+    },
+    {
+      "page": 4,
+      "kind": "text",
+      "bottom": 444.27559055118115
+    },
+    {
+      "page": 4,
+      "kind": "text",
+      "bottom": 381.07559055118116
+    },
+    {
+      "page": 4,
+      "kind": "text",
+      "bottom": 332.17559055118113
+    },
+    {
+      "page": 4,
+      "kind": "text",
+      "bottom": 283.27559055118115
+    },
+    {
+      "page": 4,
+      "kind": "text",
+      "bottom": 240.97559055118114
+    },
+    {
+      "page": 4,
+      "kind": "image",
+      "file": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\recovery-v2\\analysis\\allviews-proj_check.jpg",
+      "bottom": 173.17559055118113
+    },
+    {
+      "page": 4,
+      "kind": "text",
+      "bottom": 140.97559055118114
+    },
+    {
+      "page": 5,
+      "kind": "text",
+      "bottom": 536.2755905511812
+    },
+    {
+      "page": 5,
+      "kind": "text",
+      "bottom": 518.1755905511811
+    },
+    {
+      "page": 5,
+      "kind": "table",
+      "bottom": 377.5755905511811
+    },
+    {
+      "page": 5,
+      "kind": "text",
+      "bottom": 338.9755905511811
+    },
+    {
+      "page": 5,
+      "kind": "text",
+      "bottom": 304.37559055118106
+    },
+    {
+      "page": 5,
+      "kind": "text",
+      "bottom": 274.1755905511811
+    },
+    {
+      "page": 5,
+      "kind": "text",
+      "bottom": 256.07559055118105
+    },
+    {
+      "page": 6,
+      "kind": "text",
+      "bottom": 536.2755905511812
+    },
+    {
+      "page": 6,
+      "kind": "text",
+      "bottom": 518.1755905511811
+    },
+    {
+      "page": 6,
+      "kind": "image",
+      "file": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\recovery-v2\\analysis\\verification-full-native\\before-overview.png",
+      "bottom": 245.71386701662288
+    },
+    {
+      "page": 6,
+      "kind": "text",
+      "bottom": 225.6138670166229
+    },
+    {
+      "page": 6,
+      "kind": "image",
+      "file": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\recovery-v2\\analysis\\verification-full-native\\after-overview.png",
+      "bottom": 245.71386701662288
+    },
+    {
+      "page": 6,
+      "kind": "text",
+      "bottom": 201.41386701662287
+    },
+    {
+      "page": 6,
+      "kind": "text",
+      "bottom": 77.4
+    },
+    {
+      "page": 7,
+      "kind": "text",
+      "bottom": 536.2755905511812
+    },
+    {
+      "page": 7,
+      "kind": "text",
+      "bottom": 518.1755905511811
+    },
+    {
+      "page": 7,
+      "kind": "text",
+      "bottom": 493.17559055118113
+    },
+    {
+      "page": 7,
+      "kind": "text",
+      "bottom": 493.17559055118113
+    },
+    {
+      "page": 7,
+      "kind": "text",
+      "bottom": 493.17559055118113
+    },
+    {
+      "page": 7,
+      "kind": "image-clip",
+      "file": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\recovery-v2\\analysis\\verification-full-native\\before-01.png",
+      "bottom": 120.17559055118113
+    },
+    {
+      "page": 7,
+      "kind": "image-clip",
+      "file": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\recovery-v2\\analysis\\verification-full-native\\after-01.png",
+      "bottom": 120.17559055118113
+    },
+    {
+      "page": 7,
+      "kind": "image",
+      "file": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\frames\\frame_0000999.jpg",
+      "bottom": 120.17559055118113
+    },
+    {
+      "page": 7,
+      "kind": "text",
+      "bottom": 53.0
+    },
+    {
+      "page": 8,
+      "kind": "text",
+      "bottom": 536.2755905511812
+    },
+    {
+      "page": 8,
+      "kind": "text",
+      "bottom": 518.1755905511811
+    },
+    {
+      "page": 8,
+      "kind": "text",
+      "bottom": 493.17559055118113
+    },
+    {
+      "page": 8,
+      "kind": "text",
+      "bottom": 493.17559055118113
+    },
+    {
+      "page": 8,
+      "kind": "text",
+      "bottom": 493.17559055118113
+    },
+    {
+      "page": 8,
+      "kind": "image-clip",
+      "file": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\recovery-v2\\analysis\\verification-full-native\\before-02.png",
+      "bottom": 120.17559055118113
+    },
+    {
+      "page": 8,
+      "kind": "image-clip",
+      "file": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\recovery-v2\\analysis\\verification-full-native\\after-02.png",
+      "bottom": 120.17559055118113
+    },
+    {
+      "page": 8,
+      "kind": "image",
+      "file": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\frames\\frame_0000903.jpg",
+      "bottom": 120.17559055118113
+    },
+    {
+      "page": 8,
+      "kind": "text",
+      "bottom": 53.0
+    },
+    {
+      "page": 9,
+      "kind": "text",
+      "bottom": 536.2755905511812
+    },
+    {
+      "page": 9,
+      "kind": "text",
+      "bottom": 506.07559055118116
+    },
+    {
+      "page": 9,
+      "kind": "text",
+      "bottom": 481.07559055118116
+    },
+    {
+      "page": 9,
+      "kind": "text",
+      "bottom": 481.07559055118116
+    },
+    {
+      "page": 9,
+      "kind": "text",
+      "bottom": 481.07559055118116
+    },
+    {
+      "page": 9,
+      "kind": "image-clip",
+      "file": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\recovery-v2\\analysis\\verification-full-native\\before-03.png",
+      "bottom": 108.07559055118116
+    },
+    {
+      "page": 9,
+      "kind": "image-clip",
+      "file": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\recovery-v2\\analysis\\verification-full-native\\after-03.png",
+      "bottom": 108.07559055118116
+    },
+    {
+      "page": 9,
+      "kind": "image",
+      "file": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\frames\\frame_0001398.jpg",
+      "bottom": 108.07559055118116
+    },
+    {
+      "page": 9,
+      "kind": "text",
+      "bottom": 53.0
+    },
+    {
+      "page": 10,
+      "kind": "text",
+      "bottom": 536.2755905511812
+    },
+    {
+      "page": 10,
+      "kind": "text",
+      "bottom": 518.1755905511811
+    },
+    {
+      "page": 10,
+      "kind": "text",
+      "bottom": 493.17559055118113
+    },
+    {
+      "page": 10,
+      "kind": "text",
+      "bottom": 493.17559055118113
+    },
+    {
+      "page": 10,
+      "kind": "text",
+      "bottom": 493.17559055118113
+    },
+    {
+      "page": 10,
+      "kind": "image-clip",
+      "file": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\recovery-v2\\analysis\\verification-full-native\\before-04.png",
+      "bottom": 120.17559055118113
+    },
+    {
+      "page": 10,
+      "kind": "image-clip",
+      "file": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\recovery-v2\\analysis\\verification-full-native\\after-04.png",
+      "bottom": 120.17559055118113
+    },
+    {
+      "page": 10,
+      "kind": "image",
+      "file": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\frames\\frame_0001612.jpg",
+      "bottom": 120.17559055118113
+    },
+    {
+      "page": 10,
+      "kind": "text",
+      "bottom": 53.0
+    },
+    {
+      "page": 11,
+      "kind": "text",
+      "bottom": 536.2755905511812
+    },
+    {
+      "page": 11,
+      "kind": "text",
+      "bottom": 518.1755905511811
+    },
+    {
+      "page": 11,
+      "kind": "text",
+      "bottom": 493.17559055118113
+    },
+    {
+      "page": 11,
+      "kind": "text",
+      "bottom": 493.17559055118113
+    },
+    {
+      "page": 11,
+      "kind": "text",
+      "bottom": 493.17559055118113
+    },
+    {
+      "page": 11,
+      "kind": "image-clip",
+      "file": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\recovery-v2\\analysis\\verification-full-native\\before-05.png",
+      "bottom": 120.17559055118113
+    },
+    {
+      "page": 11,
+      "kind": "image-clip",
+      "file": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\recovery-v2\\analysis\\verification-full-native\\after-05.png",
+      "bottom": 120.17559055118113
+    },
+    {
+      "page": 11,
+      "kind": "image",
+      "file": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\frames\\frame_0002402.jpg",
+      "bottom": 120.17559055118113
+    },
+    {
+      "page": 11,
+      "kind": "text",
+      "bottom": 53.0
+    },
+    {
+      "page": 12,
+      "kind": "text",
+      "bottom": 536.2755905511812
+    },
+    {
+      "page": 12,
+      "kind": "text",
+      "bottom": 518.1755905511811
+    },
+    {
+      "page": 12,
+      "kind": "text",
+      "bottom": 493.17559055118113
+    },
+    {
+      "page": 12,
+      "kind": "text",
+      "bottom": 493.17559055118113
+    },
+    {
+      "page": 12,
+      "kind": "text",
+      "bottom": 493.17559055118113
+    },
+    {
+      "page": 12,
+      "kind": "image-clip",
+      "file": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\recovery-v2\\analysis\\verification-full-native\\before-06.png",
+      "bottom": 120.17559055118113
+    },
+    {
+      "page": 12,
+      "kind": "image-clip",
+      "file": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\recovery-v2\\analysis\\verification-full-native\\after-06.png",
+      "bottom": 120.17559055118113
+    },
+    {
+      "page": 12,
+      "kind": "image",
+      "file": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\frames\\frame_0003606.jpg",
+      "bottom": 120.17559055118113
+    },
+    {
+      "page": 12,
+      "kind": "text",
+      "bottom": 53.0
+    },
+    {
+      "page": 13,
+      "kind": "text",
+      "bottom": 536.2755905511812
+    },
+    {
+      "page": 13,
+      "kind": "text",
+      "bottom": 518.1755905511811
+    },
+    {
+      "page": 13,
+      "kind": "text",
+      "bottom": 493.17559055118113
+    },
+    {
+      "page": 13,
+      "kind": "text",
+      "bottom": 493.17559055118113
+    },
+    {
+      "page": 13,
+      "kind": "text",
+      "bottom": 493.17559055118113
+    },
+    {
+      "page": 13,
+      "kind": "image-clip",
+      "file": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\recovery-v2\\analysis\\verification-full-native\\before-07.png",
+      "bottom": 120.17559055118113
+    },
+    {
+      "page": 13,
+      "kind": "image-clip",
+      "file": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\recovery-v2\\analysis\\verification-full-native\\after-07.png",
+      "bottom": 120.17559055118113
+    },
+    {
+      "page": 13,
+      "kind": "image",
+      "file": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\frames\\frame_0004297.jpg",
+      "bottom": 120.17559055118113
+    },
+    {
+      "page": 13,
+      "kind": "text",
+      "bottom": 53.0
+    },
+    {
+      "page": 14,
+      "kind": "text",
+      "bottom": 536.2755905511812
+    },
+    {
+      "page": 14,
+      "kind": "text",
+      "bottom": 518.1755905511811
+    },
+    {
+      "page": 14,
+      "kind": "text",
+      "bottom": 493.17559055118113
+    },
+    {
+      "page": 14,
+      "kind": "text",
+      "bottom": 493.17559055118113
+    },
+    {
+      "page": 14,
+      "kind": "text",
+      "bottom": 493.17559055118113
+    },
+    {
+      "page": 14,
+      "kind": "image-clip",
+      "file": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\recovery-v2\\analysis\\verification-full-native\\before-08.png",
+      "bottom": 120.17559055118113
+    },
+    {
+      "page": 14,
+      "kind": "image-clip",
+      "file": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\recovery-v2\\analysis\\verification-full-native\\after-08.png",
+      "bottom": 120.17559055118113
+    },
+    {
+      "page": 14,
+      "kind": "image",
+      "file": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\frames\\frame_0004400.jpg",
+      "bottom": 120.17559055118113
+    },
+    {
+      "page": 14,
+      "kind": "text",
+      "bottom": 53.0
+    },
+    {
+      "page": 15,
+      "kind": "text",
+      "bottom": 536.2755905511812
+    },
+    {
+      "page": 15,
+      "kind": "text",
+      "bottom": 518.1755905511811
+    },
+    {
+      "page": 15,
+      "kind": "text",
+      "bottom": 465.27559055118115
+    },
+    {
+      "page": 15,
+      "kind": "text",
+      "bottom": 402.07559055118116
+    },
+    {
+      "page": 15,
+      "kind": "text",
+      "bottom": 338.8755905511812
+    },
+    {
+      "page": 15,
+      "kind": "image",
+      "file": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\recovery-v2\\analysis\\wide-bridge-witness.jpg",
+      "bottom": 238.17559055118113
+    },
+    {
+      "page": 15,
+      "kind": "text",
+      "bottom": 205.97559055118114
+    },
+    {
+      "page": 16,
+      "kind": "text",
+      "bottom": 536.2755905511812
+    },
+    {
+      "page": 16,
+      "kind": "text",
+      "bottom": 518.1755905511811
+    },
+    {
+      "page": 16,
+      "kind": "text",
+      "bottom": 450.97559055118114
+    },
+    {
+      "page": 16,
+      "kind": "text",
+      "bottom": 387.77559055118115
+    },
+    {
+      "page": 16,
+      "kind": "text",
+      "bottom": 324.57559055118116
+    },
+    {
+      "page": 16,
+      "kind": "image",
+      "file": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\recovery-v2\\analysis\\seam-ablation\\frame-1398-living-only.png",
+      "bottom": 245.71386701662288
+    },
+    {
+      "page": 16,
+      "kind": "text",
+      "bottom": 213.5138670166229
+    },
+    {
+      "page": 17,
+      "kind": "text",
+      "bottom": 536.2755905511812
+    },
+    {
+      "page": 17,
+      "kind": "text",
+      "bottom": 518.1755905511811
+    },
+    {
+      "page": 17,
+      "kind": "image",
+      "file": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\recovery-v2\\analysis\\allviews-elevation-and-floorplan.png",
+      "bottom": 192.6470866141732
+    },
+    {
+      "page": 17,
+      "kind": "text",
+      "bottom": 160.4470866141732
+    },
+    {
+      "page": 17,
+      "kind": "text",
+      "bottom": 130.2470866141732
+    },
+    {
+      "page": 18,
+      "kind": "text",
+      "bottom": 536.2755905511812
+    },
+    {
+      "page": 18,
+      "kind": "text",
+      "bottom": 518.1755905511811
+    },
+    {
+      "page": 18,
+      "kind": "table",
+      "bottom": 353.77559055118115
+    },
+    {
+      "page": 18,
+      "kind": "text",
+      "bottom": 300.8755905511812
+    },
+    {
+      "page": 18,
+      "kind": "text",
+      "bottom": 270.6755905511812
+    },
+    {
+      "page": 18,
+      "kind": "text",
+      "bottom": 240.4755905511812
+    },
+    {
+      "page": 19,
+      "kind": "text",
+      "bottom": 536.2755905511812
+    },
+    {
+      "page": 19,
+      "kind": "text",
+      "bottom": 518.1755905511811
+    },
+    {
+      "page": 19,
+      "kind": "text",
+      "bottom": 465.27559055118115
+    },
+    {
+      "page": 19,
+      "kind": "text",
+      "bottom": 416.3755905511812
+    },
+    {
+      "page": 19,
+      "kind": "text",
+      "bottom": 353.1755905511812
+    },
+    {
+      "page": 19,
+      "kind": "text",
+      "bottom": 322.9755905511812
+    },
+    {
+      "page": 19,
+      "kind": "image",
+      "file": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\recovery-v2\\analysis\\verification-alternative-kitchen-raw\\after-02.png",
+      "bottom": 245.71386701662288
+    },
+    {
+      "page": 19,
+      "kind": "text",
+      "bottom": 213.5138670166229
+    },
+    {
+      "page": 20,
+      "kind": "text",
+      "bottom": 536.2755905511812
+    },
+    {
+      "page": 20,
+      "kind": "text",
+      "bottom": 518.1755905511811
+    },
+    {
+      "page": 20,
+      "kind": "table",
+      "bottom": 270.17559055118113
+    },
+    {
+      "page": 20,
+      "kind": "text",
+      "bottom": 235.97559055118114
+    },
+    {
+      "page": 21,
+      "kind": "text",
+      "bottom": 536.2755905511812
+    },
+    {
+      "page": 21,
+      "kind": "text",
+      "bottom": 518.1755905511811
+    },
+    {
+      "page": 21,
+      "kind": "image",
+      "file": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\recovery-v2\\analysis\\verification-full-native\\compact-depth-3.png",
+      "bottom": 183.17559055118113
+    },
+    {
+      "page": 21,
+      "kind": "text",
+      "bottom": 163.07559055118114
+    },
+    {
+      "page": 21,
+      "kind": "image",
+      "file": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\recovery-v2\\analysis\\verification-full-native\\compact-depth-overview.png",
+      "bottom": 211.1345349409449
+    },
+    {
+      "page": 21,
+      "kind": "text",
+      "bottom": 191.0345349409449
+    },
+    {
+      "page": 21,
+      "kind": "text",
+      "bottom": 68.4
+    },
+    {
+      "page": 22,
+      "kind": "text",
+      "bottom": 536.2755905511812
+    },
+    {
+      "page": 22,
+      "kind": "text",
+      "bottom": 518.1755905511811
+    },
+    {
+      "page": 22,
+      "kind": "text",
+      "bottom": 479.5755905511811
+    },
+    {
+      "page": 22,
+      "kind": "text",
+      "bottom": 430.67559055118113
+    },
+    {
+      "page": 22,
+      "kind": "text",
+      "bottom": 367.47559055118114
+    },
+    {
+      "page": 22,
+      "kind": "text",
+      "bottom": 337.27559055118115
+    },
+    {
+      "page": 22,
+      "kind": "image",
+      "file": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\recovery-v2\\analysis\\verification-full-native\\fixed-standalone.png",
+      "bottom": 245.71386701662288
+    },
+    {
+      "page": 22,
+      "kind": "text",
+      "bottom": 227.21386701662288
+    },
+    {
+      "page": 23,
+      "kind": "text",
+      "bottom": 536.2755905511812
+    },
+    {
+      "page": 23,
+      "kind": "text",
+      "bottom": 518.1755905511811
+    },
+    {
+      "page": 23,
+      "kind": "text",
+      "bottom": 493.17559055118113
+    },
+    {
+      "page": 23,
+      "kind": "text",
+      "bottom": 458.5755905511811
+    },
+    {
+      "page": 23,
+      "kind": "text",
+      "bottom": 423.9755905511811
+    },
+    {
+      "page": 23,
+      "kind": "text",
+      "bottom": 389.37559055118106
+    },
+    {
+      "page": 23,
+      "kind": "text",
+      "bottom": 340.4755905511811
+    },
+    {
+      "page": 23,
+      "kind": "text",
+      "bottom": 493.17559055118113
+    },
+    {
+      "page": 23,
+      "kind": "text",
+      "bottom": 458.5755905511811
+    },
+    {
+      "page": 23,
+      "kind": "text",
+      "bottom": 409.67559055118113
+    },
+    {
+      "page": 23,
+      "kind": "text",
+      "bottom": 360.77559055118115
+    },
+    {
+      "page": 23,
+      "kind": "text",
+      "bottom": 326.17559055118113
+    },
+    {
+      "page": 23,
+      "kind": "text",
+      "bottom": 298.17559055118113
+    },
+    {
+      "page": 23,
+      "kind": "text",
+      "bottom": 267.97559055118114
+    },
+    {
+      "page": 23,
+      "kind": "text",
+      "bottom": 249.87559055118115
+    },
+    {
+      "page": 23,
+      "kind": "text",
+      "bottom": 231.77559055118115
+    },
+    {
+      "page": 24,
+      "kind": "text",
+      "bottom": 536.2755905511812
+    },
+    {
+      "page": 24,
+      "kind": "text",
+      "bottom": 518.1755905511811
+    },
+    {
+      "page": 24,
+      "kind": "text",
+      "bottom": 483.97559055118114
+    },
+    {
+      "page": 24,
+      "kind": "text",
+      "bottom": 453.77559055118115
+    },
+    {
+      "page": 24,
+      "kind": "text",
+      "bottom": 404.8755905511812
+    },
+    {
+      "page": 24,
+      "kind": "text",
+      "bottom": 370.27559055118115
+    },
+    {
+      "page": 24,
+      "kind": "text",
+      "bottom": 340.07559055118116
+    },
+    {
+      "page": 24,
+      "kind": "text",
+      "bottom": 321.97559055118114
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+This reference pack accompanies Gemini_Argon_Reconstruction_Architecture_Report_2026-10-27.pdf.
+The PDF is the narrative handoff and includes every image in this pack.
+Use manifest.json to map image/record identifiers to original absolute paths and hashes.
+The current verdict is PARTIAL visual quality. Proposals are not completed processing.
+Nikon selection is Codex native-camera-kitchen-034, quality rejected, not later other-agent variants.
+S11 is superseded preliminary evidence with a duplicated pair; do not quote its 36 rows as independent matches.

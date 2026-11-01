@@ -1,0 +1,250 @@
+{
+  "configs": {
+    "iphone": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261027_IPHONE_WIDE\\recovery-v2\\training\\zone-living-bedroom-allviews\\config.json",
+    "osmo_v3": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\lite-v1\\training\\osmo-lite-trusted-v3\\config.json"
+  },
+  "comparison": {
+    "preset": {
+      "iphone": "meshing",
+      "osmo_v3": "3dgs"
+    },
+    "num_iterations": {
+      "iphone": 50000,
+      "osmo_v3": 40000
+    },
+    "cap_max": {
+      "iphone": 3000000,
+      "osmo_v3": 2500000
+    },
+    "max_world_size": {
+      "iphone": 0.12,
+      "osmo_v3": Infinity
+    },
+    "max_screen_size": {
+      "iphone": 0.2,
+      "osmo_v3": 0.2
+    },
+    "max_screen_size_clip_hardness": {
+      "iphone": 1.25,
+      "osmo_v3": 1.25
+    },
+    "max_screen_size_penalty": {
+      "iphone": 1,
+      "osmo_v3": 1
+    },
+    "normal_reg_weight": {
+      "iphone": 0.04,
+      "osmo_v3": 0.04
+    },
+    "normal_supervision_weight": {
+      "iphone": 0.02,
+      "osmo_v3": 0.02
+    },
+    "depth_supervision_weight": {
+      "iphone": 0.05,
+      "osmo_v3": 0.05
+    },
+    "depth_distortion_reg": {
+      "iphone": 0.01,
+      "osmo_v3": 0.01
+    },
+    "normal_distortion_reg": {
+      "iphone": 0.01,
+      "osmo_v3": 0.01
+    },
+    "rgb_distortion_reg": {
+      "iphone": 0.01,
+      "osmo_v3": 0.01
+    },
+    "mean_median_depth_weight": {
+      "iphone": 0.01,
+      "osmo_v3": 0.01
+    },
+    "median_depth_normal_reg_weight": {
+      "iphone": 0.01,
+      "osmo_v3": 0.01
+    },
+    "median_normal_supervision_weight": {
+      "iphone": 0.01,
+      "osmo_v3": 0.01
+    },
+    "median_render_normal_reg_weight": {
+      "iphone": 0.01,
+      "osmo_v3": 0.01
+    },
+    "opacity_reg": {
+      "iphone": 0.005,
+      "osmo_v3": 0.005
+    },
+    "opacity_reg_decay_power": {
+      "iphone": 1,
+      "osmo_v3": 1
+    },
+    "scale_reg": {
+      "iphone": 0.01,
+      "osmo_v3": 0.01
+    },
+    "scale_reg_decay_power": {
+      "iphone": 0.4,
+      "osmo_v3": 0.4
+    },
+    "scale_regularization_weight": {
+      "iphone": 0,
+      "osmo_v3": 0
+    },
+    "scales_lr": {
+      "iphone": 0.02,
+      "osmo_v3": 0.02
+    },
+    "scales_lr_final": {
+      "iphone": 0.005,
+      "osmo_v3": 0.005
+    },
+    "sh_reg": {
+      "iphone": 0.001,
+      "osmo_v3": 0.01
+    },
+    "sh_degree": {
+      "iphone": 3,
+      "osmo_v3": 0
+    },
+    "refine_every": {
+      "iphone": 100,
+      "osmo_v3": 100
+    },
+    "refine_start_iter": {
+      "iphone": 500,
+      "osmo_v3": 500
+    },
+    "refine_stop_iter": {
+      "iphone": 40000,
+      "osmo_v3": 30000
+    },
+    "refine_stop_num_iter": {
+      "iphone": 2500,
+      "osmo_v3": 2500
+    },
+    "max_split_fraction": {
+      "iphone": 0.1,
+      "osmo_v3": 0.1
+    },
+    "densify_oversize_split_fraction": {
+      "iphone": 0.15,
+      "osmo_v3": 0.15
+    },
+    "densify_oversize_score_blend": {
+      "iphone": 1,
+      "osmo_v3": 1
+    },
+    "use_revised_densification": {
+      "iphone": true,
+      "osmo_v3": true
+    },
+    "use_long_axis_split": {
+      "iphone": true,
+      "osmo_v3": true
+    },
+    "auto_scale_poses": {
+      "iphone": false,
+      "osmo_v3": false
+    },
+    "train_frame": {
+      "iphone": "points",
+      "osmo_v3": "points"
+    },
+    "depth_dir": {
+      "iphone": "depths",
+      "osmo_v3": "depths-trusted-scale"
+    },
+    "input_depth_is_ray_depth": {
+      "iphone": false,
+      "osmo_v3": true
+    },
+    "warp_to_pinhole": {
+      "iphone": false,
+      "osmo_v3": true
+    },
+    "apply_loss_for_mask": {
+      "iphone": false,
+      "osmo_v3": false
+    }
+  },
+  "scale_audit": {
+    "path": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\lite-v1\\training\\osmo-lite-trusted-v3\\step-000040000.ckpt\\splat.ply",
+    "count": 2498101,
+    "interpretation": "PLY scale_0/1/2 are natural log standard deviations; values below are exp(log_scale) in unchanged training/world frame.",
+    "max_axis_quantiles": {
+      "0": 9.53864444408617e-05,
+      "25": 0.0022497391692515457,
+      "50": 0.0053233069959130255,
+      "75": 0.013046326785279975,
+      "90": 0.0272963388682026,
+      "95": 0.03859721124991081,
+      "99": 0.0672175118652968,
+      "99.9": 0.12286037588786973,
+      "100": 0.31653453940083043
+    },
+    "opacity_quantiles": {
+      "1": 0.006914016241584818,
+      "10": 0.03532590644740127,
+      "50": 0.1270283294853456,
+      "90": 0.7591297256048516,
+      "99": 0.9941742215082473
+    },
+    "thresholds": {
+      "0.08": {
+        "splats_changed": 13553,
+        "fraction_changed": 0.005425321073887725,
+        "opacity_mass_fraction_changed": 0.012116626489120041,
+        "median_volume_ratio_changed": 0.8192951336330528,
+        "splats_above_opacity_05_changed": 6872
+      },
+      "0.12": {
+        "splats_changed": 2775,
+        "fraction_changed": 0.0011108437969481618,
+        "opacity_mass_fraction_changed": 0.0027445366569578667,
+        "median_volume_ratio_changed": 0.8464953144923981,
+        "splats_above_opacity_05_changed": 1592
+      },
+      "0.16": {
+        "splats_changed": 775,
+        "fraction_changed": 0.0003102356550035407,
+        "opacity_mass_fraction_changed": 0.0008146265337988779,
+        "median_volume_ratio_changed": 0.8746209201073877,
+        "splats_above_opacity_05_changed": 475
+      },
+      "0.2": {
+        "splats_changed": 233,
+        "fraction_changed": 9.327084853654836e-05,
+        "opacity_mass_fraction_changed": 0.00026424445306388183,
+        "median_volume_ratio_changed": 0.9093873538690311,
+        "splats_above_opacity_05_changed": 159
+      },
+      "0.3": {
+        "splats_changed": 3,
+        "fraction_changed": 1.2009122129169316e-06,
+        "opacity_mass_fraction_changed": 4.8428362213039015e-06,
+        "median_volume_ratio_changed": 0.9606780513453721,
+        "splats_above_opacity_05_changed": 3
+      },
+      "0.5": {
+        "splats_changed": 0,
+        "fraction_changed": 0.0,
+        "opacity_mass_fraction_changed": 0.0,
+        "median_volume_ratio_changed": 1,
+        "splats_above_opacity_05_changed": 0
+      },
+      "1": {
+        "splats_changed": 0,
+        "fraction_changed": 0.0,
+        "opacity_mass_fraction_changed": 0.0,
+        "median_volume_ratio_changed": 1,
+        "splats_above_opacity_05_changed": 0
+      }
+    }
+  },
+  "effective_growth_stop": {
+    "iphone": 47500,
+    "osmo_v3": 37500
+  }
+}

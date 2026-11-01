@@ -1,0 +1,65 @@
+Native fisheye dense seed helper — 31 October 2026
+
+Source: seed_fisheye.py. CPU only; importing it performs no I/O or inference.
+
+Run with the existing host-model-venv Python:
+  python -B seed_fisheye.py --dataset <20261031_OSMO360/lite-v1/dataset>
+  python -B seed_fisheye.py --dataset <dataset> --fits-only
+
+Expected inputs:
+  images/cam0/frame_000001.jpg, images/cam1/frame_000001.jpg, ...
+  sparse/0/{cameras,images,points3D}.{bin or txt}
+  depths/cam0/frame_000001.png, depths/cam1/frame_000001.png, ...
+  masks/cam0/frame_000001.png (or frame_000001.jpg.png), ...
+  normals/... optional; presence is reported, maps are never changed.
+
+Native CLI uint16 depth PNGs are millimetre ray distance. The default integer
+scale is 0.001. Floating NPY/NPZ maps are taken as their stored units before
+affine alignment. This must not be confused with the old reference Python
+geometry script's per-image 0..65535 normalization, or perspective Z depth.
+
+Per-frame positive affine (scale, offset) alignment uses actual observed sparse
+track Euclidean ranges, scaled intrinsic matrices and the native fisheye ray.
+No division by camera Z is used. The theta-polynomial inverse preserves rays
+past 90 degrees: the default usable full FOV is up to 210 degrees, restricted
+to the calibrated polynomial's first monotonic domain.
+
+Defaults require at least 30 usable sparse observations, 50% inliers within
+10% relative range error, median residual <=12%, p90 <=35%, and at least half
+the registered frames to pass these gates. Failed fits are excluded/reported;
+an inadequate capture fails closed before seed output.
+
+Dense points must agree in at least two of four same-lens temporal neighbors
+(two frames before/two after) within 5% ray distance. Source and target masks,
+invalid depths and map boundaries are excluded. No wall-height, ownership or
+sparse-percentile far-distance crop is applied.
+
+Output normals are local ray-depth surface tangents oriented toward source
+camera. Predicted normal maps are not fused under an assumed axis convention.
+Output PLY coordinates remain exactly in the sparse model's world frame.
+The helper does not normalize, rescale, level or otherwise change that frame.
+Voxel sampling prefers well-supported points and caps the result at 200,000.
+
+Outputs:
+  dataset/seed.ply
+  lite-v1/analysis/seed-fisheye.json
+Existing outputs require explicit --overwrite. Input maps, images, masks and
+sparse model paths are rejected as output targets.
+
+Reusable functions: read_model, write_model_text, qvec_to_rotmat,
+rotmat_to_qvec, camera_centers, Fisheye. The dict schema is in the module header.
+write_model_text requires a fresh directory if binary model files are present
+so a subsequent read cannot silently prefer an old binary over new text.
+
+Camera model table verified against the installed native Spirula source:
+  runtime/spirula/source/src/data/parsers/ColmapParser.cpp
+ID 5 is OPENCV_FISHEYE, 8 parameters. The retained old iPhone helper had an
+incorrect binary ID table and must not be imported for this dataset.
+
+Tests:
+  python -B test_seed_fisheye.py
+Seven CPU checks pass, including a complete translated six-camera synthetic
+plane reconstruction, >180-degree full FOV rays, mm PNG input, affine outliers,
+binary/text model roundtrip and rejection of a false Z-depth temporal map.
+No real capture reconstruction or GPU inference was launched by this helper's
+authoring agent.

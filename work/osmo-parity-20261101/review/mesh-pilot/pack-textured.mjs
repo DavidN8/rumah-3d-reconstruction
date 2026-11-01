@@ -1,0 +1,13 @@
+import fs from 'node:fs/promises';import {createRequire} from 'node:module';import path from 'node:path';import {fileURLToPath} from 'node:url';
+const W=path.dirname(fileURLToPath(import.meta.url)),require=createRequire(path.resolve(W,'../../../mobile-20261029/package.json'));
+const {NodeIO}=require('@gltf-transform/core'),{KHRMaterialsUnlit,ALL_EXTENSIONS}=require('@gltf-transform/extensions'),{simplify,weld,prune,meshopt,textureCompress}=require('@gltf-transform/functions'),{MeshoptSimplifier:S,MeshoptEncoder:E,MeshoptDecoder:D}=require('meshoptimizer');
+await Promise.all([S.ready,E.ready,D.ready]);
+const io=new NodeIO().registerExtensions(ALL_EXTENSIONS).registerDependencies({'meshopt.encoder':E,'meshopt.decoder':D});
+const doc=await io.read(path.join(W,'clean-mesh_textured.glb'));
+await doc.transform(weld(),simplify({simplifier:S,ratio:.14,error:.0005,lockBorder:true}),prune());
+const unlit=doc.createExtension(KHRMaterialsUnlit);for(const mat of doc.getRoot().listMaterials())mat.setExtension('KHR_materials_unlit',unlit.createUnlit());
+await io.write(path.join(W,'texture-preview-uncompressed.glb'),doc);
+await doc.transform(meshopt({encoder:E,level:'high',quantizePosition:16,quantizeNormal:8,quantizeTexcoord:16}));
+await io.write(path.join(W,'texture-preview.glb'),doc);
+let triangles=0;for(const mesh of doc.getRoot().listMeshes())for(const p of mesh.listPrimitives())triangles+=(p.getIndices()?.getCount()||p.getAttribute('POSITION').getCount())/3;
+const report={triangles,bytes:(await fs.stat(path.join(W,'texture-preview.glb'))).size,uncompressed:((await fs.stat(path.join(W,'texture-preview-uncompressed.glb'))).size),description:'Fresh native mesh extraction; simplification for a geometry/texture pilot. Photographic rebake not yet applied.'};await fs.writeFile(path.join(W,'texture-preview.json'),JSON.stringify(report,null,2));console.log(JSON.stringify(report));

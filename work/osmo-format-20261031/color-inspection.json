@@ -1,0 +1,249 @@
+{
+  "osmo_source": {
+    "path": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\lite-v1\\exports\\osmo-lite-source.glb",
+    "materials": [
+      {
+        "pbrMetallicRoughness": {
+          "baseColorTexture": {
+            "index": 0
+          },
+          "metallicFactor": 0,
+          "roughnessFactor": 1
+        },
+        "doubleSided": true
+      }
+    ],
+    "extensionsUsed": null,
+    "primitives": [
+      {
+        "attributes": {
+          "POSITION": 1,
+          "NORMAL": 2,
+          "TEXCOORD_0": 3
+        },
+        "indices": 0,
+        "material": 0,
+        "mode": 4
+      }
+    ],
+    "images": [
+      {
+        "size": [
+          2048,
+          2048
+        ],
+        "format": "image/jpeg",
+        "mean_rgb": [
+          113.47660398483276,
+          112.40128421783447,
+          109.13444018363953
+        ],
+        "mean_nonblack_rgb": [
+          113.50573588482013,
+          112.43026135640326,
+          109.1627132071899
+        ],
+        "nonblack_fraction": 0.9997279644012451,
+        "luminance_percentiles": [
+          22.2194,
+          55.0946,
+          94.8556,
+          113.0682,
+          136.9502,
+          159.13359999999997,
+          203.1828
+        ]
+      }
+    ]
+  },
+  "osmo_lite": {
+    "path": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\lite-v1\\exports\\osmo-lite.glb",
+    "materials": [
+      {
+        "doubleSided": true,
+        "pbrMetallicRoughness": {
+          "metallicFactor": 0,
+          "baseColorTexture": {
+            "index": 0
+          }
+        }
+      }
+    ],
+    "extensionsUsed": [
+      "EXT_meshopt_compression",
+      "KHR_mesh_quantization"
+    ],
+    "primitives": [
+      {
+        "attributes": {
+          "POSITION": 1,
+          "NORMAL": 2,
+          "TEXCOORD_0": 3
+        },
+        "mode": 4,
+        "material": 0,
+        "indices": 0
+      }
+    ],
+    "images": [
+      {
+        "size": [
+          2048,
+          2048
+        ],
+        "format": "image/jpeg",
+        "mean_rgb": [
+          113.48270440101624,
+          112.391122341156,
+          109.14152765274048
+        ],
+        "mean_nonblack_rgb": [
+          113.5416340648855,
+          112.4502044370229,
+          109.19925071564886
+        ],
+        "nonblack_fraction": 0.99945068359375,
+        "luminance_percentiles": [
+          21.5512,
+          54.8922,
+          94.7244,
+          113.0682,
+          137.06820000000002,
+          159.42239999999998,
+          203.5446
+        ]
+      }
+    ]
+  },
+  "iphone": {
+    "path": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\outputs\\iPhone_Wide_Full_Native.glb",
+    "materials": [
+      {
+        "pbrMetallicRoughness": {
+          "baseColorTexture": {
+            "index": 0
+          },
+          "metallicFactor": 0,
+          "roughnessFactor": 1
+        },
+        "doubleSided": true,
+        "name": "zone-kitchen",
+        "extensions": {
+          "KHR_materials_unlit": {}
+        }
+      },
+      {
+        "pbrMetallicRoughness": {
+          "baseColorTexture": {
+            "index": 1
+          },
+          "metallicFactor": 0,
+          "roughnessFactor": 1
+        },
+        "doubleSided": true,
+        "name": "zone-living-bedroom",
+        "extensions": {
+          "KHR_materials_unlit": {}
+        }
+      }
+    ],
+    "extensionsUsed": [
+      "KHR_materials_unlit"
+    ],
+    "primitives": [
+      {
+        "attributes": {
+          "POSITION": 0,
+          "NORMAL": 1,
+          "TEXCOORD_0": 2
+        },
+        "indices": 3,
+        "material": 0,
+        "mode": 4
+      },
+      {
+        "attributes": {
+          "POSITION": 4,
+          "NORMAL": 5,
+          "TEXCOORD_0": 6
+        },
+        "indices": 7,
+        "material": 1,
+        "mode": 4
+      }
+    ],
+    "images": [
+      {
+        "size": [
+          8192,
+          8192
+        ],
+        "format": "image/jpeg",
+        "mean_rgb": [
+          123.0523879379034,
+          116.5982199460268,
+          108.70293389260769
+        ],
+        "mean_nonblack_rgb": [
+          123.41750540013614,
+          116.9569593905487,
+          109.03742630363098
+        ],
+        "nonblack_fraction": 0.9967866688966751,
+        "luminance_percentiles": [
+          11.1942,
+          68.91059999999999,
+          117.9106,
+          117.9106,
+          118.2006,
+          166.6362,
+          223.35419999999996
+        ]
+      },
+      {
+        "size": [
+          8192,
+          8192
+        ],
+        "format": "image/jpeg",
+        "mean_rgb": [
+          117.82708019018173,
+          108.90656767785549,
+          101.65460906922817
+        ],
+        "mean_nonblack_rgb": [
+          117.90536591001826,
+          108.98123235465066,
+          101.72368571211582
+        ],
+        "nonblack_fraction": 0.999279573559761,
+        "luminance_percentiles": [
+          16.248,
+          51.7362,
+          108.91059999999999,
+          112.40799999999999,
+          113.40799999999999,
+          155.2636,
+          221.85559999999998
+        ]
+      }
+    ]
+  },
+  "source_frame": {
+    "mean_rgb": [
+      137.11392540418953,
+      138.98420285823946,
+      138.22636745937737
+    ],
+    "nonblack_fraction": 0.8523800998263888,
+    "luminance_percentiles": [
+      14.2258,
+      43.275600000000004,
+      107.42639999999999,
+      153.2218,
+      176.22179999999997,
+      196.32,
+      233.04359999999997
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+[
+  {
+    "label": "baseline-trusted-v3",
+    "faces": 1523311,
+    "surface_area": 125.97754305567094,
+    "underfloor_area": 4.912883705787843,
+    "underfloor_fraction": 0.038998091140869315,
+    "near": 2885,
+    "early": 917,
+    "behind": 814,
+    "no_hit": 95
+  },
+  {
+    "label": "probe-supported-05cm",
+    "faces": 2124326,
+    "surface_area": 172.75477095720822,
+    "underfloor_area": 7.132416372880848,
+    "underfloor_fraction": 0.04128636409496074,
+    "near": 2914,
+    "early": 937,
+    "behind": 830,
+    "no_hit": 30
+  },
+  {
+    "label": "dense-supported-05cm",
+    "faces": 4428334,
+    "surface_area": 182.77887825060878,
+    "underfloor_area": 7.146177376787524,
+    "underfloor_fraction": 0.039097391586950074,
+    "near": 2928,
+    "early": 932,
+    "behind": 827,
+    "no_hit": 24
+  },
+  {
+    "label": "dense-supported-08cm",
+    "faces": 4544786,
+    "surface_area": 202.04652711769143,
+    "underfloor_area": 9.123177422183876,
+    "underfloor_fraction": 0.04515384427701474,
+    "near": 2928,
+    "early": 932,
+    "behind": 833,
+    "no_hit": 18
+  },
+  {
+    "label": "dense-supported-12cm",
+    "faces": 4632798,
+    "surface_area": 223.05481408840282,
+    "underfloor_area": 11.64960326126801,
+    "underfloor_fraction": 0.05222753567941801,
+    "near": 2928,
+    "early": 932,
+    "behind": 835,
+    "no_hit": 16
+  }
+]

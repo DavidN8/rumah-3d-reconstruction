@@ -1,0 +1,335 @@
+{
+  "purpose": "Locate native evaluation faces matching one calibrated source crop.\n\nUses image features only to identify/export a diagnostic camera overlap. Native\nrenders are unaltered on disk. A labelled homography reprojection is used solely\nfor comparison; it does not modify the trained geometry or create reference data.\n",
+  "sourcePose": {
+    "name": "cam0/frame_001557_eval.jpg",
+    "label": "Capture 51.95s \u00b7 eval source",
+    "sourceFile": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\clean-cameras-photos\\fresh-06-cam0-frame_001557_eval.jpg",
+    "sourceImageId": 174,
+    "sourceCameraId": 1,
+    "sourceTimeSeconds": 51.9519,
+    "sourceFrame": 1557,
+    "split": "eval",
+    "position": [
+      -0.11036735204714103,
+      0.4616502046204495,
+      -3.4100854048200673
+    ],
+    "quaternion": [
+      0.0,
+      0.8397103441859145,
+      0.0,
+      0.5430345641551493
+    ],
+    "imageWidth": 1200,
+    "imageHeight": 1200,
+    "intrinsics": [
+      600.0,
+      600.0,
+      600.0,
+      600.0
+    ]
+  },
+  "sourceFeatures": 512,
+  "rankedOverlaps": [
+    {
+      "file": "eval-gt-00120.png",
+      "matches": 261,
+      "inliers": 239,
+      "medianReprojectionPixels700": 0.16032767295837402,
+      "coverage": 0.7977571428571428,
+      "reprojectedGroundTruthRmse255": 3.3975447936872576,
+      "HsourceToNative700": [
+        [
+          -0.8780031052790385,
+          0.948038019191509,
+          344.4536875446146
+        ],
+        [
+          -0.7891899980562276,
+          -0.700687857162319,
+          973.3144729698499
+        ],
+        [
+          -1.0972247529317378e-06,
+          0.00048015450626903234,
+          1.0
+        ]
+      ]
+    },
+    {
+      "file": "eval-gt-00122.png",
+      "matches": 46,
+      "inliers": 32,
+      "medianReprojectionPixels700": 0.16615760326385498,
+      "coverage": 0.0758530612244898,
+      "reprojectedGroundTruthRmse255": 25.18856583512716,
+      "HsourceToNative700": [
+        [
+          0.03973458888417914,
+          -0.9309139661514951,
+          352.4937350037236
+        ],
+        [
+          -0.46034093523080444,
+          -0.4149876026243626,
+          546.8470651185984
+        ],
+        [
+          -0.0012859357484159332,
+          -0.0014226805347615128,
+          1.0
+        ]
+      ]
+    },
+    {
+      "file": "eval-gt-00117.png",
+      "matches": 53,
+      "inliers": 31,
+      "medianReprojectionPixels700": 0.5306110978126526,
+      "coverage": 0.9584632653061225,
+      "reprojectedGroundTruthRmse255": 61.608026863523676,
+      "HsourceToNative700": [
+        [
+          -0.4604413359160335,
+          -1.1162890877553797,
+          192.83805235317388
+        ],
+        [
+          -0.7974907977968704,
+          -1.929448358607241,
+          334.1618395695062
+        ],
+        [
+          -0.002385328046216284,
+          -0.005774570619449104,
+          1.0
+        ]
+      ]
+    },
+    {
+      "file": "eval-gt-00102.png",
+      "matches": 37,
+      "inliers": 30,
+      "medianReprojectionPixels700": 0.08236981183290482,
+      "coverage": 0.9585102040816327,
+      "reprojectedGroundTruthRmse255": 46.63487019103996,
+      "HsourceToNative700": [
+        [
+          -7.01587041729455,
+          8.746410334602094,
+          558.3076925146419
+        ],
+        [
+          -6.915158337122474,
+          8.625185923674238,
+          548.7064224018537
+        ],
+        [
+          -0.012587649981011499,
+          0.015697192309460952,
+          1.0
+        ]
+      ]
+    },
+    {
+      "file": "eval-gt-00180.png",
+      "matches": 34,
+      "inliers": 27,
+      "medianReprojectionPixels700": 1.0627543926239014,
+      "coverage": 0.9581428571428572,
+      "reprojectedGroundTruthRmse255": 64.46723177019145,
+      "HsourceToNative700": [
+        [
+          -0.5014184953586746,
+          -1.9744097425239644,
+          396.2441286853787
+        ],
+        [
+          -0.7199964025772101,
+          -2.8248302069726616,
+          568.2022365844819
+        ],
+        [
+          -0.0012664476359947874,
+          -0.004975405879992698,
+          1.0
+        ]
+      ]
+    },
+    {
+      "file": "eval-gt-00166.png",
+      "matches": 23,
+      "inliers": 15,
+      "medianReprojectionPixels700": 0.10660336911678314,
+      "coverage": 0.9583979591836734,
+      "reprojectedGroundTruthRmse255": 42.00157223958213,
+      "HsourceToNative700": [
+        [
+          1.2489707742952687,
+          -3.205606727764664,
+          476.13850793364327
+        ],
+        [
+          0.7955409670937866,
+          -2.040686624214373,
+          303.16285724446305
+        ],
+        [
+          0.0026194458474776564,
+          -0.006728155849996951,
+          1.0
+        ]
+      ]
+    },
+    {
+      "file": "eval-gt-00036.png",
+      "matches": 50,
+      "inliers": 14,
+      "medianReprojectionPixels700": 0.014905997551977634,
+      "coverage": 0.9586510204081633,
+      "reprojectedGroundTruthRmse255": 52.366283988707096,
+      "HsourceToNative700": [
+        [
+          -4.054320392492072,
+          0.6305915974358207,
+          693.7184660009641
+        ],
+        [
+          -3.2264824511490464,
+          0.5017984767811843,
+          552.0805911339108
+        ],
+        [
+          -0.005844326122517927,
+          0.0009089865593710935,
+          1.0
+        ]
+      ]
+    },
+    {
+      "file": "eval-gt-00091.png",
+      "matches": 27,
+      "inliers": 13,
+      "medianReprojectionPixels700": 0.23402829468250275,
+      "coverage": 0.9583326530612245,
+      "reprojectedGroundTruthRmse255": 41.98794278267807,
+      "HsourceToNative700": [
+        [
+          -3.744653014710059,
+          1.0432545935950839,
+          506.52063108555524
+        ],
+        [
+          -3.931456612944967,
+          1.0972381081772709,
+          531.3841665603438
+        ],
+        [
+          -0.007399710438455826,
+          0.0020645118507460094,
+          1.0
+        ]
+      ]
+    },
+    {
+      "file": "eval-gt-00069.png",
+      "matches": 24,
+      "inliers": 13,
+      "medianReprojectionPixels700": 0.04435690864920616,
+      "coverage": 0.9584428571428572,
+      "reprojectedGroundTruthRmse255": 45.974481551705615,
+      "HsourceToNative700": [
+        [
+          0.049624103897097364,
+          -0.16880300276604787,
+          77.75532647683674
+        ],
+        [
+          0.2723455492373603,
+          -0.9292726267498498,
+          428.15394270739205
+        ],
+        [
+          0.0006369131206353633,
+          -0.0021705945494336293,
+          1.0
+        ]
+      ]
+    },
+    {
+      "file": "eval-gt-00085.png",
+      "matches": 41,
+      "inliers": 13,
+      "medianReprojectionPixels700": 0.866997480392456,
+      "coverage": 0.9247673469387755,
+      "reprojectedGroundTruthRmse255": 66.42649918074919,
+      "HsourceToNative700": [
+        [
+          -0.05490609180074213,
+          -0.13483384728787123,
+          88.04079185524114
+        ],
+        [
+          -0.282524110024159,
+          -0.6753198138965374,
+          443.9118437750187
+        ],
+        [
+          -0.0006598806027940717,
+          -0.0014830657576157585,
+          1.0
+        ]
+      ]
+    },
+    {
+      "file": "eval-gt-00132.png",
+      "matches": 22,
+      "inliers": 11,
+      "medianReprojectionPixels700": 0.5061971545219421,
+      "coverage": 0.9521489795918368,
+      "reprojectedGroundTruthRmse255": 48.18800396475842,
+      "HsourceToNative700": [
+        [
+          -3.391998445536722,
+          1.3481893477561744,
+          349.1495334333674
+        ],
+        [
+          -4.173716334336986,
+          1.5859074061564784,
+          446.593221675521
+        ],
+        [
+          -0.009340223064897341,
+          0.003579827775866534,
+          1.0
+        ]
+      ]
+    },
+    {
+      "file": "eval-gt-00143.png",
+      "matches": 22,
+      "inliers": 11,
+      "medianReprojectionPixels700": 0.2177058607339859,
+      "coverage": 0.8172163265306123,
+      "reprojectedGroundTruthRmse255": 55.00978875367539,
+      "HsourceToNative700": [
+        [
+          0.28845879805337765,
+          -1.5601368072413662,
+          501.2157280353831
+        ],
+        [
+          0.33107769089715006,
+          -1.9235210930259432,
+          620.0853046075634
+        ],
+        [
+          0.00044246928263730025,
+          -0.002965845995103918,
+          1.0
+        ]
+      ]
+    }
+  ]
+}

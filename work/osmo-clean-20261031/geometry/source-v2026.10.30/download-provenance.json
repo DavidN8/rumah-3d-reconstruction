@@ -1,0 +1,38 @@
+[
+  {
+    "path": "src/app/cli/mesh_main.cpp",
+    "url": "https://raw.githubusercontent.com/harry7557558/spirula-studio/v2026.10.30/src/app/cli/mesh_main.cpp",
+    "bytes": 20702,
+    "sha256": "b68f5af596c3bf1960e76222a5ea2a096c68e0ef897849cbacfb239009c2e5af"
+  },
+  {
+    "path": "src/mesh/MeshingRasterHost.cpp",
+    "url": "https://raw.githubusercontent.com/harry7557558/spirula-studio/v2026.10.30/src/mesh/MeshingRasterHost.cpp",
+    "bytes": 20050,
+    "sha256": "5ae1e30de323222f3b99cbe05024582a5684c93f4c76e5873422d2789dd9a0c8"
+  },
+  {
+    "path": "src/backend/vulkan/shaders/meshing_raster.slang",
+    "url": "https://raw.githubusercontent.com/harry7557558/spirula-studio/v2026.10.30/src/backend/vulkan/shaders/meshing_raster.slang",
+    "bytes": 19826,
+    "sha256": "7ef5a723a12d626b20efec243df42d72616c6914ee35f156d68939aa0a2acf41"
+  },
+  {
+    "path": "src/data/parsers/DatasetCommon.cpp",
+    "url": "https://raw.githubusercontent.com/harry7557558/spirula-studio/v2026.10.30/src/data/parsers/DatasetCommon.cpp",
+    "bytes": 33703,
+    "sha256": "ca14be5f9dcc1b41891a9deeb224288a19bae3cd2dcc37ce96736b43adc8a292"
+  },
+  {
+    "path": "src/app/TrainerCore.cpp",
+    "url": "https://raw.githubusercontent.com/harry7557558/spirula-studio/v2026.10.30/src/app/TrainerCore.cpp",
+    "bytes": 110497,
+    "sha256": "c03aee9c396a1dad5c02ddb47a477cb4c0bcfaf9a9359ca638246d02b36b956f"
+  },
+  {
+    "path": "src/sfm/core/Rig.h",
+    "url": "https://raw.githubusercontent.com/harry7557558/spirula-studio/v2026.10.30/src/sfm/core/Rig.h",
+    "bytes": 19620,
+    "sha256": "fa6f44638dd969e605c58a717c76eb84dcec69c0b3d80d23328eef66e13048d8"
+  }
+]

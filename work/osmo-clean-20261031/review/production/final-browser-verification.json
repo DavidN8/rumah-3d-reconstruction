@@ -1,0 +1,84 @@
+{
+  "build": "20261031-osmo-clean-v1",
+  "modelSha256": "cbb33c91b5b481460b2c75e2125f3efa1458e6634abc3da1ce051a0989fd315c",
+  "bundle": "room-viewer-B35IPUXA.js",
+  "manifest": "room-be410c75b8.json",
+  "capturedUtc": "2026-10-31T01:46:51.135659+00:00",
+  "environment": "Windows Chrome / RTX5080 / loopback HTTP. These timings and viewport tests are not physical-phone or cellular benchmarks.",
+  "landingAndPreselection": {
+    "passed": true,
+    "prechoiceModelMetadataPhotoOrViewerLibraryRequests": 0,
+    "bareLandingAndAllThreeRadiosChecked": true,
+    "deepLinkOnlyPreselects": true
+  },
+  "osmoDesktop": {
+    "readySeconds": 7.2675,
+    "sourceSplats": 2997908,
+    "activeSplatsAtReady": 1999998,
+    "lodTarget": 2000000,
+    "visibleRoom": true,
+    "heldoutBathroomPresetClear": true,
+    "heightClipping": false,
+    "orbitPreservesInteriorPosition": true
+  },
+  "osmoNarrow": {
+    "viewport": [
+      402,
+      874
+    ],
+    "canvas": [
+      402,
+      709
+    ],
+    "readySeconds": 7.008700000017881,
+    "phoneInput": true,
+    "activeSplatsAtReady": 749985,
+    "lodTarget": 750000,
+    "visibleRoomAndWalkingControls": true,
+    "forwardHoldMilliseconds": 350,
+    "positionBefore": [
+      -0.04734322054037422,
+      1.5427764395823702,
+      0.16500877423918853
+    ],
+    "positionAfterRelease": [
+      -0.04140350899778408,
+      1.5427764395823702,
+      0.17320327221419904
+    ],
+    "activeMovesAfterRenderedReleaseBeforeCleanup": [],
+    "keysAfterReleaseBeforeCleanup": [],
+    "stationaryPositionVerifiedAgainBeforeCleanup": true
+  },
+  "cancellation": {
+    "passed": true,
+    "phase": "Downloaded SOG, preparing room",
+    "returnedToChooser": true,
+    "automaticFallbackDownload": false
+  },
+  "syntheticFailure": {
+    "passed": true,
+    "modelHTTPStatus": 503,
+    "downloadBytes": 0,
+    "visibleError": "The 3D download failed (503). Please try again.",
+    "retryReturnsToChooser": true,
+    "automaticRetryOrFallbackDownload": false
+  },
+  "iphoneFast": {
+    "readySeconds": 2.0272999999821186,
+    "triangles": 1603164,
+    "modelBytes": 21144604,
+    "sparkOrOsmoRequested": false
+  },
+  "iphoneFull": {
+    "readySeconds": 2.576199999988079,
+    "triangles": 11891853,
+    "modelBytes": 435614584,
+    "sparkOrOsmoRequested": false
+  },
+  "viewportOverrideRestored": true,
+  "physicalFold7AndIphone17": "unverified; user will test later",
+  "remainingMemoryLimit": "The phone LoD draw budget does not bound transient decoding/LoD-tree memory.",
+  "networkEvidence": "final-browser-network.json",
+  "deployedAtTimeOfRecord": false
+}

@@ -1,0 +1,535 @@
+{
+  "project": "20261027_IPHONE_WIDE",
+  "overall_status": "PARTIAL: geometry visual-quality gate remains incomplete",
+  "gates": {
+    "upright_frame": "PASS: proper rotations, baked vertices/normals, fitted floors at Y=0, 501 consistent cameras",
+    "visual_quality": "PARTIAL: eight actual WebGL/source comparisons inspected; remaining holes and transient surfaces are visible",
+    "size_and_triangle_count": "PASS",
+    "controls_offline_and_performance": "PASS"
+  },
+  "mesh": {
+    "triangles": 1082185,
+    "bytes": 60834340,
+    "sha256": "4693a1e608b898383ffe6365e9fc3c5193874cdad90c7533a24e0ac3ad5c2afe"
+  },
+  "standalone_html_bytes": 84803417,
+  "bridge": {
+    "method": "GPU LoFTR / fresh metric MoGe 3D correspondences / floor-coplanar Sim3 / seam camera-height continuity",
+    "surface_fit_rejected": false,
+    "precise_registration_verified": false,
+    "unique_surface_matches": 18,
+    "unique_depth_matches": 18,
+    "relative_scale_correction": 0.46339881778834463,
+    "height_only_scale_correction": 0.4613434781565557,
+    "surface_residual_metres_median": 0.00763033399305022,
+    "surface_residual_metres_p90": 0.017976339804431175,
+    "seam_camera_heights_metres": [
+      1.4935868430584875,
+      1.4869622507759521
+    ],
+    "yaw_correction_degrees": 3.5293486030596877,
+    "last_to_first_camera_step_metres": 0.07865129358225133
+  },
+  "geometry": {
+    "zones": [
+      {
+        "zone": "zone-0",
+        "triangles": 458844,
+        "vertices": 439259,
+        "rotation_determinant": 1.0000000000000007,
+        "fitted_floor_Y": -2.220446049250313e-16,
+        "floor_fit_rms_metres": 0.004416390353099027,
+        "dominant_upper_plane_height_metres_at_mean_footprint": 2.2768866933001157,
+        "upper_shell_Y_p99_metres": 2.2438108921051025,
+        "camera_height_metres_p10_p50_p90": [
+          1.3493877989409384,
+          1.411952049937921,
+          1.7718965513938887
+        ],
+        "projection_invariance_error_pixels": 3.199505580661611e-10
+      },
+      {
+        "zone": "zone-1",
+        "triangles": 440481,
+        "vertices": 386648,
+        "rotation_determinant": 1.0000000000000002,
+        "fitted_floor_Y": 0.0,
+        "floor_fit_rms_metres": 0.009804208979746192,
+        "dominant_upper_plane_height_metres_at_mean_footprint": 2.4161351408816696,
+        "upper_shell_Y_p99_metres": 2.8925468921661377,
+        "camera_height_metres_p10_p50_p90": [
+          1.4589631371608145,
+          1.4999999999999998,
+          1.7512962693824297
+        ],
+        "projection_invariance_error_pixels": 7.969924490607052e-10
+      },
+      {
+        "zone": "zone-2",
+        "triangles": 182860,
+        "vertices": 192462,
+        "rotation_determinant": 1.0000000000000004,
+        "fitted_floor_Y": -2.7755575615628914e-17,
+        "floor_fit_rms_metres": 0.008801958757306763,
+        "dominant_upper_plane_height_metres_at_mean_footprint": 1.9595303233989771,
+        "upper_shell_Y_p99_metres": 2.167712450027466,
+        "camera_height_metres_p10_p50_p90": [
+          0.8764858611292669,
+          1.0551977861513409,
+          1.4692092530622796
+        ],
+        "projection_invariance_error_pixels": 2.1268970098603307e-10
+      }
+    ],
+    "projection_error_pixels_max": 7.969924490607052e-10,
+    "proper_rotations": true,
+    "nodes_have_no_frame_wrappers": true,
+    "triangles": 1082185,
+    "file_bytes": 60834340,
+    "size_and_triangle_gate": true,
+    "visual_quality_gate": "Not claimed: recorded views still expose holes and transient-object geometry."
+  },
+  "controls": {
+    "passed": true,
+    "checks": [
+      {
+        "name": "Hardware GPU",
+        "pass": true,
+        "evidence": {
+          "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 5080 (0x00002C02) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "drawCalls": 3,
+          "triangles": 1082185
+        }
+      },
+      {
+        "name": "WASD w",
+        "pass": true,
+        "evidence": {
+          "delta": [
+            0.04908262743403874,
+            0,
+            0.2722845727880179
+          ],
+          "directionalDistance": 0.2766730794533181
+        }
+      },
+      {
+        "name": "WASD s",
+        "pass": true,
+        "evidence": {
+          "delta": [
+            -0.04968365786486073,
+            0,
+            -0.2756187731486016
+          ],
+          "directionalDistance": 0.2800610182991787
+        }
+      },
+      {
+        "name": "WASD a",
+        "pass": true,
+        "evidence": {
+          "delta": [
+            0.27563232766429313,
+            0,
+            -0.04968610123224282
+          ],
+          "directionalDistance": 0.28007479127778867
+        }
+      },
+      {
+        "name": "WASD d",
+        "pass": true,
+        "evidence": {
+          "delta": [
+            -0.26073543392717247,
+            0,
+            0.04700075377484947
+          ],
+          "directionalDistance": 0.2649377990408219
+        }
+      },
+      {
+        "name": "Vertical q",
+        "pass": true,
+        "evidence": {
+          "delta": [
+            0,
+            -0.27981013992043047,
+            0
+          ]
+        }
+      },
+      {
+        "name": "Vertical e",
+        "pass": true,
+        "evidence": {
+          "delta": [
+            0,
+            0.2796851737279258,
+            0
+          ]
+        }
+      },
+      {
+        "name": "Vertical Space",
+        "pass": true,
+        "evidence": {
+          "delta": [
+            0,
+            0.2751756377630763,
+            0
+          ]
+        }
+      },
+      {
+        "name": "Vertical c",
+        "pass": true,
+        "evidence": {
+          "delta": [
+            0,
+            -0.28020742944327925,
+            0
+          ]
+        }
+      },
+      {
+        "name": "Shift faster",
+        "pass": true,
+        "evidence": {
+          "ratio": 2.7044900610418217
+        }
+      },
+      {
+        "name": "Overlap release w then d",
+        "pass": true,
+        "evidence": {
+          "keysBeforeCleanup": [],
+          "driftAfterSettling": 0
+        }
+      },
+      {
+        "name": "Overlap release d then w",
+        "pass": true,
+        "evidence": {
+          "keysBeforeCleanup": [],
+          "driftAfterSettling": 0
+        }
+      },
+      {
+        "name": "Mouse yaw right",
+        "pass": true,
+        "evidence": {
+          "before": [
+            0.17740297513231756,
+            0,
+            0.98413829537022
+          ],
+          "after": [
+            -0.29709903242655233,
+            0,
+            0.9548466709012533
+          ],
+          "rightY": 0
+        }
+      },
+      {
+        "name": "Mouse down, no roll",
+        "pass": true,
+        "evidence": {
+          "forward": [
+            -0.2780540407657981,
+            -0.35227423327509005,
+            0.8936379663959335
+          ],
+          "rightY": 0
+        }
+      },
+      {
+        "name": "Wheel forward",
+        "pass": true,
+        "evidence": {
+          "delta": [
+            0.047978807864275,
+            0,
+            0.2661611630257321
+          ]
+        }
+      },
+      {
+        "name": "Rotate 90",
+        "pass": true,
+        "evidence": {
+          "angleDot": 1.6653345369377348e-16
+        }
+      },
+      {
+        "name": "Orbit keeps +Y upright",
+        "pass": true,
+        "evidence": {
+          "position": [
+            0.4392764568259829,
+            9.049329162605675,
+            4.378112248693751
+          ],
+          "rightY": 6.938893903907228e-18
+        }
+      },
+      {
+        "name": "Top view",
+        "pass": true,
+        "evidence": {
+          "forward": [
+            -0.0006442175798679894,
+            -0.9999995000000418,
+            -0.0007648420598106442
+          ],
+          "position": [
+            0.0060230816712871504,
+            10.149447838694387,
+            0.0071508545184675795
+          ]
+        }
+      },
+      {
+        "name": "Keyboard reset",
+        "pass": true,
+        "evidence": {
+          "position": [
+            0.3295223446810732,
+            1.5039917775601208,
+            -0.5515332515787474
+          ]
+        }
+      },
+      {
+        "name": "Recorded preset 0",
+        "pass": true,
+        "evidence": {
+          "name": "frame_0000999.jpg",
+          "distance": 0,
+          "rotationDot": 0.9999999999999999
+        }
+      },
+      {
+        "name": "Recorded preset 1",
+        "pass": true,
+        "evidence": {
+          "name": "frame_0000903.jpg",
+          "distance": 0,
+          "rotationDot": 1.0000000000000002
+        }
+      },
+      {
+        "name": "Recorded preset 2",
+        "pass": true,
+        "evidence": {
+          "name": "frame_0001398.jpg",
+          "distance": 0,
+          "rotationDot": 1.0000000000000002
+        }
+      },
+      {
+        "name": "Recorded preset 3",
+        "pass": true,
+        "evidence": {
+          "name": "frame_0001612.jpg",
+          "distance": 0,
+          "rotationDot": 1.0000000000000002
+        }
+      },
+      {
+        "name": "Recorded preset 4",
+        "pass": true,
+        "evidence": {
+          "name": "frame_0002402.jpg",
+          "distance": 0,
+          "rotationDot": 0.9999999999999999
+        }
+      },
+      {
+        "name": "Recorded preset 5",
+        "pass": true,
+        "evidence": {
+          "name": "frame_0003606.jpg",
+          "distance": 0,
+          "rotationDot": 1
+        }
+      },
+      {
+        "name": "Recorded preset 6",
+        "pass": true,
+        "evidence": {
+          "name": "frame_0004297.jpg",
+          "distance": 0,
+          "rotationDot": 1
+        }
+      },
+      {
+        "name": "Recorded preset 7",
+        "pass": true,
+        "evidence": {
+          "name": "frame_0004400.jpg",
+          "distance": 0,
+          "rotationDot": 1
+        }
+      },
+      {
+        "name": "Source comparison",
+        "pass": true,
+        "evidence": {
+          "source": "sources/frame_0004400.jpg"
+        }
+      },
+      {
+        "name": "Preset supports immediate WASD",
+        "pass": true,
+        "evidence": {
+          "position": [
+            0.8688845785752745,
+            1.337884514039037,
+            -3.149779567675532
+          ],
+          "quaternion": [
+            -0.0035972714236134954,
+            0.9943745428515354,
+            0.03592160000552869,
+            0.09957894767543818
+          ],
+          "forward": [
+            -0.19777910165442092,
+            -0.07215547417371933,
+            0.9775873436657905
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "right": [
+            -0.9801421856363143,
+            -8.673617379884035e-19,
+            -0.19829598063518233
+          ],
+          "mode": "walk",
+          "yaw": 2.941973582562585,
+          "pitch": -0.07221823318225389,
+          "keys": [],
+          "comparison": false,
+          "triangles": 1082185,
+          "renderCount": 1707
+        }
+      },
+      {
+        "name": "60 FPS target in this session",
+        "pass": true,
+        "evidence": {
+          "frames": 961,
+          "averageFps": 239.9980020977973,
+          "medianMs": 4.199999999998909,
+          "p95Ms": 4.299999999999272,
+          "p99Ms": 4.300000000001091,
+          "renderer": {
+            "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 5080 (0x00002C02) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+            "drawCalls": 3,
+            "triangles": 1082185
+          }
+        }
+      },
+      {
+        "name": "Full model orbit reaches 60 FPS",
+        "pass": true,
+        "evidence": {
+          "frames": 579,
+          "averageFps": 239.9900522258146,
+          "p95Ms": 4.299999999999272,
+          "renderer": {
+            "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 5080 (0x00002C02) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+            "drawCalls": 3,
+            "triangles": 1082185
+          }
+        }
+      },
+      {
+        "name": "Standalone works from file, fully offline",
+        "pass": true,
+        "evidence": {
+          "networkRequests": [],
+          "sourceEmbedded": true
+        }
+      },
+      {
+        "name": "No browser errors",
+        "pass": true,
+        "evidence": []
+      }
+    ],
+    "errors": []
+  },
+  "performance": [
+    {
+      "name": "60 FPS target in this session",
+      "pass": true,
+      "evidence": {
+        "frames": 961,
+        "averageFps": 239.9980020977973,
+        "medianMs": 4.199999999998909,
+        "p95Ms": 4.299999999999272,
+        "p99Ms": 4.300000000001091,
+        "renderer": {
+          "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 5080 (0x00002C02) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "drawCalls": 3,
+          "triangles": 1082185
+        }
+      }
+    },
+    {
+      "name": "Full model orbit reaches 60 FPS",
+      "pass": true,
+      "evidence": {
+        "frames": 579,
+        "averageFps": 239.9900522258146,
+        "p95Ms": 4.299999999999272,
+        "renderer": {
+          "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 5080 (0x00002C02) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "drawCalls": 3,
+          "triangles": 1082185
+        }
+      }
+    }
+  ],
+  "rebuild": {
+    "rebuild_is_byte_identical": true,
+    "glb_sha256": "4693a1e608b898383ffe6365e9fc3c5193874cdad90c7533a24e0ac3ad5c2afe",
+    "all_compact_source_faces_preserved": true,
+    "triangles": 1082185
+  },
+  "doorway_completion": {
+    "applied": false,
+    "reason": "Preserve all observed compact-mesh surfaces; inferred patch and destructive replacement disabled"
+  },
+  "active_assets": [
+    "exports/iphone-full-room.glb",
+    "exports/cameras.json",
+    "colmap-gpu/merged/sparse/0",
+    "review/index.html",
+    "review/iPhone-Full-Room-preview.html"
+  ],
+  "backup": "backups/before-fix-20261027",
+  "reference_protection": "Older scans and accepted room-models were read only; checkpoint datasets remain in their preserved training frame.",
+  "active_camera_extrinsic_max_error": 1.1102230246251565e-15,
+  "legacy_native_export": "backups/before-fix-20261027/legacy-export-native.glb",
+  "surface_preservation": {
+    "cause": "The broad automatic export filters removed useful room surfaces. Remeshing caused smaller additional losses; it was not the largest observed regression.",
+    "controlled_comparison": "Same camera, same corrected transforms, same roof cut in each render. Original source meshes, compact untrimmed meshes and previously delivered meshes compared independently.",
+    "original_triangles": 11641867,
+    "compact_before_trimming_triangles": 1082185,
+    "previous_published_triangles": 957841,
+    "source_faces_deleted_by_previous_cleanup": 125496,
+    "previous_inferred_repair_triangles": 1152,
+    "floor_display_clipping": "Not the main cause in this comparison; most gaps were already present in the exported trimmed geometry.",
+    "older_bedroom_workflow": "Preserved about 9.08M scanned triangles with inspected local debris removal and separately labelled doorway repair. No global remesh or decimation.",
+    "correction": "Surface-preserving export now retains all 1,082,185 compact triangles. Broad overlap/height cuts and display floor clipping disabled; optional inferred patch/replacement disabled.",
+    "remaining": "Original mesh warping, some holes and ghost surfaces remain. Full visual-quality gate remains partial."
+  }
+}

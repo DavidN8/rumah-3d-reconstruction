@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>iPhone apartment · Ruang Kamare</title>
+<style>
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;background:#141b23;color:#edf3fa;font:14px/1.4 system-ui,sans-serif}body{display:flex;flex-direction:column}header{padding:14px 20px;display:flex;align-items:center;gap:16px;background:#10161e;border-bottom:1px solid #30404e}h1{font-size:18px;font-weight:600;margin:0}#stats{margin-left:auto;color:#9bb2c5;font-size:12px}nav{display:flex;align-items:center;flex-wrap:wrap;gap:7px;padding:10px 16px;background:#1a2530;border-bottom:1px solid #30404e}button,select{font:inherit;color:#edf3fa;background:#243441;border:1px solid #435969;border-radius:6px;padding:7px 10px;cursor:pointer}button:hover,button[aria-pressed=true]{background:#39768a;border-color:#6bb3c4}button:focus-visible,select:focus-visible{outline:2px solid #8cdbeb;outline-offset:2px}label{display:flex;align-items:center;gap:7px;color:#abc0d1}.divider{height:23px;border-left:1px solid #435969;margin:0 3px}#stage{position:relative;display:flex;min-height:0;flex:1}#view{width:100%;height:100%;display:block;min-width:0;outline:none;touch-action:none;cursor:grab}#view:active{cursor:grabbing}#view:focus-visible{outline:2px solid #69b4c6;outline-offset:-2px}#stage.compare #view{width:50%}#source{width:50%;height:100%;background:#0e141c;position:relative;border-left:1px solid #435969;padding:24px 0 0}#source[hidden]{display:none}#source-frame{width:100%;height:100%;object-fit:contain;display:block}#source-label{position:absolute;top:5px;left:12px;font-size:12px;color:#b4c6d4}#loading{position:absolute;inset:0;display:grid;place-content:center;background:#141b23;z-index:2;text-align:center}#loading[hidden]{display:none}footer{padding:9px 16px;display:flex;gap:12px;flex-wrap:wrap;border-top:1px solid #30404e;background:#10161e}#hint{color:#bed1df}#quality{margin-left:auto;color:#8fa5b7;font-size:11px;align-self:center}a{color:#9addec}@media(max-width:900px){header{padding:10px 12px}h1{font-size:16px}nav{padding:8px;gap:5px}button,select{font-size:12px;padding:7px}#quality{margin:0}.divider{display:none}}
+</style></head><body>
+<header><h1>iPhone apartment</h1><span id="stats">Loading reconstruction…</span></header>
+<nav aria-label="Room controls">
+<button id="walk" aria-pressed="true">Walk</button><button id="orbit" aria-pressed="false">Orbit</button>
+<span class="divider"></span><button id="top">Top view</button><button id="rotate">Rotate 90°</button><button id="reset">Reset view</button>
+<button id="cutaway" aria-pressed="false">Cutaway</button><button id="shade" aria-pressed="false">Shading</button>
+<label>Speed <select id="speed" aria-label="Movement speed"><option value="0.5">Slow</option><option value="1.2" selected>Normal</option><option value="2.4">Fast</option></select></label>
+<select id="views" aria-label="Recorded camera view"><option value="">Recorded views…</option></select>
+<button id="compare" aria-pressed="false">Compare source frame</button>
+</nav>
+<main id="stage"><canvas id="view" tabindex="0" aria-label="3D apartment. Drag to look, WASD to move, Q and E down and up."></canvas><aside id="source" hidden><span id="source-label"></span><img id="source-frame" alt="Original recorded camera frame"></aside><div id="loading">Loading the room and its textures…</div></main>
+<footer><span id="hint">Drag to look · WASD move · Q/E down/up · Shift faster · Wheel step · R reset</span><span id="quality"></span></footer>
+<!--EMBED-->
+<!--SCRIPT-->
+</body></html>

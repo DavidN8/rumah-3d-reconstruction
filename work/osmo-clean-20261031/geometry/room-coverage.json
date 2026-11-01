@@ -1,0 +1,53 @@
+{
+  "visually_verified": true,
+  "verification": "Masking agent source-frame contact sheet audit, 2026-10-31. First entry threshold546-564; inside573-687. Second threshold straddle1482-1497; confidently both lenses inside1506-1608; exit straddle1614-1629. These regions assess camera registration and repeat-visit continuity, not mesh completeness.",
+  "regions": [
+    {
+      "name": "bathroom",
+      "source_frame_min": 573,
+      "source_frame_max": 687,
+      "minimum_pair_fraction": 0.0,
+      "minimum_complete_pairs": 2,
+      "enforce": false
+    },
+    {
+      "name": "entry",
+      "source_frame_min": 546,
+      "source_frame_max": 564,
+      "minimum_pair_fraction": 0.0,
+      "minimum_complete_pairs": 1,
+      "enforce": false
+    },
+    {
+      "name": "entry_second",
+      "source_frame_min": 1482,
+      "source_frame_max": 1497,
+      "minimum_pair_fraction": 0.0,
+      "minimum_complete_pairs": 1,
+      "enforce": false
+    },
+    {
+      "name": "bathroom_second",
+      "source_frame_min": 1506,
+      "source_frame_max": 1608,
+      "minimum_pair_fraction": 0.0,
+      "minimum_complete_pairs": 2,
+      "enforce": false
+    },
+    {
+      "name": "exit_second",
+      "source_frame_min": 1614,
+      "source_frame_max": 1629,
+      "minimum_pair_fraction": 0.0,
+      "minimum_complete_pairs": 1,
+      "enforce": false
+    }
+  ],
+  "repeat_visit_groups": [
+    {
+      "name": "same_bathroom_two_visits",
+      "region_names": ["bathroom", "bathroom_second"],
+      "interpretation": "Both visits depict the same physical bathroom. Compare camera volumes, direct cross-visit feature tracks, and source image orientation; a large disconnected duplicate or folded trajectory must be inspected before training."
+    }
+  ]
+}

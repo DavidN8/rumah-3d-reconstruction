@@ -1,0 +1,540 @@
+{
+  "metres_per_native_unit": [
+    1.301656655184797,
+    3.963467441286336
+  ],
+  "frames": [
+    {
+      "component": 0,
+      "name": "frame_0000006.jpg",
+      "metres_per_unit": 1.3402508644063764,
+      "samples": 1570,
+      "relative_mad": 0.01950379698544843
+    },
+    {
+      "component": 0,
+      "name": "frame_0000117.jpg",
+      "metres_per_unit": 1.32208753175664,
+      "samples": 2533,
+      "relative_mad": 0.013793613334644822
+    },
+    {
+      "component": 0,
+      "name": "frame_0000231.jpg",
+      "metres_per_unit": 1.3775206837185174,
+      "samples": 1831,
+      "relative_mad": 0.0035714561194091607
+    },
+    {
+      "component": 0,
+      "name": "frame_0000340.jpg",
+      "metres_per_unit": 1.61016197459995,
+      "samples": 1134,
+      "relative_mad": 0.004760713915329392
+    },
+    {
+      "component": 0,
+      "name": "frame_0000454.jpg",
+      "metres_per_unit": 1.6427945708350866,
+      "samples": 2645,
+      "relative_mad": 0.005402968230457182
+    },
+    {
+      "component": 0,
+      "name": "frame_0000561.jpg",
+      "metres_per_unit": 1.6036513818967841,
+      "samples": 2228,
+      "relative_mad": 0.011191411418816412
+    },
+    {
+      "component": 0,
+      "name": "frame_0000678.jpg",
+      "metres_per_unit": 1.4679121997999887,
+      "samples": 198,
+      "relative_mad": 0.0347391895682174
+    },
+    {
+      "component": 0,
+      "name": "frame_0000791.jpg",
+      "metres_per_unit": 1.2685777792561543,
+      "samples": 1986,
+      "relative_mad": 0.02058454433894666
+    },
+    {
+      "component": 0,
+      "name": "frame_0000903.jpg",
+      "metres_per_unit": 1.3398331150219183,
+      "samples": 387,
+      "relative_mad": 0.010343725605433495
+    },
+    {
+      "component": 0,
+      "name": "frame_0001015.jpg",
+      "metres_per_unit": 1.2880328373620384,
+      "samples": 2518,
+      "relative_mad": 0.028529255615411215
+    },
+    {
+      "component": 0,
+      "name": "frame_0001262.jpg",
+      "metres_per_unit": 1.3286116829332695,
+      "samples": 700,
+      "relative_mad": 0.00740149236453923
+    },
+    {
+      "component": 0,
+      "name": "frame_0001314.jpg",
+      "metres_per_unit": 1.3030357540927713,
+      "samples": 544,
+      "relative_mad": 0.01799303608533319
+    },
+    {
+      "component": 0,
+      "name": "frame_0001316.jpg",
+      "metres_per_unit": 1.2903076173021335,
+      "samples": 628,
+      "relative_mad": 0.020600583615743306
+    },
+    {
+      "component": 0,
+      "name": "frame_0001318.jpg",
+      "metres_per_unit": 1.3136193466159638,
+      "samples": 547,
+      "relative_mad": 0.020826299049636083
+    },
+    {
+      "component": 0,
+      "name": "frame_0001322.jpg",
+      "metres_per_unit": 1.2857512344102604,
+      "samples": 725,
+      "relative_mad": 0.02038400842356815
+    },
+    {
+      "component": 0,
+      "name": "frame_0001326.jpg",
+      "metres_per_unit": 1.2755544409508097,
+      "samples": 606,
+      "relative_mad": 0.018760129195638214
+    },
+    {
+      "component": 0,
+      "name": "frame_0001330.jpg",
+      "metres_per_unit": 1.301656655184797,
+      "samples": 687,
+      "relative_mad": 0.025328977639635014
+    },
+    {
+      "component": 0,
+      "name": "frame_0001334.jpg",
+      "metres_per_unit": 1.274631647828184,
+      "samples": 651,
+      "relative_mad": 0.03200719689274237
+    },
+    {
+      "component": 0,
+      "name": "frame_0001338.jpg",
+      "metres_per_unit": 1.2776405633190893,
+      "samples": 740,
+      "relative_mad": 0.03159736849412919
+    },
+    {
+      "component": 0,
+      "name": "frame_0001342.jpg",
+      "metres_per_unit": 1.2719128124483008,
+      "samples": 771,
+      "relative_mad": 0.025132518336251398
+    },
+    {
+      "component": 0,
+      "name": "frame_0001346.jpg",
+      "metres_per_unit": 1.237602099799928,
+      "samples": 752,
+      "relative_mad": 0.025786827068870012
+    },
+    {
+      "component": 0,
+      "name": "frame_0001350.jpg",
+      "metres_per_unit": 1.2454544120480897,
+      "samples": 883,
+      "relative_mad": 0.028934902546623703
+    },
+    {
+      "component": 0,
+      "name": "frame_0001351.jpg",
+      "metres_per_unit": 1.248727639062239,
+      "samples": 921,
+      "relative_mad": 0.02599988401745539
+    },
+    {
+      "component": 0,
+      "name": "frame_0001354.jpg",
+      "metres_per_unit": 1.2986506426200806,
+      "samples": 979,
+      "relative_mad": 0.025695699486604967
+    },
+    {
+      "component": 0,
+      "name": "frame_0001358.jpg",
+      "metres_per_unit": 1.3396515882117122,
+      "samples": 765,
+      "relative_mad": 0.02496609315565058
+    },
+    {
+      "component": 0,
+      "name": "frame_0001362.jpg",
+      "metres_per_unit": 1.3292984183752052,
+      "samples": 922,
+      "relative_mad": 0.025679293364057734
+    },
+    {
+      "component": 0,
+      "name": "frame_0001363.jpg",
+      "metres_per_unit": 1.3842180595118383,
+      "samples": 988,
+      "relative_mad": 0.023107683079046974
+    },
+    {
+      "component": 0,
+      "name": "frame_0001366.jpg",
+      "metres_per_unit": 1.3732307321245787,
+      "samples": 503,
+      "relative_mad": 0.02223554620688767
+    },
+    {
+      "component": 0,
+      "name": "frame_0001368.jpg",
+      "metres_per_unit": 1.3719233578317915,
+      "samples": 346,
+      "relative_mad": 0.026251256407797956
+    },
+    {
+      "component": 0,
+      "name": "frame_0001370.jpg",
+      "metres_per_unit": 1.3611298231578774,
+      "samples": 188,
+      "relative_mad": 0.03245131740869633
+    },
+    {
+      "component": 0,
+      "name": "frame_0001374.jpg",
+      "metres_per_unit": 1.2915759323572094,
+      "samples": 275,
+      "relative_mad": 0.04684022466327224
+    },
+    {
+      "component": 0,
+      "name": "frame_0001377.jpg",
+      "metres_per_unit": 1.2118526050744873,
+      "samples": 329,
+      "relative_mad": 0.04127414845013175
+    },
+    {
+      "component": 0,
+      "name": "frame_0001378.jpg",
+      "metres_per_unit": 1.1983182449104188,
+      "samples": 210,
+      "relative_mad": 0.050547490922502124
+    },
+    {
+      "component": 0,
+      "name": "frame_0001382.jpg",
+      "metres_per_unit": 1.1084789537352173,
+      "samples": 86,
+      "relative_mad": 0.05633706949324339
+    },
+    {
+      "component": 0,
+      "name": "frame_0001386.jpg",
+      "metres_per_unit": 1.0683807946703878,
+      "samples": 18,
+      "relative_mad": 0.09688601362949792
+    },
+    {
+      "component": 1,
+      "name": "frame_0001390.jpg",
+      "metres_per_unit": 4.043029640044432,
+      "samples": 18,
+      "relative_mad": 0.016461954271051165
+    },
+    {
+      "component": 1,
+      "name": "frame_0001391.jpg",
+      "metres_per_unit": 4.156976687702617,
+      "samples": 33,
+      "relative_mad": 0.038794084735450915
+    },
+    {
+      "component": 1,
+      "name": "frame_0001394.jpg",
+      "metres_per_unit": 4.057505137491762,
+      "samples": 36,
+      "relative_mad": 0.021503310696721737
+    },
+    {
+      "component": 1,
+      "name": "frame_0001397.jpg",
+      "metres_per_unit": 4.236540174210693,
+      "samples": 35,
+      "relative_mad": 0.02247488331600053
+    },
+    {
+      "component": 1,
+      "name": "frame_0001398.jpg",
+      "metres_per_unit": 4.2666094642927455,
+      "samples": 52,
+      "relative_mad": 0.04921588052443357
+    },
+    {
+      "component": 1,
+      "name": "frame_0001401.jpg",
+      "metres_per_unit": 4.103251254422771,
+      "samples": 94,
+      "relative_mad": 0.01877931631538622
+    },
+    {
+      "component": 1,
+      "name": "frame_0001402.jpg",
+      "metres_per_unit": 4.000771784809658,
+      "samples": 90,
+      "relative_mad": 0.015424209488071447
+    },
+    {
+      "component": 1,
+      "name": "frame_0001406.jpg",
+      "metres_per_unit": 3.963467441286336,
+      "samples": 69,
+      "relative_mad": 0.033951611357230085
+    },
+    {
+      "component": 1,
+      "name": "frame_0001410.jpg",
+      "metres_per_unit": 3.972211774792195,
+      "samples": 126,
+      "relative_mad": 0.01944431878445266
+    },
+    {
+      "component": 1,
+      "name": "frame_0001412.jpg",
+      "metres_per_unit": 3.9442417161739476,
+      "samples": 204,
+      "relative_mad": 0.011543688440857907
+    },
+    {
+      "component": 1,
+      "name": "frame_0001414.jpg",
+      "metres_per_unit": 3.955653704022124,
+      "samples": 199,
+      "relative_mad": 0.013206812671000025
+    },
+    {
+      "component": 1,
+      "name": "frame_0001418.jpg",
+      "metres_per_unit": 3.916393889368634,
+      "samples": 189,
+      "relative_mad": 0.011681730767801742
+    },
+    {
+      "component": 1,
+      "name": "frame_0001422.jpg",
+      "metres_per_unit": 3.8969969828165456,
+      "samples": 289,
+      "relative_mad": 0.009671334365930121
+    },
+    {
+      "component": 1,
+      "name": "frame_0001424.jpg",
+      "metres_per_unit": 3.8924062809944866,
+      "samples": 234,
+      "relative_mad": 0.011267518772218457
+    },
+    {
+      "component": 1,
+      "name": "frame_0001426.jpg",
+      "metres_per_unit": 3.8932605755535743,
+      "samples": 279,
+      "relative_mad": 0.010242761801506062
+    },
+    {
+      "component": 1,
+      "name": "frame_0001430.jpg",
+      "metres_per_unit": 3.900222836845302,
+      "samples": 369,
+      "relative_mad": 0.01144135581931259
+    },
+    {
+      "component": 1,
+      "name": "frame_0001434.jpg",
+      "metres_per_unit": 3.856117503922958,
+      "samples": 347,
+      "relative_mad": 0.012379098694461141
+    },
+    {
+      "component": 1,
+      "name": "frame_0001437.jpg",
+      "metres_per_unit": 3.881514906150789,
+      "samples": 383,
+      "relative_mad": 0.01074464430477064
+    },
+    {
+      "component": 1,
+      "name": "frame_0001438.jpg",
+      "metres_per_unit": 3.845928375891225,
+      "samples": 287,
+      "relative_mad": 0.012630091842951965
+    },
+    {
+      "component": 1,
+      "name": "frame_0001442.jpg",
+      "metres_per_unit": 3.8552542835171244,
+      "samples": 338,
+      "relative_mad": 0.013842323234540144
+    },
+    {
+      "component": 1,
+      "name": "frame_0001446.jpg",
+      "metres_per_unit": 3.8942842290122663,
+      "samples": 365,
+      "relative_mad": 0.0124627209228366
+    },
+    {
+      "component": 1,
+      "name": "frame_0001447.jpg",
+      "metres_per_unit": 3.841579585775925,
+      "samples": 311,
+      "relative_mad": 0.014227588719936969
+    },
+    {
+      "component": 1,
+      "name": "frame_0001450.jpg",
+      "metres_per_unit": 3.914141875504539,
+      "samples": 288,
+      "relative_mad": 0.013732334559205715
+    },
+    {
+      "component": 1,
+      "name": "frame_0001454.jpg",
+      "metres_per_unit": 3.916936112973012,
+      "samples": 335,
+      "relative_mad": 0.012844739210393736
+    },
+    {
+      "component": 1,
+      "name": "frame_0001458.jpg",
+      "metres_per_unit": 4.004652768537239,
+      "samples": 361,
+      "relative_mad": 0.016269549583623217
+    },
+    {
+      "component": 1,
+      "name": "frame_0001461.jpg",
+      "metres_per_unit": 4.057676350644945,
+      "samples": 520,
+      "relative_mad": 0.020425274236176502
+    },
+    {
+      "component": 1,
+      "name": "frame_0001462.jpg",
+      "metres_per_unit": 4.024162752926099,
+      "samples": 469,
+      "relative_mad": 0.020816638094673
+    },
+    {
+      "component": 1,
+      "name": "frame_0001466.jpg",
+      "metres_per_unit": 4.038938262819332,
+      "samples": 294,
+      "relative_mad": 0.02368877155490316
+    },
+    {
+      "component": 1,
+      "name": "frame_0001469.jpg",
+      "metres_per_unit": 4.037475107483274,
+      "samples": 426,
+      "relative_mad": 0.018900547120535332
+    },
+    {
+      "component": 1,
+      "name": "frame_0001470.jpg",
+      "metres_per_unit": 4.0240306426421775,
+      "samples": 343,
+      "relative_mad": 0.017653211975130822
+    },
+    {
+      "component": 1,
+      "name": "frame_0001612.jpg",
+      "metres_per_unit": 3.7758539868601786,
+      "samples": 501,
+      "relative_mad": 0.020449381855896225
+    },
+    {
+      "component": 1,
+      "name": "frame_0001967.jpg",
+      "metres_per_unit": 3.901919144917092,
+      "samples": 375,
+      "relative_mad": 0.024680883551859035
+    },
+    {
+      "component": 1,
+      "name": "frame_0002182.jpg",
+      "metres_per_unit": 4.004769028269347,
+      "samples": 276,
+      "relative_mad": 0.02726529642989951
+    },
+    {
+      "component": 1,
+      "name": "frame_0002402.jpg",
+      "metres_per_unit": 3.978211284094126,
+      "samples": 881,
+      "relative_mad": 0.01722313714513749
+    },
+    {
+      "component": 1,
+      "name": "frame_0002711.jpg",
+      "metres_per_unit": 3.6411485591097534,
+      "samples": 422,
+      "relative_mad": 0.020591366352034794
+    },
+    {
+      "component": 1,
+      "name": "frame_0003003.jpg",
+      "metres_per_unit": 4.044254365889394,
+      "samples": 56,
+      "relative_mad": 0.015438662537626211
+    },
+    {
+      "component": 1,
+      "name": "frame_0003283.jpg",
+      "metres_per_unit": 4.105664057620597,
+      "samples": 52,
+      "relative_mad": 0.01223497789427422
+    },
+    {
+      "component": 1,
+      "name": "frame_0003688.jpg",
+      "metres_per_unit": 3.8640532425689393,
+      "samples": 294,
+      "relative_mad": 0.021419243763926146
+    },
+    {
+      "component": 1,
+      "name": "frame_0004265.jpg",
+      "metres_per_unit": 3.7911286264502584,
+      "samples": 396,
+      "relative_mad": 0.028954062705397573
+    },
+    {
+      "component": 1,
+      "name": "frame_0004481.jpg",
+      "metres_per_unit": 4.827583584041396,
+      "samples": 906,
+      "relative_mad": 0.017195134338008605
+    },
+    {
+      "component": 1,
+      "name": "frame_0004701.jpg",
+      "metres_per_unit": 4.226277859167008,
+      "samples": 333,
+      "relative_mad": 0.009529407093539707
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "native_delivery_files": [
+    {
+      "file": "iPhone_Wide_Full_Native.glb",
+      "bytes": 435614584,
+      "sha256": "16f8963b043a766317497ee4281f4cf39c6b2190fafaaed51334734723c8b207",
+      "source_sha256": "16f8963b043a766317497ee4281f4cf39c6b2190fafaaed51334734723c8b207"
+    },
+    {
+      "file": "iPhone_Wide_Full_Native_Offline.html",
+      "bytes": 584632983,
+      "sha256": "0c1d9fea0c0f9868b6a1ac7386f34177caec4f52b2564c4a815c04a3365cd1f7",
+      "source_sha256": "0c1d9fea0c0f9868b6a1ac7386f34177caec4f52b2564c4a815c04a3365cd1f7"
+    }
+  ],
+  "pdf_pages": 24,
+  "pdf_words": 4152,
+  "pdf_bytes": 35992418,
+  "pdf_sha256": "7a85b743cd49a418417f0c8dd55bd17f84669e8950f5cdf626a0da0cfa38252b",
+  "zip_bytes": 102844818,
+  "zip_files": 277,
+  "manifest_records_verified": 275,
+  "visual_qa": "All 24 rendered pages inspected. No clipped or overlapping text, images or tables.",
+  "primary_native_geometry_preserved": true,
+  "size_and_triangle_caps_removed_by_user": true
+}

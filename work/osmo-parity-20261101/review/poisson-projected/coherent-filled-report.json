@@ -1,0 +1,17 @@
+{
+  "surface": "Screened Poisson from validated oriented depth and SfM anchors",
+  "textureMethod": "Chart-consistent source-view assignment with ranked visibility fallback; explicit original binary masks; no colour averaging or sharpening",
+  "views": 414,
+  "evalImagesExcluded": true,
+  "charts": 39485,
+  "occupiedTexels": 42837440,
+  "supportedTexels": 39213761,
+  "supportedFraction": 0.9154086005139429,
+  "textureSize": 8192,
+  "jpegBytes": 23670521,
+  "sourceMeshSha256": "50d4509f34bb4a13ef3ea8ef9288513e5955509caa3110fad459896c07e3b326",
+  "sourceMeshModified": false,
+  "seconds": 80.51600000000326,
+  "status": "pilot_requires_visual_review",
+  "fallbackToOtherVerifiedVisiblePhotoTexels": 3576542
+}

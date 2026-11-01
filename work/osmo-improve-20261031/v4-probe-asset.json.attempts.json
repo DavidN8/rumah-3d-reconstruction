@@ -1,0 +1,18 @@
+{
+  "input": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\recovery-v2\\exports\\v4-probe.glb",
+  "sourceSha256": "e0c63a9ceba7720dbb53cb5a86866165d7f729ad27d4094fc751b4fc274eb5c5",
+  "sourceTriangles": 1683387,
+  "output": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\recovery-v2\\exports\\v4-probe-packed.glb",
+  "compressionAttempts": [
+    {
+      "profile": "medium-p16-n8-uv12-j86",
+      "simplified": false,
+      "bytes": 9267256,
+      "decodedGeometryBytes": 33450244,
+      "triangles": 1683387,
+      "vertices": 828100,
+      "withinFileBudget": true,
+      "withinGeometryBudget": true
+    }
+  ]
+}

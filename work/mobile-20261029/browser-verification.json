@@ -1,0 +1,280 @@
+[
+  {
+    "test": "phone-layout-render-and-source-photo",
+    "build": "20261029-mobile",
+    "phase": "ready",
+    "quality": "phone",
+    "phoneInput": true,
+    "downloadBytes": 21144604,
+    "fileBytes": 21144604,
+    "triangles": 1603164,
+    "geometryMiB": 46.7,
+    "textures": [
+      [
+        2048,
+        2048
+      ],
+      [
+        2048,
+        2048
+      ]
+    ],
+    "preparedSeconds": 0.20310000000894068,
+    "mode": "walk",
+    "renderCount": 68,
+    "comparison": true,
+    "recorded": "frame_0004297.jpg",
+    "position": [
+      1.1963493261576765,
+      1.5443774922057898,
+      -4.251238292126057
+    ],
+    "activeMoves": [],
+    "keys": [],
+    "viewport": [
+      402,
+      305
+    ]
+  },
+  {
+    "test": "http-404-recovery",
+    "build": "20261029-mobile",
+    "phase": "failed",
+    "quality": "phone",
+    "phoneInput": true,
+    "downloadBytes": 0,
+    "fileBytes": 21144604,
+    "triangles": 0,
+    "geometryMiB": 0,
+    "textures": [],
+    "preparedSeconds": 0,
+    "mode": "walk",
+    "renderCount": 0,
+    "comparison": false,
+    "recorded": null,
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "activeMoves": [],
+    "keys": [],
+    "viewport": [
+      402,
+      709
+    ]
+  },
+  {
+    "test": "photos-available-after-failure",
+    "passed": true
+  },
+  {
+    "test": "partial-download-recovery",
+    "build": "20261029-mobile",
+    "phase": "failed",
+    "quality": "phone",
+    "phoneInput": true,
+    "downloadBytes": 16384,
+    "fileBytes": 21144604,
+    "triangles": 0,
+    "geometryMiB": 0,
+    "textures": [],
+    "preparedSeconds": 0,
+    "mode": "walk",
+    "renderCount": 0,
+    "comparison": false,
+    "recorded": null,
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "activeMoves": [],
+    "keys": [],
+    "viewport": [
+      402,
+      709
+    ]
+  },
+  {
+    "test": "full-native-remains-available",
+    "build": "20261029-mobile",
+    "phase": "ready",
+    "quality": "native",
+    "phoneInput": true,
+    "downloadBytes": 435614584,
+    "fileBytes": 435614584,
+    "triangles": 11891853,
+    "geometryMiB": 398.6,
+    "textures": [
+      [
+        8192,
+        8192
+      ],
+      [
+        8192,
+        8192
+      ]
+    ],
+    "preparedSeconds": 1.6908999999910592,
+    "mode": "walk",
+    "renderCount": 4,
+    "comparison": false,
+    "recorded": null,
+    "position": [
+      0.3295223446810733,
+      1.503991777560121,
+      -0.5515332515787474
+    ],
+    "activeMoves": [],
+    "keys": [],
+    "viewport": [
+      884,
+      663
+    ]
+  },
+  {
+    "test": "stalled-download-45s-recovery",
+    "build": "20261029-mobile",
+    "phase": "failed",
+    "quality": "phone",
+    "phoneInput": true,
+    "downloadBytes": 16384,
+    "fileBytes": 21144604,
+    "triangles": 0,
+    "geometryMiB": 0,
+    "textures": [],
+    "preparedSeconds": 0,
+    "mode": "walk",
+    "renderCount": 0,
+    "comparison": false,
+    "recorded": null,
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "activeMoves": [],
+    "keys": [],
+    "viewport": [
+      402,
+      709
+    ]
+  },
+  {
+    "test": "unfolded-layout-auto-phone",
+    "build": "20261029-mobile",
+    "phase": "ready",
+    "quality": "phone",
+    "phoneInput": true,
+    "downloadBytes": 21144604,
+    "fileBytes": 21144604,
+    "triangles": 1603164,
+    "geometryMiB": 46.7,
+    "textures": [
+      [
+        2048,
+        2048
+      ],
+      [
+        2048,
+        2048
+      ]
+    ],
+    "preparedSeconds": 0.164,
+    "mode": "orbit",
+    "renderCount": 2,
+    "comparison": false,
+    "recorded": null,
+    "position": [
+      6.1610842097586165,
+      9.227357408153251,
+      6.792039780294934
+    ],
+    "activeMoves": [],
+    "keys": [],
+    "viewport": [
+      884,
+      663
+    ]
+  },
+  {
+    "test": "public-https-first-phone-load",
+    "build": "20261029-mobile",
+    "phase": "ready",
+    "quality": "phone",
+    "phoneInput": true,
+    "downloadBytes": 21144604,
+    "fileBytes": 21144604,
+    "triangles": 1603164,
+    "geometryMiB": 46.7,
+    "textures": [
+      [
+        2048,
+        2048
+      ],
+      [
+        2048,
+        2048
+      ]
+    ],
+    "preparedSeconds": 2.24020000000298,
+    "mode": "orbit",
+    "renderCount": 2,
+    "comparison": false,
+    "recorded": null,
+    "position": [
+      6.1610842097586165,
+      9.227357408153251,
+      6.792039780294934
+    ],
+    "activeMoves": [],
+    "keys": [],
+    "viewport": [
+      884,
+      663
+    ]
+  },
+  {
+    "test": "missing-entry-script-recovery",
+    "message": "The viewer could not start",
+    "photoLink": "sources/frame_0001612.jpg"
+  },
+  {
+    "test": "final-v2-public-render",
+    "build": "20261029-mobile-v2",
+    "phase": "ready",
+    "quality": "phone",
+    "phoneInput": true,
+    "downloadBytes": 21144604,
+    "fileBytes": 21144604,
+    "triangles": 1603164,
+    "geometryMiB": 46.7,
+    "textures": [
+      [
+        2048,
+        2048
+      ],
+      [
+        2048,
+        2048
+      ]
+    ],
+    "preparedSeconds": 0.23269999998807908,
+    "mode": "orbit",
+    "renderCount": 2,
+    "comparison": false,
+    "recorded": null,
+    "position": [
+      6.1610842097586165,
+      9.227357408153251,
+      6.792039780294934
+    ],
+    "activeMoves": [],
+    "keys": [],
+    "viewport": [
+      884,
+      663
+    ]
+  }
+]

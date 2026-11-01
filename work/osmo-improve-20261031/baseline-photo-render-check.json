@@ -1,0 +1,92 @@
+{
+  "renderer": "NVIDIA GeForce RTX 5080/PCIe/SSE2",
+  "pixel_size": 600,
+  "seconds": 1.110000000015134,
+  "scope": "Unlit geometry and texture. Six source photos excluded from photographic texture selection, but used for geometry/poses. Covered-pixel errors do not validate missing geometry.",
+  "models": [
+    {
+      "mesh": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\lite-v1\\exports\\osmo-lite-trusted-source.glb",
+      "views": [
+        {
+          "view": "cam0/frame_000003.jpg",
+          "covered_fraction": 0.9796861111111111,
+          "covered_rgb_rmse_255": 23.686707053817155,
+          "covered_rgb_mae_255": 14.479771015092703
+        },
+        {
+          "view": "cam0/frame_000025.jpg",
+          "covered_fraction": 0.9677166666666667,
+          "covered_rgb_rmse_255": 26.40117496020156,
+          "covered_rgb_mae_255": 14.804639405090638
+        },
+        {
+          "view": "cam0/frame_000041.jpg",
+          "covered_fraction": 0.9487638888888889,
+          "covered_rgb_rmse_255": 34.13387931152568,
+          "covered_rgb_mae_255": 20.964309310847934
+        },
+        {
+          "view": "cam0/frame_000061.jpg",
+          "covered_fraction": 0.9527138888888889,
+          "covered_rgb_rmse_255": 27.370451794959912,
+          "covered_rgb_mae_255": 18.6014689031626
+        },
+        {
+          "view": "cam0/frame_000081.jpg",
+          "covered_fraction": 0.9934888888888889,
+          "covered_rgb_rmse_255": 22.736438872867698,
+          "covered_rgb_mae_255": 15.376135168989196
+        },
+        {
+          "view": "cam0/frame_000111.jpg",
+          "covered_fraction": 0.9926972222222222,
+          "covered_rgb_rmse_255": 26.046261368468894,
+          "covered_rgb_mae_255": 19.43485061742559
+        }
+      ],
+      "mean_rmse_255": 26.729152226973483
+    },
+    {
+      "mesh": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\recovery-v2\\exports\\baseline-photo-4k.glb",
+      "views": [
+        {
+          "view": "cam0/frame_000003.jpg",
+          "covered_fraction": 0.9796861111111111,
+          "covered_rgb_rmse_255": 24.561521704126058,
+          "covered_rgb_mae_255": 13.368945646801082
+        },
+        {
+          "view": "cam0/frame_000025.jpg",
+          "covered_fraction": 0.9677166666666667,
+          "covered_rgb_rmse_255": 25.982480148683653,
+          "covered_rgb_mae_255": 12.833718929821439
+        },
+        {
+          "view": "cam0/frame_000041.jpg",
+          "covered_fraction": 0.9487638888888889,
+          "covered_rgb_rmse_255": 31.32178687239166,
+          "covered_rgb_mae_255": 21.71202295384345
+        },
+        {
+          "view": "cam0/frame_000061.jpg",
+          "covered_fraction": 0.9527138888888889,
+          "covered_rgb_rmse_255": 27.10879456280633,
+          "covered_rgb_mae_255": 18.582038056973694
+        },
+        {
+          "view": "cam0/frame_000081.jpg",
+          "covered_fraction": 0.9934888888888889,
+          "covered_rgb_rmse_255": 25.95353464607677,
+          "covered_rgb_mae_255": 15.708590563744679
+        },
+        {
+          "view": "cam0/frame_000111.jpg",
+          "covered_fraction": 0.9926972222222222,
+          "covered_rgb_rmse_255": 29.975609741640675,
+          "covered_rgb_mae_255": 19.552376475240948
+        }
+      ],
+      "mean_rmse_255": 27.48395461262086
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "url": "https://rumah.shizuku.rest/",
+  "httpStatus": 200,
+  "HTMLBytes": 17595,
+  "previousBuild": "20261031-osmo-clean-v1",
+  "previousBundle": "room-viewer-B35IPUXA.js",
+  "previousBundleStillReferenced": true,
+  "newBundleReferenced": false,
+  "sha256": "53a02e1eaa6713ee99c14c81bb38c00e317cb34878c12f741c130042ac3a24aa",
+  "modelDownloads": 0,
+  "serverMutationCalls": 0
+}

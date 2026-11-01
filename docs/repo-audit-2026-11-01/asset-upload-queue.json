@@ -1,0 +1,878 @@
+{
+  "scope": "Unique non-vendor local 3D export files >=4KiB, all raw/uncompressed and packed variants; native OSV and LRF source; original trusted dense seed. Byte-identical files uploaded once and all local aliases recorded. Full optimizer checkpoints, extracted RGB and all external datasets are not claimed backed up.",
+  "entries": [
+    {
+      "sha256": "16f8963b043a766317497ee4281f4cf39c6b2190fafaaed51334734723c8b207",
+      "md5": "a53e814fde3dd080b675c8692b2a2f1c",
+      "bytes": 435614584,
+      "extension": ".glb",
+      "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\outputs\\iPhone_Wide_Full_Native.glb",
+      "aliases": [
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\outputs\\iPhone_Wide_Full_Native.glb",
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\mobile-20261029\\public\\models\\iphone-full-room-16f8963b.glb",
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\production\\public\\models\\iphone-full-room-16f8963b.glb",
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\production\\public\\models\\iphone-full-room-16f8963b.glb",
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-web-20261031-v2\\public\\models\\iphone-full-room-16f8963b.glb",
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-web-20261031-v3\\public\\models\\iphone-full-room-16f8963b.glb",
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-web-20261031\\public\\models\\iphone-full-room-16f8963b.glb",
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\hosting\\public-model-verified.glb"
+      ],
+      "kind": "model",
+      "asset_id": "A001",
+      "phase": "outputs",
+      "drive_name": "iPhone-Full__16f8963b04.glb",
+      "status": "protected live iPhone Full"
+    },
+    {
+      "sha256": "e512f01e6a26562406ccfe6b0b425b281a8de17b563065005d0d86345a925275",
+      "md5": "0f24ee317e489abbf37e26a70f5b4346",
+      "bytes": 96324304,
+      "extension": ".glb",
+      "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\mobile-20261029\\phone-simplified.glb",
+      "aliases": [
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\mobile-20261029\\phone-simplified.glb"
+      ],
+      "kind": "model",
+      "asset_id": "A002",
+      "phase": "mobile-20261029",
+      "drive_name": "mobile-20261029__phone-simplified__e512f01e6a.glb",
+      "status": "retained historical/experimental export; not automatically approved"
+    },
+    {
+      "sha256": "2b811d124120e70dcecc25d06e5dc397e2a28f310403a21fdfa1e290c41c9d2b",
+      "md5": "3f6e58e8184c5813270cfdc6b6cb0ef6",
+      "bytes": 21144604,
+      "extension": ".glb",
+      "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\mobile-20261029\\public-phone.glb",
+      "aliases": [
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\mobile-20261029\\public-phone.glb",
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\mobile-20261029\\public\\models\\iphone-phone-2b811d1241.glb",
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\production\\public\\models\\iphone-phone-2b811d1241.glb",
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\production\\public\\models\\iphone-phone-2b811d1241.glb",
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-web-20261031-v2\\public\\models\\iphone-phone-2b811d1241.glb",
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-web-20261031-v3\\public\\models\\iphone-phone-2b811d1241.glb",
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-web-20261031\\public\\models\\iphone-phone-2b811d1241.glb"
+      ],
+      "kind": "model",
+      "asset_id": "A003",
+      "phase": "mobile-20261029",
+      "drive_name": "iPhone-Fast__2b811d1241.glb",
+      "status": "protected live iPhone Fast"
+    },
+    {
+      "sha256": "cce092dfaff7f41b7c5b330149584e89d1ce93c84d95cde2768c594884267130",
+      "md5": "b1deb875ad27f4edba0fb4a417dd327c",
+      "bytes": 489193655,
+      "extension": ".ply",
+      "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\checkpoints\\clean-final.ply",
+      "aliases": [
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\checkpoints\\clean-final.ply"
+      ],
+      "kind": "model",
+      "asset_id": "A004",
+      "phase": "osmo-clean-20261031",
+      "drive_name": "osmo-clean-20261031__clean-final__cce092dfaf.ply",
+      "status": "retained historical/experimental export; not automatically approved"
+    },
+    {
+      "sha256": "56ebc3274a7f5f88ee022ad248cdc374f8c164a491ddee4385faeb5bf961b1cf",
+      "md5": "cfbb974a5d1a8365b7e49c4c7387baae",
+      "bytes": 130852506,
+      "extension": ".ply",
+      "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\checkpoints\\explicit-bath-depth.ply",
+      "aliases": [
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\checkpoints\\explicit-bath-depth.ply"
+      ],
+      "kind": "model",
+      "asset_id": "A005",
+      "phase": "osmo-clean-20261031",
+      "drive_name": "osmo-clean-20261031__explicit-bath-depth__56ebc3274a.ply",
+      "status": "retained historical/experimental export; not automatically approved"
+    },
+    {
+      "sha256": "fd4816886cf15a96f2595fa529114af02f57c25897851e9657857f58c94fbeb6",
+      "md5": "385937adbdf1a5f69f0b2bc7811b285c",
+      "bytes": 491657919,
+      "extension": ".ply",
+      "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\checkpoints\\explicit-full-final.ply",
+      "aliases": [
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\checkpoints\\explicit-full-final.ply",
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\qa\\old-full.ply"
+      ],
+      "kind": "model",
+      "asset_id": "A006",
+      "phase": "osmo-clean-20261031",
+      "drive_name": "osmo-clean-20261031__explicit-full-final__fd4816886c.ply",
+      "status": "retained historical/experimental export; not automatically approved"
+    },
+    {
+      "sha256": "91abfddaea4b2cce3acebdfc6ccf6c619a59a6d0a6f254e0cd849e764fb45082",
+      "md5": "d3d46780088c071de3ff46e1e0b0dafd",
+      "bytes": 491996415,
+      "extension": ".ply",
+      "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\checkpoints\\explicit-full-step20000.ply",
+      "aliases": [
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\checkpoints\\explicit-full-step20000.ply"
+      ],
+      "kind": "model",
+      "asset_id": "A007",
+      "phase": "osmo-clean-20261031",
+      "drive_name": "osmo-clean-20261031__explicit-full-step20000__91abfddaea.ply",
+      "status": "retained historical/experimental export; not automatically approved"
+    },
+    {
+      "sha256": "0fce51ad7870f4889531bc9bada5857a9fa7139e947f7c755ac9b570131bfb95",
+      "md5": "d061e954993eb8999cc79d7107281905",
+      "bytes": 491980671,
+      "extension": ".ply",
+      "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\checkpoints\\explicit-full-step5000.ply",
+      "aliases": [
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\checkpoints\\explicit-full-step5000.ply"
+      ],
+      "kind": "model",
+      "asset_id": "A008",
+      "phase": "osmo-clean-20261031",
+      "drive_name": "osmo-clean-20261031__explicit-full-step5000__0fce51ad78.ply",
+      "status": "retained historical/experimental export; not automatically approved"
+    },
+    {
+      "sha256": "b6cbd568bff3d0876cc213dd310ff5d9055939ba35fca305b25132e414fa4847",
+      "md5": "023623e5db9ecb1e1b91837d84f03996",
+      "bytes": 270537047,
+      "extension": ".ply",
+      "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\checkpoints\\step-15000.ply",
+      "aliases": [
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\checkpoints\\step-15000.ply"
+      ],
+      "kind": "model",
+      "asset_id": "A009",
+      "phase": "osmo-clean-20261031",
+      "drive_name": "osmo-clean-20261031__step-15000__b6cbd568bf.ply",
+      "status": "retained historical/experimental export; not automatically approved"
+    },
+    {
+      "sha256": "35b028676231affbdca7ed2fcf17f08e611c867349ecb4450a3fcfd5178daffa",
+      "md5": "eb1ea75a3927529416863e3c02e8123c",
+      "bytes": 491903755,
+      "extension": ".ply",
+      "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\checkpoints\\step-30000-visibility-preview.ply",
+      "aliases": [
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\checkpoints\\step-30000-visibility-preview.ply"
+      ],
+      "kind": "model",
+      "asset_id": "A010",
+      "phase": "osmo-clean-20261031",
+      "drive_name": "osmo-clean-20261031__step-30000-visibility-preview__35b0286762.ply",
+      "status": "retained historical/experimental export; not automatically approved"
+    },
+    {
+      "sha256": "d05707308b781acd3869329087cbd0c41ac8ce684cf2c61aebc060a116214d0b",
+      "md5": "0790596fa40213b1ba89c1fa4cc368aa",
+      "bytes": 491956071,
+      "extension": ".ply",
+      "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\checkpoints\\step-30000.ply",
+      "aliases": [
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\checkpoints\\step-30000.ply"
+      ],
+      "kind": "model",
+      "asset_id": "A011",
+      "phase": "osmo-clean-20261031",
+      "drive_name": "osmo-clean-20261031__step-30000__d05707308b.ply",
+      "status": "retained historical/experimental export; not automatically approved"
+    },
+    {
+      "sha256": "7f9cd10b4818a9663ffe15f28efdc779a4c5505d4351a4e2be7dfc31ac8ea72d",
+      "md5": "03a736a7773aaa564867d3ad3e0af71a",
+      "bytes": 148826742,
+      "extension": ".ply",
+      "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\checkpoints\\step-5000.ply",
+      "aliases": [
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\checkpoints\\step-5000.ply"
+      ],
+      "kind": "model",
+      "asset_id": "A012",
+      "phase": "osmo-clean-20261031",
+      "drive_name": "osmo-clean-20261031__step-5000__7f9cd10b48.ply",
+      "status": "retained historical/experimental export; not automatically approved"
+    },
+    {
+      "sha256": "cbb33c91b5b481460b2c75e2125f3efa1458e6634abc3da1ce051a0989fd315c",
+      "md5": "81615853086143b5f5c7b9a62e83da7f",
+      "bytes": 45177102,
+      "extension": ".sog",
+      "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\clean-final.sog",
+      "aliases": [
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\clean-final.sog",
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\production\\public\\models\\osmo-native-cbb33c91b5.sog",
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\production\\public\\models\\osmo-native-cbb33c91b5.sog"
+      ],
+      "kind": "model",
+      "asset_id": "A013",
+      "phase": "osmo-clean-20261031",
+      "drive_name": "Osmo-LIVE-20261031__cbb33c91b5.sog",
+      "status": "current public Osmo"
+    },
+    {
+      "sha256": "d2546dbad0b9eb2cd0c8919c6026e35edc1142c742c37aa82441e1c3358386d8",
+      "md5": "70cc4637aba9676ecf77a5e57267752e",
+      "bytes": 12946912,
+      "extension": ".sog",
+      "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\explicit-bath-depth.sog",
+      "aliases": [
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\explicit-bath-depth.sog"
+      ],
+      "kind": "model",
+      "asset_id": "A014",
+      "phase": "osmo-clean-20261031",
+      "drive_name": "osmo-clean-20261031__explicit-bath-depth__d2546dbad0.sog",
+      "status": "retained historical/experimental export; not automatically approved"
+    },
+    {
+      "sha256": "c0376d83ea68e17e5d98de9b755e5a08475cca9da07de15b7b33cc14ab7f1787",
+      "md5": "bb7607dc60e3cad4b472eafd569457f9",
+      "bytes": 270537076,
+      "extension": ".ply",
+      "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\mip-compatibility-input.ply",
+      "aliases": [
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\mip-compatibility-input.ply",
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\mip-tagged-packing-input.ply"
+      ],
+      "kind": "model",
+      "asset_id": "A015",
+      "phase": "osmo-clean-20261031",
+      "drive_name": "osmo-clean-20261031__mip-compatibility-input__c0376d83ea.ply",
+      "status": "retained historical/experimental export; not automatically approved"
+    },
+    {
+      "sha256": "434bfc67a8a810c2bea2c148c703e4afa4147dd249283e24a16c4917677d5ef1",
+      "md5": "0fce0800257131e748789069d9eb903c",
+      "bytes": 36835837,
+      "extension": ".sog",
+      "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\native-v4.sog",
+      "aliases": [
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\native-v4.sog"
+      ],
+      "kind": "model",
+      "asset_id": "A016",
+      "phase": "osmo-clean-20261031",
+      "drive_name": "osmo-clean-20261031__native-v4__434bfc67a8.sog",
+      "status": "retained historical/experimental export; not automatically approved"
+    },
+    {
+      "sha256": "a26f6d34146cec3628a30cf9071a0a50c9aa485095d4c1002fd08812a9678888",
+      "md5": "e25fbeb022adf58aeb7281bd70393c51",
+      "bytes": 48377598,
+      "extension": ".spz",
+      "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\native-v4.spz",
+      "aliases": [
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\native-v4.spz",
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\production\\public\\models\\osmo-native-a26f6d3414.spz"
+      ],
+      "kind": "model",
+      "asset_id": "A017",
+      "phase": "osmo-clean-20261031",
+      "drive_name": "osmo-clean-20261031__native-v4__a26f6d3414.spz",
+      "status": "retained historical/experimental export; not automatically approved"
+    },
+    {
+      "sha256": "db0e94c2fab729fa218a34064971a948448a856e02a06c56e6b2b5daf09f29f1",
+      "md5": "563b008f7a102028d4351f91fb32cf9a",
+      "bytes": 44904208,
+      "extension": ".sog",
+      "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\final-sharp.sog",
+      "aliases": [
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\final-sharp.sog",
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\production\\public\\models\\osmo-native-db0e94c2fa.sog"
+      ],
+      "kind": "model",
+      "asset_id": "A018",
+      "phase": "osmo-parity-20261101",
+      "drive_name": "Osmo-REVIEW-REJECTED-20261101__db0e94c2fa.sog",
+      "status": "new rebuild, visual acceptance failed"
+    },
+    {
+      "sha256": "69ec04fe46246dc3cc3713572f64d660a74dd51701e49a3ae93c7aa3c6966223",
+      "md5": "a2538b928de4adf5ddd40b2f70a22b1a",
+      "bytes": 442066128,
+      "extension": ".glb",
+      "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\mesh-pilot\\clean-mesh_textured.glb",
+      "aliases": [
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\mesh-pilot\\clean-mesh_textured.glb"
+      ],
+      "kind": "model",
+      "asset_id": "A019",
+      "phase": "osmo-parity-20261101",
+      "drive_name": "osmo-parity-20261101__clean-mesh_textured__69ec04fe46.glb",
+      "status": "retained historical/experimental export; not automatically approved"
+    },
+    {
+      "sha256": "5977f13cf10f815d725d771750e5625b9dc5625a2ef83789e35f89da10613dcd",
+      "md5": "46e6ade0fb92afb008b1c12b504fd041",
+      "bytes": 299306790,
+      "extension": ".ply",
+      "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\mesh-pilot\\clean-mesh_vertexcolor.ply",
+      "aliases": [
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\mesh-pilot\\clean-mesh_vertexcolor.ply"
+      ],
+      "kind": "model",
+      "asset_id": "A020",
+      "phase": "osmo-parity-20261101",
+      "drive_name": "osmo-parity-20261101__clean-mesh_vertexcolor__5977f13cf1.ply",
+      "status": "retained historical/experimental export; not automatically approved"
+    },
+    {
+      "sha256": "e185302a6e1154be1bf0bb911ffb106c2abbe9f1898e4bc6b0cdae783113b26a",
+      "md5": "79c4718d822841b7bec506d6264d7f27",
+      "bytes": 162226928,
+      "extension": ".glb",
+      "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\mesh-pilot\\photo-baked-uncompressed.glb",
+      "aliases": [
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\mesh-pilot\\photo-baked-uncompressed.glb"
+      ],
+      "kind": "model",
+      "asset_id": "A021",
+      "phase": "osmo-parity-20261101",
+      "drive_name": "osmo-parity-20261101__photo-baked-uncompressed__e185302a6e.glb",
+      "status": "retained historical/experimental export; not automatically approved"
+    },
+    {
+      "sha256": "09c4e117fd40e0237bb1bc405a314886b0c335b7d3e030596f0eb6ceaddf403c",
+      "md5": "8740fa4c18f091296f0fd703cf6734aa",
+      "bytes": 43284464,
+      "extension": ".glb",
+      "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\mesh-pilot\\photo-baked.glb",
+      "aliases": [
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\mesh-pilot\\photo-baked.glb",
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\qa\\mesh-photo.glb"
+      ],
+      "kind": "model",
+      "asset_id": "A022",
+      "phase": "osmo-parity-20261101",
+      "drive_name": "osmo-parity-20261101__photo-baked__09c4e117fd.glb",
+      "status": "retained historical/experimental export; not automatically approved"
+    },
+    {
+      "sha256": "88791b7719cddcdf6c6d08c7b73ad4e84957baa51cb71e37fd966273b64a6a74",
+      "md5": "0041cfa9d98e07509ddc80feabd2a40d",
+      "bytes": 150402980,
+      "extension": ".glb",
+      "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\mesh-pilot\\texture-preview-uncompressed.glb",
+      "aliases": [
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\mesh-pilot\\texture-preview-uncompressed.glb"
+      ],
+      "kind": "model",
+      "asset_id": "A023",
+      "phase": "osmo-parity-20261101",
+      "drive_name": "osmo-parity-20261101__texture-preview-uncompressed__88791b7719.glb",
+      "status": "retained historical/experimental export; not automatically approved"
+    },
+    {
+      "sha256": "f135ba174b2908386b3dce5ff6efec776c46088103e57b241dc2609bf25095e9",
+      "md5": "d68cf1c618b35bcfc188671efeace5d3",
+      "bytes": 42015904,
+      "extension": ".glb",
+      "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\mesh-pilot\\texture-preview.glb",
+      "aliases": [
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\mesh-pilot\\texture-preview.glb",
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\qa\\mesh-texture.glb"
+      ],
+      "kind": "model",
+      "asset_id": "A024",
+      "phase": "osmo-parity-20261101",
+      "drive_name": "osmo-parity-20261101__texture-preview__f135ba174b.glb",
+      "status": "retained historical/experimental export; not automatically approved"
+    },
+    {
+      "sha256": "d339de1d9c28d85ccdda7de488174ccdb3a2fbf7f47da673c9645c320d4aa5bd",
+      "md5": "cbd0e8454a3c7cf5d5582439391ae9f1",
+      "bytes": 7039984,
+      "extension": ".glb",
+      "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\mesh-pilot\\vertex-preview.glb",
+      "aliases": [
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\mesh-pilot\\vertex-preview.glb"
+      ],
+      "kind": "model",
+      "asset_id": "A025",
+      "phase": "osmo-parity-20261101",
+      "drive_name": "osmo-parity-20261101__vertex-preview__d339de1d9c.glb",
+      "status": "retained historical/experimental export; not automatically approved"
+    },
+    {
+      "sha256": "a75d55c8331323eb5436a3f3d5a3482b5afbcc8a70d16a61d52db14711630a46",
+      "md5": "15fb9b08da2937ec3926bf1559b3d026",
+      "bytes": 6258540,
+      "extension": ".glb",
+      "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\poisson-pilot\\vertex-preview.glb",
+      "aliases": [
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\poisson-pilot\\vertex-preview.glb"
+      ],
+      "kind": "model",
+      "asset_id": "A026",
+      "phase": "osmo-parity-20261101",
+      "drive_name": "osmo-parity-20261101__vertex-preview__a75d55c833.glb",
+      "status": "retained historical/experimental export; not automatically approved"
+    },
+    {
+      "sha256": "039eced32b8634adcb0df473cad1d32bfdd57681a9e65f61779e25dbc9118f46",
+      "md5": "31c99872dbc76e04d5a9367bc4a1287f",
+      "bytes": 46282256,
+      "extension": ".glb",
+      "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\poisson-projected\\coherent-filled-uncompressed.glb",
+      "aliases": [
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\poisson-projected\\coherent-filled-uncompressed.glb"
+      ],
+      "kind": "model",
+      "asset_id": "A027",
+      "phase": "osmo-parity-20261101",
+      "drive_name": "osmo-parity-20261101__coherent-filled-uncompressed__039eced32b.glb",
+      "status": "retained historical/experimental export; not automatically approved"
+    },
+    {
+      "sha256": "45717e29f470870569bc03c3703d011f1d2c1c2edbb4aa1b44a002a7dc7bb540",
+      "md5": "37c2bd31ac18cc8bc055351a5ae1dc19",
+      "bytes": 30150832,
+      "extension": ".glb",
+      "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\poisson-projected\\coherent-filled.glb",
+      "aliases": [
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\poisson-projected\\coherent-filled.glb",
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\qa\\poisson-photo.glb"
+      ],
+      "kind": "model",
+      "asset_id": "A028",
+      "phase": "osmo-parity-20261101",
+      "drive_name": "osmo-parity-20261101__coherent-filled__45717e29f4.glb",
+      "status": "retained historical/experimental export; not automatically approved"
+    },
+    {
+      "sha256": "50d4509f34bb4a13ef3ea8ef9288513e5955509caa3110fad459896c07e3b326",
+      "md5": "24cec44af7e23d3bb4eb0f58f7b5f97c",
+      "bytes": 22611676,
+      "extension": ".glb",
+      "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\poisson-projected\\surface-uncompressed.glb",
+      "aliases": [
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\poisson-projected\\surface-uncompressed.glb"
+      ],
+      "kind": "model",
+      "asset_id": "A029",
+      "phase": "osmo-parity-20261101",
+      "drive_name": "osmo-parity-20261101__surface-uncompressed__50d4509f34.glb",
+      "status": "retained historical/experimental export; not automatically approved"
+    },
+    {
+      "sha256": "919fa103df92b678705bec5d08f1d7c3712ee49cdcddf3c895b56c20edd9ab07",
+      "md5": "d93a3fc4799f20cc3e4f220853339a94",
+      "bytes": 9903148,
+      "extension": ".glb",
+      "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\qa\\fusion-coherent.glb",
+      "aliases": [
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\qa\\fusion-coherent.glb",
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\tsdf-pilot\\coherent.glb"
+      ],
+      "kind": "model",
+      "asset_id": "A030",
+      "phase": "osmo-parity-20261101",
+      "drive_name": "osmo-parity-20261101__fusion-coherent__919fa103df.glb",
+      "status": "retained historical/experimental export; not automatically approved"
+    },
+    {
+      "sha256": "023d5daaf2c374d6a2554fba228fe2fa97b3b7016191a0ec64eacf434561c44e",
+      "md5": "53d6a0f283853bde865784ea32709f88",
+      "bytes": 10301516,
+      "extension": ".glb",
+      "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\qa\\fusion-filled.glb",
+      "aliases": [
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\qa\\fusion-filled.glb",
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\tsdf-pilot\\coherent-filled.glb"
+      ],
+      "kind": "model",
+      "asset_id": "A031",
+      "phase": "osmo-parity-20261101",
+      "drive_name": "osmo-parity-20261101__fusion-filled__023d5daaf2.glb",
+      "status": "retained historical/experimental export; not automatically approved"
+    },
+    {
+      "sha256": "6abc8cfc85194b86d37055f13d330c323526d687bd49f0ef6d889b4c63fd68d0",
+      "md5": "2baedb1f231bfaf3bcc06057de23bae2",
+      "bytes": 10925876,
+      "extension": ".glb",
+      "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\qa\\fusion-photo.glb",
+      "aliases": [
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\qa\\fusion-photo.glb",
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\tsdf-pilot\\photo-baked.glb"
+      ],
+      "kind": "model",
+      "asset_id": "A032",
+      "phase": "osmo-parity-20261101",
+      "drive_name": "osmo-parity-20261101__fusion-photo__6abc8cfc85.glb",
+      "status": "retained historical/experimental export; not automatically approved"
+    },
+    {
+      "sha256": "9de1c526a5b6680771606e62541360f30e21c4026974a099cda500032de7d69f",
+      "md5": "85a662389d4a7c7abd6aec13d73d5243",
+      "bytes": 492000679,
+      "extension": ".ply",
+      "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\qa\\new-full-20000.ply",
+      "aliases": [
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\qa\\new-full-20000.ply"
+      ],
+      "kind": "model",
+      "asset_id": "A033",
+      "phase": "osmo-parity-20261101",
+      "drive_name": "osmo-parity-20261101__new-full-20000__9de1c526a5.ply",
+      "status": "retained historical/experimental export; not automatically approved"
+    },
+    {
+      "sha256": "a8b127e7d8b4a9b1b9679958ff9fe1a36117258a69ecf8325dc831ebf4761eeb",
+      "md5": "35f09fd5e82439a0aeba03de77c107e4",
+      "bytes": 485601727,
+      "extension": ".ply",
+      "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\qa\\new-full-50000.ply",
+      "aliases": [
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\qa\\new-full-50000.ply"
+      ],
+      "kind": "model",
+      "asset_id": "A034",
+      "phase": "osmo-parity-20261101",
+      "drive_name": "osmo-parity-20261101__new-full-50000__a8b127e7d8.ply",
+      "status": "retained historical/experimental export; not automatically approved"
+    },
+    {
+      "sha256": "a44ecc3d637fafe9181d99a3389563563ea848efa64c0e3a6a3b24b553054b6a",
+      "md5": "ee98aa4bc2dea22acdd8535e785bac1e",
+      "bytes": 245851439,
+      "extension": ".ply",
+      "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\qa\\no-appearance-correction.ply",
+      "aliases": [
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\qa\\no-appearance-correction.ply"
+      ],
+      "kind": "model",
+      "asset_id": "A035",
+      "phase": "osmo-parity-20261101",
+      "drive_name": "osmo-parity-20261101__no-appearance-correction__a44ecc3d63.ply",
+      "status": "retained historical/experimental export; not automatically approved"
+    },
+    {
+      "sha256": "69bc8bfab70b5343090a89245700ab37a57cf1d517447bfd84d5e196934e4d78",
+      "md5": "075696cd032c8c03ff395c1bbe09e808",
+      "bytes": 245536559,
+      "extension": ".ply",
+      "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\qa\\pilot-base.ply",
+      "aliases": [
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\qa\\pilot-base.ply"
+      ],
+      "kind": "model",
+      "asset_id": "A036",
+      "phase": "osmo-parity-20261101",
+      "drive_name": "osmo-parity-20261101__pilot-base__69bc8bfab7.ply",
+      "status": "retained historical/experimental export; not automatically approved"
+    },
+    {
+      "sha256": "bfb807634339c78a1fef5265f571016cc8dee33f7e960580d88c9dc71b822ab9",
+      "md5": "bf3dbf738bb532efb94060ac23ddaf34",
+      "bytes": 245777967,
+      "extension": ".ply",
+      "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\qa\\pilot-sharp.ply",
+      "aliases": [
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\qa\\pilot-sharp.ply"
+      ],
+      "kind": "model",
+      "asset_id": "A037",
+      "phase": "osmo-parity-20261101",
+      "drive_name": "osmo-parity-20261101__pilot-sharp__bfb8076343.ply",
+      "status": "retained historical/experimental export; not automatically approved"
+    },
+    {
+      "sha256": "9cba48c48940ba045127e3435709330cf0d30f661869213173c6eb1f63e3d648",
+      "md5": "de96ead38105c1c4b08250a7123b66d0",
+      "bytes": 245974603,
+      "extension": ".ply",
+      "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\qa\\rgb-only-3dgs.ply",
+      "aliases": [
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\qa\\rgb-only-3dgs.ply"
+      ],
+      "kind": "model",
+      "asset_id": "A038",
+      "phase": "osmo-parity-20261101",
+      "drive_name": "osmo-parity-20261101__rgb-only-3dgs__9cba48c489.ply",
+      "status": "retained historical/experimental export; not automatically approved"
+    },
+    {
+      "sha256": "c938fdac9b83b9e82e6183dd7fcbf43c538406676c0bfa78f0dd36d01b97d194",
+      "md5": "ea037f6908ad1ebe807c6faffe4f22fc",
+      "bytes": 245980835,
+      "extension": ".ply",
+      "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\qa\\rgb-only-mip.ply",
+      "aliases": [
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\qa\\rgb-only-mip.ply"
+      ],
+      "kind": "model",
+      "asset_id": "A039",
+      "phase": "osmo-parity-20261101",
+      "drive_name": "osmo-parity-20261101__rgb-only-mip__c938fdac9b.ply",
+      "status": "retained historical/experimental export; not automatically approved"
+    },
+    {
+      "sha256": "ea0b93d532faa43771595615b9fca25b1131876f5c591dbe774aebd0340bc0b6",
+      "md5": "4de112b02fd72bd4064b40349000cf02",
+      "bytes": 245944263,
+      "extension": ".ply",
+      "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\qa\\sparse-rgb-only.ply",
+      "aliases": [
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\qa\\sparse-rgb-only.ply"
+      ],
+      "kind": "model",
+      "asset_id": "A040",
+      "phase": "osmo-parity-20261101",
+      "drive_name": "osmo-parity-20261101__sparse-rgb-only__ea0b93d532.ply",
+      "status": "retained historical/experimental export; not automatically approved"
+    },
+    {
+      "sha256": "0ed3ed08f59d484fcad5a6e3e216c72535e1181f47fd34e10b9ff675a71b9b8e",
+      "md5": "acd78fd8deb1cca3c559921846cdc6eb",
+      "bytes": 25134436,
+      "extension": ".glb",
+      "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\tsdf-pilot\\coherent-filled-uncompressed.glb",
+      "aliases": [
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\tsdf-pilot\\coherent-filled-uncompressed.glb"
+      ],
+      "kind": "model",
+      "asset_id": "A041",
+      "phase": "osmo-parity-20261101",
+      "drive_name": "osmo-parity-20261101__coherent-filled-uncompressed__0ed3ed08f5.glb",
+      "status": "retained historical/experimental export; not automatically approved"
+    },
+    {
+      "sha256": "6b9260c5cc573b4536441bb992fde0f5da4750ffb724141a38e22b3a27826596",
+      "md5": "6870292ad2e5233565fb270216b1b1b9",
+      "bytes": 24736068,
+      "extension": ".glb",
+      "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\tsdf-pilot\\coherent-uncompressed.glb",
+      "aliases": [
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\tsdf-pilot\\coherent-uncompressed.glb"
+      ],
+      "kind": "model",
+      "asset_id": "A042",
+      "phase": "osmo-parity-20261101",
+      "drive_name": "osmo-parity-20261101__coherent-uncompressed__6b9260c5cc.glb",
+      "status": "retained historical/experimental export; not automatically approved"
+    },
+    {
+      "sha256": "def7356ae8b262f25a830a6bcf2bde525ae1cac92f0cd6a2edf3fd592a9ba430",
+      "md5": "e97e8b789c2cdebf68c53d607a9f8175",
+      "bytes": 25758796,
+      "extension": ".glb",
+      "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\tsdf-pilot\\photo-baked-uncompressed.glb",
+      "aliases": [
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\tsdf-pilot\\photo-baked-uncompressed.glb"
+      ],
+      "kind": "model",
+      "asset_id": "A043",
+      "phase": "osmo-parity-20261101",
+      "drive_name": "osmo-parity-20261101__photo-baked-uncompressed__def7356ae8.glb",
+      "status": "retained historical/experimental export; not automatically approved"
+    },
+    {
+      "sha256": "2827e16ffaeaebf97167205397872a5aa3d27c8cfcb6c040d81418c6b506d324",
+      "md5": "f0b5b8af899bcd8ab670ffe2b11d5d4b",
+      "bytes": 18641832,
+      "extension": ".glb",
+      "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\tsdf-pilot\\surface-uncompressed.glb",
+      "aliases": [
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\tsdf-pilot\\surface-uncompressed.glb"
+      ],
+      "kind": "model",
+      "asset_id": "A044",
+      "phase": "osmo-parity-20261101",
+      "drive_name": "osmo-parity-20261101__surface-uncompressed__2827e16ffa.glb",
+      "status": "retained historical/experimental export; not automatically approved"
+    },
+    {
+      "sha256": "2b897ec5c0f25864ef8c8df1378f91f13483b035ac61a3980f9a741f4e275ad3",
+      "md5": "2c720c24c9dead27de6458efa57d5605",
+      "bytes": 17677240,
+      "extension": ".glb",
+      "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-web-20261031-v2\\public\\models\\osmo-lite-2b897ec5c0.glb",
+      "aliases": [
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-web-20261031-v2\\public\\models\\osmo-lite-2b897ec5c0.glb",
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-web-20261031\\public\\models\\osmo-lite-2b897ec5c0.glb"
+      ],
+      "kind": "model",
+      "asset_id": "A045",
+      "phase": "osmo-web-20261031-v2",
+      "drive_name": "osmo-web-20261031-v2__osmo-lite-2b897ec5c0__2b897ec5c0.glb",
+      "status": "retained historical/experimental export; not automatically approved"
+    },
+    {
+      "sha256": "30ed8cb76633892b4f4f47e048f1580fce53956a5786cce7771b08d45807989d",
+      "md5": "9958c68945defad35b86e935fc2f212c",
+      "bytes": 30351100,
+      "extension": ".glb",
+      "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-web-20261031-v3\\public\\models\\osmo-lite-30ed8cb766.glb",
+      "aliases": [
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-web-20261031-v3\\public\\models\\osmo-lite-30ed8cb766.glb",
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-web-20261031\\public\\qa-final-refined.glb"
+      ],
+      "kind": "model",
+      "asset_id": "A046",
+      "phase": "osmo-web-20261031-v3",
+      "drive_name": "osmo-web-20261031-v3__osmo-lite-30ed8cb766__30ed8cb766.glb",
+      "status": "retained historical/experimental export; not automatically approved"
+    },
+    {
+      "sha256": "b901b2f64d2bfdcb2e4af4653de41eb2f93119a6c1e30735e7ffa7e13ac0cc4b",
+      "md5": "2843eb13c34347057df3807281983514",
+      "bytes": 47375092,
+      "extension": ".glb",
+      "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-web-20261031-v3\\public\\models\\osmo-lite-b901b2f64d.glb",
+      "aliases": [
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-web-20261031-v3\\public\\models\\osmo-lite-b901b2f64d.glb",
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-web-20261031\\public\\qa-dense-photo.glb"
+      ],
+      "kind": "model",
+      "asset_id": "A047",
+      "phase": "osmo-web-20261031-v3",
+      "drive_name": "osmo-web-20261031-v3__osmo-lite-b901b2f64d__b901b2f64d.glb",
+      "status": "retained historical/experimental export; not automatically approved"
+    },
+    {
+      "sha256": "f3b66c9fdbf991d8bc859f27739d1995d0468e5feb71dcb07d881a4f09c1ec04",
+      "md5": "3935b56fd93a06f2e6ba522e0faf7872",
+      "bytes": 7170896,
+      "extension": ".glb",
+      "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-web-20261031\\pack-regression-v1.glb",
+      "aliases": [
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-web-20261031\\pack-regression-v1.glb",
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-web-20261031\\public\\models\\osmo-lite-f3b66c9fdb.glb"
+      ],
+      "kind": "model",
+      "asset_id": "A048",
+      "phase": "osmo-web-20261031",
+      "drive_name": "osmo-web-20261031__pack-regression-v1__f3b66c9fdb.glb",
+      "status": "retained historical/experimental export; not automatically approved"
+    },
+    {
+      "sha256": "c3ba0c8f8b1a6aaa4be6ec8cb1518c2c1a3043d02c11d759381bd653cf53c3f1",
+      "md5": "0a844a997b6d56a5bbe3362c01849e12",
+      "bytes": 7170980,
+      "extension": ".glb",
+      "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-web-20261031\\public\\models\\osmo-lite-c3ba0c8f8b.glb",
+      "aliases": [
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-web-20261031\\public\\models\\osmo-lite-c3ba0c8f8b.glb"
+      ],
+      "kind": "model",
+      "asset_id": "A049",
+      "phase": "osmo-web-20261031",
+      "drive_name": "osmo-web-20261031__osmo-lite-c3ba0c8f8b__c3ba0c8f8b.glb",
+      "status": "retained historical/experimental export; not automatically approved"
+    },
+    {
+      "sha256": "f09e9cee94d316b5f69d6e1316623c39fc0ddfc0205b4dd522e902cff0def9b4",
+      "md5": "dec3786577ae7eb231a87391de64499a",
+      "bytes": 21941752,
+      "extension": ".glb",
+      "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-web-20261031\\public\\qa-baseline-photo.glb",
+      "aliases": [
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-web-20261031\\public\\qa-baseline-photo.glb"
+      ],
+      "kind": "model",
+      "asset_id": "A050",
+      "phase": "osmo-web-20261031",
+      "drive_name": "osmo-web-20261031__qa-baseline-photo__f09e9cee94.glb",
+      "status": "retained historical/experimental export; not automatically approved"
+    },
+    {
+      "sha256": "bfb8afc115d3f070fda7144d46cece6e2b4843436378a896268a8c105f422f91",
+      "md5": "1b55903fd10162dd5fdb87839b615371",
+      "bytes": 12435148,
+      "extension": ".glb",
+      "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-web-20261031\\public\\qa-cull-off-probe.glb",
+      "aliases": [
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-web-20261031\\public\\qa-cull-off-probe.glb"
+      ],
+      "kind": "model",
+      "asset_id": "A051",
+      "phase": "osmo-web-20261031",
+      "drive_name": "osmo-web-20261031__qa-cull-off-probe__bfb8afc115.glb",
+      "status": "retained historical/experimental export; not automatically approved"
+    },
+    {
+      "sha256": "e1914e859344c7391dfac92d2bacf0267231841eb17448c2e1294dee87e3735e",
+      "md5": "b29db6050db68916d1f2d8c070e90b5f",
+      "bytes": 25843180,
+      "extension": ".glb",
+      "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-web-20261031\\public\\qa-source-v1-unlit.glb",
+      "aliases": [
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-web-20261031\\public\\qa-source-v1-unlit.glb"
+      ],
+      "kind": "model",
+      "asset_id": "A052",
+      "phase": "osmo-web-20261031",
+      "drive_name": "osmo-web-20261031__qa-source-v1-unlit__e1914e8593.glb",
+      "status": "retained historical/experimental export; not automatically approved"
+    },
+    {
+      "sha256": "0ea8d6a93550e5677133886e3999a505a33b3743a5148c15614112741d354036",
+      "md5": "05049899cc7645053487c05ccfd1ff18",
+      "bytes": 25843104,
+      "extension": ".glb",
+      "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-web-20261031\\public\\qa-source-v1.glb",
+      "aliases": [
+        "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-web-20261031\\public\\qa-source-v1.glb"
+      ],
+      "kind": "model",
+      "asset_id": "A053",
+      "phase": "osmo-web-20261031",
+      "drive_name": "osmo-web-20261031__qa-source-v1__0ea8d6a935.glb",
+      "status": "retained historical/experimental export; not automatically approved"
+    },
+    {
+      "sha256": "0e405c89fefc6a9de46ba2ae2db141ef0a1a832bd44bd2c8dd58bd0984eb68e5",
+      "md5": "48b3e554e5aaeb8898cb97b727263fdb",
+      "bytes": 37306176,
+      "extension": ".ply",
+      "source": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\clean-v3\\explicit-full-v1\\dataset\\seed-dense-train.ply",
+      "aliases": [
+        "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\clean-v3\\explicit-full-v1\\dataset\\seed-dense-train.ply"
+      ],
+      "kind": "model",
+      "asset_id": "A054",
+      "phase": "external-osmo",
+      "drive_name": "external-osmo__seed-dense-train__0e405c89fe.ply",
+      "status": "retained historical/experimental export; not automatically approved"
+    },
+    {
+      "sha256": "ec50a19f6a3b412134a18c75c2b4109c94e11a646893a83d1670da396c5f663c",
+      "md5": "c5cb93a8bbbdae3ed4e09b05b4e85fe2",
+      "bytes": 97905073,
+      "extension": ".lrf",
+      "source": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\originals\\CAM_20261031005909_0004_D.LRF",
+      "aliases": [
+        "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\originals\\CAM_20261031005909_0004_D.LRF"
+      ],
+      "kind": "source-video",
+      "asset_id": "A055",
+      "phase": "external-osmo",
+      "drive_name": "CAM_20261031005909_0004_D.LRF",
+      "status": "matching preview proxy"
+    },
+    {
+      "sha256": "c88ff8b64ed453e6bb4da61bafaad51bbe1b477c97d7efc66360f053d52aeaa0",
+      "md5": "f9cee4b87a5eb91fce88ca5daf593078",
+      "bytes": 1162988987,
+      "extension": ".osv",
+      "source": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\originals\\CAM_20261031005909_0004_D.OSV",
+      "aliases": [
+        "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\originals\\CAM_20261031005909_0004_D.OSV"
+      ],
+      "kind": "source-video",
+      "asset_id": "A056",
+      "phase": "external-osmo",
+      "drive_name": "CAM_20261031005909_0004_D.OSV",
+      "status": "original source"
+    }
+  ],
+  "uniqueAssets": 56,
+  "bytes": 9834491960,
+  "sha256Provenance": "Locally computed from complete file contents",
+  "remoteHashVerification": "Drive connector metadata currently exposes size/parent identity, not checksums. Do not label local SHA as a Drive-readback hash."
+}

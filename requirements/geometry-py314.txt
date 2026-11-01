@@ -1,0 +1,8 @@
+# Observed CPython 3.14.3 CPU geometry/ray environment, 2026-11-01.
+numpy==2.4.2
+Pillow==12.2.0
+opencv-python-headless==4.13.0.92
+scipy==1.17.0
+trimesh==5.2.0
+embreex==4.4.0.post1
+rtree==1.4.1

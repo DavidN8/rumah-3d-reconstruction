@@ -1,0 +1,151 @@
+{
+  "rows": [
+    {
+      "view": "fridge",
+      "variant": "baseline",
+      "cropBoxCSSPixels": [
+        865,
+        480,
+        1465,
+        1080
+      ],
+      "RMSEversusBaseline255": 0.0,
+      "notGroundTruthScore": true
+    },
+    {
+      "view": "fridge",
+      "variant": "all-source",
+      "cropBoxCSSPixels": [
+        865,
+        480,
+        1465,
+        1080
+      ],
+      "RMSEversusBaseline255": 2.2216816703669418,
+      "notGroundTruthScore": true
+    },
+    {
+      "view": "fridge",
+      "variant": "combined",
+      "cropBoxCSSPixels": [
+        865,
+        480,
+        1465,
+        1080
+      ],
+      "RMSEversusBaseline255": 5.416291610946997,
+      "notGroundTruthScore": true
+    },
+    {
+      "view": "fan",
+      "variant": "baseline",
+      "cropBoxCSSPixels": [
+        463,
+        354,
+        1063,
+        954
+      ],
+      "RMSEversusBaseline255": 0.0,
+      "notGroundTruthScore": true
+    },
+    {
+      "view": "fan",
+      "variant": "all-source",
+      "cropBoxCSSPixels": [
+        463,
+        354,
+        1063,
+        954
+      ],
+      "RMSEversusBaseline255": 2.1407414776366793,
+      "notGroundTruthScore": true
+    },
+    {
+      "view": "fan",
+      "variant": "combined",
+      "cropBoxCSSPixels": [
+        463,
+        354,
+        1063,
+        954
+      ],
+      "RMSEversusBaseline255": 3.916623876834817,
+      "notGroundTruthScore": true
+    },
+    {
+      "view": "dining",
+      "variant": "baseline",
+      "cropBoxCSSPixels": [
+        581,
+        354,
+        1181,
+        954
+      ],
+      "RMSEversusBaseline255": 0.0,
+      "notGroundTruthScore": true
+    },
+    {
+      "view": "dining",
+      "variant": "all-source",
+      "cropBoxCSSPixels": [
+        581,
+        354,
+        1181,
+        954
+      ],
+      "RMSEversusBaseline255": 6.711988928057791,
+      "notGroundTruthScore": true
+    },
+    {
+      "view": "dining",
+      "variant": "combined",
+      "cropBoxCSSPixels": [
+        581,
+        354,
+        1181,
+        954
+      ],
+      "RMSEversusBaseline255": 5.39328509111785,
+      "notGroundTruthScore": true
+    },
+    {
+      "view": "bathroom",
+      "variant": "baseline",
+      "cropBoxCSSPixels": [
+        687,
+        196,
+        1287,
+        796
+      ],
+      "RMSEversusBaseline255": 0.0,
+      "notGroundTruthScore": true
+    },
+    {
+      "view": "bathroom",
+      "variant": "all-source",
+      "cropBoxCSSPixels": [
+        687,
+        196,
+        1287,
+        796
+      ],
+      "RMSEversusBaseline255": 9.878998627841229,
+      "notGroundTruthScore": true
+    },
+    {
+      "view": "bathroom",
+      "variant": "combined",
+      "cropBoxCSSPixels": [
+        687,
+        196,
+        1287,
+        796
+      ],
+      "RMSEversusBaseline255": 9.969346861848667,
+      "notGroundTruthScore": true
+    }
+  ],
+  "CSSCropMeaning": "600x600 unscaled crops of 1920x1080 browser screenshots. Separate crop600-native files retain 1:1 native drawing-buffer pixels.",
+  "performanceCaution": "Headless render loop reached its refresh cap; 240 Hz results are not mobile or real interaction benchmarks.",
+  "conclusion": "Viewer settings comparison saved. Visual inspection is required; RMSE against baseline only measures change, not improvement."
+}

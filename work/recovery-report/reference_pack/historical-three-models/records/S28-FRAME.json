@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "coordinateSystem": "+Y-up, approximate metres, floor Y=0",
+  "sourceFrame": "backups/before-fix-20261027/merged/sparse/0",
+  "checkpointDatasets": "zones/zone-0, zone-1, zone-2 remain in their preserved legacy training frame",
+  "transformFile": "analysis/fixed-transforms.json"
+}

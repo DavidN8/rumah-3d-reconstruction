@@ -1,0 +1,7 @@
+{
+  "status": "replaced slow conformal calculation after projected planar atlas completed in 14.875 seconds",
+  "start": "2026-11-01T04:52:24",
+  "end": "2026-11-01T05:06:59",
+  "cpuSeconds": 2527.75,
+  "sourceSurfacePreserved": true
+}

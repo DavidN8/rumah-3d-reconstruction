@@ -1,0 +1,34 @@
+{
+  "status": "pilot_passed_for_full_scene_processing",
+  "scope": "Bathroom region only. This is not the full-scene release, a camera comparison, or a physical-phone benchmark. Exact source camera at 51.9519s remains held out from Gaussian appearance training and dense seeding.",
+  "checks": [
+    {
+      "pose": 3,
+      "sourceName": "cam1/frame_000600_train.jpg",
+      "sourceSplit": "train",
+      "pilotSourceRmse255": 12.937034765297591,
+      "packingRmse255": 2.0903038942628345,
+      "packingPsnrDb": 41.72661501557589,
+      "browserRendersVerified": true
+    },
+    {
+      "pose": 6,
+      "sourceName": "cam0/frame_001557_eval.jpg",
+      "sourceSplit": "eval",
+      "pilotSourceRmse255": 10.119120470986534,
+      "packingRmse255": 1.9859421304532159,
+      "packingPsnrDb": 42.1714718250992,
+      "browserRendersVerified": true,
+      "failedFullRunSourceRmse255": 35.95990113459922,
+      "appearancePsnrImprovementDb": 11.013514454174661
+    }
+  ],
+  "sourceSplats": 797875,
+  "packedBytes": 12946912,
+  "shDegree": 2,
+  "allSourceSplatsRetained": true,
+  "nativeSceneTransform": "Identity confirmed",
+  "firstVisitAndReturnViewReviewed": true,
+  "fullSceneRebuildStillRequired": true,
+  "deployed": false
+}

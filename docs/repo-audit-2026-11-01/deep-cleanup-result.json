@@ -1,0 +1,26 @@
+{
+  "complete": true,
+  "filesDeleted": 491,
+  "logicalBytesRemoved": 11152442600,
+  "estimatedPhysicalBytesReleased": 6187733887,
+  "measuredVolumeFreeDelta": 6185259008,
+  "hardlinkCaveat": "Only file identities whose complete link count is selected count as releasable; external hardlinks are never deleted.",
+  "remainingFiles": 19487,
+  "remainingLogicalBytes": 8925327583,
+  "canonicalAssetsVerified": 6,
+  "protectedSourceModelAndReportFilesVerified": 357,
+  "externalFilesDeleted": 0,
+  "productionServerChanges": 0,
+  "assetSummary": {
+    "asset_count": 56,
+    "verified_assets": 56,
+    "models": 54,
+    "source_files": 2,
+    "unique_bytes": 9834491960,
+    "verified_bytes": 9834491960,
+    "all_verified": true,
+    "assetsWithRemainingLocalPaths": 10,
+    "archiveOnlyAssets": 46
+  },
+  "journal": "docs/repo-audit-2026-11-01/deep-cleanup-journal.jsonl"
+}

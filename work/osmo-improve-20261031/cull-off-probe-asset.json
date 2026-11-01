@@ -1,0 +1,116 @@
+{
+  "file": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\recovery-v2\\exports\\cull-off-probe-packed.glb",
+  "sha256": "bfb8afc115d3f070fda7144d46cece6e2b4843436378a896268a8c105f422f91",
+  "bytes": 12435148,
+  "triangles": 2315246,
+  "maxTextureSize": 1,
+  "bounds": [
+    [
+      -3.9689040279629992,
+      -2.343892837271436,
+      -5.6503214836120605
+    ],
+    [
+      4.2367973423245715,
+      3.9169461972567876,
+      3.5203943252563477
+    ]
+  ],
+  "sourceBounds": [
+    [
+      -3.9688491821289062,
+      -2.343907594680786,
+      -5.6503214836120605
+    ],
+    [
+      4.2367424964904785,
+      3.9169609546661377,
+      3.5203943252563477
+    ]
+  ],
+  "preCompressionBounds": [
+    [
+      -3.9688491821289062,
+      -2.343907594680786,
+      -5.6503214836120605
+    ],
+    [
+      4.2367424964904785,
+      3.9169609546661377,
+      3.5203943252563477
+    ]
+  ],
+  "maximumCompressionBoundsChange": 0.000054845834092986934,
+  "quantizationBoundsTolerance": 0.0008427230271833187,
+  "decodedGeometryBytes": 44669016,
+  "accessorGeometryBytes": 40447500,
+  "textures": [],
+  "estimatedTextureGpuBytesWithMipmaps": 0,
+  "sourceFile": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\recovery-v2\\exports\\cull-off-probe.glb",
+  "sourceSha256": "74c57604186f64e7e9c9bf98a409e0e4833d9a499bf71b976126d81d0f9e20fb",
+  "sourceBytes": 65777764,
+  "sourceGeometryBytes": 65776596,
+  "sourceTriangles": 2315246,
+  "sourcePrimitives": [
+    {
+      "mesh": 0,
+      "name": "mesh-0",
+      "primitive": 0,
+      "triangles": 2315246,
+      "vertices": 1055379,
+      "semantics": [
+        "COLOR_0",
+        "NORMAL",
+        "POSITION"
+      ],
+      "indexedComponents": 618
+    }
+  ],
+  "packedPrimitives": [
+    {
+      "mesh": 0,
+      "name": "mesh-0",
+      "primitive": 0,
+      "triangles": 2315246,
+      "vertices": 1055379,
+      "semantics": [
+        "COLOR_0",
+        "NORMAL",
+        "POSITION"
+      ],
+      "indexedComponents": 618
+    }
+  ],
+  "simplification": [],
+  "firstCompressionAttempt": {
+    "bytes": 12435148,
+    "decodedGeometryBytes": 44669016,
+    "triangles": 2315246,
+    "vertices": 1055379,
+    "withinFileBudget": true,
+    "withinGeometryBudget": true
+  },
+  "simplificationNecessaryForFinalBudget": false,
+  "unlit": true,
+  "unlitReason": "Baked camera-photo atlas already contains scene lighting; KHR_materials_unlit avoids a second PBR lighting pass and matches the iPhone versions",
+  "compressionTopologyPreserved": true,
+  "allIndexedComponentsPreserved": true,
+  "sourceUnchanged": true,
+  "iphoneAssetsUnchanged": true,
+  "ownershipCrop": false,
+  "heightCrop": false,
+  "axisRotation": false,
+  "coordinateFrame": "Unchanged source glTF world, including complete node world matrices",
+  "simplificationErrorLimitWorldUnits": 0,
+  "independent2mmAccuracyClaim": false,
+  "independentDeviationMeasurement": false,
+  "quantization": {
+    "positions": 16,
+    "normals": 8,
+    "uvs": 12
+  },
+  "libraries": {
+    "gltfTransform": "4.5.1",
+    "meshoptimizer": "0.25.0"
+  }
+}

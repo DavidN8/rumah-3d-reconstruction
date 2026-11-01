@@ -1,0 +1,1991 @@
+{
+  "page_count": 28,
+  "titles": [
+    "Reconstruction quality: what failed,<br/>what is fixed, what needs an architect",
+    "The exact three models in this report",
+    "Three outcomes, shown with their true scope",
+    "What differs between the three runs",
+    "What I changed in the iPhone reconstruction",
+    "Why the user saw large missing areas",
+    "Where geometry was lost in the pipeline",
+    "Recorded-view checks: Kitchen / counter + Kitchen / appliances",
+    "Recorded-view checks: Doorway / transition + Living area",
+    "Recorded-view checks: Living / windows + Corridor / bed",
+    "Recorded-view checks: Bedroom / desk + Bedroom entrance",
+    "One transform for geometry and its cameras",
+    "Floor alignment and camera paths",
+    "Useful alignment evidence, weak global precision",
+    "Depth preparation was corrected; the model was not retrained",
+    "Why the accepted bedroom workflow is the better cleanup precedent",
+    "The accepted reference still needs to be judged against photographs",
+    "Our Nikon result: native-camera-kitchen-034",
+    "The Codex kitchen mesh loses visible source structure",
+    "Separate numerical, visual and usability gates",
+    "What did not work, and what the evidence actually says",
+    "Recommended next steps, in order",
+    "Decisions I need help making",
+    "Where to inspect the current result",
+    "Recorded settings: audit these before choosing a pilot",
+    "Exact model identity and reproducibility",
+    "Evidence register and reading order",
+    "Historical sources and image provenance"
+  ],
+  "elements": [
+    {
+      "page": 1,
+      "kind": "text",
+      "bottom": 491.28,
+      "sample": "Reconstruction quality: what failed,<br/>what is fixed, what"
+    },
+    {
+      "page": 1,
+      "kind": "text",
+      "bottom": 471.08,
+      "sample": "For Gemini Argon (Architect) | iPhone wide + Codex Nikon Z8 "
+    },
+    {
+      "page": 1,
+      "kind": "text",
+      "bottom": 364.38,
+      "sample": "What I need from Argon"
+    },
+    {
+      "page": 1,
+      "kind": "text",
+      "bottom": 312.28,
+      "sample": "Choose a recovery route that first preserves observed surfac"
+    },
+    {
+      "page": 1,
+      "kind": "text",
+      "bottom": 261.18,
+      "sample": "<b>Current iPhone:</b> 1,082,185 triangles; 60,834,340 bytes"
+    },
+    {
+      "page": 1,
+      "kind": "text",
+      "bottom": 195.38,
+      "sample": "<b>Comparison rule:</b> Nikon means the historical <b>Codex "
+    },
+    {
+      "page": 1,
+      "kind": "image",
+      "id": "F02",
+      "bottom": 127.98
+    },
+    {
+      "page": 1,
+      "kind": "text",
+      "bottom": 96.58,
+      "sample": "Current iPhone browser view, after restoring all compact sou"
+    },
+    {
+      "page": 1,
+      "kind": "text",
+      "bottom": 43.6,
+      "sample": "<b>Quick reading route:</b> pp. 2-4 identify and compare the"
+    },
+    {
+      "page": 2,
+      "kind": "text",
+      "bottom": 536.68,
+      "sample": "The exact three models in this report"
+    },
+    {
+      "page": 2,
+      "kind": "text",
+      "bottom": 516.48,
+      "sample": "Version identity is established from local binaries, manifes"
+    },
+    {
+      "page": 2,
+      "kind": "table",
+      "bottom": 339.68
+    },
+    {
+      "page": 2,
+      "kind": "text",
+      "bottom": 309.08,
+      "sample": "Nikon selection, explicitly"
+    },
+    {
+      "page": 2,
+      "kind": "text",
+      "bottom": 242.28,
+      "sample": "The archived Codex chat <b>Run Graphify on RuangKamar</b> re"
+    },
+    {
+      "page": 2,
+      "kind": "text",
+      "bottom": 309.08,
+      "sample": "Scope of this handoff"
+    },
+    {
+      "page": 2,
+      "kind": "text",
+      "bottom": 242.28,
+      "sample": "This report audits existing evidence and creates a PDF/refer"
+    },
+    {
+      "page": 2,
+      "kind": "text",
+      "bottom": 191.18,
+      "sample": "<b>Excluded:</b> exports-broader and Nikon 041/042/043/044 o"
+    },
+    {
+      "page": 3,
+      "kind": "text",
+      "bottom": 536.68,
+      "sample": "Three outcomes, shown with their true scope"
+    },
+    {
+      "page": 3,
+      "kind": "text",
+      "bottom": 516.48,
+      "sample": "Overview images are illustrative. Cameras, framing, model sc"
+    },
+    {
+      "page": 3,
+      "kind": "text",
+      "bottom": 489.88,
+      "sample": "iPhone - current preserve export"
+    },
+    {
+      "page": 3,
+      "kind": "image",
+      "id": "F02",
+      "bottom": 313.53
+    },
+    {
+      "page": 3,
+      "kind": "text",
+      "bottom": 290.93,
+      "sample": "1.08M triangles / 60.8 MB"
+    },
+    {
+      "page": 3,
+      "kind": "text",
+      "bottom": 255.53,
+      "sample": "Broader apartment coverage, but holes, folded walls, ghost s"
+    },
+    {
+      "page": 3,
+      "kind": "text",
+      "bottom": 489.88,
+      "sample": "Nikon Z8 - Codex 034"
+    },
+    {
+      "page": 3,
+      "kind": "image",
+      "id": "F04",
+      "bottom": 343.16
+    },
+    {
+      "page": 3,
+      "kind": "text",
+      "bottom": 320.56,
+      "sample": "576,595 triangles / 42.0 MB"
+    },
+    {
+      "page": 3,
+      "kind": "text",
+      "bottom": 270.46,
+      "sample": "Only the local cooker/counter section. Objects are recogniza"
+    },
+    {
+      "page": 3,
+      "kind": "text",
+      "bottom": 489.88,
+      "sample": "Samsung - accepted dollhouse"
+    },
+    {
+      "page": 3,
+      "kind": "image",
+      "id": "F03",
+      "bottom": 345.81
+    },
+    {
+      "page": 3,
+      "kind": "text",
+      "bottom": 323.21,
+      "sample": "8.57M triangles / 419.8 MB"
+    },
+    {
+      "page": 3,
+      "kind": "text",
+      "bottom": 273.11,
+      "sample": "More coherent bedroom surfaces in this view. This release pr"
+    },
+    {
+      "page": 3,
+      "kind": "text",
+      "bottom": 166.08,
+      "sample": "<b>What this comparison can establish:</b> Samsung supplies "
+    },
+    {
+      "page": 3,
+      "kind": "text",
+      "bottom": 107.08,
+      "sample": "References: F02 current actual WebGL view; F04 user-provided"
+    },
+    {
+      "page": 4,
+      "kind": "text",
+      "bottom": 536.68,
+      "sample": "What differs between the three runs"
+    },
+    {
+      "page": 4,
+      "kind": "text",
+      "bottom": 516.48,
+      "sample": "Source-report values are labelled as records, not newly repe"
+    },
+    {
+      "page": 4,
+      "kind": "table",
+      "bottom": 212.28
+    },
+    {
+      "page": 4,
+      "kind": "text",
+      "bottom": 175.88,
+      "sample": "Do not compare logged PSNR/SSIM across these runs as a mesh-"
+    },
+    {
+      "page": 5,
+      "kind": "text",
+      "bottom": 536.68,
+      "sample": "What I changed in the iPhone reconstruction"
+    },
+    {
+      "page": 5,
+      "kind": "text",
+      "bottom": 516.48,
+      "sample": "Completed work is separated here from the recovery experimen"
+    },
+    {
+      "page": 5,
+      "kind": "text",
+      "bottom": 486.88,
+      "sample": "Frame, scale and registration"
+    },
+    {
+      "page": 5,
+      "kind": "text",
+      "bottom": 420.08,
+      "sample": "Backed up the prior delivery and source scripts. Estimated c"
+    },
+    {
+      "page": 5,
+      "kind": "text",
+      "bottom": 354.28,
+      "sample": "Recomputed a 76-frame subset with metric depth output, diagn"
+    },
+    {
+      "page": 5,
+      "kind": "text",
+      "bottom": 328.68,
+      "sample": "Delivery and navigation"
+    },
+    {
+      "page": 5,
+      "kind": "text",
+      "bottom": 261.88,
+      "sample": "Re-extracted compact zone meshes and rebuilt one merged GLB."
+    },
+    {
+      "page": 5,
+      "kind": "text",
+      "bottom": 486.88,
+      "sample": "My cleanup error and correction"
+    },
+    {
+      "page": 5,
+      "kind": "text",
+      "bottom": 405.38,
+      "sample": "I introduced broad camera-ownership/height cuts after compac"
+    },
+    {
+      "page": 5,
+      "kind": "text",
+      "bottom": 354.28,
+      "sample": "I also disabled the display floor clip and the inferred door"
+    },
+    {
+      "page": 5,
+      "kind": "text",
+      "bottom": 328.68,
+      "sample": "What I have not done"
+    },
+    {
+      "page": 5,
+      "kind": "text",
+      "bottom": 261.88,
+      "sample": "I have not regenerated the original seed cloud, retrained th"
+    },
+    {
+      "page": 6,
+      "kind": "text",
+      "bottom": 536.68,
+      "sample": "Why the user saw large missing areas"
+    },
+    {
+      "page": 6,
+      "kind": "text",
+      "bottom": 516.48,
+      "sample": "The current complaint exposed a real regression in my work. "
+    },
+    {
+      "page": 6,
+      "kind": "image",
+      "id": "F01",
+      "bottom": 247.48
+    },
+    {
+      "page": 6,
+      "kind": "text",
+      "bottom": 216.08,
+      "sample": "User screenshot of the defective delivery. The black backgro"
+    },
+    {
+      "page": 6,
+      "kind": "text",
+      "bottom": 148.28,
+      "sample": "<b>My mistake:</b> I treated nearest-camera/field-of-view su"
+    },
+    {
+      "page": 6,
+      "kind": "image",
+      "id": "F06",
+      "bottom": 357.85
+    },
+    {
+      "page": 6,
+      "kind": "text",
+      "bottom": 314.25,
+      "sample": "Controlled comparison: compact source before my cuts (left) "
+    },
+    {
+      "page": 6,
+      "kind": "text",
+      "bottom": 261.15,
+      "sample": "<b>Arithmetic:</b> 1,082,185 compact triangles - 125,496 sou"
+    },
+    {
+      "page": 6,
+      "kind": "text",
+      "bottom": 210.05,
+      "sample": "<b>Now:</b> retain all 1,082,185 compact triangles, with the"
+    },
+    {
+      "page": 7,
+      "kind": "text",
+      "bottom": 536.68,
+      "sample": "Where geometry was lost in the pipeline"
+    },
+    {
+      "page": 7,
+      "kind": "text",
+      "bottom": 516.48,
+      "sample": "All four renders use the same camera, per-zone transforms an"
+    },
+    {
+      "page": 7,
+      "kind": "text",
+      "bottom": 489.88,
+      "sample": "A - Original source, 11.64M"
+    },
+    {
+      "page": 7,
+      "kind": "text",
+      "bottom": 307.68,
+      "sample": "Most complete of these stages; already warped/porous."
+    },
+    {
+      "page": 7,
+      "kind": "text",
+      "bottom": 489.88,
+      "sample": "B - Compact, 1.082M"
+    },
+    {
+      "page": 7,
+      "kind": "text",
+      "bottom": 307.68,
+      "sample": "Re-extraction loses some detail and creates a smaller floor "
+    },
+    {
+      "page": 7,
+      "kind": "text",
+      "bottom": 279.88,
+      "sample": "C - Previous export, 0.958M"
+    },
+    {
+      "page": 7,
+      "kind": "text",
+      "bottom": 97.68,
+      "sample": "Large additional bedroom losses after automatic cuts."
+    },
+    {
+      "page": 7,
+      "kind": "text",
+      "bottom": 279.88,
+      "sample": "D - Same export + old floor clip"
+    },
+    {
+      "page": 7,
+      "kind": "text",
+      "bottom": 97.68,
+      "sample": "Similar here: floor clipping is not the main cause in this v"
+    },
+    {
+      "page": 7,
+      "kind": "text",
+      "bottom": 39.6,
+      "sample": "All four images use the same PDF crop for readability; full "
+    },
+    {
+      "page": 8,
+      "kind": "text",
+      "bottom": 536.68,
+      "sample": "Recorded-view checks: Kitchen / counter + Kitchen / applianc"
+    },
+    {
+      "page": 8,
+      "kind": "text",
+      "bottom": 516.48,
+      "sample": "Actual browser render on the left of each image, original so"
+    },
+    {
+      "page": 8,
+      "kind": "text",
+      "bottom": 489.88,
+      "sample": "01 / Kitchen / counter - frame 999"
+    },
+    {
+      "page": 8,
+      "kind": "image",
+      "id": "F15",
+      "bottom": 225.58
+    },
+    {
+      "page": 8,
+      "kind": "text",
+      "bottom": 189.18,
+      "sample": "Shelves and broad surfaces are recognizable, but small conta"
+    },
+    {
+      "page": 8,
+      "kind": "text",
+      "bottom": 157.78,
+      "sample": "Image F15. Browser capture from current 1,082,185-triangle e"
+    },
+    {
+      "page": 8,
+      "kind": "text",
+      "bottom": 489.88,
+      "sample": "02 / Kitchen / appliances - frame 903"
+    },
+    {
+      "page": 8,
+      "kind": "image",
+      "id": "F16",
+      "bottom": 225.58
+    },
+    {
+      "page": 8,
+      "kind": "text",
+      "bottom": 189.18,
+      "sample": "Inspect appliance edges, countertop continuity and surface t"
+    },
+    {
+      "page": 8,
+      "kind": "text",
+      "bottom": 157.78,
+      "sample": "Image F16. Browser capture from current 1,082,185-triangle e"
+    },
+    {
+      "page": 9,
+      "kind": "text",
+      "bottom": 536.68,
+      "sample": "Recorded-view checks: Doorway / transition + Living area"
+    },
+    {
+      "page": 9,
+      "kind": "text",
+      "bottom": 516.48,
+      "sample": "Actual browser render on the left of each image, original so"
+    },
+    {
+      "page": 9,
+      "kind": "text",
+      "bottom": 489.88,
+      "sample": "03 / Doorway / transition - frame 1398"
+    },
+    {
+      "page": 9,
+      "kind": "image",
+      "id": "F17",
+      "bottom": 225.58
+    },
+    {
+      "page": 9,
+      "kind": "text",
+      "bottom": 189.18,
+      "sample": "Door and wall surfaces fold/overlap near the seam. The small"
+    },
+    {
+      "page": 9,
+      "kind": "text",
+      "bottom": 157.78,
+      "sample": "Image F17. Browser capture from current 1,082,185-triangle e"
+    },
+    {
+      "page": 9,
+      "kind": "text",
+      "bottom": 489.88,
+      "sample": "04 / Living area - frame 1612"
+    },
+    {
+      "page": 9,
+      "kind": "image",
+      "id": "F18",
+      "bottom": 225.58
+    },
+    {
+      "page": 9,
+      "kind": "text",
+      "bottom": 189.18,
+      "sample": "Review furniture and wall continuity beyond the best-looking"
+    },
+    {
+      "page": 9,
+      "kind": "text",
+      "bottom": 157.78,
+      "sample": "Image F18. Browser capture from current 1,082,185-triangle e"
+    },
+    {
+      "page": 10,
+      "kind": "text",
+      "bottom": 536.68,
+      "sample": "Recorded-view checks: Living / windows + Corridor / bed"
+    },
+    {
+      "page": 10,
+      "kind": "text",
+      "bottom": 516.48,
+      "sample": "Actual browser render on the left of each image, original so"
+    },
+    {
+      "page": 10,
+      "kind": "text",
+      "bottom": 489.88,
+      "sample": "05 / Living / windows - frame 2402"
+    },
+    {
+      "page": 10,
+      "kind": "image",
+      "id": "F19",
+      "bottom": 225.58
+    },
+    {
+      "page": 10,
+      "kind": "text",
+      "bottom": 189.18,
+      "sample": "Large surfaces and furnishings remain softened. Reflections "
+    },
+    {
+      "page": 10,
+      "kind": "text",
+      "bottom": 157.78,
+      "sample": "Image F19. Browser capture from current 1,082,185-triangle e"
+    },
+    {
+      "page": 10,
+      "kind": "text",
+      "bottom": 489.88,
+      "sample": "06 / Corridor / bed - frame 3606"
+    },
+    {
+      "page": 10,
+      "kind": "image",
+      "id": "F20",
+      "bottom": 225.58
+    },
+    {
+      "page": 10,
+      "kind": "text",
+      "bottom": 189.18,
+      "sample": "The source shows a coherent ceiling and bedroom opening; the"
+    },
+    {
+      "page": 10,
+      "kind": "text",
+      "bottom": 157.78,
+      "sample": "Image F20. Browser capture from current 1,082,185-triangle e"
+    },
+    {
+      "page": 11,
+      "kind": "text",
+      "bottom": 536.68,
+      "sample": "Recorded-view checks: Bedroom / desk + Bedroom entrance"
+    },
+    {
+      "page": 11,
+      "kind": "text",
+      "bottom": 516.48,
+      "sample": "Actual browser render on the left of each image, original so"
+    },
+    {
+      "page": 11,
+      "kind": "text",
+      "bottom": 489.88,
+      "sample": "07 / Bedroom / desk - frame 4297"
+    },
+    {
+      "page": 11,
+      "kind": "image",
+      "id": "F21",
+      "bottom": 225.58
+    },
+    {
+      "page": 11,
+      "kind": "text",
+      "bottom": 189.18,
+      "sample": "Evaluate the desk area, wall continuity and ghost geometry. "
+    },
+    {
+      "page": 11,
+      "kind": "text",
+      "bottom": 157.78,
+      "sample": "Image F21. Browser capture from current 1,082,185-triangle e"
+    },
+    {
+      "page": 11,
+      "kind": "text",
+      "bottom": 489.88,
+      "sample": "08 / Bedroom entrance - frame 4400"
+    },
+    {
+      "page": 11,
+      "kind": "image",
+      "id": "F22",
+      "bottom": 225.58
+    },
+    {
+      "page": 11,
+      "kind": "text",
+      "bottom": 189.18,
+      "sample": "Check whether the room entrance and interior surfaces agree "
+    },
+    {
+      "page": 11,
+      "kind": "text",
+      "bottom": 157.78,
+      "sample": "Image F22. Browser capture from current 1,082,185-triangle e"
+    },
+    {
+      "page": 12,
+      "kind": "text",
+      "bottom": 536.68,
+      "sample": "One transform for geometry and its cameras"
+    },
+    {
+      "page": 12,
+      "kind": "text",
+      "bottom": 516.48,
+      "sample": "Correcting a display frame fixes orientation and numerical c"
+    },
+    {
+      "page": 12,
+      "kind": "text",
+      "bottom": 486.88,
+      "sample": "Observed frame, not an assumption"
+    },
+    {
+      "page": 12,
+      "kind": "text",
+      "bottom": 420.08,
+      "sample": "Averaging camera local-up transformed to world coordinates g"
+    },
+    {
+      "page": 12,
+      "kind": "text",
+      "bottom": 394.48,
+      "sample": "Current export mapping"
+    },
+    {
+      "page": 12,
+      "kind": "text",
+      "bottom": 327.68,
+      "sample": "For each zone, bake p' = s R p + t into positions; rotate no"
+    },
+    {
+      "page": 12,
+      "kind": "text",
+      "bottom": 261.88,
+      "sample": "Cameras use the same similarity: C' = s R C + t; world-to-ca"
+    },
+    {
+      "page": 12,
+      "kind": "text",
+      "bottom": 486.88,
+      "sample": "Training coordinates remain frozen"
+    },
+    {
+      "page": 12,
+      "kind": "text",
+      "bottom": 159.38,
+      "sample": "<b>Architectural concern:</b> local floor leveling includes "
+    },
+    {
+      "page": 13,
+      "kind": "text",
+      "bottom": 536.68,
+      "sample": "Floor alignment and camera paths"
+    },
+    {
+      "page": 13,
+      "kind": "text",
+      "bottom": 516.48,
+      "sample": "The plot uses the written current GLB and matching 501 camer"
+    },
+    {
+      "page": 13,
+      "kind": "image",
+      "id": "F11",
+      "bottom": 137.33
+    },
+    {
+      "page": 13,
+      "kind": "text",
+      "bottom": 486.88,
+      "sample": "What passes"
+    },
+    {
+      "page": 13,
+      "kind": "text",
+      "bottom": 420.08,
+      "sample": "All three fitted floor datums are numerically at Y = 0. Floo"
+    },
+    {
+      "page": 13,
+      "kind": "text",
+      "bottom": 394.48,
+      "sample": "What remains uncertain"
+    },
+    {
+      "page": 13,
+      "kind": "text",
+      "bottom": 327.68,
+      "sample": "The kitchen plane near native Z = 0 was initially a countert"
+    },
+    {
+      "page": 13,
+      "kind": "text",
+      "bottom": 261.88,
+      "sample": "Median exported camera heights differ by zone: kitchen 1.412"
+    },
+    {
+      "page": 13,
+      "kind": "text",
+      "bottom": 210.78,
+      "sample": "Detected upper planes near 2.28, 2.42 and 1.96 m may be beam"
+    },
+    {
+      "page": 14,
+      "kind": "text",
+      "bottom": 536.68,
+      "sample": "Useful alignment evidence, weak global precision"
+    },
+    {
+      "page": 14,
+      "kind": "text",
+      "bottom": 516.48,
+      "sample": "The current seam is an estimate constrained by learned depth"
+    },
+    {
+      "page": 14,
+      "kind": "image",
+      "id": "F12",
+      "bottom": 220.48
+    },
+    {
+      "page": 14,
+      "kind": "text",
+      "bottom": 189.08,
+      "sample": "18 unique LoFTR matches, largely on one switch-plate patch, "
+    },
+    {
+      "page": 14,
+      "kind": "text",
+      "bottom": 135.98,
+      "sample": "Sparse 3D track matching found no reliable common associated"
+    },
+    {
+      "page": 14,
+      "kind": "table",
+      "bottom": 313.48
+    },
+    {
+      "page": 14,
+      "kind": "text",
+      "bottom": 264.88,
+      "sample": "<b>Superseded evidence:</b> bridge-dense-fit.json records th"
+    },
+    {
+      "page": 14,
+      "kind": "text",
+      "bottom": 223.28,
+      "sample": "The original walking-speed scale 0.66055 and a misread units"
+    },
+    {
+      "page": 15,
+      "kind": "text",
+      "bottom": 536.68,
+      "sample": "Depth preparation was corrected; the model was not retrained"
+    },
+    {
+      "page": 15,
+      "kind": "text",
+      "bottom": 516.48,
+      "sample": "A code fix to future input preparation is not a repair to ex"
+    },
+    {
+      "page": 15,
+      "kind": "text",
+      "bottom": 486.88,
+      "sample": "Two separate depth problems"
+    },
+    {
+      "page": 15,
+      "kind": "text",
+      "bottom": 405.38,
+      "sample": "The original MoGe PNGs were relative, normalized per image. "
+    },
+    {
+      "page": 15,
+      "kind": "text",
+      "bottom": 324.88,
+      "sample": "In the seed-cloud preparation I found resized depth (about 5"
+    },
+    {
+      "page": 15,
+      "kind": "text",
+      "bottom": 486.88,
+      "sample": "What the remaining artifacts suggest"
+    },
+    {
+      "page": 15,
+      "kind": "text",
+      "bottom": 405.38,
+      "sample": "Folded walls, overlapping sheets, damaged small objects and "
+    },
+    {
+      "page": 15,
+      "kind": "text",
+      "bottom": 379.78,
+      "sample": "Why more triangles is not enough"
+    },
+    {
+      "page": 15,
+      "kind": "text",
+      "bottom": 312.98,
+      "sample": "The 11.64M source mesh is more complete than the compact one"
+    },
+    {
+      "page": 15,
+      "kind": "text",
+      "bottom": 232.48,
+      "sample": "<b>Recommended controlled test:</b> one fixed kitchen/doorwa"
+    },
+    {
+      "page": 16,
+      "kind": "text",
+      "bottom": 536.68,
+      "sample": "Why the accepted bedroom workflow is the better cleanup prec"
+    },
+    {
+      "page": 16,
+      "kind": "text",
+      "bottom": 516.48,
+      "sample": "This is a processing comparison, not proof that its camera o"
+    },
+    {
+      "page": 16,
+      "kind": "image",
+      "id": "F03",
+      "bottom": 296.13
+    },
+    {
+      "page": 16,
+      "kind": "text",
+      "bottom": 264.73,
+      "sample": "Accepted cleaned roofless release. Bedroom and bathroom rema"
+    },
+    {
+      "page": 16,
+      "kind": "text",
+      "bottom": 196.93,
+      "sample": "The full cleanup retained 9,077,606 scanned triangles and ad"
+    },
+    {
+      "page": 16,
+      "kind": "text",
+      "bottom": 486.88,
+      "sample": "Practices worth carrying forward"
+    },
+    {
+      "page": 16,
+      "kind": "text",
+      "bottom": 420.08,
+      "sample": "Separate room training; exclude the moving door/light transi"
+    },
+    {
+      "page": 16,
+      "kind": "text",
+      "bottom": 354.28,
+      "sample": "The roofless cut uses exact triangle-plane intersections and"
+    },
+    {
+      "page": 16,
+      "kind": "text",
+      "bottom": 328.68,
+      "sample": "Limits that remain"
+    },
+    {
+      "page": 16,
+      "kind": "text",
+      "bottom": 261.88,
+      "sample": "This model is not welded or watertight, has mirror/occlusion"
+    },
+    {
+      "page": 16,
+      "kind": "text",
+      "bottom": 210.78,
+      "sample": "Its 425.8 MB full model is roughly seven times the current i"
+    },
+    {
+      "page": 17,
+      "kind": "text",
+      "bottom": 536.68,
+      "sample": "The accepted reference still needs to be judged against phot"
+    },
+    {
+      "page": 17,
+      "kind": "text",
+      "bottom": 516.48,
+      "sample": "Actual source images are attached. They are historical captu"
+    },
+    {
+      "page": 17,
+      "kind": "image",
+      "id": "F13",
+      "bottom": 172.48
+    },
+    {
+      "page": 17,
+      "kind": "text",
+      "bottom": 141.08,
+      "sample": "Bedroom, source f_001130.jpg at 18.834889 s. Original datase"
+    },
+    {
+      "page": 17,
+      "kind": "image",
+      "id": "F14",
+      "bottom": 172.48
+    },
+    {
+      "page": 17,
+      "kind": "text",
+      "bottom": 141.08,
+      "sample": "Bathroom, source f_006654.jpg at 111.009489 s, after the exc"
+    },
+    {
+      "page": 18,
+      "kind": "text",
+      "bottom": 536.68,
+      "sample": "Our Nikon result: native-camera-kitchen-034"
+    },
+    {
+      "page": 18,
+      "kind": "text",
+      "bottom": 516.48,
+      "sample": "Selected using the Codex history and matching binary hashes."
+    },
+    {
+      "page": 18,
+      "kind": "image",
+      "id": "F04",
+      "bottom": 292.11
+    },
+    {
+      "page": 18,
+      "kind": "text",
+      "bottom": 260.71,
+      "sample": "User-provided screenshot of the 24k-step Codex kitchen previ"
+    },
+    {
+      "page": 18,
+      "kind": "text",
+      "bottom": 192.91,
+      "sample": "This run used 84 of 5,613 source frames, expanded into 336 o"
+    },
+    {
+      "page": 18,
+      "kind": "text",
+      "bottom": 486.88,
+      "sample": "What Codex did historically"
+    },
+    {
+      "page": 18,
+      "kind": "text",
+      "bottom": 420.08,
+      "sample": "Ran local camera/guidance experiments, trained a native-pixe"
+    },
+    {
+      "page": 18,
+      "kind": "text",
+      "bottom": 394.48,
+      "sample": "What went wrong"
+    },
+    {
+      "page": 18,
+      "kind": "text",
+      "bottom": 327.68,
+      "sample": "I spent effort refining and packaging a tiny test while full"
+    },
+    {
+      "page": 18,
+      "kind": "text",
+      "bottom": 261.88,
+      "sample": "Historical automated browser testing was blocked in those ch"
+    },
+    {
+      "page": 19,
+      "kind": "text",
+      "bottom": 536.68,
+      "sample": "The Codex kitchen mesh loses visible source structure"
+    },
+    {
+      "page": 19,
+      "kind": "text",
+      "bottom": 516.48,
+      "sample": "Historical saved source/model renders from the 24k-step run."
+    },
+    {
+      "page": 19,
+      "kind": "text",
+      "bottom": 489.88,
+      "sample": "116.16 s"
+    },
+    {
+      "page": 19,
+      "kind": "text",
+      "bottom": 223.27,
+      "sample": "Source (left) / Codex mesh (right)"
+    },
+    {
+      "page": 19,
+      "kind": "text",
+      "bottom": 174.17,
+      "sample": "The source contains coherent bottles, bowls and sink edges. "
+    },
+    {
+      "page": 19,
+      "kind": "text",
+      "bottom": 489.88,
+      "sample": "117.12 s"
+    },
+    {
+      "page": 19,
+      "kind": "text",
+      "bottom": 223.27,
+      "sample": "Source (left) / Codex mesh (right)"
+    },
+    {
+      "page": 19,
+      "kind": "text",
+      "bottom": 174.17,
+      "sample": "The white appliance and countertop are softened or fragmente"
+    },
+    {
+      "page": 19,
+      "kind": "text",
+      "bottom": 489.88,
+      "sample": "117.92 s"
+    },
+    {
+      "page": 19,
+      "kind": "text",
+      "bottom": 223.27,
+      "sample": "Source (left) / Codex mesh (right)"
+    },
+    {
+      "page": 19,
+      "kind": "text",
+      "bottom": 174.17,
+      "sample": "The second appliance and wall regions show holes and smeared"
+    },
+    {
+      "page": 19,
+      "kind": "text",
+      "bottom": 72.6,
+      "sample": "These local viewpoints are not a whole-room completeness sco"
+    },
+    {
+      "page": 20,
+      "kind": "text",
+      "bottom": 536.68,
+      "sample": "Separate numerical, visual and usability gates"
+    },
+    {
+      "page": 20,
+      "kind": "text",
+      "bottom": 516.48,
+      "sample": "The current iPhone is usable for inspection. It is not accep"
+    },
+    {
+      "page": 20,
+      "kind": "table",
+      "bottom": 210.48
+    },
+    {
+      "page": 20,
+      "kind": "text",
+      "bottom": 174.08,
+      "sample": "The original iPhone report's CPU coverage=1.0 and Gaussian i"
+    },
+    {
+      "page": 21,
+      "kind": "text",
+      "bottom": 536.68,
+      "sample": "What did not work, and what the evidence actually says"
+    },
+    {
+      "page": 21,
+      "kind": "text",
+      "bottom": 516.48,
+      "sample": "Failed experiments are retained as evidence; they are not pr"
+    },
+    {
+      "page": 21,
+      "kind": "text",
+      "bottom": 489.88,
+      "sample": "A shortcut for zone ownership"
+    },
+    {
+      "page": 21,
+      "kind": "text",
+      "bottom": 439.78,
+      "sample": "Closest camera plus frustum inclusion ignored wall occlusion"
+    },
+    {
+      "page": 21,
+      "kind": "text",
+      "bottom": 417.18,
+      "sample": "A misleading scale story"
+    },
+    {
+      "page": 21,
+      "kind": "text",
+      "bottom": 367.08,
+      "sample": "Walking-speed ratios and an initially wrong floor/countertop"
+    },
+    {
+      "page": 21,
+      "kind": "text",
+      "bottom": 344.48,
+      "sample": "Weak registration witnesses"
+    },
+    {
+      "page": 21,
+      "kind": "text",
+      "bottom": 294.38,
+      "sample": "Sparse-track and optical-flow bridges failed. Learned matche"
+    },
+    {
+      "page": 21,
+      "kind": "text",
+      "bottom": 271.78,
+      "sample": "Parameter experiments without a quality win"
+    },
+    {
+      "page": 21,
+      "kind": "text",
+      "bottom": 221.68,
+      "sample": "Hybrid extraction settings increased geometry in some zones "
+    },
+    {
+      "page": 21,
+      "kind": "text",
+      "bottom": 489.88,
+      "sample": "Correctness checks missed usefulness"
+    },
+    {
+      "page": 21,
+      "kind": "text",
+      "bottom": 439.78,
+      "sample": "A consistent coordinate transform, a smaller GLB and fast co"
+    },
+    {
+      "page": 21,
+      "kind": "text",
+      "bottom": 417.18,
+      "sample": "A real preprocessing fix remains unapplied"
+    },
+    {
+      "page": 21,
+      "kind": "text",
+      "bottom": 367.08,
+      "sample": "The corrected depth-grid intrinsics/color sampling protect f"
+    },
+    {
+      "page": 21,
+      "kind": "text",
+      "bottom": 344.48,
+      "sample": "Temporal zones were overinterpreted"
+    },
+    {
+      "page": 21,
+      "kind": "text",
+      "bottom": 294.38,
+      "sample": "The living/corridor partition includes bedroom content, and "
+    },
+    {
+      "page": 21,
+      "kind": "text",
+      "bottom": 271.78,
+      "sample": "Scope and cost drift"
+    },
+    {
+      "page": 21,
+      "kind": "text",
+      "bottom": 221.68,
+      "sample": "The Nikon history repeated local experiments without a solve"
+    },
+    {
+      "page": 22,
+      "kind": "text",
+      "bottom": 536.68,
+      "sample": "Recommended next steps, in order"
+    },
+    {
+      "page": 22,
+      "kind": "text",
+      "bottom": 516.48,
+      "sample": "These are proposals for Argon's review. They have not been e"
+    },
+    {
+      "page": 22,
+      "kind": "table",
+      "bottom": 175.68
+    },
+    {
+      "page": 22,
+      "kind": "text",
+      "bottom": 139.28,
+      "sample": "Priority recommendation: first isolate camera/initialization"
+    },
+    {
+      "page": 23,
+      "kind": "text",
+      "bottom": 536.68,
+      "sample": "Decisions I need help making"
+    },
+    {
+      "page": 23,
+      "kind": "text",
+      "bottom": 516.48,
+      "sample": "Please assess the evidence and recommend a bounded next expe"
+    },
+    {
+      "page": 23,
+      "kind": "text",
+      "bottom": 489.88,
+      "sample": "1. Which representation should be the quality baseline?"
+    },
+    {
+      "page": 23,
+      "kind": "text",
+      "bottom": 439.78,
+      "sample": "The original iPhone mesh preserves more coverage but is alre"
+    },
+    {
+      "page": 23,
+      "kind": "text",
+      "bottom": 417.18,
+      "sample": "2. How should overlapping temporal zones be fused?"
+    },
+    {
+      "page": 23,
+      "kind": "text",
+      "bottom": 367.08,
+      "sample": "What occlusion-aware visibility or multi-view consistency te"
+    },
+    {
+      "page": 23,
+      "kind": "text",
+      "bottom": 344.48,
+      "sample": "3. Is the kitchen join sufficiently constrained?"
+    },
+    {
+      "page": 23,
+      "kind": "text",
+      "bottom": 294.38,
+      "sample": "We have only 18 switch-plate matches plus learned depth and "
+    },
+    {
+      "page": 23,
+      "kind": "text",
+      "bottom": 271.78,
+      "sample": "4. Is local floor leveling defensible?"
+    },
+    {
+      "page": 23,
+      "kind": "text",
+      "bottom": 221.68,
+      "sample": "Zone 2 has a separate correction inside a component that ori"
+    },
+    {
+      "page": 23,
+      "kind": "text",
+      "bottom": 489.88,
+      "sample": "5. What controlled seed/training pilot will isolate the bug?"
+    },
+    {
+      "page": 23,
+      "kind": "text",
+      "bottom": 454.48,
+      "sample": "Please specify a small subset, exact preprocessing invariant"
+    },
+    {
+      "page": 23,
+      "kind": "text",
+      "bottom": 431.88,
+      "sample": "6. Can geometry be preserved within the delivery budget?"
+    },
+    {
+      "page": 23,
+      "kind": "text",
+      "bottom": 381.78,
+      "sample": "Should we prefer error-bounded simplification, LOD, mesh com"
+    },
+    {
+      "page": 23,
+      "kind": "text",
+      "bottom": 359.18,
+      "sample": "7. What is a valid visual completeness gate?"
+    },
+    {
+      "page": 23,
+      "kind": "text",
+      "bottom": 309.08,
+      "sample": "How should we score missing visible surfaces separately from"
+    },
+    {
+      "page": 23,
+      "kind": "text",
+      "bottom": 286.48,
+      "sample": "8. What minimum new evidence is truly needed?"
+    },
+    {
+      "page": 23,
+      "kind": "text",
+      "bottom": 236.38,
+      "sample": "Can existing footage and local measurements resolve the unce"
+    },
+    {
+      "page": 23,
+      "kind": "text",
+      "bottom": 213.78,
+      "sample": "9. Is a different Codex Nikon checkpoint intended?"
+    },
+    {
+      "page": 23,
+      "kind": "text",
+      "bottom": 163.68,
+      "sample": "This report pins the historical 034 model by hash. If compar"
+    },
+    {
+      "page": 24,
+      "kind": "text",
+      "bottom": 536.68,
+      "sample": "Where to inspect the current result"
+    },
+    {
+      "page": 24,
+      "kind": "text",
+      "bottom": 516.48,
+      "sample": "Paths are local to this Windows machine. The accompanying re"
+    },
+    {
+      "page": 24,
+      "kind": "text",
+      "bottom": 490.78,
+      "sample": "<b>Repository root (R):</b>"
+    },
+    {
+      "page": 24,
+      "kind": "text",
+      "bottom": 473.18,
+      "sample": "C:/Users/bombe/OneDrive/Documents/ChatGPT/Ruang Kamare"
+    },
+    {
+      "page": 24,
+      "kind": "text",
+      "bottom": 454.48,
+      "sample": "<b>iPhone scan (IP):</b> R / roomscan-reconstruction/data/20"
+    },
+    {
+      "page": 24,
+      "kind": "text",
+      "bottom": 398.68,
+      "sample": "Current model: IP / exports/iphone-full-room.glb<br/>Interac"
+    },
+    {
+      "page": 24,
+      "kind": "text",
+      "bottom": 349.58,
+      "sample": "Core review records: analysis/fixed-verification.json; fixed"
+    },
+    {
+      "page": 24,
+      "kind": "text",
+      "bottom": 298.48,
+      "sample": "Backups: IP / backups/before-fix-20261027 (original delivery"
+    },
+    {
+      "page": 24,
+      "kind": "text",
+      "bottom": 486.88,
+      "sample": "Implementation entry points"
+    },
+    {
+      "page": 24,
+      "kind": "text",
+      "bottom": 442.28,
+      "sample": "<b>09_merge_export.py</b><br/>Default preserve policy; bakes"
+    },
+    {
+      "page": 24,
+      "kind": "text",
+      "bottom": 400.68,
+      "sample": "<b>16_solve_frame.py / 18_measure_planes.py</b><br/>Constrai"
+    },
+    {
+      "page": 24,
+      "kind": "text",
+      "bottom": 371.28,
+      "sample": "<b>19_verify_geometry.py / 11_gate2_verify.py</b><br/>Writte"
+    },
+    {
+      "page": 24,
+      "kind": "text",
+      "bottom": 329.68,
+      "sample": "<b>05_seed_cloud.py / 07_train_zone.py</b><br/>Future correc"
+    },
+    {
+      "page": 24,
+      "kind": "text",
+      "bottom": 288.08,
+      "sample": "<b>room-viewer.js / test-controls.mjs</b><br/>Viewer behavio"
+    },
+    {
+      "page": 24,
+      "kind": "text",
+      "bottom": 238.98,
+      "sample": "Do not run old training scripts with corrected cameras and l"
+    },
+    {
+      "page": 25,
+      "kind": "text",
+      "bottom": 536.68,
+      "sample": "Recorded settings: audit these before choosing a pilot"
+    },
+    {
+      "page": 25,
+      "kind": "text",
+      "bottom": 516.48,
+      "sample": "These are effective historical settings and current mesh com"
+    },
+    {
+      "page": 25,
+      "kind": "table",
+      "bottom": 200.08
+    },
+    {
+      "page": 25,
+      "kind": "text",
+      "bottom": 163.68,
+      "sample": "Evidence: implementation/iphone-zone-0..2-config.json and ip"
+    },
+    {
+      "page": 25,
+      "kind": "text",
+      "bottom": 134.28,
+      "sample": "Current iPhone work used the RTX 5080 and 16 CPU threads. Ea"
+    },
+    {
+      "page": 26,
+      "kind": "text",
+      "bottom": 536.68,
+      "sample": "Exact model identity and reproducibility"
+    },
+    {
+      "page": 26,
+      "kind": "text",
+      "bottom": 516.48,
+      "sample": "All six binary hashes below were recalculated while preparin"
+    },
+    {
+      "page": 26,
+      "kind": "text",
+      "bottom": 490.78,
+      "sample": "<b>Current iPhone preserve export</b> | 1,082,185 triangles "
+    },
+    {
+      "page": 26,
+      "kind": "text",
+      "bottom": 478.18,
+      "sample": "4693a1e608b898383ffe6365e9fc3c5193874cdad90c7533a24e0ac3ad5c"
+    },
+    {
+      "page": 26,
+      "kind": "text",
+      "bottom": 454.48,
+      "sample": "<b>Previous harmful iPhone trimmed export</b> | 957,841 tria"
+    },
+    {
+      "page": 26,
+      "kind": "text",
+      "bottom": 441.88,
+      "sample": "090626bc4ddad428449a4ab1158417461c1976f6f16760c3709c009c4f55"
+    },
+    {
+      "page": 26,
+      "kind": "text",
+      "bottom": 418.18,
+      "sample": "<b>Codex Nikon 034 - raw mesh</b> | 576,595 triangles | 41,9"
+    },
+    {
+      "page": 26,
+      "kind": "text",
+      "bottom": 405.58,
+      "sample": "fc123e86a9160448ebfb0f2af69a11c49385b690390546a80cb68afb3410"
+    },
+    {
+      "page": 26,
+      "kind": "text",
+      "bottom": 381.88,
+      "sample": "<b>Codex Nikon 034 - display wrapper</b> | 576,595 triangles"
+    },
+    {
+      "page": 26,
+      "kind": "text",
+      "bottom": 369.28,
+      "sample": "b87af5856cee095e42100c3a55e981d81e242827a013c05c29f7c2b63822"
+    },
+    {
+      "page": 26,
+      "kind": "text",
+      "bottom": 345.58,
+      "sample": "<b>Accepted Samsung - full</b> | 9,080,740 triangles | 425,8"
+    },
+    {
+      "page": 26,
+      "kind": "text",
+      "bottom": 332.98,
+      "sample": "c65f0f304c97216c858056446b2a0faa80ce81fc7bed47715e071dcfeab5"
+    },
+    {
+      "page": 26,
+      "kind": "text",
+      "bottom": 309.28,
+      "sample": "<b>Accepted Samsung - roofless</b> | 8,569,710 triangles | 4"
+    },
+    {
+      "page": 26,
+      "kind": "text",
+      "bottom": 296.68,
+      "sample": "199fea0205148b122d77d033615ad7e4a1d6231a3f7e5dad7bdcaa3c9047"
+    },
+    {
+      "page": 26,
+      "kind": "text",
+      "bottom": 258.28,
+      "sample": "The current iPhone rebuild also reproduced byte-identical ou"
+    },
+    {
+      "page": 27,
+      "kind": "text",
+      "bottom": 536.68,
+      "sample": "Evidence register and reading order"
+    },
+    {
+      "page": 27,
+      "kind": "text",
+      "bottom": 516.48,
+      "sample": "[Sxx] references in the report map to copied records in the "
+    },
+    {
+      "page": 27,
+      "kind": "text",
+      "bottom": 493.28,
+      "sample": "<b>S01</b> / fixed-verification.json"
+    },
+    {
+      "page": 27,
+      "kind": "text",
+      "bottom": 481.08,
+      "sample": "Current combined verdict and final gate results. Authoritati"
+    },
+    {
+      "page": 27,
+      "kind": "text",
+      "bottom": 439.28,
+      "sample": "<b>S02</b> / merge-report.json"
+    },
+    {
+      "page": 27,
+      "kind": "text",
+      "bottom": 427.08,
+      "sample": "Current export accounting: preserve policy, zero compact fac"
+    },
+    {
+      "page": 27,
+      "kind": "text",
+      "bottom": 385.28,
+      "sample": "<b>S03</b> / fixed-transforms.json"
+    },
+    {
+      "page": 27,
+      "kind": "text",
+      "bottom": 373.08,
+      "sample": "Final per-zone coordinate/scale transformations; final regis"
+    },
+    {
+      "page": 27,
+      "kind": "text",
+      "bottom": 331.28,
+      "sample": "<b>S04</b> / fixed-geometry-check.json"
+    },
+    {
+      "page": 27,
+      "kind": "text",
+      "bottom": 319.08,
+      "sample": "Written-GLB geometry, floor, rotation and camera-projection "
+    },
+    {
+      "page": 27,
+      "kind": "text",
+      "bottom": 277.28,
+      "sample": "<b>S05</b> / fixed-controls-check.json"
+    },
+    {
+      "page": 27,
+      "kind": "text",
+      "bottom": 265.08,
+      "sample": "33 browser/control/performance/offline checks and renderer e"
+    },
+    {
+      "page": 27,
+      "kind": "text",
+      "bottom": 223.28,
+      "sample": "<b>S06</b> / fixed-rebuild-check.json"
+    },
+    {
+      "page": 27,
+      "kind": "text",
+      "bottom": 211.08,
+      "sample": "Byte-identical rebuild and all-compact-source-face preservat"
+    },
+    {
+      "page": 27,
+      "kind": "text",
+      "bottom": 169.28,
+      "sample": "<b>S07</b> / findings.json"
+    },
+    {
+      "page": 27,
+      "kind": "text",
+      "bottom": 157.08,
+      "sample": "Causal cleanup findings and previous-delivery triangle arith"
+    },
+    {
+      "page": 27,
+      "kind": "text",
+      "bottom": 493.28,
+      "sample": "<b>S08</b> / render-info.json"
+    },
+    {
+      "page": 27,
+      "kind": "text",
+      "bottom": 481.08,
+      "sample": "Controlled ablation rendering conditions and stages."
+    },
+    {
+      "page": 27,
+      "kind": "text",
+      "bottom": 439.28,
+      "sample": "<b>S09</b> / floor-measurements.json"
+    },
+    {
+      "page": 27,
+      "kind": "text",
+      "bottom": 427.08,
+      "sample": "Measured floor/upper-plane evidence; distinguish countertop "
+    },
+    {
+      "page": 27,
+      "kind": "text",
+      "bottom": 385.28,
+      "sample": "<b>S10</b> / metric-scales.json"
+    },
+    {
+      "page": 27,
+      "kind": "text",
+      "bottom": 373.08,
+      "sample": "Fresh depth-based scale estimates by original component."
+    },
+    {
+      "page": 27,
+      "kind": "text",
+      "bottom": 331.28,
+      "sample": "<b>S11</b> / bridge-dense-fit.json"
+    },
+    {
+      "page": 27,
+      "kind": "text",
+      "bottom": 319.08,
+      "sample": "PRELIMINARY fit with duplicated pair/36 rows. Superseded by "
+    },
+    {
+      "page": 27,
+      "kind": "text",
+      "bottom": 277.28,
+      "sample": "<b>S12</b> / IPHONE_RECONSTRUCTION_REPORT.md"
+    },
+    {
+      "page": 27,
+      "kind": "text",
+      "bottom": 265.08,
+      "sample": "PRIOR-AGENT report: original pipeline record and claimed met"
+    },
+    {
+      "page": 27,
+      "kind": "text",
+      "bottom": 223.28,
+      "sample": "<b>S13</b> / model-merge.json"
+    },
+    {
+      "page": 27,
+      "kind": "text",
+      "bottom": 211.08,
+      "sample": "Original archived walking-speed join; preserved for diagnosi"
+    },
+    {
+      "page": 27,
+      "kind": "text",
+      "bottom": 169.28,
+      "sample": "<b>S14</b> / README.md"
+    },
+    {
+      "page": 27,
+      "kind": "text",
+      "bottom": 157.08,
+      "sample": "Accepted Samsung release workflow and explicit limitations."
+    },
+    {
+      "page": 28,
+      "kind": "text",
+      "bottom": 536.68,
+      "sample": "Historical sources and image provenance"
+    },
+    {
+      "page": 28,
+      "kind": "text",
+      "bottom": 516.48,
+      "sample": "[Sxx] references in the report map to copied records in the "
+    },
+    {
+      "page": 28,
+      "kind": "text",
+      "bottom": 493.28,
+      "sample": "<b>S15</b> / cleanup-report.json"
+    },
+    {
+      "page": 28,
+      "kind": "text",
+      "bottom": 481.08,
+      "sample": "Samsung cleanup counts, texture hashes, inferred repair and "
+    },
+    {
+      "page": 28,
+      "kind": "text",
+      "bottom": 439.28,
+      "sample": "<b>S16</b> / manifest.json"
+    },
+    {
+      "page": 28,
+      "kind": "text",
+      "bottom": 427.08,
+      "sample": "Accepted Samsung release manifest; exact model paths/bytes/h"
+    },
+    {
+      "page": 28,
+      "kind": "text",
+      "bottom": 385.28,
+      "sample": "<b>S17</b> / reconstruction-report.json"
+    },
+    {
+      "page": 28,
+      "kind": "text",
+      "bottom": 373.08,
+      "sample": "Samsung capture, training, alignment and source-view checks."
+    },
+    {
+      "page": 28,
+      "kind": "text",
+      "bottom": 331.28,
+      "sample": "<b>S18</b> / selection.json"
+    },
+    {
+      "page": 28,
+      "kind": "text",
+      "bottom": 319.08,
+      "sample": "Samsung selected depth-supervised bedroom and repaired bathr"
+    },
+    {
+      "page": 28,
+      "kind": "text",
+      "bottom": 277.28,
+      "sample": "<b>S19</b> / RECONSTRUCTION_HANDOFF_2026-10-24.md"
+    },
+    {
+      "page": 28,
+      "kind": "text",
+      "bottom": 265.08,
+      "sample": "Codex Oct 24 Nikon failure handoff; scope, settings, hashes "
+    },
+    {
+      "page": 28,
+      "kind": "text",
+      "bottom": 223.28,
+      "sample": "<b>S20</b> / native-camera-kitchen-status.json"
+    },
+    {
+      "page": 28,
+      "kind": "text",
+      "bottom": 211.08,
+      "sample": "Codex Nikon 034 quality_rejected record; not whole-room comp"
+    },
+    {
+      "page": 28,
+      "kind": "text",
+      "bottom": 169.28,
+      "sample": "<b>S21</b> / config.json"
+    },
+    {
+      "page": 28,
+      "kind": "text",
+      "bottom": 157.08,
+      "sample": "Codex Nikon 034 effective training configuration."
+    },
+    {
+      "page": 28,
+      "kind": "text",
+      "bottom": 493.28,
+      "sample": "<b>S22</b> / ready.json"
+    },
+    {
+      "page": 28,
+      "kind": "text",
+      "bottom": 481.08,
+      "sample": "Codex Nikon local dataset readiness record."
+    },
+    {
+      "page": 28,
+      "kind": "text",
+      "bottom": 439.28,
+      "sample": "<b>S23</b> / geometry-plan.json"
+    },
+    {
+      "page": 28,
+      "kind": "text",
+      "bottom": 427.08,
+      "sample": "Codex Nikon geometry plan, native-pixel crops and auxiliary "
+    },
+    {
+      "page": 28,
+      "kind": "text",
+      "bottom": 385.28,
+      "sample": "<b>S24</b> / 034-diagnostic.json"
+    },
+    {
+      "page": 28,
+      "kind": "text",
+      "bottom": 373.08,
+      "sample": "Later diagnostic of the same Codex 034 binary; image metrics"
+    },
+    {
+      "page": 28,
+      "kind": "text",
+      "bottom": 331.28,
+      "sample": "<b>S25</b> / Pasted text.txt"
+    },
+    {
+      "page": 28,
+      "kind": "text",
+      "bottom": 319.08,
+      "sample": "User-pasted prior-agent brief; source context, not a system "
+    },
+    {
+      "page": 28,
+      "kind": "text",
+      "bottom": 277.28,
+      "sample": "<b>S26</b> / frames-meta.json"
+    },
+    {
+      "page": 28,
+      "kind": "text",
+      "bottom": 265.08,
+      "sample": "iPhone decoded/selected frame metadata and dimensions."
+    },
+    {
+      "page": 28,
+      "kind": "text",
+      "bottom": 223.28,
+      "sample": "<b>S27</b> / provenance.json"
+    },
+    {
+      "page": 28,
+      "kind": "text",
+      "bottom": 211.08,
+      "sample": "Separate metric-depth subset provenance and explicit output "
+    },
+    {
+      "page": 28,
+      "kind": "text",
+      "bottom": 169.28,
+      "sample": "<b>S28</b> / FRAME.json"
+    },
+    {
+      "page": 28,
+      "kind": "text",
+      "bottom": 157.08,
+      "sample": "Current corrected-camera FRAME.json; frozen checkpoint datas"
+    },
+    {
+      "page": 28,
+      "kind": "text",
+      "bottom": 89.2,
+      "sample": "Image provenance: F01/F04 are user screenshots; F02/F15-F22 "
+    },
+    {
+      "page": 28,
+      "kind": "text",
+      "bottom": 52.2,
+      "sample": "Chat provenance: codex-nikon-provenance.json contains releva"
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "assets": {
+    "checked_at": "2026-10-27T11:33:39.447848+00:00",
+    "anonymous_http_assets": [
+      {
+        "path": "cameras.json",
+        "curl_result": 0,
+        "bytes": 782387,
+        "sha256": "b4ee124d0f0438d892e9cedd46bb342a9f96897713d0b39b783fb281776f5491",
+        "origin_sha256": "b4ee124d0f0438d892e9cedd46bb342a9f96897713d0b39b783fb281776f5491",
+        "cloudflare_detection_added": false,
+        "passed": true,
+        "error": ""
+      },
+      {
+        "path": "index.html",
+        "curl_result": 0,
+        "bytes": 4592,
+        "sha256": "de07a3cea186a0ff0d402cf93365dc552638b542f878386e80080fe2b7e8c2d8",
+        "origin_sha256": "735f7855c6c9b9a7167b0ba5fe37b11a43988b1986d2855cc4ba5282936fa570",
+        "cloudflare_detection_added": true,
+        "passed": true,
+        "error": ""
+      },
+      {
+        "path": "robots.txt",
+        "curl_result": 0,
+        "bytes": 28,
+        "sha256": "a8f31103361fca68bef71fc69cff844b7c23bd3d64d2b872d74690cbda656bfc",
+        "origin_sha256": "a8f31103361fca68bef71fc69cff844b7c23bd3d64d2b872d74690cbda656bfc",
+        "cloudflare_detection_added": false,
+        "passed": true,
+        "error": ""
+      },
+      {
+        "path": "room-viewer.bundle.js",
+        "curl_result": 0,
+        "bytes": 685400,
+        "sha256": "2b4f9bab1bcc63a3760910f1cb2be62cb1c5ac26db7a112730871b4a7d7d1d64",
+        "origin_sha256": "2b4f9bab1bcc63a3760910f1cb2be62cb1c5ac26db7a112730871b4a7d7d1d64",
+        "cloudflare_detection_added": false,
+        "passed": true,
+        "error": ""
+      },
+      {
+        "path": "sources/frame_0000903.jpg",
+        "curl_result": 0,
+        "bytes": 218338,
+        "sha256": "544835ade72c22594fbfad011d60e2358579b71922407f7abdf24509439853a0",
+        "origin_sha256": "544835ade72c22594fbfad011d60e2358579b71922407f7abdf24509439853a0",
+        "cloudflare_detection_added": false,
+        "passed": true,
+        "error": ""
+      },
+      {
+        "path": "sources/frame_0000999.jpg",
+        "curl_result": 0,
+        "bytes": 287839,
+        "sha256": "3af470bb2687de65bb8f574f06348a7ebda7dc6302bce7aa8f5c49515d1854eb",
+        "origin_sha256": "3af470bb2687de65bb8f574f06348a7ebda7dc6302bce7aa8f5c49515d1854eb",
+        "cloudflare_detection_added": false,
+        "passed": true,
+        "error": ""
+      },
+      {
+        "path": "sources/frame_0001398.jpg",
+        "curl_result": 0,
+        "bytes": 209011,
+        "sha256": "a468d1455616eca37fd99c60cfe22bff7b02eca88b601a60642cb3cfde16aa41",
+        "origin_sha256": "a468d1455616eca37fd99c60cfe22bff7b02eca88b601a60642cb3cfde16aa41",
+        "cloudflare_detection_added": false,
+        "passed": true,
+        "error": ""
+      },
+      {
+        "path": "sources/frame_0001612.jpg",
+        "curl_result": 0,
+        "bytes": 263857,
+        "sha256": "43a803084c79304cdc3abef83f42f73c3207bf39d590c7474d752fbbdb233a55",
+        "origin_sha256": "43a803084c79304cdc3abef83f42f73c3207bf39d590c7474d752fbbdb233a55",
+        "cloudflare_detection_added": false,
+        "passed": true,
+        "error": ""
+      },
+      {
+        "path": "sources/frame_0002402.jpg",
+        "curl_result": 0,
+        "bytes": 274875,
+        "sha256": "8a4cbada269b96b02bca186868eb6c5583565386ebb5352b09e9073c4b48f5dd",
+        "origin_sha256": "8a4cbada269b96b02bca186868eb6c5583565386ebb5352b09e9073c4b48f5dd",
+        "cloudflare_detection_added": false,
+        "passed": true,
+        "error": ""
+      },
+      {
+        "path": "sources/frame_0003606.jpg",
+        "curl_result": 0,
+        "bytes": 259433,
+        "sha256": "9aafb22ee5af6a806f432622cdbbb405b5551ad1df69773922c2382cacf94f8a",
+        "origin_sha256": "9aafb22ee5af6a806f432622cdbbb405b5551ad1df69773922c2382cacf94f8a",
+        "cloudflare_detection_added": false,
+        "passed": true,
+        "error": ""
+      },
+      {
+        "path": "sources/frame_0004297.jpg",
+        "curl_result": 0,
+        "bytes": 223728,
+        "sha256": "bff0d428b383a592fca70bc5e7de18109fd3c86e1ca7531f1d53f897354bca36",
+        "origin_sha256": "bff0d428b383a592fca70bc5e7de18109fd3c86e1ca7531f1d53f897354bca36",
+        "cloudflare_detection_added": false,
+        "passed": true,
+        "error": ""
+      },
+      {
+        "path": "sources/frame_0004400.jpg",
+        "curl_result": 0,
+        "bytes": 248068,
+        "sha256": "e5923f2cef8f1d571329a9767bce8c0e501fefea8926d375a9c58f0d227a9648",
+        "origin_sha256": "e5923f2cef8f1d571329a9767bce8c0e501fefea8926d375a9c58f0d227a9648",
+        "cloudflare_detection_added": false,
+        "passed": true,
+        "error": ""
+      }
+    ],
+    "all_passed": true
+  },
+  "backup_complete": true,
+  "backup_sha256_record": "bce181f0de61e8979cd111deb7786759ca1fce0a3c2f548f67a4e9664f4e91a0  /var/lib/vz/dump/vzdump-lxc-710-2026_10_27-18_33_36.tar.zst",
+  "backup_completed_at": "2026-10-27T18:34:55+07:00",
+  "backup_log_tail": "Backup /var/lib/vz/dump/vzdump-lxc-710-2026_10_27-18_33_36.tar.zst, 938265188 bytes, mode 640",
+  "connector_ready": {
+    "status": 200,
+    "readyConnections": 4,
+    "connectorId": "a2eba52c-134c-4c1a-a40d-294c869734ad"
+  },
+  "native_server_sha256": "16f8963b043a766317497ee4281f4cf39c6b2190fafaaed51334734723c8b207"
+}

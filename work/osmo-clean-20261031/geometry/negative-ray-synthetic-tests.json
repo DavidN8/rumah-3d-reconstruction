@@ -1,0 +1,14 @@
+{
+  "passed": 6,
+  "checks": [
+    "actual CPU triangle intersection flags two distinct-timestamp, distinct-point early contradictions",
+    "two lens views at the same timestamp cannot satisfy temporal independence",
+    "repeated evidence from a single sparse point cannot reject a face",
+    "camera rotation without translated baseline cannot satisfy the witness gate",
+    "observed surface support vetoes deleting the whole triangle",
+    "no-hit and unknown evidence never rejects a face"
+  ],
+  "gpu_used": false,
+  "capture_files_read": false,
+  "mesh_edited": false
+}

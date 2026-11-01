@@ -1,0 +1,65 @@
+{
+  "source": "C:\\Users\\bombe\\OneDrive\\Documents\\ChatGPT\\Ruang Kamare\\roomscan-reconstruction\\data\\20261031_OSMO360\\clean-v3\\explicit-bath-v3\\training\\bath-depth-v1\\step-000012000.ckpt\\splat.ply",
+  "output": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\explicit-bath-depth.sog",
+  "sourceSha256": "56ebc3274a7f5f88ee022ad248cdc374f8c164a491ddee4385faeb5bf961b1cf",
+  "sourceBytes": 130852506,
+  "bytes": 12946912,
+  "sha256": "d2546dbad0b9eb2cd0c8919c6026e35edc1142c742c37aa82441e1c3358386d8",
+  "splats": 797875,
+  "shDegree": 2,
+  "sourceShDegree": 2,
+  "model": "antialiased",
+  "sourceCountPreserved": true,
+  "sourceShDegreePreserved": true,
+  "under50MB": true,
+  "format": "sog",
+  "tool": "@playcanvas/splat-transform 3.10.3",
+  "command": [
+    "node",
+    "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\converter\\node_modules\\@playcanvas\\splat-transform\\bin\\cli.mjs",
+    "-g",
+    "0",
+    "--max-workers",
+    "2",
+    "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\explicit-bath-depth.mip-tagged-input.ply",
+    "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\explicit-bath-depth.sog"
+  ],
+  "primitiveDeclaration": "Mip supplied by wrapper, consistent with the audited old v4 and planned fresh mip training. Verify training config before using on another scene.",
+  "sourceModification": "Temporary header-only Mip comment added; all binary splat bytes unchanged. Original file unmodified.",
+  "members": [
+    {
+      "name": "means_l.webp",
+      "bytes": 2343132
+    },
+    {
+      "name": "means_u.webp",
+      "bytes": 465536
+    },
+    {
+      "name": "quats.webp",
+      "bytes": 2600786
+    },
+    {
+      "name": "scales.webp",
+      "bytes": 2233082
+    },
+    {
+      "name": "sh0.webp",
+      "bytes": 2572232
+    },
+    {
+      "name": "shN_centroids.webp",
+      "bytes": 1289494
+    },
+    {
+      "name": "shN_labels.webp",
+      "bytes": 1425868
+    },
+    {
+      "name": "meta.json",
+      "bytes": 15834
+    }
+  ],
+  "seconds": 5.074805200012634,
+  "validation": "Count/SH-degree/model metadata only. Visual fidelity must be checked separately against original Gaussian renders; not a phone loading benchmark."
+}

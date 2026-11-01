@@ -1,0 +1,58 @@
+{
+  "method": "Pattern estimate against the explicit root .gitignore, with basename globs, root directory prefixes, any-directory patterns and negations used by this file. No Git metadata initialized. Not a git status result.",
+  "filesConsidered": 19959,
+  "candidateFiles": 1254,
+  "candidateLogicalBytes": 51766706,
+  "allModelPathsIgnored": true,
+  "modelPathsChecked": 81,
+  "largestRemainingCandidates": [
+    {
+      "path": "work/cleanup-20261031/protected-after.json",
+      "bytes": 6009558
+    },
+    {
+      "path": "work/cleanup-20261031/protected-before.json",
+      "bytes": 6009347
+    },
+    {
+      "path": "work/recovery-report/reference_pack/records/allviews-fast-packed-verification.json",
+      "bytes": 5451190
+    },
+    {
+      "path": "work/recovery-report/reference_pack/records/allviews-fast-deviation-summary.json",
+      "bytes": 4633954
+    },
+    {
+      "path": "work/recovery-report/reference_pack/records/living-compact-fast-deviation.json",
+      "bytes": 3684196
+    },
+    {
+      "path": "work/recovery-report/reference_pack/records/allviews-living-fast-deviation.json",
+      "bytes": 3679187
+    },
+    {
+      "path": "work/osmo-parity-20261101/review/poisson-projected/chart-view-selection.json",
+      "bytes": 2351436
+    },
+    {
+      "path": "work/osmo-parity-20261101/review/tsdf-pilot/chart-view-selection.json",
+      "bytes": 1409184
+    },
+    {
+      "path": "work/recovery-report/reference_pack/records/delivery-cameras.json",
+      "bytes": 782387
+    },
+    {
+      "path": "work/osmo-parity-20261101/review/calibrated-occupied-cameras.json",
+      "bytes": 772908
+    },
+    {
+      "path": "work/osmo-parity-20261101/review/occupied-cameras.json",
+      "bytes": 772803
+    },
+    {
+      "path": "work/osmo-ux-report-20261031/evidence.json",
+      "bytes": 695843
+    }
+  ]
+}

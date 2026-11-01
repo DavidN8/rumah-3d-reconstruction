@@ -1,0 +1,780 @@
+{
+  "reference": "baseline-trusted-v3",
+  "candidate": "dense-supported-05cm",
+  "observation_count": 4711,
+  "in_sample_consistency_only": true,
+  "matrix_reference_row_candidate_column": {
+    "near": {
+      "near": 2834,
+      "early": 26,
+      "behind": 23,
+      "missing": 2
+    },
+    "early": {
+      "near": 21,
+      "early": 894,
+      "behind": 2,
+      "missing": 0
+    },
+    "behind": {
+      "near": 39,
+      "early": 1,
+      "behind": 771,
+      "missing": 3
+    },
+    "missing": {
+      "near": 34,
+      "early": 11,
+      "behind": 31,
+      "missing": 19
+    }
+  },
+  "new_near": 94,
+  "lost_near": 51,
+  "new_early": 38,
+  "resolved_early": 23,
+  "per_changed_image": [
+    {
+      "name": "cam0/frame_000002.jpg",
+      "new_near": 1,
+      "lost_near": 0,
+      "new_early": 0,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam0/frame_000006.jpg",
+      "new_near": 0,
+      "lost_near": 1,
+      "new_early": 0,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam0/frame_000007.jpg",
+      "new_near": 1,
+      "lost_near": 0,
+      "new_early": 0,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam0/frame_000011.jpg",
+      "new_near": 0,
+      "lost_near": 1,
+      "new_early": 0,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam0/frame_000012.jpg",
+      "new_near": 0,
+      "lost_near": 0,
+      "new_early": 1,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam0/frame_000013.jpg",
+      "new_near": 1,
+      "lost_near": 1,
+      "new_early": 1,
+      "resolved_early": 1
+    },
+    {
+      "name": "cam0/frame_000016.jpg",
+      "new_near": 1,
+      "lost_near": 0,
+      "new_early": 0,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam0/frame_000017.jpg",
+      "new_near": 1,
+      "lost_near": 0,
+      "new_early": 0,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam0/frame_000021.jpg",
+      "new_near": 2,
+      "lost_near": 1,
+      "new_early": 1,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam0/frame_000030.jpg",
+      "new_near": 2,
+      "lost_near": 1,
+      "new_early": 0,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam0/frame_000031.jpg",
+      "new_near": 1,
+      "lost_near": 0,
+      "new_early": 0,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam0/frame_000032.jpg",
+      "new_near": 0,
+      "lost_near": 1,
+      "new_early": 1,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam0/frame_000033.jpg",
+      "new_near": 1,
+      "lost_near": 0,
+      "new_early": 0,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam0/frame_000036.jpg",
+      "new_near": 1,
+      "lost_near": 0,
+      "new_early": 0,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam0/frame_000038.jpg",
+      "new_near": 1,
+      "lost_near": 0,
+      "new_early": 0,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam0/frame_000039.jpg",
+      "new_near": 2,
+      "lost_near": 0,
+      "new_early": 1,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam0/frame_000040.jpg",
+      "new_near": 2,
+      "lost_near": 0,
+      "new_early": 2,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam0/frame_000042.jpg",
+      "new_near": 1,
+      "lost_near": 1,
+      "new_early": 1,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam0/frame_000047.jpg",
+      "new_near": 1,
+      "lost_near": 0,
+      "new_early": 0,
+      "resolved_early": 1
+    },
+    {
+      "name": "cam0/frame_000049.jpg",
+      "new_near": 2,
+      "lost_near": 0,
+      "new_early": 0,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam0/frame_000050.jpg",
+      "new_near": 1,
+      "lost_near": 1,
+      "new_early": 2,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam0/frame_000051.jpg",
+      "new_near": 3,
+      "lost_near": 1,
+      "new_early": 1,
+      "resolved_early": 1
+    },
+    {
+      "name": "cam0/frame_000052.jpg",
+      "new_near": 2,
+      "lost_near": 1,
+      "new_early": 0,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam0/frame_000053.jpg",
+      "new_near": 0,
+      "lost_near": 1,
+      "new_early": 0,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam0/frame_000054.jpg",
+      "new_near": 3,
+      "lost_near": 0,
+      "new_early": 0,
+      "resolved_early": 1
+    },
+    {
+      "name": "cam0/frame_000055.jpg",
+      "new_near": 0,
+      "lost_near": 1,
+      "new_early": 1,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam0/frame_000058.jpg",
+      "new_near": 2,
+      "lost_near": 0,
+      "new_early": 0,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam0/frame_000062.jpg",
+      "new_near": 0,
+      "lost_near": 1,
+      "new_early": 1,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam0/frame_000063.jpg",
+      "new_near": 1,
+      "lost_near": 1,
+      "new_early": 1,
+      "resolved_early": 1
+    },
+    {
+      "name": "cam0/frame_000066.jpg",
+      "new_near": 0,
+      "lost_near": 1,
+      "new_early": 0,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam0/frame_000067.jpg",
+      "new_near": 2,
+      "lost_near": 1,
+      "new_early": 0,
+      "resolved_early": 1
+    },
+    {
+      "name": "cam0/frame_000068.jpg",
+      "new_near": 1,
+      "lost_near": 0,
+      "new_early": 0,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam0/frame_000071.jpg",
+      "new_near": 1,
+      "lost_near": 0,
+      "new_early": 0,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam0/frame_000075.jpg",
+      "new_near": 0,
+      "lost_near": 2,
+      "new_early": 2,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam0/frame_000076.jpg",
+      "new_near": 1,
+      "lost_near": 0,
+      "new_early": 0,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam0/frame_000077.jpg",
+      "new_near": 1,
+      "lost_near": 1,
+      "new_early": 0,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam0/frame_000078.jpg",
+      "new_near": 1,
+      "lost_near": 0,
+      "new_early": 0,
+      "resolved_early": 1
+    },
+    {
+      "name": "cam0/frame_000079.jpg",
+      "new_near": 1,
+      "lost_near": 0,
+      "new_early": 0,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam0/frame_000080.jpg",
+      "new_near": 2,
+      "lost_near": 0,
+      "new_early": 0,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam0/frame_000085.jpg",
+      "new_near": 1,
+      "lost_near": 1,
+      "new_early": 1,
+      "resolved_early": 1
+    },
+    {
+      "name": "cam0/frame_000087.jpg",
+      "new_near": 1,
+      "lost_near": 0,
+      "new_early": 0,
+      "resolved_early": 1
+    },
+    {
+      "name": "cam0/frame_000089.jpg",
+      "new_near": 0,
+      "lost_near": 0,
+      "new_early": 0,
+      "resolved_early": 1
+    },
+    {
+      "name": "cam0/frame_000092.jpg",
+      "new_near": 0,
+      "lost_near": 1,
+      "new_early": 1,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam0/frame_000093.jpg",
+      "new_near": 0,
+      "lost_near": 1,
+      "new_early": 1,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam0/frame_000095.jpg",
+      "new_near": 1,
+      "lost_near": 0,
+      "new_early": 0,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam0/frame_000107.jpg",
+      "new_near": 1,
+      "lost_near": 0,
+      "new_early": 0,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam0/frame_000109.jpg",
+      "new_near": 0,
+      "lost_near": 1,
+      "new_early": 0,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam0/frame_000110.jpg",
+      "new_near": 0,
+      "lost_near": 1,
+      "new_early": 0,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam0/frame_000121.jpg",
+      "new_near": 1,
+      "lost_near": 0,
+      "new_early": 0,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam0/frame_000122.jpg",
+      "new_near": 1,
+      "lost_near": 0,
+      "new_early": 0,
+      "resolved_early": 1
+    },
+    {
+      "name": "cam0/frame_000123.jpg",
+      "new_near": 1,
+      "lost_near": 0,
+      "new_early": 0,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam0/frame_000125.jpg",
+      "new_near": 1,
+      "lost_near": 1,
+      "new_early": 1,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam0/frame_000126.jpg",
+      "new_near": 1,
+      "lost_near": 0,
+      "new_early": 0,
+      "resolved_early": 1
+    },
+    {
+      "name": "cam0/frame_000129.jpg",
+      "new_near": 1,
+      "lost_near": 0,
+      "new_early": 0,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam1/frame_000007.jpg",
+      "new_near": 2,
+      "lost_near": 0,
+      "new_early": 0,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam1/frame_000008.jpg",
+      "new_near": 1,
+      "lost_near": 0,
+      "new_early": 0,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam1/frame_000010.jpg",
+      "new_near": 1,
+      "lost_near": 1,
+      "new_early": 0,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam1/frame_000020.jpg",
+      "new_near": 1,
+      "lost_near": 0,
+      "new_early": 0,
+      "resolved_early": 1
+    },
+    {
+      "name": "cam1/frame_000021.jpg",
+      "new_near": 1,
+      "lost_near": 0,
+      "new_early": 0,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam1/frame_000024.jpg",
+      "new_near": 0,
+      "lost_near": 1,
+      "new_early": 0,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam1/frame_000027.jpg",
+      "new_near": 0,
+      "lost_near": 1,
+      "new_early": 0,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam1/frame_000031.jpg",
+      "new_near": 1,
+      "lost_near": 0,
+      "new_early": 0,
+      "resolved_early": 1
+    },
+    {
+      "name": "cam1/frame_000032.jpg",
+      "new_near": 1,
+      "lost_near": 1,
+      "new_early": 0,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam1/frame_000034.jpg",
+      "new_near": 1,
+      "lost_near": 1,
+      "new_early": 2,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam1/frame_000036.jpg",
+      "new_near": 0,
+      "lost_near": 0,
+      "new_early": 1,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam1/frame_000039.jpg",
+      "new_near": 1,
+      "lost_near": 0,
+      "new_early": 0,
+      "resolved_early": 1
+    },
+    {
+      "name": "cam1/frame_000040.jpg",
+      "new_near": 0,
+      "lost_near": 1,
+      "new_early": 0,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam1/frame_000041.jpg",
+      "new_near": 2,
+      "lost_near": 0,
+      "new_early": 1,
+      "resolved_early": 1
+    },
+    {
+      "name": "cam1/frame_000042.jpg",
+      "new_near": 1,
+      "lost_near": 0,
+      "new_early": 1,
+      "resolved_early": 1
+    },
+    {
+      "name": "cam1/frame_000048.jpg",
+      "new_near": 1,
+      "lost_near": 0,
+      "new_early": 0,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam1/frame_000049.jpg",
+      "new_near": 2,
+      "lost_near": 0,
+      "new_early": 0,
+      "resolved_early": 1
+    },
+    {
+      "name": "cam1/frame_000052.jpg",
+      "new_near": 1,
+      "lost_near": 0,
+      "new_early": 0,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam1/frame_000053.jpg",
+      "new_near": 1,
+      "lost_near": 0,
+      "new_early": 0,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam1/frame_000055.jpg",
+      "new_near": 1,
+      "lost_near": 1,
+      "new_early": 0,
+      "resolved_early": 1
+    },
+    {
+      "name": "cam1/frame_000058.jpg",
+      "new_near": 0,
+      "lost_near": 1,
+      "new_early": 0,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam1/frame_000059.jpg",
+      "new_near": 1,
+      "lost_near": 0,
+      "new_early": 0,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam1/frame_000060.jpg",
+      "new_near": 1,
+      "lost_near": 0,
+      "new_early": 0,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam1/frame_000061.jpg",
+      "new_near": 1,
+      "lost_near": 0,
+      "new_early": 0,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam1/frame_000064.jpg",
+      "new_near": 1,
+      "lost_near": 2,
+      "new_early": 1,
+      "resolved_early": 1
+    },
+    {
+      "name": "cam1/frame_000065.jpg",
+      "new_near": 2,
+      "lost_near": 0,
+      "new_early": 0,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam1/frame_000066.jpg",
+      "new_near": 0,
+      "lost_near": 1,
+      "new_early": 0,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam1/frame_000068.jpg",
+      "new_near": 0,
+      "lost_near": 1,
+      "new_early": 0,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam1/frame_000069.jpg",
+      "new_near": 1,
+      "lost_near": 1,
+      "new_early": 0,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam1/frame_000076.jpg",
+      "new_near": 0,
+      "lost_near": 1,
+      "new_early": 1,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam1/frame_000077.jpg",
+      "new_near": 0,
+      "lost_near": 1,
+      "new_early": 1,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam1/frame_000084.jpg",
+      "new_near": 1,
+      "lost_near": 0,
+      "new_early": 0,
+      "resolved_early": 1
+    },
+    {
+      "name": "cam1/frame_000085.jpg",
+      "new_near": 1,
+      "lost_near": 0,
+      "new_early": 0,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam1/frame_000089.jpg",
+      "new_near": 0,
+      "lost_near": 0,
+      "new_early": 1,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam1/frame_000092.jpg",
+      "new_near": 1,
+      "lost_near": 0,
+      "new_early": 0,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam1/frame_000096.jpg",
+      "new_near": 0,
+      "lost_near": 1,
+      "new_early": 1,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam1/frame_000098.jpg",
+      "new_near": 2,
+      "lost_near": 1,
+      "new_early": 1,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam1/frame_000099.jpg",
+      "new_near": 2,
+      "lost_near": 1,
+      "new_early": 1,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam1/frame_000106.jpg",
+      "new_near": 1,
+      "lost_near": 0,
+      "new_early": 1,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam1/frame_000107.jpg",
+      "new_near": 1,
+      "lost_near": 0,
+      "new_early": 1,
+      "resolved_early": 1
+    },
+    {
+      "name": "cam1/frame_000108.jpg",
+      "new_near": 0,
+      "lost_near": 1,
+      "new_early": 1,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam1/frame_000109.jpg",
+      "new_near": 1,
+      "lost_near": 0,
+      "new_early": 0,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam1/frame_000112.jpg",
+      "new_near": 2,
+      "lost_near": 0,
+      "new_early": 0,
+      "resolved_early": 1
+    },
+    {
+      "name": "cam1/frame_000113.jpg",
+      "new_near": 0,
+      "lost_near": 1,
+      "new_early": 1,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam1/frame_000114.jpg",
+      "new_near": 0,
+      "lost_near": 1,
+      "new_early": 0,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam1/frame_000115.jpg",
+      "new_near": 0,
+      "lost_near": 1,
+      "new_early": 1,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam1/frame_000116.jpg",
+      "new_near": 1,
+      "lost_near": 0,
+      "new_early": 0,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam1/frame_000118.jpg",
+      "new_near": 0,
+      "lost_near": 1,
+      "new_early": 0,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam1/frame_000120.jpg",
+      "new_near": 0,
+      "lost_near": 2,
+      "new_early": 0,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam1/frame_000123.jpg",
+      "new_near": 1,
+      "lost_near": 0,
+      "new_early": 0,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam1/frame_000124.jpg",
+      "new_near": 1,
+      "lost_near": 0,
+      "new_early": 0,
+      "resolved_early": 0
+    },
+    {
+      "name": "cam1/frame_000127.jpg",
+      "new_near": 0,
+      "lost_near": 1,
+      "new_early": 1,
+      "resolved_early": 0
+    }
+  ]
+}

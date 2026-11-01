@@ -1,0 +1,73 @@
+{
+  "image_dir": "C:/Users/bombe/OneDrive/Documents/ChatGPT/Ruang Kamare/roomscan-reconstruction/data/20261031_OSMO360/clean-v3/dataset/images",
+  "camera_mode": "folder",
+  "cameras": [
+    {
+      "prefix": "cam0",
+      "model": "opencv-fisheye",
+      "params": [
+        1048.5285442747695,
+        1048.3303064238082,
+        1914.71533203125,
+        1910.63623046875,
+        0.04586795011188721,
+        0.022022968684015008,
+        -0.014674260646479597,
+        0.001405351585462022
+      ]
+    },
+    {
+      "prefix": "cam1",
+      "model": "opencv-fisheye",
+      "params": [
+        1047.387240841452,
+        1047.157738326829,
+        1911.6976318359375,
+        1926.8194580078125,
+        0.052244144163356696,
+        0.01540256693821909,
+        -0.011822314931383856,
+        0.0009688846457092743
+      ]
+    }
+  ],
+  "rigs": [
+    {
+      "name": "osmo360ii-native-clean-v3",
+      "kind": "dual-fisheye",
+      "members": [
+        {
+          "prefix": "cam0",
+          "rotation": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "fixed": true
+        },
+        {
+          "prefix": "cam1",
+          "rotation": [
+            -0.0007170589957620001,
+            -0.0020039430403666816,
+            0.999996939414836,
+            -0.001261427623124286
+          ],
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "fixed": false,
+          "refine": "axial"
+        }
+      ]
+    }
+  ]
+}

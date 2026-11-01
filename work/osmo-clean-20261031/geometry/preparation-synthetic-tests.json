@@ -1,0 +1,16 @@
+{
+  "passed": 9,
+  "checks": [
+    "two lenses at one timestamp are not two independent training observations",
+    "eval-only and masked train points are excluded",
+    "train point tracks and eval image links remain mutually consistent after text round-trip",
+    "seed colors come only from train RGB, not old points3D colors or eval RGB",
+    "one Y-up similarity preserves projection rays",
+    "repeat-room audit counts cross-visit tracks separately from one-instant lens duplicates",
+    "registration gates count complete synchronized pairs",
+    "fisheye projection round-trips a 100-degree behind-hemisphere ray",
+    "existing seed and prepared model cannot be overwritten"
+  ],
+  "capture_files_read": false,
+  "gpu_used": false
+}

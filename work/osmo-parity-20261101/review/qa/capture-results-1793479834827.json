@@ -1,0 +1,621 @@
+{
+  "results": [
+    {
+      "kind": "fusion-filled",
+      "label": "fridge",
+      "file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\qa\\fusion-filled-fridge.png",
+      "loaded": {
+        "kind": "fusion-filled"
+      },
+      "evidence": {
+        "pose": {
+          "label": "fridge",
+          "source": "cam0/frame_000027_train.jpg",
+          "sourceFrame": 27,
+          "split": "train",
+          "position": [
+            -0.04734322054037422,
+            1.5427764395823702,
+            0.16500877423918853
+          ],
+          "quaternion": [
+            -0.02772637025938751,
+            -0.947378660256456,
+            -0.08549504078119761,
+            0.30723854003810014
+          ],
+          "fov": 75,
+          "width": 1920,
+          "height": 1080,
+          "intrinsics": [
+            703.741701334251,
+            703.741701334251,
+            960,
+            540
+          ],
+          "mask": "fridge-keep.png"
+        }
+      }
+    },
+    {
+      "kind": "fusion-filled",
+      "label": "fan",
+      "file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\qa\\fusion-filled-fan.png",
+      "loaded": {
+        "kind": "fusion-filled"
+      },
+      "evidence": {
+        "pose": {
+          "label": "fan",
+          "source": "cam0/frame_001800_train.jpg",
+          "sourceFrame": 1800,
+          "split": "train",
+          "position": [
+            -0.8176386469064271,
+            0.4255116593924649,
+            0.8534996480900683
+          ],
+          "quaternion": [
+            -0.0036111427560121846,
+            -0.9961398662994274,
+            -0.049848540690604154,
+            0.07216265937430248
+          ],
+          "fov": 75,
+          "width": 1920,
+          "height": 1080,
+          "intrinsics": [
+            703.741701334251,
+            703.741701334251,
+            960,
+            540
+          ],
+          "mask": "fan-keep.png"
+        }
+      }
+    },
+    {
+      "kind": "fusion-filled",
+      "label": "dining",
+      "file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\qa\\fusion-filled-dining.png",
+      "loaded": {
+        "kind": "fusion-filled"
+      },
+      "evidence": {
+        "pose": {
+          "label": "dining",
+          "source": "cam0/frame_001197_train.jpg",
+          "sourceFrame": 1197,
+          "split": "train",
+          "position": [
+            0.7616677170986236,
+            0.7530471853609798,
+            1.059430921517134
+          ],
+          "quaternion": [
+            -0.049835155377638655,
+            0.07576462952175617,
+            0.0037913914957084585,
+            0.9958723831658571
+          ],
+          "fov": 75,
+          "width": 1920,
+          "height": 1080,
+          "intrinsics": [
+            703.741701334251,
+            703.741701334251,
+            960,
+            540
+          ],
+          "mask": "dining-keep.png"
+        }
+      }
+    },
+    {
+      "kind": "fusion-filled",
+      "label": "bathroom",
+      "file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\qa\\fusion-filled-bathroom.png",
+      "loaded": {
+        "kind": "fusion-filled"
+      },
+      "evidence": {
+        "pose": {
+          "label": "bathroom",
+          "source": "cam0/frame_001557_eval.jpg",
+          "sourceFrame": 1557,
+          "split": "eval",
+          "position": [
+            -0.11036735204714103,
+            0.4616502046204495,
+            -3.4100854048200673
+          ],
+          "quaternion": [
+            0,
+            0.8397103441859145,
+            0,
+            0.5430345641551493
+          ],
+          "fov": 75,
+          "width": 1920,
+          "height": 1080,
+          "intrinsics": [
+            703.741701334251,
+            703.741701334251,
+            960,
+            540
+          ],
+          "mask": "bathroom-keep.png"
+        }
+      }
+    },
+    {
+      "kind": "rgb-only-mip",
+      "label": "fridge",
+      "file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\qa\\rgb-only-mip-fridge.png",
+      "loaded": {
+        "kind": "rgb-only-mip",
+        "splats": 1499877
+      },
+      "evidence": {
+        "pose": {
+          "label": "fridge",
+          "source": "cam0/frame_000027_train.jpg",
+          "sourceFrame": 27,
+          "split": "train",
+          "position": [
+            -0.04734322054037422,
+            1.5427764395823702,
+            0.16500877423918853
+          ],
+          "quaternion": [
+            -0.02772637025938751,
+            -0.947378660256456,
+            -0.08549504078119761,
+            0.30723854003810014
+          ],
+          "fov": 75,
+          "width": 1920,
+          "height": 1080,
+          "intrinsics": [
+            703.741701334251,
+            703.741701334251,
+            960,
+            540
+          ],
+          "mask": "fridge-keep.png"
+        },
+        "activeSplats": 1499877
+      }
+    },
+    {
+      "kind": "rgb-only-mip",
+      "label": "fan",
+      "file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\qa\\rgb-only-mip-fan.png",
+      "loaded": {
+        "kind": "rgb-only-mip",
+        "splats": 1499877
+      },
+      "evidence": {
+        "pose": {
+          "label": "fan",
+          "source": "cam0/frame_001800_train.jpg",
+          "sourceFrame": 1800,
+          "split": "train",
+          "position": [
+            -0.8176386469064271,
+            0.4255116593924649,
+            0.8534996480900683
+          ],
+          "quaternion": [
+            -0.0036111427560121846,
+            -0.9961398662994274,
+            -0.049848540690604154,
+            0.07216265937430248
+          ],
+          "fov": 75,
+          "width": 1920,
+          "height": 1080,
+          "intrinsics": [
+            703.741701334251,
+            703.741701334251,
+            960,
+            540
+          ],
+          "mask": "fan-keep.png"
+        },
+        "activeSplats": 1499877
+      }
+    },
+    {
+      "kind": "rgb-only-mip",
+      "label": "dining",
+      "file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\qa\\rgb-only-mip-dining.png",
+      "loaded": {
+        "kind": "rgb-only-mip",
+        "splats": 1499877
+      },
+      "evidence": {
+        "pose": {
+          "label": "dining",
+          "source": "cam0/frame_001197_train.jpg",
+          "sourceFrame": 1197,
+          "split": "train",
+          "position": [
+            0.7616677170986236,
+            0.7530471853609798,
+            1.059430921517134
+          ],
+          "quaternion": [
+            -0.049835155377638655,
+            0.07576462952175617,
+            0.0037913914957084585,
+            0.9958723831658571
+          ],
+          "fov": 75,
+          "width": 1920,
+          "height": 1080,
+          "intrinsics": [
+            703.741701334251,
+            703.741701334251,
+            960,
+            540
+          ],
+          "mask": "dining-keep.png"
+        },
+        "activeSplats": 1499877
+      }
+    },
+    {
+      "kind": "rgb-only-mip",
+      "label": "bathroom",
+      "file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\qa\\rgb-only-mip-bathroom.png",
+      "loaded": {
+        "kind": "rgb-only-mip",
+        "splats": 1499877
+      },
+      "evidence": {
+        "pose": {
+          "label": "bathroom",
+          "source": "cam0/frame_001557_eval.jpg",
+          "sourceFrame": 1557,
+          "split": "eval",
+          "position": [
+            -0.11036735204714103,
+            0.4616502046204495,
+            -3.4100854048200673
+          ],
+          "quaternion": [
+            0,
+            0.8397103441859145,
+            0,
+            0.5430345641551493
+          ],
+          "fov": 75,
+          "width": 1920,
+          "height": 1080,
+          "intrinsics": [
+            703.741701334251,
+            703.741701334251,
+            960,
+            540
+          ],
+          "mask": "bathroom-keep.png"
+        },
+        "activeSplats": 1499877
+      }
+    },
+    {
+      "kind": "rgb-only-3dgs",
+      "label": "fridge",
+      "file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\qa\\rgb-only-3dgs-fridge.png",
+      "loaded": {
+        "kind": "rgb-only-3dgs",
+        "splats": 1499839
+      },
+      "evidence": {
+        "pose": {
+          "label": "fridge",
+          "source": "cam0/frame_000027_train.jpg",
+          "sourceFrame": 27,
+          "split": "train",
+          "position": [
+            -0.04734322054037422,
+            1.5427764395823702,
+            0.16500877423918853
+          ],
+          "quaternion": [
+            -0.02772637025938751,
+            -0.947378660256456,
+            -0.08549504078119761,
+            0.30723854003810014
+          ],
+          "fov": 75,
+          "width": 1920,
+          "height": 1080,
+          "intrinsics": [
+            703.741701334251,
+            703.741701334251,
+            960,
+            540
+          ],
+          "mask": "fridge-keep.png"
+        },
+        "activeSplats": 1499839
+      }
+    },
+    {
+      "kind": "rgb-only-3dgs",
+      "label": "fan",
+      "file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\qa\\rgb-only-3dgs-fan.png",
+      "loaded": {
+        "kind": "rgb-only-3dgs",
+        "splats": 1499839
+      },
+      "evidence": {
+        "pose": {
+          "label": "fan",
+          "source": "cam0/frame_001800_train.jpg",
+          "sourceFrame": 1800,
+          "split": "train",
+          "position": [
+            -0.8176386469064271,
+            0.4255116593924649,
+            0.8534996480900683
+          ],
+          "quaternion": [
+            -0.0036111427560121846,
+            -0.9961398662994274,
+            -0.049848540690604154,
+            0.07216265937430248
+          ],
+          "fov": 75,
+          "width": 1920,
+          "height": 1080,
+          "intrinsics": [
+            703.741701334251,
+            703.741701334251,
+            960,
+            540
+          ],
+          "mask": "fan-keep.png"
+        },
+        "activeSplats": 1499839
+      }
+    },
+    {
+      "kind": "rgb-only-3dgs",
+      "label": "dining",
+      "file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\qa\\rgb-only-3dgs-dining.png",
+      "loaded": {
+        "kind": "rgb-only-3dgs",
+        "splats": 1499839
+      },
+      "evidence": {
+        "pose": {
+          "label": "dining",
+          "source": "cam0/frame_001197_train.jpg",
+          "sourceFrame": 1197,
+          "split": "train",
+          "position": [
+            0.7616677170986236,
+            0.7530471853609798,
+            1.059430921517134
+          ],
+          "quaternion": [
+            -0.049835155377638655,
+            0.07576462952175617,
+            0.0037913914957084585,
+            0.9958723831658571
+          ],
+          "fov": 75,
+          "width": 1920,
+          "height": 1080,
+          "intrinsics": [
+            703.741701334251,
+            703.741701334251,
+            960,
+            540
+          ],
+          "mask": "dining-keep.png"
+        },
+        "activeSplats": 1499839
+      }
+    },
+    {
+      "kind": "rgb-only-3dgs",
+      "label": "bathroom",
+      "file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\qa\\rgb-only-3dgs-bathroom.png",
+      "loaded": {
+        "kind": "rgb-only-3dgs",
+        "splats": 1499839
+      },
+      "evidence": {
+        "pose": {
+          "label": "bathroom",
+          "source": "cam0/frame_001557_eval.jpg",
+          "sourceFrame": 1557,
+          "split": "eval",
+          "position": [
+            -0.11036735204714103,
+            0.4616502046204495,
+            -3.4100854048200673
+          ],
+          "quaternion": [
+            0,
+            0.8397103441859145,
+            0,
+            0.5430345641551493
+          ],
+          "fov": 75,
+          "width": 1920,
+          "height": 1080,
+          "intrinsics": [
+            703.741701334251,
+            703.741701334251,
+            960,
+            540
+          ],
+          "mask": "bathroom-keep.png"
+        },
+        "activeSplats": 1499839
+      }
+    },
+    {
+      "kind": "no-appearance-correction",
+      "label": "fridge",
+      "file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\qa\\no-appearance-correction-fridge.png",
+      "loaded": {
+        "kind": "no-appearance-correction",
+        "splats": 1499088
+      },
+      "evidence": {
+        "pose": {
+          "label": "fridge",
+          "source": "cam0/frame_000027_train.jpg",
+          "sourceFrame": 27,
+          "split": "train",
+          "position": [
+            -0.04734322054037422,
+            1.5427764395823702,
+            0.16500877423918853
+          ],
+          "quaternion": [
+            -0.02772637025938751,
+            -0.947378660256456,
+            -0.08549504078119761,
+            0.30723854003810014
+          ],
+          "fov": 75,
+          "width": 1920,
+          "height": 1080,
+          "intrinsics": [
+            703.741701334251,
+            703.741701334251,
+            960,
+            540
+          ],
+          "mask": "fridge-keep.png"
+        },
+        "activeSplats": 1499088
+      }
+    },
+    {
+      "kind": "no-appearance-correction",
+      "label": "fan",
+      "file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\qa\\no-appearance-correction-fan.png",
+      "loaded": {
+        "kind": "no-appearance-correction",
+        "splats": 1499088
+      },
+      "evidence": {
+        "pose": {
+          "label": "fan",
+          "source": "cam0/frame_001800_train.jpg",
+          "sourceFrame": 1800,
+          "split": "train",
+          "position": [
+            -0.8176386469064271,
+            0.4255116593924649,
+            0.8534996480900683
+          ],
+          "quaternion": [
+            -0.0036111427560121846,
+            -0.9961398662994274,
+            -0.049848540690604154,
+            0.07216265937430248
+          ],
+          "fov": 75,
+          "width": 1920,
+          "height": 1080,
+          "intrinsics": [
+            703.741701334251,
+            703.741701334251,
+            960,
+            540
+          ],
+          "mask": "fan-keep.png"
+        },
+        "activeSplats": 1499088
+      }
+    },
+    {
+      "kind": "no-appearance-correction",
+      "label": "dining",
+      "file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\qa\\no-appearance-correction-dining.png",
+      "loaded": {
+        "kind": "no-appearance-correction",
+        "splats": 1499088
+      },
+      "evidence": {
+        "pose": {
+          "label": "dining",
+          "source": "cam0/frame_001197_train.jpg",
+          "sourceFrame": 1197,
+          "split": "train",
+          "position": [
+            0.7616677170986236,
+            0.7530471853609798,
+            1.059430921517134
+          ],
+          "quaternion": [
+            -0.049835155377638655,
+            0.07576462952175617,
+            0.0037913914957084585,
+            0.9958723831658571
+          ],
+          "fov": 75,
+          "width": 1920,
+          "height": 1080,
+          "intrinsics": [
+            703.741701334251,
+            703.741701334251,
+            960,
+            540
+          ],
+          "mask": "dining-keep.png"
+        },
+        "activeSplats": 1499088
+      }
+    },
+    {
+      "kind": "no-appearance-correction",
+      "label": "bathroom",
+      "file": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-parity-20261101\\review\\qa\\no-appearance-correction-bathroom.png",
+      "loaded": {
+        "kind": "no-appearance-correction",
+        "splats": 1499088
+      },
+      "evidence": {
+        "pose": {
+          "label": "bathroom",
+          "source": "cam0/frame_001557_eval.jpg",
+          "sourceFrame": 1557,
+          "split": "eval",
+          "position": [
+            -0.11036735204714103,
+            0.4616502046204495,
+            -3.4100854048200673
+          ],
+          "quaternion": [
+            0,
+            0.8397103441859145,
+            0,
+            0.5430345641551493
+          ],
+          "fov": 75,
+          "width": 1920,
+          "height": 1080,
+          "intrinsics": [
+            703.741701334251,
+            703.741701334251,
+            960,
+            540
+          ],
+          "mask": "bathroom-keep.png"
+        },
+        "activeSplats": 1499088
+      }
+    }
+  ],
+  "errors": []
+}

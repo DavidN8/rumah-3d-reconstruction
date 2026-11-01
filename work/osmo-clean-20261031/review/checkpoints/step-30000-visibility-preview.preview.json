@@ -1,0 +1,16 @@
+{
+  "source": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\checkpoints\\step-30000.ply",
+  "sourceSha256": "d05707308b781acd3869329087cbd0c41ac8ce684cf2c61aebc060a116214d0b",
+  "audit": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\negative-rays-30k.json",
+  "auditSha256": "dab37546fc15b1eb76e60df0d5cd6a9e04e198df6b066ec75e166f8c08686aed",
+  "indicesSha256": "4752def98e157c418b156ee270d2b1ce345b32e3eb5d2871c8f1a70abbc73b23",
+  "originalCount": 2999726,
+  "removedForExperiment": 319,
+  "outputCount": 2999407,
+  "output": "C:\\Users\\bombe\\Documents\\Codex\\2026-10-27\\files-pasted-by-the-user-system\\work\\osmo-clean-20261031\\review\\checkpoints\\step-30000-visibility-preview.ply",
+  "outputSha256": "35b028676231affbdca7ed2fcf17f08e611c867349ecb4450a3fcfd5178daffa",
+  "originalCheckpointModified": false,
+  "remainingAttributesPreservedByteForByteInOriginalOrder": true,
+  "approvedForDeployment": false,
+  "scope": "Create a separate experimental PLY copy for a controlled visibility comparison.\n\nOriginal checkpoint is immutable. Removal candidates are supplied by the read-only\nnegative-ray audit. This does not approve a release or prove the candidates wrong.\n"
+}
