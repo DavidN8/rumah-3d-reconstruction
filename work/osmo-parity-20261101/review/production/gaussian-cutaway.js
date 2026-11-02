@@ -54,17 +54,29 @@ export function installCutaway({dyno,THREE,model,shell}){
                         textureLod(${i.sdf},uv+vec2(texel.x,0.0),0.0).r-textureLod(${i.sdf},uv-vec2(texel.x,0.0),0.0).r);
       outward=dot(outward,outward)>1e-8?normalize(outward):vec2(0.0);
       // Beyond the wall line: unobserved exterior splats, reflections and outward shards.
-      if(d+2.0*length(vec3(outward.x,0.0,outward.y)*RS)>${gl(fp.exteriorMargin)}) hidden=true;
+      // Short alpha ramps instead of on/off cuts avoid 5 cm grid steps and popping while orbiting.
+      float keep=1.0-smoothstep(${gl(fp.exteriorMargin)},${gl(fp.exteriorMargin+.08)},d+2.0*length(vec3(outward.x,0.0,outward.y)*RS));
       // Wall layer facing the camera, judged against the local (non-convex) wall direction.
       // Only horizontal surfaces (shelf and counter tops) survive in that layer.
-      else if(d>-${gl(fp.wallBand)} && abs(n.y)<0.7 && p.y>${floor}+0.12 && dot(outward,${i.view}.xz-p.xz)>0.05) hidden=true;
-      if(hidden) ${o.gsplat}.rgba.a=0.0;
+      if(d>-${gl(fp.wallBand)} && abs(n.y)<0.7 && p.y>${floor}+0.12) keep*=1.0-smoothstep(0.05,0.3,dot(outward,${i.view}.xz-p.xz));
+      ${o.gsplat}.rgba.a*=hidden?0.0:keep;
     }`
   ]});
   return operation.outputs;
  });
  model.worldModifiers=[modifier];model.updateGenerator();
- return {update(active,camera){const changed=enabled.value!==active||(active&&!view.value.equals(camera.position));enabled.value=active;view.value.copy(camera.position);if(changed)model.updateVersion();},
+ // Regenerating every splat on every orbit frame is the overview's main cost on phones. While the
+ // camera moves, refresh at most every 100 ms; settle() makes it exact once the camera rests.
+ let pending=false,last=-Infinity;
+ const api={regenerations:0,
+  update(active,camera,now=performance.now()){
+   if(enabled.value!==active){enabled.value=active;regenerate(camera);return;}
+   if(!active||view.value.equals(camera.position))return;
+   if(now-last>=100){last=now;regenerate(camera);}else pending=true;
+  },
+  settle(camera){if(!pending||!enabled.value)return false;regenerate(camera);return true;},
   dispose(){texture.dispose();},
   method:'non-convex footprint SDF with local ceilings: exterior + camera-facing wall layer + ceiling cap + out-of-volume + shell needles; reversible opacity'};
+ function regenerate(camera){view.value.copy(camera.position);pending=false;api.regenerations++;model.updateVersion();}
+ return api;
 }
