@@ -66,6 +66,7 @@ if(candidate.simpleShapes){
  if(data.source?.sha256!==packing?.sourceSha256)throw Error('Simple shapes were not fitted to this candidate.');
  const name=`models/osmo-shapes-${hash(shapes).slice(0,10)}.json`;await fs.writeFile(path.join(pub,name),shapes);
  asset.simple={url:name,fileBytes:shapes.length,shapes:data.shapes.length};
+ if(manifest.cameraSets.osmo)manifest.cameraSets.osmo.manhattanYaw=data.manhattanYaw;  // orbit views square up to the walls
 }
 if(JSON.stringify(originals.phone)!==JSON.stringify(manifest.models.phone)||JSON.stringify(originals.native)!==JSON.stringify(manifest.models.native)||JSON.stringify(originals.iphone)!==JSON.stringify(manifest.cameraSets.iphone))throw Error('iPhone metadata changed.');
 const manifestBytes=Buffer.from(JSON.stringify(manifest)),manifestName=`room-${hash(manifestBytes).slice(0,10)}.json`;await fs.writeFile(path.join(pub,manifestName),manifestBytes);

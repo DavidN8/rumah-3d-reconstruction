@@ -1,8 +1,9 @@
 """Simple-shape stand-in for the Osmo room: floor and ceiling slabs, walls, and one
 box, cylinder or sphere per object, each coloured from the splats it replaces.
 
-Walls are snapped to the room's dominant (Manhattan) direction and found where opaque
-vertical splats cover most of the wall height, so door and window gaps stay open.
+Everything is snapped to the room's dominant (Manhattan) direction. The plan is the floor
+reachable from the capture path without crossing wall evidence (opaque vertical splats over
+most of the wall height); walls are extruded around its outline, so the shell is closed.
 Objects are connected opaque voxels between floor and ceiling, away from walls.
 The output is a small JSON the viewer turns into three.js primitives.
 
@@ -10,17 +11,19 @@ Usage: python -B simple_shapes.py MODEL.ply review/calibrated-occupied-cameras.j
 """
 from pathlib import Path
 import base64,hashlib,json,math,sys
-import cv2,numpy as np
+import numpy as np
 from scipy import ndimage
 from occupied_bounds import ply
 from occupied_footprint import normals
 
 CELL=.05            # grid/voxel size in scene units
-WALL_COVER=.6       # share of 0.3-2.0 height bins a wall cell must fill
-WALL_RUN=.5         # shortest straight wall piece
 MIN_CELLS=12        # smallest object footprint kept (0.03 square units)
 BAND=.3             # neighbouring cells join one object only if their tops share a band
 MAX_OBJECTS=400
+SNAP=4              # outline grid in cells (0.2 units)
+SEG=4               # wall colour piece in cells; same-colour neighbours merge again
+BEHIND=2.          # a wall with more room this close behind it is a partition
+LUMA=np.array([.299,.587,.114])
 
 def sigmoid(v):return 1/(1+np.exp(-v))
 def hexcolor(rgb):return '#'+''.join(f'{int(round(float(v)*255)):02x}' for v in np.clip(rgb,0,1))
@@ -40,6 +43,35 @@ def largest_rectangles(mask,min_cells):
         if best[0]<min_cells:return out
         r0,c0,r1,c1=best[1];mask[r0:r1,c0:c1]=False;out.append(best[1])
 
+def edge_runs(plan,axis,step,tol):
+    # Plan cells whose neighbour one step across `axis` is outside, as runs [across, start, end, cells,
+    # pieces]. Runs up to tol cells apart across that touch along merge at their length-weighted line.
+    edge=plan&~np.roll(plan,-step,1-axis);runs=[]
+    for b,row in enumerate(np.moveaxis(edge,1-axis,0)):
+        hits=np.flatnonzero(row)
+        for run in np.split(hits,np.flatnonzero(np.diff(hits)>1)+1) if len(hits) else []:runs.append([b,run[0],run[-1]+1,len(run),[(b,run[0],run[-1]+1)]])
+    runs.sort(key=lambda r:(r[1],r[0]));out=[]
+    for r in runs:
+        w=next((w for w in out if abs(w[0]-r[0])<=tol and r[1]<=w[2]+1 and r[2]>=w[1]-1),None)
+        if w:w[0]=(w[0]*w[3]+r[0]*r[3])/(w[3]+r[3]);w[1]=min(w[1],r[1]);w[2]=max(w[2],r[2]);w[3]+=r[3];w[4]+=r[4]
+        else:out.append(r)
+    return out
+
+def straighten(plan,tol):
+    # Move every piece of an edge onto its merged line: steps of up to tol cells become straight
+    # edges, filled out or cut back, so floor and walls follow the same outline.
+    plan=plan.copy()
+    for axis in (0,1):
+        for step in (1,-1):
+            for b,*_,pieces in edge_runs(plan,axis,step,tol):
+                line=int(round(b))
+                for pb,p0,p1 in pieces:
+                    fill=(line-pb)*step>0
+                    for c in range(pb+step,line+step,step) if fill else range(line+step,pb+step,step):
+                        if axis==0:plan[p0:p1,c]=fill
+                        else:plan[c,p0:p1]=fill
+    return plan
+
 def shapes(model,shell):
     fp=shell['footprint'];W,H=fp['size'];c=fp['cellSize'];o=fp['origin']
     sdf=np.frombuffer(base64.b64decode(fp['sdfCm']),np.int8).reshape(W,H)/100
@@ -54,69 +86,114 @@ def shapes(model,shell):
     i,k=cell(x,z);dist=sdf[i,k];floor=at(planes[0],x,z);top=ceiling(x,z)
     # Manhattan direction from opaque vertical splats: average angle on the 4-fold circle.
     vertical=(alpha>.5)&(np.abs(n[:,1])<.2)&(dist<.15);phi=4*np.arctan2(n[vertical,2],n[vertical,0])
-    theta=float(np.arctan2(np.sin(phi).sum(),np.cos(phi).sum())/4);ax=np.array([math.cos(theta),math.sin(theta)]);bx=np.array([-math.sin(theta),math.cos(theta)])
+    theta=float(np.arctan2(np.sin(phi).sum(),np.cos(phi).sum())/4)
+    # Refine to the angle where wall splats pile up on the fewest grid lines (sharpest 1D histograms),
+    # so long straight walls do not step across cells.
+    wx_,wz_=x[vertical],z[vertical]
+    def peaky(t):return sum(float((np.bincount(((p-p.min())/CELL).astype(int))**2).sum()) for p in (wx_*math.cos(t)+wz_*math.sin(t),-wx_*math.sin(t)+wz_*math.cos(t)))
+    theta=max(theta+np.radians(np.arange(-2,2.01,.1)),key=peaky);ax=np.array([math.cos(theta),math.sin(theta)]);bx=np.array([-math.sin(theta),math.cos(theta)])
     u=x*ax[0]+z*ax[1];v=x*bx[0]+z*bx[1];inside=dist<=0
     u0,v0=u[inside].min()-.2,v[inside].min()-.2;U=int((u[inside].max()+.2-u0)/CELL)+1;V=int((v[inside].max()+.2-v0)/CELL)+1
     iu=np.clip(((u-u0)/CELL).astype(int),0,U-1);iv=np.clip(((v-v0)/CELL).astype(int),0,V-1)
     centre=lambda a,b:(u0+(a+.5)*CELL,v0+(b+.5)*CELL)
     world=lambda cu,cv:(cu*ax[0]+cv*bx[0],cu*ax[1]+cv*bx[1])
-    au,av=np.meshgrid(np.arange(U),np.arange(V),indexing='ij');gx,gz=world(*centre(au,av));gi,gk=cell(gx,gz);room=sdf[gi,gk]<=0
+    au,av=np.meshgrid(np.arange(U),np.arange(V),indexing='ij');gx,gz=world(*centre(au,av));gi,gk=cell(gx,gz);room=sdf[gi,gk]<=.2  # past the footprint edge to the wall evidence that bounds the plan
     out=[];yaw=-theta  # three.js rotation.y that maps local +X onto the wall axis
     def add(kind,kind_type,cu,cv,y0,y1,su,sv,colour,**extra):
-        wx,wz=world(cu,cv);out.append({'kind':kind,'type':kind_type,'center':[round(float(wx),3),round(float((y0+y1)/2),3),round(float(wz),3)],'size':[round(float(su),3),round(float(y1-y0),3),round(float(sv),3)],'yaw':round(yaw+extra.pop('turn',0.),4),'color':hexcolor(colour),**extra})
+        wx,wz=world(cu,cv);out.append({'kind':kind,'type':kind_type,'center':[round(float(wx),3),round(float((y0+y1)/2),3),round(float(wz),3)],'size':[round(float(su),3),round(float(y1-y0),3),round(float(sv),3)],'yaw':round(yaw,4),'color':hexcolor(colour),**extra})
     flat=(alpha>.35)&(np.abs(n[:,1])>.85);floor_rgb=np.median(rgb[flat&(np.abs(y-floor)<.06)],0);ceil_rgb=np.median(rgb[flat&(np.abs(y-top)<.06)],0)
-    # Walls: cells whose opaque vertical splats fill most height bins, split into straight u/v runs.
+    # Wall evidence: cells whose opaque vertical splats fill the height bins.
     bins=np.arange(.3,2.0,.1);wall_pts=(alpha>.4)&(np.abs(n[:,1])<.3)&(dist<.15)&(y>floor+.3)&(y<np.minimum(top-.15,floor+2.0))
     hb=np.clip(((y[wall_pts]-floor[wall_pts]-.3)/.1).astype(int),0,len(bins)-1);cover=np.zeros((U,V,len(bins)),bool);cover[iu[wall_pts],iv[wall_pts],hb]=True
     # A wall's splats spread over 2-3 cells of thickness; pool each height bin over 3x3 first.
-    pooled=ndimage.maximum_filter(cover,size=(3,3,1)).mean(2);run=int(WALL_RUN/CELL)
-    def runs(mask,axis):
-        line=np.zeros((3,3),bool);line[(slice(None),1) if axis==0 else (1,slice(None))]=True;lab,_=ndimage.label(mask,structure=line)
-        size=ndimage.sum(mask,lab,np.arange(lab.max()+1));return (size[lab]>=run)&mask
-    wall_id=np.zeros((U,V),int);pieces=[]
-    for axis in (0,1):
-        lab,_=ndimage.label(runs(pooled>=WALL_COVER,axis))
-        for j,sl in enumerate(ndimage.find_objects(lab),1):
-            if (sl[axis].stop-sl[axis].start)<run:continue
-            wall_id[sl][lab[sl]==j]=1;pieces.append((axis,sl,wall_pts&(lab[iu,iv]==j)))
+    pooled=ndimage.maximum_filter(cover,size=(3,3,1)).mean(2)
     # Interior: footprint cells reachable from the capture path without crossing wall evidence.
     # Floor seen through glass or in a mirror lies beyond a wall and drops out here.
     lab,_=ndimage.label(room&~ndimage.binary_dilation(pooled>=.35,iterations=2));cams=np.asarray(shell['interiorCameras'])
     grid=lambda wx,wz:(np.clip(((wx*ax[0]+wz*ax[1]-u0)/CELL).astype(int),0,U-1),np.clip(((wx*bx[0]+wz*bx[1]-v0)/CELL).astype(int),0,V-1))
     reached=np.setdiff1d(lab[grid(cams[:,0],cams[:,2])],[0]);interior=ndimage.binary_dilation(np.isin(lab,reached),iterations=3)&room
-    # Floor and ceiling slabs over the interior, as few rectangles as cover it. Ceilings are split
-    # by level so no slab spans the dropped and the upper ceiling.
-    slab=ndimage.binary_erosion(interior);dropped=low[gi,gk]
-    for r0,c0,r1,c1 in largest_rectangles(slab,32):
-        cu,cv=u0+(r0+r1)/2*CELL,v0+(c0+c1)/2*CELL;wx,wz=world(cu,cv);fy=float(at(planes[0],wx,wz))
-        add('floor','box',cu,cv,fy-.04,fy,(r1-r0)*CELL,(c1-c0)*CELL,floor_rgb)
-    for level in (slab&dropped,slab&~dropped):
-        for r0,c0,r1,c1 in largest_rectangles(level,32):
-            cu,cv=u0+(r0+r1)/2*CELL,v0+(c0+c1)/2*CELL;wx,wz=world(cu,cv);ty=float(ceiling(np.array([wx]),np.array([wz]))[0])
-            add('ceiling','box',cu,cv,ty,ty+.04,(r1-r0)*CELL,(c1-c0)*CELL,ceil_rgb)
-    wall_id[:]=0  # re-marked below with the final, thin wall boxes
-    for axis,sl,mine in pieces:
-        cu,cv=u0+(sl[0].start+sl[0].stop)/2*CELL,v0+(sl[1].start+sl[1].stop)/2*CELL;length=(sl[axis].stop-sl[axis].start)*CELL
-        thick=(sl[1-axis].stop-sl[1-axis].start)*CELL;normal=bx if axis==0 else ax;extra={}
-        # Exterior walls (interior on one side only) carry the outward direction the viewer cuts by.
-        wx,wz=world(cu,cv);reach=thick/2+np.array([.15,.3,.6,.9,1.2])  # furniture in front can hide the room at one depth
-        side=[bool(interior[grid(wx+k*reach*normal[0],wz+k*reach*normal[1])].any()) for k in (1,-1)]
-        wall_t=min(max(thick,.1),.15)
-        if side[0]!=side[1]:
-            k=-1 if side[0] else 1;extra['outward']=[round(float(k*normal[0]),4),round(float(k*normal[1]),4)]
-            # A band thicker than a wall is wall plus furniture: keep the wall flush with the outside.
-            shift=k*max(thick-wall_t,0)/2;cu,cv=(cu,cv+shift) if axis==0 else (cu+shift,cv)
-        su,sv=(length,wall_t) if axis==0 else (wall_t,length)
-        a0,a1=int((cu-su/2-u0)/CELL),int(np.ceil((cu+su/2-u0)/CELL));b0,b1=int((cv-sv/2-v0)/CELL),int(np.ceil((cv+sv/2-v0)/CELL));wall_id[max(a0,0):a1,max(b0,0):b1]=1
-        wx,wz=world(cu,cv);fy=float(at(planes[0],wx,wz));ty=float(ceiling(np.array([wx]),np.array([wz]))[0])
-        add('wall','box',cu,cv,fy,ty,su,sv,np.median(rgb[mine],0) if mine.any() else ceil_rgb,**extra)
-    # Objects (2.5D): per plan cell, the top run of opaque voxels between floor and ceiling,
-    # away from walls. Neighbouring cells join only when their tops share a BAND, so a table
-    # and what stands on it separate. Low pieces stand on the floor; raised ones keep their base.
-    near_wall=ndimage.binary_dilation(wall_id>0,iterations=2)
-    # Furniture against a wall is wall-like evidence too: grow the interior up to, never through, detected walls.
-    reachable=ndimage.binary_dilation(interior,iterations=10,mask=room&(wall_id==0))
-    keep=(alpha>.4)&inside&(dist<-.02)&(y>floor+.08)&(y<top-.12)&~near_wall[iu,iv]&reachable[iu,iv]
+    # Plan: the reachable interior squared off on the room's own axes. Opening and closing with a
+    # 0.35 square remove notches and spurs, so the outline is long straight runs that meet at corners.
+    square=np.ones((7,7),bool);plan=ndimage.binary_fill_holes(ndimage.binary_closing(ndimage.binary_opening(interior,square),square))
+    lab,count=ndimage.label(plan);area=ndimage.sum(plan,lab,range(1,count+1))*CELL*CELL;plan=np.isin(lab,1+np.flatnonzero(area>=1.))
+    # Snap the outline to a SNAP grid, at whichever phase agrees best with it: 1-3 cell steps from
+    # noisy floor evidence become straight walls and floor slabs get clean edges.
+    def snapped(du,dv):
+        g=np.pad(plan,((du,-(U+du)%SNAP),(dv,-(V+dv)%SNAP)));R,C=g.shape[0]//SNAP,g.shape[1]//SNAP
+        g=g.reshape(R,SNAP,C,SNAP).mean((1,3))>=.5;return np.kron(g,np.ones((SNAP,SNAP),bool))[du:du+U,dv:dv+V]
+    plan=max((snapped(du,dv) for du in range(SNAP) for dv in range(SNAP)),key=lambda g:int((g==plan).sum()))
+    plan=straighten(straighten(plan,SNAP),SNAP)
+    dropped=straighten(straighten(ndimage.binary_closing(ndimage.binary_opening(low[gi,gk]&plan,square),square),SNAP),SNAP)&plan
+    lab,count=ndimage.label(dropped);dropped=np.isin(lab,1+np.flatnonzero(ndimage.sum(dropped,lab,range(1,count+1))*CELL*CELL>=1.));fy=float(np.median(at(planes[0],gx[plan],gz[plan])))
+    level={True:float(np.median(at(planes[2],gx[plan&dropped],gz[plan&dropped]))) if (plan&dropped).any() else 0.,False:float(np.median(at(planes[1],gx[plan&~dropped],gz[plan&~dropped])))}
+    # One floor height and two ceiling heights keep every slab coplanar: no seams or steps.
+    def brighter(c):return np.median(c[c@LUMA>=np.median(c@LUMA)],0)  # skip shadowed splats
+    bright=lambda m:brighter(rgb[m])
+    floor_rgb,ceil_rgb=bright(flat&(np.abs(y-floor)<.06)),bright(flat&(np.abs(y-top)<.06));wall_rgb=bright(wall_pts)
+    wall_rgb=wall_rgb*min(1.4,.82/float(wall_rgb@LUMA))  # the walls are white; scan colour is under-exposed
+    for r0,c0,r1,c1 in largest_rectangles(plan,1):
+        add('floor','box',u0+(r0+r1)/2*CELL,v0+(c0+c1)/2*CELL,fy-.05,fy,(r1-r0)*CELL,(c1-c0)*CELL,floor_rgb)
+    for low_level in (True,False):
+        for r0,c0,r1,c1 in largest_rectangles(plan&(dropped if low_level else ~dropped),1):
+            # A dropped ceiling is solid up to the upper one, so the step between them has a face.
+            add('ceiling','box',u0+(r0+r1)/2*CELL,v0+(c0+c1)/2*CELL,level[low_level],max(level.values())+.05,(r1-r0)*CELL,(c1-c0)*CELL,ceil_rgb)
+    # Walls are extruded from the plan outline, just outside it, in one neutral colour. Corners never
+    # overlap (coplanar tops would z-fight): at an outside corner the wall along u runs on by its
+    # thickness and closes it; at an inside corner the wall along v stops a thickness short.
+    # Their outward side is simply the side the plan is not on.
+    # Doors: SEG pieces are coloured from the splats on the wall (just inside the edge to 0.3 outside);
+    # same-colour neighbours merge. A dark, warm run 0.6-1.3 wide becomes a door: an opening with a
+    # lintel and a recessed leaf in its own colour. A dark, cool one 0.6-3 wide is a curtained window:
+    # the same opening with a curtain panel.
+    on=np.flatnonzero((alpha>.3)&(np.abs(n[:,1])<.5)&(y>floor+.1)&(y<top-.1));wu,wv,wc=u[on]-u0,v[on]-v0,rgb[on]
+    def openings(axis,step,line,a0,a1):
+        along,across=(wu,wv) if axis==0 else (wv,wu);off=(across-line)*step
+        m=(off>-.1)&(off<.3)&(along>=a0*CELL)&(along<a1*CELL);k=((along[m]-a0*CELL)/(SEG*CELL)).astype(int);c=wc[m];out=[]
+        for j in range(-(-(a1-a0)//SEG)):
+            sel=c[k==j];col=brighter(sel) if len(sel)>=20 else out[-1][2] if out else wall_rgb;p0,p1=a0+j*SEG,min(a0+(j+1)*SEG,a1)
+            if out and np.abs(out[-1][2]-col).max()<.1:w=(out[-1][1]-out[-1][0])/(p1-out[-1][0]);out[-1][1:]=[p1,w*out[-1][2]+(1-w)*col]
+            else:out.append([p0,p1,col])
+        dark=lambda col:np.abs(col-wall_rgb).max()>.15 and col@LUMA<.45
+        return [(p0,p1,col,'door' if col[0]>=col[2] else 'window') for p0,p1,col in out if dark(col) and .6<=(p1-p0)*CELL<=(1.3 if col[0]>=col[2] else 3.)]
+    T=.12;DOOR=2.;ty=max(level.values())  # walls reach the higher ceiling: no gap above a dropped one
+    P=lambda a,b,axis:bool(plan[min(max(a,0),U-1),min(max(b,0),V-1)] if axis==0 else plan[min(max(b,0),U-1),min(max(a,0),V-1)])
+    for axis in (0,1):
+        for step in (1,-1):
+            normal=(bx if axis==0 else ax)*step;outward=[round(float(normal[0]),4),round(float(normal[1]),4)]
+            for b,a0,a1,*_ in edge_runs(plan,axis,step,2):
+                if a1-a0<3:continue  # corner steps
+                mid=int(round(b));line=(b+(1 if step>0 else 0))*CELL
+                inside=[P(a,mid+step,axis) for a in (a0-1,a1)]
+                e0,e1=((-T if i else 0.) if axis else (0. if i else T) for i in inside)
+                # The viewer cuts a wall run as a whole, judged at its middle (anchor). A run with more
+                # room within BEHIND behind it is a partition: in the overview it is always a stub.
+                at_=lambda a,c:(a,c) if axis==0 else (c,a);ra=(a0+a1)/2
+                anchor=[round(float(v_),3) for v_ in world(*((u0+ra*CELL,v0+line) if axis==0 else (u0+line,v0+ra*CELL)))]
+                beyond=[at_(int(a0+(a1-a0)*f),mid+step*k) for f in (.25,.5,.75) for k in range(3,int(BEHIND/CELL))]
+                extra={'anchor':anchor,**({'behind':True} if any(0<=i<U and 0<=k<V and plan[i,k] for i,k in beyond) else {})}
+                def piece(p0,p1,y0,y1,colour,depth=T,f0=0.,f1=0.):
+                    along=(p0+p1)/2*CELL+(f1-f0)/2;length=(p1-p0)*CELL+f0+f1;across=line+step*T/2
+                    if length<.02:return  # a stub shorter than the walls it sits between
+                    cu,cv=(u0+along,v0+across) if axis==0 else (u0+across,v0+along);su,sv=(length,depth) if axis==0 else (depth,length)
+                    add('wall','box',cu,cv,y0,y1,su,sv,colour,outward=outward,**extra)
+                for end,e in ((a0,e0),(a1,e1)):
+                    if e>0:piece(end,end,fy,ty,wall_rgb,**{'f0' if end==a0 else 'f1':e})  # outside corner block
+                cut=a0;f0,f1=min(e0,0.),min(e1,0.)
+                # Openings stay clear of a wall this one stops short of at an inside corner (no overlap):
+                # one that reaches into it slides along, keeping its width where the run allows.
+                lo,hi=a0+math.ceil(-f0/CELL-1e-9),a1-math.ceil(-f1/CELL-1e-9)
+                for d0,d1,col,kind in openings(axis,step,line,a0,a1) if ty-fy>DOOR+.15 else []:
+                    w_=d1-d0;d0,d1=max(d0,lo,cut),min(max(d1,max(lo,cut)+w_),hi);d0=max(min(d0,d1-w_),lo,cut)
+                    if (d1-d0)*CELL<.3:continue
+                    if d0>cut:piece(cut,d0,fy,ty,wall_rgb,f0=f0 if cut==a0 else 0.)
+                    top_=DOOR if kind=='door' else DOOR+.1;piece(d0,d1,fy+top_,ty,wall_rgb);piece(d0,d1,fy,fy+top_,col,depth=.04);cut=d1
+                if cut<a1:piece(cut,a1,fy,ty,wall_rgb,f0=f0 if cut==a0 else 0.,f1=f1)
+    # Objects (2.5D): per plan cell, the top run of opaque voxels between floor and ceiling, away from
+    # walls. Neighbouring cells join only when their tops share a BAND, so a table and what stands on
+    # it separate. Every piece stands on the floor, squared to the walls; raised ones are dropped (they
+    # read as floating), and so is any piece mostly inside a bigger one (what stands on a table).
+    inner=ndimage.binary_erosion(plan,iterations=2)
+    keep=(alpha>.4)&(y>floor+.08)&(y<top-.12)&inner[iu,iv]
     Y=int(3/CELL)+1;iy=np.clip(((y-floor)/CELL).astype(int),0,Y-1);levels=np.arange(Y)
     mass=np.zeros((U,V,Y));np.add.at(mass,(iu[keep],iv[keep],iy[keep]),alpha[keep]);solid=mass>=1.
     column=solid.sum(2)>=2;top_i=np.where(solid,levels,-1).max(2)
@@ -135,19 +212,29 @@ def shapes(model,shell):
     own=keep&(iy>=base_i[iu,iv])&(iy<=top_i[iu,iv]);point_owner=np.where(own,owner[iu,iv],0);idx=np.flatnonzero(point_owner);idx=idx[np.argsort(point_owner[idx],kind='stable')]
     labels,starts=np.unique(point_owner[idx],return_index=True)
     members={label:idx[a:b] for label,a,b in zip(labels,starts,np.append(starts[1:],len(idx)))}
+    taken=[]
     for j,cells in enumerate(pieces,1):
-        (pcu,pcv),(wa,wb),ang=cv2.minAreaRect(cells.astype(np.float32));wa,wb=(wa+1)*CELL,(wb+1)*CELL;cu,cv=u0+(pcu+.5)*CELL,v0+(pcv+.5)*CELL
+        if len(members.get(j,()))<200:continue  # too few splats to be a real object
         tops,bases=top_i[cells[:,0],cells[:,1]],base_i[cells[:,0],cells[:,1]];lo=np.percentile(bases,10)*CELL;hi=(np.percentile(tops,90)+1)*CELL
-        if lo<.4:lo=0.
-        if hi-lo<.08:continue
-        wx,wz=world(cu,cv);fy=float(at(planes[0],wx,wz));y0,y1=fy+lo,fy+hi;ht=y1-y0
-        plan_fill=len(cells)*CELL*CELL/(wa*wb);solid_fill=float(np.clip(tops-bases+1,0,None).sum())*CELL**3/(wa*wb*ht)
-        colour=np.median(rgb[members[j]],0) if j in members else ceil_rgb;turn=-math.radians(ang)
-        if max(wa,wb,ht)/min(wa,wb,ht)<1.35 and .35<solid_fill<.7 and max(wa,wb,ht)<.7:
+        if lo>=.6 or hi<.1:continue
+        (r0,c0),(r1,c1)=cells.min(0),cells.max(0)+1;area=(r1-r0)*(c1-c0)
+        if plan[r0:r1,c0:c1].mean()<.95:continue  # squared up, it would run into a wall
+        if any(max(0,min(r1,t1)-max(r0,t0))*max(0,min(c1,s1)-max(c0,s0))>.2*area for t0,s0,t1,s1 in taken):continue
+        taken.append((r0,c0,r1,c1));wa,wb=(r1-r0)*CELL,(c1-c0)*CELL;cu,cv=u0+(r0+r1)/2*CELL,v0+(c0+c1)/2*CELL
+        y0,y1=fy,fy+hi;ht=y1-y0;lo=0.
+        plan_fill=len(cells)/area;solid_fill=float(np.clip(tops-bases+1,0,None).sum())*CELL**3/(wa*wb*ht)
+        colour=bright(np.isin(np.arange(len(x)),members[j]))
+        if abs(float((colour-floor_rgb)@LUMA))<.12:colour=colour*.7  # set furniture apart from a floor of the same value
+        # A table: most of its top has open space under it. A thin top on four legs, not a crate.
+        if .55<hi<1.05 and min(wa,wb)>.4 and np.mean(bases*CELL>.35)>.5:
+            add('object','box',cu,cv,y1-.04,y1,wa,wb,colour)
+            for sx in (-1,1):
+                for sz in (-1,1):add('object','cylinder',cu+sx*(wa/2-.06),cv+sz*(wb/2-.06),fy,y1-.04,.05,.05,colour)
+        elif max(wa,wb,ht)/min(wa,wb,ht)<1.3 and .4<solid_fill<.7 and .15<max(wa,wb,ht)<.7:
             dia=(wa+wb+ht)/3;add('object','sphere',cu,cv,y0,y0+dia,dia,dia,colour)
         elif max(wa,wb)/min(wa,wb)<1.3 and .6<plan_fill<.88:
             dia=(wa+wb)/2;add('object','cylinder',cu,cv,y0,y1,dia,dia,colour)
-        else:add('object','box',cu,cv,y0,y1,wa,wb,colour,turn=turn)
+        else:add('object','box',cu,cv,y0,y1,wa,wb,colour)
     kinds={k:sum(s['kind']==k for s in out) for k in ['floor','ceiling','wall','object']}
     types={t:sum(s['type']==t for s in out) for t in ['box','cylinder','sphere']}
     return {'version':1,'units':'normalized scene units, +Y up; yaw is three.js rotation.y','manhattanYaw':round(theta,5),
