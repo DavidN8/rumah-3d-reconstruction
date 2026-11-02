@@ -14,7 +14,7 @@ import base64,hashlib,json,math,sys
 import numpy as np
 from scipy import ndimage
 from occupied_bounds import ply
-from occupied_footprint import normals
+from occupied_footprint import normals,wall_evidence
 
 CELL=.05            # grid/voxel size in scene units
 MIN_CELLS=12        # smallest object footprint kept (0.03 square units)
@@ -23,6 +23,7 @@ MAX_OBJECTS=400
 SNAP=4              # outline grid in cells (0.2 units)
 SEG=4               # wall colour piece in cells; same-colour neighbours merge again
 BEHIND=2.          # a wall with more room this close behind it is a partition
+LOW=.65            # second object pass: what stands below this, under tables and overhangs
 LUMA=np.array([.299,.587,.114])
 
 def sigmoid(v):return 1/(1+np.exp(-v))
@@ -105,11 +106,10 @@ def shapes(model,shell):
     # Wall evidence: cells whose opaque vertical splats fill the height bins.
     bins=np.arange(.3,2.0,.1);wall_pts=(alpha>.4)&(np.abs(n[:,1])<.3)&(dist<.15)&(y>floor+.3)&(y<np.minimum(top-.15,floor+2.0))
     hb=np.clip(((y[wall_pts]-floor[wall_pts]-.3)/.1).astype(int),0,len(bins)-1);cover=np.zeros((U,V,len(bins)),bool);cover[iu[wall_pts],iv[wall_pts],hb]=True
-    # A wall's splats spread over 2-3 cells of thickness; pool each height bin over 3x3 first.
-    pooled=ndimage.maximum_filter(cover,size=(3,3,1)).mean(2)
     # Interior: footprint cells reachable from the capture path without crossing wall evidence.
     # Floor seen through glass or in a mirror lies beyond a wall and drops out here.
-    lab,_=ndimage.label(room&~ndimage.binary_dilation(pooled>=.35,iterations=2));cams=np.asarray(shell['interiorCameras'])
+    cap=np.minimum(ceiling(gx,gz)-.15,at(planes[0],gx,gz)+2.)-at(planes[0],gx,gz)  # where wall splats were counted
+    lab,_=ndimage.label(room&~ndimage.binary_dilation(wall_evidence(cover,cap),iterations=2));cams=np.asarray(shell['interiorCameras'])
     grid=lambda wx,wz:(np.clip(((wx*ax[0]+wz*ax[1]-u0)/CELL).astype(int),0,U-1),np.clip(((wx*bx[0]+wz*bx[1]-v0)/CELL).astype(int),0,V-1))
     reached=np.setdiff1d(lab[grid(cams[:,0],cams[:,2])],[0]);interior=ndimage.binary_dilation(np.isin(lab,reached),iterations=3)&room
     # Plan: the reachable interior squared off on the room's own axes. Opening and closing with a
@@ -188,53 +188,92 @@ def shapes(model,shell):
                     if d0>cut:piece(cut,d0,fy,ty,wall_rgb,f0=f0 if cut==a0 else 0.)
                     top_=DOOR if kind=='door' else DOOR+.1;piece(d0,d1,fy+top_,ty,wall_rgb);piece(d0,d1,fy,fy+top_,col,depth=.04);cut=d1
                 if cut<a1:piece(cut,a1,fy,ty,wall_rgb,f0=f0 if cut==a0 else 0.,f1=f1)
-    # Objects (2.5D): per plan cell, the top run of opaque voxels between floor and ceiling, away from
-    # walls. Neighbouring cells join only when their tops share a BAND, so a table and what stands on
-    # it separate. Every piece stands on the floor, squared to the walls; raised ones are dropped (they
-    # read as floating), and so is any piece mostly inside a bigger one (what stands on a table).
-    inner=ndimage.binary_erosion(plan,iterations=2)
-    keep=(alpha>.4)&(y>floor+.08)&(y<top-.12)&inner[iu,iv]
+    # Objects (2.5D): per plan cell, the top run of solid voxels, away from walls. Neighbouring cells
+    # join only when their tops share a BAND, so a table and what stands on it separate. Soft,
+    # semi-transparent splats count too, and only material below the dropped-ceiling line: soffits,
+    # cornices and the AC above it would otherwise be the top run and hide what stands beneath.
+    # A second pass below LOW finds what a tabletop or an overhang hides (chairs, bottles, a toilet).
+    inner=ndimage.binary_erosion(plan,iterations=2);ceiling_line=np.minimum(top,at(planes[2],x,z))-.15
     Y=int(3/CELL)+1;iy=np.clip(((y-floor)/CELL).astype(int),0,Y-1);levels=np.arange(Y)
-    mass=np.zeros((U,V,Y));np.add.at(mass,(iu[keep],iv[keep],iy[keep]),alpha[keep]);solid=mass>=1.
-    column=solid.sum(2)>=2;top_i=np.where(solid,levels,-1).max(2)
-    bridged=solid|np.roll(solid,1,2)&np.roll(solid,-1,2)  # one-voxel gaps do not end a run
-    base_i=np.where(~bridged&(levels<top_i[...,None]),levels,-1).max(2)+1
-    band=np.where(column,top_i*CELL//BAND+1,0).astype(int);pieces=[]
-    for b in np.unique(band[band>0]):
-        lab,_=ndimage.label(ndimage.binary_opening(band==b))  # opening cuts 1-2 cell bridges between items
-        for j,sl in enumerate(ndimage.find_objects(lab),1):
-            cells=np.argwhere(lab[sl]==j)+[sl[0].start,sl[1].start]
-            if len(cells)>=MIN_CELLS:pieces.append(cells)
-    pieces=sorted(pieces,key=len,reverse=True)[:MAX_OBJECTS];owner=np.zeros((U,V),int)
-    for j,cells in enumerate(pieces,1):owner[cells[:,0],cells[:,1]]=j
-    # Group splat indices by object once instead of scanning every splat per object.
-    # Colour from each piece's own height run only, not from whatever stands underneath it.
-    own=keep&(iy>=base_i[iu,iv])&(iy<=top_i[iu,iv]);point_owner=np.where(own,owner[iu,iv],0);idx=np.flatnonzero(point_owner);idx=idx[np.argsort(point_owner[idx],kind='stable')]
-    labels,starts=np.unique(point_owner[idx],return_index=True)
-    members={label:idx[a:b] for label,a,b in zip(labels,starts,np.append(starts[1:],len(idx)))}
-    taken=[]
-    for j,cells in enumerate(pieces,1):
-        if len(members.get(j,()))<200:continue  # too few splats to be a real object
-        tops,bases=top_i[cells[:,0],cells[:,1]],base_i[cells[:,0],cells[:,1]];lo=np.percentile(bases,10)*CELL;hi=(np.percentile(tops,90)+1)*CELL
-        if lo>=.6 or hi<.1:continue
+    def split(cells):
+        # Items packed together (bottles and chairs under a table) touch through thin necks: erode, label
+        # the cores, and give every cell to its nearest core.
+        (a0_,b0_),(a1_,b1_)=cells.min(0),cells.max(0)+1;m=np.zeros((a1_-a0_,b1_-b0_),bool);m[cells[:,0]-a0_,cells[:,1]-b0_]=True
+        cores,count=ndimage.label(ndimage.binary_erosion(m,iterations=2))
+        if count<2:return [cells]
+        _,(ni_,nk_)=ndimage.distance_transform_edt(cores==0,return_indices=True);who=cores[ni_,nk_][m]
+        return [cells[who==k] for k in range(1,count+1) if (who==k).sum()>=MIN_CELLS]
+    def layer(cap,split_big=False):
+        keep=(alpha>.25)&(y>floor+.08)&(y<cap)&inner[iu,iv]
+        mass=np.zeros((U,V,Y));np.add.at(mass,(iu[keep],iv[keep],iy[keep]),alpha[keep]);solid=mass>=.6
+        column=solid.sum(2)>=2;top_i=np.where(solid,levels,-1).max(2)
+        bridged=solid|np.roll(solid,1,2)&np.roll(solid,-1,2)  # one-voxel gaps do not end a run
+        base_i=np.where(~bridged&(levels<top_i[...,None]),levels,-1).max(2)+1
+        # Supported: solid material ends at most 0.3 below the top run (a shelf's body, not a pile under a lamp).
+        under=base_i-1-np.where(solid&(levels<base_i[...,None]),levels,-99).max(2)<=round(.3/CELL)
+        band=np.where(column,top_i*CELL//BAND+1,0).astype(int);pieces=[]
+        for b in np.unique(band[band>0]):
+            lab,_=ndimage.label(ndimage.binary_opening(band==b))  # opening cuts 1-2 cell bridges between items
+            for j,sl in enumerate(ndimage.find_objects(lab),1):
+                cells=np.argwhere(lab[sl]==j)+[sl[0].start,sl[1].start]
+                big=split_big and (cells.max(0)-cells.min(0)+1).max()>round(.6/CELL)
+                pieces+=[c_ for c_ in (split(cells) if big else [cells]) if len(c_)>=MIN_CELLS]
+        pieces=sorted(pieces,key=len,reverse=True)[:MAX_OBJECTS];owner=np.zeros((U,V),int)
+        for j,cells in enumerate(pieces,1):owner[cells[:,0],cells[:,1]]=j
+        # Group splat indices by piece once instead of scanning every splat per piece. Colour comes
+        # from each piece's own height run only, not from whatever stands underneath it.
+        own=keep&(iy>=base_i[iu,iv])&(iy<=top_i[iu,iv]);point_owner=np.where(own,owner[iu,iv],0);idx=np.flatnonzero(point_owner);idx=idx[np.argsort(point_owner[idx],kind='stable')]
+        labels,starts=np.unique(point_owner[idx],return_index=True)
+        members={label:idx[a:b] for label,a,b in zip(labels,starts,np.append(starts[1:],len(idx)))}
+        return [(cells,top_i[cells[:,0],cells[:,1]],base_i[cells[:,0],cells[:,1]],under[cells[:,0],cells[:,1]],members.get(j,np.zeros(0,int))) for j,cells in enumerate(pieces,1)]
+    # Every piece stands on the floor, squared to the walls and kept inside the plan. One whose top run
+    # starts high still stands when there is solid material under it (a shelf with things on top); one
+    # with open space under most of its top is a table. Anything else raised would float, and a thin,
+    # tall piece is an open door or a jamb: both are dropped. Pieces may sit under a table; any other
+    # overlap is cut back, and a piece mostly inside another is dropped.
+    taken=[]  # [r0,c0,r1,c1,top,table]
+    for low_pass,(cells,tops,bases,und,memb) in [(False,p_) for p_ in layer(ceiling_line)]+[(True,p_) for p_ in layer(floor+LOW,split_big=True)]:
+        if len(memb)<200:continue  # too few splats to be a real object
+        lo=np.percentile(bases,10)*CELL;hi=(np.percentile(tops,90)+1)*CELL
         (r0,c0),(r1,c1)=cells.min(0),cells.max(0)+1;area=(r1-r0)*(c1-c0)
-        if plan[r0:r1,c0:c1].mean()<.95:continue  # squared up, it would run into a wall
-        if any(max(0,min(r1,t1)-max(r0,t0))*max(0,min(c1,s1)-max(c0,s0))>.2*area for t0,s0,t1,s1 in taken):continue
-        taken.append((r0,c0,r1,c1));wa,wb=(r1-r0)*CELL,(c1-c0)*CELL;cu,cv=u0+(r0+r1)/2*CELL,v0+(c0+c1)/2*CELL
-        y0,y1=fy,fy+hi;ht=y1-y0;lo=0.
-        plan_fill=len(cells)/area;solid_fill=float(np.clip(tops-bases+1,0,None).sum())*CELL**3/(wa*wb*ht)
-        colour=bright(np.isin(np.arange(len(x)),members[j]))
+        table=not low_pass and .55<hi<1.05 and min(r1-r0,c1-c0)*CELL>.4 and np.mean(bases*CELL>.35)>.5  # the low pass sees under tables
+        if hi<.1 or not(lo<.6 or und.mean()>.3 or table) or (hi>1.6 and min(r1-r0,c1-c0)*CELL<.35):continue
+        grid_=np.zeros((r1-r0,c1-c0),bool);grid_[cells[:,0]-r0,cells[:,1]-c0]=True;k0,k1=max(2,(r1-r0)//4),max(2,(c1-c0)//4)  # 2+ cells: the opening always clips a single corner cell
+        corners=np.mean([grid_[:k0,:k1].mean(),grid_[:k0,-k1:].mean(),grid_[-k0:,:k1].mean(),grid_[-k0:,-k1:].mean()])
+        ev=np.linalg.eigvalsh(np.cov(cells.T.astype(float))+np.eye(2)*1e-6);isotropic=ev[1]/ev[0]<1.4  # a diagonal suitcase is not round
+        plan_fill=len(cells)/area;solid_fill=float(np.clip(tops-bases+1,0,None).sum())*CELL**3/(area*CELL*CELL*hi)
+        while (r1-r0)>=3 and (c1-c0)>=3 and not plan[r0:r1,c0:c1].all():  # shrink the side poking out of the plan
+            out_=~plan[r0:r1,c0:c1];side=int(np.argmax([out_[0].sum(),out_[-1].sum(),out_[:,0].sum(),out_[:,-1].sum()]))
+            r0,r1,c0,c1=(r0+(side==0),r1-(side==1),c0+(side==2),c1-(side==3))
+        item=max(r1-r0,c1-c0)<=round(.6/CELL)
+        under_table=lambda t:t[5] and item and hi<=t[4]-.1  # an item-sized piece lower than a tabletop sits under it
+        clear=True
+        for t in taken:
+            t0,s0,t1,s1=t[:4];ou,ov=min(r1,t1)-max(r0,t0),min(c1,s1)-max(c0,s0)
+            if ou<=0 or ov<=0 or under_table(t):continue
+            if ou*ov>.5*(r1-r0)*(c1-c0):clear=False;break  # mostly inside it
+            # Cut back to whichever one-sided cut keeps the most.
+            r0,c0,r1,c1=max(((r0,c0,min(r1,t0),c1),(max(r0,t1),c0,r1,c1),(r0,c0,r1,min(c1,s0)),(r0,max(c0,s1),r1,c1)),key=lambda q:max(0,q[2]-q[0])*max(0,q[3]-q[1]))
+        if not clear or (r1-r0)<4 or (c1-c0)<4 or any(min(r1,t[2])>max(r0,t[0]) and min(c1,t[3])>max(c0,t[1]) and not under_table(t) for t in taken):continue
+        table=table and min(r1-r0,c1-c0)*CELL>.4  # a cut-back table too narrow for legs is a box
+        taken.append([r0,c0,r1,c1,hi,table])
+        if table:taken+=[[a_,b_,a_+2,b_+2,hi,False] for a_ in (r0,r1-2) for b_ in (c0,c1-2)]  # its legs: what sits under it keeps clear
+        wa,wb=(r1-r0)*CELL,(c1-c0)*CELL;cu,cv=u0+(r0+r1)/2*CELL,v0+(c0+c1)/2*CELL;y1=fy+hi
+        # Colour: the side-facing splats (a table's top surface), without the darkest quarter. Many splats
+        # carry a dark base colour and get their brightness from view-dependent terms; the brighter half
+        # alone would turn a black fridge with magnets white.
+        face=memb[(np.abs(n[memb,1])>.7)&(y[memb]>floor[memb]+hi-.08)] if table else memb[np.abs(n[memb,1])<.5]
+        c_=rgb[face if len(face)>=50 else memb];lum=c_@LUMA;colour=np.median(c_[lum>=np.percentile(lum,25)],0)
         if abs(float((colour-floor_rgb)@LUMA))<.12:colour=colour*.7  # set furniture apart from a floor of the same value
-        # A table: most of its top has open space under it. A thin top on four legs, not a crate.
-        if .55<hi<1.05 and min(wa,wb)>.4 and np.mean(bases*CELL>.35)>.5:
+        if table:  # a thin top on four legs, not a crate
             add('object','box',cu,cv,y1-.04,y1,wa,wb,colour)
             for sx in (-1,1):
                 for sz in (-1,1):add('object','cylinder',cu+sx*(wa/2-.06),cv+sz*(wb/2-.06),fy,y1-.04,.05,.05,colour)
-        elif max(wa,wb,ht)/min(wa,wb,ht)<1.3 and .4<solid_fill<.7 and .15<max(wa,wb,ht)<.7:
-            dia=(wa+wb+ht)/3;add('object','sphere',cu,cv,y0,y0+dia,dia,dia,colour)
-        elif max(wa,wb)/min(wa,wb)<1.3 and .6<plan_fill<.88:
-            dia=(wa+wb)/2;add('object','cylinder',cu,cv,y0,y1,dia,dia,colour)
-        else:add('object','box',cu,cv,y0,y1,wa,wb,colour)
+        elif max(wa,wb,hi)/min(wa,wb,hi)<1.3 and .4<solid_fill<.7 and .15<max(wa,wb,hi)<.7:
+            dia=min(wa,wb,(wa+wb+hi)/3);add('object','sphere',cu,cv,fy,fy+dia,dia,dia,colour)
+        elif max(wa,wb)/min(wa,wb)<1.3 and isotropic and (.6<plan_fill<.88 or (corners<.35 and plan_fill>.55)):  # round: empty corners
+            dia=min(wa,wb);add('object','cylinder',cu,cv,fy,y1,dia,dia,colour)  # stays inside its rectangle
+        else:add('object','box',cu,cv,fy,y1,wa,wb,colour)
     kinds={k:sum(s['kind']==k for s in out) for k in ['floor','ceiling','wall','object']}
     types={t:sum(s['type']==t for s in out) for t in ['box','cylinder','sphere']}
     return {'version':1,'units':'normalized scene units, +Y up; yaw is three.js rotation.y','manhattanYaw':round(theta,5),

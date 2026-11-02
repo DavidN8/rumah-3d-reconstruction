@@ -70,10 +70,12 @@ export function installCutaway({dyno,THREE,model,shell,orbitTarget=()=>null}){
       float near=dot(p.xz-${i.centre}.xz,${i.view}.xz-${i.centre}.xz)/max(length(${i.view}-${i.centre}),1e-3);
       // Against fitted walls the band is wider and only the floor survives it: a clean cut edge.
       if(${i.fitted} ? d>-0.45 && p.y>${floor}+0.03 : d>-${gl(fp.wallBand)} && !shelf && p.y>${floor}+0.12) keep*=1.0-max(smoothstep(0.05,0.3,dot(outward,${i.view}.xz-p.xz)),smoothstep(0.4,0.8,near));
-      // With the fitted walls drawn, wall-surface splats only smear their faces, and above the dropped
-      // ceiling line hang soffits and the AC, which read as walls from above; needles near the edge shred
-      // the floor's outline. Walls stay full height.
-      if(${i.fitted} && (p.y>${lower}-0.1 || d>-0.08 || (d>-0.2 && abs(n.y)<0.7) || (d>-0.5 && longest>0.03 && longest>6.0*middle))) hidden=true;
+      // With the fitted walls and furniture drawn as shapes, only the floor stays photoreal: everything
+      // standing on it is a shape, and wall splats would smear their faces. Needles near the edge would
+      // shred the floor's outline, and large soft blobs read as stains: the fitted floor shows there.
+      // (Brightness cannot tell a stain from floor: many floor splats carry a dark base colour.)
+      // Walls stay full height as shapes.
+      if(${i.fitted} && (p.y>${floor}+0.05 || d>-0.08 || (d>-0.5 && longest>0.03 && longest>6.0*middle) || longest>0.1)) hidden=true;
       ${o.gsplat}.rgba.a*=hidden?0.0:keep;
     }`
   ]});

@@ -22,8 +22,11 @@ MIN_AREA=.5       # square units; drops isolated reflections on the planes
 PAD=1.0           # SDF margin past the occupied bounds; floor evidence runs ~0.4 beyond them
 CLAMP=127         # int8 storage in hundredths of a unit
 LOWER_MIN_AREA=1.5 # square units; a dropped ceiling, not a wardrobe top
-WALL_EVIDENCE=.35 # share of the 0.3-2.0 height bins (pooled 3x3) opaque vertical splats fill on a wall
-# Wall faces sit 0.05-0.20 outside the wall-trimmed edge (75% of wall splats). The overview hides
+# Share of the 0.3-2.0 height bins (pooled 3x3) opaque vertical splats fill on a wall. A metre-high
+# shelf against a wall fills about 0.4: it must stay furniture in front of the wall, not become it.
+WALL_EVIDENCE=.55
+# Wall faces sit 0.05-0.20 outside the wall-trimmed edge (61% of opaque vertical splats within 0.5
+# of it; furniture fronts stay inside). The overview hides
 # the camera-facing layer from WALL_BAND inside the edge and everything past EXTERIOR_MARGIN.
 WALL_BAND=.25
 EXTERIOR_MARGIN=.22
@@ -37,6 +40,17 @@ def normals(d):
              np.stack([2*(x*y-w*z),1-2*(x*x+z*z),2*(y*z+w*x)],1),
              np.stack([2*(x*z+w*y),2*(y*z-w*x),1-2*(x*x+y*y)],1)]
     return np.choose(axis[:,None],columns)
+
+def wall_evidence(cover,cap=None):
+    # cover: (W,H,17) bool, opaque vertical splats per 0.1 height bin from 0.3 to 2.0. A wall's splats
+    # spread over 2-3 cells of thickness, so pool each bin over 3x3. A wall fills most bins and reaches
+    # above 1.6; a 1.4 high bedding stack against it fills 0.65 of them but not the top. cap (W,H) is
+    # the height above the floor up to which splats were counted: under a low ceiling the top bins
+    # can never fill, so only bins below it take part.
+    pooled=ndimage.maximum_filter(cover,size=(3,3,1))
+    valid=np.ones(cover.shape,bool) if cap is None else .3+.1*np.arange(1,cover.shape[2]+1)<=cap[...,None]+1e-9
+    share=lambda b:(pooled[...,b:]&valid[...,b:]).sum(2)/np.maximum(valid[...,b:].sum(2),1)
+    return (share(0)>=WALL_EVIDENCE)&((share(13)>=.5)|(valid[...,13:].sum(2)==0))
 
 def plane_fit(points):
     # Same robust horizontal fit as occupied_bounds.py uses for floor and upper ceiling.
@@ -78,7 +92,7 @@ def footprint(model,shell):
     floor=planes['floor'];h=xyz[:,1]-(floor[0]*xyz[:,0]+floor[1]*xyz[:,2]+floor[2])
     wall=(alpha>.4)&(np.abs(n[:,1])<.3)&(h>.3)&(h<2.)&inside
     cover=np.zeros((W,H,17),bool);cover[i[wall],k[wall],((h[wall]-.3)/.1).astype(int)]=True
-    evidence=ndimage.maximum_filter(cover,size=(3,3,1)).mean(2)>=WALL_EVIDENCE;square=np.ones((3,3),bool)
+    evidence=wall_evidence(cover);square=np.ones((3,3),bool)
     lab,_=ndimage.label(grid&~ndimage.binary_dilation(evidence,square,2));cams=np.asarray(shell['interiorCameras'],float).reshape(-1,3)
     # A capture position within the wall margin counts for the floor next to it (up to 0.25 away).
     gap,(ni,nk)=ndimage.distance_transform_edt(lab==0,return_indices=True)

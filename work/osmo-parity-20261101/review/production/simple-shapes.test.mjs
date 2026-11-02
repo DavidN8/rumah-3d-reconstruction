@@ -37,12 +37,12 @@ test('the shipped shape file matches the packed model and builds into three.js m
  const mesh=group.children.find(m=>m.userData.shape.type==='box');assert.deepEqual(mesh.scale.toArray(),mesh.userData.shape.size);
  group.userData.dispose();
 });
-test('no two wall pieces overlap (coplanar tops would flicker)',async()=>{
+test('no two walls or furniture pieces intersect (coplanar tops would flicker)',async()=>{
  const shapes=await read((await read('./candidate.json')).simpleShapes),t=shapes.manhattanYaw,c=Math.cos(t),s=Math.sin(t);
- // In the room's own frame every wall is axis-aligned: size[0] runs along u, size[2] along v.
+ // In the room's own frame every shape is axis-aligned: size[0] runs along u, size[2] along v.
  const box=w=>{const u=w.center[0]*c+w.center[2]*s,v=-w.center[0]*s+w.center[2]*c;
   return [[u-w.size[0]/2,u+w.size[0]/2],[w.center[1]-w.size[1]/2,w.center[1]+w.size[1]/2],[v-w.size[2]/2,v+w.size[2]/2]];};
- const walls=shapes.shapes.filter(w=>w.kind==='wall').map(box);
+ const walls=shapes.shapes.filter(w=>w.kind==='wall'||w.kind==='object').map(box);
  for(let i=0;i<walls.length;i++)for(let j=i+1;j<walls.length;j++)
-  assert.ok(walls[i].some((r,k)=>Math.min(r[1],walls[j][k][1])-Math.max(r[0],walls[j][k][0])<=.002),`wall pieces ${i} and ${j} overlap`);
+  assert.ok(walls[i].some((r,k)=>Math.min(r[1],walls[j][k][1])-Math.max(r[0],walls[j][k][0])<=.002),`shapes ${i} and ${j} intersect`);
 });

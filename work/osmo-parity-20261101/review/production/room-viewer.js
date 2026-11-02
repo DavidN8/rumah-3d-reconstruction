@@ -309,6 +309,7 @@ $('shade').onclick=()=>{
 
 window.__room={get ready(){return ready;},get data(){return data;},preset,home,top,rotate,setMode,setSimple,
   turn(radians){orbit.theta+=radians;orbitCamera();},  // deterministic orbit steps for turntable captures
+  look(position,target){walkHome();camera.position.fromArray(position);camera.lookAt(new THREE.Vector3().fromArray(target));angles();orient();invalidate();},  // deterministic walk poses for captures
   state(){const f=new THREE.Vector3();camera.getWorldDirection(f);return {position:camera.position.toArray(),quaternion:camera.quaternion.toArray(),
     forward:f.toArray(),up:camera.up.toArray(),right:new THREE.Vector3(1,0,0).applyQuaternion(camera.quaternion).toArray(),mode,yaw,pitch,
     keys:[...keys],comparison,simpleShapes:simpleOn,overviewWalls:!!overviewShell,cutawayRegenerations:cutaway?.regenerations||0,recorded:recorded?.name,triangles:renderer.info.render.triangles,renderCount,fov:camera.fov,seeInside,projection:camera.projectionMatrix.toArray(),orbit:{target:orbit.target.toArray(),radius:orbit.radius,theta:orbit.theta,phi:orbit.phi}};},
@@ -367,14 +368,14 @@ function lightShapes(){
   light.target.position.copy(centre);scene.add(light.target);light.position.copy(centre).add(new THREE.Vector3(1.5,10,2.5));
   Object.assign(light.shadow.camera,{left:-size,right:size,top:size,bottom:-size,near:.5,far:30});light.shadow.camera.updateProjectionMatrix();
 }
-// The Gaussian overview draws the fitted walls (dark tops, door leaves) as its cut edge and the
-// fitted floor just under the splat floor, unlit in the scan's floor colour so the seam between them
-// disappears, instead of fuzzy, shard-edged wall splats.
+// The Gaussian overview draws the fitted walls (dark tops, door leaves) and furniture as simple shapes,
+// over the photoreal splat floor, instead of fuzzy, shard-edged wall splats and soft furniture. The
+// fitted floor sits just under the splat floor, unlit in the scan's floor colour, so their seam disappears.
 async function addOverviewShell(){
   const owner=model;
   try{
     const shapes=(await fetchShapes()).shapes;if(model!==owner||overviewShell)return;
-    const shell=shapes.filter(s=>s.kind==='wall').concat(shapes.filter(s=>s.kind==='floor').map(s=>({...s,center:[s.center[0],s.center[1]-.04,s.center[2]]})));
+    const shell=shapes.filter(s=>s.kind==='wall'||s.kind==='object').concat(shapes.filter(s=>s.kind==='floor').map(s=>({...s,center:[s.center[0],s.center[1]-.04,s.center[2]]})));
     overviewShell=buildShapes(THREE,{version:1,shapes:shell});
     for(const m of overviewShell.children)if(m.userData.shape.kind==='floor'){m.material.dispose();m.material=new THREE.MeshBasicMaterial({color:m.userData.shape.color});}lightShapes();scene.add(overviewShell);cutaway?.trimWalls(camera);invalidate();
   }catch(error){console.error('Overview walls failed',error);}
