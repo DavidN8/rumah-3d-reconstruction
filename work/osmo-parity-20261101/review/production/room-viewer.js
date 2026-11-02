@@ -3,6 +3,7 @@ import {nativePolicy,nativeSparkFileType,waitForNativeDraw} from './native-deliv
 import {chooseQuality,selectModel,readModel,pinchRatio,withDeadline} from './loader-core.js';
 import {canonicalChoice,createLoadLifecycle} from './choice-core.js';
 import {installCutaway,footprintBytes} from './gaussian-cutaway.js';
+import {createSharpener} from './sharpen.js';
 import {buildShapes,shapeVisible,placeShape} from './simple-shapes.js';
 
 const $=id=>document.getElementById(id);
@@ -25,6 +26,8 @@ renderer.setPixelRatio(Math.min(devicePixelRatio,trial('dpr',phoneInput?1.5:2)))
 renderer.setClearColor(0x141b23,1);renderer.outputColorSpace=THREE.SRGBColorSpace;}
 catch(error){rendererError=error;}
 const scene=new THREE.Scene(),camera=new THREE.PerspectiveCamera(75,1,.025,100);
+// The Gaussian model is soft: sharpen its finished frames (0 = off). The block model is crisp already.
+const sharpener=renderer?createSharpener(THREE,renderer):null,SHARPEN=trial('sharpen',.9);
 camera.up.set(0,1,0);
 const fill=new THREE.HemisphereLight(0xffffff,0x6c7890,2);scene.add(fill);
 const light=new THREE.DirectionalLight(0xffffff,2);light.position.set(3,8,5);scene.add(light);
@@ -281,6 +284,7 @@ function render(){
   if(!simpleOn)cutaway?.update(seeInside,camera);
   const v=viewport();renderer.setScissorTest(false);renderer.setViewport(0,0,canvas.clientWidth,canvas.clientHeight);renderer.clear();
   renderer.setViewport(v.x,v.y,v.w,v.h);renderer.render(scene,camera);
+  if(nativeGaussian&&!simpleOn&&SHARPEN>0)sharpener?.apply(SHARPEN,v);
   // Verification waits for GPU completion; normal navigation stays asynchronous.
   if(forceRender)renderer.getContext().finish();
   renderCount++;
@@ -549,5 +553,5 @@ async function loadAsset(quality){
 }
 canvas.addEventListener('webglcontextlost',event=>{event.preventDefault();loads.cancel();downloadAbort?.abort();showFailure(Error('Your browser interrupted the 3D graphics. Reload the phone view, or use Photos.'));});
 canvas.addEventListener('webglcontextrestored',()=>{if(phase==='failed')$('load-detail').textContent='Graphics are available again. Choose a model to retry.';});
-window.addEventListener('pagehide',()=>{loads.cancel();release();disposeSimple();disposeModel(model);renderer?.dispose();});
+window.addEventListener('pagehide',()=>{loads.cancel();release();disposeSimple();disposeModel(model);sharpener?.dispose();renderer?.dispose();});
 loadAsset(selectedOnOpen);
